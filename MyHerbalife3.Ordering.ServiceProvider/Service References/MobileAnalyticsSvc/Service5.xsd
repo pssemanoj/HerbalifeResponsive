@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" />
+  <xs:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" />
+  <xs:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd4" namespace="http://Phoenix.hrbl.net/Public" />
+  <xs:element name="LoadMobileAnalyticsTypes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadMobileAnalyticsTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="LoadMobileAnalyticsTypesResult" nillable="true" type="q1:LoadMobileAnalyticsTypesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertActivityLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="request" nillable="true" type="q2:InsertActivityLogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertActivityLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="InsertActivityLogResult" nillable="true" type="q3:InsertActivityLogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateActivityLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="request" nillable="true" type="q4:UpdateActivityLogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateActivityLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="UpdateActivityLogResult" nillable="true" type="q5:UpdateActivityLogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertActivityLogAsync">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="request" nillable="true" type="q6:InsertActivityLogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsDistributorAuthorized">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="distributorID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsDistributorAuthorizedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IsDistributorAuthorizedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLeadContact">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" minOccurs="0" name="leadContact" nillable="true" type="q7:LeadContact" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLeadContactResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLeadContactResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenCustomerMissingMonths">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="distributorId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenCustomerMissingMonthsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://Phoenix.hrbl.net/Public" minOccurs="0" name="GetTenCustomerMissingMonthsResult" nillable="true" type="q8:ArrayOfString" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenCustomerStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="distributorId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenCustomerStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://Phoenix.hrbl.net/Public" minOccurs="0" name="GetTenCustomerStatusResult" type="q9:TenCustomerFormStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveTenCustomerData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="distributorId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="saleAmount" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveTenCustomerDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveTenCustomerDataResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="device" nillable="true" type="q10:RegisteredDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="RegisterDeviceResult" nillable="true" type="q11:RegisteredDeviceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredDevice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deviceId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="warehouseCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredDeviceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRegisteredDeviceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSubmittedOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" minOccurs="0" name="request" nillable="true" type="q12:SubmittedOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSubmittedOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" minOccurs="0" name="InsertSubmittedOrderResult" nillable="true" type="q13:SubmittedOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubmittedOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="clientOrderGuid" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubmittedOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" minOccurs="0" name="GetSubmittedOrderResult" nillable="true" type="q14:GetSubmittedOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivityLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="request" nillable="true" type="q15:GetActivityLogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivityLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" minOccurs="0" name="GetActivityLogResult" nillable="true" type="q16:ArrayOfActivityLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

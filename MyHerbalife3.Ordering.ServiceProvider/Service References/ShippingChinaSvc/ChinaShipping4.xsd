@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/02/02/HL.Shipping.Interfaces" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/02/02/HL.Shipping.Interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Shipping/ChinaShipping.svc?xsd=xsd1" namespace="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" />
+  <xs:element name="GetProvinceStoreMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="request" nillable="true" type="q1:GetProvinceStoreMappingRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProvinceStoreMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetProvinceStoreMappingResult" nillable="true" type="q2:GetProvinceStoreMappingResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGetExpressCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="request" nillable="true" type="q3:GetExpressCompanyRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGetExpressCompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetGetExpressCompanyResult" nillable="true" type="q4:GetExpressCompanyResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnsupportedAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="request" nillable="true" type="q5:GetUnsupportedAddressRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnsupportedAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetUnsupportedAddressResult" nillable="true" type="q6:GetUnsupportedAddressResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnsupportedExpressAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="request" nillable="true" type="q7:GetUnsupportedExpressAddressRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnsupportedExpressAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetUnsupportedExpressAddressResult" nillable="true" type="q8:GetUnsupportedExpressAddressResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBaiduMapJavascript">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="request" nillable="true" type="q9:GetBaiduMapJavascriptRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBaiduMapJavascriptResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetBaiduMapJavascriptResult" nillable="true" type="q10:GetBaiduMapJavascriptResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

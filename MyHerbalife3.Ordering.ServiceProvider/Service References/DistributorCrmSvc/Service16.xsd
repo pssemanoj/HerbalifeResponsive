@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead.UserManagement" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead.UserManagement" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="MembershipUserBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MembershipUserBase" nillable="true" type="tns:MembershipUserBase" />
+  <xs:complexType name="MembershipUser_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MembershipUserBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Roles" nillable="true" type="tns:ArrayOfMembershipRole_V01" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MembershipUser_V01" nillable="true" type="tns:MembershipUser_V01" />
+  <xs:complexType name="ArrayOfMembershipRole_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MembershipRole_V01" nillable="true" type="tns:MembershipRole_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMembershipRole_V01" nillable="true" type="tns:ArrayOfMembershipRole_V01" />
+  <xs:complexType name="MembershipRole_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MembershipRoleBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MembershipRole_V01" nillable="true" type="tns:MembershipRole_V01" />
+  <xs:complexType name="MembershipRoleBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MembershipRoleBase" nillable="true" type="tns:MembershipRoleBase" />
+  <xs:complexType name="GetMembershipUserRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipUserRequest" nillable="true" type="tns:GetMembershipUserRequest" />
+  <xs:complexType name="GetMembershipUserRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMembershipUserRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipUserRequest_V01" nillable="true" type="tns:GetMembershipUserRequest_V01" />
+  <xs:complexType name="GetMembershipUserResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipUserResponse" nillable="true" type="tns:GetMembershipUserResponse" />
+  <xs:complexType name="GetMembershipUserResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMembershipUserResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:MembershipUser_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipUserResponse_V01" nillable="true" type="tns:GetMembershipUserResponse_V01" />
+  <xs:complexType name="GetMembershipRolesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipRolesRequest" nillable="true" type="tns:GetMembershipRolesRequest" />
+  <xs:complexType name="GetMembershipRolesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMembershipRolesRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipRolesRequest_V01" nillable="true" type="tns:GetMembershipRolesRequest_V01" />
+  <xs:complexType name="GetMembershipRolesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipRolesResponse" nillable="true" type="tns:GetMembershipRolesResponse" />
+  <xs:complexType name="GetMembershipRolesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMembershipRolesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Roles" nillable="true" type="tns:ArrayOfMembershipRole_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMembershipRolesResponse_V01" nillable="true" type="tns:GetMembershipRolesResponse_V01" />
+  <xs:complexType name="SaveMembershipUserRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMembershipUserRequest" nillable="true" type="tns:SaveMembershipUserRequest" />
+  <xs:complexType name="SaveMembershipUserRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMembershipUserRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:MembershipUser_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMembershipUserRequest_V01" nillable="true" type="tns:SaveMembershipUserRequest_V01" />
+  <xs:complexType name="SaveMembershipUserResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMembershipUserResponse" nillable="true" type="tns:SaveMembershipUserResponse" />
+  <xs:complexType name="SaveMembershipUserResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMembershipUserResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMembershipUserResponse_V01" nillable="true" type="tns:SaveMembershipUserResponse_V01" />
+  <xs:complexType name="ActiveDirectoryUserBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActiveDirectoryUserBase" nillable="true" type="tns:ActiveDirectoryUserBase" />
+  <xs:complexType name="ActiveDirectoryUser_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActiveDirectoryUserBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Groups" nillable="true" type="tns:ArrayOfActiveDirectoryGroup_V01" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActiveDirectoryUser_V01" nillable="true" type="tns:ActiveDirectoryUser_V01" />
+  <xs:complexType name="ArrayOfActiveDirectoryGroup_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActiveDirectoryGroup_V01" nillable="true" type="tns:ActiveDirectoryGroup_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActiveDirectoryGroup_V01" nillable="true" type="tns:ArrayOfActiveDirectoryGroup_V01" />
+  <xs:complexType name="ActiveDirectoryGroup_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ActiveDirectoryGroupBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActiveDirectoryGroup_V01" nillable="true" type="tns:ActiveDirectoryGroup_V01" />
+  <xs:complexType name="ActiveDirectoryGroupBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ActiveDirectoryGroupBase" nillable="true" type="tns:ActiveDirectoryGroupBase" />
+  <xs:complexType name="GetActiveDirectoryUserRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetActiveDirectoryUserRequest" nillable="true" type="tns:GetActiveDirectoryUserRequest" />
+  <xs:complexType name="GetActiveDirectoryUserRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetActiveDirectoryUserRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetActiveDirectoryUserRequest_V01" nillable="true" type="tns:GetActiveDirectoryUserRequest_V01" />
+  <xs:complexType name="GetActiveDirectoryUserResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetActiveDirectoryUserResponse" nillable="true" type="tns:GetActiveDirectoryUserResponse" />
+  <xs:complexType name="GetActiveDirectoryUserResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetActiveDirectoryUserResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:ActiveDirectoryUser_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetActiveDirectoryUserResponse_V01" nillable="true" type="tns:GetActiveDirectoryUserResponse_V01" />
+  <xs:complexType name="AddActiveDirectoryUserToGroupRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddActiveDirectoryUserToGroupRequest" nillable="true" type="tns:AddActiveDirectoryUserToGroupRequest" />
+  <xs:complexType name="AddActiveDirectoryUserToGroupRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AddActiveDirectoryUserToGroupRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GroupName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImpersonatePassword" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImpersonateUser" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddActiveDirectoryUserToGroupRequest_V01" nillable="true" type="tns:AddActiveDirectoryUserToGroupRequest_V01" />
+  <xs:complexType name="AddActiveDirectoryUserToGroupResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddActiveDirectoryUserToGroupResponse" nillable="true" type="tns:AddActiveDirectoryUserToGroupResponse" />
+  <xs:complexType name="AddActiveDirectoryUserToGroupResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AddActiveDirectoryUserToGroupResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddActiveDirectoryUserToGroupResponse_V01" nillable="true" type="tns:AddActiveDirectoryUserToGroupResponse_V01" />
+</xs:schema>

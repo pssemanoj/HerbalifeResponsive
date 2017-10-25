@@ -1,0 +1,22 @@
+// === Temporal Fix for Top Menu === //
+@media only screen and (max-width: $desktop) {
+    #hrblSiteWrapper {
+        width: 100%;
+    }
+}
+
+.ordering {
+    .gdo-page-header-tbl {
+        @include box-sizing(border-box);
+        margin-left: 0;
+        padding-left: 10px;
+        width: 100%;
+    }
+}
+
+#principalContent {
+    @extend .wrap-normal;
+    @include breakpoint($breakpoint-mobile){
+        #ContentCell {padding-left: 0;}
+    }
+}

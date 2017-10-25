@@ -1,0 +1,59 @@
+.gdo-nav-mid-confirm-tellstory {
+    width: 765px;
+
+    .gdo-main-table.chkoutFullWidth {
+        width: auto;
+
+        div[id$="upCheckOutOptions"] {
+            table {
+                width: auto;
+
+                #checkout-stepone {
+                    div {
+                        &[id$="DeliveryOptionsView"] {
+                            width: 185px;
+                            margin-right: 20px;
+                        }
+
+                        &[id$="DeliveryOptionsInstructionsView"] {
+                            width: 270px;
+                            margin-right: 0;
+}
+
+                        &.checkout-email {
+                            max-width: 240px;
+                            margin-left: 20px;
+
+                            [id$="dvEmailReadOnly"] {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .gdo-order-details-wrapper {
+            div {
+                &:first-child, &:nth-child(2) {
+                    margin-right: 20px;
+                }
+
+                &:last-child {
+                    width: 30%;
+                }
+            }
+        }
+
+        .gdo-edit-summary {
+            [id$="divLabelOrderSummary"], [id$="divSummaryMessage"], [id$="divEventTicketMessage"] {
+                + table {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.confirm-tellyourstory {
+    margin-left: 5px;
+}

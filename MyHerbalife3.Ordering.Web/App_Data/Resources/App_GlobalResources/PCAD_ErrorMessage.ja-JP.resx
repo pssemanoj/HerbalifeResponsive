@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>更新料は追加いただけません</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>更新料はカートから削除できません。</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>この注文をキャンセルしますか？「OK」を選ぶとカート内の製品が削除されます。</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>年間登録更新料のみの注文のため、製品以外のアイテムのすべてが削除されました。</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>クレジット・カードの認証に失敗しました。カード情報をご確認ください。</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>入力に誤りがあります。</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>すでにこのストック番号の製品がショッピング・カートに入っています。</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>イベントチケットは１つの注文につき{0}枚以上ご購入いただけません。</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>このサイトでイベントチケットはご購入いただけません。</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>{0}では {1}つのみご注文いただけます。数を修正してカートへいれてください。</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>ストック番号： {0}  の1回ごとのご注文数量は  {1}  個までです。</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>クレジット・カードが承認できません。オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>郵便番号に誤りがあります。</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: 年間登録更新料のお支払が{0}年分確認できません。 注文タイプ“再販する/Resale”を選択する場合は登録更新料のお支払が必要です。オーダー・タイプを“個人消費”にして登録更新料をお支払ください。</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>{0} の在庫が品切れとなっています。</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>ハーバライフ新聞のご購入数制限は</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>入力した名称はすでに保存されています。別の名称を設定してください。</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>ただ今、オンラインでのご注文を承れません。</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>オンラインでのご注文は承れません。</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>更新料のご注文は、製品のみご一緒にご注文いただけます。</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>合計お支払金額で設定した金額と合計お支払金額が合致していません。ご確認ください。</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>個数を入力してください。</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>クレジットカード情報をご確認ください。</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>ご登録番号とピン番号をご確認ください。ログインできない場合は、ディストリビューター・リレーション（月～金 0120-975-199）までお問い合わせください。</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>製品を追加する前に更新料の支払が必要です。</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>イベントチケットをご購入いただく前に更新料をお支払いください。</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>ストック番号 {0} のご注文数量を半角数字でご入力ください。</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>市・区・郡の入力が正しくありません。</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>受取人名の入力が正しくありません。</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>名称に記号（&amp;, #, -など）は入力いただけません。</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>募金金額をご入力ください（０円以上）</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Eメールアドレスを入力してください。</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>ご利用のカード情報をご確認ください。</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>クレジット・カードの表／裏面に記載された下3桁、もしくは4桁の認証番号を入力してください。</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>更新料のお支払年数分を入力してください。</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Eメールアドレスを再入力してください。</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>名が正しくありません。ご確認ください。</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>姓が正しくありません。ご確認ください。</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>配送先の必須項目を入力してください</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>市外局番が正しくありません。半角英数で入力してください。</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>適切なフォーマットで入力してください</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>受取人名を入力してください</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>市外局番の入力は必須項目です。半角数字で入力してください。</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>町・村を入力してください。</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>内線番号を入力してください。</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>受取人名を入力してください。</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>名字を入力してください。</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>必須項目を入力してください</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>残りの電話番号の入力は必須項目です。半角数字で入力してください。</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>都道府県を指定してください</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>丁目・番地を入力してください</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>郵便番号とハイフンは半角で入力してください。（例：123-4567 ）</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>日中連絡可能な電話番号を入力してください</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>最大 {0} 枚のクレジット・カード情報を保存いただけます。 今後ご利用にならないクレジット・カードを削除のうえ、新しいクレジット・カード情報を入力してください。</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>最適ブラウザ環境：Interner Explorer および Firefox</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>はじめてMy HERBALIFEをご利用の場合、通常の配送先を設定してから製品を選択してください。</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>配送先を選択してください</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>お届けのご希望時間帯を選択してください。</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>受取方法を選択してください</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>セールス・センターでのお受取り予定時間を選択してください</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>配送先を選択してください。</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>「はい」、「いいえ」をお選びください</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>「通常のお届けに指定する」にした配送先は、削除できません。</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>「通常のお届けに指定する」にした配送先は、削除できません。</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>チェックアウトへ</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>HOME へ</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>郵便番号が正しくありません。例：123-4567 郵便番号とハイフンは半角で入力してください。</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>ストック番号 {0} はご注文いただけません。</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>購入上限を超過したためカートに追加できませんでした。</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>システムエラー</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(注文月が変更されました)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>都道府県を指定してください。</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>丁目・番地の入力は必須項目です。</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>丁目・番地の入力は必須項目です。</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>このご注文は承ることができません。オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>カード認証に失敗いたしました。&lt;br&gt;ご注文が完了しない場合、オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>無効の郵便番号です。ご確認ください。</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>ご希望の製品を選択してください。</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>ストック番号 {0} の在庫がご希望数より不足しております。 ただ今ご購入いただける数量は {1} 個となります。</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>ご希望の製品を選んでカートに入れてください。</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>VPを計算したい製品を選択し数量を入力します。「選択製品VP合計」を選ぶと、選択した製品のV.P.合計が表示されます。</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>この住所はすでにご登録いただいております。</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>今月はすでに{0}vpご購入済みですので、ご注文内容を修正してください。</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>このカード認証が失敗しました。</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>エラーが発生し、ご注文が完了しませんでした。オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>エラーが発生し、ご注文が完了しませんでした。オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>本ご注文はお承りできません。オーダー・デパートメント(0120-956-253 月～金 10:00～18:30)までお問い合わせください。</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>エラーが発生しました。ご注文に関するお問い合わせは、オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお電話ください。</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>イベントチケットがカートにありますが、注文を取り消しますか？</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>「通常使用するクレジット・カード」に設定した情報を削除する前に、別のクレジット・カードを「通常使用するクレジット・カードに指定する」に設定してください。</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>カード認証に失敗しました。恐れ入りますが、今後このカードではお支払いいただけません。</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>同じクレジット・カード情報をすでにご登録いただいております。重複登録いただけません。更新したい場合は、「編集」を選び、カード情報を更新してください。</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>この製品をカートに入れることはできません。</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>ショッピング・カートに製品はありません。ご希望の製品をカートに入れ、チェックアウトへお進みください。</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>ご注文月を  {month}  に、変更しました。ご注文を続けますか？　（「はい」、「いいえ」）</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>カートにイベントチケットが入っていますがこの注文を取り消しますか？</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>製品がカートに入っています。イベントチケットの購入せずにこの注文をキャンセルしますか？</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>ご注文月は  {0}  でよろしいですか。</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>注文せず製品を閲覧ページから選択しているため、製品を追加することができません。</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>HFF募金がカートに追加されました</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>年間更新料は1年先までの分のみお支払いいただけます。</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>配送、店頭お渡しのいずれを選択し、製品をカートに入れてください。</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>{0}に同じ内容のご注文をいただいております。
+ご注文を継続する場合には「注文する」を、キャンセルの場合は、「この注文をキャンセルする」を選んでください。</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>更新料の期限日： {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>更新料のお支払いが必要です。今回のご注文に自動的に更新料が加算されます。&lt;br/&gt;
+下記の「チェックアウト」を選び更新料をお支払いください。</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>更新料のお支払いが必要です。今回のご注文に自動的に更新料が加算されます。</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>クレジット・カードの有効期限が無効です。編集から、有効期限を更新してください。</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>このご登録番号はご利用いただけません。お手数ですが、ディストリビューター・リレーション（0120-975-199）までお問い合わせください。</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>このご登録番号はご利用いただけません。お手数ですが、ディストリビューター・リレーション（0120-975-199）までお問い合わせください。</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>変更前の内容で、ご注文番号 {0} にてすでにご注文を承っております。&lt;br&gt; My HERBALIFE で、本注文の状況をご確認される場合は、ご注文情報が反映されるまで1時間程度お待ちください。お急ぎの場合は、オーダー・デパートメント(0120-956-253 月～金 10:00～18:30) までお問い合わせください。</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>お支払期限を迎えた更新料がカートに残っています。</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>配送先が正しくありません。ショッピング・カートにいれた製品を削除します。</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>ショッピング・カートから製品の受取方法を選択してください</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>You cannot Check Out as your Purchasing Limits have been exceeded</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>カートの製品を変更するにはクレジットカード情報を１つ削除してください。</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>クレジット・カードの有効期限が無効です。ディストリビューター・リレーション（0120-975-199）までお問い合わせください。</value>
+  </data>
+</root>

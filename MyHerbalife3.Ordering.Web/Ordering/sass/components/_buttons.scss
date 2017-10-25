@@ -1,0 +1,182 @@
+﻿// =============
+// Buttons Old
+// -----
+// This file contains styling for the compondent: Buttons
+//
+//==============
+/*Mixins imported from mixins file on older version of Shared UI NuGet*/
+@mixin btn {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    padding: 10px 10px;
+    color: $charcoalgrey;
+    line-height: 14px;
+    font-weight: 400;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background-color: #ccc; /* Old browsers */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #f0f0f0 0,#e6e6e6 100%); /* W3C */
+    @include full-width;
+
+    @include breakpoint($tablet) {
+        width: auto;
+        margin: 3px;
+    }
+
+    &:hover {
+        background-color: #e3e3e3;
+        background-position: 0 -15px;
+        border: 1px solid #ddd;
+        border-bottom-color: #ccc;
+        -webkit-transition: background-position 0.1s linear;
+        -moz-transition: background-position 0.1s linear;
+        -o-transition: background-position 0.1s linear;
+        transition: background-position 0.1s linear;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    }
+
+    &:active, &.active {
+        color: rgba(0,0,0,.5);
+        background-image: none;
+        background-color: #ccc;
+        top: 1px;
+        box-shadow: inset 0 2px 2px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.05);
+    }
+
+    &[disabled], &.disabled {
+        cursor: default;
+        background-image: none;
+        background-color: #ccc;
+        color: rgba(0,0,0,.5);
+        box-shadow: none;
+        opacity: .5;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+        filter: alpha(opacity=50);
+    }
+}
+
+@mixin btnForward {
+    color: #FFF;
+    border: 1px solid $blue;
+    text-shadow: 0 0 1px $blue;
+    filter: none;
+    background: $blue;
+
+    &:hover {
+        color: #FFF;
+        border: 1px solid $blue;
+        text-shadow: 0 0 1px $blue;
+    }
+
+    &:hover, &:active, &[disabled], &.disabled, &.active {
+        background-color: #0074e6;
+        background-repeat: no-repeat;
+    }
+}
+
+@mixin btnSecondary {
+    filter: none;
+    border: 1px solid #1f8dfa;
+    background: #5eafff;
+    color: #FFF;
+    text-shadow: 0 0 1px $blue;
+
+    &:hover {
+        color: #FFF;
+        border: 1px solid $blue;
+        text-shadow: 0 0 1px $blue;
+    }
+
+    &.active {
+        background-color: rgba(255,255,255,.02);
+    }
+
+    &:hover, &:active, &[disabled], &.disabled, &.active {
+        background-color: #45a2ff;
+        background-repeat: no-repeat;
+    }
+}
+
+/********* Action Buttons ***************/
+.bottomActBtns {
+    margin: 20px 0;
+    text-align: right;
+}
+
+/* #Buttons
+================================================== */
+
+/* Base styles
+// -------------------------------------------------- */
+
+.icnLeft, .icnRight {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 0;
+}
+
+.icnRight {
+    right: 0;
+}
+
+.icnLeft {
+    left: 0;
+}
+
+/* Core */
+.neutral, a.neutral,
+.forward, a.forward,
+.backward, a.backward,
+a[class*='btn'], input[class*='btn'] {
+    @include btn;
+    @extend %full-width;
+}
+
+.btn {
+    opacity: 1;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+    filter: none;
+}
+
+/* Alternate buttons
+// -------------------------------------------------- */
+
+/* Provide *some* extra contrast for those who can get it */
+.forward:active, a.btnForward:active, input.btnForward:active,
+.neutral:active, a.btnSecondary:active, input.btnSecondary:active {
+    color: rgba(255,255,255,.75);
+}
+
+/* FORWARD
+// ------------------------- */
+.forward, a.forward, input.forward,
+a.btnForward, input.btnForward {
+    @include btnForward;
+}
+
+/* SECONDARY
+// ------------------------- */
+
+.neutral, a.neutral, input.neutral,
+ a.btnSecondary, input.btnSecondary {
+    @include btnSecondary;
+}
+
+.linkBtn.disabled {
+    cursor: default;
+    opacity: 0.5;
+    color: #CCC;
+}
+
+/*============================================================================
+$ END BUTTONS
+*/

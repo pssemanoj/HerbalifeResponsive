@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+  <xs:complexType name="ArrayOfTrackedValue_V01Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrackedValue_V01Address" nillable="true" type="tns:TrackedValue_V01Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrackedValue_V01Address" nillable="true" type="tns:ArrayOfTrackedValue_V01Address" />
+  <xs:complexType name="TrackedValue_V01Address">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackedValue_V01{0}" Namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Address" Namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TrackedValueBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Order" type="xs:int" />
+          <xs:element xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Value" nillable="true" type="q1:Address" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrackedValue_V01Address" nillable="true" type="tns:TrackedValue_V01Address" />
+  <xs:complexType name="TrackedValueBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrackedValueBase" nillable="true" type="tns:TrackedValueBase" />
+  <xs:complexType name="ArrayOfTrackedValue_V01EmailAddressBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrackedValue_V01EmailAddressBase" nillable="true" type="tns:TrackedValue_V01EmailAddressBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrackedValue_V01EmailAddressBase" nillable="true" type="tns:ArrayOfTrackedValue_V01EmailAddressBase" />
+  <xs:complexType name="TrackedValue_V01EmailAddressBase">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackedValue_V01{0}" Namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EmailAddressBase" Namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TrackedValueBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Order" type="xs:int" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="tns:EmailAddressBase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrackedValue_V01EmailAddressBase" nillable="true" type="tns:TrackedValue_V01EmailAddressBase" />
+  <xs:complexType name="EmailAddressBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailAddressBase" nillable="true" type="tns:EmailAddressBase" />
+  <xs:complexType name="EmailAddress_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmailAddressBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailAddress_V01" nillable="true" type="tns:EmailAddress_V01" />
+  <xs:complexType name="ArrayOfTrackedValue_V01PhoneNumberBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrackedValue_V01PhoneNumberBase" nillable="true" type="tns:TrackedValue_V01PhoneNumberBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrackedValue_V01PhoneNumberBase" nillable="true" type="tns:ArrayOfTrackedValue_V01PhoneNumberBase" />
+  <xs:complexType name="TrackedValue_V01PhoneNumberBase">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackedValue_V01{0}" Namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PhoneNumberBase" Namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TrackedValueBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Order" type="xs:int" />
+          <xs:element xmlns:q4="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" minOccurs="0" name="Value" nillable="true" type="q4:PhoneNumberBase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrackedValue_V01PhoneNumberBase" nillable="true" type="tns:TrackedValue_V01PhoneNumberBase" />
+  <xs:complexType name="ArrayOfTrackedValue_V01TaxIdentificationBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrackedValue_V01TaxIdentificationBase" nillable="true" type="tns:TrackedValue_V01TaxIdentificationBase" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTrackedValue_V01TaxIdentificationBase" nillable="true" type="tns:ArrayOfTrackedValue_V01TaxIdentificationBase" />
+  <xs:complexType name="TrackedValue_V01TaxIdentificationBase">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="TrackedValue_V01{0}" Namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TaxIdentificationBase" Namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TrackedValueBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Order" type="xs:int" />
+          <xs:element xmlns:q5="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" minOccurs="0" name="Value" nillable="true" type="q5:TaxIdentificationBase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TrackedValue_V01TaxIdentificationBase" nillable="true" type="tns:TrackedValue_V01TaxIdentificationBase" />
+  <xs:complexType name="TaxIdentification_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" base="q6:TaxIdentificationBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IDType" nillable="true" type="q6:TaxIdentificationType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaxIdentification_V01" nillable="true" type="tns:TaxIdentification_V01" />
+</xs:schema>

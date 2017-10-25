@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleShipping" xml:space="preserve">
+    <value>Опции доставки</value>
+    <comment>_G2030</comment>
+  </data>
+  <data name="ShipTo" xml:space="preserve">
+    <value>Доставить по адресу:</value>
+    <comment>_G2027</comment>
+  </data>
+  <data name="TextSelect" xml:space="preserve">
+    <value>--Выбрать--</value>
+    <comment>_G2028</comment>
+  </data>
+  <data name="TextShippingMethodResource1.Text" xml:space="preserve">
+    <value>Изменить способ доставки</value>
+    <comment>_G2029</comment>
+  </data>
+  <data name="ShippingPickupOptionsResource1.Text" xml:space="preserve">
+    <value>Опции доставки/получения</value>
+    <comment>_G2026</comment>
+  </data>
+  <data name="PickupNameResource1.Text" xml:space="preserve">
+    <value>Имя*:</value>
+    <comment>_G3427</comment>
+  </data>
+  <data name="lblEmailBoxText1.Text" xml:space="preserve">
+    <value>Компания Herbalife вышлет подтверждение заказа, статус и/или все обновления по данному заказу на Ваш адрес электронной почты:</value>
+    <comment>_G2006</comment>
+  </data>
+  <data name="lblEmailBoxHeader.Text" xml:space="preserve">
+    <value>Уведомление по e-mail</value>
+    <comment>_G2005</comment>
+  </data>
+  <data name="EditShippingMethod" xml:space="preserve">
+    <value>Редактировать способ доставки</value>
+    <comment>_G2004</comment>
+  </data>
+  <data name="lblEmailLabelDisplay.Text" xml:space="preserve">
+    <value>Электронная почта:</value>
+    <comment>_G2009</comment>
+  </data>
+  <data name="lblEmailDisplay.Text" xml:space="preserve">
+    <value>Электронная почта*:</value>
+    <comment>_G2008</comment>
+  </data>
+  <data name="lblEmailBoxText2.Text" xml:space="preserve">
+    <value>Для того, чтобы сделать данный адрес электронной почты основным, пройдите по ссылке &lt;a href="/Account/Profile/MyContactInfo.aspx" target="_blank"&gt;Моя контактная информация&lt;/a&gt;.</value>
+    <comment>_G2007</comment>
+  </data>
+  <data name="DeliveryOptionType_ShipToCourier.Text" xml:space="preserve">
+    <value>Доставка в офис курьера</value>
+    <comment>_G2003</comment>
+  </data>
+  <data name="AddShippingAddress" xml:space="preserve">
+    <value>Добавить адрес доставки</value>
+    <comment>_G1999</comment>
+  </data>
+  <data name="lblMessageNotify.text" xml:space="preserve">
+    <value>Мы сообщим Вам об отгрузке Вашего заказа</value>
+    <comment>_G2010</comment>
+  </data>
+  <data name="PickUpPhoneFormatResource1.Text" xml:space="preserve">
+    <value>Формат: 10 цифр</value>
+    <comment>_G2909</comment>
+  </data>
+  <data name="DeliveryOptionType_Shipping.Text" xml:space="preserve">
+    <value>Доставка</value>
+    <comment>_G2002</comment>
+  </data>
+  <data name="DeliveryOptionType_PickupFromCourier.Text" xml:space="preserve">
+    <value>Пункт выдачи / Постамат</value>
+    <comment>_G2001</comment>
+  </data>
+  <data name="DeliveryOptionType_Pickup.Text" xml:space="preserve">
+    <value>Получение в Центре Продаж</value>
+    <comment>_G2000</comment>
+  </data>
+  <data name="PickUpBy" xml:space="preserve">
+    <value>Получатель</value>
+    <comment>_G2020</comment>
+  </data>
+  <data name="NickNameReadonlyResource1.Text" xml:space="preserve">
+    <value>Имя пользователя:</value>
+    <comment>_G2019</comment>
+  </data>
+  <data name="NickName" xml:space="preserve">
+    <value>Имя пользователя:</value>
+    <comment>_G2018</comment>
+  </data>
+  <data name="ShippingMethodLabel" xml:space="preserve">
+    <value>Предпочтения по доставке</value>
+    <comment>_G2025</comment>
+  </data>
+  <data name="PickUpFrom" xml:space="preserve">
+    <value>Получить в:</value>
+    <comment>_G2022</comment>
+  </data>
+  <data name="PickupDateResource1.Text" xml:space="preserve">
+    <value>Дата получения</value>
+    <comment>_G2021</comment>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Место получения:</value>
+    <comment>_G2017</comment>
+  </data>
+  <data name="LinkAddResource1.Text" xml:space="preserve">
+    <value>Добавить</value>
+    <comment>_G2013</comment>
+  </data>
+  <data name="lbShiptoOrPickupResource1.Text" xml:space="preserve">
+    <value>Доставить по адресу:</value>
+    <comment>_G2012</comment>
+  </data>
+  <data name="lblMobileNumber.text" xml:space="preserve">
+    <value>Номер мобильного телефона для СМС оповещения*</value>
+    <comment>_G2011</comment>
+  </data>
+  <data name="lnAddAddressResource1.Text" xml:space="preserve">
+    <value>Добавить адрес</value>
+    <comment>_G2016</comment>
+  </data>
+  <data name="LinkEditResource1.Text" xml:space="preserve">
+    <value>Изменить</value>
+    <comment>_G2015</comment>
+  </data>
+  <data name="LinkDeleteResource1.Text" xml:space="preserve">
+    <value>Удалить</value>
+    <comment>_G2014</comment>
+  </data>
+  <data name="lbDeliveryTimeResource.Text" xml:space="preserve">
+    <value>Крайний срок доставки после поступления оплаты</value>
+    <comment>_G2390</comment>
+  </data>
+  <data name="Type.Text" xml:space="preserve">
+    <value>Тип:</value>
+    <comment>_G2035</comment>
+  </data>
+  <data name="hlDeliveryTimeResource.Text" xml:space="preserve">
+    <value>{0} рабочих дней</value>
+    <comment>_G2389</comment>
+  </data>
+  <data name="lblDSAddressDisplay.Text" xml:space="preserve">
+    <value>Адрес Независимого Партнера*</value>
+    <comment>_G2230</comment>
+  </data>
+  <data name="TitleShippingPickup" xml:space="preserve">
+    <value>Опции доставки/получения</value>
+    <comment>_G2031</comment>
+  </data>
+  <data name="txtDeliveryTime.Text" xml:space="preserve">
+    <value>*Время:</value>
+    <comment>_G2032</comment>
+  </data>
+  <data name="txtFreeFormShippingInstruction.Text" xml:space="preserve">
+    <value>При заказе свыше 61.5 бел/рублей в базовых ценах – стоимость доставки рассчитывается в соответствии с ценами прайс-листа по Вашей скидке. В случае заказа менее 61.5 бел/рублей в базовых ценах - стоимость доставки составляет 0.62 бел/рублей + НДС 20%.
+Все вопросы, связанные с работой интернет-сайта, а также более подробную информацию о способах и стоимости доставки заказа Вы можете получить, обратившись в Центре Продаж по телефонам:
+8 801 1007373 (бесплатная линия для Беларуси) / Телефон: +375 17 2379691 
+Email: order.minsk@by.filuet.com
+Понедельник – Пятница: 10:30 - 19:00
+* При отказе от товара после его оплаты, возврат денежных средств осуществляется на ту же платежную карту, с которой была произведена оплата за товар. Более подробную информацию по вопросам обмена/возврата товара Вы также можете получить в Центре Продаж.</value>
+    <comment>_G2033</comment>
+  </data>
+  <data name="txtPickupTime.Text" xml:space="preserve">
+    <value>*Время:</value>
+    <comment>_G2034</comment>
+  </data>
+  <data name="pickUpAddInfoHeaderResource1.Text" xml:space="preserve">
+    <value>Часы работы:</value>
+    <comment>_G3562</comment>
+  </data>
+  <data name="PickupPhoneResource1.Text" xml:space="preserve">
+    <value>Телефон*:</value>
+    <comment>_G3282</comment>
+  </data>
+</root>

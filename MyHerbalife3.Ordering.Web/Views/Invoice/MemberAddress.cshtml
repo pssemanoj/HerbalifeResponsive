@@ -1,0 +1,39 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvMemberAddress" style="display: none;"
+     data-role="window"
+     data-modal="true"
+     data-width="250"
+     data-height="250"
+     data-resizable="false"
+     data-actions="['close']">
+    
+    <div class="wrapper ordering">
+        <div class="row">
+            <h2>@this.Localize("browseMemberAddressTitle")</h2>
+        </div>
+        <div class="row">
+            <label for="memberAddress">
+                @this.Localize("select")
+            </label><br />
+            <input id="memberAddress"
+                    data-role="dropdownlist"
+                    data-auto-bind="false"
+                    data-value-primitive="true"
+                    data-text-field="Alias"
+                    data-value-field="Id"
+                    data-option-label="@this.Localize("select")"
+                    data-bind="value: selectedIdAddress, source: memberAddressDataSource,
+                                events: { change: onChangeAddress }" />
+        </div>
+        <div class="row" id="changeAddressDetails">
+            <span data-bind="text: selectedAddress.Address1 "></span>
+            <span data-bind="text: selectedAddress.Address2 "></span><br />
+            <span data-bind="text: selectedAddress.City"></span>
+            <span data-bind="text: selectedAddress.State"></span> 
+            <span data-bind="text: selectedAddress.PostalCode "></span>
+        </div>
+        <div class="row align-right">
+            <a class="forward" data-bind="click: AddressChanged">@(this.Localize("continue"))</a>
+        </div>
+    </div>
+</div>

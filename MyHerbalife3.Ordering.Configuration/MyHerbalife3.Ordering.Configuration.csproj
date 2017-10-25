@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.Configuration</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.Configuration</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'China|AnyCPU'">
+    <OutputPath>bin\China\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HL.Blocks.Caching, Version=1.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Caching.1.1.14.0\lib\HL.Blocks.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.CircuitBreaker, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.CircuitBreaker.1.1.1.0\lib\HL.Blocks.CircuitBreaker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Localization, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Localization.1.1.1.0\lib\HL.Blocks.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Utilities, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Utilities.1.1.1.0\lib\HL.Common.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>$(SolutionDir)packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AdminProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AdminProvider.1.2.3.0\lib\MyHerbalife3.Core.AdminProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Infrastructure, Version=1.2.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Infrastructure.1.2.30.0\lib\MyHerbalife3.Shared.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Interfaces, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Interfaces.1.2.1.0\lib\MyHerbalife3.Shared.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.605.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.1.1.605\lib\net46\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Core.1.4.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Newtonsoft, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Newtonsoft.1.4.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationManagement\ConfigManager.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\AddressingConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\APFConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\CheckoutConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\DoConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\FormattingConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\HLConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\NPSConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\OCPaymentsConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\OrderingUnavailableReason.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\PaymentsConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\PickupOrDeliveryConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\RulesConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationObjects\ShoppingCartConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\ConfigurationSet.cs" />
+    <Compile Include="ConfigurationManagement\FileWatcher\FileNotifyEventArgs.cs" />
+    <Compile Include="ConfigurationManagement\FileWatcher\FileSystemWatcherManager.cs" />
+    <Compile Include="ConfigurationManagement\FileWatcher\WatchedObject.cs" />
+    <Compile Include="ConfigurationManagement\HLConfigManager.cs" />
+    <Compile Include="ConfigurationManagement\Platform.cs" />
+    <Compile Include="ConfigurationManagement\PlatformResources.cs" />
+    <Compile Include="ConfigurationManagement\PromotionConfiguration\PromotionConfigurationProvider.cs" />
+    <Compile Include="ConfigurationManagement\PromotionConfiguration\PromotionConfiguration.cs" />
+    <Compile Include="ConfigurationManagement\Providers\HlCountryConfigurationProvider.cs" />
+    <Compile Include="NPSConfiguration\NPSConfigurationProvider.cs" />
+    <Compile Include="NPSConfiguration\NPSConfigurationSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ConfigurationManagement\ConfigurationManagement.cd" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CountryConfiguration.GetCountryConfigurationResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CountryConfiguration.GetCountryConfigurationResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CountryConfiguration.SaveCountryConfigurationResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CountryConfiguration.SaveCountryConfigurationResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CurrencyConversionRateResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.CurrencyConversionRateResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.DeleteInvoiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.DeleteInvoiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.DeletePaymentInfoResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.DeletePaymentInfoResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.FControlOrder.GetFControlOrdersResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.FControlOrder.GetFControlOrdersResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.FControlOrder.OverrideFControlCheckResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.FControlOrder.OverrideFControlCheckResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GenerateOrderNumberResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GenerateOrderNumberResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetBanCardPaymentServiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetBanCardPaymentServiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetBPagPaymentServiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetBPagPaymentServiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetCheckPaymentDetailsResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetCheckPaymentDetailsResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetCyberSource3DEnrollmentResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetCyberSource3DEnrollmentResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDistributorPurchasingLimitsResponseBase.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDistributorPurchasingLimitsResponseBase1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDistributorPurchasingLimitsSourceResponseBase.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDistributorPurchasingLimitsSourceResponseBase1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDRFraudStatusResponseBase.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetDRFraudStatusResponseBase1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInMaintenanceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInMaintenanceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInvoiceSkuResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInvoiceSkuResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInvoicesResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetInvoicesResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetLatestOrderResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetLatestOrderResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetNextDistributorInvoiceNumberResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetNextDistributorInvoiceNumberResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOcaPaymentServiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOcaPaymentServiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOrderDetailResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOrderDetailResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOrdersResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetOrdersResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentGatewayLogResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentGatewayLogResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentGatewayRecordResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentGatewayRecordResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentInfoResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPaymentInfoResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPurchasingLimitsResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetPurchasingLimitsResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetSubscriptionsResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetSubscriptionsResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetTaxRateFromVertexResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetTaxRateFromVertexResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetValidTinCodesListResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetValidTinCodesListResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetVNPayPaymentServiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.GetVNPayPaymentServiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.HPSObjects.GetCardTypesForCountryResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.HPSObjects.GetCardTypesForCountryResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.InsertPaymentGatewayRecordResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.InsertPaymentGatewayRecordResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.InsertPaymentInfoResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.InsertPaymentInfoResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.OrderDupeCheckResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.OrderDupeCheckResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.QuoteResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.QuoteResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.RetrieveCardInstallmentsConfigurationResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.RetrieveCardInstallmentsConfigurationResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SearchInvoiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SearchInvoiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SetInvoiceResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SetInvoiceResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SetPurchasingLimitsResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.SetPurchasingLimitsResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdatePaymentGatewayRecordResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdatePaymentGatewayRecordResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdateSubscriptionOrderResponse.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdateSubscriptionOrderResponse1.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdateSubscriptionsResponseBase.datasource" />
+    <None Include="Properties\DataSources\HL.Order.ValueObjects.UpdateSubscriptionsResponseBase1.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj">
+      <Project>{deca9051-4215-473e-8a99-2227fa819528}</Project>
+      <Name>MyHerbalife3.Ordering.ServiceProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

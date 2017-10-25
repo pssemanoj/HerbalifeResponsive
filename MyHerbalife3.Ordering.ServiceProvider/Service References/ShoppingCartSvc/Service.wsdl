@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2012/03/22/H.MyHL.ShoppingCart.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2012/03/22/H.MyHL.ShoppingCart.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" location="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IShoppingCartService" type="i0:IShoppingCartService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetQuote">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitOrder">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/SubmitOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorPurchasingLimits">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetDistributorPurchasingLimits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddItemsToCart">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/AddItemsToCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShoppingCartNumber">
+      <soap:operation soapAction="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/ShoppingCartNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

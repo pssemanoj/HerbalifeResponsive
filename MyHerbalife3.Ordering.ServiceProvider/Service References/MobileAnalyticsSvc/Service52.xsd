@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LeadContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgeGroup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsBusinessOpportunity" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsEnergyFitness" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsExtra1000" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsExtra2000" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsExtra500" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPersonalCare" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSkyLimit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsTargetedNutrition" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsWeightManagement" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadContact" nillable="true" type="tns:LeadContact" />
+  <xs:complexType name="SubmittedOrderRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientOrderGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmittedOrderRequest" nillable="true" type="tns:SubmittedOrderRequest" />
+  <xs:complexType name="SubmittedOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReturnedOrderNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmittedOrderResponse" nillable="true" type="tns:SubmittedOrderResponse" />
+  <xs:complexType name="GetSubmittedOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SubmittedOrders" nillable="true" type="tns:ArrayOfSubmittedOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSubmittedOrderResponse" nillable="true" type="tns:GetSubmittedOrderResponse" />
+  <xs:complexType name="ArrayOfSubmittedOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubmittedOrder" nillable="true" type="tns:SubmittedOrder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubmittedOrder" nillable="true" type="tns:ArrayOfSubmittedOrder" />
+  <xs:complexType name="SubmittedOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientOrderGuid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmittedOrder" nillable="true" type="tns:SubmittedOrder" />
+</xs:schema>

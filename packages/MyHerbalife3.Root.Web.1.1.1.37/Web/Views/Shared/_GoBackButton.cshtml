@@ -1,0 +1,5 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+
+<div class="back-button">
+    <a href="#" wire-model="HistoryNavigationViewModel" data-bind="click:goToPreviousPage, visible:isVisible" style="display: none"><i class="icon-arrow-circle-ln-27"></i> @this.LocalizeGlobal("HrblUI", "GoBack")</a>
+</div>

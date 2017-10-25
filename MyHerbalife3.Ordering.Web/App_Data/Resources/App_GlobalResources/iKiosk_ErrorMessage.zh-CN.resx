@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>年费订单无法加入购物车</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>由于您的年费已到期,请先缴交年费方能继续完成订单</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>您确定取消此订单? 请按“OK”以清空购物车</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>您的年费订单内未含产品,故其余非产品之货号将被移除</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>本缺货产品无法与年费订单同时订购</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>信用卡交易失败请与您的发卡银行连络</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>资讯错误,请重新输入</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>产品货号{0}已经输入，请输入其它货号.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>单张会议门票订单上限为{0}</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>目前尚未开放网上订购活动门票服务</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>产品货号{0}只能订购{1}数量,请更正数量继续购物</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>产品货号{0},因缺货关系,无法输入超过1的数值</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>产品{0}，数量不能大于{1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>您尚未于公司内登记VISA或MASTER信用卡资料，请拨 03-26876333与客服部连络</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>邮递区号不正确.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>资讯科技：{0}年费已到期及必须在“转售”订单类型前支付。请更改您的订单类型为“个人”，以支付您的年费。</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>您訂購的商品{0}目前缺貨，你的数量设置为0。</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Today杂志的限额是</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>此昵称已被使用，请输入另外的昵称。</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>无法网上订货。</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>不被允许网上订购。</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>只有产品货号可加入年费订单</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>付款总额与订购总额不吻合。</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>请输入大于0的数字</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>请确认信用卡资料.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>请检查您的直销商识别证以及密码再尝试。如果仍然出现相同问题，请联系直销商服务部 1-866-866-4744</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>请先完成购买你的年费方能增加其他产品至购物车。</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>请先完成购买你的年费方能购买活动门票。</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>请输入数目</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>请输入商品货号{0}的正确数量.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>请输入一个独特的提取地点。</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>请输入正确的城市名</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>请输入正确的姓名。</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>请输入正确的昵称。</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>请输入捐款金额，除了零（0）。</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>请输入电子邮件地址。</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>请输入付款信息。</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>请输入卡片背面后三码</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>请输入您想购买的年费数量。</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>请填上正确的电子邮件地址。</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>请输入您的大名。</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>请输入您的姓氏。</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>请输入您名字中间的字母。</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>请输入主要寄送资讯。</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>请输入正确邮递区号</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>请输入正确分机号码</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>请输入收件人姓名</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>请准确输入邮递区号</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>请填上城市。</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>请输入正确分机号码</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>请填上名字。</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>请填上姓氏。</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>请填写必要栏位.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>请填上联络电话。</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>请填上州属。</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>请填上住址栏位</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>请填上邮递区号。</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>请输入正确的连络电话。</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>您最多可设定{0}张信用卡。若您欲增加新卡，请先和客服人员联络删除先前所设定之信用卡</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>请注意:&lt;br/&gt;此网页只能于IE或Firebox浏览</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>请记录寄送地址，然后才能完成令这个提取选择。</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>请选择区域*:</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>请选择寄送时间</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>请选择订单类型</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>请选择提取选项</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>请选择提取选项</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>请选择提取名称</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>请选择提取电话</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>请选择提取时间</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>请选择寄送地址</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>请选择是/否</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>主要寄送地址無法刪除</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>主要提取选择不能被删除。</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>前往结帐</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>回到首页</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>所输入的邮递区号不支持寄送</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>此产品货号{0}目前缺货,无法订购</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>对不起，您不能添加项目到购物车中加入他们，因为，你超出您的收入限制。</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>系统错误</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(订单月份已更改！)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>此产品货号{0}目前缺货中。</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>此州属是无效的。</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>住址至少需含一个数字</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>请输入完整地址</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>本交易尚未完成，请再按一次"确认订购，若仍无法完成交易，"请与客户服务部连络:03-26876333</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>本交易尚未完成，請與客戶服務部連絡:03-26876333</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>邮递区号不正确。</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>您得订单中没有产品</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>您订购的商品{0}目前存量不够。可供出售的数量{1}</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>您没有选择产品加入购物车</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>您尚未选择欲计算点数的产品</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>已在资料库内找到此住址</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>产品数量超过上限，您尚有{0}购货点数，请修改您的购物车内容后继续购物。</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>您所选择之信用卡交易失败</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today杂志已被添加到购物车中。</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>您的订单无法完成,请拨03-26876333与客服部连络并注明错误代码01。</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>您的订单无法完成,请拨03-26876333 与客服部连络并注明错误代码05。</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>我们无法处理您的订单。请检查您的地址，然后再试一次。如果问题仍然存在，请与客户服务部连络。</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>很抱歉，目前汇率无法转换，请与客户服务部连络:03-26876333</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>您的购物车中有活动门票，您是否要清除?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>您将删除您的主要信用卡，请​​于删除前设定另一个主要信用卡</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>由于您的信用卡已被拒绝多次，故无法继续使用此卡</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>请勿重覆选择相同的信用卡支付货款</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>您不能把此产品加入购物车中.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>您不能到达{0}页因为购物车中没有订购任何产品。</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>您的购物车里有缺货产品，如果你选择提取为您的运输项目，次产品将被删除。你是否要继续？ （“是“或”否“）</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>您已变更此订单之订购月份为{0}，您是否继续下一步</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>您有活动门票在您的购物车里，您是否要清除您的购物车？</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>你有产品在您的购物车里。你是否要清除购物车以继续购买门票？</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>您的订单月份为{0}，请再次确认是否正确？</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>您选择了从WALDOS提取，这只能订购有限的产品。</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>您选择浏览产品但并未订货产品，您不能将产品加入购物车里。</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>您已经成功将康宝莱家庭基金放进购物车里。</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>你只能够预先付款1年的年费。</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>您必须选择寄送或提取选项以继续进行。</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>提醒您,您于最近下了一笔同样的订单，如果您确定要完成此笔订单，请按“确认订购”。否则，请按“取消订购”。</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>您的年费到期日{0}。</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>由于您的年费已到期，我们将自动将您的年费放入购物车中。</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>由于您的年费已到期，我们将自动将您的年费放入购物车中。</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>您的信用卡已過有效期限，请点击修改和更新有效日期。</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>您的信用卡已过有效期限，请与客户服务部连络。</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>您的直销商编号目前无法订购，请与客户服务部连络 03-26876333</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>您的直销商编号目前无法订购，请与客户服务部连络 03-26876333</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>您之前的订单已于您修改购物车内产品前完成.您的订单号码是{0}.若您欲确认订购情形，请与客户服务部连络，服务专线:03-26876333。营业时间星期一到星期五上午10:00-晚上7:00/星期六上午10:00-下午3:00(请注意，刚成立之新订单须一段时间才能为您确认。&lt;br&gt;若您欲订购新订单，请重新于购物车内放入您欲订购之产品项目)</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>您的寄送地址您的年费订单尚于您的购物车中</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>您的寄送地址不存在，购物车的内容将被清除。</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>请于小型购货车中选择订单的类型</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>你不能退出因为您的采购已超过限额</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>你必须删除您的其中一项信用卡，才能更改您的购物车中的项目</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>能加入到此购物车最多的杂质数量是{0}</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>请填写短讯手机号码</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>抱歉！您无法进行订购，只有韩国直销商能从韩国网站进行订购。</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>请填写国家</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU无效</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>请选择寄送方式</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>新喀里多尼亚以及法属波利尼西亚不接受缺货销售。</value>
+  </data>
+</root>

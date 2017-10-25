@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.OrderViewModel">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AARCAAAEAAVAAAAAAAAAAQIAgoBAABAAAgAAAAACAAA=</HashCode>
+      <FileName>Model\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Shipping" />
+      <Property Name="HandlingInfo" />
+      <Property Name="Quote" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="OrderItems" />
+      <Property Name="Payments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.ShippingViewModel">
+    <Position X="3.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAgAAAABAAAAAAAAAAAAACAAIAIAABAAA=</HashCode>
+      <FileName>Model\ShippingViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.PaymentViewModel">
+    <Position X="8.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAEAAAAAAAAAAACACggEAAECAgAAAAAAAAA=</HashCode>
+      <FileName>Model\Payment\PaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.CashPaymentViewModel">
+    <Position X="6.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\Payment\CashPaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.CheckPaymentViewModel">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Model\Payment\CheckPaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.DirectDepositPaymentViewModel">
+    <Position X="10.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAIAA=</HashCode>
+      <FileName>Model\Payment\DirectDepositPaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.LocalPaymentViewModel">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAgAAAAAAAA=</HashCode>
+      <FileName>Model\Payment\LocalPaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.PayPalPaymentViewModel">
+    <Position X="14.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAACQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Payment\PayPalPaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.WirePaymentViewModel">
+    <Position X="17" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAA=</HashCode>
+      <FileName>Model\Payment\WirepaymentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.AddressViewModel">
+    <Position X="5.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAABAAAAAIIAAAAIQAAAIAAAAgAAAARAAAAAA=</HashCode>
+      <FileName>Model\AddressViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.OrderTotalsViewModel">
+    <Position X="1" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BBECEQAABAAAAAABAgACBQAAAhAIABACAgAFAIICAAE=</HashCode>
+      <FileName>Model\OrderTotalsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Charges" />
+      <Property Name="LineItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.HandlingInfoViewModel">
+    <Position X="12.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\HandlingInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.OrderItemViewModel">
+    <Position X="10.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAAAA=</HashCode>
+      <FileName>Model\OrderItemViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.ChargeViewModel">
+    <Position X="6.5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEQCAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ChargeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyHerbalife3.Ordering.ViewModel.Model.ItemTotalsListViewModel">
+    <Position X="4.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEQAAAQAAAAAAAAAAAQABAAAAAAMgAggEABEAA=</HashCode>
+      <FileName>Model\ItemTotalsListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

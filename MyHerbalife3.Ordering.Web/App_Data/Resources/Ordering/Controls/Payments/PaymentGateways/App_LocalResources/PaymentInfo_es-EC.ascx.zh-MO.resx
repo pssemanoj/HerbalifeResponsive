@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CardHolderNameIsMissing" xml:space="preserve">
+    <value>信用卡號碼：</value>
+  </data>
+  <data name="CardNumberIsInvalid" xml:space="preserve">
+    <value>信用卡：</value>
+  </data>
+  <data name="CardNumberMissing" xml:space="preserve">
+    <value>信用卡：</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>信用卡安全碼：</value>
+  </data>
+  <data name="ExpirationDateExpired" xml:space="preserve">
+    <value>信用卡有效日期 (年月)：</value>
+  </data>
+  <data name="ExpirationDateInvalid" xml:space="preserve">
+    <value>我確認此交易</value>
+  </data>
+  <data name="lblCardHolderName.Text" xml:space="preserve">
+    <value>MasterCard資料：</value>
+  </data>
+  <data name="lblCardNumber.Text" xml:space="preserve">
+    <value>請以(年月)格式輸入有效日期</value>
+  </data>
+  <data name="lblCardsList.Text" xml:space="preserve">
+    <value>請輸入持卡人姓名</value>
+  </data>
+  <data name="lblCVV.Text" xml:space="preserve">
+    <value>請輸入信用卡號碼</value>
+  </data>
+  <data name="lblExpirationDate.Text" xml:space="preserve">
+    <value>請輸入信用卡安全碼</value>
+  </data>
+  <data name="lblMasterCardHeader.Text" xml:space="preserve">
+    <value>信用卡號碼不正確</value>
+  </data>
+  <data name="PaymentGatewayAcknowledgement.Text" xml:space="preserve">
+    <value>信用卡有效期已過</value>
+  </data>
+  <data name="DDCard.Text" xml:space="preserve">
+    <value>Diners - 信用卡</value>
+  </data>
+  <data name="MCCard.Text" xml:space="preserve">
+    <value>MasterCard - 信用卡</value>
+  </data>
+  <data name="VICard.Text" xml:space="preserve">
+    <value>Visa - 信用卡</value>
+  </data>
+</root>

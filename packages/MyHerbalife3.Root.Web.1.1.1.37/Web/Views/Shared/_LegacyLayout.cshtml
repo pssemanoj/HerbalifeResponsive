@@ -1,0 +1,181 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.Infrastructure.Providers
+@using MyHerbalife3.Shared.Infrastructure.Helpers
+@using MyHerbalife3.Shared.Infrastructure.ValueObjects.ConfigurationManagement
+@using MyHerbalife3.Shared.UI.Controls
+@using MyHerbalife3.Shared.UI.Extensions
+@using MyHerbalife3.Shared.UI.Helpers
+@using MyHerbalife3.Shared.ViewModel
+@using System.Web.Hosting
+@using HL.Common.Configuration
+@using System.Globalization;
+
+@{
+    Layout = null;
+
+    var allCountries = (new LocaleCountryLoader()).Load().ToList();
+    var _GlobalContext = (HttpContext.Current.ApplicationInstance as IGlobalContext);
+
+    bool IsMyHerbalife3Enabled = _GlobalContext.CultureConfiguration.DefaultExperienceType != MyHerbalife3.Shared.ViewModel.ValueObjects.ExperienceType.Brown;
+    var IsCustomer = User.IsInRole(RoleDefinitions.ROLE_CUSTOMER);
+    string LogonUrl = HLConfigManager.Platform == "PCAD" && IsMyHerbalife3Enabled ? string.Format("/Content/{0}/img/home/HeaderLogo.gif", CultureInfo.CurrentCulture.Name)
+                          : "/Content/Global/img/Layout/HeaderLogo.gif";
+
+    bool IsSearchBoxEnabled = _GlobalContext.CultureConfiguration.SearchEnabled;
+    var rightToLeftAtrribute = _GlobalContext.CultureConfiguration.IsRightToLeft ? "rtl" : string.Empty;
+
+    var vertical = Settings.GetRequiredAppSetting("Spa.Vertical", "Root");
+    vertical = (vertical != "Root" ? "/" + vertical : "");
+}
+
+
+<!DOCTYPE html>
+<html class="myhl2">
+<head runat="server">
+    <!-- MASTER BROWN ROOT PAGES -->
+    @Html.Partial("_MetaHeader")
+    @RenderSection("MetaTags", required: false)
+    <title>myHerbalife.com | @Page.Title</title>
+
+    <!-- Styles
+    ================================================== -->
+
+    @BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS1.txt", "/SharedUI/CSS/", vertical + "/CSS/bundle/legacysite1.css")
+    @BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS2.txt", "/SharedUI/CSS/", vertical + "/CSS/bundle/legacysite2.css")
+    @BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS3.txt", "/SharedUI/CSS/", vertical + "/CSS/bundle/legacysite3.css")
+
+    @RenderSection("HeadLinks", required: false)
+
+    @Html.Raw(SafeRender.ValidateContent("/Content/" + Culture + "/css/" + Culture + ".css","<link rel='stylesheet' href='{0}' type='text/css' />"))
+
+    <!-- SCRIPTS -->    
+    @BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyJS.txt", "/SharedUI/Scripts/", vertical + "/Scripts/bundle/legacycommon.js")
+    @BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/legacyvertical.txt", "/", vertical + "/Scripts/bundle/legacyvertical.js")    
+
+    <!--[if lt IE 9]>
+            <script src="/SharedUI/Scripts/html5.js"> </script>
+        <![endif]-->
+    
+    @Html.Partial("_Analytics")
+</head>
+<body dir="@rightToLeftAtrribute">
+
+    <div id="hrblSiteWrapper">
+
+        <!--HEADER-->
+        <header id="HeaderArea" class="noindex">
+            <div id="Logo" class="left">
+                <a id="_Logo" href="@FormsAuthentication.DefaultUrl">
+                    <img src="@LogonUrl" />
+                </a>
+            </div>
+            <div id="LoginView" class="left">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div id="DistributorInfoTable">
+                        <div class="headerMemberInfo" wire-model="ProfileViewModel">
+                            <span data-bind="visible: loading"><i class="green icon-loading"></i></span>
+                            <span data-bind="text: Name, visible: loaded" class="FullName">&nbsp;</span>
+                            <span data-bind="text: TeamLevelName, visible: loaded" class="TabTeam">&nbsp;</span>
+
+                            @if (!Roles.IsUserInRole(RoleDefinitions.ROLE_BIZWORKS_NOT_SUBSCRIBED) && !Roles.IsUserInRole(RoleDefinitions.ROLE_CUSTOMER))
+                            {
+                                <div id="divBizworks">
+                                    <div class="BizWorksLogo">
+                                        <img src="~/Content/Global/img/hl_icon_10px.gif" />&nbsp;<span data-bind="text: DisplayBizworksStatus"></span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div>
+                            @if (!Roles.IsUserInRole(RoleDefinitions.ROLE_CUSTOMER))
+                            {
+                                <p id="headerVolumeSummary" class="volumeData" wire-model="VolumeViewModel">
+                                    <span data-bind="visible: loading"><i class="green icon-loading"></i></span>
+                                    <span class="Volume" data-bind="html: CurrentMonthVolume.PlainHeaderText, visible: loaded">&nbsp;</span>
+                                    <span data-bind="style: { display: error }" class="red hide"><i class="icon-x-circle"></i> @this.LocalizeGlobal("HrblUI", "volumeNotAvailable")</span>
+                                </p>
+
+                            }
+
+                            <a href="~/Authentication/Logout">@this.LocalizeGlobal("HrblUI", "MiniProfile_LogOut")</a>
+
+                            @if (_GlobalContext.CultureConfiguration.IsDSAlertsEnabled)
+                            {
+                                <div id="alertIcon" data-bind="attr: { class: EnvelopeClass }">
+                                    <a href="/Account/Communication/Notifications.aspx" id="alertIcon">
+                                        <span id="_AlertInit">
+                                            <span id="_Alerts" class="TabTeam dsIcon" data-bind="text: AlertCount"></span>
+                                        </span>
+                                        <span id="_AlertsUpdate" class="TabTeam dsIcon"></span>
+                                    </a>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                }
+            </div>
+            <div id="Search" class="left">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    if (IsSearchBoxEnabled)
+                    {
+                        <form id="SearchBox" target="_self" method="get" action="/Home/SiteSearch.aspx">
+                            <input type="text" name="sp_q" id="search_txt" placeholder="Search" />
+                            <input type="submit" class="btnSecondary" value="Go" id="GoButton" />
+                        </form>
+                    }
+
+                    if (IsCustomer)
+                    {
+                        <select class="_localeSelector" size="1">
+                            @foreach (var entry in allCountries.OrderBy(e => e.Value))
+                            {
+                                <option value="@entry.Key" @(entry.Key == UICulture ? "selected" : string.Empty)>@entry.Value</option>
+                            }
+                        </select>
+                    }
+                }
+            </div>
+        </header>
+
+        <!--TOP NAV-->
+        <nav class="noindex" style="width: 955px;">
+            @Html.Partial("_LegacyTopNav")
+            @*<alc:alertcontainer runat="server" id="_AlertContainer" />*@
+        </nav>
+
+        <!--CONTENT AREA-->
+        <section>
+            <!--MESSAGES-->
+            <div>
+                <!--LEFT NAV-->
+                <div id="LeftNavMenuCell" class="left">
+                    <div id="_LeftNavMenuPanel" class="noindex">
+                        @Html.Partial("_LeftNav")
+                    </div>
+                </div>
+                <!--PRINCIPAL CONTENT-->
+                <div id="ContentCell" class="left">
+                    @RenderBody()
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="noindex">
+
+
+            @Html.Partial("_LegacyFooter")
+        </footer>
+
+        <!-- ADDED FOR BRIGHTCOVE MODAL OVERLAY PLAYER -->
+        <div class="k-overlay"></div>
+
+    </div>
+    @Html.Partial("_ServerSignature")
+</body>
+
+</html>

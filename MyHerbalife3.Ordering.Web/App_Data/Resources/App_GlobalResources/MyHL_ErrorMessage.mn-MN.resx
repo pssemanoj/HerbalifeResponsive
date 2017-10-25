@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Өөрийн Дистрибьюторын ID дугаараа оруулна уу</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Пин (Нууц Дугаар) дахин сэргээх сонголтыг сонгоно уу</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Анхаарна уу:&lt;br/&gt;Энэ сайтыг Internet Explorer эсвэл Firefox-р харвал тохиромжтой.</value>
+    <comment>_*G1227</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Та өөрийн Гишүүний ID дугаар болон Нууц дугаараа дахин шалгана уу. Эсвэл Мэдээлэл Харилцааны Албатай 77008891 утсаар холбогдон лавлана уу.</value>
+    <comment>_*R125</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Шинэ Гишүүний хувьд таны мэдээллийг гүйцээх боломжтой болгохын тулд та улсаа сонгож дахин оролдоно уу.</value>
+    <comment>_*R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>Нууц дугаар буруу байна</value>
+    <comment>_*R124</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Техникийн алдаанаас шалтгаалан таны хүсэлт биелэгдсэнгүй. Түр хугацааны дараа дахин оролдоно уу.</value>
+    <comment>_A1045</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Одоогоор Оноо харах боломжгүй.</value>
+    <comment>_A914</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Үндсэн хаягийг устгах боломжгүй.</value>
+    <comment>_*G1239</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Тийм/Үгүйг сонгоно уу.</value>
+    <comment>_*G1238</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Үндсэн очиж авах аргыг устгах боломжгүй.</value>
+    <comment>_*G1240</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Нүүр хуудас руу очих.</value>
+    <comment>_*G1242</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Захиалгыг дуусгах</value>
+    <comment>_*G1241</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Очиж авах хүний нэр оруулна уу</value>
+    <comment>_*G1234</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Очиж Авах байршлаа сонгоно уу</value>
+    <comment>_*G1233</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Очиж авах хүний дугаарыг оруулна уу</value>
+    <comment>_*G1235</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Хүргэлтийн хаяг оруулна уу</value>
+    <comment>_*G1237</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Очиж авах цагийг заана уу</value>
+    <comment>_*G1236</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Оруулсан Зип рүү хүргэлт хийхийг боломжгүй.</value>
+    <comment>_*G1243</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Гудамжны нэр бичихэд дор хаяж нэг үсэг орох шаардлагатай.</value>
+    <comment>_*G1252</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Хүчин төгөлдөр бус муж байна.</value>
+    <comment>_*G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Гудамжны нэр бичихэд дор хаяж нэг тоо, нэг зай, нэг үсэг орсон байх ёстой.</value>
+    <comment>_*G1253</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Шилжүүлэг зөвшөөрөгдсөнгүй. Асуудал гарвал 77008891 дугаараар мэдээлэл харилцааны албатай холбогдоно уу.</value>
+    <comment>_*G1255</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Шилжүүлэг зөвшөөрөгдсөнгүй, картын мэдээллээ шалгана уу. Асуудал гарвал 77008891 дугаараар мэдээлэл харилцааны албатай холбогдоно уу.</value>
+    <comment>_*G1254</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Нэмсэн {0} серийн дугаартай бүтээгдэхүүн агуулахад ирэхээр хүлээгдэж байна.</value>
+    <comment>_*G1250</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Уучлаарай! Та захиалга хийх боломжгүй байна. Солонгосын веб сайтнаас зөвхөн Солонгос Гишүүд захиалга хийх боломжтой.</value>
+    <comment>_*G1246</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>{0} серийн дугаараар захиалга хийх боломжгүй.</value>
+    <comment>_*G1244</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Уучлаарай, Та захиалгадаа бүтээгдэхүүн нэмвэл таны урамшууллын хязгаарлалт хэтрэх тул нэмэх боломжгүй байна.</value>
+    <comment>_*G1247</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Захиалгын Сар өөрчлөгдсөн байна!)</value>
+    <comment>_*G1249</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Системын алдаа.</value>
+    <comment>_*G1248</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Очиж Авах байршлаа сонгоно уу</value>
+    <comment>_*G1232</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Нэр оруулна уу.</value>
+    <comment>_*G1218</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Дотуур дугаар оруулна уу.</value>
+    <comment>_*G1217</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Овог оруулна уу.</value>
+    <comment>_*G1219</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Утасны Дугаар оруулна уу.</value>
+    <comment>_*G1221</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Шаардлагатай хэсгийг бөглөнө үү.</value>
+    <comment>_*G1220</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Хот оруулна уу.</value>
+    <comment>_*G1216</comment>
+  </data>
+  <data name="DisplayCCMessage" xml:space="preserve">
+    <value>Файлд Таны хүчин төгөлдөр картны мэдээлэл байхгүй байна.</value>
+    <comment>_*G3327</comment>
+  </data>
+  <data name="DisplayCCLink" xml:space="preserve">
+    <value>Энд дарж шинэ кредит картын мэдээллийг оруулах эсвэл байгаа картны мэдээллээ засварлана уу</value>
+    <comment>_*G3326</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclinedForMultiplecards" xml:space="preserve">
+    <value>Захиалгын төлбөр төлөхөд ашигласан Таны нэг эсвэл түүнээс дээш тооны картууд хүлээн зөвшөөрөгдөөгүй байна. Herbalife хүлээн зөвшөөрөгдсөн шилжүүлгийг хүчингүй болгох болсон тул төлбөр таны данс руу 5 ажлын өдөрт эргэн орох болно.</value>
+    <comment>_*G3328</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Бүсийн код оруулна уу.</value>
+    <comment>_*G1215</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Захиалгаа дуусгахаас өмнө хаана очих авах хаягаа тэмдэглэж авна уу.</value>
+    <comment>_*G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Байршил сонгоно уу.</value>
+    <comment>_*G1229</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Захиалгын Төрөл сонгоно уу.</value>
+    <comment>_*G1231</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Хүргэлтийн цаг сонгоно уу</value>
+    <comment>_*G1230</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Та хамгийн ихдээ {0} картын мэдээллийг хадгалах боломжтойг санана уу. Шинэ картын мэдээллийг хадгалахыг хүсвэл өмнөх картуудаас хасна уу.</value>
+    <comment>_*G1226</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Муж оруулна уу.</value>
+    <comment>_*G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Хаяг оруулна уу.</value>
+    <comment>_*G1223</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Утасны дугаарыг тохирсон форматаар оруулна уу.</value>
+    <comment>_*G1225</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Зип Код оруулна уу.</value>
+    <comment>_*G1224</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн Хураамж {0} -д гарна.</value>
+    <comment>_*G1287</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Та {0}-нд ижил захиалга хийсэн байна. Үргэлжлүүлэхийг хүсч байвал баталгаажуулна уу.</value>
+    <comment>_*G1286</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн Хураамж гарсан байна. Бид Таны худалдан авалтын сагс руу автоматаар нэмэх болно.</value>
+    <comment>_*G1288</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Таны кредит картны хугацаа дууссан байна. Засварлах гэдгийг даран картны хугацааг өөрчилнө үү.</value>
+    <comment>_*G1290</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн Хураамж гарсан байна. Таны худалдан авалтын сагс руу нэмэгдсэн.</value>
+    <comment>_*G1289</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Цааш үргэлжлүүлэхийн тулд Та хүргэлт эсвэл очиж авах сонголтыг хийнэ үү.</value>
+    <comment>_*G1285</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Та захиалга хийлгүйгээр бүтээгдэхүүнийг харах сонголт хийсэн байна. Та бүтээгдэхүүнийг сагсанд хийх боломжгүй болно.</value>
+    <comment>_*G1281</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Та WALDOS -с очиж авах гэсэн сонголтыг хийсэн байна. Захиалгын бүтээгдэхүүн хязгаарлалттай байх болно.</value>
+    <comment>_*G1280</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Herbalife-ын Гэр Бүлийн Санг сагсандаа амжилттай нэмлээ.</value>
+    <comment>_*G1282</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Сагсан дахь бүтээгдэхүүнээ солихын тулд та кредит картуудын аль нэгийг устгах хэрэгтэй</value>
+    <comment>_*G1284</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Та өөрийн Жил бүрийн Гишүүнчлэлийн хураамжуу хамгийн эрдтээ 90 хоногийн өмнө л урдчилан төлөх боломжтой</value>
+    <comment>_*G1283</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Таны кредит картны хугацаа дууссан байна. Та Мэдээллийн Албатай холбогдоно уу.</value>
+    <comment>_*G1291</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Хүргэлтийн аргын сонгоно уу.</value>
+    <comment>_*G1299</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>{0} серийн дугаар буруу байна.</value>
+    <comment>_*G1298</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Таны худалдан авалтын хязгаарлалт хэтэрсэн тул та захиалгын тооцоо хийж болохгүй.</value>
+    <comment>_*G1302</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Жижиг сагснаас захиалгын төрлийг сонгоно уу</value>
+    <comment>_*G1301</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Дүүргээ бичнэ үү.</value>
+    <comment>_*G1297</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Таны хүсэлтийг хүлээн авах боломжгүй байна. Мэдээллийн Албатай 77008891 дугаараар холбогдоно уу.</value>
+    <comment>_*G1293</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Таны хүсэлтийг хүлээн авах боломжгүй байна. Мэдээллийн Албатай 77008891 дугаараар холбогдоно уу.</value>
+    <comment>_*G1292</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Энэ сагсан дахь өөрчлөлт хийгдэхээс өмнө таны захиалга хийгдсэн байна. Таны захиалгын дугаар {0}. Та энэ захиалгын статусаа Монголын цагаар Даваагаас Баасан гарагуудад 10.30-18.30 цагийн хооронд, Бямба гарагт 11:00-14:30 цагийн хооронд  77008896 дугаараар Захиалгын Албатай холбогдон эсвэл энд даран тодруулж болно. (Таны захиалгын мэдээлэл 1 цагийн дараа харагдана гэдгийг санаарай. &lt;br&gt;Та шинэ захиалга хийхээр бол сагсандаа бүтээгдэхүүнээ нэмээрэй.)</value>
+    <comment>_*G1294</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Таны хүргэлтийн мэдээлэл хүчингүй болсон байна. Худалдан авалтын сагс цэвэрлэгдсэн.</value>
+    <comment>_*G1296</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Таны төлөх ёстой Жил бүрийн Гишүүнчлэлийн Хураамж сагсанд байсаар байна.</value>
+    <comment>_*G1295</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Энэ картнаас төлбөр хийгдэх боломжгүй байна.</value>
+    <comment>_*G1263</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Энэ захиалга таны худалдан авалтын хязгаараас хэтэрч байна. Та {0} онооны л захиалга хийж болно. Захиалгаа засварлан цааш үргэлжлүүлнэ үү.</value>
+    <comment>_*G1262</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today сэтгүүл сагсанд нэмэгдлээ.</value>
+    <comment>_*G1264</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Таны захиалгыг дуусгах боломжгүй байна. 77008891 дугаараар Мэдээллийн Албатай холбогдон 05 кодын алдааг хэлнэ үү.</value>
+    <comment>_*G1266</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Таны захиалгыг дуусгах боломжгүй байна. 77008891 дугаараар Мэдээллийн Албатай холбогдон 01 кодын алдааг хэлнэ үү.</value>
+    <comment>_*G1265</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Мэдээллийн санд энэ хаяг бүртгэгдсэн байна.</value>
+    <comment>_*G1261</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Захиалгад бүтээгдэхүүн байхгүй байна.</value>
+    <comment>_*G1257</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Хүчин төгөлдөр бус зип код байна.</value>
+    <comment>_*G1256</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>{0} -г авахад хангалттай нөөц байхгүй байна. Боломжит хэмжээ - {1}.</value>
+    <comment>_*G1258</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Оноог тооцооллоход бүтээгдэхүүн сонгогдоогүй байна.</value>
+    <comment>_*G1260</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Захиалгад нэмэх бүтээгдэхүүн сонгогдоогүй байна.</value>
+    <comment>_*G1259</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Таны захиалгыг дуусгах боломжгүй байна. Хаягаа шалгаад дахин оролдоно уу. Хэрэв дахин алдаа гарвал Мэдээллийн Албатай холбогдоно уу.</value>
+    <comment>_*G1267</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Та энэ захиалгын сарыг {0} болгож өөрчиллөө. Энэ сонголттойгоор цааш үргэлжлүүлэхийг хүсэж байна уу?</value>
+    <comment>_*G1276</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Таны сагсанд агуулахад ирэхээр хүлээгдэж буй бүтээгдэхүүн байгаа ба Та хүргэлтийн аргаа Очиж Авах гэдгээр сонговол захиалгаас устгагдах болно. Та үргэлжлүүлэх үү? ("Тийм" эсвэл "Үгүй")</value>
+    <comment>_*G1275</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Таны сагсанд арга хэмжээний тасалбар байна. Та сагсаа хоослох уу?</value>
+    <comment>_*G1277</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Та {0} -г 2 сарын өдрөөр сонголоо. Энэ зөв үү?</value>
+    <comment>_*G1279</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Таны худалдан авалтын сагсанд бүтээгдэхүүн(үүд) байна. Арга хэмжээний тасалбар авахдаа сагсаа хоослох уу?</value>
+    <comment>_*G1278</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Сагсандаа худалдан авах бүтээгдэхүүнгүйгээр {0} хуудас руу орох боломжгүй.</value>
+    <comment>_*G1274</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Таны сагсанд арга хэмжээний тасалбар байна. Та сагсаа хоослох уу?</value>
+    <comment>_*G1269</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Уучлаарай. Валютыг хөрвүүлэх боломжгүй байна. 77008891 дугаараар Мэдээллийн Албатай холбогдоно уу.</value>
+    <comment>_*G1268</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Та өөрийн үндсэн картаа устгах гэж байна. Энэ картын мэдээллийг устгахаас өмнө өөр картыг үндсэн картаар сонгоно уу.</value>
+    <comment>_*G1270</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Үүнийг Та сагсанд нэмэх боломжгүй.</value>
+    <comment>_*G1273</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Хэд хэдэн асуудлын улмаас та энэ картыг одоо ашиглаж болохгүй.</value>
+    <comment>_*G1271</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Бусад бүтээгдэхүүнүүдийг захиалгад нэмэхээс өмнө жил бүрийн гишүүнчлэлийн хураамжийн төлбөрөө гүйцээнэ үү.</value>
+    <comment>_*G1194</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Картны мэдээллээ шалгана уу.</value>
+    <comment>_*G1192</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Арга хэмжээний тасалбар худалдаж авахаас өмнө жил бүрийн гишүүнчлэлийн хураамжийн төлбөрөө гүйцээнэ үү.</value>
+    <comment>_*G1195</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>{0} серийн дугаарын тоо хэмжээг оруулна уу.</value>
+    <comment>_*G1197</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Тоо оруулна уу.</value>
+    <comment>_*G1196</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Онлайн захиалга хийх боломжгүй.</value>
+    <comment>_*G1188</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Онлайн захиалга хийх боломжгүй.</value>
+    <comment>_*G1187</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Зөвхөн бүтээгдэхүүнүүд Жил бүрийн гишүүнчлэлийн хураамж бүхий захиалгатай хамт хийгдэж болно.</value>
+    <comment>_*G1189</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>0-оос их дүн оруулна уу.</value>
+    <comment>_*G1191</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Төлбөрийн нийт дүн захиалгын нийт дүнтэй тохирохгүй байна.</value>
+    <comment>_*G1190</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Төлбөрийн мэдээлэл оруулна уу.</value>
+    <comment>_*G1204</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>И-мэйл хаяг оруулна уу.</value>
+    <comment>_*G1203</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Хүргэлтийн мэдээлэл оруулна уу.</value>
+    <comment>_*G2351</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Хүчин төгөлдөр хот оруулна уу.</value>
+    <comment>_*G1199</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Очиж авах онцгой байршил оруулна уу.</value>
+    <comment>_*G1198</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Хаягаа баталгаажуулах шаардлагатай.</value>
+    <comment>_*G2070</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Хандивын хэмжээгээ заана уу /0-с бусад/.</value>
+    <comment>_*G1202</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Хүчин төгөлдөр нэр оруулна уу.</value>
+    <comment>_*G1200</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Мэдээллийн форматын алдаа гарлаа. Зөв мэдээлэл оруулна уу.</value>
+    <comment>_*G1173</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Картын баталгаажилт амжилтгүй байна. Картаа дахин шалгана уу.</value>
+    <comment>_*G1172</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Серийн дугаар давхардсан байна. Дахин оруулна уу.</value>
+    <comment>_*G1174</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Арга хэмжээний тасалбарыг энэ сайтнаас авч болохгүй.</value>
+    <comment>_*G1176</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Арга хэмжээний тасалбарыг захиалахад захиалга бүрт {0} -с хэтрэх ёсгүй.</value>
+    <comment>_*G1175</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Жил бүрийн Гишүүнчлэлийн Хураамжын серийн дугаарыг сагснаас хасах боломжгүй</value>
+    <comment>_*G1168</comment>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Гишүүнчлэлийн хураамж Серийн дугаараар сагсанд нэмэгдэх боломжгүй</value>
+    <comment>_*G1167</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Та захиалгаа цуцлахдаа итгэлтэй байна уу? "ОК" товчыг дарснаар таны захиалахаар оруулсан бүх бүтээгдэхүүн сагснаас хасагдах болно.</value>
+    <comment>_*G1169</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Агуулахад ирэхээр хүлээгдэж буй бүтээгдэхүүнийг Жил бүрийн Гишүүнчлэлийн Хураамж төлөх захиалгатай хийж болохгүй</value>
+    <comment>_*G1171</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Жил бүрийн Гишүүнчлэлийн Хураамжыг төлөх захиалгад бүтээгдэхүүн орохгүй тул бүх бүтээгдэхүүн бус зүйлсийг хассан болно.</value>
+    <comment>_*G1170</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>{0} -ий нөөц одоогоор байхгүй байна. Таны оруулсан тоо ширхэгийг 0 болгосон.</value>
+    <comment>_*G1183</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:{0} жилийн Жил бүрийн Гишүүнчлэлийн Хураамж төлөх дутуу байгаа ба захиалга хийхээс өмнө төлөх шаардлагатай. Та Жил бүрийн Гишүүнчлэлийн Хураамжаа төлөхийн тулд "Хувийн" гэсэн захиалгын төрлийг сонгоно уу.</value>
+    <comment>_*G1182</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Today сэтгүүлийг авах хязгаарлалт</value>
+    <comment>_*G1184</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Ийм нэр ашиглагдсан байна. Өөр нэр оруулна уу.</value>
+    <comment>_*G1186</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Сэтгүүлээс хамгийн ихдээ {0}-г авч болно.</value>
+    <comment>_*G1185</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>{0} -г захиалахад 1 эсвэл түүнээс илүү бүтээгдэхүүн агуулахад ирэхээр хүлээгдэж байж болно.</value>
+    <comment>_*G1178</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>{0} -г захиалахад зөвхөн {1} ширхэгийг авах боломжтой. Захиалах бүтээгдэхүүний тоо ширхэгийг засварлана уу.</value>
+    <comment>_*G1177</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>{0} серийн дугаартай бүтээгдэхүүн захиалахад {1} ширхэгээс хэтрүүлж болохгүй.</value>
+    <comment>_*G1179</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Зип код буруу байна.</value>
+    <comment>_*G1181</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Уучлаарай, та кредит карт бүртгүүлээгүй байна. 1800 1101 дугаараар Мэдээллийн Албатай холбогдоно уу.</value>
+    <comment>_*G1180</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Курьерын нэр оруулна уу.</value>
+    <comment>_*G2352</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>SMS хүлээн авах гар утасны дугаар оруулна уу.</value>
+    <comment>_*G3286</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Ийм товч нэр өмнө нь бүртгэгдсэн байна. Шинэ товч нэр оруулна уу</value>
+    <comment>_*G3290</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Бүх шаардлагатай хүргэлтийн мэдээллийг оруулна уу.</value>
+    <comment>_*G1211</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Дотуур дугаарыг зөв форматаар оруулна уу.</value>
+    <comment>_*G1213</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Бүсийн кодыг тохирсон форматаар оруулна уу.</value>
+    <comment>_*G1212</comment>
+  </data>
+  <data name="InvalidSMSNumber" xml:space="preserve">
+    <value>SMS хүлээн авах гар утасны дугаарыг зөв форматаар оруулна уу.</value>
+    <comment>_*G3285</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>Уучлаарай таны хүсэлтийг биелүүлэх боломжгүй байгаа тул та Мэдээллийн албатай 77008891 утсаар холбогдоно уу.
+   Чухал: "Өөрийн бизнесээ хамгаалах 101"сургалтыг автал таны худалдан авах эрх тань түр хаагдлаа. Та энэ сургалтыг яг одоо авахыг хүсч байвал дараах холбоосоор орно уу:  &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt;</value>
+    <comment>_*G3160</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>"Өөрийн бизнесээ хамгаалах 101"сургалтыг автал таны худалдан авах эрх тань түр хаагдлаа. Та энэ сургалтыг яг одоо авахыг хүсч байвал дараах холбоосоор орно уу: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt;. Та дараагийн 7 өдрийн дотор сургалтаа авахыг хүс байвал Ок дарж Худалдан авалтаа үргэлжлүүлэх эсвэл Цуцлахыг дарна уу.</value>
+    <comment>_*G3158</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Чухал: Өөрийн бизнесээ хамгаалах 101 Сургалт</value>
+    <comment>_*G3159</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Уучлаарай таны картыг нэмж болохгүй байна. Кредит картны дугааргүй товч нэр гэдгээр та дахин оролдож үзнэ үү.</value>
+    <comment>_*G3277</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Алдаа заасны улмаас таны сансан дахь бүтээгдэхүүний үнийн дүн өөрчлөгдсөн байна. Та захиалгаа дахин оруулна уу.</value>
+    <comment>_*G3278</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Нэр оруулна уу.</value>
+    <comment>_*G1214</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Хэдэн удаагийн Жил бүрийн Гишүүнчлэлийн Хураамж төлөхөө оруулна уу.</value>
+    <comment>_*G1206</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Та {0}-нд ижил захиалга хийсэн байна. Үргэлжлүүлэхийг хүсч байвал баталгаажуулна уу.</value>
+    <comment>_*G2635</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>CVV кодыг оруулна уу. (Төлбөрийн картын арын 3 оронтой тоо)</value>
+    <comment>_*G1205</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Бүтээгдэхүүн хүлээн авах огноог сонгоно уу.</value>
+    <comment>_*G2712</comment>
+  </data>
+  <data name="NoProvince" xml:space="preserve">
+    <value>Аймгийг оруулна уу</value>
+    <comment>_*G2869</comment>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Хүчин төгөлдөр өдөр оруулна уу. Бямба болон Ням гарагт очиж авах/хүргэлтийн үйлчилгээ байхгүй.</value>
+    <comment>_*G2845</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Хүчин төгөлдөр овог оруулна уу.</value>
+    <comment>_*G1209</comment>
+  </data>
+  <data name="NoDeliveryOption" xml:space="preserve">
+    <value>Хүндэт Бие даасан Гишүүн. Та мэдээлэл харилцааны албатай холбогдоно уу.</value>
+    <comment>_*G2882</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Хүчин төгөлдөр и-мэйл хаяг оруулна уу.</value>
+    <comment>_*G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Хүчин төгөлдөр өөрийн нэр оруулна уу.</value>
+    <comment>_*G1208</comment>
+  </data>
+  <data name="NoStreet2" xml:space="preserve">
+    <value>Гудамжны хаяг 2-ыг бөглөнө үү.</value>
+    <comment>_G3723</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Таны сүүлийн Гишүүний гэрээг боловсруулахад 12-18 цаг шаардлагатай болж магад. Гэрээг боловсруулсны дараа та захиалга байршуулах боломжтой. Захиалгаа дуусгахын тулд дараа дахин орж шалгана уу.</value>
+    <comment>_GXXXX</comment>
+  </data>
+  <data name="APFFeeDueFuturePopup" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн хураамж {0}-нд гарч байна.  Та ID дугаараа идэвхитэй байлгаж, хөнгөлөлтийн эрх болон баг командаа алдахгүйн тулд хураамжаа хугацаанаас нь хэтрүүлэлгүй төлнө үү.</value>
+  </data>
+  <data name="APFFeeDuePastPopup" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн хураамж {0}-нд гарсан байна.  Та ID дугаараа идэвхитэй байлгаж, хөнгөлөлтийн эрх болон баг командаа алдахгүйн тулд хураамжаа аль болох түргэн төлнө үү.</value>
+  </data>
+  <data name="APFFeeDueTodayPopup" xml:space="preserve">
+    <value>Таны Жил бүрийн Гишүүнчлэлийн хураамж өнөөдөр гарч байна.  Та ID дугаараа идэвхитэй байлгаж, хөнгөлөлтийн эрх болон баг командаа алдахгүйн тулд хураамжаа  төлнө үү.</value>
+  </data>
+  <data name="Pay now" xml:space="preserve">
+    <value>Одоо төлөх</value>
+  </data>
+  <data name="Remind Me Later" xml:space="preserve">
+    <value>Надад дараа нь сануулна уу</value>
+  </data>
+</root>

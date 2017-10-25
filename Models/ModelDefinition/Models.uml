@@ -1,0 +1,1090 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="48dac567-0149-4d48-9d21-85b90424a6c1"
+  name="Models" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="49523b42-b5dc-4503-99d7-0b2754911478">
+      <body>IsPendingTransaction &amp;&amp; gwResponse.Status== ApprovalPending &amp;&amp; canSubmitIfPending</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="247edff6-3921-48fb-a94e-9f0fe75f0fb2"
+          LastKnownName="Decision9"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="2d987f26-7782-4a6c-9dfc-cbf320291182">
+      <body>member == null &amp;&amp; gwResponse.IsApproved &amp;&amp; CanSubmitIfApproved
+</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="c2e8aa9e-8e23-40c3-9dde-cd8e2e5213e7"
+          LastKnownName="Decision6"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="d6be0e60-0e65-4bca-b9f7-9e7db9f6b308"
+        name="ResponseRedirectionLogic"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="cf8309d9-115f-4573-98c9-f626194873fb"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bc5f2a48-22bf-418e-9a4b-9c706a7da993"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="9f579bad-ca1a-4a66-a265-6c1176476ab9"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="9f579bad-ca1a-4a66-a265-6c1176476ab9"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a059baa-9d75-423f-96cd-44dabdb9ac68"
+                guard="IsReturning"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="d6d74cd9-6501-4a66-81da-c184dc507733"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="31f33a2d-4ba8-4a2f-881a-17fb33c7056b"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="2d2aefd0-3897-4e0c-b4db-9dfc3a689d06"
+                  LastKnownName="Join2"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="d6d74cd9-6501-4a66-81da-c184dc507733"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a9d8b754-8497-4d0d-bb0d-cb63bf463709"
+                guard="IsApproved"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5015d9d8-cf79-431b-93a6-f40c6ad700cf"
+                  LastKnownName="Decision21"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bfdaef3d-2817-4121-acb5-6c0bd7d03a33"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="4ef47c64-c7b6-455b-8f32-1abc9d4c2b36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="eb99014f-341d-4367-b5a7-10c67b03dfce"
+            name="session.OrderStatus=Submitted"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2722c2db-a183-4141-8730-e82671a4d6ec"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="5015d9d8-cf79-431b-93a6-f40c6ad700cf"
+            name="Decision21"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dbf4a1bd-9b54-4fb5-bba5-0cabea61c258"
+                guard="CanSubmitIfApproved == false"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eb99014f-341d-4367-b5a7-10c67b03dfce"
+                  LastKnownName="session.OrderStatus=Submitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5eaf22da-6e63-4c35-b412-25bc13bcec5c"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="4ef47c64-c7b6-455b-8f32-1abc9d4c2b36"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="fd6afe7e-5b7a-4781-882a-e99e8a95cfd0"
+            name="Decision11"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="50940787-3049-40e3-88f0-273821b192f6"
+                guard="status==OrderSubmitted"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eb99014f-341d-4367-b5a7-10c67b03dfce"
+                  LastKnownName="session.OrderStatus=Submitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="20f14c79-d57a-438f-91f7-3b196e8d0698"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c208b940-10ee-4220-acd2-c081b70b371b"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <joinNode
+            Id="4ef47c64-c7b6-455b-8f32-1abc9d4c2b36"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="645a9a49-33fe-4c75-9f5c-67433a1fd704"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="fd6afe7e-5b7a-4781-882a-e99e8a95cfd0"
+                  LastKnownName="Decision11"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode
+            Id="c208b940-10ee-4220-acd2-c081b70b371b"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f55c3ad5-1bcc-4709-a0a3-18dabdef0509"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="65fbb9c9-1b06-45a9-9eb5-f6084a4c106f"
+                  LastKnownName="Decision31"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c31702a3-01c2-4dc5-bf98-d13dffa023f9"
+                guard="IsPending"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="36116f74-3f58-4b53-ad92-c7ce3d5eb01d"
+                  LastKnownName="Decision12"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="ba1bba52-a4b9-4bfb-835e-3347566197aa"
+            name="session.OrderStatus=Unknown"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d53ab8fc-cb72-4b93-b3e2-65e490c5edb1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6050972d-1bc4-4007-a4f5-a98b9582d6d1"
+                  LastKnownName="Redirect to Catalog"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6050972d-1bc4-4007-a4f5-a98b9582d6d1"
+            name="Redirect to Catalog"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5d289b30-c4bf-4eed-887b-af8294166298"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="65fbb9c9-1b06-45a9-9eb5-f6084a4c106f"
+            name="Decision31"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ef388e1-5090-4b62-a80b-217e71de8045"
+                guard="IsCancelled"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ba1bba52-a4b9-4bfb-835e-3347566197aa"
+                  LastKnownName="session.OrderStatus=Unknown"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0d0cba1c-4710-4b1b-8def-282695ecec61"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="39b5f45d-f273-4ea0-91fb-ff24aee8dd82"
+                  LastKnownName="Decision311"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="36116f74-3f58-4b53-ad92-c7ce3d5eb01d"
+            name="Decision12"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="50657287-5308-42b0-bc80-81bfca83e684"
+                guard="ShoppingCart not null"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7b7643ee-0cc4-44c5-8b8e-e8ce1e505475"
+                  LastKnownName="CloseCart"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="eb9096e2-d58c-4753-9f29-f0ccc7424e6d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ba1bba52-a4b9-4bfb-835e-3347566197aa"
+                  LastKnownName="session.OrderStatus=Unknown"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="7b7643ee-0cc4-44c5-8b8e-e8ce1e505475"
+            name="CloseCart"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9d729ca8-1e87-4e5d-90b9-893353ccce24"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ba1bba52-a4b9-4bfb-835e-3347566197aa"
+                  LastKnownName="session.OrderStatus=Unknown"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="39b5f45d-f273-4ea0-91fb-ff24aee8dd82"
+            name="Decision311"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f055dabf-3455-4bc3-bb83-e00f309a3a27"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="fcfc9e0e-edd5-4053-86a4-ab61146cfbe8"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7fc188bf-00c5-441c-a324-088a7da78db4"
+                guard="IsApproved"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="2d2aefd0-3897-4e0c-b4db-9dfc3a689d06"
+                  LastKnownName="Join2"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="fcfc9e0e-edd5-4053-86a4-ab61146cfbe8"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8f45e9fb-bfee-475f-b188-fb6bea447c6c"
+                guard="status==Declined"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="630768a4-3d9e-4009-b42a-189ee1fd101c"
+                  LastKnownName="Redirec to Checkout"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7c5e7315-ec66-46d2-836b-79f427df27f5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26db6f6d-31e8-4ff0-8611-70d59c0dfa83"
+                  LastKnownName="session.OrderStatus=OrderSubmitFailed"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="630768a4-3d9e-4009-b42a-189ee1fd101c"
+            name="Redirec to Checkout"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0851c472-c185-4986-b732-60aaf30cd2c2"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="26db6f6d-31e8-4ff0-8611-70d59c0dfa83"
+            name="session.OrderStatus=OrderSubmitFailed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ca45c11c-d0ba-41b4-af3f-cc4369c94646"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="0c9daa6f-64d8-4395-bb17-ce499d744af1"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="937fb0c1-f093-4abb-ade9-847052eddc57"
+                guard="gatewayResponse.status == OrderSubmitted"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eb99014f-341d-4367-b5a7-10c67b03dfce"
+                  LastKnownName="session.OrderStatus=Submitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bd0aa1f3-acca-4a84-b587-0d516f880844"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c2e8aa9e-8e23-40c3-9dde-cd8e2e5213e7"
+                  LastKnownName="Decision6"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <joinNode
+            Id="2d2aefd0-3897-4e0c-b4db-9dfc3a689d06"
+            name="Join2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fd30387e-051d-4c30-a761-50c0f5a93f7f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="0c9daa6f-64d8-4395-bb17-ce499d744af1"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="d7790930-f3cd-4372-ad60-4f7aaa0d1c63"
+            name="SubmitOrder"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72ce67fa-bc50-4530-9c11-a2a349479cbe"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c2e8aa9e-8e23-40c3-9dde-cd8e2e5213e7"
+            name="Decision6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7b79f82a-9a2d-45b3-a1d7-101e73c880d9"
+                guard="YES"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7790930-f3cd-4372-ad60-4f7aaa0d1c63"
+                  LastKnownName="SubmitOrder"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="885ce561-4494-4cae-b36d-f9c195573a90"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2bf3a1d9-775c-4078-b689-91ca1c1ceda3"
+                  LastKnownName="Decision7"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="2bf3a1d9-775c-4078-b689-91ca1c1ceda3"
+            name="Decision7"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="17305eb2-7d56-4c3e-af10-5ac89540495e"
+                guard="OrderStatus==Unknown"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="3f0cbfe6-1ffc-4858-b5c2-dd1d201b77ab"
+                  LastKnownName="Decision8"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="1bd341da-45ba-4bf6-b7ce-e70d40d6c4c3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="66cfd6f9-47d6-475b-b0cc-61a60ffb4767"
+                  LastKnownName="Set label to PaymentGatewayOrderSubmitFailed"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="3f0cbfe6-1ffc-4858-b5c2-dd1d201b77ab"
+            name="Decision8"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06fe6dba-e81d-4769-8873-cc57cf97f406"
+                guard="gatewayResponse.IsApproved"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="135e022b-d383-48d7-92e1-90874d7d8436"
+                  LastKnownName="session.OrderStatus=BeingSubmitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="963e8a79-1e9f-49e3-be99-5fb260792719"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="247edff6-3921-48fb-a94e-9f0fe75f0fb2"
+                  LastKnownName="Decision9"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="135e022b-d383-48d7-92e1-90874d7d8436"
+            name="session.OrderStatus=BeingSubmitted"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="60fd93ee-e7b7-46d7-85cc-b735d3982973"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d90c72ee-a459-4099-9659-743386fa4271"
+                  LastKnownName="Submit async"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d90c72ee-a459-4099-9659-743386fa4271"
+            name="Submit async"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8cfe94c4-ddc7-4c8e-9f41-2f77d3fdc960"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="247edff6-3921-48fb-a94e-9f0fe75f0fb2"
+            name="Decision9"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ba28c116-3786-42d0-84f5-fa75f9d5ee77"
+                guard="YES"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d90c72ee-a459-4099-9659-743386fa4271"
+                  LastKnownName="Submit async"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="dc06d438-ef2b-47bb-86c4-011562b76d0e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="630768a4-3d9e-4009-b42a-189ee1fd101c"
+                  LastKnownName="Redirec to Checkout"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="66cfd6f9-47d6-475b-b0cc-61a60ffb4767"
+            name="Set label to PaymentGatewayOrderSubmitFailed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a8ce35ff-7c67-4591-a20e-53736dc0a02b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="f37f5a6d-4e1a-4d52-97ba-8a074f761210"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="a6947186-6684-4558-a3b3-9a8a20b96875"
+        name="NewResponseRedirectionLogic"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="9b1fa4a2-7ec7-4804-b342-487e90d2d2e3"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2f2e85d5-1395-44d0-bbfc-85f968bf4ae3"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="b43c0939-b243-4676-9ec3-24c9a81313a1"
+                  LastKnownName="Decision6"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <decisionNode
+            Id="ffd9349f-cfaa-45fd-9e96-23256511809c"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="08cf5de3-4a8f-49a7-bd5c-0e6a761a18d1"
+                guard="IsApproved"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c3a9a2bc-af65-4b20-8fa8-f3ccd61d34f3"
+                  LastKnownName="Decision21"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3b4fc7a8-5cc9-49a2-836f-0c4018d8ba8a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="e5672225-8d3e-43c4-a9f4-ea3ca849d918"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="3507f7a5-332c-486d-88ce-c02a39d5a2c8"
+            name="session.OrderStatus=Submitted"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3d6d316e-138d-45c6-90eb-f3b546061a5f"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c3a9a2bc-af65-4b20-8fa8-f3ccd61d34f3"
+            name="Decision21"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="db46d6b2-dabd-4498-a694-654c2834c8dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3507f7a5-332c-486d-88ce-c02a39d5a2c8"
+                  LastKnownName="session.OrderStatus=Submitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c8fcdf9e-429a-4d36-b611-01bc7410c02d"
+                guard="CanSubmitIfApproved"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="7f51d7e6-5520-4c80-a0e1-3a4322db2b74"
+                  LastKnownName="Decision5"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="e5672225-8d3e-43c4-a9f4-ea3ca849d918"
+            name="Decision3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="36228831-9255-4525-a42f-b4571bd980f4"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c521e4f2-9ab3-4227-8394-3a1c440a287e"
+                  LastKnownName="Decision31"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0995cf9d-4c69-443f-8e11-54928c9d4559"
+                guard="IsPending"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a64c3a19-3649-46eb-aec7-bb3f683eb718"
+                  LastKnownName="Decision12"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="163b6c02-76de-4455-90cc-afd13baaac3c"
+            name="session.OrderStatus=Unknown"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3e1427ee-e7cf-469e-89c8-107eb2669af2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6b3401d1-ce8d-440e-87a2-2f8407d7ff50"
+                  LastKnownName="Redirect to Catalog"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6b3401d1-ce8d-440e-87a2-2f8407d7ff50"
+            name="Redirect to Catalog"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="991182e7-1efa-4d03-af74-33b21c766c84"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c521e4f2-9ab3-4227-8394-3a1c440a287e"
+            name="Decision31"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="75afe996-62fb-4e82-b6e3-c7dbbb756a80"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="92652af2-9855-4720-ae15-249fc368be3f"
+                  LastKnownName="Decision4"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8c29ba51-a43b-4fc5-aec0-a57b956b2717"
+                guard="isCancelled"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="736d25db-2bd7-47b1-8308-63b1ae9e1116"
+                  LastKnownName="session.OrderStatus=Unknown"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="a64c3a19-3649-46eb-aec7-bb3f683eb718"
+            name="Decision12"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2d68120f-2249-4b70-8e71-cff676ab3859"
+                guard="ShoppingCart not null"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c149aa32-2ce5-4804-9cab-499897ce87c7"
+                  LastKnownName="CloseCart"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="eda5bc1c-1071-4b13-bca8-5ac40a3e050d"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="28b4d814-c25a-4b39-964f-6dc299729448"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="c149aa32-2ce5-4804-9cab-499897ce87c7"
+            name="CloseCart"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a46aaa00-8b68-437a-832e-3d702ac96b45"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="28b4d814-c25a-4b39-964f-6dc299729448"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="92652af2-9855-4720-ae15-249fc368be3f"
+            name="Decision4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3a3eae19-98bb-433f-9c58-d5c69441ba65"
+                guard="status==Declined"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21c5ad20-468b-4387-ad57-4ba9bb510d56"
+                  LastKnownName="Redirect to Checkout"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="6c5fad1c-8675-4b8b-b7b0-31fcfd957e45"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="416a07fa-a7b9-419a-9995-1e7f0238c8f9"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="21c5ad20-468b-4387-ad57-4ba9bb510d56"
+            name="Redirect to Checkout"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dcb5f366-7cf4-468d-83f0-b1516bad4806"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="08567dd3-f57f-4654-a59e-45cddf83fd68"
+            name="session.OrderStatus=OrderSubmitFailed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bec5f3ea-1d21-4c3e-884f-4e6b2938e328"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="49dfdc1c-2b24-40e9-8744-d561aa298b6c"
+            name="Decision7"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="20a09cdc-f880-43b4-9fba-70504415ce2c"
+                guard="OrderStatus==Unknown"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7572a437-010d-4dc5-b42b-536822527bb5"
+                  LastKnownName="session.OrderStatus=BeingSubmitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="df106a65-2703-4188-a38d-9b9eaff3556c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="7572a437-010d-4dc5-b42b-536822527bb5"
+            name="session.OrderStatus=BeingSubmitted"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cd60d9c5-228d-424a-9fb2-6208f5e1d7dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ab61dd4a-4c7b-4f78-a1a0-93af480794b5"
+                  LastKnownName="Submit async"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ab61dd4a-4c7b-4f78-a1a0-93af480794b5"
+            name="Submit async"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7ca34f9c-a733-402e-9283-7694b2f5d102"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="466a05b5-bb82-4418-a755-c679400d1f52"
+            name="Decision9"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5118b0a3-fa6e-4115-a9ff-5ec3006d7609"
+                guard="status== ApprovalPending &amp;&amp; canSubmitIfPending"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ab61dd4a-4c7b-4f78-a1a0-93af480794b5"
+                  LastKnownName="Submit async"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="a62f0cb2-763c-4601-a0b9-b0478b0668b9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="163b6c02-76de-4455-90cc-afd13baaac3c"
+                  LastKnownName="session.OrderStatus=Unknown"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="7f51d7e6-5520-4c80-a0e1-3a4322db2b74"
+            name="Decision5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a09f6dc8-be64-4500-8298-faed9a1b1a1d"
+                guard="member == null "
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a24fcac-a85c-4821-bf1d-384d6f8bb258"
+                  LastKnownName="SubmitOrder"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2bc11486-0afe-4714-b0f0-fce2c9be50a5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="49dfdc1c-2b24-40e9-8744-d561aa298b6c"
+                  LastKnownName="Decision7"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="9a24fcac-a85c-4821-bf1d-384d6f8bb258"
+            name="SubmitOrder"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d943c7fe-2916-4c02-9038-935daf416849"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="28b4d814-c25a-4b39-964f-6dc299729448"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="19abbc62-238b-45ed-9dfb-e6e9a4ac8d60"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="466a05b5-bb82-4418-a755-c679400d1f52"
+                  LastKnownName="Decision9"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <decisionNode
+            Id="b43c0939-b243-4676-9ec3-24c9a81313a1"
+            name="Decision6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a10858e7-f537-40e1-a036-9919ec17da60"
+                guard="status==OrderSubmitted"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3507f7a5-332c-486d-88ce-c02a39d5a2c8"
+                  LastKnownName="session.OrderStatus=Submitted"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="18293c6e-d321-4433-8296-c078f62188e8"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ffd9349f-cfaa-45fd-9e96-23256511809c"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="736d25db-2bd7-47b1-8308-63b1ae9e1116"
+            name="session.OrderStatus=Unknown"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ae5374e8-362b-4543-b10d-67887bf62383"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21c5ad20-468b-4387-ad57-4ba9bb510d56"
+                  LastKnownName="Redirect to Checkout"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="416a07fa-a7b9-419a-9995-1e7f0238c8f9"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d1d8cc30-7c69-4c53-afe3-0526002a7b02"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5c2accbb-9cd6-4eb6-b65d-bcb80e9e0551"
+                  LastKnownName="Set label to PaymentGatewayOrderSubmitFailed"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0c4adcdf-4351-4e69-bb49-c20f3feb60af"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="08567dd3-f57f-4654-a59e-45cddf83fd68"
+                  LastKnownName="session.OrderStatus=OrderSubmitFailed"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="5c2accbb-9cd6-4eb6-b65d-bcb80e9e0551"
+            name="Set label to PaymentGatewayOrderSubmitFailed"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="261a88e0-45d4-444f-b28d-944a17d573a0"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9f6c29ca-1b9b-4177-bec4-6b9faf1b1416"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

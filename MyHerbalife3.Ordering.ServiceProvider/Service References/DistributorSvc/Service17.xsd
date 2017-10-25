@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/05/01/HL.Distributor.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/05/01/HL.Distributor.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="TenCustomerFormData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TenCustomerFormData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RetailMonth" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RetailValue" type="xs:double" />
+          <xs:element minOccurs="0" name="Status" type="tns:TenCustomerFormStatusType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TenCustomerFormData_V01" nillable="true" type="tns:TenCustomerFormData_V01" />
+  <xs:complexType name="TenCustomerFormData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TenCustomerFormData" nillable="true" type="tns:TenCustomerFormData" />
+  <xs:simpleType name="TenCustomerFormStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Retired" />
+      <xs:enumeration value="Exempt" />
+      <xs:enumeration value="NotAllowed" />
+      <xs:enumeration value="SubmittedPreviousMonth" />
+      <xs:enumeration value="SubmittedCurrentMonth" />
+      <xs:enumeration value="NotAllowedSubmitted" />
+      <xs:enumeration value="NotAllowedNotSubmitted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TenCustomerFormStatusType" nillable="true" type="tns:TenCustomerFormStatusType" />
+</xs:schema>

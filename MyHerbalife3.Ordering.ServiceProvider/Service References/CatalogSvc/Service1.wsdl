@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd16" namespace="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2010/09/20/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2008/06/23/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd10" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2010/09/20/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd14" namespace="http://herbalife.com/2010/09/20/HL.ProductInfoCatalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICatalogInterface_GetDiscontinuedProductDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscontinuedProductDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetDiscontinuedProductDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscontinuedProductDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetKoreanProductDescriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetKoreanProductDescriptions" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetKoreanProductDescriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetKoreanProductDescriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalog" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalogItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogItem" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalogItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalogItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogItems" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCatalogItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetDiscontinuedSku_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscontinuedSku" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetDiscontinuedSku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDiscontinuedSkuResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetInternetShoppingCarts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInternetShoppingCarts" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetInternetShoppingCarts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInternetShoppingCartsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCartItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCartItem" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCartItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCartItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_DeleteShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_DeleteShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CloseShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CloseShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetWebClientAuthKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebClientAuthKey" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetWebClientAuthKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebClientAuthKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetAPFDue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAPFDue" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetAPFDue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAPFDueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateAPFDue_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAPFDue" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateAPFDue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAPFDueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetDualMonthDates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDualMonthDates" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetDualMonthDates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDualMonthDatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetEOMDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEOMDate" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetEOMDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEOMDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetInventory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInventory" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetInventory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_SearchProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchProducts" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_SearchProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetTopSellers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopSellers" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetTopSellers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopSellersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetEligibleForPromo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEligibleForPromo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetEligibleForPromo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEligibleForPromoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateEligibleForPromo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEligibleForPromo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_UpdateEligibleForPromo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEligibleForPromoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetExemptedDistributors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExemptedDistributors" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetExemptedDistributors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExemptedDistributorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedCatalog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedCatalog" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedCatalog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedCatalogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedInventory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedInventory" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedInventory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedInventoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetAnnouncementInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncementInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetAnnouncementInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncementInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyMemberInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyMemberInvoice" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_CopyMemberInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyMemberInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrders" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_SaveMobileOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMobileOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_SaveMobileOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMobileOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertMobileOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMobileOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertMobileOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertMobileOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetMobileOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMobileOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_DeleteMobileOrderDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMobileOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_DeleteMobileOrderDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMobileOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCartItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCartItems" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_InsertShoppingCartItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertShoppingCartItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCartUpdatedDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartUpdatedDate" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCartUpdatedDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCartUpdatedDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_RefreshCatalogCache_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshCatalogCache" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_RefreshCatalogCache_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefreshCatalogCacheResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCacheReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCacheReference" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetCacheReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCacheReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GenerateCachedProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCachedProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetSlowMovingSkuInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSlowMovingSkuInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetSlowMovingSkuInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSlowMovingSkuInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetSizeCharts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSizeCharts" />
+  </wsdl:message>
+  <wsdl:message name="ICatalogInterface_GetSizeCharts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSizeChartsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICatalogInterface">
+    <wsdl:operation name="GetDiscontinuedProductDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedProductDetails" message="tns:ICatalogInterface_GetDiscontinuedProductDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedProductDetailsResponse" message="tns:ICatalogInterface_GetDiscontinuedProductDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetKoreanProductDescriptions">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetKoreanProductDescriptions" message="tns:ICatalogInterface_GetKoreanProductDescriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetKoreanProductDescriptionsResponse" message="tns:ICatalogInterface_GetKoreanProductDescriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalog">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalog" message="tns:ICatalogInterface_GetCatalog_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogResponse" message="tns:ICatalogInterface_GetCatalog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItem">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItem" message="tns:ICatalogInterface_GetCatalogItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItemResponse" message="tns:ICatalogInterface_GetCatalogItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItems">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItems" message="tns:ICatalogInterface_GetCatalogItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItemsResponse" message="tns:ICatalogInterface_GetCatalogItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetShoppingCart" message="tns:ICatalogInterface_GetShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetShoppingCartResponse" message="tns:ICatalogInterface_GetShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyShoppingCart" message="tns:ICatalogInterface_CopyShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyShoppingCartResponse" message="tns:ICatalogInterface_CopyShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscontinuedSku">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedSku" message="tns:ICatalogInterface_GetDiscontinuedSku_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedSkuResponse" message="tns:ICatalogInterface_GetDiscontinuedSku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInternetShoppingCarts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInternetShoppingCarts" message="tns:ICatalogInterface_GetInternetShoppingCarts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInternetShoppingCartsResponse" message="tns:ICatalogInterface_GetInternetShoppingCarts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCart" message="tns:ICatalogInterface_InsertShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartResponse" message="tns:ICatalogInterface_InsertShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateShoppingCart" message="tns:ICatalogInterface_UpdateShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateShoppingCartResponse" message="tns:ICatalogInterface_UpdateShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItem">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItem" message="tns:ICatalogInterface_InsertShoppingCartItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItemResponse" message="tns:ICatalogInterface_InsertShoppingCartItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteShoppingCart" message="tns:ICatalogInterface_DeleteShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteShoppingCartResponse" message="tns:ICatalogInterface_DeleteShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CloseShoppingCart" message="tns:ICatalogInterface_CloseShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CloseShoppingCartResponse" message="tns:ICatalogInterface_CloseShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebClientAuthKey">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetWebClientAuthKey" message="tns:ICatalogInterface_GetWebClientAuthKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetWebClientAuthKeyResponse" message="tns:ICatalogInterface_GetWebClientAuthKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAPFDue">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAPFDue" message="tns:ICatalogInterface_GetAPFDue_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAPFDueResponse" message="tns:ICatalogInterface_GetAPFDue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAPFDue">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateAPFDue" message="tns:ICatalogInterface_UpdateAPFDue_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateAPFDueResponse" message="tns:ICatalogInterface_UpdateAPFDue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDualMonthDates">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDualMonthDates" message="tns:ICatalogInterface_GetDualMonthDates_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDualMonthDatesResponse" message="tns:ICatalogInterface_GetDualMonthDates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEOMDate">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEOMDate" message="tns:ICatalogInterface_GetEOMDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEOMDateResponse" message="tns:ICatalogInterface_GetEOMDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInventory">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInventory" message="tns:ICatalogInterface_GetInventory_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInventoryResponse" message="tns:ICatalogInterface_GetInventory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetProductInfo" message="tns:ICatalogInterface_GetProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetProductInfoResponse" message="tns:ICatalogInterface_GetProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchProducts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SearchProducts" message="tns:ICatalogInterface_SearchProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SearchProductsResponse" message="tns:ICatalogInterface_SearchProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyInvoice">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyInvoice" message="tns:ICatalogInterface_CopyInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyInvoiceResponse" message="tns:ICatalogInterface_CopyInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopSellers">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetTopSellers" message="tns:ICatalogInterface_GetTopSellers_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetTopSellersResponse" message="tns:ICatalogInterface_GetTopSellers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibleForPromo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEligibleForPromo" message="tns:ICatalogInterface_GetEligibleForPromo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEligibleForPromoResponse" message="tns:ICatalogInterface_GetEligibleForPromo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEligibleForPromo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateEligibleForPromo" message="tns:ICatalogInterface_UpdateEligibleForPromo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateEligibleForPromoResponse" message="tns:ICatalogInterface_UpdateEligibleForPromo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExemptedDistributors">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetExemptedDistributors" message="tns:ICatalogInterface_GetExemptedDistributors_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetExemptedDistributorsResponse" message="tns:ICatalogInterface_GetExemptedDistributors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedCatalog">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedCatalog" message="tns:ICatalogInterface_GenerateCachedCatalog_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedCatalogResponse" message="tns:ICatalogInterface_GenerateCachedCatalog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedInventory">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedInventory" message="tns:ICatalogInterface_GenerateCachedInventory_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedInventoryResponse" message="tns:ICatalogInterface_GenerateCachedInventory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAnnouncementInfo" message="tns:ICatalogInterface_GetAnnouncementInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAnnouncementInfoResponse" message="tns:ICatalogInterface_GetAnnouncementInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyMemberInvoice">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyMemberInvoice" message="tns:ICatalogInterface_CopyMemberInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyMemberInvoiceResponse" message="tns:ICatalogInterface_CopyMemberInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrder" message="tns:ICatalogInterface_GetMobileOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrderResponse" message="tns:ICatalogInterface_GetMobileOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrders">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrders" message="tns:ICatalogInterface_GetMobileOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrdersResponse" message="tns:ICatalogInterface_GetMobileOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMobileOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SaveMobileOrder" message="tns:ICatalogInterface_SaveMobileOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SaveMobileOrderResponse" message="tns:ICatalogInterface_SaveMobileOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertMobileOrderDetail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertMobileOrderDetail" message="tns:ICatalogInterface_InsertMobileOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertMobileOrderDetailResponse" message="tns:ICatalogInterface_InsertMobileOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrderDetail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrderDetail" message="tns:ICatalogInterface_GetMobileOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrderDetailResponse" message="tns:ICatalogInterface_GetMobileOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMobileOrderDetail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteMobileOrderDetail" message="tns:ICatalogInterface_DeleteMobileOrderDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteMobileOrderDetailResponse" message="tns:ICatalogInterface_DeleteMobileOrderDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItems">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItems" message="tns:ICatalogInterface_InsertShoppingCartItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItemsResponse" message="tns:ICatalogInterface_InsertShoppingCartItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCartUpdatedDate">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCartUpdatedDate" message="tns:ICatalogInterface_GetCartUpdatedDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCartUpdatedDateResponse" message="tns:ICatalogInterface_GetCartUpdatedDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefreshCatalogCache">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/RefreshCatalogCache" message="tns:ICatalogInterface_RefreshCatalogCache_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/RefreshCatalogCacheResponse" message="tns:ICatalogInterface_RefreshCatalogCache_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCacheReference">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCacheReference" message="tns:ICatalogInterface_GetCacheReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCacheReferenceResponse" message="tns:ICatalogInterface_GetCacheReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedProductInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedProductInfo" message="tns:ICatalogInterface_GenerateCachedProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedProductInfoResponse" message="tns:ICatalogInterface_GenerateCachedProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSlowMovingSkuInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSlowMovingSkuInfo" message="tns:ICatalogInterface_GetSlowMovingSkuInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSlowMovingSkuInfoResponse" message="tns:ICatalogInterface_GetSlowMovingSkuInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSizeCharts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSizeCharts" message="tns:ICatalogInterface_GetSizeCharts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSizeChartsResponse" message="tns:ICatalogInterface_GetSizeCharts_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

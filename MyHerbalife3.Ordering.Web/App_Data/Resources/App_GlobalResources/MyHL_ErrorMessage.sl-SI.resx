@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU za letno članarino ne more biti dodan v vašo košarico.</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Šifer SKU za članarino ni mogoče odstraniti iz vašega vozička</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Ali ste prepričani, da želite preklicati to naročilo? S klikom na gumb V redu boste odstranili vse artikle iz vozička.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Ker v vašem naročilu, ki vsebuje letno članarino, ni izdelkov, so bili odstranjeni vsi artikli, ki niso izdelki.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Artiklov, ki so naročeni, ni mogoče dodati naročilu, ki vsebuje letno članarino.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Odobritev plačevanja s kreditno kartico ni bila uspešna. Prosimo, preverite svoje kreditne kartice.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Napačna oblika podatkov, prosimo, vnesite pravilne podatke.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Vnesena je bila podvojena šifra SKU. Prosimo, vnesite ponovno.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Na posamezno naročilo je mogoče kupiti največ {0} vstopnic za dogodke.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Nakup vstopnic za dogodke na tem spletnem mestu ni dovoljen.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Za artikel {0} je na voljo samo {1} kos. Če želite v vaš voziček dodati ta artikel, prosimo, spremenite vneseno količino.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Za artikel {0} je mogoče naročiti enega ali več kosov.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Za šifro SKU {0} je količina lahko največ {1}.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>V evidenci žal nimate registrirane kreditne kartice. Prosimo, pokličite oddelek za odnose s Člani na številko +385 1 3820 184.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Neveljavna poštna številka.</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: čas je za plačilo članarine za {0} let, ki mora biti plačana pred oddajo naročila vrste Nadaljnja prodaja. Članarino plačate tako, da vrsto naročila spremenite v Osebno.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Artikla {0} trenutno ni na zalogi, vaša količina je nastavljena na 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Omejitev za revijo Today je</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Največje število revij, ki jih je mogoče dodati v voziček, je {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Vzdevek je že uporabljen, prosimo, vnesite drugo ime.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Spletno naročilo ni na voljo.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Spletno naročanje ni dovoljeno.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Samostojnemu naročilu z letno članarino je mogoče dodati samo izdelke.</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Skupni znesek za plačilo ne ustreza skupnemu znesku naročila.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Prosimo, vnesite količino, večjo od 0.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Prosimo, preverite podatke o kreditni kartici.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Prosimo, preverite svojo ID-številko distributerja in kodo PIN ter poskusite znova. Če imate še vedno težave, se, prosimo, obrnite na službo za distributerske storitve na telefonsko številko +386 1 3820 184.</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Prosimo, dokončajte svoje plačilo letne članarine, preden v voziček dodate druge izdelke.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Prosimo, da pred nakupom vstopnic za dogodek dokončate nakup letne članarine.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Prosimo, vpišite številko.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Prosimo, vnesite količino za šifro SKU {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Prosimo, vnesite drug prevzemni kraj.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Prosimo, vpišite veljavno mesto/kraj.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Prosimo, vpišite veljavno ime.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Žal ni bilo mogoče dodati kartico. Poskusite znova z Vzdevek nimajo številko kreditne kartice.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Prosimo, vpišite znesek donacije, ki ni enak nič (0).</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Prosimo, vpišite e-naslov.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Prosimo, vnesite podatke o plačilu.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Prosimo, vnesite kodo CVV.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Prosimo, vnesite število članarin, ki jih želite plačati.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Prosimo, vpišite veljavni e-naslov.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Prosimo, vpišite veljavno ime.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Prosimo, vpišite veljavni priimek.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Prosimo, vnesite veljavno drugo ime.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Prosimo, vpišite vse obvezne podatke za odpremo.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Prosimo, vpišite območno kodo v ustrezni obliki.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Prosimo, vpišite interno številko v ustrezni obliki.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Prosimo, vpišite, kdo je potrdil podatke.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Prosimo, vpišite območno kodo.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Prosimo, vpišite kraj/mesto.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Prosimo, vpišite interno številko.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Prosimo, vpišite ime.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Prosimo, vpišite priimek.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Prosimo, izpolnite obvezno polje.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Prosimo, vpišite telefonsko številko.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Prosimo, vpišite državo.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Prosimo, izpolnite polje za ulico.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Prosimo, vpišite poštno številko.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Prosimo, vpišite telefonsko številko v ustrezni obliki.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Prosimo, upoštevajte, da lahko podatke o kreditni kartici shranite za največ {0} kreditnih kartic. Če želite dodati novo kreditno kartico, odstranite eno od obstoječih shranjenih kreditnih kartic.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Opomba:&lt;br/&gt;Za ogled te strani sta najprimernejši orodji Internet Explorer in Firefox.</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Prosimo, vnesite naslov za pošiljanje, preden lahko vpišite to naročilo za prevzem.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Prosimo, izberite kraj.</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Prosimo, izberite čas odpreme.</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Prosimo, izberite vrsto naročila.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Prosimo, izberite prevzemni kraj.</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Prosimo, izberite prevzemni kraj.</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Prosimo, izberite ime za prevzem.</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Prosimo, izberite čas prevzema.</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Prosimo, izberite čas prevzema.</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Prosimo, izberite naslov za pošiljanje.</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Prosimo, izberite Da/Ne.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Glavnega naslova ni mogoče izbrisati.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Glavne nastavitve prevzema ni mogoče izbrisati.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Na blagajno</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Domov</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Odprema na vneseno poštno številko ni podprta.</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Šifra SKU {0} ni na voljo.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Številka mobilnega telefona za SMS je obvezna.</value>
+    <comment>_G1245</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Oprostite! Naročila ne boste mogli oddati, na korejski spletni strani lahko naročajo samo korejski Člani.</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Žal, artiklov ne morete dodati v voziček, saj bi s tem prekoračili omejitev svojega zaslužka.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Sistemska napaka.</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Mesec naročila je spremenjen!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Dodana šifra SKU {0} bo vključena v naročilo.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Država ni veljavna.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Ulica mora vsebovati vsaj eno črko.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Ulica mora vsebovati vsaj eno številko, en presledek in eno črko.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transakcija ni dovoljena, prosimo, preverite podatke o kreditni kartici. Če težava ni odpravljena, pokličite oddelek za odnose s Člani na telefonsko številko +385 1 3820 184</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transakcija ni dovoljena, prosimo, pokličite oddelek za odnose s Člani.</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Poštna številka ni veljavna.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>V naročilu ni artiklov za nakup.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Trenutno za artikel {0} ni dovolj zaloge. Razpoložljiva količina {1}.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Ni izbranih artiklov, ki bi se dodali naročilu.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Ni izbranih artiklov za izračun količine.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Ta naslov že obstaja v poskusni podatkovni zbirki.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>To naročilo presega vašo omejitev nakupa. Preostalo vam je še {0} volumenskih točk. Za nadaljevanje, prosimo, spremenite svoje naročilo.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Transakcija za to kartico je bila zavrnjena.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Revija Today je bila dodana v voziček.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Vašega naročila ne moremo dokončati. Za pomoč se, prosimo, obrnite se na oddelek za odnose s Člani na telefonsko številko +385 1 3820 184 in povejte številko napake 01.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Vašega naročila ne moremo dokončati. Za pomoč se, prosimo, obrnite se na oddelek za odnose s Člani na telefonsko številko +385 1 3820 184 in povejte številko napake 05.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Vašega naročila ne moremo obdelati.  Prosimo, preverite svoj naslov in poskusite znova.  Če imate še vedno težave, se, prosimo, obrnite na oddelek za odnose s Člani.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Opravičujemo se. Valute ni bilo mogoče pretvoriti. Prosimo, pokličite oddelek za odnose s Člani.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>V vozičku že imate vstopnice za dogodek, želite izprazniti voziček?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Skušate izbrisati svojo glavno kreditno kartico. Preden izbrišete to kreditno kartico, prosimo, nastavite drugo shranjeno kartico za glavno kreditno kartico.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Zaradi večkratnih zavrnitev te kreditne kartice ne morete več uporabljati.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Vzdevek že obstaja, prosimo vnesite nov vzdevek</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Tega artikla ne morete dodati v voziček.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Ne morete se premakniti na stran {0}, če v vozičku nimate artiklov.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>V vozičku imate naročene artikle, ki bodo odstranjeni, če kot možnost odpreme izberete Prevzem. Ali želite nadaljevati? (Da ali Ne)</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Mesec naročila za to naročilo ste spremenili v {0}. Ali želite nadaljevati s to izbiro?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>V vozičku imate vstopnice za dogodek, želite izprazniti voziček?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>V nakupovalnem vozičku imate izdelke. Ali želite izprazniti voziček, preden nadaljujete nakup vstopnic za dogodke?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Kot mesec dvojnih točk ste izbrali {0}, je to ustrezno?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Izbrali ste prevzem pri WALDOS, zato boste pri naročilu imeli omejeno izbiro.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Izbrali ste iskanje med izdelki brez oddaje naročila, zato izdelka ne boste mogli dodati v voziček.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Prispevek za fundacijo HFF ste uspešno dodali v voziček.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Vnaprej lahko plačate samo če je do zapadlosti letne članarine manj kot 90 dni.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Če želite spremeniti artikle v vozičku, morate izbrisati eno od svojih kreditnih kartic.</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Za nadaljevanje morate izbrati možnost Odprema ali Prevzem.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Opazili smo da ste na dan {0} oddali identično naročilo. Prosimo, potrdite če želite nadaljevati.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Letno članarino morate plačati do {0}.</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Poravnati morate letno članarino, zato bo samodejno dodana v vaš voziček.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Poravnati morate letne članarine. Dodane so bile v vaš voziček.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Vaša kreditna kartica ni več veljavna. Prosimo, kliknite na Uredi in posodobite datum izteka veljavnosti.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Vaša kreditna kartica ni več veljavna. Prosimo, pokličite oddelek za odnose s Člani.</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Ne moremo vam ustreči, prosimo, obrnite se na naročniško službo (MST PLUS D.O.O., BARAGOVA 5, 1000 LJUBLJANA, TEL: +38615187278).</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Ne moremo vam ustreči, prosimo, obrnite se na naročniško službo (MST PLUS D.O.O., BARAGOVA 5, 1000 LJUBLJANA, TEL: +38615187278).</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Vaše prejšnje naročilo je bilo že oddano, še preden ste vnesli spremembe v voziček. Številka vašega naročila je {0}. Če želite preveriti status svojega naročila, lahko za pomoč pokličete službo za pomoč pri naročanju na številko +386 1 518 7278, od 9.00 do 17.00. od ponedeljka do petka, ali kliknete tu. (Prosimo, upoštevajte, da lahko traja tudi 1 uro, preden se prikaže naročilo.&lt;br&gt;Če želite oddati novo naročilo, prosimo, da artikle znova dodate v voziček.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>V vašem vozičku so ostale obvezne letne članarine.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Vaši podatki za odpremo niso več veljavni, zato bo nakupovalni voziček izpraznjen.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Prosimo, vpišite okrožje.</value>
+    <comment>_G1297</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Šifra SKU {0} ni veljavna.</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Prosimo, izberite način odpreme.</value>
+    <comment>_G1299</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Naročila za dostavo v Novo Kaledonijo in Francosko Polinezijo niso dovoljena.</value>
+    <comment>_G1300</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Prosimo, izberite vrsto naročila iz malega vozička.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Ne morete na blagajno, ker so bile prekoračene vaše omejitve nakupa.</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Potrebna je potrditev naslova.</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Prosimo, navedite številko RG.</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Prosimo, izberite naslov Člana.</value>
+    <comment>_G2311</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Prosimo, vnesite podatke za odpremo.</value>
+    <comment>_G2351</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Prosimo, vpišite ime kurirja.</value>
+    <comment>_G2352</comment>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Plačilna transakcija za vaše naročilo ni bila odobrena, v primeru dvomov se, prosimo, obrnite na oddelek za članske storitve.</value>
+    <comment>_G2512</comment>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Prosimo, navedite potrebne podatke o naslovu plačila.</value>
+    <comment>_G2513</comment>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Dragi Član, zaradi vaše varnosti je bilo to naročilo izbrano za Herbalifovo revizijsko analizo. Analiza bo izdana čim prej. Herbalife v skladu z našo varnostno politiko naključno izbere nekatera naročila, ki se analizirajo.</value>
+    <comment>_G2514</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Opazili smo da ste na dan {0} oddali identično naročilo. Prosimo, potrdite če želite nadaljevati.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Prosimo, izberite datum prevzema.</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Vnesite ID distributer</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Izberite možnost obnovitve Pin</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Volumenske točke trenutno niso vidne.</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Prosim izberite veljaven datum. Sobota in nedelja je neveljavna za pickup / dostave.</value>
+    <comment>_G2845</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Če želite zaključiti nastavitve vašega računa kot nov Član, vas posimo, da izberite eno izmed mest v državi vašega delovanja in poizkusite znova.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>Kode PIN ni mogoče prikazati.</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Cena izdelkov v vašem vozičku se je po pomoti spremenila. Prosimo, znova vnesite svoje naročilo.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Zaradi raznih tehničnih težav v tem trenutku ni mogoče izpolniti vaše zahteve. Prosimo, poskusite znova.</value>
+    <comment>_1A8</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>
+Obdelava nedavno vlogo države lahko traja 12-18 ur. Potem ko je bila vaša prošnja boste lahko naročajo. Prosimo, preverite znova pozneje za dokončanje vaše naročilo.</value>
+    <comment>_GXXXX</comment>
+  </data>
+  <data name="APFFeeDueFuturePopup" xml:space="preserve">
+    <value>Vaša letna članarina zapade na dan {0}. Da bi preprečili morebitne prekinitve, vas prosimo, da poravnate letno članarino do datuma zapadlosti.</value>
+  </data>
+  <data name="APFFeeDuePastPopup" xml:space="preserve">
+    <value>Vaša letna članarina je zapadla na dan {0}. Da bi preprečili morebitne prekinitve, vas prosimo, da čim prej poravnate plačilo članarine. </value>
+  </data>
+  <data name="APFFeeDueTodayPopup" xml:space="preserve">
+    <value>Vaša letna članarina zapade danes. Da bi preprečili morebitne prekinitve, vas prosimo, da članarino poravnate še danes.</value>
+  </data>
+</root>

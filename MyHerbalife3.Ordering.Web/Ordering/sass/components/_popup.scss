@@ -1,0 +1,422 @@
+@import "normalize-scss/sass/normalize/import-now";
+@import "compass-mixins/lib/compass";
+@import "susy/sass/susy"; 
+@import "breakpoint-sass/stylesheets/breakpoint";
+
+// base
+@import "../../../SharedUI/sass/helpers/_variables";
+$breakpoint-mobile: 300px;
+$breakpoint-tablet: 620px;
+$breakpoint-desktop: 940px;
+$breakpoint-ext-desktop: 1260px;
+// === Responsive Popups
+
+
+#TB_window_Address, #TB_window { z-index: 1000; }
+
+// === Add/Edit/Delete New Credit Card
+[id$="pnlPaymentInfoPopup"] {
+    #TB_window_Address { width: 100%; }
+}
+
+@media (max-width: $breakpoint-mobile + 100) {
+    .gdo-popup-footer-btns, .gdo-popup-footer-btns .newaddressbuttons {
+
+        box-sizing: border-box;
+        float: none;
+        
+        .backward, .forward { box-sizing: border-box; margin: 3px 0; width: 100%; }
+
+    }
+}
+
+@media (max-width: $breakpoint-mobile + 100) {
+    .gdo-popup-footer-btns, .gdo-popup-footer-btns .newaddressbuttons {
+        float: none;
+        width: 100%;
+
+        .backward, .forward {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile + 100) {
+    select, textarea, input[type="text"], input[type="password"], 
+    input[type="datetime"], input[type="datetime-local"], input[type="date"], 
+    input[type="month"], input[type="time"], input[type="week"], 
+    input[type="number"], input[type="email"], input[type="url"], 
+    input[type="search"], input[type="tel"], input[type="color"], 
+      select:focus,
+      textarea:focus,
+    input:focus {
+        font-size: 14px;
+    }
+
+    #TB_ajaxContent .gdo-popup { box-sizing: border-box; }
+}
+
+
+[id$="dvBillingAddressText"] {
+    vertical-align: top;
+    
+    @include breakpoint($breakpoint-desktop) { float: left; }
+    ul {
+        margin: 0px;
+        padding: 0px;
+        @include breakpoint($breakpoint-desktop) {
+            display: table;
+            table-layout: fixed;
+            
+
+            li {
+                display: inline-table;
+                list-style: none;
+                padding-right: 20px;
+            }
+
+            &:first-child {
+
+                input[type="text"] { display: block; }
+
+            }
+
+            span {
+                display: block;
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+            &:first-child {
+                input[type="text"] {
+                    padding: 7px;
+                    //margin: 0px;
+                    display: block;
+                }
+            }
+        }
+
+        li {
+            input[type="text"] { padding: 7px; }
+        }
+
+    }
+
+}
+
+[id$="dvBillingAddressLabel"] {
+
+    span { display: block; }
+
+}
+
+// === Add/Edit/Delete new Shipping Address
+ul[id$="dvName"], #gdo-popup-container > ul {
+    
+    margin: 0;
+    padding: 0;
+    
+    @include breakpoint($breakpoint-tablet) {
+        display: table;
+        table-layout: fixed;
+    }
+
+    @include breakpoint($breakpoint-desktop) { width: 710px; }
+    
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        box-sizing: border-box;
+        width: 100%;
+        vertical-align: top;
+
+        @include breakpoint($breakpoint-tablet) {
+            display: inline-block;
+            margin-right: 20px;
+            list-style: none;
+            width: 150px;
+        }
+
+        &.two-blocks{ @include breakpoint($breakpoint-desktop) { width: 300px; } }
+        &.help-text {
+            vertical-align: top;
+            @include breakpoint($breakpoint-tablet) { margin-top: 22px; }
+            span { display: inline-block; }
+        }
+        &.last { margin-right: 0; }
+        &.full { width: 100%; }
+    }
+
+    &.more-margin { 
+        
+        li{
+
+            @include breakpoint($breakpoint-tablet) { 
+                
+                margin-right: 33px;
+                
+                // == Chrome hack
+                @media screen and (-webkit-min-device-pixel-ratio:0) { margin-right: 36px; }
+
+                &.last { margin-right: 0; } 
+            }
+            
+        }
+
+    }
+    // Forms that has three column fields
+    &.three-fields {
+        @include breakpoint($breakpoint-desktop) { width: 500px; }
+
+        li {
+            @include breakpoint($breakpoint-tablet) { 
+                margin-right: 22px;
+
+                &.last { margin-right: 0; }
+            }
+            &.two-blocks{ @include breakpoint($breakpoint-desktop) { width: 324px; } }
+        }
+    }
+    .group { width: 100%; }
+    span{
+        display: block;
+        line-height: 14px;
+        text-align: left;
+    }
+    input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"] {
+        margin-bottom: 2px;
+    }
+    .hide{ display: none !important; }  
+}
+
+.gdo-popup td table{
+    @include breakpoint($breakpoint-mobile) {
+        width: 100%;
+    }
+}
+
+div[id$="upShippingInfoControl"] {
+    option {
+    font-size: inherit;
+    }
+    .gdo-form-format {
+        white-space: normal;
+    }
+    .gdo-popup{
+        max-width:none;
+    }
+    @media (max-width: $breakpoint-mobile + 200) {
+        .inline, li{
+            width: 100%;
+        }
+    }
+    @media (min-width: $breakpoint-mobile + 200){
+        div.inline {
+            width: 150px;
+            padding-right: 20px;
+        }
+         .gdo-popup-form-field-padding span label{
+             font-size: 11px;
+         }
+    }
+
+}
+
+div[id$="divAddEditShippingAddress"] {
+	
+    select { padding: 7px; }
+    input[type="checkbox"] { margin-right: 5px; }
+    .inline { 
+        display:inline-block;
+        margin-right: 5px;
+        float: none;
+    }
+
+    span, label {
+        color: #646464;
+        font-size: 11px;
+
+        &.gdo-form-format{ color: #888888; }
+    }
+}
+
+.gdo-popup select { padding: 7px; }
+
+div[id$="progressPaymentInfoPopup_updateProgressDiv"] {
+    left: 0 !important;
+    top: 0 !important;
+}
+.addnewccbillingcontent{
+
+    background-color: $white;
+    width: 320px;
+    @include breakpoint($breakpoint-tablet) { width: 350px; }
+    @include breakpoint($breakpoint-desktop) { width: auto; }
+
+    .required-fields {
+        color: #555;
+        font-size: 11px;
+        line-height: 1.3em;
+        }
+    .billing-address-options { 
+        margin-bottom: 10px;
+        span { padding-right: 20px; }
+    }
+    input[type="radio"] { margin: 0 5px 10px 0; }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    table[id$="rblBillingAddress"] {
+        margin-top: 24px;
+        margin-top: 22px\9;
+        // == Chrome hack
+        @media screen and (-webkit-min-device-pixel-ratio:0) { margin-top: 22px; }
+    }
+
+    .hl-form-left, .hl-form-right { 
+        &.last{ margin-right: 0; }
+        input[type="text"] { margin: 0; width: span(4); }
+        select[id$="ddlCardType"], select[id$="ddlExpYear"], select[id$="ddlExpMonth"] { 
+            margin: 0 0 5px;
+            margin: 0\9;
+            padding: 5px 5px 3px;
+            padding: 5px 5px 7px\9;
+            width: 100%;
+        }
+
+        .hl-form-two-cols {
+            clear: right;
+            
+            ul {
+                li { 
+                    margin-bottom: 0;
+                    padding: 0;
+                    @include span(2 of 4);
+                    &.last {
+                        @include span(2 of 4 last);
+                    }
+                }
+            }
+            input[type="text"] { width: span(2); }
+        }
+        ul {
+            list-style: none;
+		    margin:0;
+		    padding: 0;
+            float: none;
+            table-layout: auto;
+            li {
+                margin-bottom: 5px;
+                padding: 0;
+
+                @include breakpoint($breakpoint-desktop) { margin-bottom: 15px; }
+
+                // == Chrome hack
+                @media screen and (-webkit-min-device-pixel-ratio:0) { max-height: 52px; }
+
+                input, select { display: inline-block; }
+
+                &.mandatory-fields-label {
+                    display: inline-block;
+                    float: right;
+                    @include breakpoint($breakpoint-tablet) {
+                        display: inline-table;
+                        float: none;
+                    }
+                }
+
+                input[type="checkbox"] { 
+                    margin-bottom: 0;
+                    margin-right: 5px; 
+                    @include breakpoint($breakpoint-tablet) { margin-bottom: 10px; }
+                }
+            }
+        }
+        .gdo-form-format { margin-top: 32px; }
+        span { 
+            display: block; 
+            &.required { float: right; margin: -30px -10px 0 0; }
+        }
+        
+    }
+
+    .hl-form-left { 
+        @include span(4 of 8);
+        @include breakpoint($breakpoint-tablet) { @include span(4 of 8); }
+    }
+    .hl-form-right { 
+        @include span(4 of 8);
+        @include breakpoint($breakpoint-tablet) { @include span(4 of 8 last); }
+    }
+
+    .addnewccbillingbtns {
+
+        .action-buttons {
+            display: block;
+            a {
+
+                margin: 3px 0;
+                @include breakpoint($breakpoint-tablet) { margin: 3px; width: auto; }
+            
+            }
+        
+        }
+
+    }
+    
+}
+.k-ie10 {
+    .addnewccbillingcontent .hl-form-left {
+	    select[id$='ddlCardType'], select[id$='ddlExpYear'], select[id$='ddlExpMonth']{ margin: 0;}
+    }
+    
+}
+.gdo-popup-form-field-padding li [id$="Format"] {
+    line-height: 0;
+}
+
+table {
+    &.newaddressbuttons {
+        width: 100%;
+    }
+}
+
+@media (min-width: 940px) { 
+    div[id$="upShippingInfoControl"] div.inline {
+        width: 175px;
+    }
+}
+
+[id$="colDeleteShippingAddress"] {
+
+    div {
+
+        label {
+
+            &:after { content: ", "; }
+            &:last-child {
+                &:after { content: ""; }
+            }
+
+        }
+
+    }
+
+}
+
+ul[id$="blErrors"] {
+    margin: 0;
+    padding: 0;
+}
+.hrblModalSkinOnly{
+    padding: 10px;
+    @include breakpoint($breakpoint-tablet) {padding: 20px;}
+}

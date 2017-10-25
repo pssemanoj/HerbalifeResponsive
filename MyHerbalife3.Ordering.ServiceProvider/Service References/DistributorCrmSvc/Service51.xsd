@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2013/11/26/HL.DistributorCRM.ValueObjects.Lead" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2013/11/26/HL.DistributorCRM.ValueObjects.Lead" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd27" namespace="http://herbalife.com/2013/08/01/HL.DistributorCRM.ValueObjects.Lead" />
+  <xs:complexType name="UpdateAssignmentCountryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAssignmentCountryRequest" nillable="true" type="tns:UpdateAssignmentCountryRequest" />
+  <xs:complexType name="UpdateAssignmentCountryRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateAssignmentCountryRequest">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2013/08/01/HL.DistributorCRM.ValueObjects.Lead" minOccurs="0" name="MaintenanceSchedule" nillable="true" type="q2:MaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAssignmentCountryRequest_V01" nillable="true" type="tns:UpdateAssignmentCountryRequest_V01" />
+</xs:schema>

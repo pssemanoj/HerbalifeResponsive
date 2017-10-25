@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Položka SKU: {0}.</value>
+      <comment>_G2711</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Položka SKU {0} nemůže být přidána do košíku, protože jejím přidáním do košíku překročíte Váš objemový limit.</value>
+      <comment>_G1723</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Množství SKU {0} nemůže vzrůst o {1} protože by překročilo Váš limit příjmu.</value>
+      <comment>_G1720</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Z důvodu překročení ročního limitu 7500 PPV nelze zakoupit produkty {0}. Můžete vytvořit objednávku pouze na propagační materiály a tiskoviny.</value>
+      <comment>_G1719</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Množství SKU {0} nemůže vzrůst o {1} protože by překročilo Váš objemový limit.</value>
+      <comment>_G1721</comment></data>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Položka SKU:{0} nebyla přidána do košíku, protože není dostupná pro jmenované.</value>
+      <comment>_G1711</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Položka SKU {0} nemůže být přidána do košíku, protože jejím přidáním do košíku překročíte Váš limit výdělku.</value>
+      <comment>_G1722</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Množství by nemělo překročit výše uvedené {0} pro SKU {1}.</value>
+      <comment>_G1714</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Prosíme, přidejte produkty do košíku před přidáním SKU {0}.</value>
+      <comment>_G1713</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Položka SKU:{0} nebyla přidána do košíku. Pokud si ji přejete přidat, prosíme změňte podtyp objednávky na A1 nebo B1.</value>
+      <comment>_G1712</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Položka SKU: {0}.</value>
+      <comment>_G2303</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Tato objednávka překračuje Váš limit objednávky. Zbývající objemové body: {0}. Následující SKU nebyly přidány do Vašeho košíku.</value>
+      <comment>_G2302</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Vaše objednávka z {0} přesahuje maximální množství {1} na člena každých {2} kalendářních dní.</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>V rámci našeho objednávkového programu, noví &amp; stávající Členové, kteří dosud nedosáhli pozice Plně kvalifikovaného Supervizora, mohou objednat až {0} osobně nakoupených bodů (PPV) při první objednávce. Můžete nashromáždit PPV až do výše {1} objemových bodů (včetně počáteční objednávky) během příštích {2} dní. Tato objednávka překračuje povolené množství PPV a musí být zredukována o {3} objemových bodů.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>V rámci našeho objednávkového programu, noví &amp; stávající Členové, kteří dosud nedosáhli pozice Plně kvalifikovaného Supervizora, mohou objednat až {0} osobně nakoupených bodů (PPV) při první objednávce. Můžete nashromáždit PPV až do výše {1} objemových bodů (včetně počáteční objednávky) během příštích {2} dní. Tato objednávka překračuje povolené množství PPV a musí být zredukována o {3} objemových bodů. Následné položky SKU nebyly přidány do košíku:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+      <comment>_G3558</comment></data>
+  <data name="FOPConsignmentVolumePointExceeds" xml:space="preserve">
+    <value>All Members who have not yet achieved the status of Supervisor may order up to {0} points personally purchased volume (PPV) in their first order and accumulate up to a maximum of {1} within the next PPV {2} days . Please reduce the volume points.</value>
+      <comment>_G3638</comment></data>
+  <data name="FOPPersonalConsumptionVolumePointExceeds" xml:space="preserve">
+    <value>All members who have not placed orders may purchase up to a maximum of {0} points personally purchased volume (PPV) within the first {1} days from the date of the first order . Please reduce the volume points.</value>
+      <comment>_G3639</comment></data>
+  <data name="NoDistributorNotes" xml:space="preserve">
+    <value>Neodevzdali jste Etický formulář. Prosím, kontaktujte Oddělení členské podpory pro více informací.</value>
+      <comment>_G2815</comment></data>
+  <data name="CroatiaNewMemberError" xml:space="preserve">
+    <value>Vážený/á člen/e/ko - berte prosím na vědomí, že budete moci zadat online objendávku 24 hodin poté, kdy Vaše členská žádost bude zadána do systému Herbalife. Děkujeme za pochopení.</value>
+      <comment>_G3555</comment></data>
+</root>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/29/HL.DistributorCRM.ValueObjects.Email" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/29/HL.DistributorCRM.ValueObjects.Email" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="MailingToken_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MailingToken">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DisplayNameLocalizationKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="IsMultiline" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsRequired" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSystemToken" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MaximumLength" type="xs:int" />
+          <xs:element minOccurs="0" name="SortKey" type="xs:int" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidationErrorLocalizationKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidationExpression" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MailingToken_V01" nillable="true" type="tns:MailingToken_V01" />
+  <xs:complexType name="MailingToken">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MailingToken" nillable="true" type="tns:MailingToken" />
+  <xs:complexType name="GetEmailTemplatesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailTemplatesRequest" nillable="true" type="tns:GetEmailTemplatesRequest" />
+  <xs:complexType name="GetEmailTemplatesByLocaleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetEmailTemplatesRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailTemplatesByLocaleRequest" nillable="true" type="tns:GetEmailTemplatesByLocaleRequest" />
+</xs:schema>

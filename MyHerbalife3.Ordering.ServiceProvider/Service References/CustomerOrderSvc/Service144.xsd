@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ProductType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Product" />
+      <xs:enumeration value="Literature" />
+      <xs:enumeration value="PromoAccessory" />
+      <xs:enumeration value="EventTicket" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductType" nillable="true" type="tns:ProductType" />
+</xs:schema>

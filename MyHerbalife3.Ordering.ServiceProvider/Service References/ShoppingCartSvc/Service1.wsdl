@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd27" namespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.PaymentTypes" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2013/12/23/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.China" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd7" namespace="http://HL.orderimport.hrbl.v01.order.valueobjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd8" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd10" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2012/04/01/HL.Order.ValueObjects.Invoices" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd14" namespace="http://herbalife.com/2011/01/01/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2008/11/11/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd16" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Installments" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/HL.Order.ValueObjects.SKULimitation" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd18" namespace="http://schemas.datacontract.org/2004/07/HL.Order.ValueObjects.Installments" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd19" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.HPSObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd20" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd21" namespace="http://herbalife.com/2008/06/23/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2013/12/18/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd23" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd24" namespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd25" namespace="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd26" namespace="http://schemas.datacontract.org/2004/07/MyHerbalife3.Ordering.SharedProviders.ViewModel" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IShoppingCartService_GetQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuote" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_GetQuote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_SubmitOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitOrder" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_SubmitOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_GetDistributorPurchasingLimits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorPurchasingLimits" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_GetDistributorPurchasingLimits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorPurchasingLimitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_AddItemsToCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddItemsToCart" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_AddItemsToCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddItemsToCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_GetShoppingCart_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoppingCart" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_GetShoppingCart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShoppingCartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_ShoppingCartNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShoppingCartNumber" />
+  </wsdl:message>
+  <wsdl:message name="IShoppingCartService_ShoppingCartNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShoppingCartNumberResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IShoppingCartService">
+    <wsdl:operation name="GetQuote">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetQuote" message="tns:IShoppingCartService_GetQuote_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetQuoteResponse" message="tns:IShoppingCartService_GetQuote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/SubmitOrder" message="tns:IShoppingCartService_SubmitOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/SubmitOrderResponse" message="tns:IShoppingCartService_SubmitOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorPurchasingLimits">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetDistributorPurchasingLimits" message="tns:IShoppingCartService_GetDistributorPurchasingLimits_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetDistributorPurchasingLimitsResponse" message="tns:IShoppingCartService_GetDistributorPurchasingLimits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddItemsToCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/AddItemsToCart" message="tns:IShoppingCartService_AddItemsToCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/AddItemsToCartResponse" message="tns:IShoppingCartService_AddItemsToCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingCart">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetShoppingCart" message="tns:IShoppingCartService_GetShoppingCart_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/GetShoppingCartResponse" message="tns:IShoppingCartService_GetShoppingCart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShoppingCartNumber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/ShoppingCartNumber" message="tns:IShoppingCartService_ShoppingCartNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces/IShoppingCartService/ShoppingCartNumberResponse" message="tns:IShoppingCartService_ShoppingCartNumber_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,262 @@
+﻿@using HL.Common.Configuration
+@using MyHerbalife3.Shared.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+@using MyHerbalife3.Ordering.Configuration.ConfigurationManagement
+@model MyHerbalife3.Ordering.ViewModel.Model.InvoiceSearchModel
+
+
+@{
+    this.SetVerticalLayout("Ordering");
+    var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+}
+
+<script type="text/javascript">
+    var index_Invoice_Action = @(Html.Raw(Json.Encode(Model.Action)));
+</script>
+<link type="text/css" href="/Ordering/CSS/invoices.css" rel="stylesheet">
+<link rel="stylesheet" href="/Ordering/CSS/ordering-responsive.css" type="text/css" />
+
+<script type="text/x-kendo-template" id="deleteInvTpl">
+    <div><a class="icon icon-delete-ln-3" href="\\#confirmDeleteInvoiceField" data-bind="click: viewDeletePopUp"></a></div>
+</script>
+<script type="text/x-kendo-template" id="createOrderInvTpl">
+    <div><a class="icon icon-file-add-ln-1" href="/Ordering/ShoppingCart.aspx?memberInvoiceId=#:Id#" data-bind="click: createOrderRedirect"></a></div>
+</script>
+<script type="text/x-kendo-template" id="displayInvTpl">
+    <div><a class="k-link" href="/Ordering/invoice/Display/#:Id#">#:DisplayMemberInvoiceNumber#</a></div>
+</script>
+
+<script type="text/x-kendo-template" id="statusInvTpl">
+    <input id="status"
+           data-role="dropdownlist"
+           data-auto-bind="false"
+           data-value-primitive="true"
+           data-text-field="DisplayName"
+           data-value-field="Value"
+           data-bind="value: Status, source: statusDataSource, events: { change: onStatusChange}" class="k-input" name="status" />
+</script>
+
+
+
+<div id="principalContent" class="container columnCont">
+    <div id="dvInvSearch">
+        <div class="clear10"></div>
+        <div class="col-md-12 col-sm-12 ordering">
+            <h2>@this.Localize("ltInvHeaderDesc")</h2>
+            <span>@this.Localize("ltInvInstructions") <a target="_blank" href="@this.LocalizeGlobal("MemberInvoiceError", "userGuideLink")">@this.Localize("userGuide")</a>@if(culture.ToUpper()=="EN-CA"
+                                                || culture.ToUpper() == "EN-JM" || culture.ToUpper() == "EN-TT") { <a data-parameter="@this.Localize("dataVideoId")" 
+                                                                      data-account="@this.Localize("dataAccount")"
+                                                                       data-player="@this.Localize("dataPlayer")" 
+                                                                      data-bind="click:OpenTutorialModal"><i class="icon-file-media-ln-1">
+                </i>Watch the Video Tutorial</a>}</span>
+
+            <div class="invoice-operations">
+                <a href="/Ordering/Invoice/Create" class="backward">@this.Localize("btnBlankInvoice")</a>             
+                @if (HLConfigManager.Configurations.DOConfiguration.InvoiceEnableMyOrders)
+                {
+                    <span class="or-span">@this.Localize("ltOr")</span>
+                    @Html.Partial("MyOrders")
+                    <button class="backward" data-bind="click: clickMyOrders">@this.Localize("btnMyOrders")</button>
+                }
+            </div>
+        </div><div class="clear10"></div>
+        
+        @*<div><a class="new-invoice" href="#"  data-bind="click: exportToExcelViaController">expot to excel via controller</a><div>*@
+        <div id="customSearch" data-role="validator" novalidate="novalidate" class="search-form">
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 m-bottom">
+                <label for="ltfrom">@this.Localize("ltfrom")</label>
+                <input id="ltfrom"
+                       name=@this.Localize("ltfrom")
+                       data-role="datepicker"
+                       data-type="date"
+                       data-bind="value: from"
+                       data-culture=@culture />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 m-bottom">
+                <label for="ltTo">@this.Localize("ltTo")</label>
+                <input id="ltTo"
+                       data-role="datepicker"
+                       name=@this.Localize("ltTo")
+                       data-type="date"
+                       data-bind="value: to"
+                       data-culture=@culture />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 filter-by m-bottom">
+                <label for="filterby">@this.Localize("filterby")</label>
+                <input id="filterby"
+                       data-role="dropdownlist"
+                       data-auto-bind="false"
+                       data-value-primitive="true"
+                       data-text-field="DisplayName"
+                       data-value-field="Id"
+                       data-bind="value: selectedFilterItem, source: filterCategoriesSource"
+                       data-option-label="@this.Localize("select")"
+                       class="k-input" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5 d-fiter-top" style="margin-top: 17px;">
+                <input class="k-widget k-textbox d-filter m-bottom" data-bind="value: filterByValue" placeholder="@this.Localize("searchInvoices")" />
+                <button data-bind="click: doSearch" class="forward">@this.Localize("Search")</button>
+                <button data-bind="click: doClear" class="backward">@this.Localize("Clear")</button>
+            </div>
+        </div>
+        <div class="clear20"></div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 ordering">
+            <h2>@this.Localize("ltExistingInv")</h2>
+            <span class="red" data-bind="text: statusUpdateText "></span>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 align-right">
+            <a href="#" data-bind="click: ExportToCSV" class="icon icon-file-table-ln-1 align-right"><span>@this.Localize("exportToExcel")</span></a>
+        </div>
+
+        <div class="clear10"></div>
+        <div data-bind="invisible:hideControl">
+            <div class="table-scroll col-md-12 col-sm-12 col-xs-12">
+                <div id="dgInvoices"
+                     style="overflow-x: auto;"
+                     data-role="grid"
+                     data-pageable='{"pageSize": 10, "messages": {"empty": "@this.Localize("NoResults")"}}'
+                     data-scrollable="false"
+                     data-bind="source: invoices, invisible: ListEmpty"
+                     data-columns='[
+            {"field": "Delete",
+            "title": "@this.Localize("DeleteColumnTitle")",
+            "template": invSearch.deleteInv(),
+            "attributes": {"style": "text-align: center;"},
+            "headerAttributes": {"style": "text-align: center;"}
+            },
+            {"field": "DisplayMemberInvoiceNumber",
+            "title": "@this.Localize("InvNumberColumnTitle")",
+            "template": invSearch.displayInv(),
+            "attributes": {"style": "text-align: left;"},
+            "headerAttributes": {"style": "text-align: left;"}
+            },
+            {
+            "field": "FirstName",
+            "title": "@this.Localize("NameColumnTitle")",
+            "template": "#:FirstName# #:LastName#"
+            },
+            {
+            "field": "DisplayInvoiceType",
+            "title": "@this.Localize("TypeColumnTitle")"
+            },
+            {
+            "field": "InvoiceDate",
+            "title": "@this.Localize("DateColumnTitle")",
+            "template": "#= kendo.toString(new Date(moment(InvoiceDate)), \"MM/dd/yyyy\") #"
+            },
+            {
+            "field": "DisplayInvoiceStatus",
+             "template": invSearch.statusTemplate(),
+            "title": "@this.Localize("StatusColumnTitle")"
+            },
+            {
+            "field": "TotalVolumePoints",
+            "title": "@this.Localize("VPColumnTitle")",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            },
+            {
+            "field": "DisplayTotal",
+            "title": "@this.Localize("TotalColumnTitle")",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            },
+            {
+            "field": "CreateOrder",
+            "title": "@this.Localize("CreateOrderColumnTitle")",
+            "template": invSearch.createOrderInv(),
+            "attributes": {"style": "text-align: center;"},
+            "headerAttributes": {"style": "text-align: center;"}
+            }
+            ]'>
+                    <div id="loading"></div>
+                </div>
+            </div>
+        </div>
+
+        <div data-bind="visible:hideControl">
+            <div class="table-scroll col-md-12 col-sm-12 col-xs-12">
+                <div id="dgInvoices1"
+                     style="overflow-x: auto;"
+                     data-role="grid"
+                     data-pageable='{"pageSize": 10, "messages": {"empty": "@this.Localize("NoResults")"}}'
+                     data-scrollable="false"
+                     data-bind="source: invoices, invisible: ListEmpty"
+                     data-columns='[
+            {"field": "Delete",
+            "title": "@this.Localize("DeleteColumnTitle")",
+            "template": invSearch.deleteInv(),
+            "attributes": {"style": "text-align: center;"},
+            "headerAttributes": {"style": "text-align: center;"}
+            },
+            {"field": "DisplayMemberInvoiceNumber",
+            "title": "@this.Localize("InvNumberColumnTitle")",
+            "template": invSearch.displayInv(),
+            "attributes": {"style": "text-align: left;"},
+            "headerAttributes": {"style": "text-align: left;"}
+            },
+            {
+            "field": "FirstName",
+            "title": "@this.Localize("NameColumnTitle")",
+            "headerAttributes": {"style": "text-align: left;"},
+            "template": "#:FirstName# #:LastName#"
+            },
+            {
+            "field": "DisplayReceiptChannel",
+            "title": "@this.Localize("ReceiptChannelColumnTitle")",
+            "headerAttributes": {"style": "text-align: left;"}
+            },
+            {
+            "field": "InvoiceDate",
+            "title": "@this.Localize("DateColumnTitle")",
+            "template": "#= kendo.toString(new Date(moment(InvoiceDate)), \"MM/dd/yyyy\") #",
+            "headerAttributes": {"style": "text-align: left;"}
+            },
+            {
+            "field": "TotalVolumePoints",
+            "title": "@this.Localize("VPColumnTitle")",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            },
+            {
+            "field": "DisplayTotal",
+            "title": "@this.Localize("TotalColumnTitle")",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            }
+            ]'>
+                    <div id="loading"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-data" data-bind="visible: ListEmpty">@this.Localize("NoResults")</div>
+        <div id="modal-video-tutorial"
+             wire-model="VideoTutorialViewModel"
+             data-role="window"
+             data-change="CloseTutorialVideo"
+             data-modal="true"
+             data-draggable="false"
+             data-max-width="700px"
+             data-max-height="700px"
+             data-resizable="false"
+             data-resize="onResize"
+             data-bind="events: { close: CloseTutorialModal}"
+             style="display: none; padding-top: 5px!important;">
+            <div id="video-tutorial"></div>
+        </div>
+        <div id="confirmDeleteInvoice"
+             data-role="window"
+             data-title="@this.Localize("ConfirmInvoiceDeletion")"
+             data-modal="true"
+             data-visible="false"
+             data-actions="['Close']">
+            <div class="confirm">
+                <div>@this.Localize("DeleteInvoiceConfirm") <span data-bind="text: memberInvoiceNumber" class="bold"></span>?</div>
+                <a class="forward" data-bind="click: DeleteInvoice">@this.Localize("Confirm")</a>
+                <a class="backward" data-bind="click: closeDeleteInvoice">@this.Localize("Cancel")</a>
+            </div>
+        </div><div class="clear10"></div>
+    </div>
+</div>

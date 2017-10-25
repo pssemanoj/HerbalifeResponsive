@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="state" xml:space="preserve">
+    <value>Estado</value>
+    <comment>_GI208</comment>
+  </data>
+  <data name="subtotal" xml:space="preserve">
+    <value>Subtotales</value>
+    <comment>_GI259</comment>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>Impuesto</value>
+    <comment>_GI210</comment>
+  </data>
+  <data name="shippingAndHandling" xml:space="preserve">
+    <value>Envío y manejo</value>
+    <comment>_GI205</comment>
+  </data>
+  <data name="shipTo" xml:space="preserve">
+    <value>Enviar a</value>
+    <comment>_GI206</comment>
+  </data>
+  <data name="sku" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_GI207</comment>
+  </data>
+  <data name="yourTotalDue" xml:space="preserve">
+    <value>Su total a pagar</value>
+    <comment>_GI214</comment>
+  </data>
+  <data name="zipCode" xml:space="preserve">
+    <value>Código postal</value>
+    <comment>_GI215</comment>
+  </data>
+  <data name="pleaseSendPayment" xml:space="preserve">
+    <value>Enviar pago a</value>
+    <comment>_GI200</comment>
+  </data>
+  <data name="thankyou" xml:space="preserve">
+    <value>¡Gracias por su pedido!</value>
+    <comment>_GI211</comment>
+  </data>
+  <data name="totalPrice" xml:space="preserve">
+    <value>Precio total</value>
+    <comment>_GI212</comment>
+  </data>
+  <data name="yourPrice" xml:space="preserve">
+    <value>Su precio</value>
+    <comment>_GI213</comment>
+  </data>
+  <data name="herbalifeDs" xml:space="preserve">
+    <value>Distribuidor de Herbalife</value>
+    <comment>_GI187</comment>
+  </data>
+  <data name="herbalifeRefund" xml:space="preserve">
+    <value>Política de Reembolso de Herbalife</value>
+    <comment>_GI188</comment>
+  </data>
+  <data name="exchangePolicy2" xml:space="preserve">
+    <value>LEY ESTATAL Y FEDERAL: Los reglamentos requieren que imprimamos el siguiente Aviso de Cancelación. La Política de Reembolso de Herbalife ofrece&lt;br/&gt; y proporciona una protección aún mayor para usted de lo que requiere la ley.</value>
+    <comment>_GI186</comment>
+  </data>
+  <data name="emailAddress" xml:space="preserve">
+    <value>Dirección de correo electrónico</value>
+    <comment>_GI184</comment>
+  </data>
+  <data name="exchangePolicy1" xml:space="preserve">
+    <value>Herbalife ofrece un intercambio o reembolso completo. Simplemente solicite un reembolso de su Distribuidor dentro de treinta (30) días después que haya recibido el&lt;br/&gt; producto, y devuelva la porción que no haya usado, junto con los envases del producto, al Distribuidor mencionado al dorso.</value>
+    <comment>_GI185</comment>
+  </data>
+  <data name="icancelText" xml:space="preserve">
+    <value>POR MEDIO DE ESTE DOCUMENTO CANCELO ESTA TRANSACCIÓN</value>
+    <comment>_GI189</comment>
+  </data>
+  <data name="invoiceId" xml:space="preserve">
+    <value>Factura no</value>
+    <comment>_GI193</comment>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Dirección</value>
+    <comment>_GI172</comment>
+  </data>
+  <data name="invoiceDate" xml:space="preserve">
+    <value>Fecha de factura</value>
+    <comment>_GI192</comment>
+  </data>
+  <data name="importantNotice" xml:space="preserve">
+    <value>Aviso Importante</value>
+    <comment>_GI190</comment>
+  </data>
+  <data name="invoice" xml:space="preserve">
+    <value>FACTURA</value>
+    <comment>_GI191</comment>
+  </data>
+  <data name="cancelPolicy2" xml:space="preserve">
+    <value>Si usted cancelara, deberá poner a la disposición del vendedor desde su recidencia, sustancialmente en tan buena condición como cuando lo haya recibido, cualquier artículo&lt;br/&gt; que se le haya entregado bajo este contrato o venta; o usted puede, si lo deseara, seguir las instrucciones del vendedor con respecto a al envío&lt;br/&gt; de devolución de los artículos al vendedor al costo y riesgo del vendedor.</value>
+    <comment>_GI176</comment>
+  </data>
+  <data name="cancelPolicy3" xml:space="preserve">
+    <value>Si usted hiciera disponible los artículos para el vendedor y el vendedor no los recogiera dentro de 20 días de la fecha de su Aviso de&lt;br/&gt; Cancelación, usted puede retener o desechar los artículos sin ninguna obligación adicional. Si usted fallara en hacer disponibles los artículos para el vendedor,&lt;br/&gt; o si acuerda en devolver los artículos al vendedor pero no lo hace, usted tendrá responsabilidad por el desempeño de todas las obligaciones bajo&lt;br/&gt; el contrato.</value>
+    <comment>_GI177</comment>
+  </data>
+  <data name="cancelPolicy1" xml:space="preserve">
+    <value>Si usted cancelara, toda propiedad que haya intercambiado, todo pago que se haya hecho bajo el contrato o venta, y todo documento negociable que haya ejecutado&lt;br/&gt; usted, serán regresados dentro de DIEZ DÍAS HÁBILES después de que el vendedor haya recibido su aviso de cancelación, y todo interés de seguridad&lt;br/&gt; que surgiera de la transacción será cancelado.</value>
+    <comment>_GI175</comment>
+  </data>
+  <data name="buyerSignature" xml:space="preserve">
+    <value>Firma del comprador</value>
+    <comment>_GI173</comment>
+  </data>
+  <data name="buyerText" xml:space="preserve">
+    <value>Usted, el comprador, puede cancelar esta transacción en cualquier momento antes de medianoche del tercer día laboral después de la fecha de esta transacción.&lt;/p&gt;&lt;p&gt;Véase el &amp;quot;Aviso de Cancelación&amp;quot; en el dorso de este formulario para una explicación sobre este derecho. Al finalizar el período de 3 días mencionado arriba, usted aún está protegido bajo la POLÍTICA DE REEMBOLSO DE HERBALIFE según se menciona a continuación.</value>
+    <comment>_GI174</comment>
+  </data>
+  <data name="cancelText" xml:space="preserve">
+    <value>Usted puede CANCELAR esta transacción, sin ninguna penalidad ni obligación, dentro de TRES DÍAS HÁBILES a partir de la fecha indicada arriba.</value>
+    <comment>_GI178</comment>
+  </data>
+  <data name="dateTransaction" xml:space="preserve">
+    <value>Fecha de transacción</value>
+    <comment>_GI182</comment>
+  </data>
+  <data name="earnBase" xml:space="preserve">
+    <value>Base de Ganancias</value>
+    <comment>_GI183</comment>
+  </data>
+  <data name="dateMonthYear" xml:space="preserve">
+    <value>día/mes/año</value>
+    <comment>_GI181</comment>
+  </data>
+  <data name="cancelTransactionText" xml:space="preserve">
+    <value>Para cancelar esta transacción, envíe por correo postal o entregue una copia firmada de este Aviso de Cancelación u otro aviso de Cancelación por escrito, o envíe un telegrama a:</value>
+    <comment>_GI179</comment>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>Ciudad</value>
+    <comment>_GI180</comment>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>Notas</value>
+    <comment>_GI196</comment>
+  </data>
+  <data name="noticeCancellation" xml:space="preserve">
+    <value>Aviso de cancelación</value>
+    <comment>_GI197</comment>
+  </data>
+  <data name="3daysAfterText" xml:space="preserve">
+    <value>(Fecha: 3 días después de la fecha del pedido)</value>
+    <comment>_GI171</comment>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value># de teléfono</value>
+    <comment>_GI199</comment>
+  </data>
+  <data name="iunderStandText" xml:space="preserve">
+    <value>Entiendo que este pedido puede ser considerado como una invitación a llamarme de vez en cuando, con el entendido de que no estaré bajo ninguna obligación de comparar.</value>
+    <comment>_GI194</comment>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>_GI195</comment>
+  </data>
+  <data name="shipping" xml:space="preserve">
+    <value>Envío</value>
+    <comment>_GI204</comment>
+  </data>
+  <data name="notLaterThan" xml:space="preserve">
+    <value>ANTES DE LA MEDIANOCHE DE:</value>
+    <comment>_GI198</comment>
+  </data>
+  <data name="retailPrice" xml:space="preserve">
+    <value>Precio al menudeo sugerido</value>
+    <comment>_GI203</comment>
+  </data>
+  <data name="productName" xml:space="preserve">
+    <value>Nombre del producto</value>
+    <comment>_GI201</comment>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>Cantidad</value>
+    <comment>_GI202</comment>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>Descuento</value>
+    <comment>_GI260</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+</root>

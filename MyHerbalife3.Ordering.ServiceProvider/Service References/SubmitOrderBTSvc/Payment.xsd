@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.payment" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://bt.orderingsystem.hrbl.v01.address" elementFormDefault="qualified" targetNamespace="http://bt.orderingsystem.hrbl.v01.payment" id="Payment" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd2" namespace="http://bt.orderingsystem.hrbl.v01.address" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.address" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Payment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LineID" type="xs:string" />
+        <xs:element name="Amount" type="xs:decimal" />
+        <xs:element name="PaymentDate" type="xs:dateTime" />
+        <xs:element name="Currency" type="xs:string" />
+        <xs:element name="TransactionType" type="xs:string" />
+        <xs:element name="CheckNumber" type="xs:string" />
+        <xs:element name="NumberOfInstallments" type="xs:int" />
+        <xs:element name="AddressVerification" type="xs:boolean" />
+        <xs:element name="PaymentCode" type="xs:string" />
+        <xs:element name="Operator" type="xs:string" />
+        <xs:element name="ClientReferenceNumber" type="xs:string" />
+        <xs:element name="NameOnAccount" type="xs:string" />
+        <xs:element name="AccountNumber" type="xs:string" />
+        <xs:element name="AuthMerchant" type="xs:string" />
+        <xs:element name="SettMerchant" type="xs:string" />
+        <xs:element name="Expiration" type="xs:dateTime" />
+        <xs:element name="CVV" type="xs:string" />
+        <xs:element maxOccurs="1" ref="ns0:Address" />
+        <xs:element name="AuthNumber" type="xs:string" />
+        <xs:element name="TransactionCode" type="xs:string" />
+        <xs:element name="SecurePaymentType" type="xs:string" />
+        <xs:element name="MPI_ECI" type="xs:string" />
+        <xs:element name="MPI_XID" type="xs:string" />
+        <xs:element name="MPI_CAVV" type="xs:string" />
+        <xs:element name="ISP_SessionKey" type="xs:string" />
+        <xs:element name="ISP_EncryptedData" type="xs:string" />
+        <xs:element name="NRI_PaymentOptionType" type="xs:string" />
+        <xs:element name="NRI_BonusMonth" type="xs:string" />
+        <xs:element name="NRI_FirstBonusMonth" type="xs:string" />
+        <xs:element name="NRI_SecondBonusMonth" type="xs:string" />
+        <xs:element name="Agency" nillable="true" type="xs:string" />
+        <xs:element name="IssueNumber" nillable="true" type="xs:string" />
+        <xs:element name="MerchantAccountName" type="xs:string" />
+        <xs:element name="UserInformation" nillable="true" type="xs:string" />
+        <xs:element name="TransactionClass" nillable="true" type="xs:string" />
+        <xs:element name="BankName" type="xs:string" />
+        <xs:element name="PayeeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

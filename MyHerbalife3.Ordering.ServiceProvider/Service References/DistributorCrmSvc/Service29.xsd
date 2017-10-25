@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/10/1/HL.DistributorCRM.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/10/1/HL.DistributorCRM.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="AddDistributorsToDistributorCRMRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddDistributorsToDistributorCRMRequest" nillable="true" type="tns:AddDistributorsToDistributorCRMRequest" />
+  <xs:complexType name="AddDistributorsToDistributorCRMRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AddDistributorsToDistributorCRMRequest">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DistributorIDs" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddDistributorsToDistributorCRMRequest_V01" nillable="true" type="tns:AddDistributorsToDistributorCRMRequest_V01" />
+  <xs:complexType name="AddDistributorsToDistributorCRMResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddDistributorsToDistributorCRMResponse" nillable="true" type="tns:AddDistributorsToDistributorCRMResponse" />
+  <xs:complexType name="AddDistributorsToDistributorCRMResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AddDistributorsToDistributorCRMResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AddDistributorsToDistributorCRMResponse_V01" nillable="true" type="tns:AddDistributorsToDistributorCRMResponse_V01" />
+</xs:schema>

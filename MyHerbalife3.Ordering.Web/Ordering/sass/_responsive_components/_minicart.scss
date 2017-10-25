@@ -1,0 +1,76 @@
+// === Mini Cart 
+#gdo-right-column-minicart {
+
+    background-color: #fff;
+    height: 100%;
+    overflow: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9998;
+    //@include breakpoint($tablet) {
+        width: 75%;
+    //}
+    @include breakpoint($desktop) {
+        overflow: visible;
+        position: static;
+        width: 180px;
+    }
+
+    .gdo-order-totals-tbl {
+
+        width: 100%;
+        @include breakpoint($desktop) { width: 168px; }
+
+        .gdo-edit-links-conatainer {
+
+            width: 100%;
+            @include breakpoint($desktop) { width: 170px; }
+
+        }
+    }
+
+}
+
+.saveCartsPopUp  {
+    .gdo-form-label-left{
+
+        padding: 0;
+        @include breakpoint($tablet) { padding-right: 10px; }
+
+    }
+
+    .lblName{
+
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        @include breakpoint($tablet) { 
+
+            margin: 10px 5px;
+            text-align: center;
+            width: 50%;
+
+        }
+
+    }
+    .txtName {
+        
+        float: none;
+        margin: 0;
+        width: 100%;
+        @include breakpoint($tablet) { 
+
+            float: left;
+            margin: 10px 0 5px;
+            width: 40%; 
+
+        }
+
+    }
+
+}
+
+div[id$="CartPanel"] table {
+    width: 100%;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects.Email" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects.Email" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="ArrayOfTriggeredGDOOrderConfirmationOrderLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TriggeredGDOOrderConfirmationOrderLine" nillable="true" type="tns:TriggeredGDOOrderConfirmationOrderLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTriggeredGDOOrderConfirmationOrderLine" nillable="true" type="tns:ArrayOfTriggeredGDOOrderConfirmationOrderLine" />
+  <xs:complexType name="TriggeredGDOOrderConfirmationOrderLine">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredGDOOrderConfirmationOrderLine" nillable="true" type="tns:TriggeredGDOOrderConfirmationOrderLine" />
+  <xs:complexType name="TriggeredGDOOrderConfirmationOrderLine_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredGDOOrderConfirmationOrderLine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorCost" type="xs:decimal" />
+          <xs:element minOccurs="0" name="EarnBase" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Flavor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsLinked" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LineTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="OrderID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriceWithCharges" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+          <xs:element minOccurs="0" name="SkuId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UnitPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="VolumePoints" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredGDOOrderConfirmationOrderLine_V01" nillable="true" type="tns:TriggeredGDOOrderConfirmationOrderLine_V01" />
+</xs:schema>

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>เพิ่มผลิตภัณฑ์</value>
+    <comment>_G582</comment>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>ท่านแน่ใจที่ต้องการยกเลิก?</value>
+    <comment>_G583</comment>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>ยกเลิกคำสั่งซื้อ</value>
+    <comment>_G584</comment>
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>ไม่มีรายการสั่งซื้อ</value>
+    <comment>_G585</comment>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>เปลี่ยนแปลงที่อยู่เพื่อจัดส่งเนื่องจากสินค้าหมดหรือต้องค้างส่ง</value>
+    <comment>_G586</comment>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>ไปที่ขั้นตอนถัดไป</value>
+    <comment>_G587</comment>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>ยืนยันการยกเลิก</value>
+    <comment>_G588</comment>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>ยืนยันการยกเลิก</value>
+    <comment>_G589</comment>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>ทำการสั่งซื้อต่อ</value>
+    <comment>_G590</comment>
+  </data>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>ลบ</value>
+    <comment>_G591</comment>
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>ฐานราคาสินค้า</value>
+    <comment>_G592</comment>
+  </data>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>&lt;b style='color:red;'&gt; สำคัญ - รีวิวก่อนที่จะชำระเงิน&lt;/b&gt; &lt;br /&gt; &lt;ul&gt; &lt;li&gt;จะไม่สามารถขอคืนเงินและไม่สามารถโอนบัตรได้&lt;/li&gt; &lt;li&gt;คุณมีคุณสมบัติครบถ้วนสำหรับงานนี้&lt;/li&gt; &lt;li&gt;การเข้าร่วมประชุมเป็นความสมัครใจและทั้งหมดเป็นความเสี่ยงของคุณเอง&lt;/li&gt; &lt;li&gt;ในการพิจารณาการเข้าร่วมประชุมนี้ ในขอบเขตสูงสุดและเฉพาะในกรณีที่ได้รับอนุญาตตามกฎหมายที่ใช้บังคับ คุณไม่เรียกร้องใดๆจากเฮอร์บาไลฟ์ไม่ว่าจะเป็นที่รู้จักหรือไม่รู้จักที่เกี่ยวข้องกับงานประชุมนี้ รวมถึงการเรียกร้องจากการบาดเจ็บทุพพลภาพถาวร, ความตาย, การโจรกรรมทรัพย์สิน การสูญเสียหรือความเสียหายใดๆ&lt;/li&gt; &lt;li&gt;เฮอร์บาไลฟ์อาจบันทึกภาพเคลื่อนไหวหรือภาพนิ่งของงานประชุมนี้และเฮอร์บาไลฟ์อาจจะใช้ภาพ และ / หรือเสียงของคุณ เพื่อการส่งเสริมการขายของเฮอร์บาไลฟ์ภายใต้ดุลยพินิจของเราแต่เพียงผู้เดียว&lt;/li&gt; &lt;/ul&gt;</value>
+    <comment>_G3293</comment>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>ย้อนกลับ</value>
+    <comment>_G594</comment>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>ถ้าท่านคลิกย้อนกลับ ระบบจะแสดงที่อยู่จัดส่งเป็นที่อยู่เดิม</value>
+    <comment>_G595</comment>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>ถ้าท่านคลิกลบ ท่านสามารถย้อนกลับไปเลือกทำการสั่งซื้อสินค้าที่มีจำหน่ายต่อได้</value>
+    <comment>_G596</comment>
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>สรุปยอดคำสั่งซื้อ</value>
+    <comment>_G597</comment>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกวิธีการรับสินค้า</value>
+    <comment>_G599</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกที่อยู่จัดส่ง</value>
+    <comment>_G600</comment>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกวิธีการจัดส่ง</value>
+    <comment>_G601</comment>
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>ชื่อผลิตภัณฑ์</value>
+    <comment>_G602</comment>
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>จำนวน</value>
+    <comment>_G603</comment>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>คำนวณอีกครั้ง</value>
+    <comment>_G604</comment>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>ลบ</value>
+    <comment>_G605</comment>
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>ยอดรวม &lt;br/&gt;</value>
+    <comment>_G606</comment>
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>รหัสสินค้า</value>
+    <comment>_G607</comment>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>รายการสั่งซื้อเกินกำหนดของรายได้</value>
+    <comment>_G608</comment>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>รายการสั่งซื้อเกินกำหนดของรายได้</value>
+    <comment>_G609</comment>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>ไม่สามารถมีขีดจำกัดของการสั่งซื้อ</value>
+    <comment>_G610</comment>
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>คะแนน&lt;/br&gt;</value>
+    <comment>_G611</comment>
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>ราคา&lt;br /&gt;ของคุณ</value>
+    <comment>_G612</comment>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>ไม่ใช่</value>
+    <comment>_G613</comment>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>ใช่</value>
+    <comment>_G614</comment>
+  </data>
+  <data name="DeleteHelp.Text" xml:space="preserve">
+    <value />
+    <comment>_G2379</comment>
+  </data>
+  <data name="lblHeaderChildSKU.Text" xml:space="preserve">
+    <value>รหัสสินค้ารอง/รายการสินค้า</value>
+    <comment>_G3859</comment>
+  </data>
+  <data name="lblHeaderParentSKU.Text" xml:space="preserve">
+    <value>รหัสสินค้าหลัก/รายการสินค้า</value>
+    <comment>_G3858</comment>
+  </data>
+</root>

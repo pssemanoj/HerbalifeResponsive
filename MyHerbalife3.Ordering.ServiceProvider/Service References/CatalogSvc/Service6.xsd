@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GenerateCachedCatalogRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogRequest" nillable="true" type="tns:GenerateCachedCatalogRequest" />
+  <xs:complexType name="GenerateCachedCatalogRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateCachedCatalogRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProcessName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogRequest_V01" nillable="true" type="tns:GenerateCachedCatalogRequest_V01" />
+  <xs:complexType name="GenerateCachedCatalogRequest_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateCachedCatalogRequest_V01">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Platform" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogRequest_V02" nillable="true" type="tns:GenerateCachedCatalogRequest_V02" />
+  <xs:complexType name="GenerateCachedCatalogResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogResponse" nillable="true" type="tns:GenerateCachedCatalogResponse" />
+  <xs:complexType name="GenerateCachedCatalogResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateCachedCatalogResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MachineName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Results" nillable="true" type="tns:ArrayOfGenerateCachedCatalogResult_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogResponse_V01" nillable="true" type="tns:GenerateCachedCatalogResponse_V01" />
+  <xs:complexType name="ArrayOfGenerateCachedCatalogResult_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GenerateCachedCatalogResult_V01" nillable="true" type="tns:GenerateCachedCatalogResult_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGenerateCachedCatalogResult_V01" nillable="true" type="tns:ArrayOfGenerateCachedCatalogResult_V01" />
+  <xs:complexType name="GenerateCachedCatalogResult_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateCachedCatalogResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExecutionCompletedTime" type="xs:dateTime" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ExecutionMessages" nillable="true" type="q3:ArrayOfstring" />
+          <xs:element minOccurs="0" name="ExecutionStartTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExecutionStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FusionStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FusionUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MachineName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogResult_V01" nillable="true" type="tns:GenerateCachedCatalogResult_V01" />
+  <xs:complexType name="GenerateCachedCatalogResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateCachedCatalogResult" nillable="true" type="tns:GenerateCachedCatalogResult" />
+  <xs:complexType name="RefreshCatalogCacheRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefreshCatalogCacheRequest" nillable="true" type="tns:RefreshCatalogCacheRequest" />
+  <xs:complexType name="RefreshCatalogCacheRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RefreshCatalogCacheRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClearCatalog" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ClearInventory" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ClearProductInfo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Platform" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefreshCatalogCacheRequest_V01" nillable="true" type="tns:RefreshCatalogCacheRequest_V01" />
+  <xs:complexType name="RefreshCatalogCacheResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefreshCatalogCacheResponse" nillable="true" type="tns:RefreshCatalogCacheResponse" />
+  <xs:complexType name="RefreshCatalogCacheResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RefreshCatalogCacheResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CatalogCacheReference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InventoryCachereference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MachineName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Messages" nillable="true" type="q7:ArrayOfstring" />
+          <xs:element minOccurs="0" name="ProductInfoCachereference" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RefreshCatalogCacheResponse_V01" nillable="true" type="tns:RefreshCatalogCacheResponse_V01" />
+  <xs:complexType name="GetCacheReferenceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCacheReferenceRequest" nillable="true" type="tns:GetCacheReferenceRequest" />
+  <xs:complexType name="GetCacheReferenceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetCacheReferenceRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Platform" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCacheReferenceRequest_V01" nillable="true" type="tns:GetCacheReferenceRequest_V01" />
+  <xs:complexType name="GetCacheReferenceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCacheReferenceResponse" nillable="true" type="tns:GetCacheReferenceResponse" />
+  <xs:complexType name="GetCacheReferenceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetCacheReferenceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CacheReference" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCacheReferenceResponse_V01" nillable="true" type="tns:GetCacheReferenceResponse_V01" />
+</xs:schema>

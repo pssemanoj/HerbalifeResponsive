@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="53d659f3-6bdf-456a-b5b4-9c64a73aff0c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://usws1qa2wcf01/service/Event/EventRest.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EventRest.xsd" MetadataType="Schema" ID="72f51c00-9d91-4f4a-9340-d1fdb60af19f" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd0" />
+    <MetadataFile FileName="EventRest1.xsd" MetadataType="Schema" ID="c3829786-914f-45c7-9ac8-52db7499d666" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd2" />
+    <MetadataFile FileName="EventRest2.xsd" MetadataType="Schema" ID="c4443182-3aff-4772-a651-7058ca480aaa" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd3" />
+    <MetadataFile FileName="EventRest3.xsd" MetadataType="Schema" ID="9f6fa656-3996-429d-ba05-08b03930573d" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd4" />
+    <MetadataFile FileName="EventRest4.xsd" MetadataType="Schema" ID="bf11b66c-49be-4a15-b363-ff51303c7c59" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd1" />
+    <MetadataFile FileName="EventRestBL.wsdl" MetadataType="Wsdl" ID="b5ed899e-7934-4a73-8b7a-4c76126a5500" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?wsdl" />
+    <MetadataFile FileName="EventRest.wsdl" MetadataType="Wsdl" ID="fe297e09-4c9c-4624-96d0-ed246a91d513" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EventRest.disco" MetadataType="Disco" ID="2a5e91f8-2123-4663-a6ce-dc565009f859" SourceId="1" SourceUrl="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

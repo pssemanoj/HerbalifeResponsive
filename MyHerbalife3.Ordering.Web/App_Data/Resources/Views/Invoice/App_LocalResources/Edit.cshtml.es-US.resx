@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="state" xml:space="preserve">
+    <value>Estado</value>
+    <comment>_GI103</comment>
+  </data>
+  <data name="streetAddress" xml:space="preserve">
+    <value>Domicilio</value>
+    <comment>_GI105</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Estado</value>
+    <comment>_GI104</comment>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotales</value>
+    <comment>_GI106</comment>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Editar factura</value>
+    <comment>_GI109</comment>
+  </data>
+  <data name="totalDue" xml:space="preserve">
+    <value>Total a pagar</value>
+    <comment>_GI110</comment>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>Impuesto</value>
+    <comment>_GI107</comment>
+  </data>
+  <data name="taxBased" xml:space="preserve">
+    <value>Mi impuesto según</value>
+    <comment>_GI108</comment>
+  </data>
+  <data name="SkuColumnTitle" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_GI102</comment>
+  </data>
+  <data name="reqStatus" xml:space="preserve">
+    <value>El estatus es obligatorio</value>
+    <comment>_GI96</comment>
+  </data>
+  <data name="retailPrice" xml:space="preserve">
+    <value>Precio al menudeo sugerido</value>
+    <comment>_GI97</comment>
+  </data>
+  <data name="reqInvoiceDate" xml:space="preserve">
+    <value>Fecha es obligatoria</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="reqProducts" xml:space="preserve">
+    <value>Los productos son obligatorios</value>
+    <comment>_GI95</comment>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>MOSTRAR</value>
+    <comment>_GI100</comment>
+  </data>
+  <data name="sku" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_GI101</comment>
+  </data>
+  <data name="RetailPriceColumnTitle" xml:space="preserve">
+    <value>Precio al menudeo sugerido</value>
+    <comment>_GI98</comment>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Seleccionar</value>
+    <comment>_GI99</comment>
+  </data>
+  <data name="savedCartNameMsg" xml:space="preserve">
+    <value>Actualmente, usted tiene artículos en su carrito. Si desea guardar su carrito actual para su uso en el futuro, ingrese un nombre a continuación.</value>
+    <comment>_GI248</comment>
+  </data>
+  <data name="backOrderMsg" xml:space="preserve">
+    <value>Algunos de los productos guardados en el carrito ya no están disponibles y no serán incluidos en su factura para el cliente</value>
+    <comment>_GI247</comment>
+  </data>
+  <data name="zipCode" xml:space="preserve">
+    <value>Código postal</value>
+    <comment>_GI120</comment>
+  </data>
+  <data name="savedCartAddressMsg" xml:space="preserve">
+    <value>Por favor, verifique la exactitud de su domicilio. Si estuviera correcta, haga clic en Continuar.</value>
+    <comment>_GI250</comment>
+  </data>
+  <data name="otherMemberInfo" xml:space="preserve">
+    <value>Otra información del Asociado</value>
+    <comment>_GI244</comment>
+  </data>
+  <data name="additionalMemberInfo" xml:space="preserve">
+    <value>Información adicional del Asociado</value>
+    <comment>_GI243</comment>
+  </data>
+  <data name="newProductPriceDiffersMsg" xml:space="preserve">
+    <value>Los precios de los productos en esta factura podrían no concordar con el pedido. Los precios pudieron haber cambiado desde que hizo su pedido {0}</value>
+    <comment>_GI246</comment>
+  </data>
+  <data name="moreMemberInfo" xml:space="preserve">
+    <value>Más información del Asociado</value>
+    <comment>_GI245</comment>
+  </data>
+  <data name="YourPriceColumnTitle" xml:space="preserve">
+    <value>Su precio</value>
+    <comment>_GI119</comment>
+  </data>
+  <data name="totalVP" xml:space="preserve">
+    <value>Puntos de Volumen Total</value>
+    <comment>_GI113</comment>
+  </data>
+  <data name="typeSearch" xml:space="preserve">
+    <value>Escriba el nombre o código del producto</value>
+    <comment>_GI114</comment>
+  </data>
+  <data name="totalPrice" xml:space="preserve">
+    <value>Precio total</value>
+    <comment>_GI111</comment>
+  </data>
+  <data name="TotalPriceColumnTitle" xml:space="preserve">
+    <value>Precio total</value>
+    <comment>_GI112</comment>
+  </data>
+  <data name="yourCost" xml:space="preserve">
+    <value>Su costo</value>
+    <comment>_GI117</comment>
+  </data>
+  <data name="yourPrice" xml:space="preserve">
+    <value>Su precio</value>
+    <comment>_GI118</comment>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Recalcular</value>
+    <comment>_GI115</comment>
+  </data>
+  <data name="VPColumnTitle" xml:space="preserve">
+    <value>Puntos de Volumen Total</value>
+    <comment>_GI116</comment>
+  </data>
+  <data name="DeleteColumnTitle" xml:space="preserve">
+    <value>Eliminar</value>
+    <comment>_GI60</comment>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>Descuento</value>
+    <comment>_GI61</comment>
+  </data>
+  <data name="EarnBase" xml:space="preserve">
+    <value>Base de Ganancias</value>
+    <comment>_GI62</comment>
+  </data>
+  <data name="currencySign" xml:space="preserve">
+    <value>$</value>
+    <comment>_GI57</comment>
+  </data>
+  <data name="customer" xml:space="preserve">
+    <value>Cliente</value>
+    <comment>_GI58</comment>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Fecha</value>
+    <comment>_GI59</comment>
+  </data>
+  <data name="fee" xml:space="preserve">
+    <value>Cuota de entrega</value>
+    <comment>_GI66</comment>
+  </data>
+  <data name="firstName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>_GI67</comment>
+  </data>
+  <data name="handling" xml:space="preserve">
+    <value>Manejo</value>
+    <comment>_GI68</comment>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Dirección de correo electrónico</value>
+    <comment>_GI63</comment>
+  </data>
+  <data name="ext" xml:space="preserve">
+    <value>Ext.</value>
+    <comment>_GI64</comment>
+  </data>
+  <data name="faceToface" xml:space="preserve">
+    <value>Marque aquí si esta venta se hizo en persona</value>
+    <comment>_GI65</comment>
+  </data>
+  <data name="browseContacts" xml:space="preserve">
+    <value>Navegar Contactos</value>
+    <comment>_GI48</comment>
+  </data>
+  <data name="browseProducts" xml:space="preserve">
+    <value>Navegar productos</value>
+    <comment>_GI49</comment>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>_GI50</comment>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>Agregar</value>
+    <comment>_GI45</comment>
+  </data>
+  <data name="addSavedCart" xml:space="preserve">
+    <value>Añadir carrito guardado</value>
+    <comment>_GI46</comment>
+  </data>
+  <data name="areaCode" xml:space="preserve">
+    <value>Código de área</value>
+    <comment>_GI47</comment>
+  </data>
+  <data name="collapse" xml:space="preserve">
+    <value>Colapsar</value>
+    <comment>_GI54</comment>
+  </data>
+  <data name="continue" xml:space="preserve">
+    <value>Continuar</value>
+    <comment>_GI55</comment>
+  </data>
+  <data name="createTitle" xml:space="preserve">
+    <value>Crear nueva factura</value>
+    <comment>_GI56</comment>
+  </data>
+  <data name="change" xml:space="preserve">
+    <value>Cambiar</value>
+    <comment>_GI51</comment>
+  </data>
+  <data name="ChangeAddressLink" xml:space="preserve">
+    <value>Cambiar</value>
+    <comment>_GI52</comment>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>Ciudad</value>
+    <comment>_GI53</comment>
+  </data>
+  <data name="HandlingFee" xml:space="preserve">
+    <value>Gastos de manejo y envío</value>
+    <comment>_GI69</comment>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Número de teléfono</value>
+    <comment>_GI85</comment>
+  </data>
+  <data name="phoneNumber" xml:space="preserve">
+    <value>Número de teléfono</value>
+    <comment>_GI86</comment>
+  </data>
+  <data name="productDescription" xml:space="preserve">
+    <value>Descripción del producto</value>
+    <comment>_GI87</comment>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>o</value>
+    <comment>_GI82</comment>
+  </data>
+  <data name="orEnter" xml:space="preserve">
+    <value>o ingrese la información a continuación</value>
+    <comment>_GI83</comment>
+  </data>
+  <data name="percentage" xml:space="preserve">
+    <value>%</value>
+    <comment>_GI84</comment>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>Cantidad</value>
+    <comment>_GI91</comment>
+  </data>
+  <data name="QuantityColumnTitle" xml:space="preserve">
+    <value>Cantidad</value>
+    <comment>_GI92</comment>
+  </data>
+  <data name="reqFirstName" xml:space="preserve">
+    <value>Nombre es obligatorio</value>
+    <comment>_GI93</comment>
+  </data>
+  <data name="productInformation" xml:space="preserve">
+    <value>Información del producto</value>
+    <comment>_GI88</comment>
+  </data>
+  <data name="ProductNameColumnTitle" xml:space="preserve">
+    <value>Descripción</value>
+    <comment>_GI89</comment>
+  </data>
+  <data name="profit" xml:space="preserve">
+    <value>Ganancia estimada</value>
+    <comment>_GI90</comment>
+  </data>
+  <data name="notesMessage" xml:space="preserve">
+    <value>"Los apuntes escritos aquí aparecerán en la factura."</value>
+    <comment>_GI81</comment>
+  </data>
+  <data name="invoiceMessage" xml:space="preserve">
+    <value>Esta factura no ajustará ningún cobro por tarjeta de crédito que sea procesado para pedidos hechos en su sitio Web. Para estos pedidos, asegúrese de que la factura refleje los cobros exactos, según se hayan pagado.</value>
+    <comment>_GI73</comment>
+  </data>
+  <data name="InvoiceShipToAddress" xml:space="preserve">
+    <value>Domicilio de envío de factura</value>
+    <comment>_GI74</comment>
+  </data>
+  <data name="invoiceInformation" xml:space="preserve">
+    <value>Información de la factura</value>
+    <comment>_GI72</comment>
+  </data>
+  <data name="individualProducts" xml:space="preserve">
+    <value>Añadir productos individuales</value>
+    <comment>_GI70</comment>
+  </data>
+  <data name="instructions" xml:space="preserve">
+    <value>Llene los campos a continuación, luego haga clic en el botón Continuar para ver su factura.</value>
+    <comment>_GI71</comment>
+  </data>
+  <data name="invoiceType" xml:space="preserve">
+    <value>Tipo de factura</value>
+    <comment>_GI75</comment>
+  </data>
+  <data name="note" xml:space="preserve">
+    <value>Aviso:</value>
+    <comment>_GI79</comment>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>Notas</value>
+    <comment>_GI80</comment>
+  </data>
+  <data name="memberInformation" xml:space="preserve">
+    <value>Información del Asociado</value>
+    <comment>_GI78</comment>
+  </data>
+  <data name="lastName" xml:space="preserve">
+    <value>Apellido</value>
+    <comment>_GI76</comment>
+  </data>
+  <data name="member" xml:space="preserve">
+    <value>Asociado</value>
+    <comment>_GI77</comment>
+  </data>
+  <data name="priceInfo" xml:space="preserve">
+    <value>Haga Click en "recalcular" cada vez que haga un cambio al pedido, así podrá ver el precio correctamente.</value>
+    <comment>_GI252</comment>
+  </data>
+  <data name="returnToInvoice" xml:space="preserve">
+    <value>Regresar al Factura</value>
+    <comment>_GI257</comment>
+  </data>
+  <data name="shipping" xml:space="preserve">
+    <value>Gastos de manejo y envío</value>
+    <comment>_GI262</comment>
+  </data>
+  <data name="userGuide" xml:space="preserve">
+    <value>Consulte la Guía de Usuario</value>
+  </data>
+  <data name="resetToDefault" xml:space="preserve">
+    <value>Restaurar a los valores previos</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+</root>

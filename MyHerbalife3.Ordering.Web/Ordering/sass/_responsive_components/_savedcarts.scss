@@ -1,0 +1,98 @@
+.search_cart {
+    .row {
+        margin-bottom: 5px;
+        width: span(4);
+
+        &.search-box {
+            @include breakpoint( $desktop) { display: inline-block; width: 260px; }
+        }
+        &.order-by {
+            @include breakpoint( $desktop) { display: inline-block; width: 245px; }
+        }
+        &.search-button {
+            @include breakpoint( $desktop) { display: inline-block; vertical-align: top; width: 215px; }
+        }
+
+        input[id$="txtSearch"] { 
+            width: span(3);
+            @include breakpoint( $desktop) { width: 200px; }
+        }
+        input[id$="btnSearch"] { 
+            width: span(1); 
+            margin: 0 0 0 1px;
+            @include breakpoint( $desktop) { margin: 0 10px; width: 36px; }
+        }
+
+        [id$="lblOrderBy"] { 
+            width: span(1);
+            @include breakpoint( $desktop) { width: auto; }
+        }
+
+        [id$="ddlOrderBy"] { 
+            width: span(3) !important;
+            @include breakpoint( $desktop) { width: 160px !important; }
+        }
+    }
+}
+
+.savedCarts {
+    width: span(4);
+    overflow-x: scroll;
+    overflow-y: visible;
+    @include breakpoint( $desktop) { overflow: visible; width: 747px; }
+
+    .productsCont th {
+        background: #daf6c6 !important;
+        @include breakpoint( $desktop) { background: rgba(0, 0, 0, 0) url("/Ordering/Images/saved-carts-grid-hd.jpg") repeat-x scroll 50% 50% !important; }
+    }
+}
+
+// Saved Carts //
+.gdo-nav-mid-sc {
+    width: span(96%);
+    @include breakpoint( $desktop) { width: 747px; }
+}
+
+.checkOutBtn, .deleteCartBtn { 
+    padding: 5px; 
+    @include breakpoint( $desktop) { padding: 0; }
+}
+
+#tabSavedCarts, #tabRecentOrders {
+    width: 100%;
+    @include breakpoint( $desktop) { width: auto; }
+}
+
+div[id$="updDeleteCart"] {
+    .gdo-popup {
+        width: span(3);
+        @include breakpoint( $desktop) { width: 350px; }        
+    }
+}
+
+.deleteCartBtn .linkBtn {
+    padding: 0;
+    @include breakpoint ( $desktop ) { padding: 5px 20px; }
+}
+
+div[id$="pnlClearCart"] {
+    width: 317px;
+
+    div[id$="updClearCart"] {
+        width: span(4);
+    }
+
+    div {
+        span, input {
+            width: span(4);
+        }
+    }
+
+    .gdo-popup {
+        div div {
+            margin-right: 0;
+            padding-right: 0;
+            width:span(4);
+        }
+    }
+}

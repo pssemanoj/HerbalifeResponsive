@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2013/08/01/HL.DistributorCRM.ValueObjects.Lead" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2013/08/01/HL.DistributorCRM.ValueObjects.Lead" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetMaintenanceScheduleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMaintenanceScheduleRequest" nillable="true" type="tns:GetMaintenanceScheduleRequest" />
+  <xs:complexType name="GetMaintenanceScheduleRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMaintenanceScheduleRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaintenanceSchedule" nillable="true" type="tns:MaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMaintenanceScheduleRequest_V01" nillable="true" type="tns:GetMaintenanceScheduleRequest_V01" />
+  <xs:complexType name="MaintenanceSchedule_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MaintenanceSchedule">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDateUTC" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MaintenanceScheduleId" type="xs:int" />
+          <xs:element minOccurs="0" name="StartDateUTC" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MaintenanceSchedule_V01" nillable="true" type="tns:MaintenanceSchedule_V01" />
+  <xs:complexType name="MaintenanceSchedule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MaintenanceSchedule" nillable="true" type="tns:MaintenanceSchedule" />
+  <xs:complexType name="SetMaintenanceScheduleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMaintenanceScheduleRequest" nillable="true" type="tns:SetMaintenanceScheduleRequest" />
+  <xs:complexType name="SetMaintenanceScheduleRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetMaintenanceScheduleRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaintenanceSchedule" nillable="true" type="tns:MaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMaintenanceScheduleRequest_V01" nillable="true" type="tns:SetMaintenanceScheduleRequest_V01" />
+  <xs:complexType name="UpdateMaintenanceScheduleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateMaintenanceScheduleRequest" nillable="true" type="tns:UpdateMaintenanceScheduleRequest" />
+  <xs:complexType name="UpdateMaintenanceScheduleRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateMaintenanceScheduleRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaintenanceSchedule" nillable="true" type="tns:MaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateMaintenanceScheduleRequest_V01" nillable="true" type="tns:UpdateMaintenanceScheduleRequest_V01" />
+  <xs:complexType name="CancelMaintenanceScheduleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CancelMaintenanceScheduleRequest" nillable="true" type="tns:CancelMaintenanceScheduleRequest" />
+  <xs:complexType name="CancelMaintenanceScheduleRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CancelMaintenanceScheduleRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaintenanceSchedule" nillable="true" type="tns:MaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CancelMaintenanceScheduleRequest_V01" nillable="true" type="tns:CancelMaintenanceScheduleRequest_V01" />
+  <xs:complexType name="GetMaintenanceScheduleResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMaintenanceScheduleResponse" nillable="true" type="tns:GetMaintenanceScheduleResponse" />
+  <xs:complexType name="GetMaintenanceScheduleResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMaintenanceScheduleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaintenanceSchedules" nillable="true" type="tns:ArrayOfMaintenanceSchedule_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMaintenanceScheduleResponse_V01" nillable="true" type="tns:GetMaintenanceScheduleResponse_V01" />
+  <xs:complexType name="ArrayOfMaintenanceSchedule_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MaintenanceSchedule_V01" nillable="true" type="tns:MaintenanceSchedule_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaintenanceSchedule_V01" nillable="true" type="tns:ArrayOfMaintenanceSchedule_V01" />
+  <xs:complexType name="SetMaintenanceScheduleResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMaintenanceScheduleResponse" nillable="true" type="tns:SetMaintenanceScheduleResponse" />
+  <xs:complexType name="SetMaintenanceScheduleResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetMaintenanceScheduleResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMaintenanceScheduleResponse_V01" nillable="true" type="tns:SetMaintenanceScheduleResponse_V01" />
+  <xs:complexType name="UpdateMaintenanceScheduleResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateMaintenanceScheduleResponse" nillable="true" type="tns:UpdateMaintenanceScheduleResponse" />
+  <xs:complexType name="UpdateMaintenanceScheduleResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateMaintenanceScheduleResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateMaintenanceScheduleResponse_V01" nillable="true" type="tns:UpdateMaintenanceScheduleResponse_V01" />
+  <xs:complexType name="CancelMaintenanceScheduleResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CancelMaintenanceScheduleResponse" nillable="true" type="tns:CancelMaintenanceScheduleResponse" />
+  <xs:complexType name="CancelMaintenanceScheduleResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CancelMaintenanceScheduleResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CancelMaintenanceScheduleResponse_V01" nillable="true" type="tns:CancelMaintenanceScheduleResponse_V01" />
+  <xs:complexType name="UpdateAssignmentCountryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAssignmentCountryResponse" nillable="true" type="tns:UpdateAssignmentCountryResponse" />
+  <xs:complexType name="UpdateAssignmentCountryResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateAssignmentCountryResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAssignmentCountryResponse_V01" nillable="true" type="tns:UpdateAssignmentCountryResponse_V01" />
+</xs:schema>

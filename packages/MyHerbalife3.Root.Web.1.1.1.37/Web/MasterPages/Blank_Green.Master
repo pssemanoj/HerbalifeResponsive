@@ -1,0 +1,124 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Blank.master.cs"
+    Inherits="HL.MyHerbalife.Web.MasterPages.Blank" %>
+
+<%@ Import Namespace="MyHerbalife3.Shared.UI.Helpers" %>
+<%@ Import Namespace="MyHerbalife3.Shared.Infrastructure.Helpers" %>
+<%@ Register Src="~/Controls/Template/MetaHeader.ascx" TagName="MetaHeader" TagPrefix="templates" %>
+<%@ Register Src="~/Controls/DeprecationMessage.ascx" TagPrefix="deprecation" TagName="deprecationmsg" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.Controls" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.ValueObjects" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register Src="~/Controls/Template/verticalCSS.ascx" TagPrefix="assets" TagName="styles" %>
+<%@ Register Src="~/Controls/Template/commonjs.ascx" TagPrefix="assets" TagName="commonjs" %>
+<%@ Register Src="~/Controls/Template/verticaljs.ascx" TagPrefix="assets" TagName="verticaljs" %>
+<%@ Register Src="~/Controls/GetHeaderAssets.ascx" TagPrefix="assets" TagName="getheader" %>
+<%@ Import Namespace="MyHerbalife3.Shared.AssetsAdapter.Extensions" %>  
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+        <templates:MetaHeader runat="server"></templates:MetaHeader>    
+        <title runat="server" id="Title"></title>
+        <!-- Styles
+        ================================================== -->
+        <asp:PlaceHolder runat="server">
+            <% if (oldCacheBusting) { %>
+                <!--[if gt IE 9]> -->
+                <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/CSS/mainCSS.txt", "/",vertical + "/CSS/bundle/site.css") %>
+                <!-- <![endif]-->
+
+                <!--[if lte IE 9]>
+                    <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_1.css") %>" />
+                    <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_2.css") %>" />
+                    <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_3.css") %>" />
+                <![endif]-->
+            <% } else { %>
+                <% if (HttpContext.Current.IsDebuggingEnabled) { %>
+                    <%= GetFiles("~" + vertical + "/CSS/mainCSS.txt", "/", "css") %>
+                <% } else { %>
+                    <assets:styles runat="server" id="styles"></assets:styles>
+                <% } %>      
+            <% }%>
+        </asp:PlaceHolder>
+
+        <asp:ContentPlaceHolder ID="headLinks" runat="server"></asp:ContentPlaceHolder>
+
+        <cc1:SafeRender id="localeCss" runat="server" FilePath="/Content/{0}/css/{0}.css" SafeString='<link rel="stylesheet" href="{0}" type="text/css" />' />
+
+        <assets:getheader runat="server" id="getheader"></assets:getheader>
+
+        <!--[if lt IE 9]>
+            <script src="/SharedUI/Scripts/html5.js"></script>
+            <script src="/SharedUI/Scripts/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+<body id="body" runat="server">
+
+    <!-- IE deprecation msg -->
+    <deprecation:deprecationmsg runat="server" id="deprecationmsg"></deprecation:deprecationmsg>
+
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager runat="server" ID="_RadScriptManager" ScriptMode="Release"
+        EnableScriptLocalization="true" EnableScriptGlobalization="true" />          
+    <div>
+        <asp:ContentPlaceHolder ID="contentBody" runat="server">
+        </asp:ContentPlaceHolder>
+        <cc1:StatusDisplay ID="StatusDisplay" runat="server" Visible="False" EnableViewState="False"
+            meta:resourcekey="StatusDisplayResource1" Status="None" />
+    </div>
+    </form>
+
+    <cc1:TealeafAnalytics ID="tealeafBlankMaster" runat="server"></cc1:TealeafAnalytics>
+
+    <!-- SCRIPTS -->
+    <asp:PlaceHolder runat="server">
+
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+        <script>
+            if (!window.jQuery) {
+                // fallback to local jQuery
+                document.write(decodeURIComponent('%3Cscript src="/Scripts/jquery/jquery-1.10.2.min.js" %3E%3C/script%3E'));
+            }
+            if (!window.jQuery || !window.jQuery.migrateWarnings) {
+                document.write(unescape('%3Cscript src="/Scripts/jquery/jquery-migrate-1.2.1.min.js" %3E%3C/script%3E'));
+            }
+        </script>
+
+        <%--Kendo--%>
+        <% if (oldKendo) { %>
+            <script src="/Scripts/kendo/kendo.custom.min-1.0.1.js"></script>
+        <% } else { %>
+            <script src="/Scripts/kendo/kendo.core.min-1.0.0.js"></script>           
+        <% }%>
+        
+    </asp:PlaceHolder>
+        
+    <asp:PlaceHolder runat="server">
+        <% if (oldCacheBusting) { %>
+            <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/",vertical + "/Scripts/bundle/common.js") %>
+            <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/vertical.txt", "/",vertical + "/Scripts/bundle/vertical.js") %>
+        <% } else { %>
+            <% if (HttpContext.Current.IsDebuggingEnabled) { %>
+                <%= GetFiles("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/","js") %>
+                <%= GetFiles("~" + vertical + "/Scripts/vertical.txt", "/","js") %>
+            <% } else { %>
+                <assets:commonjs runat="server" id="commonjs"></assets:commonjs>
+                <assets:verticaljs runat="server" id="verticaljs"></assets:verticaljs>
+            <% } %> 
+        <% }%>      
+        <!-- Adobe DTM -->
+        <script type="text/javascript">_satellite.pageBottom();</script>
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="contentHeader" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <% Response.Write(this.GetAsset("FooterAssets",locale)); %>
+
+</body>
+</html>

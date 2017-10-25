@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GetDistributorWebExamRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebExamRequest" nillable="true" type="tns:GetDistributorWebExamRequest" />
+  <xs:complexType name="GetDistributorWebExamRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebExamRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebExamRequest_V01" nillable="true" type="tns:GetDistributorWebExamRequest_V01" />
+  <xs:complexType name="GetDistributorWebExamResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebExamResponse" nillable="true" type="tns:GetDistributorWebExamResponse" />
+  <xs:complexType name="GetDistributorWebExamResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebExamResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorWebExam" nillable="true" type="tns:DistributorWebExam_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebExamResponse_V01" nillable="true" type="tns:GetDistributorWebExamResponse_V01" />
+  <xs:complexType name="DistributorWebExam_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebExam">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Duration" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="NumberOfQuestions" type="xs:int" />
+          <xs:element minOccurs="0" name="PassingPercentage" type="xs:double" />
+          <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Questions" nillable="true" type="q3:ArrayOfKeyValueOfQuestion_V01ArrayOfOption_V01tHRLfgva" />
+          <xs:element minOccurs="0" name="QuestionsPerPage" type="xs:int" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TopicAreas" nillable="true" type="tns:ArrayOfTopicArea_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebExam_V01" nillable="true" type="tns:DistributorWebExam_V01" />
+  <xs:complexType name="DistributorWebExam">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebExam" nillable="true" type="tns:DistributorWebExam" />
+  <xs:complexType name="Question_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Question">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TopicAreaId" type="xs:int" />
+          <xs:element minOccurs="0" name="TopicAreaTitle" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Question_V01" nillable="true" type="tns:Question_V01" />
+  <xs:complexType name="Question">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Question" nillable="true" type="tns:Question" />
+  <xs:complexType name="ArrayOfOption_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Option_V01" nillable="true" type="tns:Option_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOption_V01" nillable="true" type="tns:ArrayOfOption_V01" />
+  <xs:complexType name="Option_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Option">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Option_V01" nillable="true" type="tns:Option_V01" />
+  <xs:complexType name="Option">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Option" nillable="true" type="tns:Option" />
+  <xs:complexType name="ArrayOfTopicArea_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TopicArea_V01" nillable="true" type="tns:TopicArea_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTopicArea_V01" nillable="true" type="tns:ArrayOfTopicArea_V01" />
+  <xs:complexType name="TopicArea_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TopicArea">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TopicArea_V01" nillable="true" type="tns:TopicArea_V01" />
+  <xs:complexType name="TopicArea">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TopicArea" nillable="true" type="tns:TopicArea" />
+  <xs:complexType name="GetLastDistributorWebExamRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLastDistributorWebExamRequest" nillable="true" type="tns:GetLastDistributorWebExamRequest" />
+  <xs:complexType name="GetLastDistributorWebExamRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLastDistributorWebExamRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLastDistributorWebExamRequest_V01" nillable="true" type="tns:GetLastDistributorWebExamRequest_V01" />
+  <xs:complexType name="GetLastDistributorWebExamResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLastDistributorWebExamResponse" nillable="true" type="tns:GetLastDistributorWebExamResponse" />
+  <xs:complexType name="GetLastDistributorWebExamResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLastDistributorWebExamResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorWebExamResult" nillable="true" type="tns:DistributorWebExamResult_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLastDistributorWebExamResponse_V01" nillable="true" type="tns:GetLastDistributorWebExamResponse_V01" />
+  <xs:complexType name="DistributorWebExamResult_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebExamResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Attempt" type="xs:int" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+          <xs:element minOccurs="0" name="PositiveAnswers" type="xs:int" />
+          <xs:element minOccurs="0" name="Score" type="xs:float" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebExamResult_V01" nillable="true" type="tns:DistributorWebExamResult_V01" />
+  <xs:complexType name="DistributorWebExamResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebExamResult" nillable="true" type="tns:DistributorWebExamResult" />
+  <xs:complexType name="SaveDistributorExamAnswersRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorExamAnswersRequest" nillable="true" type="tns:SaveDistributorExamAnswersRequest" />
+  <xs:complexType name="SaveDistributorExamAnswersRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorExamAnswersRequest">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Answers" nillable="true" type="q12:ArrayOfKeyValueOfintArrayOfintty7Ep6D1" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorExamAnswersRequest_V01" nillable="true" type="tns:SaveDistributorExamAnswersRequest_V01" />
+  <xs:complexType name="SaveDistributorExamAnswersResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorExamAnswersResponse" nillable="true" type="tns:SaveDistributorExamAnswersResponse" />
+  <xs:complexType name="SaveDistributorExamAnswersResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorExamAnswersResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorWebExamResult" nillable="true" type="tns:DistributorWebExamResult_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorExamAnswersResponse_V01" nillable="true" type="tns:SaveDistributorExamAnswersResponse_V01" />
+  <xs:complexType name="ResetDistributorExamRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetDistributorExamRequest" nillable="true" type="tns:ResetDistributorExamRequest" />
+  <xs:complexType name="ResetDistributorExamRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResetDistributorExamRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetDistributorExamRequest_V01" nillable="true" type="tns:ResetDistributorExamRequest_V01" />
+  <xs:complexType name="ResetDistributorExamResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetDistributorExamResponse" nillable="true" type="tns:ResetDistributorExamResponse" />
+  <xs:complexType name="ResetDistributorExamResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResetDistributorExamResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorWebExam" nillable="true" type="tns:DistributorWebExamResult_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResetDistributorExamResponse_V01" nillable="true" type="tns:ResetDistributorExamResponse_V01" />
+</xs:schema>

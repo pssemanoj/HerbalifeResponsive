@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2007/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2007/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd44" namespace="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="SaveDSBannedWordsRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSBannedWordsRequestBase" nillable="true" type="tns:SaveDSBannedWordsRequestBase" />
+  <xs:complexType name="SaveDSBannedWordsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDSBannedWordsRequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="BannedWords" nillable="true" type="q2:ArrayOfDSComplianceBannedWord_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSBannedWordsRequest_V01" nillable="true" type="tns:SaveDSBannedWordsRequest_V01" />
+  <xs:complexType name="SaveDSBannedWordsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" base="q3:SaveDSBannedWordsResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RowsAffected" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSBannedWordsResponse_V01" nillable="true" type="tns:SaveDSBannedWordsResponse_V01" />
+  <xs:complexType name="GetDSWebsiteInfoRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSWebsiteInfoRequestBase" nillable="true" type="tns:GetDSWebsiteInfoRequestBase" />
+  <xs:complexType name="GetDSWebsiteInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSWebsiteInfoRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSWebsiteInfoRequest_V01" nillable="true" type="tns:GetDSWebsiteInfoRequest_V01" />
+  <xs:complexType name="SaveDSWebsiteInfoRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSWebsiteInfoRequestBase" nillable="true" type="tns:SaveDSWebsiteInfoRequestBase" />
+  <xs:complexType name="SaveDSWebsiteInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDSWebsiteInfoRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="blockContact" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blockPhoto" type="xs:boolean" />
+          <xs:element minOccurs="0" name="blockStory" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSWebsiteInfoRequest_V01" nillable="true" type="tns:SaveDSWebsiteInfoRequest_V01" />
+  <xs:complexType name="SaveDSWebsiteInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" base="q6:SaveDSWebsiteInfoResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RowsAffected" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSWebsiteInfoResponse_V01" nillable="true" type="tns:SaveDSWebsiteInfoResponse_V01" />
+  <xs:complexType name="SaveDSApprovedInfoRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSApprovedInfoRequestBase" nillable="true" type="tns:SaveDSApprovedInfoRequestBase" />
+  <xs:complexType name="SaveDSApprovedInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDSApprovedInfoRequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="Approval" nillable="true" type="q8:ArrayOfDSApprovedInfo_V01" />
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DistributorIDs" nillable="true" type="q9:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSApprovedInfoRequest_V01" nillable="true" type="tns:SaveDSApprovedInfoRequest_V01" />
+  <xs:complexType name="SaveDSApprovedInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" base="q10:SaveDSApprovedInfoResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RowsAffected" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSApprovedInfoResponse_V01" nillable="true" type="tns:SaveDSApprovedInfoResponse_V01" />
+</xs:schema>

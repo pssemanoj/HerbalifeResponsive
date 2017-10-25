@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Installments" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Installments" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="ArrayOfCardInstallment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CardInstallment" nillable="true" type="tns:CardInstallment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCardInstallment" nillable="true" type="tns:ArrayOfCardInstallment" />
+  <xs:complexType name="CardInstallment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element name="ApplyDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ConfigurationData" nillable="true" type="xs:string" />
+          <xs:element name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedPgmID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedUsr" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DraftExclusionDateTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastDateTimeToPlaceOrders" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastPaymentDateTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdatedOn" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdatedPgmID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdatedUsr" nillable="true" type="xs:string" />
+          <xs:element name="OrderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TicketDueDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CardInstallment" nillable="true" type="tns:CardInstallment" />
+</xs:schema>

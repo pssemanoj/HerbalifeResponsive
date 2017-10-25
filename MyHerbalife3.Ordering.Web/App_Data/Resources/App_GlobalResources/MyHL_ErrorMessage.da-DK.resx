@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Art. nr. vedr. årligt Medlemsservicegebyr kan ikke tilføjes din kurv</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Årsafgiften kan ikke fjernes fra Indkøbskurven</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Er du sikker på at du vil slette denne ordre? Ved at klikke 'OK' vil alle produkter blive fjernet fra din Indkøbskurv.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value />
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Restordre produkter kan ikke tilføjes en årsafgift ordre</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Korttransaktionen blev ikke autoriseret. Vær venlig at tjekke kortdetaljer</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Fejl format. Venligst sæt ind korrekt format.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Du har tastet samme art. nr. ind to gange. Vær venlig at forsøg igen.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Event Billetter er begrænset til {0} pr. ordre.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Event billetkøb er ikke tilladt på denne side</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Atikkelnummer {0} Tilgængelig på lager {1} stk. Vær venlig at justere ønsket antal for at lægge dette i kurven.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>1 eller flere af art. nr. {0}, kan blive lagt på restordre.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Antal kan ikke være højere end {1} for art. nr {0}</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Beklager, du har ikke et registreret kort hos os. Venligst kontakt Forhandlerservice: DRNordic@herbalife.com</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Ugyldig postnummer. Hvis dette er en adresse på Færøerne, skal du indtaste et nul (0) foran postnummeret. Eksempel: 0150</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value />
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Vi har for tiden ikke vare {0} på lager, antal blev ændret til 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Der er en begrænsning på 3 Today Magasin i hver ordre</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maksimalt antal nyhedsbreve der kan placeres i kurven er {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Navnet er allerede i brug, venligst vælg et andet navn</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online bestilling er ikke tilgængelig.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online bestilling er ikke tilladt.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Kun produkter kan ligges i en årsafgift ordre'</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Betalt beløb stemmer ikke overens med totalbeløb for denne ordre.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Venligst sæt ind et antal højere end 0.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Venligst kontroller din kortinformation</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Tjek Forhandler-ID og PIN-kode, og prøv igen. Hvis problemet fortsætter, bedes du kontakte Forhandlerservice på 3848 7766</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Venligst fuldfør din årsafgift ordre før du ligger andre produkter i kurven.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Venligst fuldfør din årsafgiftbetaling inden du bestiller Event billetter</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Venligst indtast et tal</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Venligst sæt ind antal for art. nr. {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value />
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Venligst sæt ind By</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Venligst sæt ind gyldig navn</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Beklager, vi kunne ikke tilføje dit kort. Prøv igen med et kaldenavn, ikke at have kreditkortnummer.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value />
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Venligst sæt ind e-mail adresse</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Venligst sæt ind betalingsinformation</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Venligst tilføj CVV.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Venligst sæt ind ønsket antal for årsafgifter du vil betale.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Venligst sæt ind en e-mail adresse</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Venligst sæt ind gyldig fornavn.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Venligst sæt ind gyldig efternavn.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Venligst sæt ind gyldig mellemnavn.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Venligst sæt ind obligatorisk forsendelsesinformation</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Venligst sæt ind områdenummer i rigtig format</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value />
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Venligst udfyld modtagernavn</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Venligst udfyld områdenummer</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Venligst udfyld by</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value />
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Venligst sæt ind fornavn</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Venligst sæt ind efternavn</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Venligst udfyld alle obligatoriske felter</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Venligst sæt ind telefonnummer</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Venligst udfyld sted</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Venligst udfyld gade adressefeltet</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Venligst udfyld postnummer</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Venligst sæt telefonnummer ind i rigtig format</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Venligst bemærk at du kun kan gemme {0} kort af gangen. Venligst slet et eksisterende kort hvis du ønsker at tilføje et nyt kort.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Bemærk: Internet Explorer eller Firefox er bedst egnet til at se denne side.</value>
+    <comment>_H279</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value />
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value />
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value />
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Venligst vælg ordretype.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value />
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value />
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value />
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value />
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value />
+    <comment>_G1236</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Venligst vælg Ja/Nej.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Hovedadressen kan ikke slettes. Venligst vælg en alternativ hovedadresse og forsøg igen.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value />
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Fortsæt til udgangskassen</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Fortsæt til hjemmeside.</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Forsendelse til dette postnummer er ikke tilladt. Venligst kontakt Forhandlerservice.</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Artikkelnummer {0} er ikke tilgængelig.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value />
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Systemfejl</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Ordremåneden er ændret)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Artikkelnummer {0} vil blive på restordre.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>By er ugyldig.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Adressen skal indeholde mindst et bogstav.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Postboks kan ikke bruges som adresse</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transaktionen blev ikke godkendt, venligst klik "bekræft" igen. Hvis det samme problem opstår igen, venligst kontakt Forhandlerservice: DRNordic@herbalife.com</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transaktionen blev ikke godkendt, venligst kontakt Forhandlerservice: DRNordic@herbalife.com</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Postnummeret er ugyldig.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Der er ingen produkter til betaling i denne ordre.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Der er i øjeblikket ikke stor nok lagerbeholdning for art. nr. {0}. Tilgængelig antal: {1}.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Du har ikke valgt nogen produkter at ligge i kurven.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Ingen produkter er valgt for volume kalkulering</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Denne adresse findes allerede i databasetesten.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value />
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Denne transaktion blev ikke godkendt for dette kort.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today magasinet er blevet tilføjet i kurven.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Din ordre kunne ikke fuldføres. Venligst kontakt Forhandlerservice: Drnordic@herbalife.com</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Din ordre kunne ikke fuldføres. Venligst kontakt Forhandlerservice: Drnordic@herbalife.com</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Din ordre blev desværre ikke lagt i vores systemer. Venligst tjek forsendelsesadressen og forsøg igen. Venligst ta kontakt med Forhandlerservice hvis problemet opstår igen.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Vi beklager. Valutaen kunne ikke konverteres. Venligst kontakt Forhandlerservice på tlf. 67 12 66 66</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Du har allerede event billetter i kurven. Vil du tømme kurven?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Du forsøger at slette et hovedkort. Venligst vælg et andet kort som hovedkort for at kunne fuldføre sletning af dette kort.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Du kan ikke bruge dette kort på grund af flere afvisninger.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Kaldenavnet findes allerede. Tilføj et nyt kaldenavn</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Du kan ikke lægge dette produkt i Indkøbskurven.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Du kan ikke gå til {0} siden når din Indkøbskurv er tom.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value />
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Du har ændret ordremåneden på denne ordre til {month}. Ønsker du at fortsætte med dette valg?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Du har Event billetter i din Indkøbskurv, vil du tømme kurven?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Du har produkter i din Indkøbskurv. Vil du fjerne disse for at kunne fortsætte og handle Event billetter?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Du har valgt {0} som ordremåned, er dette riktig?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value />
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Du har valgt at bladre i produktlisten uden og bestille noget og vil ikke have mulighed til og ligge noget i Indkøbskurven.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Du har tilføjet HFF i kurven.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Du kan kun forhåndsbetale indtil 90 dage før forfaldsdato.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Du må vælge forsendelsesalternativ inden du fortsætter</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Vi har bemærket, at du har afgivet en identisk ordre på {0} . Bekræft venligst hvis du ønsker at forsætte</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Dit administrationsgebyr forfalder til betaling {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Du har en årsavgift som er forfaldet til betaling. Den er blevet tilføjet i din indkøbskurv.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Du har flere administrationsgebyr som er forfaldet til betaling. Disse er blevet tilføjet i din indkøbskurv.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Dit kort er udløbet. Venligst klik Ændre og opdater kortdetaljerne.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>"Dit kort er udløbet, venligst kontakt Medlemsservice: nordicmb@herbalife.com
+  "</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Vi kan ikke behandle din anmodning, du bedes kontakte Medlemsservice på 3848 7766</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Vi kan ikke behandle din anmodning, du bedes kontakte Medlemservice på 3848 7766</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Din forrige ordre blev bekræftet/sendt, inden du foretog ændringer i indkøbskurven. Dit ordre nummer er {0}. Du kan tjekke ordre status ved at gå ind på Mine Ordrer under Min Konto og Rapporter eller ringe til os på tlf  38 48 77 66. (Venligst bemærk at det kan tage op til 1 time før ordren er synlig.&lt;br&gt;Hvis du vil fuldføre en ny ordrer, venligst tilføj produkter til indkøbskurven)</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Dine ubetalte administrationsgebyr er blevet tilføjet i din indkøbskurv.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Din forsendelsesinformation er ikke længere gylding. Kurven vil blive tømt.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Venligst vælg ordretype fra mini kurven</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value />
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Adressebekræftelse er påkrævet</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Vi har bemærket, at du har afgivet en identisk ordre på {0} . Bekræft venligst hvis du ønsker at forsætte</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Venligst set ind din Forhandler ID</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Venligst vælg en PIN forsendelsesmetode</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Salg er ikke tilgængelig på dette tidspunkt</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>You must delete one of your credit cards to change the items in your cart</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>For at færdiggøre oprettelsen af din konto som nyt Medlem bedes du vælge én af de lokale fra dit ordrebehandlingsland, og prøv igen.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>PIN-koden kan ikke hentes</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Prisen for varerne i din kurv er ændret på grund af en fejl. Du bedes genindsende din ordre.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Din forespørgsel kan ikke behandles på nuværende tidspunkt på grund af tekniske problemer. Prøv igen senere.</value>
+    <comment>_1A8</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Bearbejdelsen af din nylige medlemsansøgning kan tage op til 12-18 timer. Efter din ansøgning er blevet bearbejdet, vil du kunne foretage bestillinger. Du bedes komme tilbage senere for at færdiggøre din bestilling.</value>
+    <comment>_GXXXX</comment>
+  </data>
+</root>

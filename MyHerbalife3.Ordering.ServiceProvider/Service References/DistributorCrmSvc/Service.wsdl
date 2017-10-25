@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces" location="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IDistributorCRMService" type="i0:IDistributorCRMService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveLeadQualificationEvent">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadQualificationEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnableDistributorToReceiveHL24Leads">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/EnableDistributorToReceiveHL24Leads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMercadoPagoAccount">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateMercadoPagoAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMercadoPagoAccessKeys">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMercadoPagoAccessKeys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayPalToken">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPayPalAccountId">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalAccountId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayPalBillingAgreement">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CreatePayPalBillingAgreement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProPayAccount">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProPayAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductPrograms">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductPrograms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductProgram">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProgram">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrograms">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SavePrograms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgram">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhotos">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPhotos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomBannerElements">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCustomBannerElements" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberCustomBannerInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMemberCustomBannerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMemberCustomBannerInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMemberCustomBannerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberCustomBannerInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteMemberCustomBannerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberSiteStatus">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMemberSiteStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferSite">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/TransferSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBannedWords">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllBannedWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBannedWords">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBannedWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorInformation">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBlockInformation">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBlockInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleDistInfos">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMultipleDistInfos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovedDistInfos">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveApprovedDistInfos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReport">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSBannedWords">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWords" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSBannedWordsPermissive">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWordsPermissive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMembershipUser">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMembershipUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMembershipRoles">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllMembershipRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMembershipUser">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMembershipUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveDirectoryUser">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetActiveDirectoryUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddActiveDirectoryUserToGroup">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddActiveDirectoryUserToGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExportDistributorContacts">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ExportDistributorContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurvey">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSurvey">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveSurvey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyStatusByReference">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurveyStatusByReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailComplianceSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailComplianceSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveEmailComplianceSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveEmailComplianceSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SavePrimaryAddress">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SavePrimaryAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailTemplates">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailTemplates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMailing">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMailing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRecipients">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListRecipients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOptOut">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetOptOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveOptOut">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveOptOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingHistory">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingHistoryDetail">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistoryDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeMailingWorkflow">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/InvokeMailingWorkflow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMailingQuota">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckMailingQuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCancelOptOutMessage">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendCancelOptOutMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDefaultMailingTokens">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDefaultMailingTokens" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultMailingTokens">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDefaultMailingTokens" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessage">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessageG">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessageG" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExactTargetSubscriber">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExactTargetSubscriber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBulkEmail">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetBulkEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBulkEmailStatus">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateBulkEmailStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSmsTriggeredMessage">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendSmsTriggeredMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorQualifications">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorQualifications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByExamId">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExamByExamId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastExamByDistributorId">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLastExamByDistributorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorExamAnswers">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorExamAnswers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetDistributorExam">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ResetDistributorExam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAppointments">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointment">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppointment">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveAppointment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppointments">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendarSettingsByOwner">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCalendarSettingsByOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCalendarSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveCalendarSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByName">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadContactInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadContactInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByOwner">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByFilter">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContact">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactByContactDistributorID">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContactByContactDistributorID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveContact">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportContacts">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ImportContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyContactList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CopyContactList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByID">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactsByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContactsToList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddContactsToList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContactListsByOwner">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactListsByOwner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveContactIsNewStatus">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactIsNewStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByContactListIDs">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByContactListIDs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDistributorsToContacts">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListTasks">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTask">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTask">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTasksStatus">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTasksStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTasks">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveContactList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEnhancedVisibility">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEnhancedVisibility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetEnhancedVisibility">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetEnhancedVisibility" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDistributorByFilter">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListDistributorByFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDistributorsToDistributorCRM">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToDistributorCRM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadQualification">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadOption">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadOption">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSLeadProfile">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSLeadProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDSLeadProfile">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDSLeadProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadCountryList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadCountryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadRegionsList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadRegionsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountriesLanguages">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountryID">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountriesByRegion">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesByRegion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSLeadSearch">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSLeadSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadBasicInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadBasicInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadDetailHistory">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadDetailHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadsForDS">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadsForDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetPendingLeads">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetPendingLeads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadActionCode">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadActionCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadTypes">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetReAssignmentReason">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetReAssignmentReason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDashboardCities">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDashboardCities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveReAssignedLead">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveReAssignedLead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDistributorInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSDistributorSearch">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSDistributorSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSQualifiedMemberSearch">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSQualifiedMemberSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDistributorForLeadReassign">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorForLeadReassign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetQualificationOverride">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetQualificationOverride" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetAssignmentOverride">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAssignmentOverride" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDSDashboard">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDSDashboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLeadByDistributor">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateLeadByDistributor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormLookUp">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormLookUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormCountries">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetAdminDashboard">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAdminDashboard" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetSourceForCountry">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetSourceForCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormRules">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveLeadFormRules">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveLeadFormRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaintenanceSchedule">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMaintenanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMaintenanceSchedule">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetMaintenanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMaintenanceSchedule">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMaintenanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelMaintenanceSchedule">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CancelMaintenanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentCountries">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAssignmentCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignmentCountry">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateAssignmentCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadFollowupDetails">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadFollowupDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadFollowupDetails">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadFollowupDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetCustomerPropertiesNative">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetCustomerPropertiesNative" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveCustomerPropertiesNative">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveCustomerPropertiesNative" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPromoGift">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGift" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPromoGiftValues">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGiftValues" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BindPromoGiftItems">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/BindPromoGiftItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckContent">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebsiteCountryInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteCountryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteExtensions">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteExtensions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebSiteSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebSiteSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebSiteSettings">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebSiteSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogs">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCatalogs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteNavigation">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteNavigation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteThemes">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteThemes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWebExtension">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateWebExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitesByDistributorId">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitesByDistributorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebsiteInformation">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteInformation">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteCountryInfo">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteCountryInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitePageContent">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitePageContentList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteDisplayModuleContent">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteDisplayModuleList">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteContentById">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteContentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadQualificationEvents">
+      <soap:operation soapAction="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualificationEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

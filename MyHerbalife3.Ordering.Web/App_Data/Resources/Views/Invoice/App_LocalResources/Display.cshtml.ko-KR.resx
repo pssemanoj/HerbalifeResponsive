@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ltInvoice" xml:space="preserve">
+    <value>수당명세서</value>
+    <comment>G3713</comment>
+  </data>
+  <data name="copyToNewInvoice" xml:space="preserve">
+    <value>새로운 인보이스로 복사</value>
+    <comment>_GI17</comment>
+  </data>
+  <data name="saveasPdf" xml:space="preserve">
+    <value>PDF로 저장하기</value>
+    <comment>_GI33</comment>
+  </data>
+  <data name="ConfirmEmailSended" xml:space="preserve">
+    <value>확인</value>
+    <comment>_GI14</comment>
+  </data>
+  <data name="ConfirmEmailSendedText" xml:space="preserve">
+    <value>이 인보이스는 다음 이메일로 전송됩니다:</value>
+    <comment>_GI15</comment>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>확인</value>
+    <comment>_GI13</comment>
+  </data>
+  <data name="ConfirmInvoiceDeletion" xml:space="preserve">
+    <value>인보이스 삭제 확인</value>
+    <comment>_GI16</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+    <comment>_GI12</comment>
+  </data>
+  <data name="invoiceDate" xml:space="preserve">
+    <value>인보이스 일자</value>
+    <comment>_GI26</comment>
+  </data>
+  <data name="invoiceNumber" xml:space="preserve">
+    <value>인보이스 번호</value>
+    <comment>_GI27</comment>
+  </data>
+  <data name="invoice" xml:space="preserve">
+    <value>인보이스</value>
+    <comment>_GI24</comment>
+  </data>
+  <data name="InvoiceConfirmDeletion" xml:space="preserve">
+    <value>인보이스 번호 지우기</value>
+    <comment>_GI25</comment>
+  </data>
+  <data name="productName" xml:space="preserve">
+    <value>제품명</value>
+    <comment>_GI30</comment>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>수량</value>
+    <comment>_GI31</comment>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>주의사항</value>
+    <comment>_GI28</comment>
+  </data>
+  <data name="printInvoice" xml:space="preserve">
+    <value>인보이스 출력하기</value>
+    <comment>_GI29</comment>
+  </data>
+  <data name="emailInvoice" xml:space="preserve">
+    <value>인보이스 이메일로 보내기</value>
+    <comment>_GI23</comment>
+  </data>
+  <data name="createOrder" xml:space="preserve">
+    <value>주문 생성하기</value>
+    <comment>_GI18</comment>
+  </data>
+  <data name="returnToInvoice" xml:space="preserve">
+    <value>인보이스로 돌아가기</value>
+    <comment>_GI255</comment>
+  </data>
+  <data name="retailPrice" xml:space="preserve">
+    <value>기준가</value>
+    <comment>_GI32</comment>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>발송</value>
+    <comment>_GI34</comment>
+  </data>
+  <data name="earnBase" xml:space="preserve">
+    <value>프로덕션 보너스 지급 기준</value>
+    <comment>_GI21</comment>
+  </data>
+  <data name="editInvoice" xml:space="preserve">
+    <value>인보이스 수정하기</value>
+    <comment>_GI22</comment>
+  </data>
+  <data name="deleteInvoice" xml:space="preserve">
+    <value>인보이스 지우기</value>
+    <comment>_GI19</comment>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>할인율</value>
+    <comment>_GI20</comment>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>세금</value>
+    <comment>_GI40</comment>
+  </data>
+  <data name="subtotal" xml:space="preserve">
+    <value>소계</value>
+    <comment>_GI39</comment>
+  </data>
+  <data name="totalPrice" xml:space="preserve">
+    <value>총 금액:</value>
+    <comment>_GI41</comment>
+  </data>
+  <data name="yourTotalDue" xml:space="preserve">
+    <value>총 금액</value>
+    <comment>_GI44</comment>
+  </data>
+  <data name="viewInvoice" xml:space="preserve">
+    <value>인보이스 보기</value>
+    <comment>_GI42</comment>
+  </data>
+  <data name="shipping" xml:space="preserve">
+    <value>배송비</value>
+    <comment>_GI35</comment>
+  </data>
+  <data name="viewInvoiceDescription" xml:space="preserve">
+    <value>아래의 인보이스를 확인해 주세요. 인보이스 관리는 오른쪽 링크를 클릭하시면 됩니다.</value>
+    <comment>_GI43</comment>
+  </data>
+  <data name="shipTo" xml:space="preserve">
+    <value>배송지</value>
+    <comment>_GI36</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>주문 상태</value>
+    <comment>_GI38</comment>
+  </data>
+  <data name="sku" xml:space="preserve">
+    <value>품목번호</value>
+    <comment>_GI37</comment>
+  </data>
+  <data name="userGuide" xml:space="preserve">
+    <value />
+  </data>
+  <data name="vat" xml:space="preserve">
+    <value>부가가치세 등록</value>
+    <comment>_GI285</comment>
+  </data>
+  <data name="freeShipping" xml:space="preserve">
+    <value>무료 배송</value>
+  </data>
+</root>

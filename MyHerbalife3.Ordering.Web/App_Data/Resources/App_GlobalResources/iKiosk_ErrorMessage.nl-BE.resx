@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>De jaarlijkse bijdrage kan niet aan uw winkelmandje toegevoegd worden</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>De jaarlijkse bijdrage kan niet van uw winkelmandje verwijderd worden</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Weet u zeker dat u deze order wilt annuleren? Door op "OK" te klikken zullen alle artikelen uit uw winkelmandje verwijderd worden.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Omdat er geen producten in uw jaarlijkse bijdrage order zitten worden alle niet product items verwijderd.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Backorder artikelen kunnen niet toegevoegd worden in een jaarlijkse bijdrage order</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Kaart goedkeuring was niet succesvol. Controleer uw kaart.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Foutieve ingave van datum, gelieve een correcte datum in te geven.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Dubbel artikelnummer is ingegeven. Gelieve nogmaals in te geven.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Evenement ticket aankopen zijn beperkt to het aantal {0} per order.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Evenement ticket aankopen zijn niet toegestaan op deze site.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Van artikel {0} zijn {1} stuks beschikbaar. Gelieve uw ingegeven aantal aan te passen en voeg deze toe aan uw winkelmandje.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Van artikel {0} zullen waarschijnlijk 1 of meer stuks backorder zijn.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>SKU {0} kan niet meer dan {1} zijn.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Excuses u heeft geen creditcard geregistreerd. Registreer een creditkaart, voor hulp contacteer de webadministrator via webadministratorbe@herbalife.com</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Ongeldige postcode</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>{0} jaar van de jaarlijkse bijdrage is achterstallig en dient betaald te worden voordat u uw order plaatst.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Artikel {0} is op dit moment niet beschikbaar, het aantal is naar 0 veranderd.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Limiet voor Today magazine is</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maximale aantal magazines dat kan worden toegevoegd is {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Adres is al in gebruik, geef een ander adres in.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online bestellen is niet beschikbaar.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online bestellen is op dit moment niet beschikbaar. Probeer het op een later tijdstip nogmaals. Excuses voor het ongemak.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Alleen producten kunnen bij een jaarlijkse bijdrage order toegevoegd worden.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Betalingstotaal komt niet overeen met het order totaal.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Gelieve een bedrag groter dan 0 toe te voegen.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Gelieve de kaart informatie te controleren</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Controleer a.u.b. uw Distributeur ID en PIN code en probeer opnieuw. Als de problemen aanhouden, neem dan a.u.b. contact op met Distributeuren Services op 0800 30382</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Sluit de aanschaf van de jaarlijkse bijdrage af voordat u andere producten aan uw winkelmandje toevoegd</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Gelieve eerst uw jaarlijkse bijdrage te betalen voordat u een evenement ticket aanschaft.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Gelieve een nummer ingeven.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Gelieve een aantal voor SKU {0} ingeven.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Gelieve een pickup locatie te kiezen.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Geef een geldige plaatsnaam in.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Geef een geldige naam in.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Geef een geldige adresboek naam in.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Gelieve een donatie bedrag in te geven behalve nul (0).</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Gelieve een email adres ingeven.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Gelieve betalings informatie ingeven.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Gelieve de CCV code ingeven.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Gelieve het aantal van de jaarlijkse bijdrage in te geven welke u aan wilt schaffen.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Gelieve een geldig email adres ingeven.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Gelieve een geldige voornaam ingeven.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Gelieve een geldige achternaam ingeven.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Gelieve alle verplichte velden van de verzendinformatie ingeven.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Gelieve het netnummer correct in te geven.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Gelieve het vaste nummer correct in te geven.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Gelieve de ter attentie van naam ingeven.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Gelieve het netnummer in te geven.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Gelieve de plaatsnaam ingeven.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Gelieve het vaste nummer in te geven.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Gelieve de voornaam ingeven.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Gelieve de achternaam ingeven.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Gelieve de verplichte velden ingeven.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Gelieve het telefoonnummer ingeven.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Gelieve de straatnaam ingeven.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Gelieve de postcode ingeven.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Gelieve een geldig telefoonnummer ingeven.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>U kunt maximaal {0} opslaan, gelieve een van de huidige opgeslagen kaarten verwijderen.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Opmerking: Deze site kunt u het best bekijken met Internet Explorer of Firefox.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Gelieve een verzend adres op te slaan voordat u deze pick up Order plaatst.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Gelieve een lokatie te selecteren.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Selecteer een verzendtijd</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Gelieve het order type.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Gelieve de pickup locatie selecteren.</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Gelieve een pickup locatie te selecteren.</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Gelieve de naam van de afhaler ingeven</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Gelieve het telenoonnummer van de afhaler ingeven</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Gelieve het verzendadres te selecteren</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Selecteer Ja/Nee.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Een primair adres kan niet verwijderd worden.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Een primaire pickup locatie kan niet verwijderd worden.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Ga verder naar Uitloggen.</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Ga verder naar Home</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Verzenden naar de ingegeven postcode is niet mogelijk.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU {0} is niet beschikbaar.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Systeem fout.</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>De order maand is veranderd!</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>SKU {0} welke u toevoegt zal backorder zijn.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>De straatnaam dient tenminste 1 letter te bevatten</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>De straatnaam dient tenminste één nummer, één spatie en één letter te bevatten.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>De transactie word niet goedgekeurd, gelieve "Ga Verder" te klikken om het nogmaals te proberen. Indien het probleem blijft bestaan contacteer de webadminitrator via webadaministratorbe@herbalife.com</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Er was een probleem tijdens het plaatsen van uw order. Gelieve de webadministrator te contacteren via webadministratorbe@herbalife.com</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>De postcode is niet geldig.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Er bevinden zich geen artikelen in het winkelmandje.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Er is momenteel niet genoeg voorraad van artikel {0}. Het beschikbare aantal is {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Er zijn geen artikelen geselecteerd om aan de order toe te voegen.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Er zijn geen artikelen geselecteerd om het volume te berekenen.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Dit adres bevindt zich reeds in het databestand.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>De transactie is gewijgerd voor deze kaart.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today magazine is aan het winkelmandje toegevoegd.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>We zijn niet in staat uw order door te voeren. Gelieve voor assistentie contact op te nemen met de webadministrator via webadministratorbe@herbalife.com en vermeld foutcode 01.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>We zijn niet in staat uw order door te voeren. Gelieve voor assistentie contact op te nemen met de webadministrator via webadministratorbe@herbalife.com en vermeld foutcode 05.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Wij zijn niet in staat om uw order te verwerken. Gelieve uw adresgegevens te controleren en probeer het nogmaals. Indien het probleem blijft bestaan gelieve contact op te nemen met webadministratorbe@herbalife.com.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>U heeft reeds event tickets in uw mandje, wilt u uw winkelmandje legen?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>U doet een poging om uw primaire kaart te verwijderen. Gelieve een andere kaart als uw primaire kaart op te slaan voordat u uw kaart verwijderd.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>U kunt deze kaart niet meer gebruiken vanwege meerdere wijgeringen.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>U kunt dezelfde kaart niet meerdere keren toevoegen.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>U kunt dit artikel niet aan uw winkelmandje toevoegen.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>U kunt niet naar deze pagina zonder artikelen in uw winkelmandje.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>U heeft gebackorderde artikelen in uw winkelmandje welke verwijderd zullen worden indien u voor een Pickup order kiest. Wilt u doorgaan? ("Ja" of "Nee")</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>U heeft de ordermaand van deze order veranderd naar {0}. Wilt u doorgaan met deze selectie?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>U heeft event ticket artikelen in uw mandje, wilt u uw winkelmandje legen?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>U heeft product(en) in uw winkelmandje. Wilt u uw winkelmandje legen voor dat u een event ticket wilt aanschaffen?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>U heeft de maand {0} gekozen is dit correct?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>U kiest er voor om producten te zoeken zonder het plaatsen van een order, u kunt geen producten aan het winkelmandje toevoegen</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>HFF is succesvol aan het winkelmandje toegevoegd.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>U kunt alleen de jaarlijkse bijdrage voor uit betalen.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>U dient één van uw creditcards te verwijderen om uw winkelmandje te kunnen wijzigen</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>U dient een verzend- of pickup optie te kiezen om door te gaan.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>U heeft onlangs een indentieke order geplaatst op {0}. Indien dit een dubbele orderd is klik "Order Annuleren". Om door te gaan met deze order klik "Ga Verder".</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Uw jaarlijkse bijdrage verloopt op {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Uw jaarlijkse bijdrage is verlopen en zal automatisch aan uw winkelmandje toegevoegd worden.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Uw jaarlijkse bijdrage is verlopen en is automatisch aan uw winkelmandje toegevoegd.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Uw creditcard is verlopen. Klik op aanpassen om de vervaldatum aan te passen.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Uw creditcard is verlopen. Klik op aanpassen om de vervaldatum aan te passen.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Uw ID nummer wordt niet geaccepteerd, gelieve Distributeuren Services te contacteren op 0800 30382</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Uw ID nummer wordt niet geaccepteerd, gelieve Distributeuren Services te contacteren op 0800 30382</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Uw order was reeds verwerkt voordat uw wijzigingen maakte in uw mandje. Uw Ordernummer is {0}. U kunt de status van uw order controleren door contact op te nemen via 0800 58026, maandag - vrijdag van 08:30 - 17:0 uur of door hier te klikken. Gelieve er rekening mee te houden dat het tot 1 uur kan duren voordat uw order zichtbaar is. &lt;br&gt; Indien u een nieuwe order wilt plaatsen, voeg opnieuw artikelen toe aan uw winkelmandje.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Uw verplichte jaarlijkse bijdrage blijft in uw winkelmandje.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Uw verzendinformatie is niet meer geldig, uw winkelmandje zal geleegd worden.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Gelieve het order type in het mini winkelmandje te selecteren</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

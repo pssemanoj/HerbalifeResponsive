@@ -1,0 +1,67 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvInvProducts"
+     data-role="window"
+     data-modal="true"
+     data-actions="['close']"
+     data-resizable="false"
+     data-max-width="840px"
+     data-visible="false">
+
+    <script id="invCategoryTpl" type="text/x-kendo-tmpl">
+
+        <table>
+            <tr>
+                <th colspan="4"><strong data-bind="html: Name"></strong></th>
+            </tr>
+            #= invEdit.renderProductsTemplate(data) #
+        </table>
+
+    </script>
+
+    <script id="invProductsTpl" type="text/x-kendo-template">
+        # $.each(data.Products, function (index, item) {
+        #
+        <tr class="dvproduct">
+            <td class="sku">${item.Sku}</td>
+            <td class="product-name">${item.ProductName}</td>
+            <td class="retail-price align-right">${item.DisplayRetailPrice}</td>
+            <td class="add align-right"><a data-bind="click: selectCategory" data-parameter=${item.Sku}>@(this.Localize("addProduct"))</a></td>
+        </tr>
+        #
+        });
+        #
+    </script>
+    <div class="ordering">
+        <div class="row">
+            <div class="col-sm-12 no-padding">
+                <h2>@(this.Localize("browseProductsTitle"))</h2>
+            </div>
+        </div>
+        <div id="products-search" class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                <label for="drRootCategories">@(this.Localize("chooseCategory"))</label>
+                <input id="drRootCategories" name="drRootCategories" style="width: 100%; height: 30px;"
+                       data-role="dropdownlist"
+                       data-auto-bind="false"
+                       data-text-field="Name"
+                       data-value-field="Id"
+                       data-bind="value: selectedRootCategoryItem, source: rootCategories, events: { change: onRootCategoryChange}" />
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12 m-no-padding">
+                <label for="contacts-search">@(this.Localize("searchProducts"))</label>
+                <input id="contacts-search" type="text" class="k-input" data-bind="value: productsFilter" name="contacts-search" />
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12 no-padding marginTop10 m-search-button">
+                <a class="backward" data-bind="click: SearchProducts">@(this.Localize("Search")) </a>
+            </div>
+        </div>
+        <span class="red" data-bind="text: productSearchErrorText "></span>
+        <div class="row">
+            <div id="lvProducts" data-role="listview"
+                 data-template="invCategoryTpl"
+                 data-bind="source: categories"
+                 data-source='{ "pageSize": 5 }'></div>
+            <div id="pager" data-role="pager" data-source='{ "pageSize": 5 }' data-bind="source: categories, events: { change: onProdcutsPageChange }" data-info="false"></div>
+        </div>
+    </div>
+</div>

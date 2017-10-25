@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+    <Controls>
+      <Label cssStyle="AddressHeader" Name="Recipient" Grid.Row="0" Grid.Column="0" Grid.Colspan="3" Text="Care of Name *" />
+      <Label cssStyle="AddressHeader" Name="Street1" Grid.Row="2" Grid.Column="0" Grid.Colspan="3" Text="Street1 *" />
+      <Label cssStyle="AddressHeader" Name="Street2" Grid.Row="4" Grid.Column="0" Grid.Colspan="3" Text="Street2" />
+      <Label cssStyle="AddressHeader" Name="City" Grid.Row="6" Grid.Column="0" Text="City" />
+      <Label cssStyle="AddressHeader" Name="StateProvince" Grid.Row="6" Grid.Column="1" Text="Territory" />
+      <Label cssStyle="AddressHeader" Name="PhoneNumber" Grid.Row="6" Grid.Column="2" Text="Telephone *" />
+      
+      <TextBox cssStyle="EditAddress" Name="TBRecipient" Grid.Row="1" Grid.Column="0" Grid.Colspan="3" Text="{Binding Recipient}" MaximumLength="40" Required="true" ValReqMsg="NoFirstName" IndexForTab="1"/>
+      <TextBox cssStyle="EditAddress" Name="TBStreet1" Grid.Row="3" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line1}"  Required="true" ValReqMsg="NoStreet1" KeyPressHandler="OnAddressKeyPress(event,this)" MaximumLength="40" IndexForTab="2"/>
+      <TextBox cssStyle="EditAddress" Name="TBStreet2" Grid.Row="5" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line2}"  MaximumLength="40" IndexForTab="3"/>
+      <ComboBox cssStyle="Address" Name="ddlCity" Text="{Binding Address.City}" Grid.Row="7" Grid.Column="0" Required="true" ValReqMsg="NoCity" ItemsSource="~/Ordering/Controls/Address/AddressFormat/zh-MO-CountyCity.xml" XPath="/CountyOrCity/CountyCity" DisplayMemberPath="Name" DisplayIDPath="ID" IndexForTab="4" />
+      <ComboBox cssStyle="Address" Name="ddlState" Text="{Binding Address.StateProvinceTerritory}" Grid.Row="7" Grid.Column="1" Dependent="ddlCity" ItemsSource="~/Ordering/Controls/Address/AddressFormat/zh-MO-States.xml" XPath="/States/State" DisplayMemberPath="Name" DisplayIDPath="ID" IndexForTab="5" />
+      <TextBox cssStyle="EditAddress" Name="TBPhone" Grid.Row="7" Grid.Column="2"  Text="{Binding Phone}" Required="true"  ValErrorMsg="InvalidPhone" ValReqMsg="NoPhone"  IndexForTab="6" RegExp="^(\d{8,12})$" MaximumLength="12" />
+    </Controls>
+  </Grid>
+</AddressWindow>

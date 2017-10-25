@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfShoppingCartRuleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShoppingCartRuleResult" nillable="true" type="tns:ShoppingCartRuleResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShoppingCartRuleResult" nillable="true" type="tns:ArrayOfShoppingCartRuleResult" />
+  <xs:complexType name="ShoppingCartRuleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApfRuleResponse" nillable="true" type="tns:ApfRuleResponse" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Messages" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PromotionalRuleResponses" nillable="true" type="tns:ArrayOfPromotionalRuleResponse" />
+      <xs:element minOccurs="0" name="Result" type="tns:RulesResult" />
+      <xs:element minOccurs="0" name="RuleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShoppingCartRuleResult" nillable="true" type="tns:ShoppingCartRuleResult" />
+  <xs:complexType name="ApfRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" type="tns:ApfAction" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:TypeOfApf" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApfRuleResponse" nillable="true" type="tns:ApfRuleResponse" />
+  <xs:simpleType name="ApfAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="DisplayMessage" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ApfAction" nillable="true" type="tns:ApfAction" />
+  <xs:simpleType name="TypeOfApf">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="AllowDSRemoveAPFWhenDue" />
+      <xs:enumeration value="CantDSRemoveAPF" />
+      <xs:enumeration value="StandaloneAPFOnlyAllowed" />
+      <xs:enumeration value="AllowNonProductItemsWithStandaloneAPF" />
+      <xs:enumeration value="CannotAddAPFSku" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TypeOfApf" nillable="true" type="tns:TypeOfApf" />
+  <xs:complexType name="ArrayOfPromotionalRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PromotionalRuleResponse" nillable="true" type="tns:PromotionalRuleResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPromotionalRuleResponse" nillable="true" type="tns:ArrayOfPromotionalRuleResponse" />
+  <xs:complexType name="PromotionalRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" type="tns:PromotionAction" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Skus" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Type" type="tns:TypeOfPromotion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PromotionalRuleResponse" nillable="true" type="tns:PromotionalRuleResponse" />
+  <xs:simpleType name="PromotionAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="DisplayMessage" />
+      <xs:enumeration value="ItemAddedToCart" />
+      <xs:enumeration value="OptionalItemAddedToCart" />
+      <xs:enumeration value="SelectItemFromList" />
+      <xs:enumeration value="FreeFreightCharge" />
+      <xs:enumeration value="FreightDiscount" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PromotionAction" nillable="true" type="tns:PromotionAction" />
+  <xs:simpleType name="TypeOfPromotion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Message" />
+      <xs:enumeration value="FreeItem" />
+      <xs:enumeration value="OptionalItem" />
+      <xs:enumeration value="SelectItem" />
+      <xs:enumeration value="Freight" />
+      <xs:enumeration value="Volume" />
+      <xs:enumeration value="Special" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="FirstOrder" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TypeOfPromotion" nillable="true" type="tns:TypeOfPromotion" />
+  <xs:simpleType name="RulesResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="Recalc" />
+      <xs:enumeration value="Feedback" />
+      <xs:enumeration value="Errors" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RulesResult" nillable="true" type="tns:RulesResult" />
+  <xs:complexType name="ArrayOfAttribute_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attribute_V01" nillable="true" type="tns:Attribute_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAttribute_V01" nillable="true" type="tns:ArrayOfAttribute_V01" />
+  <xs:complexType name="Attribute_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Attribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TypeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Attribute_V01" nillable="true" type="tns:Attribute_V01" />
+  <xs:complexType name="Attribute">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Attribute" nillable="true" type="tns:Attribute" />
+  <xs:complexType name="ArrayOfIngredient_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ingredient_V01" nillable="true" type="tns:Ingredient_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIngredient_V01" nillable="true" type="tns:ArrayOfIngredient_V01" />
+  <xs:complexType name="Ingredient_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Ingredient">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Ingredient_V01" nillable="true" type="tns:Ingredient_V01" />
+  <xs:complexType name="Ingredient">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Ingredient" nillable="true" type="tns:Ingredient" />
+  <xs:complexType name="ArrayOfMediaAsset_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MediaAsset_V01" nillable="true" type="tns:MediaAsset_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMediaAsset_V01" nillable="true" type="tns:ArrayOfMediaAsset_V01" />
+  <xs:complexType name="MediaAsset_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MediaAsset">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsThumbnail" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="tns:MediaType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaAsset_V01" nillable="true" type="tns:MediaAsset_V01" />
+  <xs:complexType name="MediaAsset">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MediaAsset" nillable="true" type="tns:MediaAsset" />
+  <xs:simpleType name="MediaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Image">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Video">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Model3D">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MediaType" nillable="true" type="tns:MediaType" />
+  <xs:simpleType name="MemberTypeVisibility">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Member" />
+      <xs:enumeration value="Distributor" />
+      <xs:enumeration value="Both" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MemberTypeVisibility" nillable="true" type="tns:MemberTypeVisibility" />
+  <xs:simpleType name="PromotionalTagType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="New" />
+      <xs:enumeration value="Featured" />
+      <xs:enumeration value="LowStock" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PromotionalTagType" nillable="true" type="tns:PromotionalTagType" />
+  <xs:complexType name="ArrayOfCatalogItemWarning_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CatalogItemWarning_V01" nillable="true" type="tns:CatalogItemWarning_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCatalogItemWarning_V01" nillable="true" type="tns:ArrayOfCatalogItemWarning_V01" />
+  <xs:complexType name="CatalogItemWarning_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CatalogItemDataWarning">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="tns:CatalogItemType" />
+          <xs:element minOccurs="0" name="Warnings" nillable="true" type="tns:ArrayOfDataWarning_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CatalogItemWarning_V01" nillable="true" type="tns:CatalogItemWarning_V01" />
+  <xs:complexType name="CatalogItemDataWarning">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CatalogItemDataWarning" nillable="true" type="tns:CatalogItemDataWarning" />
+  <xs:simpleType name="CatalogItemType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Category">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Product">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sku">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CatalogItemType" nillable="true" type="tns:CatalogItemType" />
+  <xs:complexType name="ArrayOfDataWarning_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataWarning_V01" nillable="true" type="tns:DataWarning_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataWarning_V01" nillable="true" type="tns:ArrayOfDataWarning_V01" />
+  <xs:complexType name="DataWarning_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DataWarning">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="tns:DataWarningType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataWarning_V01" nillable="true" type="tns:DataWarning_V01" />
+  <xs:complexType name="DataWarning">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DataWarning" nillable="true" type="tns:DataWarning" />
+  <xs:simpleType name="DataWarningType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InactiveByFlag">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InactiveByDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PricingMissing">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MissingInCMS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OrphanItem">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NoSkusAssociated">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NoCategoriesOrProductsAssociated">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CircularReference">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DataWarningType" nillable="true" type="tns:DataWarningType" />
+</xs:schema>

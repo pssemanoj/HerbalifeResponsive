@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2009/01/15/HL.Event.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2009/01/15/HL.Event.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2009/01/15/HL.Event.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd2" namespace="http://herbalife.com/2009/01/15/HL.Event.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd1" namespace="http://herbalife.com/2010/10/15/HL.Event.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HL.Event.ValueObjects.EventRest" />
+      <xsd:import schemaLocation="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEventRestInterface_CopyLandingPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyLandingPage" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_CopyLandingPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyLandingPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetAttachmentFlyer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFlyer" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetAttachmentFlyer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentFlyerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventImage" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventSubtypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventSubtypes" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventSubtypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventSubtypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventsList" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetEventsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEventsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetLocales_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocales" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetLocales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SaveLandingPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLandingPage" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SaveLandingPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLandingPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SearchLandingPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLandingPage" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SearchLandingPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLandingPageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SearchLandingPageEvents_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLandingPageEvents" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_SearchLandingPageEvents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchLandingPageEventsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetLandingPage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLandingPage" />
+  </wsdl:message>
+  <wsdl:message name="IEventRestInterface_GetLandingPage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLandingPageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEventRestInterface">
+    <wsdl:operation name="CopyLandingPage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/CopyLandingPage" message="tns:IEventRestInterface_CopyLandingPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/CopyLandingPageResponse" message="tns:IEventRestInterface_CopyLandingPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFlyer">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetAttachmentFlyer" message="tns:IEventRestInterface_GetAttachmentFlyer_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetAttachmentFlyerResponse" message="tns:IEventRestInterface_GetAttachmentFlyer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventDetails" message="tns:IEventRestInterface_GetEventDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventDetailsResponse" message="tns:IEventRestInterface_GetEventDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventImage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventImage" message="tns:IEventRestInterface_GetEventImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventImageResponse" message="tns:IEventRestInterface_GetEventImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventSubtypes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventSubtypes" message="tns:IEventRestInterface_GetEventSubtypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventSubtypesResponse" message="tns:IEventRestInterface_GetEventSubtypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventsList" message="tns:IEventRestInterface_GetEventsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventsListResponse" message="tns:IEventRestInterface_GetEventsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocales">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLocales" message="tns:IEventRestInterface_GetLocales_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLocalesResponse" message="tns:IEventRestInterface_GetLocales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLandingPage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SaveLandingPage" message="tns:IEventRestInterface_SaveLandingPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SaveLandingPageResponse" message="tns:IEventRestInterface_SaveLandingPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLandingPage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPage" message="tns:IEventRestInterface_SearchLandingPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPageResponse" message="tns:IEventRestInterface_SearchLandingPage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchLandingPageEvents">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPageEvents" message="tns:IEventRestInterface_SearchLandingPageEvents_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPageEventsResponse" message="tns:IEventRestInterface_SearchLandingPageEvents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLandingPage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLandingPage" message="tns:IEventRestInterface_GetLandingPage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLandingPageResponse" message="tns:IEventRestInterface_GetLandingPage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/11/11/HL.Order.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/11/11/HL.Order.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:complexType name="ChargeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Charge" nillable="true" type="tns:Charge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChargeList" nillable="true" type="tns:ChargeList" />
+  <xs:complexType name="Charge">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Charge" nillable="true" type="tns:Charge" />
+  <xs:complexType name="Charge_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Charge">
+        <xs:sequence>
+          <xs:element name="Amount" type="xs:decimal" />
+          <xs:element xmlns:q2="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="ChargeType" type="q2:ChargeTypes" />
+          <xs:element name="TaxAmount" type="xs:decimal" />
+          <xs:element name="Type" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Charge_V01" nillable="true" type="tns:Charge_V01" />
+</xs:schema>

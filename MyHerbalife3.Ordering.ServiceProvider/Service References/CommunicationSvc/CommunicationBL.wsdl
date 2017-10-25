@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2007/12/12/HL.Communication.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CommunicationBL" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://herbalife.com/2007/12/12/HL.Communication.Interfaces" location="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_ICommunicationService" type="i0:ICommunicationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSMSSubscriberInfo">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueSMSMobileNumber">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueSMSMobileNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSSubscriberSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMSSubscriberSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSMSSubscriberSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMSSubscriberSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteSMSSubscriberSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSSubscriberSubscriptionReport">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscriptionReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmailOnET">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ValidateEmailOnET" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubscribeToeNewsletter">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SubscribeToeNewsletter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeclineToeNewsletter">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeclineToeNewsletter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeToeNewsletter">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UnsubscribeToeNewsletter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eNewsletterIsSubscribed">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/eNewsletterIsSubscribed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckDoubleOptInDataExtensionRecordExistsForToday">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CheckDoubleOptInDataExtensionRecordExistsForToday" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTwitterTweets">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTwitterTweets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGSMFeeds">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetGSMFeeds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlickrPhotos">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetFlickrPhotos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoFromPlayLists">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetVideoFromPlayLists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FixBrokenProfile">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/FixBrokenProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailCategory">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetEmailCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfileSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateProfileSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueEmailAddress">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSharedEmailProfile">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSharedEmailProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileByPhoneNumber">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileByPhoneNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoUnsubscribe">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DoUnsubscribe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaction">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/InsertTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessProfileQueue">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessProfileQueue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessEmailProfileUpdates">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessEmailProfileUpdates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffProfileSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetStaffProfileSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaffProfileSubscription">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateStaffProfileSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionsForEmailAddress">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptionsForEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileSubscriptionForNewEmail">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscriptionForNewEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CreateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadDSList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UploadDSList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SearchList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManageSubscriber">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ManageSubscriber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHLListTypes">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetHLListTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetResultList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPendingList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsPendingList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessList">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OptIn">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/OptIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllListData">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteAllListData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessage">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendTriggeredMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendBulkEmail">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendBulkEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BT_CreateDataExtension">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateDataExtension" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BT_PerformSend">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_PerformSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BT_CreateImportDefinition">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateImportDefinition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BT_CheckImportProcess">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CheckImportProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BulkSendDetails">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BulkSendDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorsEmails">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetDistributorsEmails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptions">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriptions">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionTypes">
+      <soap:operation soapAction="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactionTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommunicationBL">
+    <wsdl:port name="BasicHttpBinding_ICommunicationService" binding="tns:BasicHttpBinding_ICommunicationService">
+      <soap:address location="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/01/21/HL.DistributorCRM.ValueObjects.Email" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/01/21/HL.DistributorCRM.ValueObjects.Email" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd24" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:complexType name="TriggeredSendData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSendData" nillable="true" type="tns:TriggeredSendData" />
+  <xs:complexType name="TriggeredPriceAmountExceedsCustomerPayment_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q2:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q3:Name_V01" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredPriceAmountExceedsCustomerPayment_V01" nillable="true" type="tns:TriggeredPriceAmountExceedsCustomerPayment_V01" />
+  <xs:complexType name="TriggeredDistributorGeneralNotificationSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q4:Name_V01" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Footer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NotificationType" type="tns:GeneralNotificationType" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDistributorGeneralNotificationSendData_V01" nillable="true" type="tns:TriggeredDistributorGeneralNotificationSendData_V01" />
+  <xs:simpleType name="GeneralNotificationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="APFDueNotification" />
+      <xs:enumeration value="CannotBuy" />
+      <xs:enumeration value="BuyQualificationShop" />
+      <xs:enumeration value="BulkEmailBuyQual" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GeneralNotificationType" nillable="true" type="tns:GeneralNotificationType" />
+  <xs:complexType name="TriggeredDwsMemberPhoneNumberConfirmationSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q5:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDwsMemberPhoneNumberConfirmationSendData_V01" nillable="true" type="tns:TriggeredDwsMemberPhoneNumberConfirmationSendData_V01" />
+  <xs:simpleType name="OrderConfirmationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SelfFulfill" />
+      <xs:enumeration value="AutoFulfillCustomer" />
+      <xs:enumeration value="AutoFulfillDistributorFail" />
+      <xs:enumeration value="AutoFulfillDistributorSuccess" />
+      <xs:enumeration value="AutoFulfillOverride" />
+      <xs:enumeration value="PaymentRejected" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderConfirmationType" nillable="true" type="tns:OrderConfirmationType" />
+  <xs:complexType name="TriggeredDwsCustomerOrderConfirmationSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConfirmationType" type="tns:OrderConfirmationType" />
+          <xs:element xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerBillingAddress" nillable="true" type="q6:Address" />
+          <xs:element minOccurs="0" name="CustomerComment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q7:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerOrderLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPaymentPreference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPhone" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerShippingAddress" nillable="true" type="q8:Address" />
+          <xs:element minOccurs="0" name="CustomerShippingMethod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DiscountedSubtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DiscountedSubtotalWithTaxes" type="xs:decimal" />
+          <xs:element xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorAddress" nillable="true" type="q9:Address" />
+          <xs:element minOccurs="0" name="DistributorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFee" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFlatFee" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q10:Name_V01" />
+          <xs:element minOccurs="0" name="DistributorOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorPercenatgeFee" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorPercenatgeFeeWithTaxes" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FreeShippingApplied" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FreightAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="GrandTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="HLPrice" nillable="true" type="tns:HLPrice" />
+          <xs:element minOccurs="0" name="IsCorreiosShippingCharges" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsDistributorVatRegistered" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderLines" nillable="true" type="tns:ArrayOfTriggeredDwsCustomerOrderConfirmationOrderLine" />
+          <xs:element minOccurs="0" name="PaymentPartner" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Savings" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SavingsOverTaxes" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ShipToDistributorLocation" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:anyURI" />
+          <xs:element minOccurs="0" name="Subtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SubtotalWithTaxes" type="xs:decimal" />
+          <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tax" nillable="true" type="q11:ArrayOfKeyValueOfstringdecimal" />
+          <xs:element minOccurs="0" name="VatNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDwsCustomerOrderConfirmationSendData_V01" nillable="true" type="tns:TriggeredDwsCustomerOrderConfirmationSendData_V01" />
+  <xs:complexType name="HLPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiscountPercentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DiscountedItemsTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DistributorProfit" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FreightAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ItemsTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MiscAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PHAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TaxAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="VolumePoints" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLPrice" nillable="true" type="tns:HLPrice" />
+  <xs:complexType name="ArrayOfTriggeredDwsCustomerOrderConfirmationOrderLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TriggeredDwsCustomerOrderConfirmationOrderLine" nillable="true" type="tns:TriggeredDwsCustomerOrderConfirmationOrderLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTriggeredDwsCustomerOrderConfirmationOrderLine" nillable="true" type="tns:ArrayOfTriggeredDwsCustomerOrderConfirmationOrderLine" />
+  <xs:complexType name="TriggeredDwsCustomerOrderConfirmationOrderLine">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDwsCustomerOrderConfirmationOrderLine" nillable="true" type="tns:TriggeredDwsCustomerOrderConfirmationOrderLine" />
+  <xs:complexType name="TriggeredDwsCustomerOrderConfirmationOrderLine_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredDwsCustomerOrderConfirmationOrderLine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LineTotalRetailPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+          <xs:element minOccurs="0" name="RetailPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RetailPriceWithTaxes" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaxPercentage" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDwsCustomerOrderConfirmationOrderLine_V01" nillable="true" type="tns:TriggeredDwsCustomerOrderConfirmationOrderLine_V01" />
+  <xs:complexType name="TriggeredAbandonedOrderLine_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredDwsCustomerOrderConfirmationOrderLine">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InStock" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LineTotalRetailPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+          <xs:element minOccurs="0" name="RetailPrice" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredAbandonedOrderLine_V01" nillable="true" type="tns:TriggeredAbandonedOrderLine_V01" />
+  <xs:complexType name="TriggeredDwsCampaignLeadConfirmationSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadFirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadLastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadPhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberPhotoUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegistrationDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SendEmailToMember" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TemplateName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDwsCampaignLeadConfirmationSendData_V01" nillable="true" type="tns:TriggeredDwsCampaignLeadConfirmationSendData_V01" />
+  <xs:complexType name="TriggeredPasswordResetSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q13:Name_V01" />
+          <xs:element minOccurs="0" name="DistributorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Link" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredPasswordResetSendData_V01" nillable="true" type="tns:TriggeredPasswordResetSendData_V01" />
+  <xs:complexType name="TriggeredSMSMessageSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSMSMessageSendData_V01" nillable="true" type="tns:TriggeredSMSMessageSendData_V01" />
+  <xs:complexType name="TriggeredSaveContactConformationSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q14:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerPhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailLanguageLocale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDistributorCopied" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q15="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" minOccurs="0" name="RegistrationSource" type="q15:RegistrationSource" />
+          <xs:element minOccurs="0" name="siteURL" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSaveContactConformationSendData_V01" nillable="true" type="tns:TriggeredSaveContactConformationSendData_V01" />
+  <xs:complexType name="TriggeredCancelOrderSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CancellationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CommentsCancellation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConfirmationType" type="tns:OrderConfirmationType" />
+          <xs:element xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerBillingAddress" nillable="true" type="q16:Address" />
+          <xs:element minOccurs="0" name="CustomerComment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q17:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerOrderLocator" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPaymentPreference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPhone" nillable="true" type="xs:string" />
+          <xs:element xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerShippingAddress" nillable="true" type="q18:Address" />
+          <xs:element minOccurs="0" name="CustomerShippingMethod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DiscountedSubtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DiscountedSubtotalWithTaxes" type="xs:decimal" />
+          <xs:element xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorAddress" nillable="true" type="q19:Address" />
+          <xs:element minOccurs="0" name="DistributorEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFee" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFeeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorFlatFee" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q20:Name_V01" />
+          <xs:element minOccurs="0" name="DistributorOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorPercenatgeFee" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorPercenatgeFeeWithTaxes" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DistributorPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FreeShippingApplied" type="xs:boolean" />
+          <xs:element minOccurs="0" name="GrandTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="HLPrice" nillable="true" type="tns:HLPrice" />
+          <xs:element minOccurs="0" name="IdReasonCancellation" type="xs:int" />
+          <xs:element minOccurs="0" name="IsDistributorVatRegistered" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderLines" nillable="true" type="tns:ArrayOfTriggeredDwsCustomerOrderConfirmationOrderLine" />
+          <xs:element minOccurs="0" name="PaymentPartner" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReasonCancellation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Savings" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SavingsOverTaxes" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ShipToDistributorLocation" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:anyURI" />
+          <xs:element minOccurs="0" name="Subtotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SubtotalWithTaxes" type="xs:decimal" />
+          <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tax" nillable="true" type="q21:ArrayOfKeyValueOfstringdecimal" />
+          <xs:element minOccurs="0" name="VatNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredCancelOrderSendData_V01" nillable="true" type="tns:TriggeredCancelOrderSendData_V01" />
+  <xs:complexType name="TriggeredSentContactUsEmail_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element xmlns:q22="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="ContactUsEmailInfo" nillable="true" type="q22:ContactUsEmail" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSentContactUsEmail_V01" nillable="true" type="tns:TriggeredSentContactUsEmail_V01" />
+  <xs:complexType name="TriggeredFollowUpAbandonedCart_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Orders" nillable="true" type="tns:ArrayOfTriggeredAbandonedOrderSendData_V01" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredFollowUpAbandonedCart_V01" nillable="true" type="tns:TriggeredFollowUpAbandonedCart_V01" />
+  <xs:complexType name="ArrayOfTriggeredAbandonedOrderSendData_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TriggeredAbandonedOrderSendData_V01" nillable="true" type="tns:TriggeredAbandonedOrderSendData_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTriggeredAbandonedOrderSendData_V01" nillable="true" type="tns:ArrayOfTriggeredAbandonedOrderSendData_V01" />
+  <xs:complexType name="TriggeredAbandonedOrderSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="CustomerName" nillable="true" type="q23:Name_V01" />
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GrandTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="OrderLines" nillable="true" type="tns:ArrayOfTriggeredAbandonedOrderLine_V01" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:anyURI" />
+          <xs:element minOccurs="0" name="Subtotal" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredAbandonedOrderSendData_V01" nillable="true" type="tns:TriggeredAbandonedOrderSendData_V01" />
+  <xs:complexType name="ArrayOfTriggeredAbandonedOrderLine_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TriggeredAbandonedOrderLine_V01" nillable="true" type="tns:TriggeredAbandonedOrderLine_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTriggeredAbandonedOrderLine_V01" nillable="true" type="tns:ArrayOfTriggeredAbandonedOrderLine_V01" />
+  <xs:complexType name="TriggeredOrderTrackingMessage_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerOrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberPhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShopUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredOrderTrackingMessage_V01" nillable="true" type="tns:TriggeredOrderTrackingMessage_V01" />
+</xs:schema>

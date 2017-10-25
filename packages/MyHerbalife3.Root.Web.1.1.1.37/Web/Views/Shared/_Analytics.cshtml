@@ -1,0 +1,13 @@
+﻿@using MyHerbalife3.Shared.Analytics.Providers;
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+
+@{
+    var globalContext = (IGlobalContext)HttpContext.Current.ApplicationInstance;
+
+    var writer = new StringWriter();
+    AnalyticsProvider.Render(writer);
+}
+
+<!-- begin analytics -->
+@Html.Raw(writer.GetStringBuilder().ToString())
+<!-- end analytics -->

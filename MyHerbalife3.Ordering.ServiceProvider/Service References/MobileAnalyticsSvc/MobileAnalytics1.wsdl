@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MobileAnalytics" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" location="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IMobileAnalytics" type="i0:IMobileAnalytics">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoadMobileAnalyticsTypes">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/LoadMobileAnalyticsTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityLog">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertActivityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivityLog">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/UpdateActivityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityLogAsync">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertActivityLogAsync" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="IsDistributorAuthorized">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/IsDistributorAuthorized" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLeadContact">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertLeadContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTenCustomerMissingMonths">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerMissingMonths" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTenCustomerStatus">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveTenCustomerData">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/SaveTenCustomerData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/RegisterDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisteredDevice">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetRegisteredDevice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSubmittedOrder">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertSubmittedOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubmittedOrder">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetSubmittedOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLog">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetActivityLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MobileAnalytics">
+    <wsdl:port name="BasicHttpBinding_IMobileAnalytics" binding="tns:BasicHttpBinding_IMobileAnalytics">
+      <soap:address location="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Shipping" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd2" namespace="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/HL.Shipping.Mexico.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd5" namespace="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd6" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/HL.Shipping.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd8" namespace="http://herbalife.com/2010/01/21/HL.Shipping.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd9" namespace="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd10" namespace="http://herbalife.com/2008/06/23/HL.Shipping.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd11" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd12" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd13" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IShipping_GetShippingAlternativesForPostalCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingAlternativesForPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetShippingAlternativesForPostalCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingAlternativesForPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetShippingAlternativeForDeliveryOptionID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingAlternativeForDeliveryOptionID" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetShippingAlternativeForDeliveryOptionID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingAlternativeForDeliveryOptionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativesForColony_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativesForColony" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativesForColony_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativesForColonyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativesForPostalCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativesForPostalCode" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativesForPostalCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativesForPostalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativeForDeliveryOptionID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativeForDeliveryOptionID" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetPickupAlternativeForDeliveryOptionID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPickupAlternativeForDeliveryOptionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetAllStates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStates" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetAllStates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetMunicipalitiesForState_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMunicipalitiesForState" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetMunicipalitiesForState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMunicipalitiesForStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetColoniesForMunicipality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetColoniesForMunicipality" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetColoniesForMunicipality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetColoniesForMunicipalityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetZipCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZipCode" />
+  </wsdl:message>
+  <wsdl:message name="IShipping_GetZipCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZipCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IShipping">
+    <wsdl:operation name="GetShippingAlternativesForPostalCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetShippingAlternativesForPostalCode" message="tns:IShipping_GetShippingAlternativesForPostalCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetShippingAlternativesForPostalCodeResponse" message="tns:IShipping_GetShippingAlternativesForPostalCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingAlternativeForDeliveryOptionID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetShippingAlternativeForDeliveryOptionID" message="tns:IShipping_GetShippingAlternativeForDeliveryOptionID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetShippingAlternativeForDeliveryOptionIDResponse" message="tns:IShipping_GetShippingAlternativeForDeliveryOptionID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativesForColony">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativesForColony" message="tns:IShipping_GetPickupAlternativesForColony_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativesForColonyResponse" message="tns:IShipping_GetPickupAlternativesForColony_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativesForPostalCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativesForPostalCode" message="tns:IShipping_GetPickupAlternativesForPostalCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativesForPostalCodeResponse" message="tns:IShipping_GetPickupAlternativesForPostalCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativeForDeliveryOptionID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativeForDeliveryOptionID" message="tns:IShipping_GetPickupAlternativeForDeliveryOptionID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetPickupAlternativeForDeliveryOptionIDResponse" message="tns:IShipping_GetPickupAlternativeForDeliveryOptionID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStates">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetAllStates" message="tns:IShipping_GetAllStates_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetAllStatesResponse" message="tns:IShipping_GetAllStates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMunicipalitiesForState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetMunicipalitiesForState" message="tns:IShipping_GetMunicipalitiesForState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetMunicipalitiesForStateResponse" message="tns:IShipping_GetMunicipalitiesForState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetColoniesForMunicipality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetColoniesForMunicipality" message="tns:IShipping_GetColoniesForMunicipality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetColoniesForMunicipalityResponse" message="tns:IShipping_GetColoniesForMunicipality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZipCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IShipping/GetZipCode" message="tns:IShipping_GetZipCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IShipping/GetZipCodeResponse" message="tns:IShipping_GetZipCode_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceBinding_IShipping" type="tns:IShipping">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetShippingAlternativesForPostalCode">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetShippingAlternativesForPostalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingAlternativeForDeliveryOptionID">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetShippingAlternativeForDeliveryOptionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativesForColony">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetPickupAlternativesForColony" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativesForPostalCode">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetPickupAlternativesForPostalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPickupAlternativeForDeliveryOptionID">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetPickupAlternativeForDeliveryOptionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllStates">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetAllStates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMunicipalitiesForState">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetMunicipalitiesForState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetColoniesForMunicipality">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetColoniesForMunicipality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipCode">
+      <soap:operation soapAction="http://tempuri.org/IShipping/GetZipCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Shipping">
+    <wsdl:port name="ServiceBinding_IShipping" binding="tns:ServiceBinding_IShipping">
+      <soap:address location="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

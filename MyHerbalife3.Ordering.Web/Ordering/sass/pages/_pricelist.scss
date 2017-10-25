@@ -1,0 +1,306 @@
+// Online Pricelist //
+.gdo-pricelist-breadcrumb {
+    @include MarginPadding( null, 2px 15px );
+	background-color: #fff6de;
+	border-bottom: 1px solid #cecece;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.gdo-pricelist-tbl {
+	background-color: $white;
+	border-spacing: 0;
+	width: 100%;
+	
+	th{
+        @include MarginPadding( null, 8px 6px );
+	    font-size: 12px;
+	    font-weight: bold;
+	    color: $charcoalgrey;
+	    text-align: center;
+	    background-color: #e3eff3;
+    }
+}
+
+.gdo-pricelist-tbl-data td {
+	font-weight: normal;
+	color: #35363b;
+}
+
+.col-Avail {
+    width: 22px;
+    
+    div {
+        width: 10px;
+      
+        td {
+            border-bottom: none;
+        }
+    }
+}
+
+.pricelist-data{
+    td{
+        @include MarginPadding( null, 8px 5px );
+    }
+  
+    table{
+        td{
+            &:first-child{
+                border-left: none;
+            }
+        }
+    } 
+}
+
+.gdo-pricelist-tbl-top {
+	background-repeat: no-repeat;
+	background-color: $white;
+	width: 100%;
+	
+	td {
+	  @include MarginPadding( null, 8px 0 0 7px );
+	  
+	  table{
+	    td{
+	      &:first-child{
+	        @include MarginPadding( null, 0 );
+	      }
+	    }
+	  }
+  }
+}
+
+.gdo-pricelist-label {
+	color: $charcoalgrey;
+	font-weight: bold;
+}
+
+.gdo-catalog {
+    @include MarginPadding( 0, 0 );
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent none repeat scroll 0 0;
+	width: 551px;
+	
+	.gdo-pagination {
+	  
+	    p {	        
+	        font-weight: bold;
+        }
+    
+        &:first-child {
+            table {
+                &.gdo-main {
+                    @include MarginPadding ( 3px 8px, 3px 0 );
+                    -moz-background-clip: border;
+        	        -moz-background-inline-policy: continuous;
+        	        -moz-background-origin: padding;
+                    border-bottom: 1px solid #94bade;
+                }
+            }
+        }
+    
+        &:last-child {
+            table {
+                &.gdo-main {
+                    @include MarginPadding( 3px 8px, 3px 8px );
+                    -moz-background-clip: border;
+            	    -moz-background-inline-policy: continuous;
+        	        -moz-background-origin: padding;
+                    border-top: 1px solid #94bade;
+                }
+            }
+        }
+
+        table {
+            &.gdo-main {
+                width:100%
+            }
+        }
+    }
+  
+    .gdo-products_wrap {
+  	    -moz-background-clip: border;
+  	    -moz-background-inline-policy: continuous;
+  	    -moz-background-origin: padding;
+  	    background: $white none repeat scroll 0 0;
+  	    display: block;
+  	    float: left;
+  	    width: 549px;
+  	    _width: 553px;
+        text-align: center;
+  	
+  	    .gdo-ProdFrame {
+    	    -moz-background-clip: border;
+    	    -moz-background-inline-policy: continuous;
+    	    -moz-background-origin: padding;
+    	    background: transparent none no-repeat scroll center top;
+    	    vertical-align: top;
+    	    width: 173px;
+        }
+    }
+
+    .gdo-catalog_img {
+        @include MarginPadding( 4px auto 6px, 4px );
+            display: block;
+	        height: 80px;
+	        _margin: 6px auto; // IE8 //
+	        width: 80px;
+    }
+}
+    
+[id$="groupPlaceholderContainer"] > div {
+            display: inline-block;
+}
+
+
+.gdo-ProdFrame-over {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(/Ordering/Images/BG-green.gif) no-repeat scroll center top;
+	vertical-align: top;
+	width: 173px;
+}
+
+.gdo-product-td {
+    // Fix per defect 125069 //
+    display:inline-block;
+    vertical-align: top;
+	text-align: center;
+}
+
+.gdo-product-cat-titles {
+	font-size: 12px;
+	color: $charcoalgrey;
+	line-height: 1.3em;
+}
+
+.gdo-pagination {
+    font-size: 12px;
+	color: $charcoalgrey;
+	font-weight: bold;
+	line-height: 1.3em;
+	text-decoration: none;
+	
+	a {
+  	    color: #009900;
+  	    font-size: 12px;
+  	    font-weight: bold;
+  	    line-height: 1.3em;
+  	    text-decoration: none;
+  	
+  	    &:hover {
+  	      color: #009900;
+	        text-decoration: underline;
+  	    }
+    }
+}
+
+.gdo-body-text {
+	color: #525252;
+	font-weight: normal;
+	line-height: 1.3em;
+
+    td {
+	    padding-left: 3px;
+	    padding-right: 3px;
+            vertical-align: middle;
+        }
+    }
+
+.gdo-body-text-12 {
+	font-size: 12px;
+	color: $charcoalgrey;
+	font-weight: normal;
+	line-height: 1.3em;
+	padding-left: 8px;
+    }
+
+.gdo-table-header {
+    @include MarginPadding( null, 15px 15px 5px 15px );
+	color: $charcoalgrey;
+    background-color: $white;
+    font-size: 11px;	
+	font-weight: bold;
+	line-height: 1.3em;
+    //removed white-space: nowrap; per BUG 36405 //
+
+    th{
+        @include MarginPadding( null, 5px );
+    }
+    }
+
+#TableContent,
+.gdo-popup > table {
+	width: 100%;
+}
+
+.gdo-bold {
+	font-weight: bold;
+}
+
+.gdo-underline {
+	text-decoration: underline;
+}
+
+.gdo-selected-item-volume {
+    @include MarginPadding( auto 0px 0, null );
+}
+
+.gdo-pricelist-horiz-rule,
+.gdo-pricelist-horiz-rule-off {
+	background-color: #6c6c6c;
+	height: 1px;
+	margin: 8px auto;
+	overflow: hidden;
+}
+
+.gdo-pricelist-horiz-rule-off {
+	background-color: none;
+}
+
+.col-SKU {
+    width: 30px;
+}
+.toggle-parent, .showSizeChartLink  {
+
+    > a { width: 85%; }
+    
+    .arrow {
+        &.icon{
+            color: $black;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        &.hide{ display: none; }
+    }
+
+    .icon-arrow-down-3{
+        -moz-transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+    }
+
+    .icon-arrow-down-3.up{
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+
+.toggle-child  {
+
+    .toggle-parent {
+
+        .arrow.icon { font-size: 12px; }
+
+    }
+
+}
+
+.showSizeChartLink i.arrow.icon { color: #0088ff; font-size: 12px; padding: 0 5px; }

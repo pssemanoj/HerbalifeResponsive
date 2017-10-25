@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.responsepayment" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://bt.orderingsystem.hrbl.v01.responsepayment" id="ResponsePayment" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ResponsePayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LineID" type="xs:string" />
+        <xs:element name="Amount" type="xs:decimal" />
+        <xs:element name="PaymentDate" type="xs:dateTime" />
+        <xs:element name="Currency" type="xs:string" />
+        <xs:element name="NumberOfInstallments" type="xs:int" />
+        <xs:element name="ClientReferenceNumber" type="xs:string" />
+        <xs:element name="AuthNumber" type="xs:string" />
+        <xs:element name="TransactionCode" type="xs:string" />
+        <xs:element name="AccountNumber" nillable="true" type="xs:string" />
+        <xs:element name="Paycode" nillable="true" type="xs:string" />
+        <xs:element name="Status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

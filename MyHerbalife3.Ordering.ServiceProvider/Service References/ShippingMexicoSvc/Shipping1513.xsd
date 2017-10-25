@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd2" namespace="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd5" namespace="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd9" namespace="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" />
+  <xs:element name="GetShippingAlternativesForPostalCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q1:PostalCodeLookupRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShippingAlternativesForPostalCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetShippingAlternativesForPostalCodeResult" nillable="true" type="q2:ShippingAlternativesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShippingAlternativeForDeliveryOptionID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q3:DeliveryOptionForIDRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShippingAlternativeForDeliveryOptionIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetShippingAlternativeForDeliveryOptionIDResult" nillable="true" type="q4:ShippingAlternativesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativesForColony">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q5:PickupAlternativesForColonyRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativesForColonyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetPickupAlternativesForColonyResult" nillable="true" type="q6:PickupAlternativesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativesForPostalCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q7:PickupAlternativesForPostalCodeRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativesForPostalCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetPickupAlternativesForPostalCodeResult" nillable="true" type="q8:PickupAlternativesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativeForDeliveryOptionID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q9:DeliveryOptionForIDRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPickupAlternativeForDeliveryOptionIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" minOccurs="0" name="GetPickupAlternativeForDeliveryOptionIDResult" nillable="true" type="q10:PickupAlternativesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllStates">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllStatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="GetAllStatesResult" nillable="true" type="q11:AllStatesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMunicipalitiesForState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q12:MunicipalitiesForStateRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMunicipalitiesForStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="GetMunicipalitiesForStateResult" nillable="true" type="q13:MunicipalitiesForStateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetColoniesForMunicipality">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q14:ColoniesForMunicipalityRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetColoniesForMunicipalityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="GetColoniesForMunicipalityResult" nillable="true" type="q15:ColoniesForMunicipalityResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZipCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://herbalife.com/2010/01/21/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="request" nillable="true" type="q16:ZipCodeLookupRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZipCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" minOccurs="0" name="GetZipCodeResult" nillable="true" type="q17:ZipCodeLookupResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Calendar" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Calendar" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ListAppointmentsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAppointmentsRequest" nillable="true" type="tns:ListAppointmentsRequest" />
+  <xs:complexType name="ListAppointmentsByDateRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ListAppointmentsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAppointmentsByDateRequest_V01" nillable="true" type="tns:ListAppointmentsByDateRequest_V01" />
+  <xs:complexType name="ListAppointmentsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAppointmentsResponse" nillable="true" type="tns:ListAppointmentsResponse" />
+  <xs:complexType name="ListAppointmentsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ListAppointmentsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Appointments" nillable="true" type="tns:ArrayOfAppointment_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListAppointmentsResponse_V01" nillable="true" type="tns:ListAppointmentsResponse_V01" />
+  <xs:complexType name="ArrayOfAppointment_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Appointment_V01" nillable="true" type="tns:Appointment_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAppointment_V01" nillable="true" type="tns:ArrayOfAppointment_V01" />
+  <xs:complexType name="Appointment_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AppointmentBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppointmentID" type="xs:int" />
+          <xs:element xmlns:q3="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" minOccurs="0" name="Attendees" nillable="true" type="q3:ArrayOfContact_V02" />
+          <xs:element minOccurs="0" name="Category" nillable="true" type="tns:AppointmentCategoryType3" />
+          <xs:element minOccurs="0" name="EndTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecurrenceType" nillable="true" type="tns:AppointmentRecurrenceType" />
+          <xs:element minOccurs="0" name="RecurringParentID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RecurringPattern" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Reminder" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Appointment_V01" nillable="true" type="tns:Appointment_V01" />
+  <xs:complexType name="AppointmentBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AppointmentBase" nillable="true" type="tns:AppointmentBase" />
+  <xs:complexType name="AppointmentCategoryType3">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalendarName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppointmentCategoryType3" nillable="true" type="tns:AppointmentCategoryType3" />
+  <xs:complexType name="AppointmentRecurrenceType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplaySequence" type="xs:short" />
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AppointmentRecurrenceType" nillable="true" type="tns:AppointmentRecurrenceType" />
+  <xs:complexType name="GetAppointmentRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetAppointmentRequest" nillable="true" type="tns:GetAppointmentRequest" />
+  <xs:complexType name="GetAppointmentByIDRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetAppointmentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppointmentID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetAppointmentByIDRequest_V01" nillable="true" type="tns:GetAppointmentByIDRequest_V01" />
+  <xs:complexType name="GetAppointmentResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetAppointmentResponse" nillable="true" type="tns:GetAppointmentResponse" />
+  <xs:complexType name="GetAppointmentByIDResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetAppointmentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Appointment" nillable="true" type="tns:Appointment_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetAppointmentByIDResponse_V01" nillable="true" type="tns:GetAppointmentByIDResponse_V01" />
+  <xs:complexType name="SaveAppointmentRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveAppointmentRequest" nillable="true" type="tns:SaveAppointmentRequest" />
+  <xs:complexType name="SaveAppointmentResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveAppointmentResponse" nillable="true" type="tns:SaveAppointmentResponse" />
+  <xs:complexType name="SaveAppointmentResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveAppointmentResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AppointmentID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveAppointmentResponse_V01" nillable="true" type="tns:SaveAppointmentResponse_V01" />
+  <xs:complexType name="DeleteAppointmentsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteAppointmentsRequest" nillable="true" type="tns:DeleteAppointmentsRequest" />
+  <xs:complexType name="DeleteAppointmentsByIDRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteAppointmentsRequest">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AppointmentIDs" nillable="true" type="q10:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteAppointmentsByIDRequest_V01" nillable="true" type="tns:DeleteAppointmentsByIDRequest_V01" />
+  <xs:complexType name="DeleteAppointmentsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteAppointmentsResponse" nillable="true" type="tns:DeleteAppointmentsResponse" />
+  <xs:complexType name="DeleteAppointmentsByIDResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteAppointmentsResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteAppointmentsByIDResponse_V01" nillable="true" type="tns:DeleteAppointmentsByIDResponse_V01" />
+  <xs:complexType name="CalendarSettings_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CalendarSettings">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CalendarSettingsID" type="xs:int" />
+          <xs:element minOccurs="0" name="DisplayingHours" type="xs:int" />
+          <xs:element minOccurs="0" name="StartingHourOfDay" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WeeklyView" nillable="true" type="tns:WeeklyViewType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CalendarSettings_V01" nillable="true" type="tns:CalendarSettings_V01" />
+  <xs:complexType name="CalendarSettings">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CalendarSettings" nillable="true" type="tns:CalendarSettings" />
+  <xs:complexType name="WeeklyViewType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WeeklyViewType" nillable="true" type="tns:WeeklyViewType" />
+</xs:schema>

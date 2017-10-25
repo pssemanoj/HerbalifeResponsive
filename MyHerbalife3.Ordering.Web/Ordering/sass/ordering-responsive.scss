@@ -1,0 +1,225 @@
+﻿@import "../../SharedUI/scss/vendors/compass";
+@import "../../SharedUI/scss/vendors/susy";
+@import "../../SharedUI/scss/vendors/breakpoint";
+
+// base
+@import "../../SharedUI/scss/helpers/_variables";
+
+$mobile-range: 0 ($desktop - 1);
+$mobile-green: #7ac143;
+$mobile-border-color: #7cb71f;
+
+body {
+    > form {margin-top: 50px;
+        @include breakpoint($desktop) { margin-top: 0; }
+   } 
+}
+
+.width-100{ width: 100% }
+
+/* MAIN WRAPPER STYLES */
+#hrblSiteWrapper, #principalContent, .container {
+    min-width: 300px;
+    width: 100%;
+    @include breakpoint($desktop) {
+        min-width: 960px;
+    }
+}
+#principalContent, .container {
+    @include breakpoint($desktop) {
+        width: 960px;
+    }
+}
+
+#ContentCell {
+    padding-left: 0;
+    @include breakpoint($desktop) { padding-left: 10px; }
+}
+
+.bottomSticky, .topSticky {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    right: 0;
+    transition: left 250ms ease-out 0s;
+    width: 100%;
+    z-index: 10;
+}
+.topSticky { top: 0; }
+.bottomSticky { bottom: 0; }
+
+#locales {
+    * {
+        &:before, &:after {box-sizing: content-box;}
+    }
+    .locales-wrap {
+        .locales-drop { margin-bottom: 5px; }
+    }
+}
+
+// === Global Styles
+h1 { 
+    font-size: 2em;
+    @include breakpoint( $desktop ) { font-size: 36px; }
+}
+#DSInfo {
+    .cart-link {
+        visibility: hidden;
+        @include breakpoint( $desktop ) { visibility: visible; }
+    }
+}
+.visible-xs,
+.visible-sm,
+.visible-md {
+  display: none !important;
+}
+
+.visible-xs { 
+    @include breakpoint( 0 $desktop) { display: block !important; }
+}
+
+.hide-xs { 
+    display: none !important;
+    @include breakpoint( $desktop) { display: block !important; }
+}
+th, td { 
+    .hide-xs {
+        display: none !important;
+        @include breakpoint( $desktop) { display: table-cell !important; }
+    }
+}
+.transformer { overflow: hidden; }
+// Clear elements with floated elements inside.
+.myclear {
+    zoom: 1; /* IE6&7 */
+    &:after { clear: both; }
+    &:after, &:before {
+        content: "";
+        display: table;
+    }
+}
+.overlay {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+// inputs, selectes
+select[id$="CategoryDropdown"] {
+    margin: 0 0 5px;
+    width: span(4);
+    @include breakpoint( $tablet) { 
+        margin: 0 0 0 5px;
+        width: 200px;
+    }
+}
+
+// Buttons
+.neutral, a.neutral, .forward, a.forward, .backward, a.backward, input[class*="btn"], a[class*="btn"] {
+    margin: 4px 0;
+    padding: 7px 0;
+    width: 100%;
+    @include breakpoint( $desktop) { 
+        margin: 3px;
+        padding: 10px;
+        width: auto;
+    }
+}
+// === Responsive Tables
+.responsive-table {
+    display: block;
+    max-width: 300px;
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    thead {
+        display: block;
+        float: left;
+    }
+    tbody {
+        display: block;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    select{width: auto;}
+}
+.table-container {
+    width: 100%;
+    overflow-x: scroll;
+    @include breakpoint( $desktop) { 
+
+        width: auto;
+        overflow-x: visible;
+
+    }
+}
+/* === Modal Box on Right Nav === */
+[id$="pnlSavedCart"], [id$="pnlSaveCart"] {
+    position: absolute!important;
+    width: auto !important;
+    left: 0 !important;
+}
+
+#gdo-right-column-orderquickview {
+    div[id$="pnlShippingInfoControl"] {
+        left: 12.5% !important;
+        right: 12.5%;
+    }
+}
+
+/* MX SavedPickUp Localization */
+[id$="trstateRadio"] {
+    span {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.mxpickup-slect{
+    width: 100%;
+}
+
+.mx-store-address{
+    padding: 0 0 0 40px !important;
+}
+
+.ar-store-address {
+    padding: 0;
+    margin: 0;
+}
+
+/* MX SavedPickUp Localization */
+
+#gdo-right-column-minicart  [id$='updateProgressDiv'] {
+    left: 0!important;
+}
+
+
+@import "_responsive_components/_top-menu";
+@import "_responsive_components/_left-menu";
+
+// === Pages
+@import "_responsive_components/_catalog";
+@import "_responsive_components/_pricelist";
+@import "_responsive_components/_minicart";
+@import "_responsive_components/_productsku";
+@import "_responsive_components/_orderpreferences";
+@import "_responsive_components/_savedcarts";
+@import "_responsive_components/_product-details";
+
+@import "_responsive_components/_shoppingcart";
+@import "_responsive_components/_checkout";
+@import "_responsive_components/_confirm";

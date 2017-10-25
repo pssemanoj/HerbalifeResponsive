@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.PaymentTypes" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.PaymentTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="QuickPayPayment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" base="q1:CreditCard">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BindCard" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CardHolderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CardHolderType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCardVerified" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsDebitCard" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MobilePhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobilePin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StorablePAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="QuickPayPayment" nillable="true" type="tns:QuickPayPayment" />
+  <xs:complexType name="CardAuthorization_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CardAuthorization">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AgencyAccountId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyResponseAvsCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyResponseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyResponseCvvCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyResponseReasonCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyResponseText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyTransactionId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AuthorizationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="AuthorizationError" type="tns:AuthorizationErrorType" />
+          <xs:element minOccurs="0" name="AuthorizationIntention" type="tns:AuthorizationIntentionType" />
+          <xs:element minOccurs="0" name="ClientResponse" type="tns:AuthorizationClientResponseType" />
+          <xs:element minOccurs="0" name="IsAvsMatch" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCvvMatch" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IssuerAuthorizationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IssuerResponseCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CardAuthorization_V01" nillable="true" type="tns:CardAuthorization_V01" />
+  <xs:complexType name="CardAuthorization">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CardAuthorization" nillable="true" type="tns:CardAuthorization" />
+  <xs:simpleType name="AuthorizationClientResponseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Approved" />
+      <xs:enumeration value="Declined" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AuthorizationClientResponseType" nillable="true" type="tns:AuthorizationClientResponseType" />
+  <xs:simpleType name="AuthorizationErrorType">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Transport">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="NoResponse">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="InvalidResponse">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:element name="AuthorizationErrorType" nillable="true" type="tns:AuthorizationErrorType" />
+  <xs:simpleType name="AuthorizationIntentionType">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Authorize" />
+          <xs:enumeration value="Capture" />
+          <xs:enumeration value="Pull">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:element name="AuthorizationIntentionType" nillable="true" type="tns:AuthorizationIntentionType" />
+  <xs:complexType name="ArrayOfCardAuthorization">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CardAuthorization" nillable="true" type="tns:CardAuthorization" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCardAuthorization" nillable="true" type="tns:ArrayOfCardAuthorization" />
+  <xs:complexType name="ArrayOfAuthorizationClientResponseType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuthorizationClientResponseType" type="tns:AuthorizationClientResponseType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuthorizationClientResponseType" nillable="true" type="tns:ArrayOfAuthorizationClientResponseType" />
+</xs:schema>

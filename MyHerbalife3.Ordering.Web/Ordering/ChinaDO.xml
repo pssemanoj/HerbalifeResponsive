@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PanelControlsConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.herbalife.com/PanelControlsConfiguration">
+  <Pages>
+    <Page Name="Catalog.aspx">
+      <Params>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="  HideInventoryOption" Value="false"/>
+            </Params>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="PriceList.aspx">
+      <Params>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="false"/>
+            </Params>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="PriceListFavourite.aspx">
+      <Params>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="false"/>
+            </Params>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="ProductSKU.aspx">
+      <Params>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="true"/>
+            </Params>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="ProductDetail.aspx">
+      <Params>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="true"/>
+              <Param Name="DisplayProducts" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="DisplayInventoryOption" Value="true"/>
+            </Params>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SearchProducts.aspx">
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/MiniCart.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/BrGrOrderQuickView.ascx">
+            <Params>
+              <Param Name="HideInventoryOption" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="OrderPreferences.aspx">
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+              <Param Name="DisplayOrderPreferenceSubmenu" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SavedShippingAddress.aspx">
+      <Params>
+        <Param Name="DisableSaveAddressCheckbox" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+              <Param Name="DisplayOrderPreferenceSubmenu" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SavedPickupCourierLocation.aspx">
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+              <Param Name="DisplayOrderPreferenceSubmenu" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SavedPaymentInformation.aspx">
+      <Params>
+        <Param Name="CantVisitSavedCardsNotAllowed" Value="true"/>
+        <Param Name="HardCashCantVisit" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+              <Param Name="DisplayOrderPreferenceSubmenu" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="ShoppingCart.aspx">
+      <Params>
+        <Param Name="CantBuyCantVisit" Value="true"/>
+        <Param Name="CantVisitWithoutDeliveryInfo" Value="true"/>
+        <Param Name="CantVisitWithDSFraud" Value="true"/>
+        <Param Name="CantDeleteFinalAddress" Value="true"/>
+        <Param Name="CheckoutOptionsAreStatic" Value="false"/>
+        <Param Name="RequiresCartManagementRules" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/HFF_CN.ascx">
+            <ConfiguredProperties>
+              <ConfiguredProperty>
+                <Param Name="TargetProperty" Value="Visible"/>
+                <Param Name="Configuration" Value="DOConfiguration"/>
+                <Param Name="ConfigurationProperty" Value="AllowHFF"/>
+              </ConfiguredProperty>
+            </ConfiguredProperties>
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/Promotion.ascx" >
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/ChinaPromotion.ascx" >
+          </UserControl>
+          <UserControl Name="~/Ordering/Controls/CrossSell.ascx"></UserControl>
+          <UserControl Name="~/Ordering/Controls/ChinaAPF.ascx" >
+            <ConfiguredProperties>
+              <ConfiguredProperty>
+                <Param Name="TargetProperty" Value="Visible"/>
+                <Param Name="Configuration" Value="APFConfiguration"/>
+                <Param Name="ConfigurationProperty" Value="StandaloneAPFOnlyAllowed"/>
+                <Param Name="Modifier" Value="Not"/>
+              </ConfiguredProperty>
+            </ConfiguredProperties>
+          </UserControl>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="Checkout.aspx">
+      <ConfiguredProperties>
+        <ConfiguredProperty>
+          <Param Name="TargetProperty" Value="UseHmsCalc"/>
+          <Param Name="Configuration" Value="CheckoutConfiguration"/>
+          <Param Name="ConfigurationProperty" Value="UseHMSCalc"/>
+        </ConfiguredProperty>
+      </ConfiguredProperties>
+      <Params>
+        <Param Name="CantBuyCantVisit" Value="true"/>
+        <Param Name="HardCashCantVisit" Value="true"/>
+        <Param Name="CantVisitWithEmptyCart" Value="true"/>
+        <Param Name="CantVisitWithoutDeliveryInfo" Value="true"/>
+        <Param Name="CantVisitWithExceededPurchasingLimits" Value="true"/>
+        <Param Name="CantVisitWithDSFraud" Value="true"/>
+        <Param Name="CantVisitWithNoTotals" Value="true"/>
+        <Param Name="CheckoutOptionsAreStatic" Value="true"/>
+        <Param Name="DisplayInvoiceOptions" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="Confirm.aspx">
+      <Params>
+        <Param Name="CantBuyCantVisit" Value="true"/>
+        <Param Name="HardCashCantVisit" Value="true"/>
+        <Param Name="CantVisitWithEmptyCart" Value="false"/>
+        <Param Name="CantVisitWithoutDeliveryInfo" Value="true"/>
+        <Param Name="CantVisitWithoutOrderNumber" Value="true"/>
+        <Param Name="CheckoutOptionsAreStatic" Value="true"/>
+        <Param Name="DisplayHoursOfOperationForPickup" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="Faq.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SavedCarts.aspx">
+      <Params>
+        <Param Name="CantVisitSavedCartsNotAllowed" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="PendingOrders.aspx">
+      <Params>
+        <Param Name="DisableSaveAddressCheckbox" Value="true"/>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+              <Param Name="DisplayOrderPreferenceSubmenu" Value="true"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="FreightSimulation.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="OrderListView.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="CreateOrderForPC.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="Survey.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="SavedPickupCourierLocation.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+    <Page Name="Donation.aspx">
+      <Params>
+      </Params>
+      <LeftPanel>
+        <Controls>
+          <UserControl Name="~/Ordering/Controls/Menu.ascx">
+            <Params>
+              <Param Name="DisplayProducts" Value="false"/>
+            </Params>
+          </UserControl>
+        </Controls>
+      </LeftPanel>
+      <RightPanel>
+        <Controls>
+        </Controls>
+      </RightPanel>
+    </Page>
+  </Pages>
+</PanelControlsConfiguration>

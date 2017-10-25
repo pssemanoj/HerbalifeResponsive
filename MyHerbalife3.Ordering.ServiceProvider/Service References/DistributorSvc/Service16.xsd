@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/04/01/HL.Distributor.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/04/01/HL.Distributor.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="BankAccountDetails_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountHolderName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EarningsType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentMethod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RoutingNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BankAccountDetails_V01" nillable="true" type="tns:BankAccountDetails_V01" />
+  <xs:complexType name="ArrayOfBankAccountDetails_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BankAccountDetails_V01" nillable="true" type="tns:BankAccountDetails_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBankAccountDetails_V01" nillable="true" type="tns:ArrayOfBankAccountDetails_V01" />
+</xs:schema>

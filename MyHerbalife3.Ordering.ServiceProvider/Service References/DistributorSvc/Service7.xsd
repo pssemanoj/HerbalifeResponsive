@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfFavouriteSKU">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FavouriteSKU" nillable="true" type="tns:FavouriteSKU" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFavouriteSKU" nillable="true" type="tns:ArrayOfFavouriteSKU" />
+  <xs:complexType name="FavouriteSKU">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FavouriteID" type="xs:int" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductSKU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FavouriteSKU" nillable="true" type="tns:FavouriteSKU" />
+</xs:schema>

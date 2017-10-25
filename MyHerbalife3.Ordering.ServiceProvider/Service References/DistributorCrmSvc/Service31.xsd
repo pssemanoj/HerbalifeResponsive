@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:complexType name="DistributorWebsiteInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteInformation" nillable="true" type="tns:DistributorWebsiteInformation" />
+  <xs:complexType name="DistributorWebsiteInformation_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InactiveReasonCode" type="tns:InactiveReasonCode" />
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastEligibilityElapsed" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastEligible" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PrimaryEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermsAgreedDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteInformation_V01" nillable="true" type="tns:DistributorWebsiteInformation_V01" />
+  <xs:simpleType name="InactiveReasonCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="UPDATED_BY_MEMBER" />
+      <xs:enumeration value="UPDATED_AUTOMATICALLY" />
+      <xs:enumeration value="UPDATE_BY_SUPPORT_TEAM" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="InactiveReasonCode" nillable="true" type="tns:InactiveReasonCode" />
+  <xs:complexType name="DistributorLocalizedWebsite_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorLocalizedWebsite">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContactInformation" nillable="true" type="tns:DistributorWebsiteContactInformation" />
+          <xs:element minOccurs="0" name="ContentSettings" nillable="true" type="tns:DistributorWebsiteContent" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Flags" nillable="true" type="q2:ArrayOfKeyValueOfDwsWebsiteFlagsbooleanFKpjpdKU" />
+          <xs:element minOccurs="0" name="IsPrimaryWebsite" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSwapEnabledForCombos" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShopSettings" nillable="true" type="tns:DistributorWebsiteShop" />
+          <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Story" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ThemeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorLocalizedWebsite_V01" nillable="true" type="tns:DistributorLocalizedWebsite_V01" />
+  <xs:complexType name="DistributorLocalizedWebsite">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorLocalizedWebsite" nillable="true" type="tns:DistributorLocalizedWebsite" />
+  <xs:complexType name="DistributorWebsiteContactInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContactInformation" nillable="true" type="tns:DistributorWebsiteContactInformation" />
+  <xs:complexType name="DistributorWebsiteContactInformation_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteContactInformation">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AdditionalInformation" nillable="true" type="q5:ArrayOfKeyValueOfintstring" />
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BusinessLicenseNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CommunicationSalesNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyDirector" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorPhotoFile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element xmlns:q6="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="LegalType" type="q6:DistributorLegalType" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegisterNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SocialMediaAccounts" nillable="true" type="tns:ArrayOfSocialMediaAccount" />
+          <xs:element minOccurs="0" name="TaxId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContactInformation_V01" nillable="true" type="tns:DistributorWebsiteContactInformation_V01" />
+  <xs:complexType name="ArrayOfSocialMediaAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SocialMediaAccount" nillable="true" type="tns:SocialMediaAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSocialMediaAccount" nillable="true" type="tns:ArrayOfSocialMediaAccount" />
+  <xs:complexType name="SocialMediaAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Account" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SocialMediaAccount" nillable="true" type="tns:SocialMediaAccount" />
+  <xs:complexType name="IChange">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SocialMediaAccount">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IChange" nillable="true" type="tns:IChange" />
+  <xs:complexType name="Twitter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SocialMediaAccount">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Twitter" nillable="true" type="tns:Twitter" />
+  <xs:complexType name="Facebook">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SocialMediaAccount">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Facebook" nillable="true" type="tns:Facebook" />
+  <xs:complexType name="DistributorWebsiteShop">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteShop" nillable="true" type="tns:DistributorWebsiteShop" />
+  <xs:complexType name="DistributorWebsiteShop_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteShop">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptedPayments" nillable="true" type="tns:ArrayOfPaymentGateway" />
+          <xs:element minOccurs="0" name="CatalogPlatform" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorShippingOption" nillable="true" type="tns:DistributorShippingOption" />
+          <xs:element minOccurs="0" name="FreeShippingAfterCoupon" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FreeShippingEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FreeShippingMinimumAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="FreeShippingType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HandlingFee" nillable="true" type="tns:HandlingFee" />
+          <xs:element minOccurs="0" name="IsSwapEnabledForCombos" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LinkToHerbalifeInventory" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LiveChat" nillable="true" type="tns:LiveChatAccount" />
+          <xs:element minOccurs="0" name="StorePolicy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UseExactTax" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UseExactTaxWithHandlingFee" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteShop_V01" nillable="true" type="tns:DistributorWebsiteShop_V01" />
+  <xs:complexType name="ArrayOfPaymentGateway">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentGateway" nillable="true" type="tns:PaymentGateway" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentGateway" nillable="true" type="tns:ArrayOfPaymentGateway" />
+  <xs:complexType name="PaymentGateway">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="PaymentGateway" nillable="true" type="tns:PaymentGateway" />
+  <xs:complexType name="RedirectPaymentGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RedirectPaymentGateway" nillable="true" type="tns:RedirectPaymentGateway" />
+  <xs:complexType name="MercadoPagoGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RedirectPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientSecret" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Installments" nillable="true" type="xs:short" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MercadoPagoGateway" nillable="true" type="tns:MercadoPagoGateway" />
+  <xs:complexType name="PayPalGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RedirectPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutoFulfill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="BillingAgreementId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MerchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFillReason" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PayPalGateway" nillable="true" type="tns:PayPalGateway" />
+  <xs:complexType name="NicePayGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RedirectPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NicePayGateway" nillable="true" type="tns:NicePayGateway" />
+  <xs:complexType name="WireTransferGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NonProcessingPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BankWireTransferInformation" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WireTransferGateway" nillable="true" type="tns:WireTransferGateway" />
+  <xs:complexType name="NonProcessingPaymentGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="NonProcessingPaymentGateway" nillable="true" type="tns:NonProcessingPaymentGateway" />
+  <xs:complexType name="OfflineCreditCardGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NonProcessingPaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OfflineCreditCardGateway" nillable="true" type="tns:OfflineCreditCardGateway" />
+  <xs:complexType name="CashGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NonProcessingPaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CashGateway" nillable="true" type="tns:CashGateway" />
+  <xs:complexType name="CheckGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:NonProcessingPaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CheckGateway" nillable="true" type="tns:CheckGateway" />
+  <xs:complexType name="MercadoPagoB2B2CGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:APIPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AutoFulfill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ClientId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientSecret" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Installments" type="xs:int" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFillReason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PublicKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefreshToken" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MercadoPagoB2B2CGateway" nillable="true" type="tns:MercadoPagoB2B2CGateway" />
+  <xs:complexType name="APIPaymentGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PaymentGateway">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="APIPaymentGateway" nillable="true" type="tns:APIPaymentGateway" />
+  <xs:complexType name="ProPayGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:APIPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutoFulfill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MerchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFillReason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TermsAcceptedDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProPayGateway" nillable="true" type="tns:ProPayGateway" />
+  <xs:complexType name="PayPalProGateway">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:APIPaymentGateway">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutoFulfill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="BillingAgreementId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientIpAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MerchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFill" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideAutoFullFillReason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProStatus" type="tns:PayPalProStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PayPalProGateway" nillable="true" type="tns:PayPalProGateway" />
+  <xs:simpleType name="PayPalProStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="InProgress" />
+      <xs:enumeration value="Authorized" />
+      <xs:enumeration value="Rejected" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PayPalProStatus" nillable="true" type="tns:PayPalProStatus" />
+  <xs:complexType name="DistributorShippingOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustomerCanDefineAddress" type="xs:boolean" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PickUpAddressList" nillable="true" type="q8:ArrayOfint" />
+      <xs:element minOccurs="0" name="PrimaryAddressId" type="xs:int" />
+      <xs:element minOccurs="0" name="UsePickUpAddress" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DistributorShippingOption" nillable="true" type="tns:DistributorShippingOption" />
+  <xs:complexType name="HandlingFee">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddChargeToCorreiosFeeToGetNotifiedOnOrderDelivered" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CustomShippingPostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCorreiosShippingCharges" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsVatRegistered" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VatNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HandlingFee" nillable="true" type="tns:HandlingFee" />
+  <xs:complexType name="PercentageHandlingFee">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:HandlingFee">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Percentage" nillable="true" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PercentageHandlingFee" nillable="true" type="tns:PercentageHandlingFee" />
+  <xs:complexType name="FlatHandlingFee">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:HandlingFee">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FlatHandlingFee" nillable="true" type="tns:FlatHandlingFee" />
+  <xs:complexType name="LiveChatAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LiveChatAccount" nillable="true" type="tns:LiveChatAccount" />
+  <xs:complexType name="DistributorWebsiteContent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContent" nillable="true" type="tns:DistributorWebsiteContent" />
+  <xs:complexType name="DistributorWebsiteContent_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteContent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CatalogPlatform" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ContentListItemSelections" nillable="true" type="q10:ArrayOfKeyValueOfintArrayOfDistributorWebsiteContentListItemSelection_V01pQXfhPrt" />
+          <xs:element minOccurs="0" name="Navigations" nillable="true" type="tns:ArrayOfDistributorWebsiteNavigation_V01" />
+          <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PageContentSelections" nillable="true" type="q11:ArrayOfKeyValueOfintArrayOfDistributorWebsitePageContentSelection_V01pQXfhPrt" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContent_V01" nillable="true" type="tns:DistributorWebsiteContent_V01" />
+  <xs:complexType name="ArrayOfDistributorWebsiteContentListItemSelection_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DistributorWebsiteContentListItemSelection_V01" nillable="true" type="tns:DistributorWebsiteContentListItemSelection_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistributorWebsiteContentListItemSelection_V01" nillable="true" type="tns:ArrayOfDistributorWebsiteContentListItemSelection_V01" />
+  <xs:complexType name="DistributorWebsiteContentListItemSelection_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteContentListItemSelection">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentId" type="xs:int" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContentListItemSelection_V01" nillable="true" type="tns:DistributorWebsiteContentListItemSelection_V01" />
+  <xs:complexType name="DistributorWebsiteContentListItemSelection">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteContentListItemSelection" nillable="true" type="tns:DistributorWebsiteContentListItemSelection" />
+  <xs:complexType name="ArrayOfDistributorWebsiteNavigation_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DistributorWebsiteNavigation_V01" nillable="true" type="tns:DistributorWebsiteNavigation_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistributorWebsiteNavigation_V01" nillable="true" type="tns:ArrayOfDistributorWebsiteNavigation_V01" />
+  <xs:complexType name="DistributorWebsiteNavigation_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsiteNavigation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="NavigationId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteNavigation_V01" nillable="true" type="tns:DistributorWebsiteNavigation_V01" />
+  <xs:complexType name="DistributorWebsiteNavigation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsiteNavigation" nillable="true" type="tns:DistributorWebsiteNavigation" />
+  <xs:complexType name="ArrayOfDistributorWebsitePageContentSelection_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DistributorWebsitePageContentSelection_V01" nillable="true" type="tns:DistributorWebsitePageContentSelection_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistributorWebsitePageContentSelection_V01" nillable="true" type="tns:ArrayOfDistributorWebsitePageContentSelection_V01" />
+  <xs:complexType name="DistributorWebsitePageContentSelection_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorWebsitePageContentSelection">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentId" type="xs:int" />
+          <xs:element minOccurs="0" name="SectionId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsitePageContentSelection_V01" nillable="true" type="tns:DistributorWebsitePageContentSelection_V01" />
+  <xs:complexType name="DistributorWebsitePageContentSelection">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorWebsitePageContentSelection" nillable="true" type="tns:DistributorWebsitePageContentSelection" />
+  <xs:simpleType name="DwsWebsiteFlags">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IsThirdParty" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DwsWebsiteFlags" nillable="true" type="tns:DwsWebsiteFlags" />
+  <xs:complexType name="AvailableSocialMediaLinksInfo">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="AvailableSocialMediaLinksInfo" nillable="true" type="tns:AvailableSocialMediaLinksInfo" />
+  <xs:complexType name="AvailableSocialMediaLinks">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UrlShare" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AvailableSocialMediaLinks" nillable="true" type="tns:AvailableSocialMediaLinks" />
+  <xs:complexType name="Program">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+      <xs:element minOccurs="0" name="Photo" nillable="true" type="tns:Photo" />
+      <xs:element minOccurs="0" name="PhotoId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProgramDistributor" nillable="true" type="tns:ArrayOfProgramDistributor" />
+      <xs:element minOccurs="0" name="ProgramId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProgramItem" nillable="true" type="tns:ArrayOfProgramItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Program" nillable="true" type="tns:Program" />
+  <xs:complexType name="Photo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PhotoId" type="xs:int" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Photo" nillable="true" type="tns:Photo" />
+  <xs:complexType name="ArrayOfProgramDistributor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProgramDistributor" nillable="true" type="tns:ProgramDistributor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProgramDistributor" nillable="true" type="tns:ArrayOfProgramDistributor" />
+  <xs:complexType name="ProgramDistributor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+      <xs:element minOccurs="0" name="ProgramDistributorId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProgramId" type="xs:int" />
+      <xs:element minOccurs="0" name="Show" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProgramDistributor" nillable="true" type="tns:ProgramDistributor" />
+  <xs:complexType name="ArrayOfProgramItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProgramItem" nillable="true" type="tns:ProgramItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProgramItem" nillable="true" type="tns:ArrayOfProgramItem" />
+  <xs:complexType name="ProgramItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastModifiedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProgramId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProgramItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProgramItem" nillable="true" type="tns:ProgramItem" />
+  <xs:complexType name="ArrayOfProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Program" nillable="true" type="tns:Program" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProgram" nillable="true" type="tns:ArrayOfProgram" />
+  <xs:complexType name="ArrayOfPhoto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Photo" nillable="true" type="tns:Photo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhoto" nillable="true" type="tns:ArrayOfPhoto" />
+  <xs:complexType name="GiftItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Gift" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GiftBannerPath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GiftItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GiftItemsId" type="xs:int" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Sku" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GiftItems" nillable="true" type="tns:GiftItems" />
+  <xs:complexType name="ArrayOfBannerStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BannerStyle" nillable="true" type="tns:BannerStyle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBannerStyle" nillable="true" type="tns:ArrayOfBannerStyle" />
+  <xs:complexType name="BannerStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CssClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BannerStyle" nillable="true" type="tns:BannerStyle" />
+  <xs:complexType name="FontColor">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BannerStyle">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FontColor" nillable="true" type="tns:FontColor" />
+  <xs:complexType name="FontName">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BannerStyle">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FontName" nillable="true" type="tns:FontName" />
+  <xs:complexType name="ColorTheme">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BannerStyle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PrimaryFontCssClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SecondaryFontCssClass" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ColorTheme" nillable="true" type="tns:ColorTheme" />
+  <xs:complexType name="FontSize">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BannerStyle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TextType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FontSize" nillable="true" type="tns:FontSize" />
+  <xs:complexType name="TemplateTheme">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BannerStyle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PrimaryFontCssClass" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SecondaryFontCssClass" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TemplateTheme" nillable="true" type="tns:TemplateTheme" />
+  <xs:complexType name="MemberBanner">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BannerState" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ColorThemeClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsCustomized" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPromoGift" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastUpated" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinOrderAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryColorClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryFontClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimarySizeClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryColorClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryFontClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondarySizeClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondaryText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TemplateUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberBanner" nillable="true" type="tns:MemberBanner" />
+  <xs:complexType name="ContactUsEmail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactUsEmail" nillable="true" type="tns:ContactUsEmail" />
+  <xs:complexType name="ArrayOfGiftItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GiftItems" nillable="true" type="tns:GiftItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGiftItems" nillable="true" type="tns:ArrayOfGiftItems" />
+  <xs:complexType name="ArrayOfMemberBanner">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberBanner" nillable="true" type="tns:MemberBanner" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberBanner" nillable="true" type="tns:ArrayOfMemberBanner" />
+  <xs:complexType name="DSCountryInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DSCountryInfoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptLead" type="xs:boolean" />
+          <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AdditionalInfoFields" nillable="true" type="q15:ArrayOfKeyValueOfintstring" />
+          <xs:element minOccurs="0" name="AvailableSocialMediaLinks" nillable="true" type="tns:ArrayOfAvailableSocialMediaLinks" />
+          <xs:element minOccurs="0" name="BannerList" nillable="true" type="tns:ArrayOfBannerInfo" />
+          <xs:element minOccurs="0" name="BrandNameOnPayPal" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BuyNowPhonePopUpJSPath" nillable="true" type="xs:string" />
+          <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CatalogPlatforms" nillable="true" type="q16:ArrayOfstring" />
+          <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ContactInformationLayout" nillable="true" type="q17:ArrayOfstring" />
+          <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ControlsConfiguration" nillable="true" type="q18:ArrayOfKeyValueOfstringArrayOfstringty7Ep6D1" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryISOCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DefaultCatalogPlatform" nillable="true" type="xs:string" />
+          <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DefaultFees" nillable="true" type="q19:ArrayOfKeyValueOfstringdecimal" />
+          <xs:element minOccurs="0" name="DisplayTaxesOnConfirm" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DisplayUnlinkInPayPalConfig" type="xs:boolean" />
+          <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Domains" nillable="true" type="q20:ArrayOfstring" />
+          <xs:element minOccurs="0" name="EnableContactUs" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EnableCustomerAbandonedOrders" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EnableCustomerOrderFollowUp" type="xs:boolean" />
+          <xs:element minOccurs="0" name="EnableMPTransparentPayment" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ExamId" type="xs:int" />
+          <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Flags" nillable="true" type="q21:ArrayOfKeyValueOfDwsCountryFlagsbooleanFKpjpdKU" />
+          <xs:element minOccurs="0" name="FreeShippingAllowed" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HasBusinessLicense" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HasExactSalesTax" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HideContact" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HideDisplayModulesTab" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HideLead" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HidePageContentTab" type="xs:boolean" />
+          <xs:element minOccurs="0" name="HidePercentageOffDiscountCountry" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCatalogEnabledByDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCouponCodeTypeEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCouponDeactivationDisabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCustomBannerEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCustomMyStoryEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCustomStorePolicyEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCustomerPricingEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsEmailCampaignEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsFreeShippingEnabledCountry" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsGoHlSiteActivationEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsInvoiceOrderEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsLeadAcceptanceDisabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsLiveChatEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPromoGiftEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsShippingOptionEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsShoppingEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSwapEnabledForCombos" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaxDigitsAllowedInAmount" type="xs:int" />
+          <xs:element minOccurs="0" name="PaymentGatewayTypes" nillable="true" type="tns:ArrayOfPaymentGateway" />
+          <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaymentLayout" nillable="true" type="q22:ArrayOfstring" />
+          <xs:element minOccurs="0" name="PhoneValidationRegex" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProPaySiteUrl" nillable="true" type="xs:string" />
+          <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RegexValidators" nillable="true" type="q23:ArrayOfKeyValueOfstringstring" />
+          <xs:element minOccurs="0" name="ShowNonPayedOrderMessage" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ShowPricingSetting" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TutorialUrlOverride" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSCountryInfo_V01" nillable="true" type="tns:DSCountryInfo_V01" />
+  <xs:complexType name="DSCountryInfoBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSCountryInfoBase" nillable="true" type="tns:DSCountryInfoBase" />
+  <xs:complexType name="ArrayOfAvailableSocialMediaLinks">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AvailableSocialMediaLinks" nillable="true" type="tns:AvailableSocialMediaLinks" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAvailableSocialMediaLinks" nillable="true" type="tns:ArrayOfAvailableSocialMediaLinks" />
+  <xs:complexType name="ArrayOfBannerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BannerInfo" nillable="true" type="tns:BannerInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBannerInfo" nillable="true" type="tns:ArrayOfBannerInfo" />
+  <xs:complexType name="BannerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OnClientClick" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Path" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:BannerType" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BannerInfo" nillable="true" type="tns:BannerInfo" />
+  <xs:simpleType name="BannerType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Rotator" />
+      <xs:enumeration value="ActiveShop" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BannerType" nillable="true" type="tns:BannerType" />
+  <xs:simpleType name="DwsCountryFlags">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HasThirdPartySites" />
+      <xs:enumeration value="HasProductPrograms" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DwsCountryFlags" nillable="true" type="tns:DwsCountryFlags" />
+  <xs:complexType name="CatalogsFilter">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q25:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CatalogsFilter" nillable="true" type="tns:CatalogsFilter" />
+  <xs:complexType name="CatalogsFilter_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CatalogsFilter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CatalogsFilter_V01" nillable="true" type="tns:CatalogsFilter_V01" />
+  <xs:complexType name="CatalogsFilterByApplicationName">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CatalogsFilter_V01">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicatioName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CatalogsFilterByApplicationName" nillable="true" type="tns:CatalogsFilterByApplicationName" />
+  <xs:complexType name="ArrayOfCatalog_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Catalog_V01" nillable="true" type="tns:Catalog_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCatalog_V01" nillable="true" type="tns:ArrayOfCatalog_V01" />
+  <xs:complexType name="Catalog_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Catalog">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Catalog_V01" nillable="true" type="tns:Catalog_V01" />
+  <xs:complexType name="Catalog">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Catalog" nillable="true" type="tns:Catalog" />
+  <xs:complexType name="ArrayOfWebsiteNavigation_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsiteNavigation_V01" nillable="true" type="tns:WebsiteNavigation_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsiteNavigation_V01" nillable="true" type="tns:ArrayOfWebsiteNavigation_V01" />
+  <xs:complexType name="WebsiteNavigation_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsiteNavigationBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsCustomizable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsMandatory" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsSelectedByDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NavigationId" type="xs:int" />
+          <xs:element minOccurs="0" name="NavigationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PageId" type="xs:int" />
+          <xs:element minOccurs="0" name="ParentNavigationId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="ThemeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteNavigation_V01" nillable="true" type="tns:WebsiteNavigation_V01" />
+  <xs:complexType name="WebsiteNavigationBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q27:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteNavigationBase" nillable="true" type="tns:WebsiteNavigationBase" />
+  <xs:complexType name="ArrayOfWebsiteTheme_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsiteTheme_V01" nillable="true" type="tns:WebsiteTheme_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsiteTheme_V01" nillable="true" type="tns:ArrayOfWebsiteTheme_V01" />
+  <xs:complexType name="WebsiteTheme_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsiteThemeBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ThemeDisplayName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ThemeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteTheme_V01" nillable="true" type="tns:WebsiteTheme_V01" />
+  <xs:complexType name="WebsiteThemeBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteThemeBase" nillable="true" type="tns:WebsiteThemeBase" />
+  <xs:complexType name="ArrayOfWebsiteGeneralInformation_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsiteGeneralInformation_V01" nillable="true" type="tns:WebsiteGeneralInformation_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsiteGeneralInformation_V01" nillable="true" type="tns:ArrayOfWebsiteGeneralInformation_V01" />
+  <xs:complexType name="WebsiteGeneralInformation_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsiteGeneralInformation">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryInfo" nillable="true" type="tns:DSCountryInfo_V01" />
+          <xs:element minOccurs="0" name="IsShopCreated" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteGeneralInformation_V01" nillable="true" type="tns:WebsiteGeneralInformation_V01" />
+  <xs:complexType name="WebsiteGeneralInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q29:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteGeneralInformation" nillable="true" type="tns:WebsiteGeneralInformation" />
+  <xs:complexType name="ArrayOfDSCountryInfo_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSCountryInfo_V01" nillable="true" type="tns:DSCountryInfo_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSCountryInfo_V01" nillable="true" type="tns:ArrayOfDSCountryInfo_V01" />
+  <xs:complexType name="ArrayOfWebsitePageContent_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsitePageContent_V01" nillable="true" type="tns:WebsitePageContent_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsitePageContent_V01" nillable="true" type="tns:ArrayOfWebsitePageContent_V01" />
+  <xs:complexType name="WebsitePageContent_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsitePageContentBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ContentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PageId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsitePageContent_V01" nillable="true" type="tns:WebsitePageContent_V01" />
+  <xs:complexType name="WebsitePageContentBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q30:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsitePageContentBase" nillable="true" type="tns:WebsitePageContentBase" />
+  <xs:complexType name="ArrayOfWebsitePageContentList_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsitePageContentList_V01" nillable="true" type="tns:WebsitePageContentList_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsitePageContentList_V01" nillable="true" type="tns:ArrayOfWebsitePageContentList_V01" />
+  <xs:complexType name="WebsitePageContentList_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsitePageContentListBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PageId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PageName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsitePageContentList_V01" nillable="true" type="tns:WebsitePageContentList_V01" />
+  <xs:complexType name="WebsitePageContentListBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q31:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsitePageContentListBase" nillable="true" type="tns:WebsitePageContentListBase" />
+  <xs:complexType name="ArrayOfWebsiteDisplayModuleContent_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsiteDisplayModuleContent_V01" nillable="true" type="tns:WebsiteDisplayModuleContent_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsiteDisplayModuleContent_V01" nillable="true" type="tns:ArrayOfWebsiteDisplayModuleContent_V01" />
+  <xs:complexType name="WebsiteDisplayModuleContent_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsiteDisplayModuleContentBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContentId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ContentName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentTitle" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentValue" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteDisplayModuleContent_V01" nillable="true" type="tns:WebsiteDisplayModuleContent_V01" />
+  <xs:complexType name="WebsiteDisplayModuleContentBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q32:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteDisplayModuleContentBase" nillable="true" type="tns:WebsiteDisplayModuleContentBase" />
+  <xs:complexType name="ArrayOfWebsiteDisplayModuleList_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WebsiteDisplayModuleList_V01" nillable="true" type="tns:WebsiteDisplayModuleList_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWebsiteDisplayModuleList_V01" nillable="true" type="tns:ArrayOfWebsiteDisplayModuleList_V01" />
+  <xs:complexType name="WebsiteDisplayModuleList_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:WebsiteDisplayModuleList">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DefaultContentId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DefaultListId" nillable="true" type="xs:int" />
+          <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GroupListIds" nillable="true" type="q33:ArrayOfint" />
+          <xs:element minOccurs="0" name="PageId" type="xs:int" />
+          <xs:element minOccurs="0" name="SectionId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteDisplayModuleList_V01" nillable="true" type="tns:WebsiteDisplayModuleList_V01" />
+  <xs:complexType name="WebsiteDisplayModuleList">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q34:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WebsiteDisplayModuleList" nillable="true" type="tns:WebsiteDisplayModuleList" />
+</xs:schema>

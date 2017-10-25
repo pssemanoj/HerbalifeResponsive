@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since it is not available for Incaricati.</value>
+  <comment>_G1711</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart. If you wish to add, please change the order subtype to A1 or B1.</value>
+  <comment>_G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Please add products to cart before adding sku {0}.</value>
+  <comment>_G1713</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Quantity should not exceed above {0} for SKU: {1}</value>
+  <comment>_G1714</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Can't purchase products {0}.</value>
+  <comment>_G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value></value>
+  <comment>_G1720</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value></value>
+  <comment>_G1721</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since by adding that into the cart, you exceeded your earnings limit.</value>
+  <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since by adding that into the cart, you exceeded your volume points limit.</value>
+  <comment>_G1723</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>This order exceeded the order volume permitted, Volume Points remaining: {0}. The following SKU(s) have not been added to your cart.</value>
+  <comment>_G2302</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Item SKU:{0}.</value>
+  <comment>_G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Item SKU:{0}.</value>
+  <comment>_G2711</comment></data>
+  <data name="SKUCZLimitation" xml:space="preserve">
+    <value>CZ Extravaganza event ticket should not be added with other item types. Please clear your cart if you want to add this items.</value>
+      <comment>_G3078</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Your order of {0} exceeds the maximum quantity of {1} per member every {2} calendar days.</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>As part of our ordering program, new &amp; existing Members who have not yet achieved the Fully Qualified Supervisor status, may order up to {0} Personally Purchased Volume points (PPV) on their first order. You may accumulate PPV up to {1} Volume Points (including the initial order) within the next {2} days. This order exceeds the allowable PPV and needs to be reduced by {3} Volume Points.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>As part of our ordering program, new &amp; existing Members who have not yet achieved the Fully Qualified Supervisor status, may order up to {0} Personally Purchased Volume points (PPV) on their first order. You may accumulate PPV up to {1} Volume Points (including the initial order) within the next {2} days.This order exceeds the allowable PPV and needs to be reduced by {3} Volume Points. The following SKU(s) have not been added to the cart:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+      <comment>_G3558</comment></data>
+</root>

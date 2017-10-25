@@ -1,0 +1,44 @@
+﻿@using HL.Common.Configuration
+@using MyHerbalife3.Shared.Infrastructure
+@{
+    var isLoggingOut = CookieHandler.IsLoggingOutSso();        
+    var accessToken = CookieHandler.GetSsoAccessTokenCookie();
+    var mustEstablish = TempData[Constants.Authentication.SsoEstablishSession] != null
+                        && Convert.ToBoolean(TempData[Constants.Authentication.SsoEstablishSession]);
+}
+
+<script type="text/javascript">
+    function setAuth(authtoken) {
+        @{
+            if (!Request.IsAuthenticated)
+            {
+                <text>
+                     window.location = "/Authentication/SingleSignOn?authToken=" + authtoken;
+                </text>
+            }
+        }                        
+    }
+</script>
+
+@if (mustEstablish)
+{
+    var authToken = CookieHandler.GetSsoAuthToken();
+    var authTokenId = CookieHandler.GetSsoAuthTokenId();
+    
+    if (!string.IsNullOrEmpty(accessToken) && !string.IsNullOrEmpty(authToken) && !string.IsNullOrEmpty(authTokenId))
+    {
+        <script type="text/javascript" src="@Html.Raw(Settings.GetRequiredAppSetting("SsoProxyWebApiUri", string.Empty) + "api/establish?authTokenId=" + authTokenId + "&accessToken=" + accessToken + "&authtoken=" + authToken + "&callback=")"></script>
+    }
+
+    CookieHandler.ClearSsoTempData();
+}
+@if (isLoggingOut)
+{
+    CookieHandler.RemoveSsoCookie();
+    <script type="text/javascript" src="@Settings.GetRequiredAppSetting("SsoProxyLogoutUri", string.Empty)"></script>
+    <script type="text/javascript" src="@Settings.GetRequiredAppSetting("SsoProfileLogoutUrl", string.Empty)"></script>
+}
+else
+{
+    <script type="text/javascript" src="@Settings.GetRequiredAppSetting("SsoExchangeUrl", string.Empty)"></script>
+}

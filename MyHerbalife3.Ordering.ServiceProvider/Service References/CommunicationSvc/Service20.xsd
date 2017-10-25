@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2010/09/17/HL.Communication.ValueObjects" />
+  <xs:complexType name="GetTwitterResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTwitterResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Feeds" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTwitterResponse_V01" nillable="true" type="tns:GetTwitterResponse_V01" />
+  <xs:complexType name="GetTwitterResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTwitterResponseBase" nillable="true" type="tns:GetTwitterResponseBase" />
+  <xs:complexType name="GetTwitterRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTwitterRequestBase" nillable="true" type="tns:GetTwitterRequestBase" />
+  <xs:complexType name="GetFlickrRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetFlickrRequestBase" nillable="true" type="tns:GetFlickrRequestBase" />
+  <xs:complexType name="GetFlickrResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetFlickrResponseBase" nillable="true" type="tns:GetFlickrResponseBase" />
+  <xs:complexType name="GetFlickrResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetFlickrResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PhotoLinks" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetFlickrResponse_V01" nillable="true" type="tns:GetFlickrResponse_V01" />
+  <xs:complexType name="GetYoutubeRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetYoutubeRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Count" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PlayList" nillable="true" type="xs:string" />
+          <xs:element xmlns:q5="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" minOccurs="0" name="RequestType" type="q5:RequestType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetYoutubeRequest_V01" nillable="true" type="tns:GetYoutubeRequest_V01" />
+  <xs:complexType name="GetYoutubeRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetYoutubeRequestBase" nillable="true" type="tns:GetYoutubeRequestBase" />
+  <xs:complexType name="GetYoutubeResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2010/09/17/HL.Communication.ValueObjects" base="q7:GetYoutubeResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Videolinks" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetYoutubeResponse_V01" nillable="true" type="tns:GetYoutubeResponse_V01" />
+  <xs:complexType name="GetGSMRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGSMRequestBase" nillable="true" type="tns:GetGSMRequestBase" />
+  <xs:complexType name="GetGSMResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetGSMResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GSMFeeds" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGSMResponse_V01" nillable="true" type="tns:GetGSMResponse_V01" />
+  <xs:complexType name="GetGSMResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGSMResponseBase" nillable="true" type="tns:GetGSMResponseBase" />
+  <xs:complexType name="eNewsletterRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="eNewsletterRequestBase" nillable="true" type="tns:eNewsletterRequestBase" />
+  <xs:complexType name="eNewsletterRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:eNewsletterRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddressMember" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAdress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstNameMember" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GlobalOptOut" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastNameMember" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneMember" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferredFormat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferredName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubscriberKeyMember" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subscriberkey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subscription" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="eNewsletterRequest_V01" nillable="true" type="tns:eNewsletterRequest_V01" />
+  <xs:complexType name="eNewsletterResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="eNewsletterResponseBase" nillable="true" type="tns:eNewsletterResponseBase" />
+  <xs:complexType name="eNewsletterResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:eNewsletterResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="eNewsletterResponse_V01" nillable="true" type="tns:eNewsletterResponse_V01" />
+</xs:schema>

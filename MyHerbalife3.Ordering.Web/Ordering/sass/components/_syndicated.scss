@@ -1,0 +1,122 @@
+﻿.syndicated-widget {
+    margin: 10px 0;
+    &:first-child {
+        margin-top: 0 !important;
+    }
+}
+.confirm {
+    .syndicated-widget {
+        margin: 10px 0 0 5px;
+        width: 182px;
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+div#widgetwrap {
+    border-color: #7ac142 #ccc #ccc;
+    border-style: solid;
+    border-width: 8px 1px 1px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 175px;
+}
+div[id$="RightPanel"] {
+    div#widgetwrap {
+        width: 100%;
+    }
+}
+div#widgetwrap ul {
+    padding: 0;
+}
+
+#myKBDiv {
+    .KnowledgeSyndication .rn_Query, .KnowledgeSyndication .rn_Query:focus {
+        //background-color: #ffffff;
+    }
+    .rn_SearchArea div.rn_SearchButton {
+        display: block;
+        text-align: right;
+    }
+    .rn_ButtonInput {
+        background: #0080ff none repeat scroll 0 0;
+        border: 1px solid #0080ff;
+        color: #fff;
+        filter: none;
+        text-shadow: 0 0 1px #0080ff;
+
+        border-radius: 2px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        line-height: 14px;
+        margin: 3px 0;
+        outline: 0 none;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    
+    
+    div.rn_Documents .rn_List li.rn_Item span.rn_Title a, div.rn_Content .rn_List li.rn_Item span.rn_Title a {
+        display: block;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 3px;
+        text-decoration: none;
+    }
+
+}
+
+body {
+    div.rn_AnswerOverlay {
+        background: url(/Ordering/Images/opacity.png);
+        border: 0 none;
+        box-shadow: none;
+        color: black;
+        height: 100%;
+        left: 0;
+        margin-left: 0;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+    }
+    div.rn_AnswerContent {
+        background-color: #fff;
+        border: 1px solid black;
+        box-shadow: 0 0 5px 5px #333;
+        color: black;
+        height: auto;
+        left: 50%;
+        margin-left: -35%;
+        max-height: 85%;
+        max-width: 70%;
+        overflow: auto;
+        position: fixed;
+        top: 5%;
+    }
+    div.rn_AnswerSummary {
+        color: #003366;
+        font-size: 21px;
+        font-family: Arial,Helvetica,Verdana,sans-serif;
+        margin: 3px 0;
+        padding: 3px 0;
+        line-height: 1.4;
+    }
+
+    div.rn_AnswerInfo {
+        color: #666;
+        font-size: small;
+        font-style: italic;
+        margin: 0;
+    }
+    .rn_Content .rn_Item {
+        line-height: 0;
+    }
+}

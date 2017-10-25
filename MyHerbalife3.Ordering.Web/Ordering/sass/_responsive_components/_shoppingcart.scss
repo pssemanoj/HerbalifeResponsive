@@ -1,0 +1,264 @@
+.headerbar {
+
+    .headerbar_slidingdoor {
+        width: auto;
+        @include breakpoint( $desktop) { width: auto; }
+    }
+
+}
+
+.gdo-nav-mid-sp {
+    margin: 0 auto;
+    width: 260px;
+    @include breakpoint( $tablet) { width: 400px; }
+    @include breakpoint( $desktop) { margin: 0; width: 760px; }
+}
+
+div[id$="upCheckOutOptions"] {
+    table {
+        width: 100%!important;
+    }
+}
+
+.gdo-main-tablecell, #checkout-stepone{
+    @extend .width-100;
+
+    @include breakpoint( $desktop) { width: 750px; }
+}
+
+.gdo-order-tbl {
+    @extend .width-100;
+    @include breakpoint( $desktop) { width: 740px; }
+}
+
+#checkout-stepone {
+
+    .checkout-ship-pick-options {
+        margin: 0 auto 10px;
+        float: none;
+        min-width: 260px;
+        width: 260px!important;
+
+        @include breakpoint( $desktop) { 
+
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 0;
+            min-width: auto;
+            padding: 0 0 10px;
+            width: 185px;
+
+        }
+
+        .gdo-select-box select {
+
+            max-width: 100%;
+            @include breakpoint( $desktop) { max-width: 160px; }
+
+        }
+
+        .gdo-ConfirmAddress-container {
+
+            width: 100%;
+            @include breakpoint( $desktop) { width: 165px; }
+
+        }
+
+        div[id$="divLinks"] {
+            text-align: right;
+            @include breakpoint( $desktop) { text-align: left; }
+
+            .inline {
+                display: inline-block;
+                float: none;
+                @include breakpoint( $desktop) { 
+                    display: inline;
+                    float: left;
+                }
+            }
+        }
+    }
+
+    .checkout-shipmethod {
+        float: none;
+        margin: 0 auto 10px;
+        width: 260px!important;
+        min-width: 260px;
+        @include breakpoint( $desktop) {
+            float: left;
+            margin: 0 0 30px;
+            min-width: 200px;
+        }
+    }
+    .checkout-email {
+        
+        float: none;
+        margin: 0 auto!important;
+        min-width: 260px;
+        width: 260px;
+        padding: 0;
+
+        @include breakpoint( $desktop) {
+            float: left;
+            margin: 0 0 30px;
+            min-width: 200px;
+            padding: 0 12px 20px;
+        }
+
+    }
+
+}
+
+[id$="upOrderTotalsMiniShopping"] {
+
+    .gdo-order-details-wrapper {
+        
+        margin: 5px 0 30px;
+        @include breakpoint( $desktop) { margin: 5px 8px 30px; }
+
+        .gdo-order-details-container {
+
+            float: none;
+            margin: 0 auto;
+            width: 260px;
+
+            @include breakpoint( $desktop) { 
+                float: left;
+                margin: 0 20px 0 0;
+                width: 30%; 
+            }
+
+        }
+
+        .gdo-order-details-container-last{ 
+            @extend .gdo-order-details-container;
+            @include breakpoint( $desktop) { 
+                float: right;
+                margin: 0 15px 0 0;
+                width: 30%; 
+            }
+        }
+
+    }
+
+}
+
+[id$="upOrderSummary"] {
+
+    margin: 0 auto;
+    width: 260px;
+
+    @include breakpoint( $desktop) { width: auto; }
+
+    .gdo-order-tbl-legend { 
+        margin: 0; 
+        @include breakpoint( $desktop) { margin: 10px 0 10px 10px; }
+    }
+
+    a[id$="OvalSaveCartButton"] {
+        @media (orientation: portrait){
+            padding: 7px 6px;
+        }
+    }
+
+}
+
+[id$="tblLegend"] {
+
+    .gdo-button-margin-rt.orange-buttons { 
+        
+        clear: both;
+        float: none;
+        margin: 0;
+
+        @include breakpoint( $desktop) { 
+            clear: none;
+            float: right;
+            margin-right: 15px;
+        }
+
+        > div {
+
+            margin: 1%;
+            width: 48%;
+            height: 48px;
+
+            @include breakpoint( $desktop) { 
+                margin: 0;
+                width: auto;
+            }
+
+            > a {
+                height: 100%;
+            }
+
+        }
+
+    }
+
+    #cancelSaveCartBtn {
+
+        float: none;
+
+        > div {
+
+            height: 48px;
+            margin: 1%;
+            width: 48%;
+
+            @include breakpoint( $desktop) { 
+                margin: 0;
+                width: auto;
+            }
+
+            a, div {
+                height: 100%;
+            }
+
+        }
+    }
+
+    #saveCartLnk { 
+        display: none;
+        @include breakpoint( $desktop) { display: block; }
+    }
+
+    .bttn-addcart {
+
+        float: none;
+        margin: 0;
+
+        @include breakpoint( $desktop) { 
+
+            float: right;
+            margin: 0 15px 0 0;
+
+        }
+
+        a[id$="checkOutButton"] { 
+
+            padding: 14px 0;
+
+            @include breakpoint( $desktop) { padding: 10px; }
+
+        }
+
+    }
+}
+
+[id$="upAPF"] {
+    
+    margin: 0 auto;
+    width: span(3.5);
+
+    @include breakpoint( $tablet ) { 
+        margin: 0;
+        width: auto;
+    }
+
+}
+
+.ntbox {
+    width: 260px;
+    @include breakpoint( $tablet ) { width: 275px; }
+}

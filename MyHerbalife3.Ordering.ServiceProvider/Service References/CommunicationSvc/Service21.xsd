@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="SmsSubscriberData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SmsSubscriberDataBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ErrorInfo" nillable="true" type="tns:SmsErrorInfo" />
+          <xs:element minOccurs="0" name="GlobalOptOut" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+          <xs:element xmlns:q1="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" minOccurs="0" name="SmsSubscribers" nillable="true" type="q1:ArrayOfSmsSubscriberInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmsSubscriberData_V01" nillable="true" type="tns:SmsSubscriberData_V01" />
+  <xs:complexType name="SmsSubscriberDataBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmsSubscriberDataBase" nillable="true" type="tns:SmsSubscriberDataBase" />
+  <xs:complexType name="SmsErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Detail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SmsErrorInfo" nillable="true" type="tns:SmsErrorInfo" />
+</xs:schema>

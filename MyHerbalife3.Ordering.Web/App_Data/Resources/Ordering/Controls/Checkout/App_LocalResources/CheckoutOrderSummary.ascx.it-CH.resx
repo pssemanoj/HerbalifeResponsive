@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>&lt;b style='color:red;'&gt;Importante - Controlla prima di confermare &lt;/b&gt; &lt;br /&gt; Acquistando i biglietti per gli eventi sei consapevole che: &lt;br/&gt; &lt;ul&gt; &lt;li&gt;I biglietti non sono rimborsabili e trasferibili.&lt;/li&gt; &lt;li&gt;Devi raggiungere la qualifica richiesta per questo evento.&lt;/li&gt; &lt;li&gt;La partecipazione è volontaria e interamente sotto la tua responsibilità.&lt;/li&gt; &lt;li&gt;In relazione alla partecipazione a questo evento, nella misura più ampia e solo se consentito dalle leggi applicabili, si solleva Herbalife da ogni rivendicazione relativa a questo evento, inclusi lesioni personali, invalidità permanente, morte, furti, perdita di proprietà o danni.&lt;/li&gt; &lt;li&gt;In base alle leggi vigenti, Herbalife può filmare o fotografare questo evento e utilizzare la tua immagine e /o voce a scopi promozionali a sua esclusiva discrezione.&lt;/li&gt; &lt;/ul&gt;</value>
+    <comment>_G3293</comment>
+  </data>
+  <data name="CartSaved" xml:space="preserve">
+    <value>Una copia di questo ordine è stata aggiunta ai carrelli salvati</value>
+    <comment>_G2350</comment>
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>Punti &lt;/br&gt;Volume</value>
+    <comment>_G611</comment>
+  </data>
+  <data name="lblWordOR.Text" xml:space="preserve">
+    <value>O</value>
+    <comment>_G2349</comment>
+  </data>
+  <data name="ReplaceCart.Text" xml:space="preserve">
+    <value>Sostituisci il carrello</value>
+    <comment>_G2348</comment>
+  </data>
+  <data name="NewCartName.Text" xml:space="preserve">
+    <value>Nuovo nome del carrello</value>
+    <comment>_G2347</comment>
+  </data>
+  <data name="CustomerOrdersSearchPageReturn" xml:space="preserve">
+    <value>Torna a ricerca ordini dei miei clienti</value>
+    <comment>_G2386</comment>
+  </data>
+  <data name="DeleteHelp.Text" xml:space="preserve">
+    <value />
+    <comment>_G2379</comment>
+  </data>
+  <data name="PromoInCart" xml:space="preserve">
+    <value>Il codice omaggio {0} è stato aggiunto automaticamente al tuo ordine. Se stai spedendo quest’ordine ad un indirizzo diverso dal tuo o se non desideri ricevere l’omaggio con quest’ordine, seleziona la casella "Elimina" accanto al codice prodotto e clicca su "Ricalcola" per rimuovere il codice omaggio dall’ordine</value>
+    <comment>_G2799</comment>
+  </data>
+  <data name="btnObservationOk.Text" xml:space="preserve">
+    <value>Ok</value>
+    <comment>_G2797</comment>
+  </data>
+  <data name="lblObservationTitle.Text" xml:space="preserve">
+    <value>Attenzione!</value>
+    <comment>_G2798</comment>
+  </data>
+  <data name="lblMessageCartName2.Text" xml:space="preserve">
+    <value>Selezionando "Sostituisci il carrello" il carrello precedente con lo stesso nome sarà cancellato e sostituito con questo</value>
+    <comment>_G2346</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Seleziona l'indirizzo di Spedizione</value>
+    <comment>_G600</comment>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>Seleziona le opzioni per il ritiro diretto</value>
+    <comment>_G599</comment>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>Seleziona un metodo si spedizione</value>
+    <comment>_G601</comment>
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>Q.tà</value>
+    <comment>_G603</comment>
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>Nome prodotto</value>
+    <comment>_G602</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Seleziona il Magazzino per il ritiro diretto</value>
+    <comment>_G598</comment>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>Torna indietro</value>
+    <comment>_G594</comment>
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>Base di calcolo sconto</value>
+    <comment>_G592</comment>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>Clicca su Indietro per visualizzare l'indirizzo di spedizione precedente.</value>
+    <comment>_G595</comment>
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>Riepilogo dell'ordine</value>
+    <comment>_G597</comment>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>Se clicchi su Rimuovi, l'articolo (i) non disponibile sarà visualizzato in rosso e l'eventuale disponibilità ad essere prenotato sarà visualizzata in giallo.</value>
+    <comment>_G596</comment>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>Ricalcola</value>
+    <comment>_G604</comment>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>Il carrello supera il massimo di guadagni consentiti, ridurre il quantitativo di prodotti per continuare</value>
+    <comment>_G608</comment>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>Impossibile ottenere un limite d'acquisto</value>
+    <comment>_G610</comment>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>Il carrello supera il massimo di punti volume consentiti, ridurre il quantitativo di prodotti per continuare.</value>
+    <comment>_G609</comment>
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>Il tuo&lt;br /&gt;prezzo</value>
+    <comment>_G612</comment>
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>Prezzo di Listino&lt;br /&gt;</value>
+    <comment>_G606</comment>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>Rimuovi</value>
+    <comment>_G605</comment>
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>Codice prodotto</value>
+    <comment>_G607</comment>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>No</value>
+    <comment>_G613</comment>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Si</value>
+    <comment>_G614</comment>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>Sei sicuro di voler annullare?</value>
+    <comment>_G583</comment>
+  </data>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>Aggiungi altri prodotti</value>
+    <comment>_G582</comment>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>Cancella ordine</value>
+    <comment>_G584</comment>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>In base all'opzione di spedizione/ritiro diretto da te selezionata, questo (i) articolo (i) nel tuo carrello sono ora non è né disponibile o nè prenotabile.</value>
+    <comment>_G586</comment>
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>Il carrello è vuoto</value>
+    <comment>_G585</comment>
+  </data>
+  <data name="lblNameExist.Text" xml:space="preserve">
+    <value>Il nome assegnato al carrello esiste già!</value>
+    <comment>_G2344</comment>
+  </data>
+  <data name="lblMessageCartName1.Text" xml:space="preserve">
+    <value>Puoi salvare il carrello con il nuovo nome oppure utilizzare il nome già predefinito. In alternativa puoi cliccare su "Sostituisci il carrello"</value>
+    <comment>_G2345</comment>
+  </data>
+  <data name="lblAlert.Text" xml:space="preserve">
+    <value>Avviso!</value>
+    <comment>_G2343</comment>
+  </data>
+  <data name="SaveCart.Text" xml:space="preserve">
+    <value>Salva i carrelli</value>
+    <comment>_G2341</comment>
+  </data>
+  <data name="CartName.Text" xml:space="preserve">
+    <value>Nome del carrello</value>
+    <comment>_G2342</comment>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continua ad acquistare</value>
+    <comment>_G590</comment>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>Conferma la cancellazione</value>
+    <comment>_G589</comment>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>Conferma la cancellazione</value>
+    <comment>_G588</comment>
+  </data>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>Elimina</value>
+    <comment>_G591</comment>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>Conferma ordine</value>
+    <comment>_G587</comment>
+  </data>
+  <data name="lblHeaderChildSKU.Text" xml:space="preserve">
+    <value>Cod. secondario/articoli</value>
+    <comment>_G3859</comment>
+  </data>
+  <data name="lblHeaderParentSKU.Text" xml:space="preserve">
+    <value>COD. principale/ articoli</value>
+    <comment>_G3858</comment>
+  </data>
+</root>

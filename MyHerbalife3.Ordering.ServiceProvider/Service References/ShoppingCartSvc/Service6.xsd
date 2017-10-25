@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.Interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd24" namespace="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:element name="GetQuote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="request" nillable="true" type="q1:GetQuoteRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetQuoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="GetQuoteResult" nillable="true" type="q2:GetQuoteResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="request" nillable="true" type="q3:SubmitOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="SubmitOrderResult" nillable="true" type="q4:SubmitOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistributorPurchasingLimits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="request" nillable="true" type="q5:GetDistributorPurchasingLimitsShopCartRequestBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDistributorPurchasingLimitsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="GetDistributorPurchasingLimitsResult" nillable="true" type="q6:GetDistributorPurchasingLimitsShopCartResponseBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddItemsToCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="request" nillable="true" type="q7:AddItemsToCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddItemsToCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="AddItemsToCartResult" nillable="true" type="q8:AddItemsToCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="request" nillable="true" type="q9:GetShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://herbalife.com/2012/03/22/HL.MyHL.ShoppingCart.ValueObjects" minOccurs="0" name="GetShoppingCartResult" nillable="true" type="q10:GetShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShoppingCartNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="locale" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="distribuitorId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="order" nillable="true" type="q11:Order_V01" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShoppingCartNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ShoppingCartNumberResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

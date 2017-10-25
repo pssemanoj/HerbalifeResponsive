@@ -1,0 +1,43 @@
+﻿<div id="widgetwrap">
+    <center>
+        <h2>Got product questions?</h2>
+        <div>Get answers!</div>
+    </center>
+    <div id="myKBDiv">
+    </div>
+    <div class="align-right">
+        <a href="https://www.myherbalife.com/integration/rightnowknowledge" target="_blank">More Results</a>
+    </div>
+</div>
+    
+<script type="text/javascript" src="https://myherbalife.widget.custhelp.com/euf/rightnow/RightNow.Client.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var options = {
+            truncate_size: 100,
+            recommended: true,
+            related: false,
+            number_answers: 7,
+            display_answers_in_overlay: true,
+            description: false,
+            navigation: false,
+            persist_prodcat: true,
+            div_id: "myKBDiv",
+            instance_id: "skw_0",
+            module: "KnowledgeSyndication",
+            type: 3
+        };
+        var el = (document.body.querySelector('[id$="uxProductName"]') != null) ? document.body.querySelector('[id$="uxProductName"]') : document.body.querySelector('[id$="CategoryName"]');
+        query = (el != null) ? el.innerHTML : "";
+        if (query == "") {
+            options.hide_initial_answers = true;
+        } else {
+            options.q = query;
+        }
+
+        RightNow.Client.Controller.addComponent(
+            options,
+            "//myherbalife.widget.custhelp.com/ci/ws/get"
+        );
+    };
+</script>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:complexType name="MLMOverride_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" base="q1:MLMOverride">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AgreementDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedOn" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RecordID" type="xs:int" />
+          <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdatedOn" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MLMOverride_V01" nillable="true" type="tns:MLMOverride_V01" />
+  <xs:complexType name="ArrayOfMLMOverride_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MLMOverride_V01" nillable="true" type="tns:MLMOverride_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMLMOverride_V01" nillable="true" type="tns:ArrayOfMLMOverride_V01" />
+  <xs:simpleType name="ProductType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Product" />
+      <xs:enumeration value="Literature" />
+      <xs:enumeration value="PromoAccessory" />
+      <xs:enumeration value="EventTicket" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductType" nillable="true" type="tns:ProductType" />
+</xs:schema>

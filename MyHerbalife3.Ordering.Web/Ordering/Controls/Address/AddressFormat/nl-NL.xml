@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+	<Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+		<Controls>
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Recipient" Grid.Row="0" Grid.Column="0" Text="Name*" />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street1" Grid.Row="2" Grid.Column="0" Text="Straat*" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street2" Grid.Row="2" Grid.Column="3" Text="Huisnummer *" />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="City" Grid.Row="4" Grid.Column="0" Text="Plaats*" />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PostalCode" Grid.Row="4" Grid.Column="1" Text="Postcode*" />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PhoneNumber" Grid.Row="6" Grid.Column="0" Text="Telefoonnummer*" />
+
+			<TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCareOfName" Grid.Row="1" Grid.Column="0" Text="{Binding Recipient}" Required="true" MaximumLength="30" IndexForTab="1" ValReqMsg="NoCareOfName" ValErrorMsg="InvalidRecipentName" />
+			<TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet1" Grid.Row="3" Grid.Column="0" Text="{Binding Address.Line1}"  Required="true" MaximumLength="40" IndexForTab="2" ValReqMsg="NoStreet1" ValErrorMsg="InvalidStreetAddress" RegExp="^(?=.*[\u00c0-\u01ffA-Za-z,-.'])+[\u00c0-\u01ff0-9a-zA-Z\/,-.'\\ ]*$"/>
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet2" Grid.Row="3" Grid.Column="3" Text="{Binding Address.Line2}"  Required="true" MaximumLength="4" IndexForTab="3" ValErrorMsg="InvalidStreetAddress2" ValReqMsg="NoStreet2" RegExp="^[a-zA-Z0-9\s_.,:;/&amp;]{1,4}$" />
+			<TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCity" Text="{Binding Address.City}" Grid.Row="5"  Grid.Column="0" Required="true"  MaximumLength="30"  IndexForTab="4" ValReqMsg="NoCity" ValErrorMsg="InvalidCity" />
+			<TextBox cssStyle="gdo-popup-form-field-padding" Name="TBZipCode" Text="{Binding Address.PostalCode}"  Grid.Row="5" Grid.Column="1" Required="true"  MaximumLength="7" IndexForTab="6" ValErrorMsg="PostalCode" ValReqMsg="NoZipCode" RegExp="^(\d{4}\s[A-Z]{2})$"  />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PostalCodeFormat" Grid.Row="5" Grid.Column="2" Text="Voorbeeld: 1234 AB" />
+			<TextBox cssStyle="gdo-popup-form-field-padding" Name="TBPhone" Grid.Row="7" Grid.Column="0" Text="{Binding Phone}" Required="true"  ValErrorMsg="InvalidPhone" ValReqMsg="NoPhone" RegExp="^(\d{6,10})$"  MaximumLength="10"  IndexForTab="8"  />
+			<Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PhoneNumberFormat" Grid.Row="7" Grid.Column="1" Text="6-10 cijfers zonder spaties" Grid.Colspan="3" />
+
+		</Controls>
+	</Grid>
+</AddressWindow>

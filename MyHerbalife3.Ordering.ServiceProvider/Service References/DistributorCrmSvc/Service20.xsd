@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="ListTasksResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListTasksResponse" nillable="true" type="tns:ListTasksResponse" />
+  <xs:complexType name="ListTasksResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ListTasksResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Tasks" nillable="true" type="tns:ArrayOfTask_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListTasksResponse_V01" nillable="true" type="tns:ListTasksResponse_V01" />
+  <xs:complexType name="ArrayOfTask_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Task_V01" nillable="true" type="tns:Task_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTask_V01" nillable="true" type="tns:ArrayOfTask_V01" />
+  <xs:complexType name="Task_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TaskBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DueTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Priority" nillable="true" type="tns:TaskPriorityType" />
+          <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="tns:TaskStatusType" />
+          <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TaskID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Task_V01" nillable="true" type="tns:Task_V01" />
+  <xs:complexType name="TaskBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaskBase" nillable="true" type="tns:TaskBase" />
+  <xs:complexType name="TaskPriorityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplaySequence" type="xs:short" />
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskPriorityType" nillable="true" type="tns:TaskPriorityType" />
+  <xs:complexType name="TaskStatusType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplaySequence" type="xs:short" />
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskStatusType" nillable="true" type="tns:TaskStatusType" />
+  <xs:complexType name="SaveTaskResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTaskResponse" nillable="true" type="tns:SaveTaskResponse" />
+  <xs:complexType name="SaveTaskResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveTaskResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TaskID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTaskResponse_V01" nillable="true" type="tns:SaveTaskResponse_V01" />
+  <xs:complexType name="GetTaskResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTaskResponse" nillable="true" type="tns:GetTaskResponse" />
+  <xs:complexType name="GetTaskByIDResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTaskResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Task" nillable="true" type="tns:Task_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTaskByIDResponse_V01" nillable="true" type="tns:GetTaskByIDResponse_V01" />
+  <xs:complexType name="DeleteTaskResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteTaskResponse" nillable="true" type="tns:DeleteTaskResponse" />
+  <xs:complexType name="DeleteTasksByIDResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteTaskResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteTasksByIDResponse_V01" nillable="true" type="tns:DeleteTasksByIDResponse_V01" />
+</xs:schema>

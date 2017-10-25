@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:i0="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Address Validation Service</wsdl:documentation>
+  <wsdl:import namespace="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" location="Schemas/AddressValidationServiceBinding.wsdl" />
+  <wsdl:types />
+  <wsdl:service name="AddressValidation">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Address Validation Service</wsdl:documentation>
+    <wsdl:port name="AddressValidation" binding="i0:AddressValidation">
+      <soap:address location="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AddressValidation1" binding="i0:AddressValidation">
+      <soap:address location="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AddressValidation2" binding="i0:AddressValidation">
+      <soap12:address location="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AddressValidation3" binding="i0:AddressValidation">
+      <soap12:address location="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

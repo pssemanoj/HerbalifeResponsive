@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteCommandResource.Text" xml:space="preserve">
+    <value>删除</value>
+    <comment>_G1848</comment>
+  </data>
+  <data name="ActionResource.HeaderText" xml:space="preserve">
+    <value>行动</value>
+    <comment>_G1845</comment>
+  </data>
+  <data name="FirstPageToolTip" xml:space="preserve">
+    <value>首页</value>
+    <comment>_G1849</comment>
+  </data>
+  <data name="CopyNewResource.Text" xml:space="preserve">
+    <value>复制订单</value>
+    <comment>_G1847</comment>
+  </data>
+  <data name="LastPageToolTip" xml:space="preserve">
+    <value>最后一页</value>
+    <comment>_G1850</comment>
+  </data>
+  <data name="SortExp_sa" xml:space="preserve">
+    <value>寄送名字 A至Z</value>
+    <comment>_G1891</comment>
+  </data>
+  <data name="CheckOutResource.Text" xml:space="preserve">
+    <value>结账离开</value>
+    <comment>_G1846</comment>
+  </data>
+  <data name="PagerTextFormat" xml:space="preserve">
+    <value>在{1}页有{4} {5}项目</value>
+    <comment>_G1856</comment>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>储存购物车以及最近的订单</value>
+    <comment>_G1855</comment>
+  </data>
+  <data name="PrevPageToolTip" xml:space="preserve">
+    <value>前一页</value>
+    <comment>_G1858</comment>
+  </data>
+  <data name="PageSizeLabelText" xml:space="preserve">
+    <value>页面大小</value>
+    <comment>_G1857</comment>
+  </data>
+  <data name="MoreLinkResource" xml:space="preserve">
+    <value>{0}总产品 - 查看全部</value>
+    <comment>_G1852</comment>
+  </data>
+  <data name="LessLinkResource" xml:space="preserve">
+    <value>隐藏详情</value>
+    <comment>_G1851</comment>
+  </data>
+  <data name="OrderSummaryResource.HeaderText" xml:space="preserve">
+    <value>购物车摘要</value>
+    <comment>_G1854</comment>
+  </data>
+  <data name="NextPageToolTip" xml:space="preserve">
+    <value>下一页</value>
+    <comment>_G1853</comment>
+  </data>
+  <data name="btnCopyOrder.Text" xml:space="preserve">
+    <value>复制订单</value>
+    <comment>_G1859</comment>
+  </data>
+  <data name="SortExp_ca" xml:space="preserve">
+    <value>A至Z的购物车名</value>
+    <comment>_G1887</comment>
+  </data>
+  <data name="SortExp_cz" xml:space="preserve">
+    <value>Z至A的购物车名</value>
+    <comment>_G1888</comment>
+  </data>
+  <data name="Search.Text" xml:space="preserve">
+    <value>搜寻</value>
+    <comment>_G1885</comment>
+  </data>
+  <data name="SkuResource.Text" xml:space="preserve">
+    <value>产品货号</value>
+    <comment>_G1886</comment>
+  </data>
+  <data name="SortExp_da" xml:space="preserve">
+    <value>日期——最新在最上面</value>
+    <comment>_G1889</comment>
+  </data>
+  <data name="OK.Text" xml:space="preserve">
+    <value>确认</value>
+    <comment>_G2336</comment>
+  </data>
+  <data name="lblMoreRows.Text" xml:space="preserve">
+    <value>显示更多</value>
+    <comment>_G2231</comment>
+  </data>
+  <data name="SortExp_dz" xml:space="preserve">
+    <value>日期——最旧在最上面</value>
+    <comment>_G1890</comment>
+  </data>
+  <data name="SortExp_sz" xml:space="preserve">
+    <value>寄送名字Z至A</value>
+    <comment>_G1892</comment>
+  </data>
+  <data name="SavedCartsTab" xml:space="preserve">
+    <value>已存购物车</value>
+    <comment>_G1884</comment>
+  </data>
+  <data name="ProductsResource.HeaderText" xml:space="preserve">
+    <value>产品</value>
+    <comment>_G1880</comment>
+  </data>
+  <data name="ProductResource.Text" xml:space="preserve">
+    <value>产品</value>
+    <comment>_G1879</comment>
+  </data>
+  <data name="lblEmptyCartName.Text" xml:space="preserve">
+    <value>请输入一个有效的名称</value>
+    <comment>_G2521</comment>
+  </data>
+  <data name="QtyResource.Text" xml:space="preserve">
+    <value>数量</value>
+    <comment>_G1881</comment>
+  </data>
+  <data name="lblClearCartTitle.Text" xml:space="preserve">
+    <value>确认</value>
+    <comment>_G2359</comment>
+  </data>
+  <data name="RecentOrdersTab" xml:space="preserve">
+    <value>复制订单</value>
+    <comment>_G1882</comment>
+  </data>
+  <data name="SaveCartMessaging" xml:space="preserve">
+    <value>储存购物车功能，提供方便快速的订单管理功能。可协助您保留多 种产品订单组合，快速结帐! 当您结帐或使用储存于购物车内已储 存的订单订购时，所有订购资讯(产品、价格及订购月份等)皆将于 结帐时自动更新!</value>
+    <comment>_G1883</comment>
+  </data>
+  <data name="lblSavedCartMessage2.Text" xml:space="preserve">
+    <value>您将转接到网上价格表。</value>
+    <comment>_G2338</comment>
+  </data>
+  <data name="lblSavedCartMessage1.Text" xml:space="preserve">
+    <value>你目前的购物车"{0}"已经保存</value>
+    <comment>_G2337</comment>
+  </data>
+  <data name="lblAddressText.Text" xml:space="preserve">
+    <value>地址</value>
+    <comment>_G1866</comment>
+  </data>
+  <data name="DeleteCartDo.Text" xml:space="preserve">
+    <value>删除</value>
+    <comment>_G1865</comment>
+  </data>
+  <data name="lblClearCartMessage2.Text" xml:space="preserve">
+    <value>使用建议的名字或输入一个新的特别名字</value>
+    <comment>_G1868</comment>
+  </data>
+  <data name="lblClearCartMessage1.Text" xml:space="preserve">
+    <value>您目前有产品在购物车内。若您想储存您&lt;br/&gt;目前的购物车作为日后之用，请在以下输入名字。</value>
+    <comment>_G1867</comment>
+  </data>
+  <data name="DeleteCartCancel.Text" xml:space="preserve">
+    <value>取消</value>
+    <comment>_G1864</comment>
+  </data>
+  <data name="ClearCartCancel.Text" xml:space="preserve">
+    <value>取消</value>
+    <comment>_G1861</comment>
+  </data>
+  <data name="CartSummaryRes.HeaderText" xml:space="preserve">
+    <value>购物车摘要</value>
+    <comment>_G1860</comment>
+  </data>
+  <data name="ClearCartSave.Text" xml:space="preserve">
+    <value>储存及继续</value>
+    <comment>_G1863</comment>
+  </data>
+  <data name="ClearCartDo.Text" xml:space="preserve">
+    <value>继续但不储存</value>
+    <comment>_G1862</comment>
+  </data>
+  <data name="lblClearCartMessage3.Text" xml:space="preserve">
+    <value>若您没有储存您的购物车，您的购物车内的产品将被丢弃。</value>
+    <comment>_G1869</comment>
+  </data>
+  <data name="NewOrder.Text" xml:space="preserve">
+    <value>开始新的订购</value>
+    <comment>_G1876</comment>
+  </data>
+  <data name="lblVolumePointsText.Text" xml:space="preserve">
+    <value>点数:</value>
+    <comment>_G1875</comment>
+  </data>
+  <data name="OrderBy.Text" xml:space="preserve">
+    <value>订购者</value>
+    <comment>_G1878</comment>
+  </data>
+  <data name="NoRecordsMessage.Text" xml:space="preserve">
+    <value>您所设定之搜寻条件无符合项目，请重设您的搜寻要件</value>
+    <comment>_G1877</comment>
+  </data>
+  <data name="lblSaveCartName.Text" xml:space="preserve">
+    <value>新购物车名</value>
+    <comment>_G1874</comment>
+  </data>
+  <data name="lblDeleteCartTitle.Text" xml:space="preserve">
+    <value>删除购物车</value>
+    <comment>_G1871</comment>
+  </data>
+  <data name="lblDeleteCartMessage.Text" xml:space="preserve">
+    <value>您确定要删除所选择的购物车？</value>
+    <comment>_G1870</comment>
+  </data>
+  <data name="lblOrderTotalText.Text" xml:space="preserve">
+    <value>总订购：</value>
+    <comment>_G1873</comment>
+  </data>
+  <data name="lblExistentCart.Text" xml:space="preserve">
+    <value>您所输入的名字已经存在。请输入另一个名字。</value>
+    <comment>_G1872</comment>
+  </data>
+  <data name="ErrorCopyOrderDiscontinueSkuExist" xml:space="preserve">
+    <value>订单中所有商品已下架</value>
+  </data>
+  <data name="SaveCartAllSkuInvalid" xml:space="preserve">
+    <value>订单中所有商品为不可复制商品(下架商品或促销结束商品或虚拟商品)</value>
+  </data>
+  <data name="ErrorSaveCartPromoExpired" xml:space="preserve">
+    <value>促销已结束</value>
+  </data>
+  <data name="PendingOrderResource.Text" xml:space="preserve">
+    <value>您 的上一张订单出现支付问题， 您可以在“我的订单”页面中点击“终止支付”该订单后，重新支付该订单。</value>
+    <comment>_G3080</comment>
+  </data>
+  <data name="lblDupeOrder.Text" xml:space="preserve">
+    <value>最近订单</value>
+    <comment>_G3085</comment>
+  </data>
+  <data name="PendingOrderSubmittedResource" xml:space="preserve">
+    <value>恭喜您！订单 {0} 已经被成功处理。您将进入订单确认页面，无需任何操作。</value>
+    <comment>_G3129</comment>
+  </data>
+</root>

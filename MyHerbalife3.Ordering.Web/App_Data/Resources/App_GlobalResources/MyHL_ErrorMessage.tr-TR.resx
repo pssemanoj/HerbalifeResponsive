@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Yıllık İşlem Ücreti stok numarası sepetinize eklenemedi</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Yıllık İşlem Ücreti stok numarası sepetinizden çıkartılamaz</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Bu siparişi iptal etmek istediğinizden emin misiniz? "OK"i tıklayarak sepetinizdeki tüm ürünleri silebilirsiniz.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Yıllık işlem ücreti siparişinizde ürün olamayacağı için, tüm ürün olmayan öğeler çıkartıldı.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Backorder olan ürünler yıllık işlem ücreti siparişine eklenemez.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Kartınız onaylanmadı. Lütfen kartınızı gözden geçirin.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Veri format hatası, lütfen doğru veriyi giriniz.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Aynı Stok no girildi. Lütfen tekrar giriniz.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Bir siparişte en fazla {0} adet etkinlik bileti satış limiti bulunmaktadır.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Bu site üzerinden etkinlik bileti satışı yoktur.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>{0} için sadece {1} adet mevcut. Lütfen bu ürünü sepetinize eklemek için girmiş olduğunuz adeti düzeltiniz.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>{0} için 1 veya daha fazla kalem backorder olabilir.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Stok no {0} için {1} adeti geçmemeli.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Üzgünüz kayıtlı bir kredi kartınız bulunmamakta. Lütfen Distribütör Servislerin +90 216 542 75 90 numaralı telefondan arayınız.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Geçersiz Posta Kodu</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} yıllık İşlem ücretini ödemeniz bulunmakta ve "Perakende Satış" tipi siparişinizi vermeden önce ödemeyi yapmanız gerekmektedir. Yıllık İşlem Ücretinizi ödemek için lütfen siparişi tipini " Kişisel" e değiştiriniz.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>{0} şu anda stokta mevcut değildir, girmiş olduğunuz adet 0 olarak ayarlanacaktır.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Bülten için limit</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Sepetinize en fazla {0} adet Bülten eklenebilir.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Takma İsim başkası tarafından kullanılmakta , lütfen farklı bir isim giriniz.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online sipariş mevcut değil.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online siparişe izin verilmedi.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Bağımsız bir Yıllık İşlem Ücreti siparişine Sadece Ürün eklenebilir.</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Ödeme tutarı ile sipariş tutarı eşleşmedi.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Lütfen 0'dan büyük bir tutar giriniz.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Lütfen kart bilgilerini kontrol ediniz.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Lütfen Üye ID nizi ve PIN Kodunuzu kontrol edip tekrar deneyiniz. Problem devam ederse lütfen +90 216 542 75 90 numaralı telefondan Üye Hizmetleri Departmanına ulaşınız.</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Diğer ürünleri sepetinize eklemeden önce yıllık işlem ücreti ödemenizi tamamlayınız.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Etkinlik bileti siparişinizi satın almadan önce yıllık işlem ücreti ödemenizi tamamlayınız.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Lütfen bir numara giriniz..</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>{0} Stok No için lütfen adet giriniz..</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Lütfen ünik bir Şahsen Teslim merkezini giriniz.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Lütfen geçerli bir şehir giriniz.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Lütfen geçerli bir isim giriniz.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Üzgünüm kartınızı eklenemedi. Kredi kartı numarası sahip bir kullanıcı adı ile yeniden deneyin.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Lütfen sıfır (0) dışında bağış tutarı giriniz.</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Lütfen eposta adresi giriniz.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Lütfen ödeme bilgisi giriniz.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Lütfen CVV numarası giriniz.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Lütfen ödemesini yapmak istediğiniz Yıllık İşlem Ücreti adetini giriniz.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Lütfen geçerli eposta adresi giriniz.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Lütfen geçerli İsim giriniz.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Lütfen geçerli Soyad giriniz.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Lütfen geçerli İkinci İsim giriniz.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Lütfen tüm zorunlu sevkiyat bilgilerini doldurunuz.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Lütfen alan kodunu doğru formatta doldurunuz.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Lütfen dahilinizi doğru formatta doldurunuz.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Lütfen alıcı adını doldurunuz.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Lütfen alan kodunu doldurunuz.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Lütfen şehir giriniz.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Lütfen dahili giriniz.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Lütfen isim giriniz.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Lütfen soyadı giriniz.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Lütfen zorunlu alanları doldurunuz.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Lütfen telefon numarası doldurunuz.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>N/A</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Lütfen cadde adresi bölümünü doldurunuz.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Lütfen posta kodu doldurunuz.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Lütfen telefon numarasını doğru formatta doldurunuz.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Lütfen dikkat en fazla {0} kart detayı kaydedebilirsiniz. Yeni bir kart eklemek için önceden kaydetmiş olduğunuz kartlardan birini siliniz.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Lütfen dikkat:&lt;br/&gt;Bu site en iyi Internet Explorer veya Firefox ile görüntülenebilir.</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Şahsen Teslim siparişinizi tamamlamadan önce lütfen sevkiyat adresinizi kaydediniz.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Lütfen bir yer seçiniz</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Lütfen bir sevkiyat zamanı seçiniz</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Lütfen bir Sipariş Tipi seçiniz</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Lütfen bir Şahsen teslim merkezi seçiniz</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Lütfen bir Şahsen teslim merkezi seçiniz</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Lütfen şahsen teslim alacak kişi adını seçiniz</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Lütfen şahsen teslim alma için telefon bilgisi seçiniz</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Lütfen Şahsen teslim alma zamanı seçiniz</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Lütfen Sevkiyat Adresi seçiniz</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Lütfen Evet/Hayır seçiniz.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Birincil adresiniz silinemez</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Birincil Şahsen teslim Alma seçeneği silinemez.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Çıkış sayfasına ilerle</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Ana sayfaya geç</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Sevkiyat için girilen Posta Kodu desteklenmiyor</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>{0} Stok No mevcut değil</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>SMS Cep telefon numarası gereklidir</value>
+    <comment>_G1245</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Üzgünüz! Sipariş veremezsiniz, Sadece Kore üyeleri Kore websitesinden sipariş verebilirler.</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Üzgünüz, bu kalem/kalemleri ekleyemezsiniz. Bu kalemleri sepetinize ekleyerek kazanç limitlerinizi aştınız.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Sistem hatası</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Sipariş ayı değiştirildi!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>{0} stok no backorder olarak eklenecek.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>N/A</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Cadde adresi en azından bir harf içermelidir.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Cadde adresi en azından bir numara, bir boşluk ve bir harf içermelidir.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>İşleminiz gerçekleştirilemedi, lütfen kart bilgilerinizi kontrol ediniz. Sorun devam ettiği taktirde, Üye Hizmetleri ile +90 216 542 75 90 numaradan iletişime geçiniz</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>İşleminiz gerçekleştirilemedi , Üye Hizmetleri ile +90 216 542 75 90 numaradan iletişime geçiniz</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Geçersiz Posta Kodu</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Sipariş içerisinde satın alınacak hiç bir kalem bulunmamakta.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>{0} için şu anda yeterli stok bulunmamakta. {1} adet mevcut.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Siparişe eklemek için hiç bir kalem seçilmedi.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Sipariş puanını hesaplamak için hiçbir kalem seçilmedi.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Bu adres veritabanı adresinde zaten bulunmakta.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Bu sipariş satın alma limitinizi aşıyor.{0} satış puanı kadar verebilirsiniz. Lütfen devam etmek için siparişinizi düzenleyiniz.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Bu işlem bu kart ile yapılamadı, reddedildi.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Bülten sepetinize eklendi</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Siparişinizi tamamlayamıyoruz. Lütfen hata kodu 01'i belirterek +90 216 542 75 90'dan Üye Hizmetleri ile iletişime geçiniz.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Siparişinizi tamamlayamıyoruz. Lütfen hata kodu 05'i belirterek +90 216 542 75 90'dan Üye Hizmetleri ile iletişime geçiniz.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Siparişinizi işleme alamıyoruz. Adresinizi kontrol edip tekrar deneyiniz. Problemin devam etmesi durumunda +90 216 542 75 90'dan Üye Hizmetleri ile iletişime geçiniz.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Üzgünüz. Para birimi dönüştürülemedi. Lütfen  +90 216 542 75 90'dan Üye Hizmetleri ile iletişime geçiniz.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Sepetinizde daha önceden etkinlik bileti bulunmakta, sepetinizi temizlemek ister misiniz?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Birincil kartınızı silmeye çalıştınız. Bu kartı silmeden önce farklı bir kartı birincil kart olarak kaydediniz.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Bu kart birden fazla kez red edildiği için kullanamazsınız.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Takma isim mevcut , lütfen yeni bir takma isim giriniz</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Bu kalemi sepetinize ekleyemezsiniz.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Sepetinizde hiç bir kalem olmadan {0} sayfasına gidemezsiniz.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Sepetinizde backorder ürün bulunmakta ve sevkiyat yöntemi olarak "şahsen teslim" seçmeniz durumunda bu kalem siparişinizden silinecektir. Devam etmek istiyor musunuz? ( "Evet" veya "Hayır" )</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Bu sipariş için sipariş ayını {0} olarak değiştirdiniz. Bu seçim ile devam etmek istiyor musunuz?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Sepetinizde etkinlik bileti bulunmakta , sepetinizi temizlemek ister misiniz?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Sepetinizde ürün/ürünler bulunmakta. Etkinlik biletinizi satın almadan önce sepetinizi temizlemek ister misiniz?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Her iki aya sipariş verilebilen ay seçeneği için {0} seçtiniz, doğru mu?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Şahsen Teslim Merkezini WALDOS olarak seçtiniz. Buradan limitli ürün siparişi verebilirsiniz.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Bir sipariş vermeden ürünlere göz atmayı seçtiniz, ürünleri sepetinize ekleyemeyeceksiniz.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Sepetinize Herbalife Aile Vakfı bağışını başarıyla eklediniz.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Sadece Yıllık İşlem Ücretinin 1 yılını önceden ödeyebilirsiniz.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Sepetinizdeki kalemleri değiştirmek için kredi kartlarınızdan birini silmelisiniz.</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Devam etmek için Sevkiyat veya Şahsen Teslim Alma seçeneklerinden birini seçmelisiniz.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>{0} ile aynı siparişi verdiniz. Devam etmek istiyorsanız lütfen onaylayın.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Yıllık İşlem Ücreti ödemeniz {0} tarihinde doluyor.</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Yıllık İşlem Ücretinizin vadesi gelmiş, otomatik olarak sepetinize eklenecektir.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Yıllık İşlem Ücreti ödemeniz bulunmakta. Sepetinize eklenecektir.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Kredi Kartınızın süresi dolmuş. Lütfen düzenle'yi tıklayıp son kullanma tarihini güncelleyiniz.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Kredi Kartınızın süresi dolmuş. Lütfen Üye Hizmetleri ile iletişime geçiniz.</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>İşleminizi gerçekleştiremiyoruz, lütfen +90 216 542 7590+90 216 542 7590'dan Üye Hizmetleri ile irtibata geçiniz.</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>İşleminizi gerçekleştiremiyoruz, lütfen +90 216 542 7590+90 216 542 7590'dan Üye Hizmetleri ile irtibata geçiniz.</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Siparişiniz sepetinizde yapmış olduğunuz değişikliklerden önce gönderilmişti. Sipariş numaranız: {0}. +90 216 542 75 90 nolu telefondan Sipariş desteğini arayarak siparişinizin durumunu teyit edebilirsiniz. Çalışma saatlerimiz hafta içi Pztesi-Cuma 08:30-17:30 haftasonu Cmtesi 08:30-12:30 /Sadece şahsen siparişler. ( Lütfen unutmayın siparişinizin görüntülenmesi 1 saat kadar sürebilir. &lt;br&gt; Eğer yeni bir sipariş vermek isterseniz , lütfen bu kalemleri sepetinize tekrar ekleyin.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Ödemeniz gereken Yıllık İşlem Ücretiniz sepetinizde kalmış.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Sevkiyat bilgileriniz artık geçerli değildir, alışveriş sepetiniz temizlenecek.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Lütfen mini sepetten Sipariş Türü'nü seçiniz.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Satın alma limitinizi aştığınız zaman çıkış yapamazsınız</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Girmiş olduğunuz adresi doğrulamanız gerekmektedir.</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>{0} ile aynı siparişi verdiniz. Devam etmek istiyorsanız lütfen onaylayın.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Lütfen Distribütör ID nizi giriniz.</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Lütfen Rozet Düzeltme seçeneğini seçiniz</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Puan şu anda mevcut değil.</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Yeni bir üye olarak hesabınızın kurulumunun tamamlanması için lütfen işlem yapan ülkenizi seçerek tekrar deneyiniz.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>PIN bulunamadı</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>Satınalma ayrıcalıklarınız gerekli olan "İşinizi Koruyun 101" eğitimi tamamlanana kadar askıya alınmıştır. Eğitimi şu anda tamamlamak isterseniz lütfen &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; linkini tıklayınız. Eğer eğitimi önümüzdeki 7 gün içerisinde tamamlamak, ve siparişinizi şimdi vermek istiyorsanız, tamamı tıklayarak siparişinize devam edebilirsiniz, aksi takdirde iptali tıklayınız.</value>
+    <comment>_G3158</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Önemli: İşinizi Koruyun 101 Eğitimi</value>
+    <comment>_G3159</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>We are unable to process your request, please contact Distributor Services at 1-866-866-4744. Important: Your buying privileges are currently on hold until the required "Protecting Your Business 101" training is completed. If you wish to complete the training now, please click on the following link: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt;</value>
+    <comment>_G3160</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Sepetinizdeki ürünlerin fiyatı bir hata nedeniyle değişti. Lütfen siparişinizi yeniden gönderin.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Teknik bir problemden dolayı talebiniz şu anda işleme alınamıyor. Lütfen tekrar deneyiniz.</value>
+    <comment>_1A8</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Lütfen ilçe giriniz.</value>
+    <comment>_G1297</comment>
+  </data>
+</root>

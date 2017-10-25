@@ -1,0 +1,493 @@
+#ContentArea_divCenter {
+    max-width: 728px;
+}
+
+.gdo-nav-mid-invoices {
+    width: 950px;
+
+    #ContentArea_divCenter {
+        max-width: 960px;
+    }
+
+    .hrblTable th {
+        color: inherit;
+    }
+}
+
+#searchfilterinv {
+    overflow: hidden;
+    width: 100%;
+}
+
+.searchinvblocks
+{
+    @include MarginPadding( 13px 1%, null );
+    float: left;
+    width: 30%;
+}
+
+div[id$="searchInvoicePanel"]
+{
+    @include MarginPadding( 15px 0, null );
+    border: 1px solid #D9D9D9;
+    overflow: hidden;
+}
+
+.filter_invoice_labels {
+    float: left;
+    margin-right: 5px;
+    text-align: right;
+    width: 50px;
+}
+
+div[id$="pnlStep1"],
+div[id$="pnlStep2"]
+{
+    @include MarginPadding( -3px 0 0 2px, 20px 0 0 20px );
+    background: url("/Content/Global/img/events/blue-square-sdw-left.png") repeat-y scroll 0 0 transparent;
+}
+
+#searchby
+{
+    border-left: 1px solid #CCCCCC !important;
+}
+
+#searchgobuttons {
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+
+    > div {
+        float: left !important;
+        overflow: hidden;
+        display: inline-block;
+    }
+}
+
+.search_titles {
+    color: #555555;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+table[id$="rgdInvoices_ctl00"] {
+    .rgPager {
+        table {
+            float: left;
+        }
+
+        + tr .rgHeader {
+            background-color: #F3F3F3 !important;
+        }
+    }
+
+    .rgHeader > a {
+        color: #009900;
+        text-decoration: underline;
+    }
+}
+
+div[id$="PageSizeComboBox"] table tr
+{
+    height: auto;
+    vertical-align: middle;
+}
+
+#goSearchByDate_div {
+    margin-left: 290px;
+}
+
+.rgHeader {
+    &:last-child {
+        white-space: nowrap;
+
+        .rgSorted input {
+            &.rgSortDesc, &.rgSortAsc {
+                position: absolute;
+            }
+        }
+    }
+}
+
+a[id$="createInvoice"] {
+    float: left;
+}
+
+#divExport {
+    @include MarginPadding( 0 10px, null );
+    float: left;
+}
+
+div[id$="rgdInvoicesPanel"] {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#goSearchBy_div {
+    margin-left: 380px;
+}
+
+select[id$="ddlSearchBy"] {
+    height: 26px;    
+    width: 162px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#searchby input[id$="txtSearchBy"] {
+  margin-top: 18px;
+}
+
+a[id$="popupButton"]
+{
+     background-image: url("/SharedUI/Images/icons/telerik-sprites.gif");
+    display: block;
+    height: 22px;
+    overflow: hidden;
+    text-align: center;
+    text-indent: -2222px;
+    width: 22px;
+}
+
+input[id$="txtSearchBy"] {
+    margin-left: 30px;
+    width: 150px;
+}
+
+.show_invoices_div a[id$="createOrder"] .icnCart {
+    background: url("/SharedUI/Images/icons/cart.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+    position: static;
+    width: 19px;
+}
+
+input[id$="dateInput_text"] {
+    background: none repeat scroll 0 0 $white;
+    border-color: #C3D9F9;
+    color: $black;
+    font: 12px "segoe ui",arial,sans-serif;
+}
+
+#searchby > div,
+#searchbyamount > div,
+#searchfilterinv .rcTable {
+    margin-bottom: 10px;
+}
+
+table.RadCalendar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    border-collapse: separate;
+    font: 12px "segoe ui",arial,sans-serif;
+    table-layout: auto;
+    width: 220px;
+}
+
+.tblCreateInvoice {
+    background: url("/SharedUI/Images/backgrounds/step1_create_invoice.jpg ") repeat scroll 0 0 transparent;
+    height: 26px;
+    width: 730px;
+}
+
+.tblCreateInvoiceShipping {
+    background: url("/SharedUI/Images/backgrounds/step2_create_invoice.png ") repeat scroll 0 0 transparent;
+    height: 27px;
+    width: 729px;
+}
+
+div[id$="updInvoiceInfo"] .tblInvoiceInfo tr td:first-child, div[id$="updRptProductItems"] .tblInvoiceInfoRepeater tr:first-child, .darker_green_bg, .soft_green_bg {
+    font-weight: bold;
+}
+
+.soft_green_bg {
+    background-color: #E7EFF2;
+    height: 30px;
+}
+
+.darker_green_bg {
+    background-color: #D5E4F7;
+    height: 30px;
+}
+
+.soft_green_bg, .darker_green_bg {
+    &.big_bold_letters span {
+        float: right;
+        margin-right: 10px;
+    }
+}
+
+#divtblCreateInvoiceButton {
+    float: right;
+    margin-top: 10px;
+}
+.buttongap {
+    float: left;
+}
+
+.steps_labels {
+    font-weight: bold;
+    padding: 0 10px 0 30px;
+}
+
+#ContentArea_divCenter div[id$="pnlStep1"],
+.step1-readonly
+{
+    background-color: #F8F9FB;
+    background-image: url("/Content/Global/Bizworks/img/layout/bkg/bar_bkg_grey_o.gif");
+    background-position: center top;
+    background-repeat: repeat-x;
+    border-left: 1px solid #E4E4E5;
+    border-right: 1px solid #E4E4E5;
+    margin-bottom: 10px;
+    margin-top: -2px;
+    padding: 6px 15px 20px 23px;
+}
+
+td[id$="colnTaxErrMsg"] {
+    font-size: 11px;
+    white-space: nowrap;
+
+    br {
+        display: none;
+    }
+}
+
+div[id$="pnlStep2"] {
+    color: #373737;
+    font-size: 12px;
+    font-weight: bold;
+
+    input {
+        width: 50px;
+    }
+
+    textarea {
+        height: 75px;
+        width: 156px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    > table > tbody > tr > td > span {
+        display: block;
+        font-size: 14px;
+        margin-top: 50px;
+    }
+}
+
+.step1-readonly {
+    div[id$="updRptProductItems"] {
+        border-top: 1px solid #CBCDCA;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .darker_green_bg, .soft_green_bg {
+        background: none repeat scroll 0 0 transparent;
+    }
+}
+
+div[id$="pnlStep1"].step1-readonly div[id$="updInvoiceInfo"] td:first-child,
+.step1-readonly div[id$="updRptProductItems"] .tblInvoiceInfoRepeater tr:first-child
+{
+    font-size: 9px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+div[id$="updRptProductItems"] .tblInvoiceInfoRepeater {
+    input {
+        @include MarginPadding( null, 1px 5px );
+        text-align: right;
+        width: 45px;
+    }
+
+    > tbody > tr:first-child td {
+        @include MarginPadding( null, 0 15px );
+        height: 30px;
+        text-align: center;
+    }
+}
+
+.tblInvoiceInfoRepeater
+{
+    width: 100%;
+}
+
+a[id$="lnkStep1Edit"] {
+    margin-right: 10px;
+}
+
+#createinv_step2_btns {
+    float: right;
+}
+
+.big_bold_letters {
+    color: #373737;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+tr[id$="trNameEdit"] input {
+    width: 74%;
+}
+
+#divManageInvoice {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    float: right;
+    padding: 20px;
+    width: 300px;
+
+    a {
+        color: #009900;
+        display: block;
+        height: auto;
+        margin: 5px 0;
+        padding-left: 30px;
+        text-decoration: underline;
+
+        &[id$="lnkMakeChanges"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/edit.png");
+            width: 25px;
+        }
+
+        &[id$="lnkPrintInvoice"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/print.png");
+            width: 25px;
+        }
+
+        &[id$="lnkDeleteInvoice"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/delete.png");
+            width: 25px;
+        }
+
+        &[id$="lnkEmailInvoice"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/envelope_closed.png");
+            width: 25px;
+        }
+
+        &[id$="lnkCopyInvoice"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/copy.png");
+            width: 25px;
+        }
+
+        &[id$="lnkSavePDF"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/iPdf.png");
+            width: 25px;
+        }
+
+        &[id$="lnkCreateOrder"] .icnLeft {
+            background-image: url("/SharedUI/Images/icons/cart.png");
+            width: 25px;
+        }
+    }
+
+    div {
+        float: left;
+        width: 50%;
+    }
+}
+
+#divDisplayInvoice {
+    @include MarginPadding( null, 15px );
+    border: 1px solid $grey;
+    box-shadow: 0 0 4px 0 $grey;
+    margin-top: 10px;
+
+    .header h1 {
+        color: $black;
+        float: right;
+        text-transform: uppercase;
+    }
+}
+
+#invoice-skus {
+    @include MarginPadding( 20px 0, null );
+
+    tr {
+        &:first-child, &:last-child {
+            font-weight: bold;
+        }
+    }
+}
+
+#invoice-status, #total-due-row, #total-due-row, #subtotal-row {
+    font-weight: bold;
+}
+
+.rightAlgn {
+    text-align: right;
+}
+
+.hlightedRow {
+    background-color: #F3F3F5;
+    font-weight: bold;
+    height: 30px;
+}
+
+a[id$="lnkBackToInvoiceList"] {
+    padding-left: 25px;
+
+    span {
+        background-image: url("/SharedUI/Images/icons/back.png");
+        width: 25px;
+    }
+}
+
+#divInvText {
+    display: none;
+}
+ 
+#invoice-info-topleft td:first-child {
+    text-align: right;
+    width: 95%;
+}
+
+#invoice_type_val {
+    text-transform: capitalize;
+}
+
+table[id$="ProductListGrid_ctl00_Header"] .rgHeader:last-child {
+    white-space: normal;
+}
+
+div#lvProducts > table {
+    width: 100%;
+}
+
+#dgMyOrders table td:last-child {
+    padding-left: 20px;
+}
+
+#dvInvSearch {
+    #customSearch {
+        > div {
+            &:nth-child(3) * {
+                /* Fix per defect 252285 */
+                display:block;
+            }
+            &:nth-child(4) label::after {
+                /* Fix per defect 251152 */
+                content: ".";
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+/* Fix per defect 252285 */
+#dvinvProduct .row:first-child div:last-child div:last-child {
+    padding-right: 0;
+}
+
+#dvInvContacts .wrapper div:nth-child(2) > div:last-child {
+    margin-top: 17px;
+}

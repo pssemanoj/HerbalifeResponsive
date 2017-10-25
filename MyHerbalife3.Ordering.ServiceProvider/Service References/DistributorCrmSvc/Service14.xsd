@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GetSurveyRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyRequest" nillable="true" type="tns:GetSurveyRequest" />
+  <xs:complexType name="GetSurveyRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSurveyRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyRequest_V01" nillable="true" type="tns:GetSurveyRequest_V01" />
+  <xs:complexType name="GetSurveyResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyResponse" nillable="true" type="tns:GetSurveyResponse" />
+  <xs:complexType name="Question_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Question">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Answers" nillable="true" type="tns:ArrayOfAnswer" />
+          <xs:element minOccurs="0" name="DisplayOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QuestionText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RenderInfo" nillable="true" type="tns:RenderInfo_V01" />
+          <xs:element minOccurs="0" name="SubQuestions" nillable="true" type="tns:ArrayOfQuestion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Question_V01" nillable="true" type="tns:Question_V01" />
+  <xs:complexType name="Question">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Question" nillable="true" type="tns:Question" />
+  <xs:complexType name="Answer">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedDateUtc" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SurveyInstanceId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Answer" nillable="true" type="tns:Answer" />
+  <xs:complexType name="MultiValueAnswerboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MultiValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q5:ArrayOfboolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiValueAnswerboolean" nillable="true" type="tns:MultiValueAnswerboolean" />
+  <xs:complexType name="MultiValueAnswerstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MultiValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q6:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiValueAnswerstring" nillable="true" type="tns:MultiValueAnswerstring" />
+  <xs:complexType name="MultiValueAnswerdateTime">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MultiValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="dateTime" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q7:ArrayOfdateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiValueAnswerdateTime" nillable="true" type="tns:MultiValueAnswerdateTime" />
+  <xs:complexType name="MultiValueAnswerdecimal">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MultiValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q8:ArrayOfdecimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiValueAnswerdecimal" nillable="true" type="tns:MultiValueAnswerdecimal" />
+  <xs:complexType name="MultiValueAnswerint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MultiValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q9:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MultiValueAnswerint" nillable="true" type="tns:MultiValueAnswerint" />
+  <xs:complexType name="SingleValueAnswerboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SingleValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptionalValue" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Value" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SingleValueAnswerboolean" nillable="true" type="tns:SingleValueAnswerboolean" />
+  <xs:complexType name="SingleValueAnswerint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SingleValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptionalValue" type="xs:int" />
+          <xs:element minOccurs="0" name="Value" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SingleValueAnswerint" nillable="true" type="tns:SingleValueAnswerint" />
+  <xs:complexType name="SingleValueAnswerdecimal">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SingleValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="decimal" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptionalValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SingleValueAnswerdecimal" nillable="true" type="tns:SingleValueAnswerdecimal" />
+  <xs:complexType name="SingleValueAnswerstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SingleValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptionalValue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SingleValueAnswerstring" nillable="true" type="tns:SingleValueAnswerstring" />
+  <xs:complexType name="SingleValueAnswerdateTime">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="SingleValueAnswer{0}" Namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="dateTime" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Answer">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptionalValue" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Value" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SingleValueAnswerdateTime" nillable="true" type="tns:SingleValueAnswerdateTime" />
+  <xs:complexType name="RenderInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RenderInfo" nillable="true" type="tns:RenderInfo" />
+  <xs:complexType name="Option_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Option">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Questions" nillable="true" type="q11:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Option_V01" nillable="true" type="tns:Option_V01" />
+  <xs:complexType name="Option">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Option" nillable="true" type="tns:Option" />
+  <xs:simpleType name="InputValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Text" />
+      <xs:enumeration value="Integer" />
+      <xs:enumeration value="Decimal" />
+      <xs:enumeration value="Boolean" />
+      <xs:enumeration value="DateTime" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="InputValueType" nillable="true" type="tns:InputValueType" />
+  <xs:simpleType name="InputElementType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Text" />
+      <xs:enumeration value="Radio" />
+      <xs:enumeration value="Checkbox" />
+      <xs:enumeration value="List" />
+      <xs:enumeration value="MultiList" />
+      <xs:enumeration value="DateTime" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="InputElementType" nillable="true" type="tns:InputElementType" />
+  <xs:complexType name="RenderInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RenderInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="InputElement" type="tns:InputElementType" />
+          <xs:element minOccurs="0" name="InputValueType" type="tns:InputValueType" />
+          <xs:element minOccurs="0" name="IsRequired" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MaxLength" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="MaxValue" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="MinValue" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Options" nillable="true" type="tns:ArrayOfOption_V01" />
+          <xs:element minOccurs="0" name="ValidationRegex" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RenderInfo_V01" nillable="true" type="tns:RenderInfo_V01" />
+  <xs:complexType name="ArrayOfOption_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Option_V01" nillable="true" type="tns:Option_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOption_V01" nillable="true" type="tns:ArrayOfOption_V01" />
+  <xs:complexType name="ArrayOfAnswer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Answer" nillable="true" type="tns:Answer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnswer" nillable="true" type="tns:ArrayOfAnswer" />
+  <xs:complexType name="ArrayOfQuestion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Question" nillable="true" type="tns:Question" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfQuestion" nillable="true" type="tns:ArrayOfQuestion" />
+  <xs:complexType name="GetSurveyResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSurveyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Questions" nillable="true" type="tns:ArrayOfQuestion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyResponse_V01" nillable="true" type="tns:GetSurveyResponse_V01" />
+  <xs:complexType name="GetSurveyStatusByReferenceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSurveyStatusByReferenceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ReferenceStatus" nillable="true" type="q13:ArrayOfKeyValueOfstringdateTime" />
+          <xs:element minOccurs="0" name="SurveyName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyStatusByReferenceResponse_V01" nillable="true" type="tns:GetSurveyStatusByReferenceResponse_V01" />
+  <xs:complexType name="GetSurveyStatusByReferenceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSurveyStatusByReferenceResponse" nillable="true" type="tns:GetSurveyStatusByReferenceResponse" />
+</xs:schema>

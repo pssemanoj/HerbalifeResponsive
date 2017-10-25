@@ -1,0 +1,28 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div class="row">
+    <div class="twelve-cols">
+        <label for="street-address">@(this.Localize("streetAddress"))</label>
+        <input type="text" data-bind="value: invoice.Address.Address1" id="street-address" class="k-input" />
+    </div>
+</div>
+<div class="row">
+    <div class="six-cols">
+        <label for="city">@(this.Localize("city"))</label>
+        <input type="text" data-bind="value: invoice.Address.City" id="city" class="k-input" />
+    </div>
+    <div class="three-cols">
+        <label for="state">@(this.Localize("state"))</label>
+        <input id="state" data-role="dropdownlist"
+               data-auto-bind="false"
+               data-value-primitive="true"
+               data-text-field="DisplayName"
+               data-value-field="Value"
+               data-option-label="@this.Localize("select")"
+               data-bind="value: invoice.Address.State, source: statesDataSource, events: { change: onStateChange }"
+               class="k-input" />
+    </div>
+    <div class="three-cols">
+        <label for="zip-code">@(this.Localize("zipCode"))</label>
+        <input type="text" data-bind="value: invoice.Address.PostalCode" maxlength="10" id="zip-code" class="k-input" />
+    </div>
+</div>

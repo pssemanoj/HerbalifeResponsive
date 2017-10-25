@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>ไม่สามารถเพิ่มรหัสค่าธรรมเนียมรายปีลงไปในรายการสั่งซื้อของท่านได้</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>ไม่สามารถเอารหัสค่าธรรมเนียมรายปีออกจากรายการสั่งซื้อของท่านได้</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>ท่านแน่ใจที่จะยกเลิกคำสั่งซื้อนี้? คลิ๊ก "ตกลง" เพื่อยกเลิกรายการสั่งซื้อของท่าน</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>เนื่องจากไม่มีรายการผลิตภัณฑ์ในการชำระค่าธรรมเนียมรายปี รายการที่ไม่ใช่ผลิตภัณฑ์ทั้งหมดจะถูกเอาออก</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>ไม่สามารถใส่รายการสินค้าที่หมดในขณะนี้ในการชำระค่าธรรมเนียมรายปีได้</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>การอนุมัติบัตรเครดิตไม่สำเร็จ กรุณาตรวจสอบบัตรของท่าน</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>รูปแบบของข้อมูลไม่ถูกต้อง กรุณาใส่ข้อมูลที่ถูกต้อง</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>มีรหัสสินค้าซ้ำกัน กรุณาใส่ใหม่อีกครั้ง</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>สามารถสั่งซื้อบัตรเข้างานอบรมในจำนวนจำกัดที่ {0} ใบใน 1 คำสั่งซื้อ</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อบัตรเข้างานอบรมในหน้านี้</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>สำหรับรายการสินค้า {0} มีจำนวน {1} ที่สามารถสั่งซื้อได้ กรุณาแก้ไขจำนวนของรายการสินค้านี้</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>สำหรับรายการสินค้า {0}, 1 ชิ้นหรือมากกว่าที่อาจจะค้างจัดส่ง</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>สำหรับรายการสินค้า {0}, ไม่สามารถสั่งซื้อเกิน {1} ชิ้น</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>ขออภัย ท่านไม่มีบัตรเครดิตที่ลงทะเบียนไว้ในระบบ กรุณาติดต่อแผนกบริการลูกค้าที่ 02-6601600</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: จะต้องชำระค่าธรรมเนียมรายปีตามจำนวน {0} ปีที่ครบกำหนดชำระก่อนทำการสั่งซื้อผลิตภัณฑ์ กรุณาเปลี่ยนประเภทการสั่งซื้อเป็น "Personal" เพื่อชำระค่าธรรมเนียมรายปี</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>รายการสินค้า {0} หมดสต๊อคอยู่ในขณะนี้ จำนวนจะถูกเปลี่ยนเป็น 0</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>จำกัดจำนวนของวารสารทูเดย์ที่</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>จำนวนวารสารสูงสุดที่สามารถใส่ในรายการสั่งซื้อได้ คือ {0}</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>ชื่อเฉพาะนี้ถูกใช้แล้ว กรุณาใช้ชื่ออื่น</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>ไม่สามารถทำการสั่งซื้อออนไลน์ใช้งานได้</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>ไม่อนุญาติให้ทำการสั่งซื้อออนไลน์</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>สามารถใส่รายการผลิตภัณฑ์ในการชำระค่าธรรมเนียมรายปีเท่านั้น</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>ยอดชำระทั้งหมดไม่ตรงกับยอดการสั่งซื้อทั้งหมด</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>โปรดใส่จำนวนมากกว่า 0</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>โปรดตรวจสอบข้อมูลบัตรเครดิต</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>กรุณาตรวจสอบหมายเลขสมาชิกเฮอร์บาไลฟ์และรหัสผ่านและลองดูอีกครั้ง หากยังพบปัญหา กรุณาติดต่อแผนกบริการลูกค้าที่หมายเลข 02 660 1600</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>กรุณาชำระค่าธรรมเนียมรายปีก่อนทำการใส่ผลิตภัณฑ์อื่นๆ ในรายการสั่งซื้อ</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>กรุณาชำระค่าธรรมเนียมรายปีก่อนการสั่งซื้อบัตรงานประชุม</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>กรุณาใส่จำนวน</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>กรุณาใส่จำนวนของรหัสสินค้า {0}</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>กรุณาใส่ชื่อเขต/อำเภอที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>กรุณาใส่ชื่อเฉพาะที่ถูกต้อง</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>กรุณาใส่ยอดการบริจาค นอกจากศูนย์ (0)</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>กรุณาใส่อีเมล์ แอ็ดเดรส</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลการชำระเงิน</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>กรุณาใส่หมายเลข 3 ตัวหลังบัตรเครดิต</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>กรุณาใส่จำนวนของที่ค่าธรรมเนียมรายปีที่ท่านต้องการชำระ</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>กรุณาใส่อีเมล์ แอ็ดเดรสที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>กรุณาใส่นามสกุลที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลการจัดส่งที่สำคัญ</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสพื้นที่ในรูปแบบที่ถูกต้อง</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>กรุณาใส่เบอร์ต่อในรูปแบบที่ถูกต้อง</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อผู้รับ</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสพื้นที่</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>กรุณาใส่เขต/อำเภอ</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>กรุณาใส่เบอร์ต่อ</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อ</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>กรุณาใส่นามสกุล</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลในช่องที่สำคัญ</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรศัพท์</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>กรุณาใส่ที่อยู่</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสไปรษณ๊ย์</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรศัพท์ในรูปแบบที่ถูกต้อง</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>โปรดทราบว่าท่านสามารถบันทึกข้อมูลบัตรเครดิตได้สูงสุด {0} ใบ ถ้าท่านต้องการเพิ่มข้อมูลบัตรใหม่ กรุณายกเลิกข้อมูลบัตรเก่าที่มีอยู่ในระบบ</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>โปรดทราบว่า: &lt;br/&gt; เวบไซด์นี้จะสามารถใช้งานได้ดีบน Internet Explorer หรือ Firefox</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>กรุณาบันทึกที่อยู่จัดส่งก่อน ท่านจึงจะสามารถดำเนินการคำสั่งซื้อที่รับเองเสร็จสิ้นได้</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>กรุณาเลือกสถานที่</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>กรุณาเลือกเวลาสำหรับจัดส่ง</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>กรุณาเลือกประเภทคำสั่งซื้อ</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>กรุณาเลือกชื่อผู้รับสินค้า</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรเพื่อรับสินค้า</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>กรุณาเลือกเวลาที่จะรับสินค้า</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกที่อยู่สำหรับจัดส่ง</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>กรุณาเลือก ใช่/ไม่</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>ไม่สามารถลบที่อยู่หลักได้</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>ตัวเลือกสำคัญของการรับสินค้าไม่สามารถลบได้</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>ดำเนินการขั้นตอนการสั่งซื้อ</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>ดำเนินการในหน้าโฮมเพจ</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>รหัสสินค้าไม่ถูกต้อง</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>ขออภัย! ท่านไม่สามารถเพิ่มรายการสินค้าเข้าไปในรายการสั่งซื้อของท่านได้ เนื่องจากท่านใช้เกินกำหนดรายได้ของท่าน</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>ระบบผิดพลาด</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(เปลี่ยนเดือนที่ทำการสั่งซื้อ)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>รหัสสินค้า {0} ที่เพิ่มจะถูกค้างส่ง</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>ข้อมูลที่อยู่ควรมีพยัญชนะอย่างน้อย 1 ตัว</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>ข้อมูลที่อยู่ควรมีอย่างน้อย 1 ตัวเลข, 1 ช่องว่าง, และพยัญชนะ 1 ตัว</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>การทำรายการตัดบัตรเครดิตไม่อนุมัติ กรุณาตรวจสอบข้อมูลบัตรเครดิต ถ้ายังคงมีปัญหาในการทำรายการ กรุณาติดต่อแผนกบริการลูกค้าที่ 02-660-1600</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>การทำรายการตัดบัตรเครดิตไม่อนุมัติ กรุณาตรวจสอบข้อมูลบัตรเครดิต กรุณาติดต่อแผนกบริการลูกค้าที่ 02-660-1600</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>ไม่มีรายการสินค้าในคำสั่งซื้อ</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>ขณะนี้ผลิตภัณฑ์ {0} มีไม่เพียงพอในคลังสินค้า จำนวนที่มีคือ {1}</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>ไม่มีรายการที่เลือกจะเพิ่มในคำสั่งซื้อ</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>ไม่มีรายการที่เลือกที่จะคำนวณคะแนน</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>มีที่อยู่นี้แล้วในการทดสอบระบบฐานข้อมูล</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>คำสั่งซื้อนี้มีคะแนนเกินกำหนดของการสั่งซื้อ, ท่านมีคะแนนที่มีอยู่ {0} กรุณาแก้ไขเพื่อทำรายการต่อ</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>การทำรายการตัดบัตรเครดิตใบนี้ไม่ถูกอนุมัติ</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>ได้เพิ่มวารสารทูเดย์ไปในคำสั่งซื้อของท่านแล้ว</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>ท่านไม่สามารถทำการสั่งซื้อได้ กรุณาติดต่อแผนกบริการลูกค้าที่เบอร์ 02-660-1600</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>ท่านไม่สามารถทำการสั่งซื้อได้ กรุณาติดต่อแผนกบริการลูกค้าที่เบอร์ 02-660-1600</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการคำสั่งซื้อของท่านได้ กรุณาตรวจสอบที่อยู่ของท่านและลองอีกครั้ง ถ้าท่านยังมีปัญหาอยู่ กรุณาติอต่อแผนกบริการลูกค้า</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>ขออภัย ค่าเงินไม่สามารถแปลงได้ กรุณาติดต่อแผนกบริการลูกค้าที่ 02-660-1600</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>ท่านมีรายการบัตรเข้างานอบรมแล้วในรายการสั่งซื้อ ท่านต้องการลบรายการสั่งซื้อของท่านหรือไม่?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>ท่านกำลังพยายามลบบัตรเครดิตหลักของท่าน กรุณาทำการเปลี่ยนบัตรหลักเป็นใบอื่นก่อนทำการลบบัตร</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>ท่านไม่สามารถใช้บัตรเครดิตใบนี้ทำรายการได้แล้ว เนื่องจากบัตรไม่อนุมัติหลายครั้ง</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>ท่านไม่สามารถเพิ่มบัตรเครดิตใบเดียวกันหลายครั้ง</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>ท่านไม่สามารถเพิ่มสินค้านี้ในรายการสั่งซื้อของท่าน</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>ท่านไม่สามารถไปที่หน้า {0} ถ้าไม่มีสินค้าในรายการสั่งซื้อ</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>ท่านมีรายการสินค้าที่ต้องค้างส่งในรายการสั่งซื้อ ถ้าท่านเลือกเป็นการสั่งซื้อแบบรับสินค้าเอง สินค้านั้นจะถูกเอาออก ท่านต้องการดำเนินการต่อหรือไม่? ("ตกลง" หรือ "ไม่")</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>ท่านเปลี่ยนคะแนนเดือนที่สั่งซื้อเป็น {0} ท่านต้องการดำเนินการต่อไหม?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>ท่านมีบัตรเข้างานอบรมในรายการสั่งซื้อ ท่านต้องการลบรายการสั่งซื้อของท่านไหม?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>ท่านมีผลิตภัณฑ์ในรายการสั่งซื้อของท่าน ท่านต้องการลบข้อมูลการสั่งซื้อก่อนสั่งซื้อบัตรเข้างานอบรมไหม?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>ท่านเลือกคะแนนเดือนที่สั่งซื้อ {0} ถูกต้องไหม?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>####</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>ท่านค้นดูผลิตภัณฑ์โดยไม่ทำการสั่งซื้อ ซึ่งท่านจะไม่สามารถเพิ่มสินค้าไปในรายการสั่งซื้อได้</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>ท่านทำการเพิ่ม HFF ในรายการสั่งซื้อสำเร็จแล้ว</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>ท่านสามารถชำระค่าธรรมเนียมรายปีล่วงหน้าได้เพียง 1 ปี</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>ท่านต้องลบบัตรเครดิตออก 1 ใบเพื่อที่จะเปลี่ยนแปลงสินค้าในรายการของท่าน</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>ท่านต้องเลือกว่าเป็นจัดส่งหรือรับเองเพื่อดำเนินการ</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>ท่านเพิ่งจะทำการสั่งซื้อรายการแบบเดียวกันกับ {0} ถ้ารายการนี้ซ้ำ คลิ๊กที่ "ยกเลิกคำสั่งซื้อ" ถ้าต้องการทำรายการต่อ กรุณายืนยันคำสั่งซื้อ</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>ค่าธรรมเนียมรายปีของท่านครบกำหนดชำระวันที่ {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>ค่าธรรมเนียมรายปีของท่านถึงกำหนดชำระแล้ว เราจะเพิ่มเข้าไปในรายการสั่งซื้อของท่านโดยอัตโนมัติ</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>ค่าธรรมเนียมรายปีของท่านถึงกำหนดชำระแล้ว และได้ถูกเพิ่มเข้าไปในรายการสั่งซื้อของท่านแล้ว</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>บัตรเครดิตของท่านหมดอายุแล้ว กรุณาคลิ๊ก แก้ไข และอัพเดทวันหมดอายุ</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>บัตรเครดิตของท่านหมดอายุแล้ว กรุณาติดต่อแผนกบริการลูกค้า</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>หมายเลขสมาชิกท่านใช้ไม่ได้ กรุณาติดต่อแผนกบริการลูกค้าที่ 02-660-1600</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>หมายเลขสมาชิกท่านใช้ไม่ได้ กรุณาติดต่อแผนกบริการลูกค้าที่ 02-660-1600</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>คำสั่งซื้อก่อนหน้านี้ของท่านได้ดำเนินการเสร็จเรียบร้อยแล้วก่อนที่จะมีการเปลี่ยนแปลงรายการสั่งซื้อ หมายเลขคำสั่งซื้อของท่าน คือ {0} ท่านสามารถตรวจสอบสถานะของคำสั่งซื้อของท่านได้ที่แผนกบริการลูกค้า เบอร์ 02-660-1600 ภายในวันจันทร์ - วันศุกร์ ตั้งแต่เวลา 10.00 น. ถึง 19.00 น. ถ้าท่านต้องการความช่วยเหลือ กรุณาคลิ๊กที่นี่ (โปรดทราบว่าอาจใช้เวลามากกว่า 1 ชั่วโมงกว่าที่คำสั่งซื้อจะขึ้นในระบบ &lt;br/&gt; ถ้าท่านต้องการสั่งซื้อใหม่ กรุณาเพิ่มสินค้าในรายการ</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>ค่าธรรมเนียมรายปีของท่านถูกใส่ในรายการสั่งซื้อแล้ว</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>ข้อมูลการจัดส่งของท่านไม่ถูกต้อง รายการสั่งซื้อทั้งหมดจะถูกลบ</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อรหัส {0} ได้</value>
+  </data>
+</root>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>SKU barang : {0} tidak ditambahkan karena tidak tersedia untuk Incaricati</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan dalam keranjang. Jika anda ingin ditambahkan, mohon ubah sub tipe pesanan anda ke A1 atau B1</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>tolong tambahkan produk sebelum menambahkan SKU</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>kuantititas tidak boleh melebihi {0} untuk Sku :{1}</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>SKU{0} tidak tersedia untuk antaran cepat. Mohon gunakan antaran biasa untuk barang ini</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>SKU 0343,0344, 2329, atau 2328 tidak tersedia untuk antaran cepat</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>kuantitas SKU tidak dapat melebihi {0}</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Tidak bisa membeli</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Tidak bisa membeli produk {0}</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas dari SKU {0} tidak bisa ditambah oleh {1} karena melebihi batas pendapatan</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas dari SKU {0} tidak bisa ditambah oleh {1} karena melebihi batas jumlah</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan ke dalam keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas jumlah</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>pesanan ini melebihi batas pembelian. Anda memiliki sisa {0} VP. Tolong ubah pesanan anda untuk melanjutkan</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>jumlah total melebihi batas anda {0}</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan ke dalam keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas pembelian anda</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas dari barang SKU :{0} tidak bisa ditambahkan oleh {1} karena melebihi batas pembelian</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>konsumsi pribadi</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>jual kembali</value>
+  </data>
+</root>

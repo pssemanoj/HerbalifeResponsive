@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/01/18/HL.DistributorCRM.ValueObjects.DSWebAdmin" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/01/18/HL.DistributorCRM.ValueObjects.DSWebAdmin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="SaveDistributorWebsiteInformationRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebsiteInformationRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q1="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorWebsiteInformation" nillable="true" type="q1:DistributorWebsiteInformation_V01" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Locales" nillable="true" type="q2:ArrayOfstring" />
+          <xs:element minOccurs="0" name="PrimaryLocale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteInformationRequest_V01" nillable="true" type="tns:SaveDistributorWebsiteInformationRequest_V01" />
+  <xs:complexType name="SaveDistributorWebsiteInformationRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteInformationRequestBase" nillable="true" type="tns:SaveDistributorWebsiteInformationRequestBase" />
+  <xs:complexType name="SaveDistributorWebsiteInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebsiteInformationResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteInformationResponse_V01" nillable="true" type="tns:SaveDistributorWebsiteInformationResponse_V01" />
+  <xs:complexType name="SaveDistributorWebsiteInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteInformationResponseBase" nillable="true" type="tns:SaveDistributorWebsiteInformationResponseBase" />
+  <xs:complexType name="SaveDistSiteInformationRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistSiteInformationRequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorLocalizedWebsite" nillable="true" type="q5:DistributorLocalizedWebsite_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistSiteInformationRequest_V01" nillable="true" type="tns:SaveDistSiteInformationRequest_V01" />
+  <xs:complexType name="SaveDistSiteInformationRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistSiteInformationRequestBase" nillable="true" type="tns:SaveDistSiteInformationRequestBase" />
+  <xs:complexType name="SaveDistSiteInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistSiteInformationResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistSiteInformationResponse_V01" nillable="true" type="tns:SaveDistSiteInformationResponse_V01" />
+  <xs:complexType name="SaveDistSiteInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistSiteInformationResponseBase" nillable="true" type="tns:SaveDistSiteInformationResponseBase" />
+  <xs:complexType name="ValidateMercadoPagoAccountRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateMercadoPagoAccountRequestBase" nillable="true" type="tns:ValidateMercadoPagoAccountRequestBase" />
+  <xs:complexType name="ValidateMercadoPagoAccountRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ValidateMercadoPagoAccountRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClientId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientSecret" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateMercadoPagoAccountRequest_V01" nillable="true" type="tns:ValidateMercadoPagoAccountRequest_V01" />
+  <xs:complexType name="ValidateMercadoPagoAccountResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateMercadoPagoAccountResponseBase" nillable="true" type="tns:ValidateMercadoPagoAccountResponseBase" />
+  <xs:complexType name="ValidateMercadoPagoAccountResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ValidateMercadoPagoAccountResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsValid" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateMercadoPagoAccountResponse_V01" nillable="true" type="tns:ValidateMercadoPagoAccountResponse_V01" />
+  <xs:complexType name="GetPayPalTokenResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalTokenResponseBase" nillable="true" type="tns:GetPayPalTokenResponseBase" />
+  <xs:complexType name="GetPayPalTokenResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetPayPalTokenResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalTokenResponse_V01" nillable="true" type="tns:GetPayPalTokenResponse_V01" />
+  <xs:complexType name="GetPayPalTokenRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalTokenRequestBase" nillable="true" type="tns:GetPayPalTokenRequestBase" />
+  <xs:complexType name="GetPayPalTokenRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetPayPalTokenRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CancelUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReturnUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalTokenRequest_V01" nillable="true" type="tns:GetPayPalTokenRequest_V01" />
+  <xs:complexType name="GetPayPalAccountIdResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalAccountIdResponseBase" nillable="true" type="tns:GetPayPalAccountIdResponseBase" />
+  <xs:complexType name="GetPayPalAccountIdResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetPayPalAccountIdResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalAccountIdResponse_V01" nillable="true" type="tns:GetPayPalAccountIdResponse_V01" />
+  <xs:complexType name="GetPayPalAccountIdRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalAccountIdRequestBase" nillable="true" type="tns:GetPayPalAccountIdRequestBase" />
+  <xs:complexType name="GetPayPalAccountIdRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetPayPalAccountIdRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPayPalAccountIdRequest_V01" nillable="true" type="tns:GetPayPalAccountIdRequest_V01" />
+  <xs:complexType name="CreatePayPalBillingAgreementResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreatePayPalBillingAgreementResponseBase" nillable="true" type="tns:CreatePayPalBillingAgreementResponseBase" />
+  <xs:complexType name="CreatePayPalBillingAgreementResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CreatePayPalBillingAgreementResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillingAgreementId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreatePayPalBillingAgreementResponse_V01" nillable="true" type="tns:CreatePayPalBillingAgreementResponse_V01" />
+  <xs:complexType name="CreatePayPalBillingAgreementRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreatePayPalBillingAgreementRequestBase" nillable="true" type="tns:CreatePayPalBillingAgreementRequestBase" />
+  <xs:complexType name="CreatePayPalBillingAgreementRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CreatePayPalBillingAgreementRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreatePayPalBillingAgreementRequest_V01" nillable="true" type="tns:CreatePayPalBillingAgreementRequest_V01" />
+  <xs:complexType name="GetProPayAccountRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q16:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProPayAccountRequestBase" nillable="true" type="tns:GetProPayAccountRequestBase" />
+  <xs:complexType name="GetProPayAccountRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProPayAccountRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProPayAccountRequest_V01" nillable="true" type="tns:GetProPayAccountRequest_V01" />
+  <xs:complexType name="GetProPayAccountResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProPayAccountResponseBase" nillable="true" type="tns:GetProPayAccountResponseBase" />
+  <xs:complexType name="GetProPayAccountResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProPayAccountResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProPayAccountResponse_V01" nillable="true" type="tns:GetProPayAccountResponse_V01" />
+  <xs:complexType name="GetMercadoPagoAccessKeysRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q18:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMercadoPagoAccessKeysRequestBase" nillable="true" type="tns:GetMercadoPagoAccessKeysRequestBase" />
+  <xs:complexType name="GetMercadoPagoAccessKeysRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMercadoPagoAccessKeysRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RedirectUrl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMercadoPagoAccessKeysRequest_V01" nillable="true" type="tns:GetMercadoPagoAccessKeysRequest_V01" />
+  <xs:complexType name="GetMercadoPagoAccessKeysResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q19:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMercadoPagoAccessKeysResponseBase" nillable="true" type="tns:GetMercadoPagoAccessKeysResponseBase" />
+  <xs:complexType name="GetMercadoPagoAccessKeysResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMercadoPagoAccessKeysResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccessToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PublicKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RefreshToken" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMercadoPagoAccessKeysResponse_V01" nillable="true" type="tns:GetMercadoPagoAccessKeysResponse_V01" />
+  <xs:complexType name="SaveDistributorWebsiteCountryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q20:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteCountryRequest" nillable="true" type="tns:SaveDistributorWebsiteCountryRequest" />
+  <xs:complexType name="SaveDistributorWebsiteCountryRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebsiteCountryRequest">
+        <xs:sequence>
+          <xs:element xmlns:q21="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="CountryInformation" nillable="true" type="q21:DSCountryInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteCountryRequest_V01" nillable="true" type="tns:SaveDistributorWebsiteCountryRequest_V01" />
+  <xs:complexType name="SaveDistributorWebsiteCountryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q22:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteCountryResponse" nillable="true" type="tns:SaveDistributorWebsiteCountryResponse" />
+  <xs:complexType name="SaveDistributorWebsiteCountryResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebsiteCountryResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebsiteCountryResponse_V01" nillable="true" type="tns:SaveDistributorWebsiteCountryResponse_V01" />
+  <xs:complexType name="GetDistributorWebsiteExtensionsRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q23:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteExtensionsRequestBase" nillable="true" type="tns:GetDistributorWebsiteExtensionsRequestBase" />
+  <xs:complexType name="GetDistributorWebsiteExtensionsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebsiteExtensionsRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteExtensionsRequest_V01" nillable="true" type="tns:GetDistributorWebsiteExtensionsRequest_V01" />
+  <xs:complexType name="SaveDistributorWebSiteSettingsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebSiteSettingsRequest" nillable="true" type="tns:SaveDistributorWebSiteSettingsRequest" />
+  <xs:complexType name="SaveDistributorWebSiteSettingsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebSiteSettingsRequest">
+        <xs:sequence>
+          <xs:element xmlns:q25="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorLocalizedWebSite" nillable="true" type="q25:DistributorLocalizedWebsite" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebSiteSettingsRequest_V01" nillable="true" type="tns:SaveDistributorWebSiteSettingsRequest_V01" />
+  <xs:complexType name="SaveDistributorWebSiteSettingsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebSiteSettingsResponse" nillable="true" type="tns:SaveDistributorWebSiteSettingsResponse" />
+  <xs:complexType name="SaveDistributorWebSiteSettingsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDistributorWebSiteSettingsResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDistributorWebSiteSettingsResponse_V01" nillable="true" type="tns:SaveDistributorWebSiteSettingsResponse_V01" />
+  <xs:complexType name="GetValidateWebExtensionRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q27:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetValidateWebExtensionRequestBase" nillable="true" type="tns:GetValidateWebExtensionRequestBase" />
+  <xs:complexType name="GetValidateWebExtensionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetValidateWebExtensionRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetValidateWebExtensionRequest_V01" nillable="true" type="tns:GetValidateWebExtensionRequest_V01" />
+  <xs:complexType name="GetValidateWebExtensionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetValidateWebExtensionResponseBase" nillable="true" type="tns:GetValidateWebExtensionResponseBase" />
+  <xs:complexType name="GetValidateWebExtensionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetValidateWebExtensionResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsAvailable" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetValidateWebExtensionResponse_V01" nillable="true" type="tns:GetValidateWebExtensionResponse_V01" />
+</xs:schema>

@@ -1,0 +1,19 @@
+﻿@using HL.Common.Configuration
+@using MyHerbalife3.Shared.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+
+<script type="text/javascript">
+    var SkuColumnTitleText = "@(this.Localize("SkuColumnTitle"))";
+    var DescriptionColumnText = "@(this.Localize("DescriptionColumnTitle"))";
+    var StatusText = "@(this.Localize("StatusText"))";
+</script>
+
+@{
+    this.SetVerticalLayout("Ordering");
+    var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+}
+        <div id="loading"></div>
+
+        <table id="showDataGrid"><tr><td>@(this.Localize("showDataFor"))</td></tr></table>
+
+        <table id="inventoryGrid" class="gdo-border pricelist-table gdo-pricelist-tbl"></table>

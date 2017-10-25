@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2015/02/11/HL.DistributorCRM.ValueObjects.Survey" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2015/02/11/HL.DistributorCRM.ValueObjects.Survey" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd33" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="SaveSurveyRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveSurveyRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsOverWritten" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q1="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" minOccurs="0" name="Questions" nillable="true" type="q1:ArrayOfQuestion" />
+          <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SurveyName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveSurveyRequest_V01" nillable="true" type="tns:SaveSurveyRequest_V01" />
+  <xs:complexType name="SaveSurveyRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveSurveyRequest" nillable="true" type="tns:SaveSurveyRequest" />
+  <xs:complexType name="SaveSurveyResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveSurveyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveSurveyResponse_V01" nillable="true" type="tns:SaveSurveyResponse_V01" />
+  <xs:complexType name="SaveSurveyResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveSurveyResponse" nillable="true" type="tns:SaveSurveyResponse" />
+</xs:schema>

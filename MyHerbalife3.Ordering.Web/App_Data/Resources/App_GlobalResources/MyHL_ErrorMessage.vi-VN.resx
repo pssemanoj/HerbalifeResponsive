@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU Phí Thường Niên không thể thêm và Giỏ hàng của bạn</value>
+    <comment>_*G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Mã số phí thanh toán phí dv Thành viên không thể xóa ra khỏi đơn hàng của bạn</value>
+    <comment>_*G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Bạn chắc chắn muốn hủy đơn hàng này? Bấm "ok", toàn bộ sản phẩm sẽ được xóa trong đơn hàng</value>
+    <comment>_*G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Tất cả các mục không thuộc sản phẩm sẽ bị xóa khỏi đơn hàng đóng phí dịch vụ Thành viên hàng năm</value>
+    <comment>_*G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Những sản phẩm chưa nhập hàng không thể thêm vào đơn hàng phí dv Thành viên hàng năm</value>
+    <comment>_*G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Thẻ không cho phép thực hiện. Vui lòng kiểm tra lại thẻ của bạn.</value>
+    <comment>_*G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Định dạng dữ liệu sai, vui lòng nhập lại dữ liệu đúng.</value>
+    <comment>_*G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Mã sản phẩm đã bị nhập 2 lần, vui lòng nhập lại</value>
+    <comment>_*G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Mua vé sự kiện được giới hạn số lương {0} cho mỗi đơn hàng</value>
+    <comment>_*G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Mua vé sự kiện không được cho phép ở chỗ này</value>
+    <comment>_*G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Sản phẩm {0} chỉ số lượng {1} tồn tại. Vui lòng sửa số lượng đã được nhập để thêm mã sản phẩm này vào đơn hàng</value>
+    <comment>_*G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Với mã sản phẩm {0}, 1 hay nhiều mã sản phẩm có thể chờ nhập hàng</value>
+    <comment>_*G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Với mã sản phẩm {0}, số lượng không thể vượt quá {1}</value>
+    <comment>_*G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Tôi lấy làm tiếc rằng bạn chưa đăng ký thẻ ghi nợ trên hồ sơ. Vui lòng gọi phòng dịch vụ Thành viên - 08 3827 9292</value>
+    <comment>_*G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Chỉ số bưu điện không hợp lệ</value>
+    <comment>_*G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:{0} phí dịch vụ Thành viên đã bị quá hạn và cần phải trả trước khi làm đơn hàng "bán lại". Vui lòng thay đổi loại đơn hàng thành "cá nhân" để trả phí DVTV hàng năm</value>
+    <comment>_*G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Mục {0} hiện đã hết hàng tồn, số lương sẽ được trả về 0</value>
+    <comment>_*G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Giới hạn cho Tạp Chí là</value>
+    <comment>_*G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Số lương tạp chí tối đạ có thể được thêm vào giỏ hàng là {o}</value>
+    <comment>_*G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Tên đã được sử dụng, vui lòng nhập lại một tên khác</value>
+    <comment>_*G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Đơn hàng trực tuyến chưa có</value>
+    <comment>_*G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Đặt hàng trực tuyến chưa được phép</value>
+    <comment>_*G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Chỉ sản phẩm có thể được thêm vào đơn hàng phí DV TV hàng năm Standalone</value>
+    <comment>_*G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Khoản thanh toán tổng cộngkhông khớp với tổng cộng số lương hàng đặt</value>
+    <comment>_*G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Vui lòng thêm số lương lớn hơn 1</value>
+    <comment>_*G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Vui lòng kiểm tra thông tin thẻ</value>
+    <comment>_*G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Vui lòng kiểm tra mã số Thành Viên và mật khẩu truy cập và thử lại lần nũa. Nếu vẫn còn gặp vấn đề vui lòng liên hệ phòng Dịch vụ Thành Viên số +848.3827.9191</value>
+    <comment>_*R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Vui lòng hoàn thành phí DVTV hàng năm trước khi thêm sản phẩm khác vào giỏ hàng</value>
+    <comment>_*G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Vui lòng hoàn thành phí phí DVTV hàng năm hàng năm trước khi đặt vé sự kiện</value>
+    <comment>_*G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Vui lòng nhập số</value>
+    <comment>_*G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Vui lòng nhập số lượng cho mã sản phẩm {0}</value>
+    <comment>_*G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ chuyển hàng</value>
+    <comment>_*G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Vui lòng nhập tên thành phố hợp lệ</value>
+    <comment>_*G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Vui lòng nhập tên hợp lệ</value>
+    <comment>_*G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Xin lỗi chúng tôi không thể thêm thẻ của bạn. Xin vui lòng thử lại bằng một biệt hiệu không có số thẻ tín dụng.</value>
+    <comment>_*G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Vui lòng nhập tổng số quyên góp, ngoại trừ (0)</value>
+    <comment>_*G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ emai</value>
+    <comment>_*G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Vui lòng nhập thông tin thanh toán</value>
+    <comment>_*G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Vui lòng nhập số CVV</value>
+    <comment>_*G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Vui lòng nhập số lượng năm đóng phí DVTV mà bạn cần đặt</value>
+    <comment>_*G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ email hợp lệ</value>
+    <comment>_*G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Vui lòng nhập tên hợp lệ</value>
+    <comment>_*G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Vui lòng nhập họ hợp lệ</value>
+    <comment>_*G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Vui lòng nhập tên lót hợp lệ</value>
+    <comment>_*G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Vui lòng điền thông tin vận chuyển thay thế</value>
+    <comment>_*G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Vui lòng điền định dang chính xác mã vùng</value>
+    <comment>_*G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Vui lòng điền chính xác phần thông tin thêm</value>
+    <comment>_*G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Vui lòng điền tên người nhận</value>
+    <comment>_*G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Vui lòng điền mã vùng</value>
+    <comment>_*G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Vui lòng điền tên thành phố</value>
+    <comment>_*G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Vui lòng điền phần mở rộng</value>
+    <comment>_*G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Vui lòng điền tên</value>
+    <comment>_*G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Vui lòng điền họ</value>
+    <comment>_*G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Vui lòng điền phần thay thế</value>
+    <comment>_*G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Vui lòng điền số điện thoại</value>
+    <comment>_*G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vui lòng nhập tên Quận/Huyện</value>
+    <comment>_*G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Vui lòng điền phần địa chỉ/đường</value>
+    <comment>_*G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Vui lòng điền chỉ số bưu điện</value>
+    <comment>_*G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Vui lòng điền chính xác định dạng số điện thoại</value>
+    <comment>_*G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Bạn chỉ có thể lưu thông tin tối đa {0} thẻ. Để thêm thông tin thẻ mới, vui lòng xoá thông tin thẻ đã lưu</value>
+    <comment>_*G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Vui lòng lưu ý:&lt;br/&gt; Trang web này xem tốt nhật với trình duyệt Internet Explorer hoặc Firefox</value>
+    <comment>_*G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Vui lòng điên địa chỉ vận chuyển trước khi bạn hoàn thành đơn hàng nhận hàng này</value>
+    <comment>_*G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Vui lòng chọn địa điểm</value>
+    <comment>_*G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Vui lòng chọn thời gian giao hàng</value>
+    <comment>_*G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Vui lòng chọn loại đơn hàng</value>
+    <comment>_*G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Vui lòng chọn địa điểm lấy hàng</value>
+    <comment>_*G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Vui lòng chọn địa điểm lấy hàng</value>
+    <comment>_*G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Vui lòng chọn tên lấy hàng</value>
+    <comment>_*G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại lấy hàng</value>
+    <comment>_*G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Vui lòng chọn thời gian lấy hàng</value>
+    <comment>_*G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Vui lòng chọn địa chỉ vận chuyển</value>
+    <comment>_*G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Vui lòng chọn Yes/No</value>
+    <comment>_*G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Địa chỉ chính không thể xoá</value>
+    <comment>_*G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Sự ưu tiên lấy hàng không thể xoá</value>
+    <comment>_*G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Thoát ra</value>
+    <comment>_*G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Trở về trang chủ</value>
+    <comment>_*G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Không hỗ trợ nhập ZIP giao hàng</value>
+    <comment>_*G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Mã sản phẩm {0} không có sẵn</value>
+    <comment>_*G1244</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Yêu cầu số di động</value>
+    <comment>_G1245</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Rất tiếc! Bạn không thể đặt hàng, chỉ những Thành Viên Việt Nam có thể đặt hàng tại trang đặt hàng trực tuyến Việt Nam</value>
+    <comment>_*G1246</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Rất tiếc! Bạn không thể thêm số lượng vào giỏ hàng, bạn đã vượt quá giới hạn</value>
+    <comment>_*G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Hệ thống bị lỗi</value>
+    <comment>_*G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>Tháng đặt hàng đã thay đổi</value>
+    <comment>_*G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Mã sản phẩm {0} sẽ được thêm vào phần đợi nhập hàng</value>
+    <comment>_*G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Tỉnh/Thành/Quận/Huyện không hợp lệ</value>
+    <comment>_*G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Tên đường phải có ít nhất 1 ký tự</value>
+    <comment>_*G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Tên đường phải có ít nhất 1 số, một khoảng trống và 1 ký tự</value>
+    <comment>_*G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Giao dịch không được phép, vui lòng kiểm tra thông tin thẻ. Nếu vấn đề vẫn còn, vui lòng liên lạc đường dây nóng phòng Dịch Vụ Thành Viên (848) 3827 9292</value>
+    <comment>_*G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Giao dịch không được phép, vui lòng liên lạc phòng Dịch Vụ Thành Viên 848 38279292</value>
+    <comment>_*G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Mã ZIP không hợp lệ</value>
+    <comment>_*G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Không có sản phẩm nào được mua trong đơn hàng</value>
+    <comment>_*G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Hiện không đủ hàng tồn cho sản phẩm {0}. Số lương sẵn có {1}</value>
+    <comment>_*G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Không có sản phẩm nào được thêm vào đơn hàng</value>
+    <comment>_*G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Không có sản phẩm nào được chọn để tính điểm</value>
+    <comment>_*G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Địa chỉ này đã tồn tại trong dữ liệu</value>
+    <comment>_*G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Đơn hàng này vượt quá giới hạn mua hàng của bạn. Bạn có {0} điểm số còn lại. Vui lòng làm lại để tiếp tục đơn hàng</value>
+    <comment>_*G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Giao dịch đã bị từ chối</value>
+    <comment>_*G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Tạp chí "Ngày hôm nay" đã được thêm vào giỏ hàng</value>
+    <comment>_*G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Chúng tôi không thể hoàn thành đơn hàng của bạn. Vui lòng liên hệ phòng Dịch Vụ Thành Viên để được trợ giúp 848 3827 9292 và đề cập đến mã lỗi 01</value>
+    <comment>_*G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Chúng tôi không thể hoàn thành đơn hàng của bạn. Vui lòng liên hệ phòng Dịch Vụ Thành Viên để được trợ giúp 848 3827 9292 và đề cập đến mã lỗi 05</value>
+    <comment>_*G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Chúng tôi không thể thực hiện đơn hàng của bạn. Vui lòng kiểm tra địa chỉ của bạn và thử lại lần nữa. Nếu vấn đề vẫn tồn tại, vui lòng liên hệ phòng Dịch Vụ Thành Viên</value>
+    <comment>_*G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Rất tiếc, không thể chuyển đổi tiền tệ, vui lòng liên hệ phòng Dich Vụ Thành viên 848 3827 9292</value>
+    <comment>_*G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Bạn đã có mã sản phẩm vé sự kiện trong giỏ hàng, bạn có muốn xoá nó?</value>
+    <comment>_*G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Bạn đang cố gắng xoá thẻ chính. Vui lòng lưu một thẻ chính khác trước khi bạn xoá bỏ thẻ này</value>
+    <comment>_*G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Bạn không thể sử dụng thẻ này lâu hơn bởi vì có nhiều sự từ chối</value>
+    <comment>_*G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Tên đã tồn tại, vui lòng chọn Tên khác</value>
+    <comment>_*G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Bạn không thể thêm sản phẩm này vào giỏ hàng</value>
+    <comment>_*G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Bạn không thể đi đến trang {0} mà không có sản phẩm trong giỏ hàng</value>
+    <comment>_*G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Bạn có sản phẩm tồn kho trong đơn hàng. Nếu chọn phương thức nhận hàng tại kho, sản phẩm sẽ được loại bỏ. Bạn có muốn tiếp tục?</value>
+    <comment>_*G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Bạn đã thay đổi tháng đặt hàng cho đơn hàng {0}. Bạn có muốn tiếp tục với lựa chọn này?</value>
+    <comment>_*G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Bạn đã đặt vé này. Bạn có muốn xóa đơn hàng?</value>
+    <comment>_*G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Bạn có sản phẩm trong giỏ hàng. Bạn có muốn xóa nó khỏi giỏ hàng trước khi tiếp tục mua vé?</value>
+    <comment>_*G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Bạn đã chọn {0} như 2 tháng đặt hàng, đúng không?</value>
+    <comment>_*G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Bạn đã chọn nhận hàng từ WALDOS, sản phẩm đặt hàng sẽ bị giới hạn</value>
+    <comment>_*G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Bạn đã lướt qua sản phẩm mà không đặt hàng, bạn sẽ không thể thêm sản phẩm vào giỏ hàng</value>
+    <comment>_*G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Bạn đã thêm thành công HFF vào giỏ hàng</value>
+    <comment>_*G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Bạn chỉ có thể trả trước trong vòng 90 ngày Phí Dịch Vụ Thành Viên Hằng Năm trước ngày hết hạn.</value>
+    <comment>_*G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Bạn phải xóa một trong những thẻ ghi nợ để có thể thay đổi số lượng trong giỏ hàng</value>
+    <comment>_*G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Bạn phải chọn phương thức giao hàng hoặc nhận hàng tại kho để tiếp tục</value>
+    <comment>_*G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Chúng tôi xin thông báo rằng bạn đã đặt đơn hàng trùng với đơn hàng vào ngày {0}. Vui lòng xác nhận nếu bạn muốn tiếp tục</value>
+    <comment>_*G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Phí DVTV hàng năm của bạn đã hết hạn đóng phí vào ngày {0}</value>
+    <comment>_*G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Phí DVTV hàng năm của bạn đã hết hạn, chúng tôi sẽ tự động phí thêm vào đơn hàng</value>
+    <comment>_*G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Phí DVTV hàng năm của bạn đã hết hạn. Nó đã được thêm vào giỏ hàng</value>
+    <comment>_*G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Thẻ tín dụng của bạn đã hết hạn. Vui lòng chọn thay đổi và làm mới ngày hết hạn thẻ</value>
+    <comment>_*G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Thẻ tín dụng của bạn đã hết hạn. Vui lòng liên lạc phòng Dịch Vụ Thành viên</value>
+    <comment>_*G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Không thể thực hiện yêu cầu, vui lòng liên hệ Phòng Dịch Vụ Thành Viên.</value>
+    <comment>_*G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Không thể thực hiện yêu cầu, vui lòng liên hệ Phòng Dịch Vụ Thành Viên.</value>
+    <comment>_*G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Đơn hàng trước của bạn đã được gởi đi. Mã số đơn hàng {0}. Bạn có thể làm rõ tình trạng đơn hàng bằng cách liên lạc bộ phận hỗ trợ đặt hàng 848 3827 9292, 8.30 A.M đến 17.30 AM từ thứ 2 đến thứ 6. Thứ 7 từ 8.30AM đến 12.30PM. PST cho sự hỗ trợ hoặc chọn vào đây. (Xin lưu ý sẽ mất 1h trước khi đơn hàng thể hiện trên hệ thống &lt;br&gt;. Nếu bạn muốn đặt đơn hàng mới, vui lòng thêm lại số lượng vào giỏ hàng</value>
+    <comment>_*G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Phí DVTV hằng năm được yêu cầu đã bị xóa khỏi giỏ hàng</value>
+    <comment>_*G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Thông tin vận chuyển không còn hợp lệ, giỏ hàng sẽ được xóa</value>
+    <comment>_*G1296</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Vui lòng điền vào thành phố</value>
+    <comment>_*G1297</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Mã sản phẩm {0} không hợp lệ</value>
+    <comment>_*G1298</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Vui lòng chọn phương thức giao hàng</value>
+    <comment>_*G1299</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Không có sản phẩm đợi nhập hàng được cho phép vận chuyển đến New Caledonia và French Polynesia</value>
+    <comment>_*G1300</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Vui lòng chọn loại hình đơn hàng từ giỏ hàng nhỏ</value>
+    <comment>_*G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Bạn không thể kiểm tra để hoàn tất bởi bạn đã vượt quá giới hạn có thể mua hàng</value>
+    <comment>_*G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Xác nhận lại địa chỉ là bắt buộc</value>
+    <comment>_*G2070</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Chúng tôi xin thông báo rằng bạn đã đặt đơn hàng trùng với đơn hàng vào ngày {0}. Vui lòng xác nhận nếu bạn muốn tiếp tục</value>
+    <comment>_*G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Vui lòng chọn ngày nhận hàng:</value>
+    <comment>_*G2712</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Vui lòng nhập Mã số Thành Viên</value>
+    <comment>_*H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Vui lòng chọn một tùy chọn khôi phục Pin</value>
+    <comment>_*H282</comment>
+  </data>
+  <data name="NoProvince" xml:space="preserve">
+    <value>Xin vui lòng điền vào tỉnh.</value>
+    <comment>_*G2869</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Khối lượng không có sẵn tại thời điểm này.</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="NoDeliveryOption" xml:space="preserve">
+    <value>Kính gửi Qúy Thành Viên, vui lòng gọi đến Phòng Dịch Vụ Thành Viên nếu bạn có bất kỳ thắc mắc nào</value>
+    <comment>_*G2882</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Để hoàn thành cài đặt tài khoản của bạn như một thành viên mới, vui lòng chọn một địa phương từ quốc gia đang xử lý và thử lại lần nữa</value>
+    <comment>_*R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>Mã Pin không được cấp</value>
+    <comment>_*R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Giá tiền cho các sản phẩm trong giỏ hàng của bạn đã bị thay đổi vì có sai sót, Xin vui lòng gửi lại đơn hàng của bạn.</value>
+    <comment>_*G3278</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Quan Trọng: Bảo vệ huấn luyện kinh doanh 101 của bạn</value>
+    <comment>_*G3159</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>Ưu đãi mua hàng của bạn hiện đang bị tạm hoãn cho đến khi huấn luyện "Bảo vệ Kinh doanh 101 của bạn" được hoàn thành. Nếu bạn muốn hoàn thành huấn luyện ngay bây giờ, vui lòng nhấp vào đường link sau: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; Nếu bạn muốn hoàn thành khóa huấn luyện này trong vòng 7 ngày tới và tiến hành đặc hàng ngay bây giờ, vui lòng nhấp OK để tiếp tục mua hàng, hoặc HỦY</value>
+    <comment>_*G3158</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>Yêu cầu của bạn không thể thực hiện, Vui lòng liên hệ Phòng Dịch Vụ Thành Viên số 08.3827.9191. Lưu ý: Quyền mua hàng của bạn đang được giữ lại cho đến khi buổi huấn luyện "Bảo vệ huấn luyện kinh doanh 101 của bạn" được yêu cầu hoàn thành. Nếu bạn muốn hoàn thành buổi huấn luyện này, vui lòng bấm vào đường link bên dưới: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt;</value>
+    <comment>_*G3160</comment>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Kính gởi Quý Thành Viên, để được an toàn, đơn hàng này được chọn để Herbalife kiểm toán phân tích. Nó sẽ được phát hành sớm. Theo chính sách bảo mật của chúng tôi, Herbalife sẽ chọn ngẫu nhiên một số đơn hàng để phân tích.</value>
+    <comment>_*G2514</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Vui lòng chọn địa chỉ Thành Viên</value>
+    <comment>_*G2311</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Vui lòng xác định Số RG</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Các giao dịch thanh toán của Đơn hàng không được cho phép, trường hợp chưa rõ, vui lòng liên hệ Phòng Dịch Vụ Thành Viên (3.827 9191)</value>
+    <comment>_*G2512</comment>
+  </data>
+  <data name="KountDeclinedOrder" xml:space="preserve">
+    <value>Please contact Member Business Practice and Compliance at (310)316-6056</value>
+    <comment>_*G3712</comment>
+  </data>
+  <data name="RequiredELearning" xml:space="preserve">
+    <value>Thành Viên chưa hoàn thành khoá đào tạo cơ bản.</value>
+    <comment>_G3776</comment>
+  </data>
+</root>

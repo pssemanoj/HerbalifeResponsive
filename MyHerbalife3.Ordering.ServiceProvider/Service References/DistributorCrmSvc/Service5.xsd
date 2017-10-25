@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Email" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Email" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" />
+  <xs:complexType name="ExactTargetSubscriber_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ExactTargetSubscriber">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="tns:ExactTargetSubscriberStatus" />
+          <xs:element minOccurs="0" name="SubscriberKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExactTargetSubscriber_V01" nillable="true" type="tns:ExactTargetSubscriber_V01" />
+  <xs:complexType name="ExactTargetSubscriber">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ExactTargetSubscriber" nillable="true" type="tns:ExactTargetSubscriber" />
+  <xs:complexType name="EmailTemplate">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailTemplate" nillable="true" type="tns:EmailTemplate" />
+  <xs:simpleType name="ExactTargetSubscriberStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Active">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Bounced">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Held">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Unsubscribed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Deleted">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ExactTargetSubscriberStatus" nillable="true" type="tns:ExactTargetSubscriberStatus" />
+  <xs:complexType name="ArrayOfBulkEmail_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BulkEmail_V01" nillable="true" type="tns:BulkEmail_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBulkEmail_V01" nillable="true" type="tns:ArrayOfBulkEmail_V01" />
+  <xs:complexType name="BulkEmail_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BulkEmail">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BulkEmailID" type="xs:int" />
+          <xs:element minOccurs="0" name="BulkEmailType" type="tns:BulkEmailType" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailTemplateID" type="xs:int" />
+          <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExternalKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SendResponseID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="tns:BulkEmailStatus" />
+          <xs:element minOccurs="0" name="StatusId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BulkEmail_V01" nillable="true" type="tns:BulkEmail_V01" />
+  <xs:complexType name="BulkEmail">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BulkEmail" nillable="true" type="tns:BulkEmail" />
+  <xs:simpleType name="BulkEmailStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Queued">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InProcess">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Failed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PerformingSend">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="QueuedToET">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateDataExtension">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateEmailDefinition">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UploadToFTP">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateImportDefinition">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ImportInProgress">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BulkEmailStatus" nillable="true" type="tns:BulkEmailStatus" />
+  <xs:simpleType name="BulkEmailType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ECARD">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALERTS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMAIL">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GDO">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DWS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OLC" />
+      <xs:enumeration value="BIZWORKS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BulkEmailType" nillable="true" type="tns:BulkEmailType" />
+  <xs:complexType name="BTBulkEmailRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BTBulkEmailRequest" nillable="true" type="tns:BTBulkEmailRequest" />
+  <xs:complexType name="BTBulkEmailRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BTBulkEmailRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BulkEmailID" type="xs:int" />
+          <xs:element minOccurs="0" name="BulkEmails" nillable="true" type="tns:ArrayOfBulkEmail_V01" />
+          <xs:element minOccurs="0" name="EmailTemplateID" type="xs:int" />
+          <xs:element minOccurs="0" name="ExternalKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BTBulkEmailRequest_V01" nillable="true" type="tns:BTBulkEmailRequest_V01" />
+  <xs:complexType name="EmailTemplate_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExternalTemplateID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HtmlBody" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ThumbUrl" nillable="true" type="xs:anyURI" />
+          <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tokens" nillable="true" type="q6:ArrayOfKeyValueOfstringMailingTokenrTNrHKga" />
+          <xs:element minOccurs="0" name="Usage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailTemplate_V01" nillable="true" type="tns:EmailTemplate_V01" />
+  <xs:complexType name="ArrayOfEmailTemplate_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailTemplate_V01" nillable="true" type="tns:EmailTemplate_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailTemplate_V01" nillable="true" type="tns:ArrayOfEmailTemplate_V01" />
+  <xs:complexType name="Mailing">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mailing" nillable="true" type="tns:Mailing" />
+  <xs:complexType name="Mailing_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Mailing">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailTemplateID" type="xs:int" />
+          <xs:element minOccurs="0" name="ExternalBatchID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="OptOutUrlTemplate" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" minOccurs="0" name="Recipients" nillable="true" type="q8:ArrayOfContact_V02" />
+          <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tokens" nillable="true" type="q9:ArrayOfKeyValueOfintstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Mailing_V01" nillable="true" type="tns:Mailing_V01" />
+</xs:schema>

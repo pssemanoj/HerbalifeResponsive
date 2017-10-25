@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="120" Height="220" Grid.Row="0" Grid.Column="0">
+    <Controls>
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Recipient" Grid.Row="0" Grid.Column="0" Grid.Colspan="3" Text="Name *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street1" Grid.Row="2" Grid.Column="0" Text="Street 1 *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street2" Grid.Row="4" Grid.Column="0" Text="Street 2" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="City" Grid.Row="6" Grid.Column="0" Text="City *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PhoneNumber" Grid.Row="6" Grid.Column="1" Text="Phone number *" />
+
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCareOfName" Grid.Row="1" Grid.Column="0" Grid.Colspan="3" Text="{Binding Recipient}" Required="true" MaximumLength="40" IndexForTab="1" ValReqMsg="NoCareOfName" HasFocus="true"/>
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet1" Grid.Row="3" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line1}"  Required="true" MaximumLength="40" IndexForTab="2" ValReqMsg="NoStreet1" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet2" Grid.Row="5" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line2}" MaximumLength="40" IndexForTab="3" />
+      <ComboBox cssStyle="gdo-popup-form-field-padding" Name="ddlCity" Text="{Binding Address.City}" Grid.Row="7"  Grid.Column="0" Required="true" ValReqMsg="NoCity" ItemsSource="~/Ordering/Controls/Address/AddressFormat/es-BO-Cities.xml" XPath="/Cities/City" DisplayMemberPath="Name" DisplayIDPath="ID"  IndexForTab="4" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBPhone" Grid.Row="7" Grid.Column="1" Text="{Binding Phone}" Required="true"  ValErrorMsg="InvalidPhone" ValReqMsg="NoPhone" RegExp="^(\d{6,10})$"  MaximumLength="10"  IndexForTab="7"  />
+      <Label cssStyle="AddressErrorMsg_blue" Name="PhoneNumberFormat" Grid.Row="7" Grid.Column="2" Text="Format: 12 digits" />
+    </Controls>
+  </Grid>
+</AddressWindow>

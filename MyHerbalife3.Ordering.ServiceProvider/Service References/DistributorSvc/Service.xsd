@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:simpleType name="AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Mailing" />
+      <xs:enumeration value="ShipTo" />
+      <xs:enumeration value="BillTo" />
+      <xs:enumeration value="PermanentLegal" />
+      <xs:enumeration value="Business" />
+      <xs:enumeration value="DeliverTo" />
+      <xs:enumeration value="MailingLocal" />
+      <xs:enumeration value="PermanentLegalLocal" />
+      <xs:enumeration value="BusinessLocal" />
+      <xs:enumeration value="Home" />
+      <xs:enumeration value="HomeLocal" />
+      <xs:enumeration value="CustomerFacing" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:complexType name="PhoneNumberBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PhoneNumberBase" nillable="true" type="tns:PhoneNumberBase" />
+  <xs:complexType name="PhoneNumber_V03">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PhoneNumberBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryPrefix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Extention" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneType" type="tns:PhoneType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PhoneNumber_V03" nillable="true" type="tns:PhoneNumber_V03" />
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Day" />
+      <xs:enumeration value="Evening" />
+      <xs:enumeration value="Fax" />
+      <xs:enumeration value="Mobile" />
+      <xs:enumeration value="NotSpecified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PhoneType" nillable="true" type="tns:PhoneType" />
+  <xs:complexType name="TaxIdentificationBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TaxIdentificationBase" nillable="true" type="tns:TaxIdentificationBase" />
+  <xs:complexType name="TaxIdentificationType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EffectiveDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExemptFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxIdentificationType" nillable="true" type="tns:TaxIdentificationType" />
+  <xs:complexType name="ArrayOfEmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailAddress" nillable="true" type="tns:ArrayOfEmailAddress" />
+  <xs:complexType name="EmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+  <xs:complexType name="ArrayOfPhoneNumber_V03">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PhoneNumber_V03" nillable="true" type="tns:PhoneNumber_V03" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhoneNumber_V03" nillable="true" type="tns:ArrayOfPhoneNumber_V03" />
+  <xs:complexType name="TaxIdentification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IDType" nillable="true" type="tns:TaxIdentificationType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxIdentification" nillable="true" type="tns:TaxIdentification" />
+</xs:schema>

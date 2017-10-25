@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Ekki er unnt að bæta greiðslu á árlegu vinnslugjaldi í innkaupakörfuna.</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Ekki er unnt að fjarlægja greiðslu á árlegu vinnslugjaldi úr innkaupakörfunni.</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Ert þú viss um að þú viljir hætta við þessa pöntun? Ef þú smellir á „í lagi“ verða allar vörur fjarlægðar úr innkaupakörfunni.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Ekki er unnt að bæta vörum í biðpöntun við pöntun til að greiða árlegt vinnslugjald.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Ekki tókst að fá heimild fyrir greiðslu með korti. Vinsamlegast athugaðu kortaupplýsingarnar.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Formið er ekki rétt. Vinsamlegast gefðu upplýsingar á réttu formi.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Þú hefur gefið upp sama vörunúmerið tvisvar. Vinsamlegast reyndu aftur.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Miðafjöldi er takmarkaður við {0} í hverri pöntun.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Ekki er heimilt að panta miða á viðburði á þessari síðu.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Vörunúmer {0}: Fjöldi sem til er á lager er {1} stk. Vinsamlegast breyttu fjöldanum sem þú óskar eftir svo þú getir bætt vörunni í innkaupakörfuna.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Af vörunúmeri {0} er unnt að setja 1 eða fleiri stk. í biðpöntun.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Fjöldinn má ekki vera meiri en {1} stk. af vörunúmeri {0}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Því miður er ekkert kort skráð á þig hjá okkur. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Ógilt póstnúmer</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Í augnablikinu er {0} ekki til á lager og því var fjöldanum breytt í 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Að hámarki er heimilt að panta 3 Today tímarit í hverri pöntun.</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Hámarksfjöldi tímarita sem bæta má í körfuna er {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Þetta nafn er þegar í notkun. Vinsamlegast veldu annað nafn.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Netpöntun er ekki í boði núna.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Netpöntun er ekki heimil.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Einungis er heimilt að bæta vörum við pöntun til að greiða árlegt vinnslugjald.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Greidd upphæð stemmir ekki við heildarupphæðina fyrir þessa pöntun.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Vinsamlegast sláðu inn upphæð sem er hærri en 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Vinsamlegast athugaðu kortaupplýsingarnar.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Vinsamlegast athugaðu dreifingaraðilanúmer og PIN-númer og reyndu aftur. Ef vandamálin leysast ekki skaltu hafa samband við þjónustudeildina fyrir dreifingaraðila í síma 800 9896.</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Vinsamlegast gakktu frá pöntun um að greiða árlegt vinnslugjald áður en þú bætir öðrum vörum í körfuna.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Vinsamlegast gakktu frá greiðslu á árlegu vinnslugjaldi áður en þú pantar miða á viðburði.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp númer.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp fjölda fyrir vörunúmer {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt nafn.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gildan móttakanda.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp tölvupóstfang.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp greiðsluupplýsingar.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp öryggisnúmer korts.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp fjöldann af greiðslum á árlegu vinnslugjaldi sem þú vilt ganga frá.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp tölvupóstfang.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt skírnarnafn.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt eftirnafn.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt millinafn.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp nauðsynlegar sendingarupplýsingar.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp svæðisnúmer á réttu formi.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp nafn móttakanda.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp svæðisnúmer.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp skírnarnafn.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp eftirnafn.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Vinsamlegast fylltu út alla nauðsynlega reiti.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp símanúmer.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Vinsamlegast fylltu út reitinn fyrir götuheimilisfang.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp póstnúmer.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp símanúmer á réttu formi.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Vinsamlegast athugaðu að þú getur einungis vistað {0} kort í einu. Vinsamlegast eyddu korti sem fyrir er ef þú vilt gefa upp nýtt kort.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Athugaðu: Internet Explorer eða Firefox gagnast best til að skoða þessa síðu.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Vinsamlegast veldu tegund pöntunar.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Nafn sækjanda vantar</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Símanúmer sækjanda vantar</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Vinsamlegast veldu Já/Nei.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Ekki er unnt að eyða aðalheimilisfangi. Vinsamlegast gerðu annað heimilisfang að aðalheimilisfangi og reyndu aftur.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Ganga frá kaupum</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Fara á heimasíðu</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Sending á þetta póstnúmer er ekki heimil. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Vörunúmer {0} er ekki fáanlegt.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Kerfisbilun</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Pöntunarmánuður hefur breyst.)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Vörunúmer {0} verður sett í biðpöntun.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Sveitarfélag er ógilt.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Viðskiptin voru ekki heimiluð. Vinsamlegast reyndu að staðfesta þau aftur. Ef vart verður við sama vandamál á ný skaltu hafa samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Viðskiptin voru ekki heimiluð. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Póstnúmer er ógilt.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Engar vörur eru til greiðslu í þessari pöntun.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Í augnablikinu er ekki nógu mikill fjöldi á lager af vörunúmeri {0}. Fjöldi í boði: {1} stk.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Þú hefur ekki valið neinar vörur til að bæta í körfuna.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Engar vörur hafa verið valdar til að reikna út viðskiptapunkta.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Þetta heimilisfang finnst nú þegar í gagnagrunninum.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Þessi viðskipti voru ekki heimiluð með þessu korti.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today tímaritinu hefur verið bætt í körfuna.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Ekki var unnt að ganga frá pöntuninni. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Ekki var unnt að ganga frá pöntuninni. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Afgreiðsla pöntunarinnar tókst því miður ekki. Vinsamlegast athugaðu afhendingarheimilisfangið og reyndu aftur. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila ef vart verður við vandamálið á ný.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Okkur þykir það leitt en við gátum ekki skipt gjaldmiðlinum. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila í síma 800 9896.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Þú ert þegar með miða á viðburð í körfunni. Vilt þú tæma körfuna?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Þú ert að reyna að eyða aðalkortinu þínu. Vinsamlegast veldu annað kort sem aðalkort svo þú getir eytt þessu.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Þú getur ekki lengur notað þetta kort vegna þess hve oft því hefur verið hafnað.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Þú getur ekki gefið upp sama kortið aftur.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Þú getur ekki bætt þessari vöru í innkaupakörfuna.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Þú getur ekki komist á staðfestingasíðuna meðan innkaupakarfan er tóm</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Þú hefur breytt pöntunarmánuði fyrir þessa pöntun í {mánuður}. Vilt þú halda þig við þetta val og halda áfram?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Þú ert þegar með miða á viðburð í innkaupakörfunni þinni. Vilt þú tæma körfuna?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Þú ert þegar með vörur í innkaupakörfunni þinni. Vilt þú fjarlægja þær til að geta gengið frá miðakaupum á viðburð?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Þú hefur valið {0} sem pöntunarmánuð, er það rétt?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Þú hefur valið að skoða vörulistann án þess að panta og gefst því ekki kostur á að bæta neinu í innkaupakörfuna.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Þú hefur bætt HFF í körfuna.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Þú getur einungis greitt árlegt vinnslugjald fyrirfram.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Þú verður að velja hvernig þú vilt fá vöruna senda áður en þú heldur áfram.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Þú lagðir nýlega inn eins pöntun þann {0}. Ef þetta er sama pöntunin skaltu smella á „hætta við“. Ef þú vilt halda áfram með þessa pöntun skaltu staðfesta það.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Árlegt vinnslugjald þitt er á gjalddaga {0}.</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Árlegt vinnslugjald þitt er gjaldfallið. Greiðslu á því hefur verið bætt í innkaupakörfuna þína.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Fleiri en eitt árlegt vinnslugjald er gjaldfallið. Greiðslu á þeim hefur verið bætt í innkaupakörfuna þína.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Kortið þitt er útrunnið. Vinsamlegast smelltu á „breyta“ og uppfærðu kortaupplýsingarnar.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Kortið þitt er að renna út. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Pantanir eru ekki heimilar á dreifingaraðilanúmeri þínu. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila í síma 800 9896.</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Pantanir eru ekki heimilar á dreifingaraðilanúmeri þínu. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila í síma 800 9896.</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Fyrri pöntun þín hafði þegar verið staðfest/send áður en þú gerðir breytingar á innkaupakörfunni. Pöntunarnúmer þitt er {0}. Þú getur athugað hvernig gengur að afgreiða pöntunina með því að fara inn á Pantanirnar Mínar eða hringja í 800 9896.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Gjaldfallnar greiðslur á árlegu vinnslugjaldi hafa verið settar í innkaupakörfuna.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Sendingarupplýsingar þínar eru ekki lengur gildar. Karfan verður tæmd.</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Vörunúmer {0} er ógilt.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Vinsamlegast veldu tegund af pöntun úr litlu körfunni.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value></value>
+  </data>
+</root>

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.Rules</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.Rules</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA4C|AnyCPU'">
+    <OutputPath>bin\QA4C\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HL.MyHerbalifeRules.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'China|AnyCPU'">
+    <OutputPath>bin\China\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HL.Blocks.Caching, Version=1.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Caching.1.1.14.0\lib\HL.Blocks.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.CircuitBreaker, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.CircuitBreaker.1.1.1.0\lib\HL.Blocks.CircuitBreaker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Localization, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Localization.1.1.1.0\lib\HL.Blocks.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Api, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Api.1.1.1.0\lib\HL.Common.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Utilities, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Utilities.1.1.1.0\lib\HL.Common.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AdminProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AdminProvider.1.2.3.0\lib\MyHerbalife3.Core.AdminProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.DistributorProvider, Version=1.2.36.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.DistributorProvider.1.2.36.0\lib\MyHerbalife3.Core.DistributorProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Infrastructure, Version=1.2.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Infrastructure.1.2.30.0\lib\MyHerbalife3.Shared.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Interfaces, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Interfaces.1.2.1.0\lib\MyHerbalife3.Shared.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.605.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.1.1.605\lib\net46\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Core.1.4.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Newtonsoft, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Newtonsoft.1.4.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APF\en-IN\APFRules.cs" />
+    <Compile Include="APF\Global\APFRules.cs" />
+    <Compile Include="APF\hu-HU\APFRules.cs" />
+    <Compile Include="APF\it-IT\APFRules.cs" />
+    <Compile Include="APF\tr-TR\APFRules.cs" />
+    <Compile Include="APF\pt-PT\APFRules.cs" />
+    <Compile Include="APF\zh-CN\APFRules.cs" />
+    <Compile Include="CardRegistry\Global\CardRegistryRules.cs" />
+    <Compile Include="CardRegistry\KR\CardRegistryRules.cs" />
+    <Compile Include="CartIntegrity\el-GR\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\en-IE\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\en-US\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\en-US\CartIntegrityRulesForExtravaganza.cs" />
+    <Compile Include="CartIntegrity\en-US\CartIntegrityRulesPresSummit.cs" />
+    <Compile Include="CartIntegrity\es-CO\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\es-ES\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\es-PA\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\Global\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\hu-HU\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\MY\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\MX\CartIntegrityRulesHonors2016.cs" />
+    <Compile Include="CartIntegrity\NonWebClient\CartIntegrityRules.cs" />
+    <Compile Include="CartIntegrity\zh-TW\CartIntegrityRules.cs" />
+    <Compile Include="CartManagement\es-AR\CartManagementRules.cs" />
+    <Compile Include="Discount\el-GR\DiscountRules.cs" />
+    <Compile Include="Discount\es-VE\DiscountRules.cs" />
+    <Compile Include="Discount\pt-BR\DiscountRules.cs" />
+    <Compile Include="Discount\zh-CN\DiscountRules.cs" />
+    <Compile Include="EventTickets\en-AU\EventTicketRules.cs" />
+    <Compile Include="EventTickets\Global\EventTicketRules.cs" />
+    <Compile Include="EventTickets\zh-CN\EventTicketRule.cs" />
+    <Compile Include="EventTickets\zh-CN\EventTicketRules.cs" />
+    <Compile Include="HAP\Global\HAPRules.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="HFF\SamCam\HFFRules.cs" />
+    <Compile Include="Inventory\fr-FR\InventoryRules.cs" />
+    <Compile Include="Inventory\Global\InventoryRules.cs" />
+    <Compile Include="Inventory\iKiosk_Global\InventoryRules.cs" />
+    <Compile Include="Inventory\InventoryHelper.cs" />
+    <Compile Include="Inventory\it-IT\InventoryRules.cs" />
+    <Compile Include="Inventory\pt-BR\InventoryRules.cs" />
+    <Compile Include="Inventory\zh-CN\InventoryRules.cs" />
+    <Compile Include="OrderManagement\it-IT\OrderManagementRules.cs" />
+    <Compile Include="OrderManagement\th-TH\OrderManagementRules.cs" />
+    <Compile Include="Promotional\en-MY\PromotionalRules.cs" />
+    <Compile Include="Promotional\en-SG\PromotionalRules.cs" />
+    <Compile Include="Promotional\id-ID\PromotionalRules.cs" />
+    <Compile Include="Promotional\id-ID\PromotionalRulesNiteworks.cs" />
+    <Compile Include="Promotional\it-IT\PromotionalRules.cs" />
+    <Compile Include="Promotional\it-IT\PromotionalRulesAloe.cs" />
+    <Compile Include="Promotional\it-IT\PromotionalRulesBag.cs" />
+    <Compile Include="Promotional\it-IT\PromotionalRulesForDS.cs" />
+    <Compile Include="Promotional\pt-BR\PromotionalRules.cs" />
+    <Compile Include="Promotional\ru-RU\PromotionalRules.cs" />
+    <Compile Include="Promotional\tr-TR\PromotionalRules.cs" />
+    <Compile Include="Promotional\zh-CN\PromotionalRules.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingLimits\AR\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\BY\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\CZ\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\fr-BE\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\FR\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\GB\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\GR\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\hr-BA\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\hr-HR\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\HR\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\ID\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\IT\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\JP\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\nl-BE\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\PF\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\PurchaseRestrictionRuleBase.cs" />
+    <Compile Include="PurchasingLimits\mn-MN\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\el-GR\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\en-IN\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\en-MY\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\en-PH\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\en-SG\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-AR\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-CO\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-PE\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-PY\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-UY\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\es-VE\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\fr-FR\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\fr-PF\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\Global\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\Global\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\hu-HU\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\it-IT\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\mk-MK\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\pl-PL\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\ro-RO\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\ru-BY\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\ru-KZ\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\ru-RU\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\si-SI\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\SK\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\sr-RS\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\th-TH\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\uk-UA\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\VE\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\vi-VN\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\vi-VN\PurchasingLimitRules_eLearning.cs" />
+    <Compile Include="PurchasingLimits\VN\PurchaseRestrictionRules.cs" />
+    <Compile Include="PurchasingLimits\zh-CN\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingLimits\zh-HK\PurchasingLimitRules.cs" />
+    <Compile Include="PurchasingPermissions\en-SG\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-AR\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-CL\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-CO\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-EC\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-PE\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\es-VE\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\fr-BE\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\fr-PF\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\hr-BA\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\hr-HR\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\id-ID\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\ko-KR\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\mn-MN\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\nl-BE\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\pt-BR\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\pt-PT\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\ro-RO\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\ru-BY\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\ru-KZ\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\th-TH\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\vi-VN\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\zh-HK\PurchasingPermissionRules.cs" />
+    <Compile Include="PurchasingPermissions\zh-MO\PurchasingPermissionRules.cs" />
+    <Compile Include="SavedCartManagement\cs-CZ\SavedCartManagementRules.cs" />
+    <Compile Include="SavedCartManagement\es-CO\SavedCartManagementRules.cs" />
+    <Compile Include="SavedCartManagement\Global\SavedCartManagementRules.cs" />
+    <Compile Include="SavedCartManagement\it-IT\SavedCartManagementRules.cs" />
+    <Compile Include="SavedCartManagement\ko-KR\SavedCartManagementRules.cs" />
+    <Compile Include="SavedCartManagement\sk-SK\SavedCartManagementRules.cs" />
+    <Compile Include="SKULimitations\en-GB\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\en-IE\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\en-SG\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\pt-BR\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\RecentOrdersHelper.cs" />
+    <Compile Include="SKULimitations\US\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\es-AR\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\es-CL\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\Global\SkuLimitationRules.cs" />
+    <Compile Include="SKULimitations\hr-HR\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\it-IT\SKULimitationRules.cs" />
+    <Compile Include="SKULimitations\SamCam\SKULimitationsRules.cs" />
+    <Compile Include="Taxation\en-GB\TaxationRules.cs" />
+    <Compile Include="Taxation\es-AR\TaxationRules.cs" />
+    <Compile Include="Taxation\es-CL\TaxationRules.cs" />
+    <Compile Include="Taxation\es-CO\TaxationRules.cs" />
+    <Compile Include="Taxation\es-PE\TaxationRules.cs" />
+    <Compile Include="Taxation\fr-FR\TaxationRules.cs" />
+    <Compile Include="Taxation\it-IT\TaxationRules.cs" />
+    <Compile Include="Taxation\hr-HR\TaxationRules.cs" />
+    <Compile Include="TodaysMagazine\uk-UA\TodaysMagazineRules.cs" />
+    <Compile Include="ValidateDistributor\Global\ValidateDistributorRules.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Configuration\MyHerbalife3.Ordering.Configuration.csproj">
+      <Project>{f8f5f25b-ed7a-4d1e-b4ce-f6b6d98a7fce}</Project>
+      <Name>MyHerbalife3.Ordering.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Providers\MyHerbalife3.Ordering.Providers.csproj">
+      <Project>{b8d594dc-ce64-44e3-94ee-38031596dc81}</Project>
+      <Name>MyHerbalife3.Ordering.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj">
+      <Project>{deca9051-4215-473e-8a99-2227fa819528}</Project>
+      <Name>MyHerbalife3.Ordering.ServiceProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.SharedProviders\MyHerbalife3.Ordering.SharedProviders.csproj">
+      <Project>{8a4f64c5-0c64-4a43-ab41-91b83c5cee38}</Project>
+      <Name>MyHerbalife3.Ordering.SharedProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ViewModel\MyHerbalife3.Ordering.ViewModel.csproj">
+      <Project>{c379451e-81ae-48df-8bd1-e583abd494f6}</Project>
+      <Name>MyHerbalife3.Ordering.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

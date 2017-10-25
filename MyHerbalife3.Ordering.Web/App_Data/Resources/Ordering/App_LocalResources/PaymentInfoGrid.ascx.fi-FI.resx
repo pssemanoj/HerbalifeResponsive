@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Amount.HeaderText" xml:space="preserve">
+    <value>Summa*</value>
+    <comment>_G77</comment>
+  </data>
+  <data name="CardType_AL_Code" xml:space="preserve">
+    <value>AL</value>
+    <comment>_G75</comment>
+  </data>
+  <data name="CardType_AL_Description" xml:space="preserve">
+    <value>Aplus</value>
+    <comment>_G78</comment>
+  </data>
+  <data name="CardType_AX_Code" xml:space="preserve">
+    <value>AX</value>
+    <comment>_G81</comment>
+  </data>
+  <data name="CardType_AX_Description" xml:space="preserve">
+    <value>Amex</value>
+    <comment>_G76</comment>
+  </data>
+  <data name="CardType_JC_Code" xml:space="preserve">
+    <value>JC</value>
+    <comment>_G93</comment>
+  </data>
+  <data name="CardType_JC_Description" xml:space="preserve">
+    <value>JCB</value>
+    <comment>_G94</comment>
+  </data>
+  <data name="CardType_MC_Code" xml:space="preserve">
+    <value>MC</value>
+    <comment>_G97</comment>
+  </data>
+  <data name="CardType_MC_Description" xml:space="preserve">
+    <value>MasterCard</value>
+    <comment>_G96</comment>
+  </data>
+  <data name="CardType_QH_Code" xml:space="preserve">
+    <value>QH</value>
+    <comment>_G104</comment>
+  </data>
+  <data name="CardType_QH_Description" xml:space="preserve">
+    <value>Mykey</value>
+    <comment>_G98</comment>
+  </data>
+  <data name="CardType_VI_Code" xml:space="preserve">
+    <value>VI</value>
+    <comment>_G115</comment>
+  </data>
+  <data name="CardType_VI_Description" xml:space="preserve">
+    <value>Visa</value>
+    <comment>_G116</comment>
+  </data>
+  <data name="hdrCardHolder.HeaderText" xml:space="preserve">
+    <value>Kortinhaltija</value>
+    <comment>_G84</comment>
+  </data>
+  <data name="hdrCardNumber.HeaderText" xml:space="preserve">
+    <value>Kortin numero</value>
+    <comment>_G85</comment>
+  </data>
+  <data name="hdrCardType.HeaderText" xml:space="preserve">
+    <value>Korttityyppi</value>
+    <comment>_G86</comment>
+  </data>
+  <data name="hdrExpiration.HeaderText" xml:space="preserve">
+    <value>Voimassaolo päättyy</value>
+    <comment>_G89</comment>
+  </data>
+  <data name="hdrIssueNumber.HeaderText" xml:space="preserve">
+    <value>Myöntämispäivämäärä</value>
+    <comment>_G92</comment>
+  </data>
+  <data name="hdrPayOptions.HeaderText" xml:space="preserve">
+    <value>Maksuvaihtoehdot</value>
+    <comment>_G102</comment>
+  </data>
+  <data name="lbBonus1.Text" xml:space="preserve">
+    <value>Bonus 1</value>
+    <comment>_G82</comment>
+  </data>
+  <data name="lbBonus2.Text" xml:space="preserve">
+    <value>Bonus 2</value>
+    <comment>_G83</comment>
+  </data>
+  <data name="lbInstallments.Text" xml:space="preserve">
+    <value>Maksuerät</value>
+    <comment>_G91</comment>
+  </data>
+  <data name="lbLumpSum.Text" xml:space="preserve">
+    <value>Kiinteä kokonaissumma</value>
+    <comment>_G95</comment>
+  </data>
+  <data name="lblWireAmountDue.Text" xml:space="preserve">
+    <value>Summa pankkisiirrolle:</value>
+    <comment>_G117</comment>
+  </data>
+  <data name="lblWireMessage.Text" xml:space="preserve">
+    <value>Maksa tämä summa kolmen arkipäivän kuluessa...</value>
+    <comment>_G103</comment>
+  </data>
+  <data name="lbPayOptions.Text" xml:space="preserve">
+    <value>Maksuvaihtoehdot</value>
+    <comment>_G100</comment>
+  </data>
+  <data name="lbRevolving.Text" xml:space="preserve">
+    <value>Jatkuva</value>
+    <comment>_G106</comment>
+  </data>
+  <data name="lbSelectMonth.Text" xml:space="preserve">
+    <value>Valitse kuukausi</value>
+    <comment>_G107</comment>
+  </data>
+  <data name="lbSelectMonth1.Text" xml:space="preserve">
+    <value>Valitse kuukausi 1:</value>
+    <comment>_G108</comment>
+  </data>
+  <data name="lbSelectMonth2.Text" xml:space="preserve">
+    <value>Valitse kuukausi 2:</value>
+    <comment>_G109</comment>
+  </data>
+  <data name="lnkAdd.Text" xml:space="preserve">
+    <value>Lisää</value>
+    <comment>_G74</comment>
+  </data>
+  <data name="lnkEdit.Text" xml:space="preserve">
+    <value>Muokkaa</value>
+    <comment>_G88</comment>
+  </data>
+  <data name="lnkRemove.Text" xml:space="preserve">
+    <value>Poista</value>
+    <comment>_G105</comment>
+  </data>
+  <data name="rbCredit.Text" xml:space="preserve">
+    <value>Maksa luottokortilla</value>
+    <comment>_G101</comment>
+  </data>
+  <data name="rbWire.Text" xml:space="preserve">
+    <value>Maksa pankkisiirrolla</value>
+    <comment>_G99</comment>
+  </data>
+  <data name="strExpires" xml:space="preserve">
+    <value>VOIMASSAOLO PÄÄTTYY!</value>
+    <comment>_G90</comment>
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>CVV*</value>
+    <comment>_G87</comment>
+  </data>
+  <data name="ValidateAddCard" xml:space="preserve">
+    <value>Oletko varma, että haluat lisätä tämän kortin?</value>
+    <comment>_G79</comment>
+  </data>
+  <data name="ValidateAddCardBadCard" xml:space="preserve">
+    <value>Tämän kortin numero on virheellinen.</value>
+    <comment>_G111</comment>
+  </data>
+  <data name="ValidateAddCardExpired" xml:space="preserve">
+    <value>Kortin voimassaolo on päättynyt.</value>
+    <comment>_G110</comment>
+  </data>
+  <data name="ValidateAddCardMissingCard" xml:space="preserve">
+    <value>Kortin numero on pakollinen.</value>
+    <comment>_G112</comment>
+  </data>
+  <data name="ValidateAddCardMissingExpDate" xml:space="preserve">
+    <value>Voimassaoloaika on pakollinen.</value>
+    <comment>_G114</comment>
+  </data>
+  <data name="ValidateAddCardMissingName" xml:space="preserve">
+    <value>Kortinhaltijan nimi on pakollinen.</value>
+    <comment>_G113</comment>
+  </data>
+  <data name="ValidateRemoveCard" xml:space="preserve">
+    <value>Oletko varma, että haluat poistaa tämän kortin?</value>
+    <comment>_G80</comment>
+  </data>
+</root>

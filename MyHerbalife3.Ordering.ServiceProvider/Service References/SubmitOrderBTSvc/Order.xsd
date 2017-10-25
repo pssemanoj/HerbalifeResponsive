@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.order" xmlns:ns2="http://bt.orderingsystem.hrbl.v01.payment" xmlns:ns8="http://bt.orderingsystem.hrbl.v01.emailInfo" xmlns:ns6="http://bt.orderingsystem.hrbl.v01.pricing" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns3="http://bt.orderingsystem.hrbl.v01.handling" xmlns:ns9="http://bt.orderingsystem.hrbl.v01.package" xmlns:ns0="http://bt.orderingsystem.hrbl.v01.item" xmlns:ns7="http://BT.HL.Schemas.Order" xmlns:ns5="http://bt.orderingsystem.hrbl.v01.message" xmlns:ns4="http://bt.orderingsystem.hrbl.v01.orderproperty" xmlns:ns1="http://bt.orderingsystem.hrbl.v01.shipment" elementFormDefault="qualified" targetNamespace="http://bt.orderingsystem.hrbl.v01.order" id="Order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd3" namespace="http://bt.orderingsystem.hrbl.v01.shipment" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd4" namespace="http://bt.orderingsystem.hrbl.v01.pricing" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd5" namespace="http://BT.HL.Schemas.Order" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd6" namespace="http://bt.orderingsystem.hrbl.v01.handling" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd7" namespace="http://bt.orderingsystem.hrbl.v01.payment" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd8" namespace="http://bt.orderingsystem.hrbl.v01.emailInfo" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd9" namespace="http://bt.orderingsystem.hrbl.v01.message" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd10" namespace="http://bt.orderingsystem.hrbl.v01.package" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd11" namespace="http://bt.orderingsystem.hrbl.v01.item" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.message" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.shipment" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.address" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.handling" />
+        <b:reference targetNamespace="http://BT.HL.Schemas.Order" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.item" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.emailInfo" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.pricing" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.payment" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.package" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Order">
+    <xs:annotation>
+      <xs:appinfo />
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ReferenceID" type="xs:string" />
+        <xs:element name="WebClientAuthenticationKey" type="xs:string" />
+        <xs:element name="InputMethod" type="xs:string" />
+        <xs:element name="OrderCategory" type="xs:string" />
+        <xs:element name="OrderID" type="xs:string" />
+        <xs:element name="ReceivedDate" type="xs:dateTime" />
+        <xs:element name="OrderMonth" type="xs:string" />
+        <xs:element name="CountryOfProcessing" type="xs:string" />
+        <xs:element name="DiscountPercentage" type="xs:decimal" />
+        <xs:element name="DistributorID" type="xs:string" />
+        <xs:element name="CustomerID" type="xs:string" />
+        <xs:element name="QualifyingSupervisorID" type="xs:string" />
+        <xs:element name="OrderItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns0:Item" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="ns6:Pricing" />
+        <xs:element ref="ns1:Shipment" />
+        <xs:element ref="ns3:Handling" />
+        <xs:element name="Payments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns2:Payment" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Messages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns5:Message" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" default="0" name="IsResubmitted" nillable="true" type="xs:string" />
+        <xs:element name="ContributorClass" nillable="true" type="xs:string" />
+        <xs:element name="DiscountType" nillable="true" type="xs:string" />
+        <xs:element name="OrderSubType" nillable="true" type="xs:string" />
+        <xs:element name="SMSNumber" nillable="true" type="xs:string" />
+        <xs:element name="SMSTrigger" nillable="true" type="xs:string" />
+        <xs:element name="Platform" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="MYHL" />
+              <xs:enumeration value="DWS" />
+              <xs:enumeration value="IKIOSK" />
+              <xs:enumeration value="MOBILE" />
+              <xs:enumeration value="BIZWORKS" />
+              <xs:enumeration value="OLC" />
+              <xs:enumeration value="MYHLMOBILE" />
+              <xs:enumeration value="PCAD" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs="0" ref="ns7:Customer" />
+        <xs:element name="PaymentClient" nillable="true" type="xs:string" />
+        <xs:element name="Locale" nillable="true" type="xs:string" />
+        <xs:element name="Email" nillable="true" type="xs:string" />
+        <xs:element name="DSLevel" nillable="true" type="xs:string" />
+        <xs:element name="ProcessingLocation" nillable="true" type="xs:string" />
+        <xs:element name="EnableDeferredProcessing" type="xs:string" />
+        <xs:element name="ServerName" type="xs:string" />
+        <xs:element name="SendEmail" type="xs:string" />
+        <xs:element minOccurs="0" ref="ns8:EmailInfo" />
+        <xs:element name="PaymentStatus" type="xs:string" />
+        <xs:element name="PricingServerName" type="xs:string" />
+        <xs:element name="AgreedDuplicate" type="xs:string" />
+        <xs:element name="CantBuy" type="xs:string" />
+        <xs:element name="HardCashOnly" type="xs:string" />
+        <xs:element name="DSStatus" type="xs:string" />
+        <xs:element name="Comments" type="xs:string" />
+        <xs:element name="PackageInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns9:Package" />
+              <xs:element name="ChargeableWeight" type="xs:string" />
+              <xs:element name="PackageAmount" type="xs:string" />
+              <xs:element name="TotalVolume" type="xs:string" />
+              <xs:element name="ProductWeight" type="xs:string" />
+              <xs:element name="PackageWeight" type="xs:string" />
+              <xs:element name="ActualWeight" type="xs:string" />
+              <xs:element name="VolumeWeight" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PaymentType" type="xs:string" />
+        <xs:element name="PayNearMeId" type="xs:string" />
+        <xs:element name="PayNearMeTrackingUrl" type="xs:string" />
+        <xs:element name="PayNearMePdfUrl" type="xs:string" />
+        <xs:element name="PayNearMeSlipPdfUrl" type="xs:string" />
+        <xs:element name="PayNearMeCardSlipPdfUrl" type="xs:string" />
+        <xs:element name="SourceResponsive" type="xs:string" />
+        <xs:element name="ApplicationDate" type="xs:string" />
+        <xs:element name="SponsorId" type="xs:string" />
+        <xs:element name="SessionId" type="xs:string" />
+        <xs:element name="TransactionId" type="xs:string" />
+        <xs:element name="FraudStatus" type="xs:string" />
+        <xs:element name="Website" type="xs:string" />
+        <xs:element name="IsHap" type="xs:string" />
+        <xs:element name="HapSchedule" type="xs:string" />
+        <xs:element name="HapScheduleCode" type="xs:string" />
+        <xs:element name="HapType" type="xs:string" />
+        <xs:element name="HapTypeCode" type="xs:string" />
+        <xs:element name="HapExpiryDate" type="xs:string" />
+        <xs:element name="HapAction" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

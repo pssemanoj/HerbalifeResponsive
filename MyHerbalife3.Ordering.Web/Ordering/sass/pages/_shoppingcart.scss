@@ -1,0 +1,108 @@
+.checkout-shipmethod {
+    width: 270px;
+	overflow: hidden;
+	margin-right: 0px;
+	float: left;
+	
+	table span {
+	    word-wrap: break-word;
+	    margin-right: 5px;
+    }
+  
+    .name_labels span {
+	    color: #999999;
+	    font-style: italic;
+	    text-transform: capitalize;
+    }
+}
+
+span[id$='lbCourierName'], 
+span[id$='lbCourierName'] {
+	width: 120px;
+}
+
+span[id$='lbDisplayCourierNameStatic'], 
+span[id$='lbDisplayCourierNameStatic'] {
+	width: 130px;
+}
+
+.checkout-email {
+    @include MarginPadding( 0 0 30px , null ); // === Defect 119349 === //
+	min-height: 150px;
+	font-size:100%;                   // Fix per defect 86936 - Before font-size: 11px; // 
+	padding-bottom: 20px;
+	padding-left: 12px;
+	padding-right: 12px;
+    // updated per defect 43428 //
+    min-width: 200px;
+    // updated per defect 44810 //
+	max-width: 240px;
+	float: left;
+}
+
+.checkout-ship-pick-options {
+    @include MarginPadding( null, 0 0 10px );
+	width: 185px;
+	float: left;
+	margin-right: 20px;	
+}
+
+#checkout-stepone {
+    @include MarginPadding( null, 5px );
+	width: 750px;
+}
+
+#ctl00_ctl00_ContentArea_ProductsContent_ctl00_ddlShippingMethod {
+	width: 225px;
+}
+
+.gdo-loading-message {
+	font-size: 18px;
+	color: #555555;
+	margin-bottom: 145px;
+}
+
+.gdo-loading-message-img {
+    @include MarginPadding( null, 55px 0 30px 0 );
+}
+
+#ctl00_ctl00_ContentArea_ctl03_pnlOrderMonth select,
+ option {
+	font-size: 11px;
+	margin-right: 0px;
+}
+
+#silverbutton .gdo-button-margin-lt bttn-addnewcc {
+	width: 205px;
+}
+
+#ctl00_ctl00_ContentArea_uchrblMessageBoxControl_pnlMessageBox {
+    @include MarginPadding( null, 10px 13px );
+	width: 450px;
+}
+
+#ctl00_ctl00_ContentArea_ctl04_ucShippingInfoControl_ctl02_ctl01_txtPostCode{
+	width: 120px;
+}
+
+input[id$="txtMobileAreaCode"]{ width: 20%; }
+input[id$="txtMobileNumber"]{ width: 50%; }
+
+/*******************GDO Saved Car Header************************/
+.headersavedcart {
+    @include MarginPadding( 0 0 5px 0px, null );
+	color: #5881E5;
+	font-size: 18px;
+	font-weight: bold; // text-align: center; //
+
+    span {
+        @include MarginPadding( 6px 0, null );
+	    display: block;
+    }
+}
+
+/*******************Shopping Cart************************/
+.gdo-no-border, .gdo-catalog .gdo-no-border {
+	background: none repeat scroll 0 0 transparent;
+	border: medium none;
+}

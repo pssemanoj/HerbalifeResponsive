@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Продукт с номером серии:{0} не был добавлен в корзину так как он недоступен для заказа</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Продукт с номером серии:{0} не был добавлен в корзину. Чтобы добавить товар, пожалуйста, измените подтип заказа на A1 или B1.</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Необходимо добавить товары в корзину перед тем как добавлять номер серии {0}.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Количество товара с номером серии {1} не должно превышать {0}.</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Номер серии {0} недоступен для Экспресс-доставки. Пожалуйста используйте Доставку почтой для данной позиции.</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Номера серии 0343, 0344, 2329 или 2328 недоступны для Экспресс доставки</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Невозможно заказать продукт {0}.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно увеличить на {1} так как это превысит лимит вознаграждений.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно увеличить на {1} так как это превысит лимит очков для заказов.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Позиция SKU: {0} не была добавлена в корзину так как, добавив данную позицию в корзину, вы превысите допустимый объем очков</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>SKU :{0} не было добавлено в корзину, т.к. добавлением данного SKU Вы превысите Ваш лимит</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Невозможно приобрести</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно добавить в корзину, так как это превысит лимит очков для заказов.</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Общий объем превышает Ваш общий объем {0}</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Позиция SKU: {0} не была добавлена в корзину так как, добавив данную позицию в корзину, Вы превысите Ваш лимит</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно увеличить на {1} так как это превысит лимит .</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Личное применение</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Перепродажа</value>
+  </data>
+</root>

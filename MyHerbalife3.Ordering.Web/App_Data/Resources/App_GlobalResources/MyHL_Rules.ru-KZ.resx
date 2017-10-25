@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>продукт под номером:{0} не добавлен в корзину потому что добавляя его вы превышаете лимит дохода.</value>
+      <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>SKU номер:{0} не добавлен в корзину потомучто добавляя его вы превышаете лимит объемных очков.</value>
+      <comment>_G1723</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно увеличить на {1} так как это превысит лимит очков для заказов.</value>
+      <comment>_G1721</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Количество товара с номером серии {0} невозможно увеличить на {1} так как это превысит лимит вознаграждений.</value>
+      <comment>_G1720</comment></data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Общее кол-во превышает Ваше персональное кол-во, составляющее {0}.</value>
+      <comment>_G1724</comment></data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Личное употребление</value>
+      <comment>_G1727</comment></data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Кол-во SKU :{0} не может быть увеличено на {1} т.к. это приведет к превышению Вашего лимита</value>
+      <comment>_G1726</comment></data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>SKU :{0} не было добавлено в корзину, т.к. джобавлением данного SKU Вы привысите Ваш лимит</value>
+      <comment>_G1725</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Невозможно заказать продукт {0}.</value>
+      <comment>_G1719</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Количество товара с номером серии {1} не должно превышать {0}.</value>
+      <comment>_G1714</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Необходимо добавить товары в корзину перед тем как добавлять номер серии {0}.</value>
+      <comment>_G1713</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Продукт с номером серии:{0} не был добавлен в корзину. Чтобы добавить товар, пожалуйста, измените подтип заказа на A1 или B1.</value>
+      <comment>_G1712</comment></data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Номер серии {0} недоступен для Экспресс-доставки. Пожалуйста используйте Доставку почтой для данной позиции.</value>
+      <comment>_G1715</comment></data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Нельзя приобрести</value>
+      <comment>_G1718</comment></data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Количество SKU не может превышать {0}</value>
+      <comment>_G1717</comment></data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Номера серии 0343, 0344, 2329 или 2328 недоступны для Экспресс доставки</value>
+      <comment>_G1716</comment></data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Перепродажа</value>
+      <comment>_G1728</comment></data>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Продукт с номером серии:{0} не был добавлен в корзину так как он недоступен для заказа.</value>
+      <comment>_G1711</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Данный заказ превышает допустимый объем, набрано очков объема: {0}. Следующие SKU не были добавлены в корзину.</value>
+      <comment>_G2302</comment></data>
+  <data name="PostErrorRemainingPurchasingLimitsVolumeSummary" xml:space="preserve">
+    <value>No value in Base RESX. Leave cell empty.</value>
+      <comment>_G2301</comment></data>
+  <data name="PostErrorRemainingPurchasingLimitsEarningsSummary" xml:space="preserve">
+    <value>No value in Base RESX. Leave cell empty.</value>
+      <comment>_G2300</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>SKU товара:{0}.</value>
+      <comment>_G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>SKU товара:{0}.</value>
+      <comment>_G2711</comment></data>
+  <data name="NoPromoSku" xml:space="preserve">
+    <value>Промо SKU {0} {1} отсутствует в продуктовом каталоге. Невозможно добавить в корзину.</value>
+      <comment>_G2566</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Ваш заказ {0} превышает максимально допустимое количество{1} на каждого Независимого Партнера за календарных {2} дней</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Согласно Плану продаж и маркетинга, новые и существующие Независимые Партнеры, которые еще не достигли статуса Полностью Квалифицированного Супервайзора, могут заказать до {0} Лично Выкупленного Объема (PPV) в первом заказе. Вы можете собрать PPV до {1} Очков (включая первый заказ) в течение последующих {2} дней. Этот заказ превышает допустимое количество PPV и должен быть уменьшен до {3} Очков.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Согласно Плану продаж и маркетинга, новые и существующие Независимые Партнеры, которые еще не достигли статуса Полностью Квалифицированного Супервайзора, могут заказать до {0} Лично Выкупленного Объема (PPV) в первом заказе. Вы можете собрать PPV до {1} Очков (включая первый заказ) в течение последующих {2} дней. Этот заказ превышает допустимое количество PPV и должен быть уменьшен до {3} Очков. Следующий (-ие) SKU не были добавлены в корзину:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Заказ превышает допустимый уровень очков Первой Программы заказа. Необходимо сократить заказ на {0} очков.</value>
+      <comment>_G3558</comment></data>
+  <data name="NoDistributorNotes" xml:space="preserve">
+    <value>Вы не представили этический форму. Пожалуйста, свяжитесь с Департаментом сервисом и продаж для получения дополнительной информации</value>
+      <comment>_G2815</comment></data>
+  <data name="CroatiaNewMemberError" xml:space="preserve">
+    <value>Уважаемый Независимый партнер- пожалуйста, обратите внимание, что вы сможете сделать он-лайн заказ в после 24 часов после введения контракта в систему Herbalife. Спасибо за понимание.</value>
+      <comment>_G3555</comment></data>
+  <data name="ViewMap" xml:space="preserve">
+    <value>Посмотреть карту</value>
+      <comment>_G3506</comment></data>
+  <data name="ExceededSKULimitPerDay" xml:space="preserve">
+    <value>SKU {0} превысило доступное количество. Пожалуйста, попытайтесь завтра.</value>
+      <comment>_G3495</comment></data>
+</root>

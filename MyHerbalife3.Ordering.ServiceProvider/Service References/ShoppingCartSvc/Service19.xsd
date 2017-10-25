@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfShoppingCartRuleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShoppingCartRuleResult" nillable="true" type="tns:ShoppingCartRuleResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShoppingCartRuleResult" nillable="true" type="tns:ArrayOfShoppingCartRuleResult" />
+  <xs:complexType name="ShoppingCartRuleResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApfRuleResponse" nillable="true" type="tns:ApfRuleResponse" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Messages" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="PromotionalRuleResponses" nillable="true" type="tns:ArrayOfPromotionalRuleResponse" />
+      <xs:element minOccurs="0" name="Result" type="tns:RulesResult" />
+      <xs:element minOccurs="0" name="RuleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShoppingCartRuleResult" nillable="true" type="tns:ShoppingCartRuleResult" />
+  <xs:complexType name="ApfRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" type="tns:ApfAction" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:TypeOfApf" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApfRuleResponse" nillable="true" type="tns:ApfRuleResponse" />
+  <xs:simpleType name="ApfAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="DisplayMessage" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ApfAction" nillable="true" type="tns:ApfAction" />
+  <xs:simpleType name="TypeOfApf">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="AllowDSRemoveAPFWhenDue" />
+      <xs:enumeration value="CantDSRemoveAPF" />
+      <xs:enumeration value="StandaloneAPFOnlyAllowed" />
+      <xs:enumeration value="AllowNonProductItemsWithStandaloneAPF" />
+      <xs:enumeration value="CannotAddAPFSku" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TypeOfApf" nillable="true" type="tns:TypeOfApf" />
+  <xs:complexType name="ArrayOfPromotionalRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PromotionalRuleResponse" nillable="true" type="tns:PromotionalRuleResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPromotionalRuleResponse" nillable="true" type="tns:ArrayOfPromotionalRuleResponse" />
+  <xs:complexType name="PromotionalRuleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" type="tns:PromotionAction" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Skus" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Type" type="tns:TypeOfPromotion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PromotionalRuleResponse" nillable="true" type="tns:PromotionalRuleResponse" />
+  <xs:simpleType name="PromotionAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="DisplayMessage" />
+      <xs:enumeration value="ItemAddedToCart" />
+      <xs:enumeration value="OptionalItemAddedToCart" />
+      <xs:enumeration value="SelectItemFromList" />
+      <xs:enumeration value="FreeFreightCharge" />
+      <xs:enumeration value="FreightDiscount" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PromotionAction" nillable="true" type="tns:PromotionAction" />
+  <xs:simpleType name="TypeOfPromotion">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Message" />
+      <xs:enumeration value="FreeItem" />
+      <xs:enumeration value="OptionalItem" />
+      <xs:enumeration value="SelectItem" />
+      <xs:enumeration value="Freight" />
+      <xs:enumeration value="Volume" />
+      <xs:enumeration value="Special" />
+      <xs:enumeration value="Other" />
+      <xs:enumeration value="FirstOrder" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TypeOfPromotion" nillable="true" type="tns:TypeOfPromotion" />
+  <xs:simpleType name="RulesResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="Recalc" />
+      <xs:enumeration value="Feedback" />
+      <xs:enumeration value="Errors" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RulesResult" nillable="true" type="tns:RulesResult" />
+</xs:schema>

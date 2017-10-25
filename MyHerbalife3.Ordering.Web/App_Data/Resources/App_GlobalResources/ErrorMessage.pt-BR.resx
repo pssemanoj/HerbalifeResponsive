@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>O Código da Taxa Anual não pode ser adiconado ao seu cesto de compras.</value>
+  <comment>_G2089</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>O Código da Taxa Anual não pode ser retirado do seu cesto de compras</value>
+  <comment>_G2090</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Tem a certeza que quer cancelar esta encomenda? Carregue "OK" e serão retirados todos os produtos do seu cesto de compras.</value>
+  <comment>_G2091</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Como não tem produtos com a Taxa anual, todos os items serão retirados.</value>
+  <comment>_G2092</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Produtos de Backorder não podem ser adicionados à Taxa anual.</value>
+  <comment>_G2093</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Não foi autorizado o pagamento com cartão. Por favor verifique os dados do seu cartão.</value>
+  <comment>_G2094</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Data errada, por favor introduza a data correcta.</value>
+  <comment>_G2095</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Foi introduzido código duplicado.</value>
+  <comment>_G2096</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>O Limite Máximo de Bilhetes de Evento Event é de {0} por encomenda.</value>
+  <comment>_G2097</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>A compra do bilhete para o evento não é permitida neste site.</value>
+  <comment>_G2098</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Para o produto {0} só a quantidade de {1} está disponivel. Por favor corrija a quantidade inserida para adicionar ao cesto de compras.</value>
+  <comment>_G2099</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Para o produto {0}, 1 ou mais quantidades podem ficar em backorder.</value>
+  <comment>_G2100</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Para o código {0}, a quantidade não pode ultrapassar {1}.</value>
+  <comment>_G2101</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Lamento, mas não temos o registo do cartão de crédito no nosso ficheiro. Por favor contacte a serviço de Apoio ao Consultor através do número 21 771 4400</value>
+  <comment>_G2102</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Código postal inválido.</value>
+  <comment>_G2103</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} anos de anuidades sob pagamento e deverá ser paga antes de fazer a compra de produtos. Por favor, altere o tipo de compra para "Pessoal" para efectuar o pagamento da sua anuidade.</value>
+  <comment>_G2104</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Produto {0} está esgotado, a quantidade será de 0.</value>
+  <comment>_G2105</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>O limite da revista Today é de</value>
+  <comment>_G2106</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>O número máximo de revistas que pode ser adicionado ao cesto é {0}.</value>
+  <comment>_G2107</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Apelido já usado, por favor introduza um nome diferente.</value>
+  <comment>_G2108</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Encomenda Online não disponível.</value>
+  <comment>_G2109</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Não é permitida encomendar online.</value>
+  <comment>_G2110</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Só produtos podem ser adicionados à compra da Taxa anual</value>
+  <comment>_G2111</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>O total do pagamento não corresponde com o total da encomen da</value>
+  <comment>_G2112</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Por favor coloque valor superior a 0.</value>
+  <comment>_G2113</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Por favor verifique informação do cartão.</value>
+  <comment>_G2114</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Por favor verifique o seu ID de Consultor Independente e Código Pin e tente novamente. Se os problemas continuarem, por favor contacte o Dept. de Serviços ao Consultor através do número: (11) 3789-7822</value>
+  <comment>_G2115</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Por favor complete a compra da quota anual antes de adicionar os outros produtos ao cesto.</value>
+  <comment>_G2116</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Por favor complete a compra da quota anual antes de comprar os bilhetes de evento.</value>
+  <comment>_G2117</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Por favor, introduza um número</value>
+  <comment>_G2118</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Por favor introduza a quantidade do código do produto {0}.</value>
+  <comment>_G2119</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Por favor introduza um único local de entrega.</value>
+  <comment>_G2120</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Por favor insira uma cidade válida.</value>
+  <comment>_G2121</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Por favor insira um nome válido.</value>
+  <comment>_G2122</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Por favor insira um apelido válido.</value>
+  <comment>_G2123</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Por favor insira o valor do donativo, excepto zero(0).</value>
+  <comment>_G2124</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Por favor insira a morada de email.</value>
+  <comment>_G2125</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Por favor insira informação de pagamento.</value>
+  <comment>_G2126</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Por favor insira o CVV.</value>
+  <comment>_G2127</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Por favor insira a quantidade da Taxa anual que pretende pagar.</value>
+  <comment>_G2128</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Por favor insira uma morada de email válida.</value>
+  <comment>_G2129</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Por favor insira um Primeiro Nome válido.</value>
+  <comment>_G2130</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Por favor insira um Último Nome válido.</value>
+  <comment>_G2131</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Por favor insira o nome do meio válido.</value>
+  <comment>_G2132</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Por favor preencha toda a informação de envio.</value>
+  <comment>_G2133</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Por favor preencha o código da área no formato correcto</value>
+  <comment>_G2134</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Por favor preencha o código da extensão no formato correcto</value>
+  <comment>_G2135</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Por favor preencha o campo de "Ao cuidado de".</value>
+  <comment>_G2136</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Por favor preencha o campo do código da àrea.</value>
+  <comment>_G2137</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Por favor coloque a cidade.</value>
+  <comment>_G2138</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Por favor coloque a extensão.</value>
+  <comment>_G2139</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Por favor coloque o primeiro nome.</value>
+  <comment>_G2140</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Por facor coloque o último nome.</value>
+  <comment>_G2141</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Por favor preencha os campos obrigatórios.</value>
+  <comment>_G2142</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Por favor coloque o número de telefone.</value>
+  <comment>_G2143</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>0</value>
+  <comment>_G2144</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Por favor preencha o campo da morada de entrega.</value>
+  <comment>_G2145</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Por favor coloque o código postal.</value>
+  <comment>_G2146</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Por favor coloque o número de telefone no formato correcto.</value>
+  <comment>_G2147</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Por favor, note que só pode salvar detalhes de cartão no máximo de {0}. Para adicionar um novo cartão, por favor remova um dos cartões existentes.</value>
+  <comment>_G2148</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Informação importante:&lt;br/&gt;Esse site melhor visualizado no Internet Explorer or Firefox.</value>
+  <comment>_G2149</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Por favor grave a morada de envio antes de completar a encomenda.</value>
+  <comment>_G2150</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Por favor selecione o local.</value>
+  <comment>_G2151</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Por favor selecione um tempo de envio</value>
+  <comment>_G2152</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Por favor selecione o tipo de encomenda.</value>
+  <comment>_G2153</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Por favor, seleccione o local de entrega</value>
+  <comment>_G2154</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor seleccione o local de levantamento.</value>
+  <comment>_G2155</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Por favor, seleccione o Nome</value>
+  <comment>_G2156</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Por favor, seleccione o número de Telefone</value>
+  <comment>_G2157</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Por favor, seleccione um Tempo</value>
+  <comment>_G2158</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor seleccione a morada de envio</value>
+  <comment>_G2159</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Por favor selecione Sim/Não.</value>
+  <comment>_G2160</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>A morada principal não pode ser apagada.</value>
+  <comment>_G2161</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Os dados do local principal não pode ser apagada.</value>
+  <comment>_G2162</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Seguir para finalizar</value>
+  <comment>_G2163</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Seguir para a página principal</value>
+  <comment>_G2164</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Código de Envio não é suportado</value>
+  <comment>_G2165</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>O Código {0} não se encontra disponivel.</value>
+  <comment>_G2166</comment></data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Número de celular para SMS solicitado.</value>
+  <comment>_G2167</comment></data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Desculpe! Você não poderá colocar este pedido. Somente Consultores Independentes da Coréia podem efetuar pedidos no site da Coréia.</value>
+  <comment>_G2168</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Lamentamos, mas não consegue adicionar os produtos ao cesto de compras, uma vez que adicionando mais produtos ao cesto excederá o limite dos ganhos.</value>
+  <comment>_G2169</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>Erro Sistema.</value>
+  <comment>_G2170</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(O Mês da Encomenda foi alterado!)</value>
+  <comment>_G2171</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>O código {0} adicionado ficará em backorder.</value>
+  <comment>_G2172</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>0</value>
+  <comment>_G2173</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>A morada deverá conter no minimo um letra alfabetica.</value>
+  <comment>_G2174</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>A morada deverá ter no minimo um número, um espaço, e uma letra alfabetica.</value>
+  <comment>_G2175</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>A transacção não foi permitida, por favor carregue "Submeter" outra vez. Se o problema persistir, contacte a serviço de Apoio ao Consultor 21 771 4400.</value>
+  <comment>_G2176</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>A transacção não foi permitida, contacte a serviço de Apoio ao Consultor 21 771 4400.</value>
+  <comment>_G2177</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>O codigo postal introduzido nao e valido.</value>
+  <comment>_G2178</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>A sua encomenda não tem produtos para compra.</value>
+  <comment>_G2179</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Neste momento não existem quantidades suficientes para o produto {0}. Disponivel a quantidade de {1}.</value>
+  <comment>_G2180</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Não tem produtos seleccionados para adicionar à encomenda.</value>
+  <comment>_G2181</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Não tem produtos seleccionados para calcular os pontos de volume.</value>
+  <comment>_G2182</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Esta morada já existe na base de dados.</value>
+  <comment>_G2183</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>A encomenda excede o limite da sua compra.Tem {0} pontos de volume restantes. Por favor corrija a sua encomenda para continuar.</value>
+  <comment>_G2184</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Não foi autorizada a transação para este cartão.</value>
+  <comment>_G2185</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Revista Today foi adicionada ao seu cesto.</value>
+  <comment>_G2186</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Não nos é possivel completar a sua encomenda. Por favor contacte o departamento de Apoio ao Consultor 21 771 4400 e mencione o código de erro 01.</value>
+  <comment>_G2187</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Não nos é possivel completar a sua encomenda. Por favor contacte o departamento de Apoio ao Consultor 21 771 4400 e mencione o código de erro 05.</value>
+  <comment>_G2188</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Não nos é possivel processar a sua encomenda. Por favor verifique a seua morada e tente novamente. Se o problema persistir contacte o departamento de Apoio ao Consultor.</value>
+  <comment>_G2189</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Lamentamos. Não é possivel efectuar a conversão, por favor conrtacte o serviço de Apoio ao Consultor 21 771 4400.</value>
+  <comment>_G2190</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Já existe o bilhete do evento no seu cesto, quer limpar o seu cesto?</value>
+  <comment>_G2191</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Estar a tentar apagar o seu cartão principal. Por favor, guarde de maneira diferente do seu cartão principal antes o apagar.</value>
+  <comment>_G2192</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Não pode continuar a usar este cartão uma vez que já foi recusado várias vezes.</value>
+  <comment>_G2193</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Não pode adicionar o mesmo cartão mais que uma vez.</value>
+  <comment>_G2194</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Não pode adicionar este produto ao seu cesto.</value>
+  <comment>_G2195</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Não pode continuar para a {0} página sem produtos no seu cesto.</value>
+  <comment>_G2196</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Tem produtos em backorder no seu cesto que serão removidos se seleccionar Levantamento nas suas opções de envio. Deseja continuar? ("Sim" ou "Não")</value>
+  <comment>_G2197</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Alterou o mês de encomenda desta encomenda para {0}. Deseja continuar com esta selecção?</value>
+  <comment>_G2198</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Já existe o bilhete do evento no seu cesto, quer limpar o seu cesto?</value>
+  <comment>_G2199</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Já tem produto(s) nos eu cesto de compras. Deseja apagar antes de proceder á compra do bilhete do evento?</value>
+  <comment>_G2200</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Seleccionou {0} como duplo mês está correcto?</value>
+  <comment>_G2201</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Escolheu navegar no produto sem colocar uma encomenda, não é possivel adiconar esse produto ao cesto.</value>
+  <comment>_G2203</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Adicionou com sucesso HFF ao seu cesto.</value>
+  <comment>_G2204</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Só poderá fazer o pagamento antecipado de um ano de Taxa anual.</value>
+  <comment>_G2205</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Você deve excluir um de seus cartões de crédito para alterar os itens em seu carrinho.</value>
+  <comment>_G2206</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Tem de seleccionar a opção de Enviar ou Levantar antes de continuar.</value>
+  <comment>_G2207</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Recentemente fez uma encomenda idêntica em {0}. Se esta encomenda é duplicada, carregue em "Cancelar Encomenda". Para continuar por favor submeta a encomenda.</value>
+  <comment>_G2208</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>A sua Taxa anual está a pagamento apartir de {0}</value>
+  <comment>_G2209</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>A sua Taxa anual está sob pagamento, será adicionado automáticamente ao seu cesto de compras.</value>
+  <comment>_G2210</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>As suas Taxas anuais estão sob pagamento e serão adicionadas ao carrinho.</value>
+  <comment>_G2211</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>O seu cartão de crédito expirou. Edite ou actualize a data de validade.</value>
+  <comment>_G2212</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>O seu cartão de crédito expirou. Por favor contacte o departamento de Apoio ao Dsitribuidor.</value>
+  <comment>_G2213</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Seu ID não foi autenticado pelo sistema, por favor contate o departamento de Serviços ao Consultor 11 3879-7822.</value>
+  <comment>_G2214</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Seu ID não foi autenticado pelo sistema, por favor contate o departamento de Serviços ao Consultor 11 3879-7822.</value>
+  <comment>_G2215</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>O seu pedido anterior já foi criado após as alterações realizadas em seu carrinho de compras. Seu pedido foi criado sob o número {0}. Você pode acompanhar o status de seu pedido clicando aqui, (Atenção!, O pedido poderá levar até 1 hora para estar visivel.)&lt;br&gt;, Se desejar colocar um novo pedido, por favor, adicione mais produtos ao seu carrinho de compras.</value>
+  <comment>_G2216</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>O seu pedido de taxa anual ficará no seu carrinho.</value>
+  <comment>_G2217</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>A informação de envio não é mais válida, o carrinho de compras será esvaziado.</value>
+  <comment>_G2218</comment></data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Por favor, preencha o País.</value>
+  <comment>_G2219</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>O código {0} é inválido.</value>
+  <comment>_G2220</comment></data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Por favor, selecione o método de envio</value>
+  <comment>_G2221</comment></data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>#####</value>
+  <comment>_G2222</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Por favor selecione o tipo de pedido no mini carrinho.</value>
+  <comment>_G2223</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Não pode finalizar a sua compra uma vez que excedeu o limite de compras.</value>
+  <comment>_G2224</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>A Confirmação de endereço é obrigatória</value>
+  <comment>_G2225</comment></data>
+</root>

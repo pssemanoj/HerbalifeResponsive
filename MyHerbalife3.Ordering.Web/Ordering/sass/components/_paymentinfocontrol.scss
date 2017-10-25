@@ -1,0 +1,79 @@
+//Credit Card Information
+.dvCreditCard {
+    .gdo-popup-title {
+        width: 100%;
+        h3{max-width: 300px;}
+    }
+
+    .gdo-error-message-div{width: 100%;}
+
+    .form {
+        text-align: right;
+        
+        > div {
+            display: inline-block;
+            width: 340px;
+            > div {
+                display: inline-block;
+                text-align: left;
+            }
+            &.col-2 {
+                margin-right: 35px; 
+                width: 250px; 
+            }
+        }
+    }
+    .primary-credit-card{
+        margin: 0 0 32px;
+        label {
+            cursor: pointer; 
+            white-space: nowrap;
+        }
+    }
+    .chk {
+        text-align: left;
+        label { cursor: pointer; }
+    }
+    .required-fields {margin-right: 35px;}
+}
+
+// Billing Address Information
+.dvBillingAddress {
+    .form  {
+        > div {display: inline-block;}
+        .gdo-popup-form-label-padding2 {
+            min-width: 110px;
+            padding-bottom: 5px;
+            text-align: right;
+        }
+        &.in-a-row{
+            .no-minwidth {min-width: 0;}
+        }
+        .gdo-popup-form-field-padding{
+            margin-right: 0;
+            padding-right: 0;
+            vertical-align: bottom;
+        }
+        input[type="text"] {width: auto;}
+        input[id$="txtState"] {width: 140px;}
+        input[id$="txtZip"] {width: 100px;}
+    }
+}
+
+.addnewccbillingbtns {
+
+    float: none; 
+    width: 100%;
+    @include breakpoint($breakpoint-desktop) { float: right; }
+
+    a {
+        box-sizing: border-box;
+        margin: 3px 0;
+        width: 100%;
+        @include breakpoint($breakpoint-desktop) { 
+            margin: 3px;
+            width: auto;
+        }
+    }
+
+}

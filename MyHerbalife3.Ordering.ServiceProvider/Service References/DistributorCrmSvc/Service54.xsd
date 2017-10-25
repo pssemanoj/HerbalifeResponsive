@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Email" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Email" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd21" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Email" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="GetExactTargetSubscriberRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExactTargetSubscriberRequest" nillable="true" type="tns:GetExactTargetSubscriberRequest" />
+  <xs:complexType name="GetExactTargetSubscriberRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetExactTargetSubscriberRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SubscriberKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExactTargetSubscriberRequest_V01" nillable="true" type="tns:GetExactTargetSubscriberRequest_V01" />
+  <xs:complexType name="SavePrimaryAddressRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SavePrimaryAddressRequest" nillable="true" type="tns:SavePrimaryAddressRequest" />
+  <xs:complexType name="SavePrimaryAddressRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SavePrimaryAddressRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SavePrimaryAddressRequest_V01" nillable="true" type="tns:SavePrimaryAddressRequest_V01" />
+  <xs:complexType name="GetEmailComplianceSettingsByDistributorID">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetEmailComplianceSettingsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailComplianceSettingsByDistributorID" nillable="true" type="tns:GetEmailComplianceSettingsByDistributorID" />
+  <xs:complexType name="GetEmailComplianceSettingsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailComplianceSettingsRequest" nillable="true" type="tns:GetEmailComplianceSettingsRequest" />
+  <xs:complexType name="EmailComplianceSetting">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailComplianceSetting" nillable="true" type="tns:EmailComplianceSetting" />
+  <xs:complexType name="SaveEmailComplianceSettingsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveEmailComplianceSettingsRequest" nillable="true" type="tns:SaveEmailComplianceSettingsRequest" />
+  <xs:complexType name="SaveEmailComplianceSettingsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveEmailComplianceSettingsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Settings" nillable="true" type="tns:EmailComplianceSetting" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveEmailComplianceSettingsRequest_V01" nillable="true" type="tns:SaveEmailComplianceSettingsRequest_V01" />
+  <xs:complexType name="SaveMailingRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMailingRequest" nillable="true" type="tns:SaveMailingRequest" />
+  <xs:complexType name="SaveMailingStatusRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMailingRequest">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MailingIDList" nillable="true" type="q6:ArrayOfint" />
+          <xs:element minOccurs="0" name="MailingStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMailingStatusRequest" nillable="true" type="tns:SaveMailingStatusRequest" />
+  <xs:complexType name="SaveMailingRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMailingRequest">
+        <xs:sequence>
+          <xs:element xmlns:q7="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Email" minOccurs="0" name="Mailing" nillable="true" type="q7:Mailing" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMailingRequest_V01" nillable="true" type="tns:SaveMailingRequest_V01" />
+  <xs:complexType name="SaveMailingScheduleRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMailingRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MailingID" type="xs:int" />
+          <xs:element minOccurs="0" name="NewSendDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMailingScheduleRequest" nillable="true" type="tns:SaveMailingScheduleRequest" />
+  <xs:complexType name="ListRecipientsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListRecipientsRequest" nillable="true" type="tns:ListRecipientsRequest" />
+  <xs:complexType name="ListRecipientsByContactListRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ListRecipientsRequest">
+        <xs:sequence>
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListIDs" nillable="true" type="q9:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListRecipientsByContactListRequest" nillable="true" type="tns:ListRecipientsByContactListRequest" />
+  <xs:complexType name="GetOptOutRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetOptOutRequest" nillable="true" type="tns:GetOptOutRequest" />
+  <xs:complexType name="GetOptOutRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetOptOutRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MailingID" type="xs:int" />
+          <xs:element minOccurs="0" name="UniqueEmailID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetOptOutRequest_V01" nillable="true" type="tns:GetOptOutRequest_V01" />
+  <xs:complexType name="SaveOptOutRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveOptOutRequest" nillable="true" type="tns:SaveOptOutRequest" />
+  <xs:complexType name="SaveOptOutRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveOptOutRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MailingID" type="xs:int" />
+          <xs:element minOccurs="0" name="OptInUrlTemplate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptOutFromAll" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OptOutFromSender" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UniqueEmailID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveOptOutRequest_V01" nillable="true" type="tns:SaveOptOutRequest_V01" />
+  <xs:complexType name="SaveOptOutCancelRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveOptOutRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReactivationCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveOptOutCancelRequest_V01" nillable="true" type="tns:SaveOptOutCancelRequest_V01" />
+  <xs:complexType name="GetMailingHistoryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMailingHistoryRequest" nillable="true" type="tns:GetMailingHistoryRequest" />
+  <xs:complexType name="GetMailingHistoryDetailRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMailingHistoryDetailRequest" nillable="true" type="tns:GetMailingHistoryDetailRequest" />
+  <xs:complexType name="GetMailingHistoryDetailRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMailingHistoryDetailRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MailingID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMailingHistoryDetailRequest_V01" nillable="true" type="tns:GetMailingHistoryDetailRequest_V01" />
+  <xs:complexType name="InvokeMailingWorkflowRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InvokeMailingWorkflowRequest" nillable="true" type="tns:InvokeMailingWorkflowRequest" />
+  <xs:complexType name="InvokeMailingWorkflowRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:InvokeMailingWorkflowRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MailingID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InvokeMailingWorkflowRequest_V01" nillable="true" type="tns:InvokeMailingWorkflowRequest_V01" />
+  <xs:complexType name="SaveMailingResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMailingResponse" nillable="true" type="tns:SaveMailingResponse" />
+  <xs:complexType name="CheckMailingQuotaRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q16:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CheckMailingQuotaRequest" nillable="true" type="tns:CheckMailingQuotaRequest" />
+  <xs:complexType name="CheckMailingQuotaRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CheckMailingQuotaRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Duration" type="ser:duration" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CheckMailingQuotaRequest_V01" nillable="true" type="tns:CheckMailingQuotaRequest_V01" />
+  <xs:complexType name="SendCancelOptOutMessageRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendCancelOptOutMessageRequest" nillable="true" type="tns:SendCancelOptOutMessageRequest" />
+  <xs:complexType name="SendCancelOptOutMessageRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SendCancelOptOutMessageRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResubscribeUrlTemplate" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendCancelOptOutMessageRequest_V01" nillable="true" type="tns:SendCancelOptOutMessageRequest_V01" />
+  <xs:complexType name="SaveDefaultMailingTokensRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q18:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDefaultMailingTokensRequest" nillable="true" type="tns:SaveDefaultMailingTokensRequest" />
+  <xs:complexType name="SaveDefaultMailingTokensRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDefaultMailingTokensRequest">
+        <xs:sequence>
+          <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MailingTokens" nillable="true" type="q19:ArrayOfKeyValueOfintstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDefaultMailingTokensRequest_V01" nillable="true" type="tns:SaveDefaultMailingTokensRequest_V01" />
+  <xs:complexType name="GetDefaultMailingTokensRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q20:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDefaultMailingTokensRequest" nillable="true" type="tns:GetDefaultMailingTokensRequest" />
+</xs:schema>

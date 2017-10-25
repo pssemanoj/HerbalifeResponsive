@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Mailing" />
+      <xs:enumeration value="ShipTo" />
+      <xs:enumeration value="BillTo" />
+      <xs:enumeration value="PermanentLegal" />
+      <xs:enumeration value="Business" />
+      <xs:enumeration value="DeliverTo" />
+      <xs:enumeration value="MailingLocal" />
+      <xs:enumeration value="PermanentLegalLocal" />
+      <xs:enumeration value="BusinessLocal" />
+      <xs:enumeration value="Home" />
+      <xs:enumeration value="HomeLocal" />
+      <xs:enumeration value="CustomerFacing" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+</xs:schema>

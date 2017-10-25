@@ -1,0 +1,13 @@
+﻿<script type="text/javascript">
+    function is_page(pageName) {
+        return (window.location.pathname.toLowerCase().indexOf(pageName) > -1) ? true : false;
+    }
+    var Scheme = (typeof _AnalyticsFacts_ !== 'undefined' && _AnalyticsFacts_.Scheme) || 'DS';
+    var locale = _AnalyticsFacts_.LanguageCode + '-' + _AnalyticsFacts_.CountryCode;
+    var redirectUrl = (Scheme.toUpperCase() == 'DS') ? '/' + locale + '/Shop/Catalog/Home/Index/DS' : '/' + locale + '/Home/Default/MB';
+
+    if (is_page('invoice')) {
+        redirectUrl = '/' + locale + '/Shop/Receipts/Invoice/Index/Ds';
+    }
+    window.location = redirectUrl;
+</script>

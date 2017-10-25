@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="3daysAfterText" xml:space="preserve">
+    <value>(Date: 3 days after date of order)</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="buyerSignature" xml:space="preserve">
+    <value>Buyer's Signature</value>
+  </data>
+  <data name="cancelPolicy1" xml:space="preserve">
+    <value>If you cancel, any property traded in, any payments made by you under the contract or sale, and any negotiable instrument executed by&lt;br/&gt;
+             you will be returned within TEN BUSINESS DAYS following the receipt of the seller of your cancellation notice, and any security interest&lt;br/&gt;
+             arising out of the transaction will be canceled.</value>
+  </data>
+  <data name="cancelPolicy2" xml:space="preserve">
+    <value>If you cancel, you must make available to the seller at your residence, in substantially as good condition as when received, any goods&lt;br/&gt;
+             delivered to you under this contract or sale; or you may, if you wish, comply with the instructions of the seller regarding the return&lt;br/&gt;
+             shipment of the goods at the seller's expense and risk.</value>
+  </data>
+  <data name="cancelPolicy3" xml:space="preserve">
+    <value>If you do make the goods available to the seller and the seller does not pick them up within 20 days of the date of your Notice of&lt;br/&gt;
+             Cancellation, you may retain or dispose of the goods without any further obligation. If you fail to make the goods available to the seller,&lt;br/&gt;
+             or if you agree to return the goods to the seller and fail to do so, then you remain liable for performance of all obligations under the&lt;br/&gt;
+             contract.</value>
+  </data>
+  <data name="cancelText" xml:space="preserve">
+    <value>You may CANCEL this transaction, without any penalty or obligation, within THREE BUSINESS DAYS from the above date.</value>
+  </data>
+  <data name="cancelTransactionText" xml:space="preserve">
+    <value>To cancel this transaction, mail or deliver a signed copy of this Cancellation Notice or any other written notice, or send a telegram to:</value>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="dateMonthYear" xml:space="preserve">
+    <value>Day/Month/Year</value>
+  </data>
+  <data name="dateTransaction" xml:space="preserve">
+    <value>Date of Transaction</value>
+  </data>
+  <data name="exchangePolicy1" xml:space="preserve">
+    <value>ÉNONCÉ DES DROITS DE RÉSOLUTION DU CONSOMMATEUR&lt;br/&gt;
+            (LOI SUR LA PROTECTION DU CONSOMMATEUR, ARTICLE 58)</value>
+  </data>
+  <data name="exchangePolicy2" xml:space="preserve">
+    <value>Vous pouvez résoudre ce contrat, pour n’importe quelle raison, pendant une période de 10 jours après la réception du double du contrat et des documents qui doivent y être annexés. </value>
+  </data>
+  <data name="exchangePolicy3" xml:space="preserve">
+    <value>Si vous ne recevez pas le bien ou le service au cours des 30 jours qui suivent une date indiquée dans le contrat, vous avez 1 an pour résoudre le contrat. Toutefois, vous perdez ce droit de résolution si vous acceptez la livraison après cette période de 30 jours. Le délai d’exercice du droit de résolution peut aussi être porté à 1 an pour d’autres raisons, notamment pour absence de permis, pour absence ou pour déficience de cautionnement, pour absence de livraison ou pour non-conformité du contrat. Pour de plus amples renseignements, communiquez avec un conseiller juridique ou l’Office de la protection du consommateur. 
+&lt;br/&gt;&lt;br/&gt;Lorsque le contrat est résolu, le commerçant itinérant doit vous rembourser toutes les sommes que vous lui avez versées et vous restituer tout bien qu’il a reçu en paiement, en échange ou en acompte; s’il ne peut restituer ce bien, le commerçant itinérant doit remettre une somme correspondant au prix de ce bien indiqué au contrat ou, à défaut, la valeur de ce bien dans les 15 jours de la résolution. Dans le même délai, vous devez remettre au commerçant itinérant le bien que vous avez reçu du commerçant. &lt;br/&gt;&lt;br/&gt;
+Pour résoudre le contrat, il suffit soit de remettre au commerçant itinérant ou à son représentant le bien que vous avez reçu, soit de lui retourner le formulaire proposé ci-dessous ou de lui envoyer un autre avis écrit à cet effet. Le formulaire ou l’avis doit être adressé au commerçant itinérant ou à son représentant, à l’adresse ci-dessous indiquée sur le formulaire ou à une autre adresse du commerçant itinérant ou du représentant indiquée dans le contrat. L’avis doit être remis en personne ou être donné par tout autre moyen permettant au consommateur de prouver son envoi: par courrier recommandé, par courrier électronique, par télécopieur ou par un service de messagerie.
+</value>
+  </data>
+  <data name="herbalifeDs" xml:space="preserve">
+    <value>Herbalife Distributor</value>
+  </data>
+  <data name="herbalifeRefund" xml:space="preserve">
+    <value>Herbalife Refund Policy</value>
+  </data>
+  <data name="icancelText" xml:space="preserve">
+    <value>I HEREBY CANCEL THIS TRANSACTION</value>
+  </data>
+  <data name="noticeCancellation" xml:space="preserve">
+    <value>Notice of Cancellation</value>
+  </data>
+  <data name="notLaterThan" xml:space="preserve">
+    <value>NOT LATER THAN MIDNIGHT OF</value>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="zipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="exchangePolicy4" xml:space="preserve">
+    <value>STATEMENT OF CONSUMER CANCELLATION RIGHTS </value>
+  </data>
+  <data name="exchangePolicy5" xml:space="preserve">
+    <value>(CONSUMER PROTECTION ACT, SECTION 58) </value>
+  </data>
+  <data name="exchangePolicy6" xml:space="preserve">
+    <value>You may cancel this contract for any reason within 10 days after you receive a copy of the contract along with the other required documents. &lt;br/&gt;&lt;br/&gt;
+            If you do not receive the goods or services within 30 days of the date stated in the contract, you may cancel the contract within one year. You lose that right if you accept delivery after the 30 days. There are other grounds for an extension of the cancellation period to one year, for example if the itinerant merchant does not hold a permit or has not provided the required security at the time the contract is made, if the goods are never delivered or the services never performed, or if the contract is incorrectly made or worded. For more information, you may seek legal advice or contact the Office de la protection du consommateur. &lt;br/&gt;&lt;br/&gt;
+          If you cancel the contract, the itinerant merchant must refund all amounts you have paid, and return to you the goods received in payment, as a trade-in or on account; if the merchant is unable to return the goods, you are entitled to receive an amount of money corresponding to the value indicated in the contract or the cash value of the goods, within 15 days of cancellation. You also have 15 days to return to the merchant any goods you received from the merchant. 
+        &lt;br/&gt;&lt;br/&gt;To cancel, you must return the items received from the merchant to the merchant or the merchant’s representative, send the merchant the cancellation form provided on the front of this form, or send the merchant written notice of cancellation. The form or written notice must be sent to the merchant or the merchant’s representative at the address indicated on the form, or at any other address indicated in the contract. You must give notice of cancellation by personal delivery or by any other method that will allow you to prove that you gave notice, including registered mail, email, fax and courier.</value>
+  </data>
+  <data name="exchangePolicy7" xml:space="preserve">
+    <value>Date: _ ________________________ (date d’envoi du formulaire / date on which form is sent) En vertu de l’article 59 de la Loi sur la protection du consommateur,
+j’annule le contrat n° / By Virtue of section 59 of the Consumer Protection Act, I hereby cancel the contract No. ________________________ (numéro du contrat,
+s’il est indiqué / contract number, if any) conclu le / made on ________________________ (date du contrat / date of contract) à / at:</value>
+  </data>
+  <data name="tableRow1" xml:space="preserve">
+    <value>(Adresse où le consommateur a signé le contrat / Address where contract was signed by consumer)</value>
+  </data>
+  <data name="tableRow2" xml:space="preserve">
+    <value> Numéro de téléphone du consommateur / Telephone number of consumer </value>
+  </data>
+  <data name="tableRow3" xml:space="preserve">
+    <value>(Nom du consommateur / Name of consumer)</value>
+  </data>
+  <data name="tableRow4" xml:space="preserve">
+    <value>Numéro de télécopieur du consommateur / Fax number of consumer</value>
+  </data>
+  <data name="tableRow5" xml:space="preserve">
+    <value> (Adresse du consommateur / Address of consumer)</value>
+  </data>
+  <data name="tableRow6" xml:space="preserve">
+    <value>(Signature du consommateur / Signature of consumer)</value>
+  </data>
+  <data name="tableRow7" xml:space="preserve">
+    <value> Adresse électronique du consommateur / Electronic address of consumer</value>
+  </data>
+  
+</root>

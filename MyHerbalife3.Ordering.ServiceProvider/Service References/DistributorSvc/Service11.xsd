@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="IFTEnrollment">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BankAccountInformation" nillable="true" type="tns:BankAccountInformation" />
+          <xs:element minOccurs="0" name="BankInformation" nillable="true" type="tns:BankInformation" />
+          <xs:element minOccurs="0" name="CountryOfAddressIso2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="IntermediaryBankInformation" nillable="true" type="tns:BankInformation" />
+          <xs:element minOccurs="0" name="IsBankInformationOverridden" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsBankInformationOverriddenSpecified" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsNewEnrollment" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Validations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IFTEnrollment" nillable="true" type="tns:IFTEnrollment" />
+  <xs:complexType name="BankAccountInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountCurrency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountHolderName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BankAccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IBAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OCPaymentsErrors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="OCPaymentsValidations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+          <xs:element minOccurs="0" name="PaymentPlatform" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BankAccountInformation" nillable="true" type="tns:BankAccountInformation" />
+  <xs:complexType name="ArrayOfOCPaymentsErrors">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OCPaymentsErrors" nillable="true" type="tns:OCPaymentsErrors" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOCPaymentsErrors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+  <xs:complexType name="OCPaymentsErrors">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OCPaymentsErrors" nillable="true" type="tns:OCPaymentsErrors" />
+  <xs:complexType name="ArrayOfOCPaymentsValidations">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OCPaymentsValidations" nillable="true" type="tns:OCPaymentsValidations" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOCPaymentsValidations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+  <xs:complexType name="OCPaymentsValidations">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ValidationCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidationMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ValidationSeverity" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OCPaymentsValidations" nillable="true" type="tns:OCPaymentsValidations" />
+  <xs:complexType name="BankInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="tns:OCPaymentAddress" />
+          <xs:element minOccurs="0" name="AddressSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BankLocationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="IBAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LocalBankCode1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocalBankCode2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SwiftCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UseBranchName" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Validations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BankInformation" nillable="true" type="tns:BankInformation" />
+  <xs:complexType name="OCPaymentAddress">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountyDistrict" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateProvinceTerritory" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OCPaymentAddress" nillable="true" type="tns:OCPaymentAddress" />
+  <xs:complexType name="CountryInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptsESignature" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CurrencyInformation" nillable="true" type="tns:ArrayOfCurrencyInformation" />
+          <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="IsIbanCountry" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsInternetEnabled" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Validations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CountryInformation" nillable="true" type="tns:CountryInformation" />
+  <xs:complexType name="ArrayOfCurrencyInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CurrencyInformation" nillable="true" type="tns:CurrencyInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurrencyInformation" nillable="true" type="tns:ArrayOfCurrencyInformation" />
+  <xs:complexType name="CurrencyInformation">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DefaultCurrency" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="IntermediaryIsoCurrency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsoCurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PaymentPlatform" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RequiresIntermediaryBank" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Validations" nillable="true" type="tns:ArrayOfOCPaymentsValidations" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CurrencyInformation" nillable="true" type="tns:CurrencyInformation" />
+</xs:schema>

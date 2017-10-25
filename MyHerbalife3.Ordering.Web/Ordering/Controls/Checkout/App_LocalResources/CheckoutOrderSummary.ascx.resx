@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="blErrorsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>Cart is empty.</value>
+  </data>
+  <data name="lbCartEmpty.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>Earn&lt;/br&gt;Base</value>
+  </data>
+  <data name="lbEarnBaseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>Edit Order Summary</value>
+  </data>
+  <data name="lblHeaderSummaryResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="lblSkuResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="lbProdNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="lbQtyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lbRemoveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>Retail&lt;br /&gt;Price</value>
+  </data>
+  <data name="lbRetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>Volume&lt;/br&gt;Points</value>
+  </data>
+  <data name="lbVolumePointsResource1MB.Text" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="lbVolumePointsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>Your&lt;br /&gt;Price</value>
+  </data>
+  <data name="lbYourPriceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>Unanble to get the purchasing limits</value>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>The Cart Exceeds the maximum earnings limit</value>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>The Cart Exceeds the maximum volume limit</value>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>Confirm Cancel</value>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>Confirm Cancel</value>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>Are you sure you wish to cancel ?</value>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>If you click Go Back, your previous shipping address will be displayed.</value>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>If you click Remove, the unavailable item(s) will be displayed in red and the available for backorder item will be displayed in yellow.</value>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>Changing your shipping address selection indicates these item(s) in your cart are now unavailable or backordered.</value>
+  </data>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>&lt;span style='color: #120A8F; font-weight: bold'&gt;Please bring you paid event ticket confirmation order number and ID number with you to the event. No ticket will be mailed.&lt;/span&gt;&lt;br /&gt;Event tickets are non-refundable and non-transferable. &lt;br /&gt;If qualification is required for this event, please ensure you have met the requirements prior to completing your order.</value>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>Please select the pickup options</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Please select the Pick Up Location</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Please select the Shipping Address</value>
+  </data>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>Add More Products</value>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>Cancel Order</value>
+  </data>
+  <data name="CancelHapOrder.Text" xml:space="preserve">
+    <value>Cancel My Changes</value>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>Recalculate</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>Please select the Shipping Method</value>
+  </data>
+  <data name="CustomerOrderItemUnavailableCheckoutError" xml:space="preserve">
+    <value>You cannot Checkout because there are items in the cart that are not available at the warehouse that serves the shipping address entered</value>
+  </data>
+  <data name="CustomerOrderMinQuantityError" xml:space="preserve">
+    <value>Due to the original customer order</value>
+  </data>
+  <data name="CustomerOrderMinQuantitySKUDisplay" xml:space="preserve">
+    <value>SKU: {0} must have a minimum quantity of {1}</value>
+  </data>
+  <data name="CustomerOrdersSearchPageReturn.Text" xml:space="preserve">
+    <value>Return To My Customer Orders Search</value>
+  </data>
+  <data name="lblAlert.Text" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="lblWordOR.Text" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="NewCartName.Text" xml:space="preserve">
+    <value>New Cart Name</value>
+  </data>
+  <data name="ReplaceCart.Text" xml:space="preserve">
+    <value>Replace Cart</value>
+  </data>
+  <data name="DeleteHelp.Text" xml:space="preserve">
+    <value>Explain how to delete items.</value>
+  </data>
+  <data name="btnObservationOk.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="lblObservationTitle.Text" xml:space="preserve">
+    <value>Please note...</value>
+  </data>
+  <data name="PromoInCart" xml:space="preserve">
+    <value>SKU {0} has been added to your cart, if the order is not shipped to your address then you should remove it from cart.</value>
+  </data>
+  <data name="lblSummaryMessageResource.Text" xml:space="preserve">
+    <value>The product price may have variations from the price list because applicable taxes.</value>
+  </data>
+  <data name="lblPromoHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>Premiums Details</value>
+  </data>
+  <data name="lblHeaderParentSKU.Text" xml:space="preserve">
+    <value>Parent SKU/Items</value>
+  </data>
+  <data name="lblHeaderChildSKU.Text" xml:space="preserve">
+    <value>Child SKU/Items</value>
+  </data>
+  <data name="NotAvaibleText" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="ErrorCopyOrderDiscontinueSkuExist" xml:space="preserve">
+    <value>Sku {0} are discontinued</value>
+  </data>
+  <data name="ErrorCopyOrderPromoEnd" xml:space="preserve">
+    <value>Sku {0} promo is expired</value>
+  </data>
+  <data name="ErrorCopyOrderVirtualSkuExist" xml:space="preserve">
+    <value>Sku {0} are virtual skus</value>
+  </data>
+  <data name="btnCancelToProced.Text" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="btnProcedToChcekOut.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblRemindltr.Text" xml:space="preserve">
+    <value>Please Confirm that Order is Being Shipped to personal Address</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+</root>

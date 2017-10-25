@@ -1,0 +1,119 @@
+.delivery-method, .delivery-method textarea, .shipping-instruction {
+	width: 100%;
+}
+
+.delivery-method{
+    ul{
+        padding: 0;
+    }
+
+    [id $= "_txtShippingInstruction2"] {
+	    display: block;
+	    width: 270px;
+	    word-wrap: break-word;
+    }
+}
+
+.gdo-totals-header-spacer-last {
+	height: 41px;
+}
+
+[id$="lblOrderStatus"], [id$="lblOrderNumber"] {
+	color: #15649F;
+	font-size: 16px;
+}
+
+div[id$="mpPaymentOptions"] {
+	background: none !important;
+}
+
+#ctl00_ctl00_ContentArea_ProductsContent_ctl04_pnlWireTable {
+	float: left;
+}
+
+#pdfLabel a {
+	text-decoration: none;
+}
+
+.Wire_transfer_info, .list_wire_message, 
+.Credit_card_info, div[id$="_pnlWireTable"]{
+    li{
+        @include MarginPadding( 2px 0 0 20px, null );
+        list-style: inherit;
+    }
+}
+
+// Headers //
+
+// Order Summary Payment Info //
+#ctl00_ctl00_ContentArea_ProductsContent_ctl04_dlPaymentInfo_ctl00_paymentInfo_pnlCardPayments {
+    @include MarginPadding( 3px 0, null );
+}
+
+[id $= "_paymentInfo_pnlCardPayments"] td {
+    @include MarginPadding( null, 0 0 3px 0 );
+	vertical-align: top;
+}
+
+// Online Price List //
+
+#ctl00_ctl00_ContentArea_ProductsContent_CheckoutButtonDisabled {
+	padding-right: 10px;
+}
+
+// Legend Available Text - Overwritting styles for GDO in /Content/Global/Products/css/Products.css //
+
+.styleGreen,
+.styleRed,
+.styleOrange {
+	color: $black;
+}
+
+div[id$="pnlCreditTable"] > table {
+    width: 100%;
+}
+
+// Step 4 //
+[id $= "_pnlCreditTable"]{
+    #SilverButton {
+        @include MarginPadding( 10px 0, null );
+    }
+  
+    .gdo-order-tbl {
+        @include MarginPadding( 0 0 10px 0, null );
+        width: 100%;
+    }
+}
+
+#TableContent .gdo-edit-summary .gdo-order-tbl th,
+[id $= "_pnlCreditTable"] .gdo-order-tbl th,
+[id $= "_pnlCreditTable"] .gdo-order-tbl td {
+    border: 1px solid #ddd;
+    &:first-child { border-color: #ddd; }
+}
+
+// CSS for KOREA checkout credit cards description //
+[id$="dvCreditCardInfo"] {
+    display: block;
+    font-size: 12px;
+}
+
+[id$="_creditPaymentInfo_dvCreditCardInfo"] {
+    td {
+	    font-weight: bold;
+	    width: 100px;
+    }
+  
+    .gdo-popup-pad3 {
+	    width: 281px;
+    }
+  
+    input{
+        height: 24px;
+    }
+  
+    select {
+	    height: 20px;
+	    width: 107px;
+    }
+}

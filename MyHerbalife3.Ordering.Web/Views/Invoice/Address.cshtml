@@ -1,0 +1,48 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvInvAddress"
+     data-role="window"
+     data-modal="true"
+     data-actions="['close']"
+     data-resizable="false"
+     data-visible="false">
+
+    <div class="wrapper ordering">
+        <div class="row">
+            <div class="six-cols">
+                <label for="first-name">@(this.Localize("firstName"))</label>
+                <input type="text" data-bind="value: invoice.FirstName" id="first-name" class="k-input" />
+            </div>
+            <div class="six-cols">
+                <label for="last-name">@(this.Localize("lastName"))</label>
+                <input type="text" data-bind="value: invoice.LastName" id="last-name" class="k-input" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve-cols">
+                <label for="street-address">@(this.Localize("streetAddress"))</label>
+                <input type="text" data-bind="value: invoice.MemberAddress.Address1" id="street-address" class="k-input" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="six-cols">
+                <label for="city">@(this.Localize("city"))</label>
+                <input type="text" data-bind="value: invoice.MemberAddress.City" id="city" class="k-input" />
+            </div>
+            <div class="three-cols">
+                <label for="state">@(this.Localize("state"))</label>
+                <input id="state" data-role="dropdownlist"
+                       data-auto-bind="false"
+                       data-value-primitive="true"
+                       data-text-field="DisplayName"
+                       data-value-field="Value"
+                       data-option-label="Please select value"
+                       data-bind="value: memberAddressstateSelected, source: statesDataSource"
+                       class="k-input" />
+            </div>
+            <div class="three-cols">
+                <label for="zip-code">@(this.Localize("zipCode"))</label>
+                <input type="text" data-bind="value: invoice.MemberAddress.PostalCode" id="zip-code" class="k-input" />
+            </div>
+        </div>
+    </div>
+</div>

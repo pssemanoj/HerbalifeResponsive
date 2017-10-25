@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/11/21/HL.PaymentGatewayBridge.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/11/21/HL.PaymentGatewayBridge.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Legacy/PaymentGatewayBridge/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetVEPagoElectronicoDigestRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetVEPagoElectronicoDigestRequest" nillable="true" type="tns:GetVEPagoElectronicoDigestRequest" />
+  <xs:complexType name="GetVEPagoElectronicoDigestRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetVEPagoElectronicoDigestRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MerchantId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StoreId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TerminalId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetVEPagoElectronicoDigestRequest_V01" nillable="true" type="tns:GetVEPagoElectronicoDigestRequest_V01" />
+  <xs:complexType name="GetVEPagoElectronicoDigestResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetVEPagoElectronicoDigestResponse" nillable="true" type="tns:GetVEPagoElectronicoDigestResponse" />
+  <xs:complexType name="GetVEPagoElectronicoDigestResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetVEPagoElectronicoDigestResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Digest" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetVEPagoElectronicoDigestResponse_V01" nillable="true" type="tns:GetVEPagoElectronicoDigestResponse_V01" />
+  <xs:complexType name="GetTutunskaPaymentServiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTutunskaPaymentServiceRequest" nillable="true" type="tns:GetTutunskaPaymentServiceRequest" />
+  <xs:complexType name="GetTutunskaPaymentServiceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTutunskaPaymentServiceRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTutunskaPaymentServiceRequest_V01" nillable="true" type="tns:GetTutunskaPaymentServiceRequest_V01" />
+  <xs:complexType name="GetTutunskaPaymentServiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTutunskaPaymentServiceResponse" nillable="true" type="tns:GetTutunskaPaymentServiceResponse" />
+  <xs:complexType name="GetTutunskaPaymentServiceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTutunskaPaymentServiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Response" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTutunskaPaymentServiceResponse_V01" nillable="true" type="tns:GetTutunskaPaymentServiceResponse_V01" />
+</xs:schema>

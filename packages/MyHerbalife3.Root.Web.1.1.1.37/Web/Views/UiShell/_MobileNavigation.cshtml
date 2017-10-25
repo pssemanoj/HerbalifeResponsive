@@ -1,0 +1,86 @@
+﻿@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+@using MyHerbalife3.Shared.ViewModel
+
+@model MyHerbalife3.Shared.ViewModel.Models.NavigationItemModel
+@{
+    var _GlobalContext = (HttpContext.Current.ApplicationInstance as IGlobalContext);
+
+    bool IsSearchBoxEnabled = _GlobalContext.CultureConfiguration.SearchEnabled;
+    bool IsOrderingEnabled = _GlobalContext.CultureConfiguration.IsOrderingEnabled;
+    bool IsDsAlertsEnabled = _GlobalContext.CultureConfiguration.IsDSAlertsEnabled && !Roles.IsUserInRole(RoleDefinitions.ROLE_DELETED_ID);
+    bool IsOnlineProfileEnabled = _GlobalContext.CultureConfiguration.IsOnlineProfileEnabled;
+    var SettingsLink = IsDsAlertsEnabled
+                        ? "/Account/Communication/NotificationsSubscriptions.aspx"
+                        : "/Account/Communication/Paperless.aspx";
+}
+@*    @if (Model != null)
+    {
+        ViewContext.NavigationTree(Model, maxDepth: 3);
+    }*@
+
+@if (Model == null)
+{
+    <!-- no data, can't render menu -->
+}
+else if (Model.Children == null || !Model.Children.Any())
+{
+    <!-- no child nodes in data, can't render menu -->
+}
+else
+{
+    <nav id="mobile-main-nav" wire-model="mobileNavViewModel">
+        @if (IsSearchBoxEnabled)
+        {
+            <form action=".">
+                <input type="search" placeholder="@this.LocalizeGlobal("HrblUI", "SearchText")" name="sp_q" class="styledFields search">
+            </form>            
+        }
+        <aside wire-model="ProfileViewModel">
+            <i class="icon-user"></i>
+            <h6 data-bind="text: Name"></h6>
+            <hr />
+            <h6>
+                <span data-bind="text: TeamLevelName"></span>
+            </h6>
+            <h6>
+                <span data-bind="text: DisplayBizworksStatus"></span>
+            </h6>
+            <a class="settings-link" href="@SettingsLink">
+                <span>@this.LocalizeGlobal("HrblUI", "MiniProfile_Settings")</span>
+            </a>
+            <a href="/Account/Profile/Default.aspx">
+                <span>@this.LocalizeGlobal("HrblUI", "MiniProfile_MyAccount")</span>
+            </a>
+            <a href="/Account/Profile/LoginPreferences.aspx">
+                <span>@this.LocalizeGlobal("HrblUI", "MiniProfile_LoginPreferences")</span>
+            </a>    
+            <a href="/Authentication/Logout" class="action-button">
+                @this.LocalizeGlobal("HrblUI", "MiniProfile_LogOut")
+            </a>
+        </aside>
+
+        <ul class="mobile-nav-links">
+            @foreach (var item in Model.Children.Where(c => c.IsHidden == false))
+            {
+                <li>
+                    <span>
+                        @item.Text
+                    </span>
+
+                    @if (item.Children != null && item.Children.Any())
+                    {
+                        <ul>
+                            @foreach (var child in item.Children.Where(c => c.IsHidden == false))
+                            {
+                                <li>
+                                    <a href="@child.Url" target="@child.Target" title="@child.Description">@child.Text</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </li>
+            }
+        </ul>
+    </nav>
+}

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.SharedProviders</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.SharedProviders</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ephtmltopdf">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\ExpertPDF\v5.4.0\ephtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.Blocks.Caching, Version=1.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Caching.1.1.14.0\lib\HL.Blocks.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.CircuitBreaker, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.CircuitBreaker.1.1.1.0\lib\HL.Blocks.CircuitBreaker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Localization, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Localization.1.1.1.0\lib\HL.Blocks.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Api, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Api.1.1.1.0\lib\HL.Common.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Utilities, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Utilities.1.1.1.0\lib\HL.Common.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.DistributorCRM.ValueObjects">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\DistributorCRM\Prod\HL.DistributorCRM.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AdminProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AdminProvider.1.2.3.0\lib\MyHerbalife3.Core.AdminProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.DistributorProvider, Version=1.2.36.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.DistributorProvider.1.2.36.0\lib\MyHerbalife3.Core.DistributorProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Infrastructure, Version=1.2.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Infrastructure.1.2.30.0\lib\MyHerbalife3.Shared.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Interfaces, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Interfaces.1.2.1.0\lib\MyHerbalife3.Shared.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.605.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.1.1.605\lib\net46\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Core.1.4.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Newtonsoft, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Newtonsoft.1.4.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bizworks\ContactsDataProvider.cs" />
+    <Compile Include="Bizworks\ECardsProvider.cs" />
+    <Compile Include="Bizworks\MailingLabelsReportData.cs" />
+    <Compile Include="Bizworks\SchedulerDataProvider.cs" />
+    <Compile Include="CatalogProvider.cs" />
+    <Compile Include="CustomerOrderingProvider.cs" />
+    <Compile Include="DistributorWebsiteProvider.cs" />
+    <Compile Include="DualOrderMonthLoader.cs" />
+    <Compile Include="DualOrderMonthProvider.cs" />
+    <Compile Include="EventHandling\EventBroker.cs" />
+    <Compile Include="EventHandling\MyHLEventBus.cs" />
+    <Compile Include="EventHandling\PublishedEvent.cs" />
+    <Compile Include="EventHandling\PublishesAttribute.cs" />
+    <Compile Include="EventHandling\PublishSubscribeAttribute.cs" />
+    <Compile Include="EventHandling\SubscribesToAttribute.cs" />
+    <Compile Include="HLErrorAuditEvent.cs" />
+    <Compile Include="Invoices\InvoiceProvider.cs" />
+    <Compile Include="Invoices\InvoiceSearchFilter.cs" />
+    <Compile Include="ObjectProvider.cs" />
+    <Compile Include="OnlineDistributor.cs" />
+    <Compile Include="OrdersProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\DistributorBizworksProfile.cs" />
+    <Compile Include="ViewModel\DistributorOrderingProfile.cs" />
+    <Compile Include="ViewModel\FailedCardInfo.cs" />
+    <Compile Include="ViewModel\OrderSubTypeModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj">
+      <Project>{deca9051-4215-473e-8a99-2227fa819528}</Project>
+      <Name>MyHerbalife3.Ordering.ServiceProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

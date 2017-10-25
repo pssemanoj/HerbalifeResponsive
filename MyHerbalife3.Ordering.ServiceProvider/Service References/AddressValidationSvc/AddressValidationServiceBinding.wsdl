@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:avs="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" targetNamespace="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema targetNamespace="http://schemas.herbalife.com/AddressServices/V02/Service/AddressValidation">
+      <s:include schemaLocation="AddressValidationService.xsd" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateAddressRequest_Msg">
+    <wsdl:part name="Request" element="avs:ValidateAddressRequest" />
+  </wsdl:message>
+  <wsdl:message name="ValidateAddressResponse_Msg">
+    <wsdl:part name="Response" element="avs:ValidateAddressResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AddressValidation_PortType">
+    <wsdl:operation name="ValidateAddress">
+      <wsdl:input message="avs:ValidateAddressRequest_Msg" />
+      <wsdl:output message="avs:ValidateAddressResponse_Msg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AddressValidation_Soap11Binding" type="avs:AddressValidation_PortType">
+    <wsdl:documentation>
+      <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" />
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateAddress">
+      <soap:operation soapAction="http://herbalife.com/AddressServices/Service/AddressValidation/ValidateAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AddressValidation_Soap12Binding" type="avs:AddressValidation_PortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateAddress">
+      <soap12:operation soapAction="http://herbalife.com/AddressServices/Service/AddressValidation/ValidateAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ValidateTokenizationFailed" xml:space="preserve">
+    <value>Purtroppo non è stato possibile aggiungere la tua carta. Riprova.</value>
+    <comment>_G3161</comment>
+  </data>
+  <data name="ValidateRemoveCard" xml:space="preserve">
+    <value>Sei sicuro di voler rimuovere questa carta?</value>
+    <comment>_G728</comment>
+  </data>
+  <data name="ValidateAddCard" xml:space="preserve">
+    <value>Sei sicuro di voler aggiungere questa carta?</value>
+    <comment>_G727</comment>
+  </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>Indirizzo di fatturazione della carta di credito</value>
+    <comment>_G730</comment>
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Cancella</value>
+    <comment>_G731</comment>
+  </data>
+  <data name="lblAmountResource1.Text" xml:space="preserve">
+    <value>Importo</value>
+    <comment>_G726</comment>
+  </data>
+  <data name="lblHeaderAddNewCreditCardResource1.Text" xml:space="preserve">
+    <value>Aggiungi Nuova carta di credito</value>
+    <comment>_G725</comment>
+  </data>
+  <data name="ValidateZipRequired" xml:space="preserve">
+    <value>Inserisci un Codice Avviamento Postale valido</value>
+    <comment>_G724</comment>
+  </data>
+  <data name="ValidateAddCardExpired" xml:space="preserve">
+    <value>La carta è scaduta.</value>
+    <comment>_G779</comment>
+  </data>
+  <data name="ValidateAddCardBadCard" xml:space="preserve">
+    <value>Il numero della carta non è valido</value>
+    <comment>_G780</comment>
+  </data>
+  <data name="lblStreetAddressResource1.Text" xml:space="preserve">
+    <value>Indirizzo</value>
+    <comment>_G777</comment>
+  </data>
+  <data name="ValidateAddCardMissingCard" xml:space="preserve">
+    <value>Il numero di carta è obbligatorio</value>
+    <comment>_G781</comment>
+  </data>
+  <data name="ValidateAddCardMissingExpDate" xml:space="preserve">
+    <value>La scadenza della carta è obbligatoria</value>
+    <comment>_G784</comment>
+  </data>
+  <data name="ValidateStateRequired" xml:space="preserve">
+    <value>La provincia è obbligatoria</value>
+    <comment>_G785</comment>
+  </data>
+  <data name="ValidateAddCardMissingName" xml:space="preserve">
+    <value>Sei sicuro che vuoi rimuovere questa carta?</value>
+    <comment>_G782</comment>
+  </data>
+  <data name="ValidateCityRequired" xml:space="preserve">
+    <value>La città è obbligatoria</value>
+    <comment>_G783</comment>
+  </data>
+  <data name="chkSaveCreditCardResource1.Text" xml:space="preserve">
+    <value>Salva questa carta di credito</value>
+    <comment>_G771</comment>
+  </data>
+  <data name="chkSameAsShippingAddressResource1.Text" xml:space="preserve">
+    <value>Uguale all'indirizzo di spedizione</value>
+    <comment>_G768</comment>
+  </data>
+  <data name="SamsungCard.Text" xml:space="preserve">
+    <value>Samsung</value>
+    <comment>_G769</comment>
+  </data>
+  <data name="lblPaymentMethodResource1.Text" xml:space="preserve">
+    <value>Tipo di sicurezza</value>
+    <comment>_G772</comment>
+  </data>
+  <data name="lblStateResource1.Text" xml:space="preserve">
+    <value>Stato</value>
+    <comment>_G776</comment>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Seleziona</value>
+    <comment>_G773</comment>
+  </data>
+  <data name="SelectCard.Text" xml:space="preserve">
+    <value>Seleziona</value>
+    <comment>_G774</comment>
+  </data>
+  <data name="Installments_6" xml:space="preserve">
+    <value>6</value>
+    <comment>_G797</comment>
+  </data>
+  <data name="Installments_7" xml:space="preserve">
+    <value>7</value>
+    <comment>_G798</comment>
+  </data>
+  <data name="Installments_4" xml:space="preserve">
+    <value>4</value>
+    <comment>_G795</comment>
+  </data>
+  <data name="Installments_5" xml:space="preserve">
+    <value>5</value>
+    <comment>_G796</comment>
+  </data>
+  <data name="Installments_8" xml:space="preserve">
+    <value>8</value>
+    <comment>_G799</comment>
+  </data>
+  <data name="Installments_11" xml:space="preserve">
+    <value>11</value>
+    <comment>_G802</comment>
+  </data>
+  <data name="Installments_12" xml:space="preserve">
+    <value>12</value>
+    <comment>_G803</comment>
+  </data>
+  <data name="Installments_9" xml:space="preserve">
+    <value>9</value>
+    <comment>_G800</comment>
+  </data>
+  <data name="Installments_10" xml:space="preserve">
+    <value>10</value>
+    <comment>_G801</comment>
+  </data>
+  <data name="BCPointUse.Text" xml:space="preserve">
+    <value>Utilizza</value>
+    <comment>_G788</comment>
+  </data>
+  <data name="ValidateStreetAddressRequired" xml:space="preserve">
+    <value>L'indirizzo è obbligatoria.</value>
+    <comment>_G786</comment>
+  </data>
+  <data name="MsgCardTotalExceedsOrderTotal" xml:space="preserve">
+    <value>Questa carta è autorizzata a pagare più del totale dell'ordine...</value>
+    <comment>_G787</comment>
+  </data>
+  <data name="PrimaryYes" xml:space="preserve">
+    <value>Sì</value>
+    <comment>_G790</comment>
+  </data>
+  <data name="Installments_2" xml:space="preserve">
+    <value>2</value>
+    <comment>_G793</comment>
+  </data>
+  <data name="Installments_3" xml:space="preserve">
+    <value>3</value>
+    <comment>_G794</comment>
+  </data>
+  <data name="ValidateNickNameExists" xml:space="preserve">
+    <value>Hai già utilizzato questo Nome Utente.</value>
+    <comment>_G791</comment>
+  </data>
+  <data name="lblZipResource1.Text" xml:space="preserve">
+    <value>CAP*:</value>
+    <comment>_G792</comment>
+  </data>
+  <data name="btnDeleteResource1" xml:space="preserve">
+    <value>Elimina</value>
+    <comment>_G743</comment>
+  </data>
+  <data name="LABEL2Resource1.Text" xml:space="preserve">
+    <value>Rimuovi carta di credito</value>
+    <comment>_G744</comment>
+  </data>
+  <data name="btnContinueResource1.Text" xml:space="preserve">
+    <value>Continua</value>
+    <comment>_G741</comment>
+  </data>
+  <data name="lblCreditCardBillingAddressResource1.Text" xml:space="preserve">
+    <value>Indirizzo di fatturazione della carta di credito</value>
+    <comment>_G742</comment>
+  </data>
+  <data name="BCPointDontUse.Text" xml:space="preserve">
+    <value>Non usare</value>
+    <comment>_G745</comment>
+  </data>
+  <data name="lblExpDateResource1.Text" xml:space="preserve">
+    <value>Data di scadenza*:</value>
+    <comment>_G748</comment>
+  </data>
+  <data name="EditCreditCard" xml:space="preserve">
+    <value>Modifica carta di credito</value>
+    <comment>_G746</comment>
+  </data>
+  <data name="ExpDate.Text" xml:space="preserve">
+    <value>Data di scadenza</value>
+    <comment>_G747</comment>
+  </data>
+  <data name="CardNumber.Text" xml:space="preserve">
+    <value>Numero carta</value>
+    <comment>_G734</comment>
+  </data>
+  <data name="lblCardNumberResource1.Text" xml:space="preserve">
+    <value>Numero carta*:</value>
+    <comment>_G735</comment>
+  </data>
+  <data name="CardHolderName.Text" xml:space="preserve">
+    <value>Intestatario della carta</value>
+    <comment>_G732</comment>
+  </data>
+  <data name="lblCardHolderNameResource1.Text" xml:space="preserve">
+    <value>Intestatario della carta*:</value>
+    <comment>_G733</comment>
+  </data>
+  <data name="CardType.Text" xml:space="preserve">
+    <value>Tipo carta</value>
+    <comment>_G736</comment>
+  </data>
+  <data name="CityCard.Text" xml:space="preserve">
+    <value>Città*:</value>
+    <comment>_G739</comment>
+  </data>
+  <data name="lblCityResource1.Text" xml:space="preserve">
+    <value>Città*:</value>
+    <comment>_G740</comment>
+  </data>
+  <data name="lblCardTypeResource1.Text" xml:space="preserve">
+    <value>Tipo carta*</value>
+    <comment>_G737</comment>
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Intestatario della carta</value>
+    <comment>_G738</comment>
+  </data>
+  <data name="lblNickNameResource1.Text" xml:space="preserve">
+    <value>Nome Utente</value>
+    <comment>_G761</comment>
+  </data>
+  <data name="NickName.Text" xml:space="preserve">
+    <value>Nome Utente</value>
+    <comment>_G762</comment>
+  </data>
+  <data name="chkNewBillingAddressResource1.Text" xml:space="preserve">
+    <value>Nuovo indirizzo di fatturazione</value>
+    <comment>_G760</comment>
+  </data>
+  <data name="chkMakePrimaryCreditCardResource1.Text" xml:space="preserve">
+    <value>Memorizza questa carta come principale</value>
+    <comment>_G758</comment>
+  </data>
+  <data name="lblExpDateFormatResource1.Text" xml:space="preserve">
+    <value>MM/AAAA</value>
+    <comment>_G759</comment>
+  </data>
+  <data name="Primary.Text" xml:space="preserve">
+    <value>Principale</value>
+    <comment>_G766</comment>
+  </data>
+  <data name="lblLabel1Resource1.Text" xml:space="preserve">
+    <value>*campo obbligatorio</value>
+    <comment>_G767</comment>
+  </data>
+  <data name="ValidateSelectCardType" xml:space="preserve">
+    <value>Per favore seleziona un tipo di carta</value>
+    <comment>_G765</comment>
+  </data>
+  <data name="PrimaryNo" xml:space="preserve">
+    <value>No</value>
+    <comment>_G763</comment>
+  </data>
+  <data name="lblZipFormatResource1.Text" xml:space="preserve">
+    <value>OOOOO</value>
+    <comment>_G764</comment>
+  </data>
+  <data name="lblInstallmentsResource1.Text" xml:space="preserve">
+    <value>rata</value>
+    <comment>_G750</comment>
+  </data>
+</root>

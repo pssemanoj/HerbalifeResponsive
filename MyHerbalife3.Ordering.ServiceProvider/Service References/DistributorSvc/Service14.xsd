@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+  <xs:complexType name="Address">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountyDistrict" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateProvinceTerritory" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="Address_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Address">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Building" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CareOf" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsValidated" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Suburb" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="To" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" minOccurs="0" name="TypeOfAddress" type="q2:AddressType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address_V02" nillable="true" type="tns:Address_V02" />
+  <xs:complexType name="Address_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Address">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Address_V01" nillable="true" type="tns:Address_V01" />
+  <xs:complexType name="Name_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="First" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Last" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Middle" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Name_V01" nillable="true" type="tns:Name_V01" />
+  <xs:complexType name="CountryType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CountryType" nillable="true" type="tns:CountryType" />
+  <xs:complexType name="AddressesCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="tns:Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressesCollection" nillable="true" type="tns:AddressesCollection" />
+</xs:schema>

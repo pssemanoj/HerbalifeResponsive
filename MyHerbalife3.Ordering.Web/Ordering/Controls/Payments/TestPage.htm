@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td align="right">
+                <span>카드사 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <!-- START SELECT BOX -->
+                <input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].provider"></input><select
+                    class="formInput02" style="height: 20px; font-size: 10px; width: 110px;" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].provider"
+                    onchange="javascript:paymentTypeFields();" onblur="javascript:paymentTypeFields();"
+                    id="provider"><!-- OPEN OPTION -->
+                    <option value="">선택 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="1">외환카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="2">삼성카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="3">엘지카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="6">신한카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="7">씨티카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="8">수협카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="9">광주카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="10">전북카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="11">하나카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="12">산은카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="13">국민카드 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="14">비씨카드 </option>
+                    <!-- CLOSE OPTION -->
+                </select><!-- END SELECT BOX -->
+            </td>
+        </tr>
+        <tr id="xmpiDiv2">
+            <td align="right">
+                <span>결제방법 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <input value="" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitPaymentMethod"
+                    id="splitpaymentmethod1" /><input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitPaymentMethod" /><!-- START SELECT BOX -->
+                <input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitPaymentMethod"></input>
+                <select
+                    class="formInput02" disabled="disabled" style="height: 20px; font-size: 10px;
+                    width: 110px;" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitPaymentMethod"
+                    onchange="javascript:checkInstallmentChoice();" id="splitpaymentmethod"><!-- OPEN OPTION -->
+                    <option value="XMPI">안심클릭 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="ISP">ISP(비씨,국민) </option>
+                    <!-- CLOSE OPTION -->
+                </select><!-- END SELECT BOX -->
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <span>카드 소지자 이름 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <span>
+                    <input value="" maxlength="16" type="text" class="formInput02" size="30" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].cardHolderName" /><input
+                        value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].cardHolderName" /></span>
+            </td>
+        </tr>
+        <tr id="xmpiDiv1">
+            <td align="right">
+                <span>법인/개인 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <!-- START SELECT BOX -->
+                <input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].primaryUsage"></input><select
+                    class="formInput02" style="height: 20px; font-size: 10px; width: 110px;" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].primaryUsage"
+                    onchange="javascript:checkInstallmentChoice();" id="pirmaryusage"><!-- OPEN OPTION -->
+                    <option value="">선택 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="business">법인 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="personal">개인 </option>
+                    <!-- CLOSE OPTION -->
+                </select><!-- END SELECT BOX -->
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <span>금액 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <!-- PARAM TRUE -->
+                <!-- /PARAM TRUE -->
+                <!-- PARAM TRUE -->
+                <!-- /PARAM TRUE -->
+                <!-- PARAM TRUE -->
+                <!-- /PARAM TRUE -->
+                <!-- PARAM FALSE -->
+                <!-- /PARAM FALSE -->
+                <!-- PARAM TRUE -->
+                <!-- /PARAM TRUE -->
+                <!-- PARAM FALSE -->
+                <span>
+                    <input value="34,480" maxlength="30" type="text" class="formInput02" size="20" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitAmount"
+                        onblur="javascript:checkInstallmentChoice();" id="amount" /><input value=" " type="hidden"
+                            name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].splitAmount" /></span>
+                <!-- /PARAM FALSE -->
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <span>할부 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <!-- START SELECT BOX -->
+                <input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].installmentPeriod"></input><select
+                    class="formInput02" style="height: 20px; font-size: 10px; width: 110px;" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].installmentPeriod"
+                    onchange="javascript:checkInstallmentChoice();" id="installmentperiod">
+                    <!-- OPEN OPTION -->
+                    <option value="00">일시불 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="02">2개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="03">3개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="04">4개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="05">5개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="06">6개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="07">7개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="08">8개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="09">9개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="10">10개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="11">11개월 </option>
+                    <!-- CLOSE OPTION -->
+                    <!-- OPEN OPTION -->
+                    <option value="12">12개월 </option>
+                    <!-- CLOSE OPTION -->
+                </select><!-- END SELECT BOX -->
+            </td>
+        </tr>
+        <tr id="ispDiv" style="display: none;">
+            <td align="right">
+                <span>BC 탑 포인트 </span><span><font size="-1"><sup>*</sup></font> </span>
+            </td>
+            <td>
+                <!-- START SELECT BOX -->
+                <input value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].bcTopPoints"></input><select
+                    class="formInput02" style="height: 20px; font-size: 10px; width: 110px;" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.currentList[0].bcTopPoints"
+                    id="bcTopPoints">
+                    <!-- OPTION -->
+                    <option value="0">사용 </option>
+                    <!-- /OPTION -->
+                    <!-- OPTION -->
+                    <option value="1" selected="selected">미사용 </option>
+                    <!-- /OPTION -->
+                </select><!-- END SELECT BOX -->
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <script>
+                    function removeCommas() {
+                        var aNum = document.getElementById("amount").value;
+                        aNum = aNum.replace(/,/g, "");
+                        document.getElementById("amount").value = aNum;
+                        return true;
+                    }
+                </script>
+                <!-- BUTTON -->
+                <p style="margin: 0; padding: 0;">
+                    <input value="o99498542" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.listId" /><input
+                        value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.listId" />
+                    <input value="checkout.jsp" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.splitPaymentInfosSuccessURL" /><input
+                        value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.splitPaymentInfosSuccessURL" /><input
+                            value="checkout.jsp" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.splitPaymentInfosErrorURL" /><input
+                                value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.splitPaymentInfosErrorURL" /><input
+                                    value="checkout.jsp" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPaymentErrorURL" /><input
+                                        value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPaymentErrorURL" /><input
+                                            value="confirm_order.jsp" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPaymentSuccessURL" /><input
+                                                value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPaymentSuccessURL" /><input
+                                                    value="Continue" type="hidden" name="/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPayment" /><input
+                                                        value=" " type="hidden" name="_D:/atg/commerce/order/purchase/PaymentGroupFormHandlerKR.applyDistributorPayment" /></p>
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" name="KMPIcavv" />
+    <input type="hidden" name="KMPIxid" />
+    <input type="hidden" name="KMPIeci" />
+    <input type="hidden" name="card_number" />
+    <input type="hidden" name="ISPEncData" />
+    <input type="hidden" name="ISPSessionKey" />
+    <script type="text/javascript">
+        paymentTypeFields();
+        function paymentTypeFields() {
+            if (document.getElementById("provider").value == "") {
+                document.getElementById("xmpiDiv1").style.display = 'none';
+                document.getElementById("xmpiDiv2").style.display = 'none';
+                document.getElementById("ispDiv").style.display = 'none';
+            } else if (document.getElementById("provider").value < 13) {
+                document.getElementById("xmpiDiv1").style.display = '';
+                document.getElementById("xmpiDiv2").style.display = '';
+                document.getElementById("ispDiv").style.display = 'none';
+                document.getElementById("splitpaymentmethod1").value = 'XMPI';
+                document.getElementById("splitpaymentmethod").selectedIndex = 0;
+            } else {
+                document.getElementById("xmpiDiv1").style.display = 'none';
+                document.getElementById("xmpiDiv2").style.display = '';
+                document.getElementById("ispDiv").style.display = '';
+                document.getElementById("splitpaymentmethod1").value = 'ISP';
+                document.getElementById("splitpaymentmethod").selectedIndex = 1;
+            }
+            checkInstallmentChoice();
+        }
+        function paramSet(xid, eci, cavv) {
+            //alert("paramSet");
+            setCertResult(xid, eci, cavv, "");
+        }
+        function new_paramSet(xid, eci, cavv, cardno) {
+            //alert("new_paramSet");
+            setCertResult(xid, eci, cavv, cardno);
+        }
+        function setCertResult(xid, eci, cavv, cardno) {
+            //alert("In setCertResult in billing xid = "+xid+" eci = "+eci+" cavv = "+cavv+" cardno = "+cardno);
+            document.shippingform.KMPIcavv.value = cavv;
+            document.shippingform.KMPIeci.value = eci;
+            document.shippingform.KMPIxid.value = xid;
+            document.shippingform.card_number.value = cardno;
+            document.shippingform.submit();
+        }
+        function onISPReturn(ispFields, verified) {
+            if (verified) {
+                document.shippingform.ISPEncData.value = ispFields.KVP_ENCDATA.value;
+                document.shippingform.ISPSessionKey.value = ispFields.KVP_SESSIONKEY.value;
+                //alert("KVP_SESSIONKEY: " + ispFields.KVP_SESSIONKEY.value);
+                //alert("KVP_ENCDATA: " + ispFields.KVP_ENCDATA.value);
+                document.shippingform.submit();
+            } else {
+                onPaymentAuthFailed();
+            }
+        }
+        function onPaymentAuthFailed() {
+            document.getElementById("installmentMessage").style.display = "none";
+            document.getElementById("limitedOptionsMessage").style.display = "none";
+            var ele = document.getElementById("paymentAuthFailedMsg");
+            ele.style.display = "block";
+        }
+        function checkInstallmentChoice() {
+            var isp = false;
+            if (document.getElementById("splitpaymentmethod").selectedIndex == 1) {
+                isp = true;
+            }
+            var business = false;
+            if (document.getElementById("pirmaryusage") != null && document.getElementById("pirmaryusage").selectedIndex == 1) {
+                business = true;
+            }
+            var fiftyplus = false;
+            var aNum = document.getElementById("amount").value;
+            aNum = aNum.replace(/,/g, "");
+            if (aNum > 50000) {
+                fiftyplus = true;
+            }
+            var shinhan = false;
+            if (document.getElementById("provider") != null && document.getElementById("provider").selectedIndex == 5) {
+                shinhan = true;
+            }
+            //NOW CHECK
+            //alert(document.getElementById("amount").value);
+            //alert(document.getElementById("provider").selectedIndex);
+            //alert("business = " + business + " 50000+ = " + fiftyplus + " Shin Han = " + shinhan);
+            //alert((business || fiftyplus));
+            //XMPI
+            //if business OR less than 50000 = 'Lump Sum' only installment option
+            //if personal AND more than 50000 = ALL (1-12) installment options.
+            //if personal AND more than 50000 AND Shin Han (provider) = LIMITED (1-6) installment options.
+            //ISP
+            //if more than 50000 = ALL (1-12) installment options.
+            if (!isp && (business || !fiftyplus)) {
+                if (document.getElementById("installmentperiod").selectedIndex != 0) {
+                    document.getElementById("installmentperiod").selectedIndex = 0;
+                    showInstallmentMessage();
+                }
+                document.getElementById("installmentperiod").readonly = true;
+            } else if (isp && !fiftyplus) {
+                if (document.getElementById("installmentperiod").selectedIndex != 0) {
+                    document.getElementById("installmentperiod").selectedIndex = 0;
+                    showInstallmentMessage();
+                }
+                document.getElementById("installmentperiod").readonly = true;
+            } else if (!isp && !business && fiftyplus && shinhan) {
+                if (document.getElementById("installmentperiod").selectedIndex > 5) {
+                    document.getElementById("installmentperiod").selectedIndex = 5;
+                    showLimitedOptionsMessage();
+                }
+                document.getElementById("installmentperiod").readonly = true;
+            } else {
+                document.getElementById("installmentperiod").readonly = false;
+            }
+        }
+        function showLimitedOptionsMessage() {
+            document.getElementById("installmentMessage").style.display = "none";
+            document.getElementById("paymentAuthFailedMsg").style.display = "none";
+            var ele = document.getElementById("limitedOptionsMessage");
+            ele.style.display = "block";
+        }
+        function showInstallmentMessage() {
+            document.getElementById("limitedOptionsMessage").style.display = "none";
+            document.getElementById("paymentAuthFailedMsg").style.display = "none";
+            var ele = document.getElementById("installmentMessage");
+            ele.style.display = "block";
+        }
+    </script>
+</body>
+</html>

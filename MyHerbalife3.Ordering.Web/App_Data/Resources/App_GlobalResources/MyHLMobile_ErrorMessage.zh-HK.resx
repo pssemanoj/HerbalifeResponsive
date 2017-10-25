@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>年度手續費無法加入購物車</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>年度手續費無法從購物車中移除</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>您確定取消此訂單? 按「確認」後，在購物車中所有項目會被移除</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>您的年度手續費訂單內未含任何產品，故其他非產品之項目將被移除</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>候補訂購產品無法加入到年度手續費訂單中</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>信用卡授權無效，請檢閱您的信用咭</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>資料格式錯誤，請重新輸入正確資料</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>產品編號{0}已重複輸入，請輸入其它產品編號</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>會議門票訂購上限為每張訂單{0}</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>網上訂購會議門票服務目前尚未開放</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>產品編號{0}只剩餘{1}數量可供訂購，請更正購物車內的數量</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>產品編號 {0}，訂購數量1或以上會設為候補訂購</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>產品編號{0} 訂購數量不能多於{1}</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>您尚未有登記的信用卡。請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>郵政編號不正確</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>{0}年的年度手續費已逾期並必須在下轉售訂單前繳付，請更改訂單類別為「個人訂單」以繳付年度手續費</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>您訂購的項目{0}目前缺貨，訂購數量會設為0</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>薈萃訂購上限為</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>此暱稱已被使用，請輸入另一個暱稱</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>無法購上訂購</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>網上訂購不適用</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>只有產品可加入年度手續費訂單</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>付款總數與訂單總數不符</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>請輸入大於0的數值</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>請確認信用卡資料無誤</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>請確認您的直銷商編號及密碼無誤後再嘗試登入。 如問題仍然持續，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>請先完成年度手續費訂購才可加入其他產品到購物車</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>請先完成年度手續費訂購才可加入訂購會議門票</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>請輸入一個數值</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>請輸入產品編號 {0}的訂購數量</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>請輸入特定的提貨地點</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>請輸入正確的城市名</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>請輸入正確姓名</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>請輸入正確暱稱</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>請輸入捐款總額，(0)除外</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>請輸入電郵地址</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>請輸入付款資料</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>請輸入信用卡安全碼</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>請輸入年度手續費的數量</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>請輸入正確的電郵地址</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>請輸入您的名字</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>請輸入您的姓氏</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>請輸入您的中名</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>請輸入必要填寫的寄送資料</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>請以正確格式輸入郵政編號</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>請以正確格式輸入分機號碼</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>請輸入收件人姓名</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>請輸入正確郵政編號</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>請輸入城市</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>請輸入分機號碼</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>請輸入名字</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>請輸入姓氏</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>請填寫必要欄位</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>請輸入聯絡電話</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>請輸入國家</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>請輸入地址欄位</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>請填上郵政編號</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>請以正確格式輸入聯絡電話</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>您最多可儲存{0}張信用卡資料。若您欲新增信用卡，請移除其中一張現存的信用卡</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>請注意:&lt;br/&gt;此網頁只能於IE或Firebox瀏覽</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>請先儲存一個送貨地址才可完成此提貨訂單</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>請選擇地點</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>請選擇送貨時間</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>請選擇訂單類別</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>請選擇提貨地點</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>請選擇提貨地點</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>請選擇提貨人姓名</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>請選擇提貨人電話</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>請選擇提貨時間</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>請選擇送貨地址</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>請選擇是/否</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>主要地址無法刪除</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>主要送貨地址無法刪除</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>前往結帳</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>回到首頁</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>所輸入的郵政編號未能提供送貨服務</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>產品編號{0}無法訂購</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>對不起，由於超出您的收入限額，該產品未能加入購物車</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>系統錯誤</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>訂單月份已更改</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>產品編號{0}會加入為候補訂購</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>國家輸入不正確</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>地址必須最少含一個字</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>地址必須最少含一個數字，一個空格及一個字</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>本交易尚未被接納，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>本交易尚未被接納，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>請輸入正確郵政編號</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>沒有產品在您訂單中</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>您訂購的商品 {0}目前存量不夠，可供訂購數量為{1}</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>沒有產品加入到訂單中</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>沒有加產品以計算銷售量</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>此地址已在資料庫內</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>您的訂單已超出您的購貨上限，您尚有 {0}銷售量點數，請修改您的訂單以繼續。</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>您所選擇之信用卡交易失敗</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>薈萃已加到購物車</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>很抱歉，目前匯率無法轉換，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>您的購物車中已加入會議門票，您是否要清除購物車?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>您將刪除主要信用卡，請於刪除前設定另一張主要信用卡</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>由於您的信用卡已多次失效，故無法繼續使用此卡</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>您不能重複加入相同信用卡</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>您不能在沒有產品加入購物車的情況下前往{0}頁</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>若您在送貨選項選擇提貨，在購物車中的候補訂購項目便會被移除。您是否希望繼續？(「是」或「否」)</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>您已變更此訂單之訂購月份為{0}，您是否繼續下一步</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>會議門票已加到您的購物車，您是否想清除購物車？</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>產品已加到您的購物車，您是否想在訂購會議門票前清除您的購物車？</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>您的訂單月份為{0},請再次確認是否正確</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>您已選擇非訂購模式瀏覽產品，您將不能加入產品到購物車</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>您已成功加入康寶萊家庭基金捐款到購物車</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>您只可預繳一年的年度手續費</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>您必須選擇送貨或提貨才可繼續</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>您於最近於{0}下了一筆同樣的訂單，如果此訂單是重複了，請按 「取消訂購」；確定要完成此筆訂單,請按「確認訂購」</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>您的年度手續費到期日為 {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>由於您的年度手續費已到期，我們將自動將您的年度手續費加入購物車中。</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>由於您的年度手續費已到期，年度手續費已加入您的購物車中。</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>您的信用卡有效期已過，請按編輯及更新有效期限</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>您的信用卡有效期已過，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>您的直銷商編號目前無法訂購，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>您的直銷商編號目前無法訂購，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>在您修改購物車前，上一張訂單已經提交。您的訂單號碼是{0}。您可致電香港直銷商服務熱線(852) 2834-1821(星期一至星期五 10:30-19:30及星期六10:30-18:00)或按此查核訂單狀態。(請注意，剛完成之新訂單須一小時後才能顯示。&lt;br&gt;若您欲下新訂單，請重新加入產品到您的購物車。</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>您的年度手續費尚在您的購物車中</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>您的送貨地址不存在,購物車的項目將被清除</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>請於購物車內選擇訂單類別</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>由於已超出您的訂購限額，您未能前往結帳</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>薈萃可加入到購物車的上限是{0}</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>無法完成您的訂單，請記下錯誤編號01並致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>無法完成您的訂單，請記下錯誤編號05並致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>目前無法處理您的訂單，請再次確認您的送貨地址並重試一次。若此問題仍然持續，請致電香港直銷商服務熱線(852) 2834-1821</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>本產品無法加入您的購物車內。</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>您必須刪除其中一張信用卡以更改購物車中的項目</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>必須填寫收發SMS電話號碼</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>抱歉!您無法訂購韓國分公司的產品。韓國分公司的產品僅限韓國直銷商訂購。</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>請填寫國家</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>產品編號{0}無效</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>請選擇送貨方式</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>候補訂購產品不適用於送貨至新喀裡多尼亞及法國波利尼西亞</value>
+  </data>
+</root>

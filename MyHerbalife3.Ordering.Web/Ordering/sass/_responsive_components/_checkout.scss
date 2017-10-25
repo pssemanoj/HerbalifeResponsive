@@ -1,0 +1,235 @@
+.gdo-nav-mid-cho {
+    margin: 0 auto;
+    width: 300px;
+    @include breakpoint( $tablet) { width: 100%; }
+    @include breakpoint( $desktop) { margin: 0; width: 960px; }
+
+}
+
+.gdo-main-table.chkoutFullWidth {
+
+    width: 100%;
+    @include breakpoint( $desktop) { width: 99%; }
+
+    div[id$="upCheckOutOptions"] {
+
+        table { 
+
+            margin: 0 auto !important;
+            #checkout-stepone  {
+
+                div[id$="DeliveryOptionsView"], div[id$="DeliveryOptionsInstructionsView"] { 
+                    
+                    margin: 0 auto !important;
+                    @include breakpoint( $desktop) { margin-right: 41px; }
+                    @include breakpoint($tablet) { width: 100%!important; }
+
+                }
+
+                .checkout-email {
+                    min-height: 50px;
+                    @include breakpoint( $desktop) { min-height: 150px; }
+                    @include breakpoint($tablet) { max-width: 100%!important; width: 100%; }
+                }
+
+            }
+        }
+    }
+    
+    @extend [id$="upOrderTotalsMiniShopping"];
+
+    .gdo-main-tablecell {
+
+        padding-right: 0;
+        @include breakpoint( $desktop) { padding-right: 10px; }
+
+        .gdo-order-details-wrapper {
+
+            float: none;
+            @include breakpoint( $desktop) { float: left; }
+
+            .gdo-order-details-container  {
+
+                margin: 0 auto !important;
+                float: none;
+                @include breakpoint( $desktop) { margin-right: 41px; float: left; }
+                @include breakpoint($tablet) { width: 100%; }
+
+                .gdo-details-label, .gdo-minicart-label {
+                    @include breakpoint($tablet)  { 
+                        @media (orientation: portrait){
+                            padding-left: 5px;
+                        }
+                    }
+                }
+
+                /*[id$="trRemainingVal"], [id$="trDiscountRate"], [id$="trOrderMonthVolume"], [id$="trOrderMonth"] {
+                    .gdo-details-value, .gdo-minicart-value{
+                        padding-right: 22px;
+                    }
+                }*/
+                .gdo-details-value, .gdo-minicart-value {
+                    @include breakpoint($tablet) { padding-right: 22px; }
+                }
+
+                [id$="trLimits"] {
+                    [id$="pnlPurchaseLimits"] {
+                        width: 260px;
+                        @include breakpoint($tablet) { width: 100%; max-width: 100%; }
+                        * {
+                            @include breakpoint($tablet) { width: 100%; max-width: 100%; }
+                        }
+                    }
+                }
+
+
+            }
+
+            .gdo-order-details-container-last {
+                width: 260px !important;
+
+                @include breakpoint( $desktop) { float: right; margin-right: 0; width: 284px; }
+                @include breakpoint($tablet) { width: 100%!important; }
+            }
+
+        }
+
+        [id$="upOrderSummary"]{
+             @include breakpoint($tablet) { width: 100%!important; }
+
+            [id$="divLabelOrderSummary"] + div.gdo-order-tbl {
+                @include breakpoint($tablet) { width: auto; }
+            }
+        }
+    }
+
+    table {
+
+        &.invoice-option {
+
+            margin: 0 auto;
+            @include breakpoint( $desktop) { margin: 0; }
+            @include breakpoint($tablet) { width: 100%; }
+
+            .ntbox {
+                 @include breakpoint($tablet) { width: 94%; }
+            }
+        }
+
+    }
+
+
+    .payment-section {
+
+        @include breakpoint( $desktop) { padding-right: 10px; }
+
+        
+        [id$="rblPaymentOptions"] td {
+            display: table-row;
+            width: 100%;
+
+            @include breakpoint( $desktop) { 
+            
+                display: table-cell;
+                width: auto;
+            
+            }
+        }
+
+        ul {
+            
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding:3px 0;
+                display:list-item;
+                list-style: disc !important;
+            }
+
+        }
+
+        div[id$="pnlAcknowledCheckContent"] {
+
+            width: 100%;
+            @include breakpoint( $desktop) { width: 50%; }
+        }
+
+        .gdo-checkout-step4-btn-tbl td:nth-child(2) {
+
+            width: auto;
+            @include breakpoint( $desktop) { width: 250px; }
+
+        }
+
+        table[id$="gridViewCardInfo"] {
+            input[id$="txtCVV"] {
+                width: 50px;
+            }
+            input[id$="txtAmount"] {
+                width: 65px;
+            }
+        }
+
+    }
+
+    .checkout-action-buttons {
+
+        padding: 0 10px;
+
+        @include breakpoint( $desktop) { padding-right: 10px; }
+
+        .buttonstbl-cancel {
+
+            float: none;
+            width: 100%;
+
+            @include breakpoint( $desktop) { 
+                float: left;
+                width: 30%;
+            }
+
+        }
+
+        .buttons-fwd {
+            > div {
+                @extend .buttonstbl-cancel;
+
+                @include breakpoint( $desktop) { 
+                    float: right;
+                    width: auto;
+                }
+
+                .forward {
+                    padding: 14px 0;
+                    @include breakpoint( $desktop) { padding: 10px; }
+                }
+            }
+        }
+
+    }
+
+    /*div[id$="upOrderSummary"] {
+        .gdo-edit-summary {
+            .product-info {
+                .col-Product + div {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }*/
+
+    div[id$="_pnlCreditTable"] {
+        [id$="gridViewCardInfo"] {
+            th:first-child {
+                @include breakpoint($tablet) { width: 100%; }
+            }
+        }
+    }
+}
+
+div.confirm-tellyourstory .image img {
+    display: block;
+    margin: 0 auto;
+}
+

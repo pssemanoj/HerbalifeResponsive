@@ -1,0 +1,176 @@
+    #left_menu, .leftMenuNew {
+        @include MarginPadding( 0, 0);
+        list-style: none outside none;
+
+        * {
+            -moz-box-sizing: border-box;
+        }
+
+        > li {
+            @include MarginPadding( null, 0 );
+            background-color: #EEEEEE;
+            border-bottom: 1px solid $white;
+            border-radius: 2px 2px 0 0;
+            color: $white;
+            position: relative;
+            transition: all 0.3s ease-out 0s;
+
+            &:hover {
+                background-color: #7AC143;
+                color: #666666;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .active {
+            background-color: #7AC143;
+            color: #666666;
+
+            a {
+                color: $white;
+            }
+        }
+
+        a {
+            @include MarginPadding( null, 8px 25px 8px 12px );
+            color: #666666;
+            display: inline-block;
+            line-height: 20px;
+            white-space: normal;
+            width: 100%;
+        }
+    }
+
+    // End My Account Left Nav //
+
+    /**************************************************
+						    NAVIGATION 
+    **************************************************/
+
+    // TopNav //
+    // for fixing overlay issue on thickbox popups //
+    .RadMenu {
+	    z-index: 1;
+    }
+
+    // LeftNav //
+    .gdo-left-nav-level1 ul li,
+    .gdo-left-nav-level0 ul li {
+        @include MarginPadding( 3px 0, null );
+    }
+
+    .gdo-left-nav-level0 ul,
+    .gdo-left-nav-level1 ul,
+    .gdo-left-nav-level2 br {
+        @include MarginPadding( 0, 0 );
+    }
+
+    .gdo-left-nav-level0 a,
+    .gdo-left-nav-level1 a,
+    .gdo-left-nav-level2 a {
+	    text-decoration: none;
+    }
+
+    .gdo-left-nav-level3 a {
+        @include MarginPadding( null, 0.4em 0 0.4em 40px );
+	    color: #3a3a3a;
+	    line-height: 1.3em;
+        font-size: 13px;
+    }
+
+    .gdo-left-nav-level3 a:hover,
+    .gdo-left-nav-level4 a:hover,
+    .gdo-left-nav-level5 a:hover {
+	    text-decoration: underline;
+    }
+
+    .gdo-left-nav-level3-green a,
+    .gdo-left-nav-level4 a,
+    .gdo-left-nav-level5 a {
+	    font-size: 11px;
+	    line-height: 1.5em;
+	    font-weight: normal;
+    }
+
+    .gdo-left-nav-level3-green a {
+        margin-left: 0px;
+        color: #136e06;
+	    text-decoration: underline;
+    }
+
+    .gdo-left-nav-level4 a {
+        @include MarginPadding( null, 0 0 0 15px );
+	    color: #3a3a3a;
+	    text-decoration: none;
+    }
+
+    li.gdo-left-nav-level5 {
+        @include MarginPadding( null, 0 0 0 15px );
+    }
+
+    .gdo-left-nav-level5 a {
+	    color: #3a3a3a;
+	    text-decoration: none;
+    }
+
+    .leftMenuNew{
+        li{
+            &.gdo-left-nav-level2 {
+            background-color: #DBDBDB;
+      
+                &.active, &:hover {
+                    background-color: #7AC143;
+        
+                    a{
+                        color: $white;
+                    }
+                }
+      
+                a{
+                    font-weight: normal; 
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+
+    .toggle-parent  {
+
+        > a { width: 85%; }
+    
+        .arrow {
+            &.icon{
+                color: $black;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 16px;
+                vertical-align: middle;
+            }
+            &.hide{ display: none; }
+        }
+
+        .icon-arrow-down-3{
+            -moz-transition: all 0.25s linear;
+            -webkit-transition: all 0.25s linear;
+            transition: all 0.25s linear;
+        }
+
+        .icon-arrow-down-3.up{
+            -moz-transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+    }
+
+    .toggle-child  {
+
+        .toggle-parent {
+
+            .arrow.icon { font-size: 12px; }
+
+        }
+
+    }

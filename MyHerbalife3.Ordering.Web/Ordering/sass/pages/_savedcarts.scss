@@ -1,0 +1,535 @@
+#ctl00_ctl00_ContentArea_ProductsContent_ddlOrderBy {
+	border: medium none;
+	float: left;
+}
+
+
+.savedCarts {
+	width: 747px;
+
+    .RadGrid {
+        .rgNumPart {
+            a {
+                @include MarginPadding( null, 5px );
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .RadGrid_Hay {
+	    border-style: none none solid;
+
+        .gdo-pagination-active {
+	        background: none;
+
+            td {
+	            border: medium none;
+            }
+        }
+    }
+
+    .rgMasterTable {
+        .productsCont {
+            a {
+                &.lnkTotalProducts {
+                	color: #5AB11A !important;
+	                display: block;
+	                padding: 5px 10px;
+	                text-decoration: underline;
+                }
+            }
+
+            table {
+                border-bottom: 1px solid #ccc;
+	            margin-bottom: 10px;
+                width: 100%;
+
+                tr {
+                    &:hover {
+                        background: url(/Ordering/Images/saved-carts-grid-hd.jpg) 50% 50% repeat-x !important;
+                    }
+                }
+            }
+        }
+
+        .rgAltRow {
+            background: #fff url(/Ordering/Images/saved-carts-grid-alt-row.jpg) 0 0 repeat-x;
+        }
+
+        .rgRow {
+            background: #fcfcfc url(/Ordering/Images/saved-carts-grid-row.jpg ) 0 0 repeat-x;
+        }
+    }
+
+    .productsCont {
+        th {
+            background: url(/Ordering/Images/saved-carts-grid-hd.jpg) 50% 50% repeat-x !important;
+        }
+    }
+
+    // override for defect 43057 //
+    .icnLeft {
+        left: -8px;
+    }
+}
+
+.savedCarts .RadGrid_Hay .gdo-pagination-active:hover,
+.savedCarts .RadGrid_Hay .rgNumPart a, 
+.savedCarts .RadGrid .rgNumPart a.rgCurrentPage, 
+.savedCarts .RadGrid .rgNumPart a.rgCurrentPage span, 
+.savedCarts .RadGrid_Hay .rgNumPart a:hover span, 
+.savedCarts .RadGrid_Hay .rgNumPart a:hover {
+	background-image: none;
+}
+
+.savedCarts .RadGrid .rgNumPart a.rgCurrentPage, 
+.savedCarts .RadGrid_Hay .rgNumPart a:hover {
+	background-color: #7AC142;
+	color: #FFF !important;
+	cursor: pointer !important;
+}
+
+.savedCarts .RadGrid_Hay .gdo-pagination-active 
+.savedCarts .RadGrid .rgNumPart a span {
+	padding: 0 !important;
+}
+
+.savedCarts .RadGrid_Hay .rgHeader:first-child, 
+.savedCarts .RadGrid_Hay th.rgResizeCol:first-child, 
+.savedCarts .RadGrid_Hay .rgFilterRow > td:first-child, 
+.savedCarts .RadGrid_Hay .rgRow > td:first-child, 
+.savedCarts .RadGrid_Hay .rgAltRow > td:first-child {
+	border: none;
+}
+
+#divGrid {
+    &.savedCarts {
+        .productsCont {
+            th {
+                color: gray;
+                text-align: left;
+            }
+        }
+
+        .rgMasterTable {
+            .productsCont {
+                table {
+                    td {
+                        @include MarginPadding( null, 3px 10px );
+                        border: none;
+                        border-right: 1px solid #ccc;
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        th {
+            @include MarginPadding( null, 5px 10px );
+            background: none repeat scroll 0 0 #DAF6C6;
+            border-left: medium none;
+            border-right: medium none;
+            border-bottom: 1px solid #4AB300;
+            border-top: 1px solid #4AB300;
+            color: #4D4D4D;
+            height: 25px;
+
+            &.rgHeader {
+                height: 31px;
+                font-size: 14px;
+            }
+
+            &.sv_qty {
+                padding-left: 5px;
+            }
+        }
+
+        .RadGrid {
+            .rgRow, .rgAltRow {
+                td {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    vertical-align: top;
+                    border: 1px solid Lightgrey;
+                }
+            }
+        }
+    }
+    // Fix per defect 48797, 45312 //
+    .limeContentGrad {
+        padding: 1em;
+    }
+}
+
+
+.sv_qty span, .sv_sku span {
+	width: 50px;
+	white-space: normal;
+}
+
+#topSavedCarts {
+	overflow: hidden;
+    margin-left: 10px;
+
+    + div { 
+        margin-left: 10px;
+    }
+
+    .gdo-form-label-left {
+	    white-space: normal;
+	    clear: both;
+	    padding-top: 20px;
+	    border-top: 1px solid $grey;
+    }
+
+    #topSavedCarts {
+        .search_cart {
+            select {
+                @include MarginPadding( null, 3px );
+                margin-right: 15px;
+	            border: 1px solid #ccc;
+            }
+        }
+    }
+
+    .search_cart {
+        select, input, span {
+      	    vertical-align: middle;
+	        border-radius: 3px;
+	        float: left;
+        }
+    }
+
+    > .backward {
+        @include MarginPadding( 20px 10px, null );
+    }
+
+    #ctl00_ctl00_ContentArea_ProductsContent_lblOrderBy {
+	    display: inline-block;
+	    padding: 8px;
+    }
+
+    .focusedTab {
+        @include MarginPadding( 0, null );
+        color: $white !important;
+	    background: none repeat scroll 0 0 #78C339;
+        border-radius: 0;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    }
+
+    .unFocusedTab {
+        @include MarginPadding( 0 !important, null );
+        background: none repeat scroll 0 0 #EEEEEE;
+        border-radius: 0 !important;
+        color: #666666;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    }
+}
+
+#tabSavedCarts, 
+#tabRecentOrders {
+    @include MarginPadding( null, 8px 10px );
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: $grey;
+	cursor: pointer;
+	font-size: 14px;
+	margin-right: 5px;
+	min-width: 150px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#ctl00_ctl00_ContentArea_ProductsContent_lblSearch {
+	margin-left: 15px;
+}
+
+// Saved Carts //
+.search_cart {
+    @include MarginPadding( 20px 0 10px 0, null );
+
+    .rcbReadOnly{
+	    background-color: #eeeeee;
+	    
+	    .rcbArrowCellRight{
+    	    display: block;
+            height: 22px;
+            margin-top: 5px;
+            overflow: hidden;
+            width: 16px;
+        }
+    }
+    
+    input[id$="txtSearch"] {
+        background-color: $white;
+        box-shadow: none;
+        color: #444444;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-top: 7px;
+        text-transform: uppercase;
+        width: 200px;
+    }
+    
+    input[id$="btnSearch"] {
+        @include MarginPadding( 0 10px, 0 );
+        background: url("/Ordering/Images/icons/search.png") no-repeat scroll 50% 50% #0080FF;
+        border: medium none;
+        height: 34px;
+        width: 34px;
+    }
+    
+    .RadComboBox_Hay {
+        .rcbReadOnly {
+            .rcbInputCellLeft {
+                @include BackGroundSet( null, initial );
+            }
+        }
+    }
+    
+    .RadComboBox_Default {
+        .rcbInputCellLeft {
+            @include BackGroundSet( none, null );
+        }
+      
+        .rcbReadOnly {
+            td {
+                &.rcbArrowCellRight, &.rcbArrowCellLeft{
+                    @include BackGroundSet( url("/Ordering/Images/icons/arrow_down.png"), center center );
+                    background-color: #EEEEEE;
+                    border-radius: 0 5px 5px 0;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    
+    a[id$="ddlOrderBy_Arrow"] {
+        width: 20px !important;
+    }
+    
+    input[id$="ddlOrderBy_Input"] {
+        padding-bottom: 7px !important;
+        padding-top: 7px !important;
+    }
+
+    a[id$="NewOrder"] { margin: 0 0 0 3px; }
+    
+    .rcbInputCellLeft {
+        @include BackGroundSet( none !important, null );
+    }
+}
+#divProducts td {
+	border-color: #BBB99D !important;
+}
+
+/**********************************************************************************/	
+.lnkCartName, .lblDate, .savedCarts .pAddress {
+	display: block;
+	padding-left: 20px;
+	width: 100px;
+	word-break: break-all;
+}
+
+.RadGrid_Hay {
+    .rgRow, .rgAltRow {
+        a {
+            &.lnkCartName {
+        	    background: url("/Ordering/Images/icons/green-arrow-right.gif") no-repeat scroll 5px 2px transparent;
+        	    color: #5AB11A;
+        	    font-weight: bold;
+        	    text-decoration: none;
+        	    width: 100px;
+        	    word-wrap: break-word;
+        	
+        	    &.expanded {
+        	        background: url("/Ordering/Images/icons/green-arrow-expand.gif") no-repeat scroll 5px 5px transparent;
+        	    }
+            }
+        }
+    }
+}
+
+.checkOutBtn, .deleteCartBtn {
+	text-align: center;
+}
+
+.deleteCartBtn .linkBtn {
+    @include MarginPadding( 3px, 5px 20px );
+	text-decoration: none;
+	line-height: 17px;
+}
+
+div[id$="CartsGrid"] a.forward {
+	color: $white;
+}
+/*********************Save Cart pop up window***************************/
+.saveCartsPopUp {
+    .lblMessage2 {
+        @include MarginPadding( 7px, null );
+	    font-style: italic;
+	    display: block;
+	    text-align: right;
+    }
+
+    .lblName {
+	    text-align: center;
+	    margin-right: 5px;
+	    display: inline-block;
+	    font-weight: bold;
+	    width: 50%;
+    }
+
+    .txtName {
+	    width: 40%;
+	    display: inline-block;
+    }
+
+    .gdo-popup-title span {
+	    font-size: 14px;
+    }
+
+    .gdo-form-label-left {
+        @include MarginPadding( 10px 0, null );
+    }
+}
+
+div[id$="updDeleteCart"] {
+    .gdo-popup {
+	    width: 350px;
+
+        > div {
+	        overflow: hidden;
+        }
+    }
+}
+
+.saveCartsPopUp, 
+.confirmClearCart, 
+.confirmCancel, 
+div[id$="updDeleteCart"] .gdo-popup {
+	border: 10px solid #CCC;
+	max-width: 510px;
+	color: #737373;
+}
+
+.saveCartsPopUp .bttn-recalculate, 
+div[id$="updDeleteCart"] .gdo-button-margin-rt {
+    @include MarginPadding( 20px auto 0 auto, null );
+	float: none;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+.saveCartsPopUp .gdo-popup-title, 
+.confirmClearCart .gdo-popup-title, 
+div[id$="updDeleteCart"] .gdo-popup-title, 
+.deleteCart .gdo-popup-title, 
+.confirmCancel .gdo-popup-title, 
+div[id$="updClearCart"] .gdo-popup-title, 
+.copyCart .gdo-popup-title, 
+div[id$="pnlClearCart"] .gdo-form-label-left + .bttn-recalculate,
+.tabs-SKU2 {
+	float: none;
+}
+
+.confirmButtons {
+	text-align: center;
+}
+
+#ctl00_ctl00_ContentArea_ctl04_ctl08_lblSaveCartMessage1, 
+#ctl00_ctl00_ContentArea_ProductsContent_ctl02_ctl04_lblSaveCartMessage1 {
+    @include MarginPadding( 10px 0 30px, null );
+	display: block;
+}
+
+#ctl00_ctl00_ContentArea_ctl04_ctl08_lblSavedCartMessage1,
+#ctl00_ctl00_ContentArea_ctl04_ctl08_lblSavedCartMessage2,
+#ctl00_ctl00_ContentArea_ProductsContent_ctl02_ctl04_lblSavedCartMessage1, 
+#ctl00_ctl00_ContentArea_ProductsContent_ctl02_ctl04_lblSavedCartMessage2 {
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#ctl00_ctl00_ContentArea_ctl04_lblConfirmClearCartText, 
+#ctl00_ctl00_ContentArea_ProductsContent_lblDeleteCartMessage {
+    @include MarginPadding( 10px 0, null );
+	display: block;
+}
+
+#ctl00_ctl00_ContentArea_ProductsContent_lblDeleteCartMessage {
+	margin-bottom: 20px;
+}
+
+div[id$="pnlClearCart"] {
+    width: 600px;
+	
+	.gdo-form-label-left {
+	    overflow: hidden;
+	  
+	    &:first-child {
+	        margin-bottom: 20px;    
+	    }
+    }
+  
+    span{
+        &[id$="lblClearCartMessage1"] {
+	        display: inline-block;
+	        margin-bottom: 20px;
+        }
+    
+        &[id$="lblClearCartMessage2"] {
+    	    display: block;
+    	    text-align: center;
+    	    font-style: italic;
+    	    padding-top: 2px;
+    	    font-size: 9px;
+        }
+    
+        &[id$="lblClearCartMessage3"] {
+            @include MarginPadding( null, 10px );
+    	    border-top: 1px solid $grey;
+    	    display: block;
+    	    margin-top: 20px;
+    	    text-align: right;
+        }
+    }
+
+    .bttn-recalculate {
+        a{
+            float: left;
+        }
+
+        div {
+            float: right;
+        }
+    }
+}
+
+input[id$="txtSaveCartName"] {
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	margin-top: 10px;
+	width: 40%;
+	float: left;
+
+    + .bttn-recalculate {
+	    width: 30%;
+    }
+}
+
+span[id$="lblSaveCartName"] {
+	@include MarginPadding( 10px, null );
+    display: block;
+	float: left;
+	font-weight: bold;
+	width: 20%;
+}
+
+/********************END Save Cart pop up window*********************/

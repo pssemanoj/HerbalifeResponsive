@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd18" namespace="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects.Email" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd12" namespace="http://herbalife.com/HL.Communication.ValueObjects" />
+  <xs:complexType name="TriggeredSendData">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DataKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSendData" nillable="true" type="tns:TriggeredSendData" />
+  <xs:complexType name="TriggeredMemberOptInSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferredName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SendID" type="xs:int" />
+          <xs:element minOccurs="0" name="SubscriberKey" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredMemberOptInSendData_V01" nillable="true" type="tns:TriggeredMemberOptInSendData_V01" />
+  <xs:complexType name="AccountsTaxFormsEmailsend_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q2:Name_V01" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AccountsTaxFormsEmailsend_V01" nillable="true" type="tns:AccountsTaxFormsEmailsend_V01" />
+  <xs:complexType name="TenCustomerFormEmailsendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q3:Name_V01" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubmissionAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SubmissionDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SubmissionMonth" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TenCustomerFormEmailsendData_V01" nillable="true" type="tns:TenCustomerFormEmailsendData_V01" />
+  <xs:complexType name="Sso_ResetPasswordSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Link" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Name" nillable="true" type="q4:Name_V01" />
+          <xs:element minOccurs="0" name="ProfileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ResetToken" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sso_ResetPasswordSendData_V01" nillable="true" type="tns:Sso_ResetPasswordSendData_V01" />
+  <xs:complexType name="Sso_AccountCreatedSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Link" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Name" nillable="true" type="q5:Name_V01" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sso_AccountCreatedSendData_V01" nillable="true" type="tns:Sso_AccountCreatedSendData_V01" />
+  <xs:complexType name="Sso_AccountLockedSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Name" nillable="true" type="q6:Name_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sso_AccountLockedSendData_V01" nillable="true" type="tns:Sso_AccountLockedSendData_V01" />
+  <xs:complexType name="Sso_PasswordChangedSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Name" nillable="true" type="q7:Name_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sso_PasswordChangedSendData_V01" nillable="true" type="tns:Sso_PasswordChangedSendData_V01" />
+  <xs:complexType name="Sso_UsernameChangedSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Name" nillable="true" type="q8:Name_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Sso_UsernameChangedSendData_V01" nillable="true" type="tns:Sso_UsernameChangedSendData_V01" />
+  <xs:complexType name="TriggeredDoubleOptInSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferredName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SendID" type="xs:int" />
+          <xs:element minOccurs="0" name="Subscription" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredDoubleOptInSendData_V01" nillable="true" type="tns:TriggeredDoubleOptInSendData_V01" />
+  <xs:complexType name="TriggeredRequestPinSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DistributorName" nillable="true" type="q9:Name_V01" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Pin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredRequestPinSendData_V01" nillable="true" type="tns:TriggeredRequestPinSendData_V01" />
+  <xs:complexType name="TriggeredSponsorEmailSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AmountDue" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Attribute1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Attribute2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CCExpDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CCName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CCNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CCType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CareOfName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSEveningPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSFaxMobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSMobile" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="DSName" nillable="true" type="q10:Name_V01" />
+          <xs:element minOccurs="0" name="DSPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSPin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Domain" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FreightAmount" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IBPName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsPrepaid" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="LegalAddress" nillable="true" type="q11:Address_V01" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="MailingAddress" nillable="true" type="q12:Address_V01" />
+          <xs:element minOccurs="0" name="MessageCenter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MessageCenterText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreviousDSAppDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreviousDSID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreviousDSLastActivityDate" nillable="true" type="xs:string" />
+          <xs:element xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="PreviousDSName" nillable="true" type="q13:Name_V01" />
+          <xs:element minOccurs="0" name="PreviousDistributorship" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RetailPrice" nillable="true" type="xs:string" />
+          <xs:element xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="ShippingAddress" nillable="true" type="q14:Address_V01" />
+          <xs:element minOccurs="0" name="ShippingMethod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShippingRecipient" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SponsorEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SponsorID" nillable="true" type="xs:string" />
+          <xs:element xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="SponsorName" nillable="true" type="q15:Name_V01" />
+          <xs:element xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="SpouseName" nillable="true" type="q16:Name_V01" />
+          <xs:element minOccurs="0" name="TaxAmount" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TriggeredSponsorEmailSendData_V01" nillable="true" type="tns:TriggeredSponsorEmailSendData_V01" />
+  <xs:complexType name="GdoOrderEmailSendData_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TriggeredSendData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillingAddress" nillable="true" type="tns:GenericAddress" />
+          <xs:element minOccurs="0" name="DeliveryTimeEstimated" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Distributor" nillable="true" type="tns:Distributor" />
+          <xs:element minOccurs="0" name="EmailType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GrandTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="HFFMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HapAction" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HapExpiryDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HapSchedule" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HapType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ICMS" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IPI" type="xs:decimal" />
+          <xs:element minOccurs="0" name="InvoiceOption" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsHAP" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LocalTaxCharge" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Logistics" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MarketingFund" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Messages" nillable="true" type="tns:ArrayOfMessage" />
+          <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+          <xs:element xmlns:q17="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects.Email" minOccurs="0" name="OrderLines" nillable="true" type="q17:ArrayOfTriggeredGDOOrderConfirmationOrderLine" />
+          <xs:element minOccurs="0" name="OrderMonth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OrderSubmittedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PaymentOption" nillable="true" type="xs:string" />
+          <xs:element xmlns:q18="http://herbalife.com/HL.Communication.ValueObjects" minOccurs="0" name="PaymentType" type="q18:GdoPaymentTypes" />
+          <xs:element minOccurs="0" name="Payments" nillable="true" type="tns:ArrayOfPaymentInfo" />
+          <xs:element minOccurs="0" name="PickupLocation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PickupTime" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchaseType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Shipment" nillable="true" type="tns:Shipment" />
+          <xs:element minOccurs="0" name="ShippingAddress" nillable="true" type="tns:GenericAddress" />
+          <xs:element minOccurs="0" name="ShippingHandling" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SpecialInstructions" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubTotal" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Tax" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TaxedNet" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalCollateralRetail" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalDiscountAmount" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalDiscountPercentage" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalDiscountRetail" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalEarnBase" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalPackagingHandling" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalProductRetail" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalPromotionalRetail" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalRetail" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalVolumePoints" type="xs:decimal" />
+          <xs:element minOccurs="0" name="VolumePointsRate" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GdoOrderEmailSendData_V01" nillable="true" type="tns:GdoOrderEmailSendData_V01" />
+  <xs:complexType name="GenericAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountyDistrict" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Line4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericAddress" nillable="true" type="tns:GenericAddress" />
+  <xs:complexType name="Distributor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="tns:ContactInfo" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Distributor" nillable="true" type="tns:Distributor" />
+  <xs:complexType name="ContactInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactInfo" nillable="true" type="tns:ContactInfo" />
+  <xs:complexType name="ArrayOfMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessage" nillable="true" type="tns:ArrayOfMessage" />
+  <xs:complexType name="Message">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MessageType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageValue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Message" nillable="true" type="tns:Message" />
+  <xs:complexType name="ArrayOfPaymentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentInfo" nillable="true" type="tns:PaymentInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentInfo" nillable="true" type="tns:ArrayOfPaymentInfo" />
+  <xs:complexType name="PaymentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Authorization" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Installments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentInfo" nillable="true" type="tns:PaymentInfo" />
+  <xs:complexType name="Shipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PickupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ShippingMethod" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Shipment" nillable="true" type="tns:Shipment" />
+</xs:schema>

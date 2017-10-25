@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpRelayBinding_ICatalogInterface_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <rel:RelaySocketConnection xmlns:rel="http://schemas.microsoft.com/netservices/2009/05/servicebus/connect" />
+        <rel:ListenerRelayCredential wsp:Optional="true" xmlns:rel="http://schemas.microsoft.com/netservices/2009/05/servicebus/connect" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" location="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="ServiceEndpoint" type="i0:ICatalogInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDiscontinuedProductDetails">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedProductDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKoreanProductDescriptions">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetKoreanProductDescriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalog">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItem">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItems">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscontinuedSku">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedSku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInternetShoppingCarts">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInternetShoppingCarts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItem">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseShoppingCart">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CloseShoppingCart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebClientAuthKey">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetWebClientAuthKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAPFDue">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAPFDue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAPFDue">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateAPFDue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDualMonthDates">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDualMonthDates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEOMDate">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEOMDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInventory">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchProducts">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SearchProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyInvoice">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopSellers">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetTopSellers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibleForPromo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEligibleForPromo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEligibleForPromo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateEligibleForPromo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExemptedDistributors">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetExemptedDistributors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedCatalog">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedCatalog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedInventory">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedInventory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementInfo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAnnouncementInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyMemberInvoice">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyMemberInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrders">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMobileOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SaveMobileOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMobileOrderDetail">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrderDetail">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMobileOrderDetail">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItems">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCartUpdatedDate">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCartUpdatedDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshCatalogCache">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/RefreshCatalogCache" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCacheReference">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCacheReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedProductInfo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSlowMovingSkuInfo">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSlowMovingSkuInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSizeCharts">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSizeCharts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpRelayBinding_ICatalogInterface" type="i0:ICatalogInterface">
+    <wsp:PolicyReference URI="#NetTcpRelayBinding_ICatalogInterface_policy" />
+    <soap12:binding transport="" />
+    <wsdl:operation name="GetDiscontinuedProductDetails">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedProductDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetKoreanProductDescriptions">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetKoreanProductDescriptions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalog">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItem">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogItems">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCatalogItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDiscontinuedSku">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDiscontinuedSku" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInternetShoppingCarts">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInternetShoppingCarts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItem">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseShoppingCart">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CloseShoppingCart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebClientAuthKey">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetWebClientAuthKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAPFDue">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAPFDue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAPFDue">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateAPFDue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDualMonthDates">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetDualMonthDates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEOMDate">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEOMDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInventory">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetInventory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetProductInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchProducts">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SearchProducts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyInvoice">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopSellers">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetTopSellers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibleForPromo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetEligibleForPromo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEligibleForPromo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/UpdateEligibleForPromo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExemptedDistributors">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetExemptedDistributors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedCatalog">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedCatalog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedInventory">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedInventory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncementInfo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetAnnouncementInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyMemberInvoice">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/CopyMemberInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrder">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrders">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveMobileOrder">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/SaveMobileOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertMobileOrderDetail">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMobileOrderDetail">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMobileOrderDetail">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/DeleteMobileOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertShoppingCartItems">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/InsertShoppingCartItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCartUpdatedDate">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCartUpdatedDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefreshCatalogCache">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/RefreshCatalogCache" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCacheReference">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetCacheReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCachedProductInfo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GenerateCachedProductInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSlowMovingSkuInfo">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSlowMovingSkuInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSizeCharts">
+      <soap12:operation soapAction="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces/ICatalogInterface/GetSizeCharts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

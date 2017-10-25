@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>O código:{0} não foi adicionado ao cesto de compra. Se desejar adicionar, por favor mude o subtipo de encomenda de A1 para B1.</value>
+  <comment>_G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Por favor, adicione produtos ao carrinho antes de inserir o código {0}.</value>
+  <comment>_G1713</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>A quantidade não pode ultrapassar {0} unidades para o código: {1}</value>
+  <comment>_G1714</comment></data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>A Quantidade de Itens não deve ultrapassar o limite de {0} por pedido</value>
+  <comment>_G1717</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>O produto {0} não pode ser adquirido.</value>
+  <comment>_G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>A quantidade do item {0} não pode ser acrescida {1} porque excede o seu limite de ganhos.</value>
+  <comment>_G1720</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>A quantidade do item {0} não pode ser acrescida {1} porque excede o seu limite de seus pontos de volume.</value>
+  <comment>_G1721</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>O Item:{0} não foi incluído em seu carrinho, você excedeu o limite de ganhos.</value>
+  <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>O Item:{0} não foi incluído em seu carrinho, você excedeu o limite de ganhos.</value>
+  <comment>_G1723</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Seu pedido excedeu o volume permitido, volume de pontos restante:{0}. O seguinte(s) item não foi adcionado em seu carrinho de compras.</value>
+  <comment>_G2302</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Código:{0}.</value>
+  <comment>_G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Código:{0}.</value>
+  <comment>_G2711</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>A sua encomenda de {0} unidades excede a quantidade máxima de {1} permitida por cada Membro Herbalife a cada {2} dias.</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Como parte do nosso programa de encomendas, os novos e existentes Membros Herbalife que ainda não alcançaram o estatuto de Supervisor Totalmente Qualificado, apenas podem encomendar até {0} Pontos de Volume Adquiridos Pessoalmente (PVAP) na primeira encomenda que efetuarem. Pode acumular PVAP até {1} Pontos de Volume (incluindo a primeira encomenda) dentro dos próximos {2} dias. Esta encomenda excede os PVAP permitidos e tem de ser reduzida em {3} Pontos de Volume.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Como parte do nosso programa de encomendas, os novos e existentes Membros Herbalife que ainda não alcançaram o estatuto de Supervisor Totalmente Qualificado, apenas podem encomendar até {0} Pontos de Volume Adquiridos Pessoalmente (PVAP) na primeira encomenda que efetuarem. Pode acumular PVAP até {1} Pontos de Volume (incluindo a primeira encomenda) dentro dos próximos {2} dias. Esta encomenda excede os PVAP permitidos e tem de ser reduzida em {3} Pontos de Volume. Os seguintes códigos não foram adicionados ao cesto de compras:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>A quantidade do item SKU: {0} não pode ser aumentada em {1} pois excede o limite de Pontos de Volume.</value>
+      <comment>_G3558</comment></data>
+</root>

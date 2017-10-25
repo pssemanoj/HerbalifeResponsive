@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Lead" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Lead" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd17" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd31" namespace="http://herbalife.com/2014/09/16/HL.DistributorCRM.ValueObjects.Lead" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="LMSDistributorSearchResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorSearchResponse" nillable="true" type="tns:LMSDistributorSearchResponse" />
+  <xs:complexType name="LMSDistributorInfo_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSDistributorInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorInfo_V02" nillable="true" type="tns:LMSDistributorInfo_V02" />
+  <xs:complexType name="LMSDistributorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSDistributorInfo" nillable="true" type="tns:LMSDistributorInfo" />
+  <xs:complexType name="LMSDistributorInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSDistributorInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bizwork" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QualificationOverrides" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TabTeamStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorInfo_V01" nillable="true" type="tns:LMSDistributorInfo_V01" />
+  <xs:complexType name="LMSDistributorSearchResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSDistributorSearchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorInfoList" nillable="true" type="tns:ArrayOfLMSDistributorInfo_V02" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorSearchResponse_V01" nillable="true" type="tns:LMSDistributorSearchResponse_V01" />
+  <xs:complexType name="ArrayOfLMSDistributorInfo_V02">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LMSDistributorInfo_V02" nillable="true" type="tns:LMSDistributorInfo_V02" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLMSDistributorInfo_V02" nillable="true" type="tns:ArrayOfLMSDistributorInfo_V02" />
+  <xs:complexType name="LMSDistributorSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorSearchRequest" nillable="true" type="tns:LMSDistributorSearchRequest" />
+  <xs:complexType name="LMSDistributorSearchRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSDistributorSearchRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddr" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSDistributorSearchRequest_V01" nillable="true" type="tns:LMSDistributorSearchRequest_V01" />
+  <xs:complexType name="LMSQualifiedMemberSearchResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSQualifiedMemberSearchResponse" nillable="true" type="tns:LMSQualifiedMemberSearchResponse" />
+  <xs:complexType name="LMSQualifiedMemberSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSQualifiedMemberSearchRequest" nillable="true" type="tns:LMSQualifiedMemberSearchRequest" />
+  <xs:complexType name="LMSGetLeadFormCountriesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesRequest" nillable="true" type="tns:LMSGetLeadFormCountriesRequest" />
+  <xs:complexType name="LMSGetLeadFormCountriesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormCountriesRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesRequest_V01" nillable="true" type="tns:LMSGetLeadFormCountriesRequest_V01" />
+  <xs:complexType name="LMSGetLeadFormCountriesRequest_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormCountriesRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesRequest_V02" nillable="true" type="tns:LMSGetLeadFormCountriesRequest_V02" />
+  <xs:complexType name="LMSGetLeadFormCountriesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesResponse" nillable="true" type="tns:LMSGetLeadFormCountriesResponse" />
+  <xs:complexType name="LMSGetLeadFormCountriesResponse_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormCountriesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Regions" nillable="true" type="tns:ArrayOfLeadFormRegion_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesResponse_V02" nillable="true" type="tns:LMSGetLeadFormCountriesResponse_V02" />
+  <xs:complexType name="ArrayOfLeadFormRegion_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadFormRegion_V01" nillable="true" type="tns:LeadFormRegion_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadFormRegion_V01" nillable="true" type="tns:ArrayOfLeadFormRegion_V01" />
+  <xs:complexType name="LeadFormRegion_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LeadFormRegion">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Countries" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegionID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LeadFormRegion_V01" nillable="true" type="tns:LeadFormRegion_V01" />
+  <xs:complexType name="LeadFormRegion">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LeadFormRegion" nillable="true" type="tns:LeadFormRegion" />
+  <xs:complexType name="ArrayOfLMSKeyAndValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LMSKeyAndValue" nillable="true" type="tns:LMSKeyAndValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLMSKeyAndValue" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+  <xs:complexType name="LMSKeyAndValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSKeyAndValue" nillable="true" type="tns:LMSKeyAndValue" />
+  <xs:complexType name="LMSGetLeadFormCountriesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormCountriesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Countries" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormCountriesResponse_V01" nillable="true" type="tns:LMSGetLeadFormCountriesResponse_V01" />
+  <xs:complexType name="ArrayOfLeadCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadCountry" nillable="true" type="tns:LeadCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadCountry" nillable="true" type="tns:ArrayOfLeadCountry" />
+  <xs:complexType name="LeadCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdatedOn" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadCountry" nillable="true" type="tns:LeadCountry" />
+  <xs:complexType name="SaveLeadFollowupDetailsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadFollowupDetailsRequest" nillable="true" type="tns:SaveLeadFollowupDetailsRequest" />
+  <xs:complexType name="SaveLeadFollowupDetailsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadFollowupDetailsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FollowupDetails" nillable="true" type="tns:LeadFollowup" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadFollowupDetailsRequest_V01" nillable="true" type="tns:SaveLeadFollowupDetailsRequest_V01" />
+  <xs:complexType name="LeadFollowup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LeadFollowup" nillable="true" type="tns:LeadFollowup" />
+  <xs:complexType name="LeadFollowup_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LeadFollowup">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead" minOccurs="0" name="ContactMode" nillable="true" type="q10:ArrayOfLeadsContactMode" />
+          <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DOB" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FacetoFaceCommunicated" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HerbalifeStore" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PCID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParticipateNCAactivity" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ProductUse" nillable="true" type="xs:boolean" />
+          <xs:element xmlns:q11="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead" minOccurs="0" name="Products" nillable="true" type="q11:ArrayOfLeadsProduct" />
+          <xs:element minOccurs="0" name="RevisitDay" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SRID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceAccepted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TotalConsumption" type="xs:double" />
+          <xs:element minOccurs="0" name="WillingPCorSR" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LeadFollowup_V01" nillable="true" type="tns:LeadFollowup_V01" />
+  <xs:complexType name="SaveLeadFollowupDetailsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadFollowupDetailsResponse" nillable="true" type="tns:SaveLeadFollowupDetailsResponse" />
+  <xs:complexType name="SaveLeadFollowupDetailsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadFollowupDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadFollowupDetailsResponse_V01" nillable="true" type="tns:SaveLeadFollowupDetailsResponse_V01" />
+  <xs:complexType name="GetLeadFollowupDetailsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadFollowupDetailsRequest" nillable="true" type="tns:GetLeadFollowupDetailsRequest" />
+  <xs:complexType name="GetLeadFollowupDetailsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadFollowupDetailsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadFollowupDetailsRequest_V01" nillable="true" type="tns:GetLeadFollowupDetailsRequest_V01" />
+  <xs:complexType name="GetLeadFollowupDetailsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadFollowupDetailsResponse" nillable="true" type="tns:GetLeadFollowupDetailsResponse" />
+  <xs:complexType name="GetLeadFollowupDetailsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadFollowupDetailsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FollowupDetails" nillable="true" type="tns:LeadFollowup" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadFollowupDetailsResponse_V01" nillable="true" type="tns:GetLeadFollowupDetailsResponse_V01" />
+  <xs:complexType name="GetLeadDashboradCitiesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2014/09/16/HL.DistributorCRM.ValueObjects.Lead" base="q15:GetLeadDashboradCitiesRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadDashboradCitiesRequest_V01" nillable="true" type="tns:GetLeadDashboradCitiesRequest_V01" />
+  <xs:complexType name="GetLeadDashboradCitiesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2014/09/16/HL.DistributorCRM.ValueObjects.Lead" base="q16:GetLeadDashboradCitiesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadDashboradCities" nillable="true" type="q16:ArrayOfLeadDashboradCities" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadDashboradCitiesResponse_V01" nillable="true" type="tns:GetLeadDashboradCitiesResponse_V01" />
+  <xs:complexType name="LeadInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcceptFlag" type="ser:char" />
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgeRange" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BestTimeToContact" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaptureTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomDistributorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DDDCode" type="xs:int" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InquiryType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InterestedBusiness" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageLocale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Metadata" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptInID" type="xs:int" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductInterest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PurchaseTimeframe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QQID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecordID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Referral" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SourceUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TellMeMore" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserHostAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WechatID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WouldLikeToStart" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadInfo" nillable="true" type="tns:LeadInfo" />
+  <xs:complexType name="SaveLeadQualificationEventRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadQualificationEventRequest" nillable="true" type="tns:SaveLeadQualificationEventRequest" />
+  <xs:complexType name="LeadOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AltSMS_Availability" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AltSmsAddr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddrList" nillable="true" type="tns:ArrayOfEmailAddress" />
+      <xs:element minOccurs="0" name="LanguageList" nillable="true" type="tns:ArrayOfLanguagePref" />
+      <xs:element minOccurs="0" name="OptionInOut" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ReadTermCondition" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SMS_Availability" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SmsMobileList" nillable="true" type="tns:ArrayOfSmsMobileNumber" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadOption" nillable="true" type="tns:LeadOption" />
+  <xs:complexType name="ArrayOfEmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailAddress" nillable="true" type="tns:ArrayOfEmailAddress" />
+  <xs:complexType name="EmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailAddr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddrID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSelected" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+  <xs:complexType name="ArrayOfLanguagePref">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LanguagePref" nillable="true" type="tns:LanguagePref" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLanguagePref" nillable="true" type="tns:ArrayOfLanguagePref" />
+  <xs:complexType name="LanguagePref">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LanguagePref" nillable="true" type="tns:LanguagePref" />
+  <xs:complexType name="ArrayOfSmsMobileNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SmsMobileNumber" nillable="true" type="tns:SmsMobileNumber" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSmsMobileNumber" nillable="true" type="tns:ArrayOfSmsMobileNumber" />
+  <xs:complexType name="SmsMobileNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNumberID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SmsMobileNumber" nillable="true" type="tns:SmsMobileNumber" />
+  <xs:complexType name="SaveLeadQualificationEventRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadQualificationEventRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActionType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PurchasedSKU" type="xs:int" />
+          <xs:element minOccurs="0" name="QuaEvent" nillable="true" type="tns:LeadQualificationDSEvent" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadQualificationEventRequest_V01" nillable="true" type="tns:SaveLeadQualificationEventRequest_V01" />
+  <xs:complexType name="LeadQualificationDSEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryOfProcessing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventClass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EventID" type="xs:int" />
+      <xs:element minOccurs="0" name="EventLeadID" type="xs:int" />
+      <xs:element minOccurs="0" name="EventLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsAttend" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsQualify" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsRuleExistsForCountry" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadQualificationDSEvent" nillable="true" type="tns:LeadQualificationDSEvent" />
+  <xs:complexType name="SaveLeadQualificationEventResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q18:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadQualificationEventResponse" nillable="true" type="tns:SaveLeadQualificationEventResponse" />
+  <xs:complexType name="SaveLeadQualificationEventResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadQualificationEventResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DSEvent" nillable="true" type="tns:LeadQualificationDSEvent" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadQualificationEventResponse_V01" nillable="true" type="tns:SaveLeadQualificationEventResponse_V01" />
+  <xs:complexType name="GetLeadQualificationRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q19:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationRequest" nillable="true" type="tns:GetLeadQualificationRequest" />
+  <xs:complexType name="GetLeadQualificationRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadQualificationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationRequest_V01" nillable="true" type="tns:GetLeadQualificationRequest_V01" />
+  <xs:complexType name="GetLeadQualificationResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q20:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationResponse" nillable="true" type="tns:GetLeadQualificationResponse" />
+  <xs:complexType name="GetLeadQualificationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadQualificationResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsQualified" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationResponse_V01" nillable="true" type="tns:GetLeadQualificationResponse_V01" />
+  <xs:complexType name="GetLeadOptionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q21:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadOptionRequest" nillable="true" type="tns:GetLeadOptionRequest" />
+  <xs:complexType name="GetLeadOptionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadOptionRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadOptionRequest_V01" nillable="true" type="tns:GetLeadOptionRequest_V01" />
+  <xs:complexType name="GetLeadOptionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q22:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadOptionResponse" nillable="true" type="tns:GetLeadOptionResponse" />
+  <xs:complexType name="GetLeadOptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadOptionResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MyLeadOption" nillable="true" type="tns:LeadOption" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadOptionResponse_V01" nillable="true" type="tns:GetLeadOptionResponse_V01" />
+  <xs:complexType name="SaveLeadOptionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q23:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadOptionRequest" nillable="true" type="tns:SaveLeadOptionRequest" />
+  <xs:complexType name="SaveLeadOptionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadOptionRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MyLeadOption" nillable="true" type="tns:LeadOption" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadOptionRequest_V01" nillable="true" type="tns:SaveLeadOptionRequest_V01" />
+  <xs:complexType name="SaveLeadOptionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadOptionResponse" nillable="true" type="tns:SaveLeadOptionResponse" />
+  <xs:complexType name="SaveLeadOptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadOptionResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadOptionResponse_V01" nillable="true" type="tns:SaveLeadOptionResponse_V01" />
+  <xs:complexType name="GetDSLeadProfileRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q25:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSLeadProfileRequest" nillable="true" type="tns:GetDSLeadProfileRequest" />
+  <xs:complexType name="GetDSLeadProfileRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSLeadProfileRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSLeadProfileRequest_V01" nillable="true" type="tns:GetDSLeadProfileRequest_V01" />
+  <xs:complexType name="GetDSLeadProfileResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSLeadProfileResponse" nillable="true" type="tns:GetDSLeadProfileResponse" />
+  <xs:complexType name="GetDSLeadProfileResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSLeadProfileResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MyDSLeadProfileData" nillable="true" type="tns:DSLeadProfileData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSLeadProfileResponse_V01" nillable="true" type="tns:GetDSLeadProfileResponse_V01" />
+  <xs:complexType name="DSLeadProfileData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlwaysIn" nillable="true" type="tns:ArrayOfLeadActionReason" />
+      <xs:element minOccurs="0" name="AlwaysOut" nillable="true" type="tns:ArrayOfLeadActionReason" />
+      <xs:element minOccurs="0" name="AssignmentOverrideReason" nillable="true" type="tns:LeadActionReason" />
+      <xs:element minOccurs="0" name="Disable" nillable="true" type="tns:ArrayOfLeadActionReason" />
+      <xs:element minOccurs="0" name="DistributorFound" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Enable" nillable="true" type="tns:ArrayOfLeadActionReason" />
+      <xs:element minOccurs="0" name="LeadProfileHistory" nillable="true" type="tns:ArrayOfDSLeadProfileHistory" />
+      <xs:element minOccurs="0" name="QualificationOverrideReason" nillable="true" type="tns:LeadActionReason" />
+      <xs:element minOccurs="0" name="UseQualificationRules" nillable="true" type="tns:LeadActionReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DSLeadProfileData" nillable="true" type="tns:DSLeadProfileData" />
+  <xs:complexType name="ArrayOfLeadActionReason">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadActionReason" nillable="true" type="tns:LeadActionReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadActionReason" nillable="true" type="tns:ArrayOfLeadActionReason" />
+  <xs:complexType name="LeadActionReason">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LeadActionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadActionReasonID" type="xs:int" />
+      <xs:element minOccurs="0" name="ReasonDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadActionReason" nillable="true" type="tns:LeadActionReason" />
+  <xs:complexType name="ArrayOfDSLeadProfileHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSLeadProfileHistory" nillable="true" type="tns:DSLeadProfileHistory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSLeadProfileHistory" nillable="true" type="tns:ArrayOfDSLeadProfileHistory" />
+  <xs:complexType name="DSLeadProfileHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ActionDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DSLeadProfileHistory" nillable="true" type="tns:DSLeadProfileHistory" />
+  <xs:complexType name="SaveDSLeadProfileRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q27:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSLeadProfileRequest" nillable="true" type="tns:SaveDSLeadProfileRequest" />
+  <xs:complexType name="SaveDSLeadProfileRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDSLeadProfileRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AssignmentOverrideReasonID" type="xs:int" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OptInId" type="xs:int" />
+          <xs:element minOccurs="0" name="QualificationOverrideReasonID" type="xs:int" />
+          <xs:element minOccurs="0" name="SendQualEmail" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSLeadProfileRequest_V01" nillable="true" type="tns:SaveDSLeadProfileRequest_V01" />
+  <xs:complexType name="SaveDSLeadProfileResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSLeadProfileResponse" nillable="true" type="tns:SaveDSLeadProfileResponse" />
+  <xs:complexType name="SaveDSLeadProfileResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveDSLeadProfileResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSLeadProfileResponse_V01" nillable="true" type="tns:SaveDSLeadProfileResponse_V01" />
+  <xs:complexType name="SaveLeadInfoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q29:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoRequest" nillable="true" type="tns:SaveLeadInfoRequest" />
+  <xs:complexType name="SaveLeadInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadInfoRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MyLeadInfo" nillable="true" type="tns:LeadInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoRequest_V01" nillable="true" type="tns:SaveLeadInfoRequest_V01" />
+  <xs:complexType name="SaveLeadInfoRequest_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadInfoRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckForRepeatedCustomer" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MyLeadInfo" nillable="true" type="tns:LeadInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoRequest_V02" nillable="true" type="tns:SaveLeadInfoRequest_V02" />
+  <xs:complexType name="SaveLeadInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q30:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoResponse" nillable="true" type="tns:SaveLeadInfoResponse" />
+  <xs:complexType name="SaveLeadInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RepeatLeadInd" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoResponse_V01" nillable="true" type="tns:SaveLeadInfoResponse_V01" />
+  <xs:complexType name="SaveLeadInfoResponse_V02">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveLeadInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RepeatedForDistributor" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveLeadInfoResponse_V02" nillable="true" type="tns:SaveLeadInfoResponse_V02" />
+  <xs:complexType name="GetLeadCountryListRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q31:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadCountryListRequest" nillable="true" type="tns:GetLeadCountryListRequest" />
+  <xs:complexType name="GetLeadCountryListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadCountryListRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadCountryListRequest_V01" nillable="true" type="tns:GetLeadCountryListRequest_V01" />
+  <xs:complexType name="LMSGetCountryIDRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q32:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetCountryIDRequest" nillable="true" type="tns:LMSGetCountryIDRequest" />
+  <xs:complexType name="LMSGetCountryIDRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetCountryIDRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCodeISO" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetCountryIDRequest_V01" nillable="true" type="tns:LMSGetCountryIDRequest_V01" />
+  <xs:complexType name="LMSLeadSearchRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q33="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q33:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSLeadSearchRequest" nillable="true" type="tns:LMSLeadSearchRequest" />
+  <xs:complexType name="LMSLeadSearchRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSLeadSearchRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CampaignID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Cellphone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedFrom" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedTo" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAccepted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsDescending" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QQ" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateOnTo" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="UpdatedOnFrom" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WeChat" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSLeadSearchRequest_V01" nillable="true" type="tns:LMSLeadSearchRequest_V01" />
+  <xs:complexType name="LMSLeadSearchResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q34:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSLeadSearchResponse" nillable="true" type="tns:LMSLeadSearchResponse" />
+  <xs:complexType name="LMSLeadSearchResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSLeadSearchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lmsLeadList" nillable="true" type="tns:ArrayOfLMSLead" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSLeadSearchResponse_V01" nillable="true" type="tns:LMSLeadSearchResponse_V01" />
+  <xs:complexType name="ArrayOfLMSLead">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LMSLead" nillable="true" type="tns:LMSLead" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLMSLead" nillable="true" type="tns:ArrayOfLMSLead" />
+  <xs:complexType name="LMSLead">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FollowupStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadTypeColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginID" type="xs:int" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QQID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WechatID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSLead" nillable="true" type="tns:LMSLead" />
+  <xs:complexType name="LMSGetLeadBasicInfoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q35="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q35:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadBasicInfoRequest" nillable="true" type="tns:LMSGetLeadBasicInfoRequest" />
+  <xs:complexType name="LMSGetLeadBasicInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadBasicInfoRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadBasicInfoRequest_V01" nillable="true" type="tns:LMSGetLeadBasicInfoRequest_V01" />
+  <xs:complexType name="LMSGetLeadBasicInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q36="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q36:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadBasicInfoResponse" nillable="true" type="tns:LMSGetLeadBasicInfoResponse" />
+  <xs:complexType name="LMSGetLeadBasicInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadBasicInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lmsLeadDetail" nillable="true" type="tns:LMSLeadDetail" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadBasicInfoResponse_V01" nillable="true" type="tns:LMSGetLeadBasicInfoResponse_V01" />
+  <xs:complexType name="LMSLeadDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CampaignCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CellNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadCaptureDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Property" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QQ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Wechat" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSLeadDetail" nillable="true" type="tns:LMSLeadDetail" />
+  <xs:complexType name="LMSGetLeadDetailHistoryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q37="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q37:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadDetailHistoryRequest" nillable="true" type="tns:LMSGetLeadDetailHistoryRequest" />
+  <xs:complexType name="LMSGetLeadDetailHistoryRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadDetailHistoryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadDetailHistoryRequest_V01" nillable="true" type="tns:LMSGetLeadDetailHistoryRequest_V01" />
+  <xs:complexType name="LMSGetLeadDetailHistoryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q38:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadDetailHistoryResponse" nillable="true" type="tns:LMSGetLeadDetailHistoryResponse" />
+  <xs:complexType name="LMSLeadHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadActionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAssignedID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReAssignDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSLeadHistory" nillable="true" type="tns:LMSLeadHistory" />
+  <xs:complexType name="LMSLeadHistoryExt">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadAssignedID" type="xs:int" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LMSLeadHistoryExt" nillable="true" type="tns:LMSLeadHistoryExt" />
+  <xs:complexType name="LMSGetLeadDetailHistoryResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadDetailHistoryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lmsLeadHistory" nillable="true" type="tns:ArrayOfLMSLeadHistory" />
+          <xs:element minOccurs="0" name="lmsLeadHistoryExt" nillable="true" type="tns:ArrayOfLMSLeadHistoryExt" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadDetailHistoryResponse_V01" nillable="true" type="tns:LMSGetLeadDetailHistoryResponse_V01" />
+  <xs:complexType name="ArrayOfLMSLeadHistory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LMSLeadHistory" nillable="true" type="tns:LMSLeadHistory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLMSLeadHistory" nillable="true" type="tns:ArrayOfLMSLeadHistory" />
+  <xs:complexType name="ArrayOfLMSLeadHistoryExt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LMSLeadHistoryExt" nillable="true" type="tns:LMSLeadHistoryExt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLMSLeadHistoryExt" nillable="true" type="tns:ArrayOfLMSLeadHistoryExt" />
+  <xs:complexType name="LMSGetLeadsForDSRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q39="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q39:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadsForDSRequest" nillable="true" type="tns:LMSGetLeadsForDSRequest" />
+  <xs:complexType name="LMSGetLeadsForDSRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadsForDSRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedFrom" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedTo" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAcceptedLeadIncluded" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadsForDSRequest_V01" nillable="true" type="tns:LMSGetLeadsForDSRequest_V01" />
+  <xs:complexType name="LMSGetLeadsForDSResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q40="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q40:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadsForDSResponse" nillable="true" type="tns:LMSGetLeadsForDSResponse" />
+  <xs:complexType name="LMSGetLeadsForDSResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadsForDSResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lmsLeadList" nillable="true" type="tns:ArrayOfLMSLead" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadsForDSResponse_V01" nillable="true" type="tns:LMSGetLeadsForDSResponse_V01" />
+  <xs:complexType name="LMSGetPendingLeadsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q41="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q41:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetPendingLeadsRequest" nillable="true" type="tns:LMSGetPendingLeadsRequest" />
+  <xs:complexType name="LMSGetPendingLeadsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetPendingLeadsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetPendingLeadsRequest_V01" nillable="true" type="tns:LMSGetPendingLeadsRequest_V01" />
+  <xs:complexType name="LMSGetPendingLeadsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q42="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q42:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetPendingLeadsResponse" nillable="true" type="tns:LMSGetPendingLeadsResponse" />
+  <xs:complexType name="LMSGetPendingLeadsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetPendingLeadsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="lmsLeadList" nillable="true" type="tns:ArrayOfLMSLead" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetPendingLeadsResponse_V01" nillable="true" type="tns:LMSGetPendingLeadsResponse_V01" />
+  <xs:complexType name="LMSGetLeadActionCodeRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q43="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q43:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadActionCodeRequest" nillable="true" type="tns:LMSGetLeadActionCodeRequest" />
+  <xs:complexType name="LMSGetLeadActionCodeRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadActionCodeRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadActionCodeRequest_V01" nillable="true" type="tns:LMSGetLeadActionCodeRequest_V01" />
+  <xs:complexType name="LMSGetLeadActionCodeResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q44="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q44:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadActionCodeResponse" nillable="true" type="tns:LMSGetLeadActionCodeResponse" />
+  <xs:complexType name="LMSGetLeadActionCodeResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadActionCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="leadActionReasonList" nillable="true" type="tns:ArrayOfLeadActionAndColor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadActionCodeResponse_V01" nillable="true" type="tns:LMSGetLeadActionCodeResponse_V01" />
+  <xs:complexType name="ArrayOfLeadActionAndColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadActionAndColor" nillable="true" type="tns:LeadActionAndColor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadActionAndColor" nillable="true" type="tns:ArrayOfLeadActionAndColor" />
+  <xs:complexType name="LeadActionAndColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LeadActionCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadActionAndColor" nillable="true" type="tns:LeadActionAndColor" />
+  <xs:complexType name="LMSGetLeadTypesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q45="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q45:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadTypesRequest" nillable="true" type="tns:LMSGetLeadTypesRequest" />
+  <xs:complexType name="LMSGetLeadTypesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadTypesRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadTypesRequest_V01" nillable="true" type="tns:LMSGetLeadTypesRequest_V01" />
+  <xs:complexType name="LMSGetLeadTypesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q46="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q46:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadTypesResponse" nillable="true" type="tns:LMSGetLeadTypesResponse" />
+  <xs:complexType name="LMSGetLeadTypesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadTypesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="leadTypeList" nillable="true" type="tns:ArrayOfLeadActionAndColor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadTypesResponse_V01" nillable="true" type="tns:LMSGetLeadTypesResponse_V01" />
+  <xs:complexType name="LMSGetReAssignmentReasonRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q47="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q47:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetReAssignmentReasonRequest" nillable="true" type="tns:LMSGetReAssignmentReasonRequest" />
+  <xs:complexType name="LMSGetReAssignmentReasonRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetReAssignmentReasonRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetReAssignmentReasonRequest_V01" nillable="true" type="tns:LMSGetReAssignmentReasonRequest_V01" />
+  <xs:complexType name="LMSGetReAssignmentReasonResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q48="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q48:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetReAssignmentReasonResponse" nillable="true" type="tns:LMSGetReAssignmentReasonResponse" />
+  <xs:complexType name="LMSGetReAssignmentReasonResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetReAssignmentReasonResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReAssignReasonList" nillable="true" type="tns:ArrayOfLeadActionReason" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetReAssignmentReasonResponse_V01" nillable="true" type="tns:LMSGetReAssignmentReasonResponse_V01" />
+  <xs:complexType name="LMSSaveReAssignedLeadRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q49="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q49:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSSaveReAssignedLeadRequest" nillable="true" type="tns:LMSSaveReAssignedLeadRequest" />
+  <xs:complexType name="LMSSaveReAssignedLeadRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSSaveReAssignedLeadRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReAssignmentReasonID" type="xs:int" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSSaveReAssignedLeadRequest_V01" nillable="true" type="tns:LMSSaveReAssignedLeadRequest_V01" />
+  <xs:complexType name="LMSSaveReAssignedLeadResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q50="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q50:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSSaveReAssignedLeadResponse" nillable="true" type="tns:LMSSaveReAssignedLeadResponse" />
+  <xs:complexType name="LMSSaveReAssignedLeadResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSSaveReAssignedLeadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorInfo" nillable="true" type="tns:LMSDistributorInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSSaveReAssignedLeadResponse_V01" nillable="true" type="tns:LMSSaveReAssignedLeadResponse_V01" />
+  <xs:complexType name="LMSGetDistributorInfoRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q51="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q51:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorInfoRequest" nillable="true" type="tns:LMSGetDistributorInfoRequest" />
+  <xs:complexType name="LMSGetDistributorInfoRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDistributorInfoRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorInfoRequest_V01" nillable="true" type="tns:LMSGetDistributorInfoRequest_V01" />
+  <xs:complexType name="LMSGetDistributorInfoResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q52="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q52:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorInfoResponse" nillable="true" type="tns:LMSGetDistributorInfoResponse" />
+  <xs:complexType name="LMSGetDistributorInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDistributorInfoResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorInfo" nillable="true" type="tns:LMSDistributorInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorInfoResponse_V01" nillable="true" type="tns:LMSGetDistributorInfoResponse_V01" />
+  <xs:complexType name="LMSGetDistributorForLeadReassignRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q53="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q53:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorForLeadReassignRequest" nillable="true" type="tns:LMSGetDistributorForLeadReassignRequest" />
+  <xs:complexType name="LMSGetDistributorForLeadReassignRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDistributorForLeadReassignRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorForLeadReassignRequest_V01" nillable="true" type="tns:LMSGetDistributorForLeadReassignRequest_V01" />
+  <xs:complexType name="LMSGetDistributorForLeadReassignResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q54="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q54:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorForLeadReassignResponse" nillable="true" type="tns:LMSGetDistributorForLeadReassignResponse" />
+  <xs:complexType name="LMSGetDistributorForLeadReassignResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDistributorForLeadReassignResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorInfoList" nillable="true" type="tns:ArrayOfLMSDistributorInfo_V02" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDistributorForLeadReassignResponse_V01" nillable="true" type="tns:LMSGetDistributorForLeadReassignResponse_V01" />
+  <xs:complexType name="LMSGetQualificationOverrideRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q55="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q55:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetQualificationOverrideRequest" nillable="true" type="tns:LMSGetQualificationOverrideRequest" />
+  <xs:complexType name="LMSGetQualificationOverrideRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetQualificationOverrideRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetQualificationOverrideRequest_V01" nillable="true" type="tns:LMSGetQualificationOverrideRequest_V01" />
+  <xs:complexType name="LMSGetQualificationOverrideResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q56="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q56:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetQualificationOverrideResponse" nillable="true" type="tns:LMSGetQualificationOverrideResponse" />
+  <xs:complexType name="LMSGetQualificationOverrideResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetQualificationOverrideResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AlwaysIn" nillable="true" type="tns:ArrayOfLeadActionReason" />
+          <xs:element minOccurs="0" name="AlwaysOut" nillable="true" type="tns:ArrayOfLeadActionReason" />
+          <xs:element minOccurs="0" name="DistributorFound" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadProfileHistory" nillable="true" type="tns:ArrayOfDSLeadProfileHistory" />
+          <xs:element minOccurs="0" name="QualificationOverrideReason" nillable="true" type="tns:LeadActionReason" />
+          <xs:element minOccurs="0" name="UseQualificationRules" nillable="true" type="tns:LeadActionReason" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetQualificationOverrideResponse_V01" nillable="true" type="tns:LMSGetQualificationOverrideResponse_V01" />
+  <xs:complexType name="LMSGetAssignmentOverrideRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q57="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q57:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAssignmentOverrideRequest" nillable="true" type="tns:LMSGetAssignmentOverrideRequest" />
+  <xs:complexType name="LMSGetAssignmentOverrideRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetAssignmentOverrideRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAssignmentOverrideRequest_V01" nillable="true" type="tns:LMSGetAssignmentOverrideRequest_V01" />
+  <xs:complexType name="LMSGetAssignmentOverrideResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q58="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q58:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAssignmentOverrideResponse" nillable="true" type="tns:LMSGetAssignmentOverrideResponse" />
+  <xs:complexType name="LMSGetAssignmentOverrideResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetAssignmentOverrideResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AssignmentOverrideReason" nillable="true" type="tns:LeadActionReason" />
+          <xs:element minOccurs="0" name="DisableReasonList" nillable="true" type="tns:ArrayOfLeadActionReason" />
+          <xs:element minOccurs="0" name="DistributorFound" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DistributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableReasonList" nillable="true" type="tns:ArrayOfLeadActionReason" />
+          <xs:element minOccurs="0" name="LeadProfileHistory" nillable="true" type="tns:ArrayOfDSLeadProfileHistory" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAssignmentOverrideResponse_V01" nillable="true" type="tns:LMSGetAssignmentOverrideResponse_V01" />
+  <xs:complexType name="LMSGetDSDashboardRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q59="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q59:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDSDashboardRequest" nillable="true" type="tns:LMSGetDSDashboardRequest" />
+  <xs:complexType name="LMSGetDSDashboardRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDSDashboardRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DateTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDSDashboardRequest_V01" nillable="true" type="tns:LMSGetDSDashboardRequest_V01" />
+  <xs:complexType name="LMSGetDSDashboardResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q60="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q60:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDSDashboardResponse" nillable="true" type="tns:LMSGetDSDashboardResponse" />
+  <xs:complexType name="DashboardTotalLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LeadAcceptedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="LeadRejectedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="MonthYearString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDateInMonth" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardTotalLineInfo" nillable="true" type="tns:DashboardTotalLineInfo" />
+  <xs:complexType name="DashboardMonthLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessLeadAcceptedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="BusinessLeadExpiredNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="BusinessLeadRejectedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="CampaignID" type="xs:int" />
+      <xs:element minOccurs="0" name="CampaignName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonthYearString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductLeadAcceptedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductLeadExpiredNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductLeadRejectedNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDateInMonth" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardMonthLineInfo" nillable="true" type="tns:DashboardMonthLineInfo" />
+  <xs:complexType name="LMSGetDSDashboardResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetDSDashboardResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CampaignInfoList" nillable="true" type="tns:ArrayOfCampaignInfo" />
+          <xs:element minOccurs="0" name="DashboardMonthLineInfoList" nillable="true" type="tns:ArrayOfDashboardMonthLineInfo" />
+          <xs:element minOccurs="0" name="DashboardTotalLineInfoList" nillable="true" type="tns:ArrayOfDashboardTotalLineInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetDSDashboardResponse_V01" nillable="true" type="tns:LMSGetDSDashboardResponse_V01" />
+  <xs:complexType name="ArrayOfCampaignInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CampaignInfo" nillable="true" type="tns:CampaignInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampaignInfo" nillable="true" type="tns:ArrayOfCampaignInfo" />
+  <xs:complexType name="CampaignInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CampaignID" type="xs:int" />
+      <xs:element minOccurs="0" name="CampaignName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CampaignInfo" nillable="true" type="tns:CampaignInfo" />
+  <xs:complexType name="ArrayOfDashboardMonthLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DashboardMonthLineInfo" nillable="true" type="tns:DashboardMonthLineInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDashboardMonthLineInfo" nillable="true" type="tns:ArrayOfDashboardMonthLineInfo" />
+  <xs:complexType name="ArrayOfDashboardTotalLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DashboardTotalLineInfo" nillable="true" type="tns:DashboardTotalLineInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDashboardTotalLineInfo" nillable="true" type="tns:ArrayOfDashboardTotalLineInfo" />
+  <xs:complexType name="LMSGetLeadFormLookUpRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q61="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q61:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormLookUpRequest" nillable="true" type="tns:LMSGetLeadFormLookUpRequest" />
+  <xs:complexType name="LMSGetLeadFormLookUpRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormLookUpRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormLookUpRequest_V01" nillable="true" type="tns:LMSGetLeadFormLookUpRequest_V01" />
+  <xs:complexType name="LMSGetLeadFormLookUpResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q62="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q62:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormLookUpResponse" nillable="true" type="tns:LMSGetLeadFormLookUpResponse" />
+  <xs:complexType name="LMSGetLeadFormLookUpResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetLeadFormLookUpResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BestTimeToContact" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="HowYouHearAboutUs" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="Languages" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="ProductOrBusinessInterested" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="PurchaseOrStartTimeFrame" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="States" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+          <xs:element minOccurs="0" name="YourAge" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetLeadFormLookUpResponse_V01" nillable="true" type="tns:LMSGetLeadFormLookUpResponse_V01" />
+  <xs:complexType name="LMSGetAdminDashboardRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q63="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q63:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAdminDashboardRequest" nillable="true" type="tns:LMSGetAdminDashboardRequest" />
+  <xs:complexType name="LMSGetAdminDashboardRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetAdminDashboardRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateFrom" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DateTo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="RegionID" type="xs:int" />
+          <xs:element minOccurs="0" name="SourceID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAdminDashboardRequest_V01" nillable="true" type="tns:LMSGetAdminDashboardRequest_V01" />
+  <xs:complexType name="LMSGetAdminDashboardResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q64="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q64:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAdminDashboardResponse" nillable="true" type="tns:LMSGetAdminDashboardResponse" />
+  <xs:complexType name="LMSGetAdminDashboardResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetAdminDashboardResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MonthsDetailLines" nillable="true" type="tns:ArrayOfDashboardLineInfo" />
+          <xs:element minOccurs="0" name="TodayLine" nillable="true" type="tns:DashboardLineInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetAdminDashboardResponse_V01" nillable="true" type="tns:LMSGetAdminDashboardResponse_V01" />
+  <xs:complexType name="ArrayOfDashboardLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DashboardLineInfo" nillable="true" type="tns:DashboardLineInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDashboardLineInfo" nillable="true" type="tns:ArrayOfDashboardLineInfo" />
+  <xs:complexType name="DashboardLineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessLeadNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductLeadNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DashboardLineInfo" nillable="true" type="tns:DashboardLineInfo" />
+  <xs:complexType name="LMSGetSourceForCountryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q65="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q65:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetSourceForCountryRequest" nillable="true" type="tns:LMSGetSourceForCountryRequest" />
+  <xs:complexType name="LMSGetSourceForCountryRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetSourceForCountryRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LeadType" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetSourceForCountryRequest_V01" nillable="true" type="tns:LMSGetSourceForCountryRequest_V01" />
+  <xs:complexType name="LMSGetSourceForCountryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q66="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q66:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetSourceForCountryResponse" nillable="true" type="tns:LMSGetSourceForCountryResponse" />
+  <xs:complexType name="LMSGetSourceForCountryResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:LMSGetSourceForCountryResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Sources" nillable="true" type="tns:ArrayOfLMSKeyAndValue" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LMSGetSourceForCountryResponse_V01" nillable="true" type="tns:LMSGetSourceForCountryResponse_V01" />
+  <xs:complexType name="GetLeadQualificationEventsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q67="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q67:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationEventsRequest" nillable="true" type="tns:GetLeadQualificationEventsRequest" />
+  <xs:complexType name="GetLeadQualificationEventsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadQualificationEventsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationEventsRequest_V01" nillable="true" type="tns:GetLeadQualificationEventsRequest_V01" />
+  <xs:complexType name="GetLeadQualificationEventsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q68="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q68:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationEventsResponse" nillable="true" type="tns:GetLeadQualificationEventsResponse" />
+  <xs:complexType name="GetLeadQualificationEventsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadQualificationEventsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DSLeadQulificationEvents" nillable="true" type="tns:LeadQualificationEvents" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadQualificationEventsResponse_V01" nillable="true" type="tns:GetLeadQualificationEventsResponse_V01" />
+  <xs:complexType name="LeadQualificationEvents">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EventList" nillable="true" type="tns:ArrayOfLeadQualificationDSEvent" />
+      <xs:element minOccurs="0" name="Qualifier" nillable="true" type="tns:LeadQualificationDSEventQualifier" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadQualificationEvents" nillable="true" type="tns:LeadQualificationEvents" />
+  <xs:complexType name="ArrayOfLeadQualificationDSEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadQualificationDSEvent" nillable="true" type="tns:LeadQualificationDSEvent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadQualificationDSEvent" nillable="true" type="tns:ArrayOfLeadQualificationDSEvent" />
+  <xs:complexType name="LeadQualificationDSEventQualifier">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CorporateEventsAttend" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventsAttend" type="xs:int" />
+      <xs:element minOccurs="0" name="EventsNeeded" type="xs:int" />
+      <xs:element minOccurs="0" name="EventsQualifier" type="xs:int" />
+      <xs:element minOccurs="0" name="MinimumEventsRequired" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadQualificationDSEventQualifier" nillable="true" type="tns:LeadQualificationDSEventQualifier" />
+</xs:schema>

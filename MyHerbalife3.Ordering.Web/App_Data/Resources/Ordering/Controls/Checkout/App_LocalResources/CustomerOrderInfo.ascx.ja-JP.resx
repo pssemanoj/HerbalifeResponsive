@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>製品を追加</value>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>この注文をキャンセルする</value>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>チェックアウト</value>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>ショッピングを続ける</value>
+  </data>
+  <data name="CustomerOrderItemUnavailableCheckoutError" xml:space="preserve">
+    <value>チェックアウトできません。カートの製品が在庫切れです。</value>
+  </data>
+  <data name="CustomerOrderMinQuantityError" xml:space="preserve">
+    <value>最初のお客様の注文へ</value>
+  </data>
+  <data name="CustomerOrderMinQuantitySKUDisplay" xml:space="preserve">
+    <value>ストック番号: {0} は{1}個からの注文になります。</value>
+  </data>
+  <data name="CustomerOrdersSearchPageReturn.Text" xml:space="preserve">
+    <value>注文検索にもどる</value>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>購買限度を取得できません。</value>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>ショッピング・カートに製品はありません</value>
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>収益&lt;\br&gt;価格</value>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>キャンセルしますか？</value>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>キャンセルしますか？</value>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>キャンセルしますか？</value>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>「 戻る 」 ボタンを選ぶと、前回指定した配送先が指定されます。</value>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>削除をクリックすると注文不可の製品は赤で表示され、後日配送の製品は黄色で表示されます。</value>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>選択した配送先住所を変更すると、あなたのカートにある項目が使用できなくなるか、または入荷待ちあることを示します。</value>
+  </data>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>イベントチケットは返金・譲渡は不可です。 &lt;br /&gt;イベントに資格達成が必要な場合は、 注文を完了するまえに達成条件を満たしているか確認をしてください。 </value>
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>注文内容の変更</value>
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>ストック番号</value>
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>製品名</value>
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>製品l&lt;br /&gt;価格合計</value>
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>ボリュームl&lt;br /&gt;ポイント</value>
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>あなたの&lt;br /&gt;価格</value>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>カートは最大収益を超えています</value>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>カートは最大ボリューム・ポイントを超えています</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>発送元の選択</value>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>配送方法の選択</value>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>再計算</value>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>配送先を選択してください。</value>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>時間指定をご選択ください。「お届け先／店頭お渡し」も今一度ご確認ください。</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>はい</value>
+  </data>
+</root>

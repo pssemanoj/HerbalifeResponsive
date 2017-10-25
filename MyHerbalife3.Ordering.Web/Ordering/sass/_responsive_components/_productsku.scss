@@ -1,0 +1,18 @@
+.tabs-button-wrap {
+    width: span(4);
+    @include breakpoint($tablet) { width: 551px; }
+}
+
+.gdo-order-by-sku-tbl  {
+    .gdo-pricelist-tbl-top {
+
+        .gdo-error-message-div { padding: 0; }
+
+        td { padding: 8px 7px 0; }
+    }
+}
+
+.table-sku input {
+    width: 95px;
+    @include breakpoint($tablet) { width: 100%;; }
+}

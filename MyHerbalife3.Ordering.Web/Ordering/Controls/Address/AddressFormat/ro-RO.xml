@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="120" Height="220" Grid.Row="0" Grid.Column="0">
+    <Controls>
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="CareOfName" Grid.Row="0" Grid.Column="0" Text="Destinatar *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="City" Grid.Row="2" Grid.Column="0" Text="Judet *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="City2" Grid.Row="2" Grid.Column="1" Text="Localitatea *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street1" Grid.Row="3" Grid.Column="0" Text="Strada *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street12" Grid.Row="3" Grid.Column="1" Text="Nr. *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street2" Grid.Row="5" Grid.Column="0" Text="Bloc" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street22" Grid.Row="5" Grid.Column="1" Text="Scara" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street23" Grid.Row="7" Grid.Column="0" Text="Intrare/obs" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Street24" Grid.Row="7" Grid.Column="1" Text="Etaj" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="PostalCode" Grid.Row="9" Grid.Column="0" Text="Cod postal *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="Phonenumber" Grid.Row="9" Grid.Column="1" Text="Telefon *" />
+      <Label cssStyle="gdo-form-label-left gdo-popup-form-label-padding2" Name="NumeDestinatar" Grid.Row="11" Grid.Column="0" Text="Nume Destinatar" />
+
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCareOfName" Grid.Row="1" Grid.Column="0" Text="{Binding Recipient}" Required="true" MaximumLength="40" IndexForTab="1" ValReqMsg="NoCareOfName"/>
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCity" Text="{Binding Address.City}" Grid.Row="3"  Grid.Column="0" Required="true"  MaximumLength="30"  IndexForTab="2" ValReqMsg="NoCity" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBCity2" Text="{Binding Address.City2}" Grid.Row="3"  Grid.Column="1" Required="true"  MaximumLength="30"  IndexForTab="3" ValReqMsg="NoCity" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet1" Grid.Row="4" Grid.Column="0" Text="{Binding Address.Line1}"  Required="true" MaximumLength="40" IndexForTab="4" ValReqMsg="NoStreet1" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet12" Grid.Row="4" Grid.Column="1" Text="{Binding Address.Line1}"  Required="true" MaximumLength="40" IndexForTab="5" ValReqMsg="NoStreet1" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet2" Grid.Row="6" Grid.Column="0" Text="{Binding Address.Line2}" MaximumLength="40" IndexForTab="6" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet22" Grid.Row="6" Grid.Column="1" Text="{Binding Address.Line2}" MaximumLength="40" IndexForTab="7"  />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet23" Grid.Row="8" Grid.Column="0" Text="{Binding Address.Line2}" MaximumLength="40" IndexForTab="8" />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBStreet24" Grid.Row="8" Grid.Column="1" Text="{Binding Address.Line2}" MaximumLength="40" IndexForTab="9"  />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBZipCode" Text="{Binding Address.PostalCode}"  Grid.Row="10" Grid.Column="0" Required="true" MaximumLength="6" IndexForTab="10" ValErrorMsg="PostalCode" ValReqMsg="NoZipCode" RegExp="^(\d{6})$"  />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBPhone" Grid.Row="10" Grid.Column="1" Text="{Binding Phone}" Required="true"  ValErrorMsg="InvalidPhone" ValReqMsg="NoPhone" RegExp="^(\d{9,10})$"  MaximumLength="10"  IndexForTab="11"  />
+      <TextBox cssStyle="gdo-popup-form-field-padding" Name="TBNumeDestinatar" Grid.Row="12" Grid.Column="0" IndexForTab="12" MaximumLength="40" />
+    </Controls>
+  </Grid>
+</AddressWindow>

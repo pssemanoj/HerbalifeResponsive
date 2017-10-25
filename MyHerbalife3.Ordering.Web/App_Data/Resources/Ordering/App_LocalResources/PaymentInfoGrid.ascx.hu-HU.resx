@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lnkAdd.Text" xml:space="preserve">
+    <value>Hozzáadás</value>
+  </data>
+  <data name="Amount.HeaderText" xml:space="preserve">
+    <value>Összeg*</value>
+  </data>
+  <data name="ValidateAddCard" xml:space="preserve">
+    <value>Biztos benne, hogy hozzáadja ezt a kártyát?</value>
+  </data>
+  <data name="ValidateRemoveCard" xml:space="preserve">
+    <value>Biztos benne, hogy eltávolítja ezt a kártyát?</value>
+  </data>
+  <data name="lbBonus1.Text" xml:space="preserve">
+    <value>Bónusz 1:</value>
+  </data>
+  <data name="lbBonus2.Text" xml:space="preserve">
+    <value>Bónusz 2:</value>
+  </data>
+  <data name="hdrCardHolder.HeaderText" xml:space="preserve">
+    <value>Kártyatulajdonos</value>
+  </data>
+  <data name="hdrCardNumber.HeaderText" xml:space="preserve">
+    <value>Kártya száma</value>
+  </data>
+  <data name="hdrCardType.HeaderText" xml:space="preserve">
+    <value>Kártya típusa</value>
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>Ellenőrző kód (CVV)*</value>
+  </data>
+  <data name="lnkEdit.Text" xml:space="preserve">
+    <value>Szerkeszt</value>
+  </data>
+  <data name="hdrExpiration.HeaderText" xml:space="preserve">
+    <value>Lejárat</value>
+  </data>
+  <data name="strExpires" xml:space="preserve">
+    <value>LEJÁR!!!</value>
+  </data>
+  <data name="lbInstallments.Text" xml:space="preserve">
+    <value>Fizetés részletekben</value>
+  </data>
+  <data name="hdrIssueNumber.HeaderText" xml:space="preserve">
+    <value>Kibocsátási szám, vagy lejárat</value>
+  </data>
+  <data name="lbLumpSum.Text" xml:space="preserve">
+    <value>Egyösszegben</value>
+  </data>
+  <data name="CardType_MC_Description" xml:space="preserve">
+    <value>MasterCard</value>
+  </data>
+  <data name="CardType_QH_Description" xml:space="preserve">
+    <value>Mykey</value>
+  </data>
+  <data name="rbWire.Text" xml:space="preserve">
+    <value>Fizetés banki átutalással</value>
+  </data>
+  <data name="lbPayOptions.Text" xml:space="preserve">
+    <value>Fizetési lehetőségek</value>
+  </data>
+  <data name="rbCredit.Text" xml:space="preserve">
+    <value>Fizetés bankkártyával</value>
+  </data>
+  <data name="hdrPayOptions.HeaderText" xml:space="preserve">
+    <value>Fizetési lehetőségek</value>
+  </data>
+  <data name="lblWireMessage.Text" xml:space="preserve">
+    <value>Kérjük fizesse be ezt az összeget három munkanapon belül...</value>
+  </data>
+  <data name="lnkRemove.Text" xml:space="preserve">
+    <value>Eltávolítás</value>
+  </data>
+  <data name="lbRevolving.Text" xml:space="preserve">
+    <value>Összetett fizetés</value>
+  </data>
+  <data name="lbSelectMonth.Text" xml:space="preserve">
+    <value>Hónap kiválasztása</value>
+  </data>
+  <data name="lbSelectMonth1.Text" xml:space="preserve">
+    <value>Hónap kiválasztása 1</value>
+  </data>
+  <data name="lbSelectMonth2.Text" xml:space="preserve">
+    <value>Hónap kiválasztása 2</value>
+  </data>
+  <data name="ValidateAddCardExpired" xml:space="preserve">
+    <value>A kártya lejárt.</value>
+  </data>
+  <data name="ValidateAddCardBadCard" xml:space="preserve">
+    <value>Érvénytelen kártyaszám.</value>
+  </data>
+  <data name="ValidateAddCardMissingCard" xml:space="preserve">
+    <value>A kártya száma szükséges.</value>
+  </data>
+  <data name="ValidateAddCardMissingName" xml:space="preserve">
+    <value>A kártyabirtokos neve szükséges.</value>
+  </data>
+  <data name="ValidateAddCardMissingExpDate" xml:space="preserve">
+    <value>Lejárati dátum szükséges.</value>
+  </data>
+  <data name="lblWireAmountDue.Text" xml:space="preserve">
+    <value>Átutalás összege:</value>
+  </data>
+  <data name="CardType_VI_Code" xml:space="preserve">
+    <value>VI</value>
+  </data>
+  <data name="CardType_VI_Description" xml:space="preserve">
+    <value>Visa</value>
+  </data>
+  <data name="CardType_AX_Code" xml:space="preserve">
+    <value>AX</value>
+  </data>
+</root>

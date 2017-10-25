@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Номер серії для оплати щорічного внеску не може бути включено у Ваш Кошик</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Номер Серії  щорічного внеску за комп'ютерне обслуговування не може бути видалено з вашого кошика.</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Ви впевнені, що хочете відмінити замовлення? Натиснувши "Так", ви видалите всі товари з вашого кошика.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>У зв'язку з тим, що не має продуктів з вашим замовленням на щорічний внесок за комп'ютерне обслуговування, всі непродуктові товари будуть видалені.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Позиції з подальшею видачею товару не можуть бути додані до замовлення на оплату щорічного внеску за комп'ютерне обслуговування.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Авторизація вашої картки не пройдена. Будь ласка, перевірте її.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Формат дати невірний, будь ласка, введіть правильну дату.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Номер Серії</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Покупка квитків обмежена кількістю {0} в замовленні.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Покупка квитків не дозволена на цьому сайті.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Для продукту {0} доступна кількість {1}. Будь ласка, змініть введену кількість, щоб додати товар у кошик.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Для продукту {0}, 1 або більше продуктів можуть бути замовлені з подальшею видачею товару.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Для Номеру Серії {0} кількість не може перевищувати {1}</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Вибачте, ви не зареєструвати вашу кредитну картку у файлі. Будь ласка, зверніться до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Невірний поштовий індекс.</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} років щорічного комп'ютерного обслуговування повинно бути сплачене перед тим, як розмістити замовлення з типом "Перепродаж". Будь ласка, змініть тип вашого замовлення на "Персональний" для того, щоб оплатити внесок за щорічне комп'ютерне обслуговування</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Продукт {0} на данний момент відсутній на складі, кількість було змінено на 0,</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Ліміт для журналу Today складає</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Максимальна кількість журналів, що можуть бути додані до кошика {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Назва вже використовується, будь ласка вкажіть іншу назву.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Онлайн замовлення не доступно.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Онлайн замовлення не дозволено.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Тільки Продукт може бути додано до стандартного замовлення на оплату щорічного комп'ютерного внеску</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Загальна сума не відповідає сумі замовлення.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Будь ласка, введіть суму більше 0.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Будь ласка, перевірте інформацію картки.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Будь ласка, перевірте ваш ID та PIN та спробуйте ще раз. Якщо проблема не усувається, будь ласка, зверніться до Відділу Інформаційної підтримки Незалежних Партнерів за тел.: 0 800 3000 34 (безкоштовна лінія по Україні) або +380 44 393 77 50, з понеділка по п’ятницю з 9:00 до 18.00</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Будь ласка, завершіть оплату щорічного внеску за комп'ютерне обслуговування перед тим, як додати інші продукти до Вашого кошика.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Будь ласка, завершіть покупку щорічного комп'ютерного внеску перед  покупкою квитків.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Будь ласка, введіть номер.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Будь ласка, введіть кількість для Номеру Серії {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Будь ласка, введіть унікальну адресу отримання замовлення.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Будь ласка, введіть дійсне місто.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Будь ласка, введіть дійсне Ім'я.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>На жаль, ми не змогли додати Вашу картку. Будь ласка, спробуйте ще раз з псевдонімом, який не має кредитної картки.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Будь ласка, введіть суму пожертви, за виключенням (0).</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Будь ласка, введіть вашу електронну адресу.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Будь ласка, введіть інформацію про Вашу кредитну картку</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Будь ласка, введіть код CVV.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Будь ласка, введіть кількість років щорічного внеску за комп'ютерне обслуговування, які ви хочете оплатити.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Будь ласка, введіть дійсну електронну адресу.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Будь ласка, введіть дійсне Ім'я.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Будь ласка, введіть дійсне Прізвище.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Будь ласка, введіть дійсне ім'я По-батькові.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Будь ласка, заповніть всі обов'язкові дані доставки.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Будь ласка, введіть поштовий індекс у вірному форматі.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Будь ласка, введіть розширення в потрібному форматі.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Будь ласка, введіть Ім'я та Прізвище отримувача.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Будь ласка, введіть поштовий індекс.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Будь ласка, введіть місто.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Будь ласка, введіть доповнення.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Будь ласка, введіть Ім'я.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Будь ласка, введіть Прізвище.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Будь ласка, введіть всі обов'язкові поля.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Будь ласка, введіть телефонний номер.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Будь ласка, введіть країну.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Будь ласка, введіть назву вулиці.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Будь ласка, введіть поштовий індекс.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Будь ласка, введіть телефонний номер в правильному форматі.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Будь ласка, зверніть увагу: ви можете зберегти деталі банківської карти для максимум {0} карток. У випадку додавання нової карти, будь ласка, видаліть одну з існуючих збережених карток.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Будь ласка, зверніть увагу: &lt;br/&gt; цей сайт краще переглянути через Іnternet Explorer або Firefox.</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Будь ласка, збережіть адресу доставки перед тим як ви підтвердите Замовлення з отриманням в Центрі Продажів.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Оберіть місто, в якому розташоване Відділення</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Будь ласка, виберіть час доставки.</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Будь ласка, виберіть Тип замовлення.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Оберіть місто, в якому розташоване Відділення</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Оберіть місто, в якому розташоване Відділення</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Будь ласка, введіть Ім'я отримувача.</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Будь ласка, введіть номер телефона отримувача</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Будь ласка, оберіть час отримання замовлення у Центрі Продажів</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Будь ласка, оберіть адресу доставки</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Будь ласка, оберіть Так/Ні</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Основну адресу неможливо видалити.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Параметри Основного способу отримання не можуть бути видалені.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Підтвердити замовлення</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Перейти на Головну сторінку.</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Доставка за введеним поштовим індексом не підтримується</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Номер Серії {0} недоступний.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Введіть будь ласка, мобільний номер для смс.</value>
+    <comment>_G1245</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Вибачте! Ви не можете зробити замовлення. Тільки Незалежні Партнери Кореї можуть придбати продукт на сайті Кореї.</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Вибачте! Ви не можете додати товар(и) до кошика, так як додаючи їх до кошика ви перевищуєте ліміт.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Системна помилка.</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Місяць Розміщення Замовлення змінено)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Номер Серії {0} додано до замовлення з подальшою відправкою.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Країна являється недійсною.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Адреса доставки повинна містити мінімум одну літеру.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Адреса доставки повинна містити мінімум одну цифру, один пробіл або одну літеру.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Транзакція не дозволена. Будь ласка перевірте інформацію стосовно Вашої кредитної картки. У разі якщо проблема все ще існує, зателефонуйте у Відділ замовлень за телефонами: 0 800 3000 35 (безкоштовна лінія в межах України) або +38 044 393 77 51, з понеділка по п’ятницю з 9:00 до 18:00.</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Транзакція не дозволена, будь ласка зверніться до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Поштовий індекс не дійсний.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Не має товарів для формування замовлення.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Недостатня кількість залишку товару на складі {0}. Доступна кількість {1}.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Не обрано жодного товару для замовлення.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Необхідно обрати номер серії продукції, що має очки</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Ця адреса вже існує в тестовій базі даних</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Це замовлення перевищує ліміт покупки. Ви маєте {0} VP доступного для замовлень. Будь ласка, внесіть зміни в вашому замовленні для продовження.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Ця транзакція була відхилена для цієї картки.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Журнал Today був доданий до вашого кошика.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Ми не можемо завершити ваше замовлення. Будь ласка, зверніться до до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00 та вкажіть код помилки 01.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Ми не можемо завершити ваше замовлення. Будь ласка, зверніться до до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00 та вкажіть код помилки 05.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Ми не можемо завершити ваше замовлення. Будь ласка, перевірте адресу та спробуйте пізніше. Якщо проблему не буде усунено, зверніться до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Приносимо вибачення. Валюта не може бути конвертована. Будь ласка, зверніться до до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>В вашому кошику вже є квитки на захід, ви хочете очистити кошик?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Ви намагаєтесь видалити вашу основну картку. Будь ласка збережіть іншу основну картку перед тим як видалити цю.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Ви не можете використовувати цю картку у зв'язку з численними відхиленнями.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Ім'я вже існує, будь ласка, додайте нове ім'я.</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Ви не можете додати ці товари до вашого кошика.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Ви не можете перейти до сторінки {0} без товарів у вашому кошику.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>В вашому кошику є товари з подальшою відправкою, що будуть виключені, якщо ви виберете замовлення з отриманням в Центрі Продажів. Ви хочете продовжити? ("Так" чи "Ні")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Ви змінили місяць замовлення для цього замовлення на {0}. Ви хочете продовжити з цим вибором?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>В вашому кошику вже квитки на захід, ви хочете очистити кошик?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>В вашому кошику є товари. Ви хочете очистити ваш кошик, перед тим як замовити квитки на захід?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Ви обрали {0} у зв 'язку з днем подвійного місяця, це вірно?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Ви обрали замовлення з отриманням з WALDOS, в якому буде обмеження продукціїї для замовлення.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Ви вибрали для перегляду продукти, не розміщуючи замовлення, ви не зможете додати товар у кошик.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Ви успішно додали HFF до вашого кошика.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Ви можете попередньо оплатитиo Щорічний внесок тільки за 90 днів до терміну сплати.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Видаліть одну з ваш кредитних карток для того, щоб змінити товар у вашому кошику</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Необхідно вибрати Область з переліку та Відділення МІСТ за допомогою кнопки «Додати». Або оберіть Доставку чи Отримання в Центрі Продажів, щоб продовжити</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Ми помітили, що Ви розмістили ідентичне замовлення на {0}. Будь ласка, підтвердіть якщо Ви хочете продовжити.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Дата вашого щорічного внеску за комп'ютерне обслуговування  {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Дата вашого щорічного внеску за комп'ютерне обслуговування прострочена, ми додали оплату внеску до вашого кошика автоматично.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Дата Вашого щорічного внеску за комп'ютерне обслуговування прострочена. Сума для оплати щорічного внеску за комп'ютерне обслуговування додано до Вашого кошика.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Термін дії вашої кредитної картки закінчено. Будь ласка, натисніть Змінити та оновіть термін дії картки.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Термін дії вашої кредитної картки закінчено. Будь ласка, зверніться до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Ми не можемо обробити Ваш запит. Будь ласка, зв’яжіться з Відділом інформаційної підтримки за телефоном: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51.</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Ми не можемо обробити Ваш запит. Будь ласка, зв’яжіться з Відділом інформаційної підтримки за телефоном: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51.</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Ваше попереднє замовлення вже було оформлене до того, як ви внесли останні зміни у Вашому кошику. Номер вашого замовлення {0}. Ви можете перевірити статус цього замовлення звернувшись до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00. Субота, неділя – вихідні дні. (Будь ласка, зверніть увагу, що це може зайняти до 1 години, поки замовлення буде відображено. &lt;br&gt; Якщо ви бажаєте розмістити нове замовлення, будь ласка, повторно додайте продукти в кошик.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Необхідний щорічний внесок за комп'ютерне обслуговування залишився у вашому кошику.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Інформація доставки більше не дійсна, кошик з інформацією про доставку буде очищено.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Будь ласка, введіть країну.</value>
+    <comment>_G1297</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Номер Серії {0} недійсний.</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Будь ласка, виберіть метод доставки.</value>
+    <comment>_G1299</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Для доставки у Нову Каледонію та Французьку Полінезію не дозволений метод замовлення з подальшою відправкою товару.</value>
+    <comment>_G1300</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Будь ласка, виберіть тип замовлення з міні-кошика.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Ви не можете оформити замовлення, у зв'язку з тим, що Ваш ліміт очок вичерпано.</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Потрібно підтвердити адресу</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Будь ласка, введіть RG номер</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Будь ласка, виберіть адресу Незалежного Партнера</value>
+    <comment>_G2311</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Будь ласка, введіть додаткову інформацію стосовно доставки.</value>
+    <comment>_G2351</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Будь ласка введіть назву Кур'єрської компанії</value>
+    <comment>_G2352</comment>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Платіж за ваше замовлення не авторизовано, у випадку сумнівів, зверніться до Відділу Замовлень за тел.: 0 800 3000 35 (безкоштовна лінія по Україні) або +380 44 393 77 51, з понеділка по п’ятницю з 9:00 до 18.00.</value>
+    <comment>_G2512</comment>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Будь ласка, введіть інформацію адреси рахунку.</value>
+    <comment>_G2513</comment>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Шановний Дистриб'ютор, для Вашої безпеки, це замовлення було вибране для аналізу аудиту Herbalife. Воно буде розміщене якомога швидше. Згідно нашої політики безпеки, Herbalife випадковим чином вибирає кілька замовлень для аналізу.</value>
+    <comment>_G2514</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Ми помітили, що Ви розмістили ідентичне замовлення на {0}. Будь ласка, підтвердіть якщо Ви хочете продовжити.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Будь ласка, оберіть дату отримання замовлення</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Будь-ласка оберіть іншу дату. Замовлення можна отримати у Центрі Продажу в робочі години: Понеділок – П’ятниця з 10:30 до 19:00, Субота з 10:00 до 14:00, Неділя – вихідний день.</value>
+    <comment>_G2845</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Будь ласка введить Вам ID-номер</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Будь ласка зкористуйтесь опцією відновлення PinCode</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Наразі об'єм не відображається</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Щоб завершити налаштування Вашого профілю в якосіт нового Незалежного Партнера, будь ласка, оберіть Вашу країну реєстрації даних та спробуйте знову.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>ПІН-код не може бути відновлено</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>Можливість придбання продукції для Вас тимчасово призупинена, доки Ви не ознайомитесь з тренінгом " Захист Вашого бізнесу 101". Якщо Ви бажаєте пройти тренінг зараз, будь ласка, перейдіть за наступним посиланням: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; Якщо Ви бажаєте пройти тренінг протягом наступних 7 днів і розмістити замовлення зараз, будь ласка, натисніть ОК, щоб продовжити робити замовлення, або натисніть Відміна.</value>
+    <comment>_G3158</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Важливо: Тренінг Захист Вашого бізнесу 101</value>
+    <comment>_G3159</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>"Ми не можемо обробити Ваш запит, будь ласка, зверніться до Відділу інформаційної підтримки за номером 0800300035 (безкоштовна лінія) або (044)3937751 з понеділка по п`ятницю з 09:00 до 18:00.
+  Важливо: Можливість покупки призупинена до тих пір, поки не буде пройдено тренінг ""Захистіть Ваш бізнес 101"". Якщо Ви хочете пройти тренінг зараз, 
+  будь ласка, натисніть на наступне посилання:  &lt;a href="" "" target=""_blank""&gt;Link&lt;/a&gt;
+ 
+ "</value>
+    <comment>_G3160</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Ціна для товарів у Вашому кошику була змінена у зв'язку з помилкою. Будь ласка, ще раз підтвердіть Ваше замолвення.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Ваш запит не може бути виконано на даний момент у зв'язку з технічними труднощами. Будь ласка, спробуйте ще раз.</value>
+    <comment>_1A8</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Обробка Вашого недавнього контракта Незалежного Партнера може зайняти 12-18 годин. Після обробки Вашого контратку, Ви зможете розміщувати замовлення. Будь ласка, зайдіть пізніше для завершення замовлення.</value>
+    <comment>_GXXXX</comment>
+  </data>
+  <data name="APFFeeDueFuturePopup" xml:space="preserve">
+    <value>Дата сплати Вашого Щорічного внеску закінчується {0}. Для запобігання будь-яких перерв, будь ласка, оплатіть щорічний внесок за послуги до або в термін.</value>
+  </data>
+  <data name="APFFeeDuePastPopup" xml:space="preserve">
+    <value>Дата сплати Вашого Щорічного внеску закінчується {0}. Для запобігання будь-яких перерв у Вашому бізнесі, будь ласка, оплатіть щорічний внесок якомога швидше.</value>
+  </data>
+  <data name="APFFeeDueTodayPopup" xml:space="preserve">
+    <value>Ваш щорічний внесок за послуги закінчується сьогодні. Для запобігання будь-яких перерв, будь ласка, оплатіть щорічний внесок за послуги сьогодні.</value>
+  </data>
+</root>

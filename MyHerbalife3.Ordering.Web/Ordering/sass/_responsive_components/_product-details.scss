@@ -1,0 +1,266 @@
+.tabs-SKU,
+#TB_window_ProductDetail div[id$="_divProductDetail"] { 
+    @extend .width-100; 
+
+    .tabs-SKU  {
+        
+        
+        overflow-x: scroll;
+        width: 90%;
+
+    }
+}
+
+div[id$="_divProductDetail"] { 
+
+    .tabs-SKU  {
+        
+        margin: 0 auto;
+
+    }
+
+}
+
+.tabs-SKU {
+    @include breakpoint( $desktop) { 
+        width: 549px;
+    }
+}
+#TB_window_ProductDetail div[id$="_divProductDetail"] {
+    overflow: visible;
+    @include breakpoint( $desktop) { 
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .tabs-SKU > table { 
+        @extend .width-100; 
+        @include breakpoint( $desktop) { 
+            width: 549px;
+        }
+    }
+
+    #divAvail {
+
+        margin-left: 20px !important;
+
+        @include breakpoint( $desktop) {
+            margin-left: 5px !important;
+        }
+
+    }
+}
+
+
+/* Tabs Prodcut Details */
+.tabs-bodywrap-blu2 {
+    @extend .width-100;
+    @include breakpoint( $desktop) {
+        width: 549px;
+    }
+    .inline {
+        float: none;
+        @include breakpoint( $desktop) {
+            display: inline;
+            float: left;
+        }
+    }
+}
+
+.inline.static_wrap {
+    width: 100%;
+    @include breakpoint( $desktop) {
+        width: 370px;
+    }
+}
+
+.tabs-button-wrap {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    @include breakpoint( $desktop) {
+        display: block;
+        height: 25px;
+        text-align: left;
+        width: 551px;
+    }
+}
+
+.focusTab, .unFocusTab, .tabs-bodywrap-blu2 {
+    background-image: none !important;
+}
+.unFocusTab {
+    @include breakpoint( $desktop) {
+        background-image: url("/Ordering/Images/tab-blu-off.gif") !important;
+        color: #8c978b;
+    }
+}
+
+#vis1, #vis2, #vis3 {
+    //background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    //background-image: none !important;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    box-shadow: none;
+    display: inline-block;
+    float: none;
+    height: 25px;
+    padding: 5px 0;
+    width: 100%;
+    @include breakpoint( $desktop) {
+        border: none;
+        height: 20px;
+        padding: 5px 5px 0 10px;
+        width: 175px;
+    }
+    &.inline {
+        @include breakpoint( $desktop) {
+            display: inline;
+            float: left;
+        }
+    }
+}
+
+#vis1 {
+    @include breakpoint( $desktop) { 
+        display: inline;
+        float: left;
+    }
+}
+#vis2 { 
+    overflow: visible;
+    @include breakpoint( $desktop) { 
+        overflow: hidden;
+        width: 170px; 
+    }
+}
+#vis3 { 
+    @include breakpoint( $desktop) { width: 156px; }
+}
+
+[id$="divAddscript"] .unFocusTab[id*="vis"] span {
+    color: #64B2E2;
+}
+
+[id$="divAddscript"] .focusTab[id*="vis"] span {
+    color: #000;
+}
+
+[id$="divAddscript"] .unFocusTab[id*="vis"] {
+    margin-left: 0;
+}
+
+#vis2,
+#vis3 {
+    border-top: none;
+}
+
+#dynamic_wrap1.inline,
+#dynamic_wrap2.inline,
+#dynamic_wrap3.inline {
+    float: none;
+}
+
+#dynamic_wrap1,
+#dynamic_wrap2,
+#dynamic_wrap3 {
+    width: 100%;
+    @include breakpoint( $desktop) { width: 379px; }
+}
+
+#tab12-col1 {
+    padding-right: 0;
+    width: auto;
+}
+
+#tab2-col1,
+#tab2-col2 {
+    float: none;
+    width: auto;
+}
+
+#tab32-col1 {
+    float: none;
+    width: auto;
+}
+
+.print:before {
+    left: 70px;
+    top: 1px;
+}
+
+.productDetailsButtons {
+    
+    float: none;
+    @include breakpoint( $desktop) { float: right; }
+
+}
+
+a[id$="LinkEnlargeImage"], div[id$="divPrint"], [id$="tabIcons"], div a[id$="lbClickToEnlarge"] {
+
+    display: none;
+    @include breakpoint( $desktop) { display: block; }
+
+}
+.tabs-SKU .DocumentDetails_element{
+
+    display: none;
+    @include breakpoint( $desktop) { display: table-cell; }
+
+}
+
+.tabs-main-wrap table.specialtable {
+
+    width: 100%;
+    @include breakpoint( $desktop) { width: 529px; }
+
+}
+
+div[id$="imageSection"] a {
+
+    width: 100%;
+    @include breakpoint( $desktop) { width: 175px; }
+
+}
+
+.tabs-main-wrap {
+
+    margin: 0 auto;
+    width: 90%;
+
+    @include breakpoint( $desktop) { 
+        margin: 0;
+        width: auto;
+    }
+
+}
+
+.tabs-content-wrap {
+    padding: 5px 0 10px;
+
+    @include breakpoint( $desktop) { padding: 5px 10px 10px; }
+
+}
+
+[id$="_DivProductDetail"] .tabs-main-wrap, [id$="_DivProductDetail"] .tabs-SKU {
+    margin: 0 auto;
+}
+
+div[id$="divProductDetail"] {
+    .tabs-SKU {
+        .productDetailsButtons {
+            margin: 0 auto;
+            width: 90%;
+        }
+    }
+}
+.hrblModalSkinOnly {
+    div[id$="divProductDetail"] {
+        .tabs-SKU {
+            .productDetailsButtons {
+                width: 100%;
+            }
+        }
+    }
+}

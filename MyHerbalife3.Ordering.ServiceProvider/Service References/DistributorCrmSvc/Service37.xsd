@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2009/01/15/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="DSComplianceBannedWord_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2009/01/15/HL.DistributorCRM.ValueObjects.DSWebAdmin" base="q1:DSComplianceBannedWordBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Words" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="statusFlag" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSComplianceBannedWord_V01" nillable="true" type="tns:DSComplianceBannedWord_V01" />
+  <xs:complexType name="DSComplianceReport_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DSComplianceReportBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="alertDate" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="alertType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="distributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="distributorName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSComplianceReport_V01" nillable="true" type="tns:DSComplianceReport_V01" />
+  <xs:complexType name="DSComplianceReportBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSComplianceReportBase" nillable="true" type="tns:DSComplianceReportBase" />
+  <xs:complexType name="DSComplianceWebsiteInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DSComplianceWebsiteInfoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BiographyText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BusinessName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Facebook" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageData" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="IsBlockContactInd" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsBlockMyStoryInd" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsBlockPhotoInd" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OtherSiteURL" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Twitter" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WebsiteURL" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSComplianceWebsiteInfo_V01" nillable="true" type="tns:DSComplianceWebsiteInfo_V01" />
+  <xs:complexType name="DSComplianceWebsiteInfoBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSComplianceWebsiteInfoBase" nillable="true" type="tns:DSComplianceWebsiteInfoBase" />
+  <xs:complexType name="ArrayOfDSComplianceBannedWord_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSComplianceBannedWord_V01" nillable="true" type="tns:DSComplianceBannedWord_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSComplianceBannedWord_V01" nillable="true" type="tns:ArrayOfDSComplianceBannedWord_V01" />
+  <xs:complexType name="ArrayOfDSComplianceWebsiteInfo_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSComplianceWebsiteInfo_V01" nillable="true" type="tns:DSComplianceWebsiteInfo_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSComplianceWebsiteInfo_V01" nillable="true" type="tns:ArrayOfDSComplianceWebsiteInfo_V01" />
+  <xs:complexType name="ArrayOfDSApprovedInfo_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSApprovedInfo_V01" nillable="true" type="tns:DSApprovedInfo_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSApprovedInfo_V01" nillable="true" type="tns:ArrayOfDSApprovedInfo_V01" />
+  <xs:complexType name="DSApprovedInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2009/01/15/HL.DistributorCRM.ValueObjects.DSWebAdmin" base="q4:DSApprovedInfoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="isApproved" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isBlockContact" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isBlockMyStory" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isBlockPhoto" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DSApprovedInfo_V01" nillable="true" type="tns:DSApprovedInfo_V01" />
+  <xs:complexType name="ArrayOfDSComplianceReport_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DSComplianceReport_V01" nillable="true" type="tns:DSComplianceReport_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDSComplianceReport_V01" nillable="true" type="tns:ArrayOfDSComplianceReport_V01" />
+</xs:schema>

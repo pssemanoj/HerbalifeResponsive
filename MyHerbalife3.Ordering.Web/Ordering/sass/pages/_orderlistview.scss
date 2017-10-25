@@ -1,0 +1,165 @@
+.orderHistory {
+    width: 900px;
+
+    .RadGrid_Hay {
+        border-color: $grey;
+        border-style: none none solid;
+        border-width: 1px;
+
+        .gdo-pagination-active {
+            td {
+                border: medium none;
+            }
+        }
+    }
+
+    .rgMasterTable {
+        .rgAltRow {
+            background: #fff url(/Ordering/Images/saved-carts-grid-alt-row.jpg) 0 0 repeat-x;
+        }
+
+        .rgRow {
+            background: #fcfcfc url(/Ordering/Images/saved-carts-grid-row.jpg ) 0 0 repeat-x;
+        }
+
+        .productsCont {
+            th {
+                border-bottom: 1px solid $grey;
+            }
+
+            table {
+                border-bottom: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+
+            a.lnkTotalProducts {
+                @include MarginPadding( null, 5px 10px );
+                color: #5AB11A !important;
+                display: block;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .Radgrid {
+        .rgNumPart {
+            a {
+                @include MarginPadding( null, 5px );
+                background-color: $white;
+                color: #7AC142;
+                margin-right: 5px;
+
+                span {
+                    @include MarginPadding( null, 0 !important );
+                }
+            }
+        }
+    }
+
+    a {
+        &.rgCurrentPage {
+            &:hover {
+                background-color: $white;
+                color: #7AC142;
+            }
+        }
+    }
+
+    // override for defect 43057 //
+    .icnLeft {
+        left: -8px;
+    }
+}
+
+#divGrid {
+    &.orderHistory {
+        .productsCont {
+            th {
+                color: $grey;
+            }
+        }
+
+        th {
+            @include MarginPadding( null, 5px 10px );
+            background-image: none;
+            border-bottom: 1px solid $grey;
+            border-left: medium none;
+            border-right: medium none;
+            height: 25px;
+
+            &.sv_qty {
+                padding-left: 5px;
+            }
+
+            &.rgHeader {
+                height: 31px;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+
+        .rgMasterTable {
+            .productsCont {
+                table {
+                    td {
+                        @include MarginPadding( null, 3px 10px );
+                        border: none;
+                        border-right: 1px solid $grey;
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .RadGrid {
+            .rgRow, .rgAltRow {
+                td {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    vertical-align: top;
+                    border: 1px solid Lightgrey;
+                }
+            }
+        }
+    }
+}
+
+.orderHistory .productsCont th, 
+.savedCarts .rgMasterTable .productsCont table tr:hover {
+	background: url(/Ordering/Images/saved-carts-grid-hd.jpg) 50% 50% repeat-x !important;
+}
+
+.orderHistory .RadGrid_Hay .rgHeader:first-child, 
+.orderHistory .RadGrid_Hay th.rgResizeCol:first-child, 
+.orderHistory .RadGrid_Hay .rgFilterRow > td:first-child, 
+.orderHistory .RadGrid_Hay .rgRow > td:first-child, 
+.orderHistory .RadGrid_Hay .rgAltRow > td:first-child {
+	border: none;
+}
+
+.orderHistory .RadGrid_Hay .gdo-pagination-active {
+	background: none;
+}
+
+.orderHistory .RadGrid_Hay .gdo-pagination-active:hover,
+.orderHistory .RadGrid_Hay .rgNumPart a, 
+.orderHistory .RadGrid .rgNumPart a.rgCurrentPage, 
+.orderHistory .RadGrid .rgNumPart a.rgCurrentPage span, 
+.orderHistory .RadGrid_Hay .rgNumPart a:hover span, 
+.orderHistory .RadGrid_Hay .rgNumPart a:hover {
+	background-image: none;
+}
+
+.orderHistory .RadGrid .rgNumPart a.rgCurrentPage, 
+.orderHistory .RadGrid_Hay .rgNumPart a:hover {
+	background-color: #7AC142;
+	color: $white !important;
+	cursor: pointer !important;
+}
+
+.FeedBackBtn {
+	text-align: center;
+}

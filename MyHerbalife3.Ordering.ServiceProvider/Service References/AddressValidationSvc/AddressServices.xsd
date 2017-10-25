@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://schemas.herbalife.com/AddressServices/V02/AddressServices" xmlns:as="http://schemas.herbalife.com/AddressServices/V02/AddressServices" blockDefault="#all" elementFormDefault="qualified" targetNamespace="http://schemas.herbalife.com/AddressServices/V02/AddressServices" version="2.0.1" id="AddressServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="City" type="xs:string" />
+  <xs:element name="StateProvinceTerritory" type="xs:string" />
+  <xs:element name="CountyDistrict" type="xs:string" />
+  <xs:element name="PostalCode" type="xs:string" />
+  <xs:element name="CountryCode" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>
+				Two character ISO Country Code
+			</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Line1" type="xs:string" />
+        <xs:element minOccurs="0" name="Line2" type="xs:string" />
+        <xs:element minOccurs="0" name="Line3" type="xs:string" />
+        <xs:element minOccurs="0" name="Line4" type="xs:string" />
+        <xs:element ref="as:City" />
+        <xs:element ref="as:StateProvinceTerritory" />
+        <xs:element minOccurs="0" ref="as:CountyDistrict" />
+        <xs:element minOccurs="0" name="CountyCode" type="xs:string" />
+        <xs:element ref="as:PostalCode" />
+        <xs:element minOccurs="0" ref="as:CountryCode" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnSuggestions">
+    <xs:annotation>
+      <xs:documentation>
+				Include this element if you want address validation to return suggestions.
+				If this service is being called from a program with no UI then suggestions are most likely useless.
+				If MaxCount is specified as a positive integer (non-zero) then at most that many suggestions will be returned.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="MaxCount" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UseSuggestedFirstLine">
+    <xs:annotation>
+      <xs:documentation>
+				Re-call address validation with one of these elements if a suggestion has been choosen
+				and you want address validation to update the address information based on the choosen suggestion.
+				Identifier indicates which suggestion has been choosen.
+				If a PrimaryRange was provided in the suggestion, then return the choosen value in PrimaryRangeValue.
+				If a SecondryRange was provided in the suggestion, then return the choosen value in SecondaryRangeValue.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PrimaryRangeValue" type="xs:string" />
+        <xs:element minOccurs="0" name="SecondaryRangeValue" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="Identifier" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UseSuggestedLastLine">
+    <xs:annotation>
+      <xs:documentation>
+				Re-call address validation with one of these elements if a suggestion has been choosen
+				and you want address validation to update the address information based on the choosen suggestion.
+				Identifier indicates which suggestion has been choosen.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="Identifier" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidationResult">
+    <xs:annotation>
+      <xs:documentation>
+				Provides information on the result of the address validation.
+				The contents of this element will contain one of the following values:
+				"Found" means that some matching information was found and returned.
+				"FoundSuggestions" means that there are multiple address are possibly correct.
+				"NotFound" means that no matching address was found, some additional information may have been returned in Address.
+				If "Found" is returned, then a StatusCode attribute will be present providing information about the matching address.
+				If "NotFound" is returned, then an ErrorCode attribute will be present providing information the lack of a match.
+				If "FoundSuggestions" is returned and suggestions were requested, then either the FirstLineSuggestions element or the LastLineSuggestions element will be present.
+				Neither StatusCode nor ErrorCode will be present in the case of "FoundSuggestions".
+			</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="StatusCode" type="xs:string" use="optional" />
+          <xs:attribute name="ErrorCode" type="xs:string" use="optional" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstLineSuggestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PrimaryRange">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Low" type="xs:string" />
+              <xs:element minOccurs="0" name="High" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="AppliesTo" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="PreDirectional" type="xs:string" />
+        <xs:element name="PrimaryName" type="xs:string" />
+        <xs:element minOccurs="0" name="PostDirectional" type="xs:string" />
+        <xs:element minOccurs="0" name="Suffix" type="xs:string" />
+        <xs:element minOccurs="0" name="SecondaryName" type="xs:string" />
+        <xs:element minOccurs="0" name="UnitType" type="xs:string" />
+        <xs:element minOccurs="0" name="SecondaryRange">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="Low" type="xs:string" />
+              <xs:element minOccurs="0" name="High" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="AppliesTo" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PostalCode" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="2" name="PostalCodeExtension">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="AppliesTo" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="2" name="CarrierRoute">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="AppliesTo" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="CountyCode" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="Identifier" type="xs:string" use="required" />
+      <xs:attribute name="Version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FirstLineSuggestions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="as:FirstLineSuggestion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LastLineSuggestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="as:City" />
+        <xs:element ref="as:StateProvinceTerritory" />
+        <xs:element ref="as:PostalCode" />
+      </xs:sequence>
+      <xs:attribute name="Identifier" type="xs:string" use="required" />
+      <xs:attribute name="Version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LastLineSuggestions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="as:LastLineSuggestion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

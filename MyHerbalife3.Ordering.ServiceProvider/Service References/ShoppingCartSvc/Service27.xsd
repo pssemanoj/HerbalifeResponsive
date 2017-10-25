@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="MemberInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:MemberInvoiceAddress" />
+      <xs:element minOccurs="0" name="ApplicationCountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="InvoiceDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InvoiceShipToAddress" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InvoiceType" type="tns:MemberInvoiceType" />
+      <xs:element minOccurs="0" name="IsFaceToFace" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfMemberInvoiceItem" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MemberInvoiceNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="tns:MemberInvoicePrice" />
+      <xs:element minOccurs="0" name="PriceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShippingMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" type="tns:MemberInvoiceStatus" />
+      <xs:element minOccurs="0" name="Vat" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberInvoice" nillable="true" type="tns:MemberInvoice" />
+  <xs:complexType name="MemberInvoiceAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address01" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address02" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberInvoiceAddress" nillable="true" type="tns:MemberInvoiceAddress" />
+  <xs:simpleType name="MemberInvoiceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Customer">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Distributor">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MemberInvoiceType" nillable="true" type="tns:MemberInvoiceType" />
+  <xs:complexType name="ArrayOfMemberInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberInvoiceItem" nillable="true" type="tns:MemberInvoiceItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberInvoiceItem" nillable="true" type="tns:ArrayOfMemberInvoiceItem" />
+  <xs:complexType name="MemberInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalcDiscountedAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FreightCharge" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StockingSku" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalEarnBase" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalRetailPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalVolumePoint" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UnitEarnBase" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UnitRetailPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="UnitVolumePoint" type="xs:decimal" />
+      <xs:element minOccurs="0" name="YourPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberInvoiceItem" nillable="true" type="tns:MemberInvoiceItem" />
+  <xs:complexType name="MemberInvoicePrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalcDiscountAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CalcShippingAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CalcTaxAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DiscountAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DiscountPercentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MemberDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MemberFreight" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MemberStaticDiscount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MemberTax" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MemberTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Profit" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ProfitPercentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ShippingAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ShippingPercentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SubTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TaxAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TaxPercentage" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalDiscountedAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalDue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalEarnBase" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalVolumePoints" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TotalYourPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MemberInvoicePrice" nillable="true" type="tns:MemberInvoicePrice" />
+  <xs:simpleType name="MemberInvoiceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unpaid" />
+      <xs:enumeration value="FollowUp" />
+      <xs:enumeration value="Paid" />
+      <xs:enumeration value="Closed" />
+      <xs:enumeration value="FirstOrder" />
+      <xs:enumeration value="Recurring" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MemberInvoiceStatus" nillable="true" type="tns:MemberInvoiceStatus" />
+  <xs:complexType name="ArrayOfMemberInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MemberInvoice" nillable="true" type="tns:MemberInvoice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMemberInvoice" nillable="true" type="tns:ArrayOfMemberInvoice" />
+</xs:schema>

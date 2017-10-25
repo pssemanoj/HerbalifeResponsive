@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://Localhost/BT.Order/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BizTalkServiceInstance" targetNamespace="http://Localhost/BT.Order/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <CreationInfo Created="2016-06-15 12:07:48Z" />
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Localhost/BT.Order/Imports">
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd2" namespace="http://bt.orderingsystem.hrbl.v01.address" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd3" namespace="http://bt.orderingsystem.hrbl.v01.shipment" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd4" namespace="http://bt.orderingsystem.hrbl.v01.pricing" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd5" namespace="http://BT.HL.Schemas.Order" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd6" namespace="http://bt.orderingsystem.hrbl.v01.handling" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd7" namespace="http://bt.orderingsystem.hrbl.v01.payment" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd8" namespace="http://bt.orderingsystem.hrbl.v01.emailInfo" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd9" namespace="http://bt.orderingsystem.hrbl.v01.message" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd10" namespace="http://bt.orderingsystem.hrbl.v01.package" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd11" namespace="http://bt.orderingsystem.hrbl.v01.item" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd12" namespace="http://bt.orderingsystem.hrbl.v01.order" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd13" namespace="http://bt.orderingsystem.hrbl.v01.responsepayment" />
+      <xsd:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd14" namespace="http://bt.orderingsystem.hrbl.v01.order" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="SubmitOrder_ProcessRequest_InputMessage">
+    <wsdl:part xmlns:q1="http://bt.orderingsystem.hrbl.v01.order" name="part" element="q1:Order" />
+  </wsdl:message>
+  <wsdl:message name="SubmitOrder_ProcessRequest_OutputMessage">
+    <wsdl:part xmlns:q2="http://bt.orderingsystem.hrbl.v01.order" name="part" element="q2:Response" />
+  </wsdl:message>
+  <wsdl:portType name="SubmitOrder">
+    <wsdl:documentation />
+    <wsdl:operation name="ProcessRequest">
+      <wsdl:documentation />
+      <wsdl:input message="tns:SubmitOrder_ProcessRequest_InputMessage" />
+      <wsdl:output message="tns:SubmitOrder_ProcessRequest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITwoWayAsync" type="tns:SubmitOrder">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessRequest">
+      <wsdl:documentation />
+      <soap:operation soapAction="ProcessRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="BasicHttpBinding_ITwoWayAsync" binding="tns:BasicHttpBinding_ITwoWayAsync">
+      <soap:address location="http://usws1qa3bt01.hrbl.net/BT.Order/SubmitOrder.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

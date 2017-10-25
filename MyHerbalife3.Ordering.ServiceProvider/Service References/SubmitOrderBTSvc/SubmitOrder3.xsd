@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.emailInfo" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://bt.orderingsystem.hrbl.v01.emailInfo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EmailInfo">
+    <xs:annotation>
+      <xs:appinfo />
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DeliveryTimeEstimated" type="xs:string" />
+        <xs:element name="FirstName" type="xs:string" />
+        <xs:element name="LastName" type="xs:string" />
+        <xs:element name="MiddleName" type="xs:string" />
+        <xs:element name="PaymentType" type="xs:string" />
+        <xs:element name="HffMessage" type="xs:string" />
+        <xs:element name="InvoiceOption" type="xs:string" />
+        <xs:element name="PaymentOption" type="xs:string" />
+        <xs:element name="PickUpLocation" type="xs:string" />
+        <xs:element name="PurchaseType" type="xs:string" />
+        <xs:element name="ShippingMethod" type="xs:string" />
+        <xs:element name="SpecialInstructions" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

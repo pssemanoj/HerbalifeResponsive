@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value></value>
+  <comment>_G1711</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value></value>
+  <comment>_G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>請於增加{0}貨號前加入產品貨號</value>
+  <comment>_G1713</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>商品(SKU)已超出可購買數量。</value>
+  <comment>_G1714</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>無法訂購產品編號 {0}.</value>
+  <comment>_G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>基於訂購限制產品編號 {0} 訂購數量不得超過 {1}</value>
+  <comment>_G1720</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>因您目前的點數已超過訂購限制，故無法為您增加產品編號{0}之訂購數量至 {1}</value>
+  <comment>_G1721</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>由於您目前的收入限制，產品編號{0}無法為您新增至購物車內。</value>
+  <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>由於您目前已超過點數限制，產品編號{0}無法為您新增至購物車內。</value>
+  <comment>_G1723</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>您選擇的產品點數已超過目前可訂購上限，目前可訂購點數: {0}. 以下產品編號無法為您放入購物車內</value>
+  <comment>_G2302</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>產品編號:{0}.</value>
+  <comment>_G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>產品編號:{0}.</value>
+  <comment>_G2711</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>您的{0}訂購量超過了{1}每位會員每{2}日最大數量。</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>根據我們訂購計劃，尚未晉升完全合格督導的會員和新會員，第一張訂單可以訂購至 {0}個人購貨點數(PPV)。您可以累積PPV至 {1}點數(包括第一張訂單)在接下來的{2}天。訂單已超過最多可購買的個人購貨點數，訂單須減少至 {3}點數。</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>根據我們訂購計劃，尚未晉升完全合格督導的會員和新會員，第一張訂單可以訂購至 {0}個人購貨點數(PPV)。您可以累積PPV至 {1}點數(包括第一張訂單)在接下來的{2}天。訂單已超過最多可購買的個人購貨點數，訂單須減少至 {3}點數。以下產品編號SKU(s) 的貨品未能加入 至購物車:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>此SKU的數量：{0}不能增加{1}，因為已超出了您的點數限制。</value>
+      <comment>_G3558</comment></data>
+</root>

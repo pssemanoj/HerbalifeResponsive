@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd19" namespace="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd5" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2011/05/01/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd8" namespace="http://herbalife.com/2010/12/12/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd10" namespace="http://herbalife.com/2008/06/23/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2011/01/25/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd14" namespace="http://herbalife.com/2013/03/01/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2013/07/02/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd16" namespace="http://herbalife.com/2010/04/01/HL.Distributor.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd17" namespace="http://herbalife.com/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd18" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd20" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Lead" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDistributorService_GetBasicDistributor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicDistributor" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetBasicDistributor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBasicDistributorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDetailedDistributor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailedDistributor" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDetailedDistributor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailedDistributorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateDistributorProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDistributorProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateDistributorProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDistributorProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetTransferIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferIDs" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetTransferIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorsPartialData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorsPartialData" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorsPartialData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorsPartialDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetIFTEnrollment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIFTEnrollment" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetIFTEnrollment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIFTEnrollmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetBankInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetBankInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBankInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetCountryInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetCountryInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SaveIFTEnrollment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIFTEnrollment" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SaveIFTEnrollment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveIFTEnrollmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_ValidateIntermediaryBank_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateIntermediaryBank" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_ValidateIntermediaryBank_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateIntermediaryBankResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorVolumePoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorVolumePoints" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorVolumePoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorVolumePointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorRequal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorRequal" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorRequal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorRequalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateCustomerExpirationDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerExpirationDate" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateCustomerExpirationDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerExpirationDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMessageDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMessageDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetMessageStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetMessageStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessageStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDocumentDeliveryPreference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentDeliveryPreference" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDocumentDeliveryPreference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentDeliveryPreferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDocumentDeliveryPreference_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocumentDeliveryPreference" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDocumentDeliveryPreference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDocumentDeliveryPreferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetTransferredIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferredIDs" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetTransferredIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransferredIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateEdaFlagStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEdaFlagStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateEdaFlagStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEdaFlagStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateDirectDepositInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDirectDepositInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateDirectDepositInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDirectDepositInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorNotes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorNotes" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorNotes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorNotesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_ClearCache_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearCache" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_ClearCache_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearCacheResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetEFTEnrollmentStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEFTEnrollmentStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetEFTEnrollmentStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEFTEnrollmentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorSurveyStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorSurveyStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorSurveyStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorSurveyStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorFavouriteSKU_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorFavouriteSKU" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorFavouriteSKU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorFavouriteSKUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorFavouriteSKUList_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorFavouriteSKUList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_SetDistributorFavouriteSKUList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDistributorFavouriteSKUListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorFavouriteSKUs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorFavouriteSKUs" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetDistributorFavouriteSKUs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorFavouriteSKUsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateAlertCustomerExtention_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAlertCustomerExtention" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateAlertCustomerExtention_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAlertCustomerExtentionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateCustomerExtention_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerExtention" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateCustomerExtention_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerExtentionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMemberProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMemberProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateMemberProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_UpdateMemberProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmail" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueMobileNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueMobileNumber" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_IsUniqueMobileNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueMobileNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMemberHierarchy_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberHierarchy" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorService_GetMemberHierarchy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberHierarchyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDistributorService">
+    <wsdl:operation name="GetBasicDistributor">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetBasicDistributor" message="tns:IDistributorService_GetBasicDistributor_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetBasicDistributorResponse" message="tns:IDistributorService_GetBasicDistributor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailedDistributor">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDetailedDistributor" message="tns:IDistributorService_GetDetailedDistributor_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDetailedDistributorResponse" message="tns:IDistributorService_GetDetailedDistributor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDistributorProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateDistributorProfile" message="tns:IDistributorService_UpdateDistributorProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateDistributorProfileResponse" message="tns:IDistributorService_UpdateDistributorProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferIDs">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetTransferIDs" message="tns:IDistributorService_GetTransferIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetTransferIDsResponse" message="tns:IDistributorService_GetTransferIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorsPartialData">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorsPartialData" message="tns:IDistributorService_GetDistributorsPartialData_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorsPartialDataResponse" message="tns:IDistributorService_GetDistributorsPartialData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIFTEnrollment">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetIFTEnrollment" message="tns:IDistributorService_GetIFTEnrollment_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetIFTEnrollmentResponse" message="tns:IDistributorService_GetIFTEnrollment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBankInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetBankInformation" message="tns:IDistributorService_GetBankInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetBankInformationResponse" message="tns:IDistributorService_GetBankInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetCountryInformation" message="tns:IDistributorService_GetCountryInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetCountryInformationResponse" message="tns:IDistributorService_GetCountryInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveIFTEnrollment">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SaveIFTEnrollment" message="tns:IDistributorService_SaveIFTEnrollment_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SaveIFTEnrollmentResponse" message="tns:IDistributorService_SaveIFTEnrollment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateIntermediaryBank">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/ValidateIntermediaryBank" message="tns:IDistributorService_ValidateIntermediaryBank_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/ValidateIntermediaryBankResponse" message="tns:IDistributorService_ValidateIntermediaryBank_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorVolumePoints">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorVolumePoints" message="tns:IDistributorService_GetDistributorVolumePoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorVolumePointsResponse" message="tns:IDistributorService_GetDistributorVolumePoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorRequal">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorRequal" message="tns:IDistributorService_GetDistributorRequal_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorRequalResponse" message="tns:IDistributorService_GetDistributorRequal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerExpirationDate">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateCustomerExpirationDate" message="tns:IDistributorService_UpdateCustomerExpirationDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateCustomerExpirationDateResponse" message="tns:IDistributorService_UpdateCustomerExpirationDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMessageDetails" message="tns:IDistributorService_GetMessageDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMessageDetailsResponse" message="tns:IDistributorService_GetMessageDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMessageStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetMessageStatus" message="tns:IDistributorService_SetMessageStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetMessageStatusResponse" message="tns:IDistributorService_SetMessageStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentDeliveryPreference">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDocumentDeliveryPreference" message="tns:IDistributorService_GetDocumentDeliveryPreference_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDocumentDeliveryPreferenceResponse" message="tns:IDistributorService_GetDocumentDeliveryPreference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDocumentDeliveryPreference">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDocumentDeliveryPreference" message="tns:IDistributorService_SetDocumentDeliveryPreference_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDocumentDeliveryPreferenceResponse" message="tns:IDistributorService_SetDocumentDeliveryPreference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransferredIDs">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetTransferredIDs" message="tns:IDistributorService_GetTransferredIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetTransferredIDsResponse" message="tns:IDistributorService_GetTransferredIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEdaFlagStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateEdaFlagStatus" message="tns:IDistributorService_UpdateEdaFlagStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateEdaFlagStatusResponse" message="tns:IDistributorService_UpdateEdaFlagStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDirectDepositInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateDirectDepositInformation" message="tns:IDistributorService_UpdateDirectDepositInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateDirectDepositInformationResponse" message="tns:IDistributorService_UpdateDirectDepositInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorNotes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorNotes" message="tns:IDistributorService_GetDistributorNotes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorNotesResponse" message="tns:IDistributorService_GetDistributorNotes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearCache">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/ClearCache" message="tns:IDistributorService_ClearCache_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/ClearCacheResponse" message="tns:IDistributorService_ClearCache_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEFTEnrollmentStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetEFTEnrollmentStatus" message="tns:IDistributorService_GetEFTEnrollmentStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetEFTEnrollmentStatusResponse" message="tns:IDistributorService_GetEFTEnrollmentStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDistributorSurveyStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorSurveyStatus" message="tns:IDistributorService_SetDistributorSurveyStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorSurveyStatusResponse" message="tns:IDistributorService_SetDistributorSurveyStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDistributorFavouriteSKU">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorFavouriteSKU" message="tns:IDistributorService_SetDistributorFavouriteSKU_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorFavouriteSKUResponse" message="tns:IDistributorService_SetDistributorFavouriteSKU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDistributorFavouriteSKUList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorFavouriteSKUList" message="tns:IDistributorService_SetDistributorFavouriteSKUList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/SetDistributorFavouriteSKUListResponse" message="tns:IDistributorService_SetDistributorFavouriteSKUList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorFavouriteSKUs">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorFavouriteSKUs" message="tns:IDistributorService_GetDistributorFavouriteSKUs_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetDistributorFavouriteSKUsResponse" message="tns:IDistributorService_GetDistributorFavouriteSKUs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlertCustomerExtention">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateAlertCustomerExtention" message="tns:IDistributorService_UpdateAlertCustomerExtention_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateAlertCustomerExtentionResponse" message="tns:IDistributorService_UpdateAlertCustomerExtention_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerExtention">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateCustomerExtention" message="tns:IDistributorService_UpdateCustomerExtention_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateCustomerExtentionResponse" message="tns:IDistributorService_UpdateCustomerExtention_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMemberProfile" message="tns:IDistributorService_GetMemberProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMemberProfileResponse" message="tns:IDistributorService_GetMemberProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateMemberProfile" message="tns:IDistributorService_UpdateMemberProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/UpdateMemberProfileResponse" message="tns:IDistributorService_UpdateMemberProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueEmail" message="tns:IDistributorService_IsUniqueEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueEmailResponse" message="tns:IDistributorService_IsUniqueEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueEmailAddress">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueEmailAddress" message="tns:IDistributorService_IsUniqueEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueEmailAddressResponse" message="tns:IDistributorService_IsUniqueEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueMobileNumber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueMobileNumber" message="tns:IDistributorService_IsUniqueMobileNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/IsUniqueMobileNumberResponse" message="tns:IDistributorService_IsUniqueMobileNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberHierarchy">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMemberHierarchy" message="tns:IDistributorService_GetMemberHierarchy_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Distributor.Interfaces/IDistributorService/GetMemberHierarchyResponse" message="tns:IDistributorService_GetMemberHierarchy_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

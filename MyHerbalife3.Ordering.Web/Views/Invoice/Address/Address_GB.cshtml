@@ -1,0 +1,36 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div class="row">
+    <div class="six-cols">
+        <label for="street-address">@(this.Localize("streetAddress1"))</label>
+        <input type="text" data-bind="value: invoice.Address.Address1" id="street-address" class="k-input"/>
+    </div>
+    <div class="six-cols">
+        <label for="street-address">@(this.Localize("streetAddress2"))</label>
+        <input type="text" data-bind="value: invoice.Address.Address2" id="street-address2" class="k-input"/>
+    </div>
+</div>
+<div class="row">
+    <div class="six-cols">
+        <label for="city">@(this.Localize("city"))</label>
+        <input type="text" data-bind="value: invoice.Address.City" id="city" class="k-input"/>
+    </div>
+    <div class="six-cols">
+        <label for="city">@(this.Localize("county"))</label>
+        <input type="text" data-bind="value: invoice.Address.County" id="city" class="k-input"/>
+    </div>
+    
+    <div class="six-cols">
+        <label for="zip-code">@(this.Localize("zipCode"))</label>
+        <input type="text" data-bind="value: invoice.Address.PostalCode" maxlength="10" id="zip-code" class="k-input" />
+    </div>
+    <div class="six-cols">
+        <label for="email-address">@(this.Localize("email"))</label>
+        <input type="text" name="email-address" data-bind="value: invoice.Email" id="email-address" class="k-input" />
+    </div>
+    <div class="three-cols">
+        <label for="phone-area">@(this.Localize("phone"))</label><br />
+        <input type="text" data-role="maskedtextbox"
+               data-bind="value: invoice.Phone" id="phone-areaGB" minlength="10" maxlength="10" class="k-input" />
+    </div>
+</div>
+    

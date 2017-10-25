@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="UpdateAlertCustomerExtentionRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAlertCustomerExtentionRequest" nillable="true" type="tns:UpdateAlertCustomerExtentionRequest" />
+  <xs:complexType name="UpdateAlertCustomerExtentionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateAlertCustomerExtentionRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedOn" nillable="true" type="xs:dateTime" />
+          <xs:element name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAlert" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IsDefaultAddress" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PreferAddressId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="RecieveBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdatedOn" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAlertCustomerExtentionRequest_V01" nillable="true" type="tns:UpdateAlertCustomerExtentionRequest_V01" />
+  <xs:complexType name="UpdateAlertCustomerExtentionResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAlertCustomerExtentionResponse" nillable="true" type="tns:UpdateAlertCustomerExtentionResponse" />
+  <xs:complexType name="UpdateAlertCustomerExtentionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateAlertCustomerExtentionResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateAlertCustomerExtentionResponse_V01" nillable="true" type="tns:UpdateAlertCustomerExtentionResponse_V01" />
+</xs:schema>

@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Η Ετήσια συνδρομή δεν μπορεί να προστεθεί στο καλάθι αγορών</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Η Ετήσια συνδρομή δεν μπορεί να αφερεθεί από το καλάθι αγορών</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Είστε σίγουροι οτί θέλετε να ακυρώσετε την παραγγελία; Επιλέγοντας "ΟΚ" θα αφαιρεθούν όλα τα προιόντα από το καλάθι αγορών.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Προιόντα Backorder δεν μπορούν να προστεθούν σε παραγγελία Ετήσιας Συνδρομής</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Η πληρωμή μέσω κάρτας δε μπορεί να πραγματοποιηθεί. Παρακαλώ ελέξτε την κάρτα σας.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Τα δεδομένα που έχετε εισάγει δεν είναι σωστά, παρακαλώ εισάγετε τα σωστά δεδομένα.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Έχετε βάλει ξανά αυτόν τον κωδικό. Παρακαλώ επιλέξτε ξανά.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Η παραγγελία εισητηρίων περιορίζεται σε {0} ανα παραγγελία.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Δεν επιτρέπεται η αγορά εισητηρίου σε αυτή την ιστοσελίδα.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Για το προϊόν {0} είναι διαθέσιμη μόνο {1} ποσότητα. Παρακλώ αλλάξτε την ποσότητα για να προστεθεί το προϊόν στο καλάθι αγορών.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Για το προϊόν {0}, 1 ή περισσότερα τεμάχια μπορεί να είναι be backordered.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Για τον κωδικό προϊόντος SKU {0}, η ποσότητα δεν μπορεί να είναι ξεπεράσει {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Λυπούμαστε αλλά δεν έχετε εγγεγραμένη πιστωτική κάρτα στο αρχείο. Παρακαλούμε καλέστε στο Τμήμα Εξυπηρέτησης στο 210-8108801</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Μη έγκυρος Ταχυδρομικός Κωδικός</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} years of APF is due and must be paid before placing a "Resale" type order. Please change your order type to "Personal" to pay for your APF.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Item {0} is currently out of inventory, your quantity is set to 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Το όριο για το περιοδικό TODAY είναι</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Ο μέγιστος  αριθμός περιοδικ΄ων που μπορούν να προστεθούν σε αυτό το καλάθι αγορών είναι {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Το ψευδόνημο χρησιμοποιείται, εισάγεται ένα διαφορετικό ψευδόνημο.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Δεν είναι διαθέσιμη η παραγγελία Online.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Δεν επιτρέπεται η παραγγελία Online.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Το πληρωτέο ποσό δεν ταιριάζει με το ποσό της παραγγελίας.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε ποσό μεγαλύτερο του 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Παρακαλώ ελένξτε τα στοιχεία της Πιστωτικής Κάρτας.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Παρακαλώ ελέγξτε τον Κωδικό Συνεργασίας και τον Κωδικό ΡΙΝ και προαπαθήστε ξανά. Εάν το πρόβλημα παραμένει παρακαλώ επικοινωνήστε με το Τμήμα Εξυπηρέτησης Συνεργατών στο +30210 8108801</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Παρακαλώ ολοκληρώστε την πληρωμή της Ετήσιας Συνδρομής, πριν προσθέσετε προιόντα στο καλάθι αγορών.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Παρακαλώ ολοκληρώστε την πληρωμή της Ετήσιας Συνδρομής, πριν την αγορά του Εισητηρίου.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Παρακαλώ εισάγεται ένα νούμερο.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε ποσότητα για τον κωδικό SKU {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε το σημείο παραλαβής</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο όνομα Πόλης</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο Όνομα</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο Ψευδόνημο</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε ποσό δωρεάς, εκτός μηδέν (0)</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε διεύθυνση email</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε πληροφορίες πληρωμής.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε τον αριθμό CVV</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε αριθμό Ετήσιων συνδρομών που θέλετε να πληρώσετε.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρη διεύθυνση email</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο Όνομα</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο Επίθετο</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Παρακαλώ εισάγετε έγκυρο Μεσσαίο Όνομα</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε όλα τα υποχρεωτικά πεδία πληροφοριών αποστολής.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε τον κωδικό περιοχής στην κατάλληλη μορφή.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε την επέκταση στην κατάληλη μορφή.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το όνομα παραλαβής</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε τον κωδικό περιοχής.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε την Πόλη.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε την επέκταση.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το όνομα</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το επίθετο</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το υποχρεωτικό πεδίο</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το τηλέφωνο επικοινωνίας</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε την περιοχή</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το πεδίο διεύθυνσης</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε τον ταχυδρομικό κωδικό</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε το τηλέφωνο επικοινωνίας στην κατάλληλη μορφή.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Please note that you can only save card details for a maximum of {0} cards. In order to add a new card, please remove one of your existing saved cards.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Please Note:&lt;br/&gt;This site is best viewed with Internet Explorer or Firefox.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Παρακαλούμε καταγράψτε μία διεύθυνση αποστολής πριν ολοκληρώσετε αυτήν την Παραγγελία.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Παραακλώ επιλέξτε περιοχή.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε Ώρα Αποστολής</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε Τύπο Παραγγελίας</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε την Περιοχή παραλαβής</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε την Περιοχή παραλαβής</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε την όνομα παραλαβής</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Παρακλαούμε επιλέξτε το τηλέφωνο παραλαβής</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Παρακλαούμε επιλέξτε την ώρα παραλαβής</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε την Διεύθυνση Αποστολής</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε Ναι/Όχι.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Η κύρια διεύθυνση δεν μπορεί να διαγραφεί.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Η πρωτεύον πληροφορίες παραλαβής δεν μπορούν να διαγραφούν</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Συνέχεια στην Ολοκλήρωση της Παραγγελίας</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Επιστροφή στην Αρχική Σελίδα.</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Αποστολή στον συγκεκριμένο Κωδικό Περιοχής δεν υποστηρίζεται</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Ο κωδικός SKU {0} δεν είναι διαθέσιμος.</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Ο αριθμός κινητού τηλεφώνου για SMS είναι υποχρεωτικός</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Λυπούμαστε δεν μπορείτε να προσθέσετε το προϊόν / προϊόντα στο Καλάθι Αγορών δεδομένου ότι με την προσθήκη υπερβαίνετε το όριο κερδών.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Λάθος Συστήματος</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Ο Μήνας της Παραγγελίας έχει αλλάξει!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Ο κωδικός προϊόντος SKU {0}  που προστέθηκε θα είναι σε back order.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Η Περιοχή δεν είναι έγκυρη.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Η Οδός στη Διεύθυνση πρέπει να περιέχει το λιγότερο ένα χαρακτήρα.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Η Οδός στη Διεύθυνση πρέπει να περιέχει το λιγότερο ένα χαρακτήρα, ένα κενό και ένα αριθμό.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Η συναλλαγή δεν επιτρέπεται, παρακαλώ ελένξτε τις πληροφορίες της κάρτας. Εάν το πρόβλημα επιμένει, επικοινωνήστε με το Τμήμα Εξυπηρέτησης στο 210-8108801</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Η συναλλαγή δεν επιτρέπεται, παρακαλώ επικοινωνήστε με το Τμήμα Εξυπηρέτησης στο 210-8108801</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Ο Ταχυδρομικός Κωδικός δεν είναι έγκυρος.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Δεν υπάρχουν προϊόντα για αγορά σε αυτήν την παραγγελία.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Δεν υπάρχει αυτή τη στιγμή αρκετό απόθεμα για το προϊόν {0}. Διαθέσιμη ποσότητα  {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Δεν έχουν επιλεγεί προϊόντα για να προστεθούν στην παραγγελία.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Δεν έχουν επιλεγεί προϊόντα για να υπολογιστούν ποσοτικές μονάδες.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Η διεύθυνση αυτή υπάρχει ήδη στην δοκιμαστική βάση δεδομένων</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>This order exceeds your purchasing limit. You have {0} VP remaining. Please amend your order to continue.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Αυτή η συνναλαγή δεν εγκρίθηκε από την Πιστωτική σας Κάρτα</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Το περιοδικό TODAY έχει προστεθεί στο καλάθι αγορών.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Δεν μπορεί να ολοκληρωθεί η παραγγελία. Παρακαλούμε καλέστε στο Τμήμα Εξυπηρέτησης Διανομέων για βοήθεια 210-8108800</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Δεν μπορεί να ολοκληρωθεί η παραγγελία. Παρακαλούμε καλέστε στο Τμήμα Εξυπηρέτησης Διανομέων για βοήθεια 210-8108800</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Δεν μπορεί να επεξεργαστεί η παραγγελία σας. Παρακαλούμε ελένξτε τη διεύθυνση και δοκιμάστε ξανά. Εάν το πρόβλημα εξακολουθεί επικοινωνήστε με το Τμήμα Εξυπηρέτησης Διανομέων.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Ζητάμε συγνώμη. Το νόμισμα δεν μπορεί να μετατραπεί. Παρακαλούμε επικοινωνήστε με το Τμήμα Εξυπηρέτησης Διανομέων στο 210-8108801</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Έχετε ήδη προσθέσει εισητήριο στο καλάθι αγορών, θέλετε να αδειάσει το καλάθι αγορών;</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Προσπαθείτε να διαγράψετε την πρωτεύον πιστωτική κάρτα. Παρακαλώ κάντε μία διαφορετική πιστωτική κάρτα</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Δε μπορείτε να χρησιμοποιήσετε πλέον τη συγκεκριμένη πιστωτική κάρτα λόγω τον πολλαπλών αρνήσεων πληρωμής</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Δεν μπορείτε να προσθέσετε την ίδια πιστωτική κάρτα περισσότερες από μία φορές.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Δεν μπορείτε να προσθέσετε το συγκεκριμένο προϊόν στο καλάθι αγορών.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>You cannot go to the {0} page with no items in your cart.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Έχετε επιλέξει προιόντα που βρίσκονται σε backorder στο Καλάθι Αγορών τα οποία θα αφαιρεθούν εάν η επιλογή αποστολής είναι Παραλαβλη κατ' ιδίαν. Θέλετε να συνεχίσετε; ("Ναι" ή "Όχι")</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>You have changed the order month for this order to {0}. Do you wish to continue with this selection?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Έχετε εισάγει εισητήριο στο Καλάθι Αγορών, θέλετε να διαγράψετε ότι υπάρχει στο Καλάθι Αγορών;</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Έχετε προϊόν (προϊόντα) στο Καλάθι Αγορών. Θέλετε να αδειάσετε το Καλάθι Αγορών πριν προχωρήσετε στην αγορά εισητηρίου;</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>You have selected {0} as the dual order month is this correct?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Έχετε επιλέξει να παραλάβετε από τα WALDOS, θα υπάρχει περιορισμός στα προϊόντα που μπορείτε να παραγγείλετε.</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Έχετε επιλέξει να αναζητήσετε ένα προϊόν χωρίς να προσθέσετε παραγγελία, δεν θα μπορέσετε να προσθέσετε το προϊόν στο Καλάθι Αγορών.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Έχετε προσθέσει στο Καλάθι Αγορών συνδρομή HFF.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Μπορείτε να προπληρώσετε μονο ένα χρόνο Ετήσιας Συνδρομής.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Θα πρέπει να διαγράψετε μία από της πιστωτικές κάρτες για να αλλάξετε τα προϊόντα στο Καλάθι Αγορών</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Θα πρέπει να επιλέξετε Αποστολή ή Παραλαβή για να συνεχίσετε.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>You recently placed an identical order on {0}. If this is a duplicate order, click "Cancel Order". To continue with this order, please submit.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Your Annual Processing Fee is due on {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Η Ετήσια Συνδρομή έχει λήξη, και προστέθηκε στο Καλάθι Αγορών αυτόματα.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Η Ετήσια Συνδρομή έχει λήξη, και προστέθηκε στο Καλάθι Αγορών.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Η Πιστωτική Κάρτα έχει λήξη. Παρακαλώ επιλέξτε Επεξεργασία και ενημερώστε την ημερομηνία λήξης.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Η Πιστωτική Κάρτα έχει λήξη. Παρακαλώ επικοινωνήστε με το Τμήμα Εξυπηρέτησης</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Ο Κωδικός Herbalife δεν είναι αποδεκτός, παρακλώ καλέστε στο Τμήμα Εξυπηρέτησης Διανομέων στο 210-8108800</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Ο Κωδικός Herbalife δεν είναι αποδεκτός, παρακλώ καλέστε στο Τμήμα Εξυπηρέτησης Διανομέων στο 210-8108800</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Your previous order was already submitted prior to the changes that were made to your cart. Your order number is {0}. You can verify the status of this order by calling Order Support at 1-866-866-4744, 9 a.m. to 6 p.m. PST, Monday - Friday. Saturday 6 a.m. to 2 p.m. PST for assistance or by clicking here. (Please note that it may take up to 1 hour before the order is displayed.&lt;br&gt;If you would like to place a new order, please re-add items to your cart.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Η απαιτούμενη Ετήσια Συνδρομή έχει μείνει στο Καλάθι Αγορών.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Οι πληροφορίες αποστολής δεν είναι πλέον έγκυρες, τα προϊόντα από το καλάθι αγορών θα διαγραφούν</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Παρακαλώ συμπληρώστε την περιφέρεια.</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Ο κωδικός προϊόντος SKU {0} δεν είναι έγκυρος.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Παρακαλώ επιλέξτε τρόπο αποστολής</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Δεν επιτρέπονται backorder για αποστολές στη Νέα Καληδονία και την Γαλλική Πολυνησία</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Παρακαλούμε επιλέξτε τον τύπο της παραγγελίας από το μικρό Καλάθι Αγορών</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Δεν μπορείτε να Ολοκληρώσετε την Παραγγελία γιατί έχετε υπερβεί το όριο αγορών</value>
+  </data>
+</root>

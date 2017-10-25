@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/09/20/HL.ProductInfoCatalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/09/20/HL.ProductInfoCatalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="ProductInfoCatalog_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProductInfoCatalog">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="AllCategories" nillable="true" type="q1:Category_V02ItemCollection" />
+          <xs:element xmlns:q2="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="AllSKUs" nillable="true" type="q2:SKU_V01ItemCollection" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HL.Catalog.ValueObjects" minOccurs="0" name="AllWarnings" nillable="true" type="q3:ArrayOfCatalogItemWarning_V01" />
+          <xs:element minOccurs="0" name="DataWarnings" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Platform" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="RootCategories" nillable="true" type="q4:ArrayOfCategory_V02" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProductInfoCatalog_V01" nillable="true" type="tns:ProductInfoCatalog_V01" />
+  <xs:complexType name="ProductInfoCatalog">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProductInfoCatalog" nillable="true" type="tns:ProductInfoCatalog" />
+</xs:schema>

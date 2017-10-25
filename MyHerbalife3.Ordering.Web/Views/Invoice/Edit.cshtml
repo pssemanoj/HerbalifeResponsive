@@ -1,0 +1,1290 @@
+﻿@using HL.Common.Configuration
+@using MyHerbalife3.Shared.UI.Extensions
+@model MyHerbalife3.Ordering.ViewModel.Model.InvoiceEditModel
+@{
+    this.SetVerticalLayout("Ordering");
+    var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+    var countryCode = culture.Substring(3, 2);
+}
+<style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .disabledDay {
+        opacity: 0.5;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    div.k-window .k-window-titlebar .k-window-title {
+        text-align: center;
+    }
+</style>
+
+@section HeadScripts {
+    <script type="text/javascript">
+        var edit_InvoiceId = @(Html.Raw(Json.Encode(Model.InvoiceId)));
+        var edit_OrderId = @(Html.Raw(Json.Encode(Model.OrderId)));
+        var edit_CopyInvoiceId = @(Html.Raw(Json.Encode(Model.CopyInvoiceId)));
+        var edit_Invoice_Action = @(Html.Raw(Json.Encode(Model.Action)));
+        var edit_Order_Source = @(Html.Raw(Json.Encode(Model.Source)));
+        var edit_Invoice_Date = @(Html.Raw(Json.Encode(Model.CreatedDate)));
+        var showText = "@(this.Localize("show").ToString())";
+        var collapse = "@(this.Localize("collapse").ToString())";
+
+        kendo.data.binders.widget.tooltip = {
+            value: kendo.data.Binder.extend({
+                refresh: function() {
+                    var value = this.bindings["value"].get();
+                    var tooltip = this.element;
+
+                    tooltip.element.attr("title", value);
+                }
+            })
+        };
+    </script>
+}
+
+<link type="text/css" href="/Ordering/CSS/invoices.css" rel="stylesheet">
+<link rel="stylesheet" href="/Ordering/CSS/ordering-responsive.css" type="text/css" />
+<script type="text/x-kendo-template" id="ProductQuantityInvTpl">
+    <div><input class="numericText k-input" value="1" data-bind="value: Quantity, events: { change: onQuantityChange }" data-max="99" data-min="1" data-format="n0" data-role="numerictextbox" type="text" style="width: 55px;" /></div>
+</script>
+
+<script type="text/x-kendo-template" id="ProductTotalPriceInvTpl">
+    <div class="total-price">
+        <input id="pTotal" type="text" data-bind="value: TotalRetailPrice" data-format="c" data-role="numerictextbox" data-spinners="false" />
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="productDescTpl">
+    <div>
+        <span data-bind="html: ProductName"></span>
+    </div>
+</script>
+
+<script type="text/x-kendo-template" id="deleteProductTpl">
+    <div><a class="icon icon-delete-ln-5" href="\\#confirmDeleteProductField" data-bind="click: deleteProducts"></a></div>
+</script>
+
+<div id="dvInvEdit" class="container">
+    <div class="clear10"></div>
+    <div id="loading"></div>
+    <div id="dvinvInfo"></div>
+    <div class="wrapper ordering">
+        <a href="/Ordering/Invoice"><i class="icon icon-arrow-circle-ln-27"></i>@this.Localize("returnToInvoice")</a>
+
+        <div class="row">
+            @{
+                if (Request.RawUrl.Contains("Edit"))
+                {
+                    <h2>@(this.Localize("title"))</h2>
+                }
+                else
+                {
+                    <h2>@(this.Localize("createTitle"))</h2>
+                }
+            }
+            <span>@(this.Localize("instructions")) <a target="_blank" href="@this.LocalizeGlobal("MemberInvoiceError", "userGuideLink")">@this.Localize("userGuide")</a></span>
+        </div>
+
+        <div class="row">
+            <div class="create-form col-sm-9" id="dvinvProduct">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <h2>@(this.Localize("invoiceInformation"))</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 align-right hbl-logo">
+                        <img src="/Ordering/Images/independiente-hrbl.png" />
+                    </div><div class="clear10"></div>
+
+                    <div class="col-sm-6">
+                        <div class="col-sm-6 no-padding m-bottom">
+                            <label for="date">@(this.Localize("date"))</label>
+                            @*<input
+                                id="invoicedatepicker"
+                                class="k-input"
+                                name="date"
+                                style="background: #e8e8e8;" />*@
+                            <input id="invoicedatepicker" data-bind="value: invoice.InvoiceDate" style="background: #e8e8e8;" />
+                        </div>
+
+                        <div class="col-sm-6 no-padding" data-bind="invisible:hideControl">
+                            <label for="status">@(this.Localize("status"))</label>
+                            <span class="k-invalid-msg" data-for="status"></span>
+                            <input id="status"
+                                   data-role="dropdownlist"
+                                   data-auto-bind="false"
+                                   data-value-primitive="true"
+                                   data-text-field="DisplayName"
+                                   data-value-field="Value"
+                                   data-option-label="@this.Localize("select")"
+                                   data-bind="value: statusSelected, source: statusDataSource" class="k-input" required validationmessage="@(this.Localize("reqStatus"))" name="status" />
+                            <div class="clear15"></div>
+                        </div>
+
+                        <div class="col-sm-6 no-padding" data-bind="visible:hideControl">
+                            <label for="status">@(this.Localize("paymentType"))</label>
+                            <input id="Payment"
+                                   data-role="dropdownlist"
+                                   data-auto-bind="true"
+                                   data-value-primitive="true"
+                                   data-text-field="DisplayName"
+                                   data-value-field="Value"
+                                   data-bind="value: PaymentSelected, source: PaymentTypeDataSource ,events: {change: PaymentTypeChange}" class="k-input" name="PaymentType" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        @Html.Partial("Contacts")
+                        <div class="marginTop15"><a href="javascript:;" class="icon icon-magnifier-ln-1" data-bind="click: clickContacts"><span>@(this.Localize("browseContacts")) </a> @(this.Localize("orEnter"))</span></div>
+                    </div><div class="clear15"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="col-md-6 no-padding invoice-type" data-bind="invisible:hideControl">
+                            <div>@(this.Localize("invoiceType"))</div>
+                            <div class="no-padding-left col-xs-6">
+                                <input type="radio" data-bind="checked: invoice.Type , events: {change: invoiceTypeClick}" name="invoicetype" value="Customer" id="inv-customer"><label for="inv-customer">@this.Localize("customer")</label>
+                            </div>
+                            <div class="col-md-6 no-padding">
+                                <input type="radio" data-bind="checked: invoice.Type, events: {change: invoiceTypeClick}" name="invoicetype" value="Distributor" id="inv-member"><label for="inv-member">@this.Localize("member")</label>
+                            </div>
+                            <span class="k-invalid-msg" data-for="inv-customer"></span>
+                            <div class="clear15"></div>
+                        </div>
+                    </div>
+                </div>
+                @switch (countryCode)
+                {
+                    case "CA":
+                    case "JM":
+                    case "TT":
+                <div class="customer-info">
+                    <div class="edit-info" data-bind="invisible: EnableCreateContact, click: EnableEditContact"><a><i class="icon-edit-ln-2"></i>Edit</a></div>
+                    @switch (countryCode)
+                    {
+                        case "GB":
+                        case "CA":
+                        case "JM":
+                        case "TT":
+
+                            break;
+                        default:
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="checkbox" data-bind="checked: invoice.IsFaceToFace" name="inv-isFaceToFace" value="false" id="inv-isFaceToFace" />
+                                    <label for="inv-isFaceToFace">
+                                        @(this.Localize("faceToface"))
+                                    </label>
+                                </div>
+                            </div>
+                            break;
+                    }
+
+                    @switch (countryCode)
+                    {
+                        case "KR":
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="first-name">@(this.Localize("firstName"))<span class="red">*</span></label>
+                                    <input type="text" data-bind="value: invoice.FirstName" id="first-name" class="k-input" required validationmessage="@(this.Localize("reqFirstName"))" name="first-name" />
+                                    <span class="k-invalid-msg" data-for="first-name"></span>
+                                </div>
+                            </div>
+                            break;
+                        default:
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="first-name">@(this.Localize("firstName"))<span class="red">*</span></label>
+                                    <span class="k-invalid-msg" data-for="first-name"></span>
+                                    <input type="text" data-bind="value: invoice.FirstName" id="first-name" maxlength="40" class="k-input" required validationmessage="@(this.Localize("reqFirstName"))" name="first-name" />
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label for="last-name">@(this.Localize("lastName"))</label>
+                                    <input type="text" data-bind="value: invoice.LastName" id="last-name" maxlength="40" class="k-input" />
+                                </div>
+                            </div>
+                            break;
+                    }
+
+                    @Html.Partial("Address/Address_" + countryCode)
+
+                    <div class="row">                  
+                        <div class="col-md-6 col-sm-6 col-xs-12">                    
+                            @switch (countryCode)
+                            {
+                                case "JM":
+                                case "TT":
+                                    <label for="email-address">@(this.Localize("email"))</label>
+                                    <span class="k-invalid-msg" data-for="email"></span>
+                                    <input type="email" data-bind="value: invoice.Email"  id="email" class="k-input" validationmessage="@(this.Localize("EmailReq"))" name="email-address" />
+                                    break;
+                                case "CA":
+                                    <label for="email-address">@(this.Localize("email"))</label>
+                                    <span class="k-invalid-msg" data-for="email"></span>
+                                    <input type="email"  data-bind="value: invoice.Email" id="email"  validationmessage="@(this.Localize("EmailReq"))" class="k-input" name="email-address" />
+                                    break;
+                            }
+                        </div>
+                     
+                        @switch (countryCode)
+                        {
+                            case "JM":
+                            case "TT":
+                            case "CA":
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <label for="Country">@(this.Localize("country"))</label><br />
+                            <select id="Country"
+                                    name="Country"
+                                    data-role="dropdownlist"
+                                    data-auto-bind="true"
+                                    data-template="filterDropdownPropertiesTemplate"
+                                    data-value-template="filterDropdownPropertiesTemplate"
+                                    data-value-primitive="true"
+                                    data-text-field="DisplayName"
+                                    data-value-field="Value"
+                                    class="k-input"
+                                    data-bind="value:CountryCode, events: {change: CountryChange}"
+                                    style="width:197px">
+                                <option value="AF">Afghanistan</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa </option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla </option>
+                                <option value="AG">Antigua and Barbuda </option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas </option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados </option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda </option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BR">Brazil</option>
+                                <option value="VG">British Virgin Islands </option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada </option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands </option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CD">Congo, Democratic Republic of the</option>
+                                <option value="CG">Congo, Republic of the</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Côte d'Ivoire (Ivory Coast)</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica </option>
+                                <option value="DO">Dominican Republic </option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada </option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam </option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica </option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macau</option>
+                                <option value="MK">Macedonia, Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="MX">Mexico</option>
+                                <option value="MD">Moldova</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat </option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territories</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Réunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russia</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="SM">San Marino</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="KN">St. Kitts and Nevis </option>
+                                <option value="LC">St. Lucia </option>
+                                <option value="VC">St. Vincent and the Grenadines </option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syria</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TG">Togo</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago </option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands </option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VI">US Virgin Islands </option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="US">US</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                        </div>
+                                break;
+                        }
+                       </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    
+                    @switch (countryCode)
+                    {
+                        case "JM":
+                        case "TT":
+                        case "CA":
+
+                        <div class="col-md-4 col-sm-5 col-xs-12 one">
+                            <label for="phone-area">@(this.Localize("countryCode"))</label><br />
+                            <select id="CountryCode"
+                                    name="Country"
+                                    data-role="dropdownlist"
+                                    data-auto-bind="true"
+                                    data-template="filterDropdownPropertiesTemplate"
+                                    data-value-template="filterDropdownPropertiesTemplate"
+                                    data-value-primitive="true"
+                                    data-text-field="DisplayName"
+                                    data-value-field="Value"
+                                    data-bind="value: CountryCode"
+                                    style="width:100px">
+                                <option value="AF">+93</option>
+                                <option value="AL">+355</option>
+                                <option value="DZ">+213</option>
+                                <option value="AS">+1</option>
+                                <option value="AD">+376</option>
+                                <option value="AO">+244</option>
+                                <option value="AI">+1</option>
+                                <option value="AG">+1</option>
+                                <option value="AR">+54</option>
+                                <option value="AM">+374</option>
+                                <option value="AW">+297</option>
+                                <option value="AU">+61</option>
+                                <option value="AT">+43</option>
+                                <option value="AZ">+994</option>
+                                <option value="BS">+1</option>
+                                <option value="BH">+973</option>
+                                <option value="BD">+880</option>
+                                <option value="BB">+1</option>
+                                <option value="BY">+375</option>
+                                <option value="BE">+32</option>
+                                <option value="BZ">+501</option>
+                                <option value="BJ">+229</option>
+                                <option value="BM">+1</option>
+                                <option value="BT">+975</option>
+                                <option value="BO">+591</option>
+                                <option value="BA">+387</option>
+                                <option value="BW">+267</option>
+                                <option value="BR">+55</option>
+                                <option value="VG">+1</option>
+                                <option value="BN">+673</option>
+                                <option value="BG">+359</option>
+                                <option value="BF">+226</option>
+                                <option value="BI">+257</option>
+                                <option value="KH">+855</option>
+                                <option value="CM">+237</option>
+                                <option value="CA">+1</option>
+                                <option value="CV">+238</option>
+                                <option value="KY">+1</option>
+                                <option value="CF">+236</option>
+                                <option value="TD">+235</option>
+                                <option value="CL">+56</option>
+                                <option value="CN">+86</option>
+                                <option value="CO">+57</option>
+                                <option value="KM">+269</option>
+                                <option value="CD">+243</option>
+                                <option value="CG">+242</option>
+                                <option value="CK">+682</option>
+                                <option value="CR">+506</option>
+                                <option value="CI">+225</option>
+                                <option value="HR">+385</option>
+                                <option value="CU">+53</option>
+                                <option value="CY">+357</option>
+                                <option value="CZ">+420</option>
+                                <option value="DK">+45</option>
+                                <option value="DJ">+253</option>
+                                <option value="DM">+1</option>
+                                <option value="DO">+1</option>
+                                <option value="EC">+593</option>
+                                <option value="EG">+20</option>
+                                <option value="SV">+503</option>
+                                <option value="GQ">+240</option>
+                                <option value="EE">+372</option>
+                                <option value="ET">+251</option>
+                                <option value="FK">+500</option>
+                                <option value="FO">+298</option>
+                                <option value="FJ">+679</option>
+                                <option value="FI">+358</option>
+                                <option value="FR">+33</option>
+                                <option value="GF">+594</option>
+                                <option value="PF">+689</option>
+                                <option value="GA">+241</option>
+                                <option value="GM">+220</option>
+                                <option value="GE">+995</option>
+                                <option value="DE">+49</option>
+                                <option value="GH">+233</option>
+                                <option value="GI">+350</option>
+                                <option value="GR">+30</option>
+                                <option value="GL">+299</option>
+                                <option value="GD">+1</option>
+                                <option value="GP">+590</option>
+                                <option value="GU">+1</option>
+                                <option value="GT">+502</option>
+                                <option value="GG">+44</option>
+                                <option value="GN">+224</option>
+                                <option value="GW">+245</option>
+                                <option value="GY">+592</option>
+                                <option value="HT">+509</option>
+                                <option value="HN">+504</option>
+                                <option value="HK">+852</option>
+                                <option value="HU">+36</option>
+                                <option value="IS">+354</option>
+                                <option value="IN">+91</option>
+                                <option value="ID">+62</option>
+                                <option value="IR">+98</option>
+                                <option value="IQ">+964</option>
+                                <option value="IE">+353</option>
+                                <option value="IM">+44</option>
+                                <option value="IT">+39</option>
+                                <option value="JM">+1</option>
+                                <option value="JP">+81</option>
+                                <option value="JE">+44</option>
+                                <option value="JO">+962</option>
+                                <option value="KZ">+7</option>
+                                <option value="KE">+254</option>
+                                <option value="KR">+82</option>
+                                <option value="KW">+965</option>
+                                <option value="KG">+996</option>
+                                <option value="LA">+856</option>
+                                <option value="LV">+371</option>
+                                <option value="LB">+961</option>
+                                <option value="LS">+266</option>
+                                <option value="LR">+231</option>
+                                <option value="LY">+218</option>
+                                <option value="LI">+423</option>
+                                <option value="LT">+370</option>
+                                <option value="LU">+352</option>
+                                <option value="MO">+853</option>
+                                <option value="MK">+389</option>
+                                <option value="MG">+261</option>
+                                <option value="MW">+265</option>
+                                <option value="MY">+60</option>
+                                <option value="MV">+960</option>
+                                <option value="ML">+223</option>
+                                <option value="US">+1</option>
+                                <option value="MT">+356</option>
+                                <option value="MQ">+596</option>
+                                <option value="MR">+222</option>
+                                <option value="MU">+230</option>
+                                <option value="MX">+52</option>
+                                <option value="MD">+373</option>
+                                <option value="MC">+377</option>
+                                <option value="MN">+976</option>
+                                <option value="ME">+382</option>
+                                <option value="MS">+1</option>
+                                <option value="MA">+212</option>
+                                <option value="MZ">+258</option>
+                                <option value="MM">+95</option>
+                                <option value="NA">+264</option>
+                                <option value="NP">+977</option>
+                                <option value="NL">+31</option>
+                                <option value="AN">+599</option>
+                                <option value="NC">+687</option>
+                                <option value="NZ">+64</option>
+                                <option value="NI">+505</option>
+                                <option value="NE">+227</option>
+                                <option value="NG">+234</option>
+                                <option value="NO">+47</option>
+                                <option value="OM">+968</option>
+                                <option value="PK">+92</option>
+                                <option value="PW">+680</option>
+                                <option value="PS">+970</option>
+                                <option value="PA">+507</option>
+                                <option value="PG">+675</option>
+                                <option value="PY">+595</option>
+                                <option value="PE">+51</option>
+                                <option value="PH">+63</option>
+                                <option value="PL">+48</option>
+                                <option value="PT">+351</option>
+                                <option value="QA">+974</option>
+                                <option value="RE">+262</option>
+                                <option value="RO">+40</option>
+                                <option value="RU">+7</option>
+                                <option value="RW">+250</option>
+                                <option value="SM">+378</option>
+                                <option value="SA">+966</option>
+                                <option value="SN">+221</option>
+                                <option value="RS">+381</option>
+                                <option value="SC">+248</option>
+                                <option value="SL">+232</option>
+                                <option value="SG">+65</option>
+                                <option value="SK">+421</option>
+                                <option value="SI">+386</option>
+                                <option value="SB">+677</option>
+                                <option value="SO">+252</option>
+                                <option value="ZA">+27</option>
+                                <option value="ES">+34</option>
+                                <option value="LK">+94</option>
+                                <option value="KN">+1</option>
+                                <option value="LC">+1</option>
+                                <option value="VC">+1</option>
+                                <option value="SD">+249</option>
+                                <option value="SR">+597</option>
+                                <option value="SZ">+268</option>
+                                <option value="SE">+46</option>
+                                <option value="CH">41</option>
+                                <option value="SY">+963</option>
+                                <option value="TW">+886</option>
+                                <option value="TJ">+992</option>
+                                <option value="TZ">+255</option>
+                                <option value="TH">+66</option>
+                                <option value="TG">+228</option>
+                                <option value="TO">+676</option>
+                                <option value="TT">+1</option>
+                                <option value="TN">+216</option>
+                                <option value="TR">+90</option>
+                                <option value="TM">+993</option>
+                                <option value="TC">+1</option>
+                                <option value="UG">+256</option>
+                                <option value="UA">+380</option>
+                                <option value="AE">+971</option>
+                                <option value="GB">+44</option>
+                                <option value="UY">+598</option>
+                                <option value="VI">+1</option>
+                                <option value="UZ">+998</option>
+                                <option value="VU">+678</option>
+                                <option value="VE">+58</option>
+                                <option value="VN">+84</option>
+                                <option value="EH">+685</option>
+                                <option value="YE">+967</option>
+                                <option value="ZM">+260</option>
+                                <option value="ZW">+263</option>
+                            </select>
+                        </div>
+                            break;
+                    }
+
+                        <div class="col-md-8 col-sm-7 col-xs-12 two">
+                        
+                            @switch (countryCode)
+                            {
+                                case "CA":
+                                    <label for="phone-area">@(this.Localize("phone"))</label><br />
+                                    <input type="text" data-role="maskedtextbox"
+                                           data-bind="value: invoice.Phone " id="phone" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10"  name="phone-area" validationmessage="@(this.Localize("PhoneVelidation"))" />
+                                    <span class="k-invalid-msg" data-for="phone"></span>
+                                    break;
+                                case "JM":
+                                case "TT":
+                                    <label for="phone-area">@(this.Localize("phone"))</label><br />
+                                    <span class="k-invalid-msg" data-for="phone"></span>
+                                    <input type="text" data-role="maskedtextbox"
+                                           data-bind="value: invoice.Phone" id="phone" maxlength="10" class="k-input" oninput="this.value=this.value.replace(/[^0-9]/g,'');" validationmessage="@(this.Localize("PhoneVelidation"))" />
+                                    break;
+                            }
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="row" data-bind="visible:hideControl">
+                        <div class="col-xs-12">
+                            <span style="color:#0080ff;font-size:medium" >@(this.Localize("processedMsg"))</span>
+                            <a class="forward right" data-bind="enabled: EnableCreateContact, click: CheckemailAndphone">@(this.Localize("SaveContact"))</a>
+                        </div>
+                    </div>
+                </div>
+                    break;
+                    default:
+                <div >
+                    @switch (countryCode)
+                    {
+                        case "GB":
+                        case "CA":
+                        case "JM":
+                        case "TT":
+
+                            break;
+                        default:
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="checkbox" data-bind="checked: invoice.IsFaceToFace" name="inv-isFaceToFace" value="false" id="inv-isFaceToFace" />
+                                            <label for="inv-isFaceToFace">
+                                                @(this.Localize("faceToface"))
+                                            </label>
+                                        </div>
+                                    </div>
+                                    break;
+                            }
+
+                    @switch (countryCode)
+                    {
+                        case "KR":
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="first-name">@(this.Localize("firstName"))<span class="red">*</span></label>
+                                            <input type="text" data-bind="value: invoice.FirstName" id="first-name" class="k-input" required validationmessage="@(this.Localize("reqFirstName"))" name="first-name" />
+                                            <span class="k-invalid-msg" data-for="first-name"></span>
+                                        </div>
+                                    </div>
+                                    break;
+                                default:
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <label for="first-name">@(this.Localize("firstName"))<span class="red">*</span></label>
+                                            <span class="k-invalid-msg" data-for="first-name"></span>
+                                            <input type="text" data-bind="value: invoice.FirstName" id="first-name" maxlength="40" class="k-input" required validationmessage="@(this.Localize("reqFirstName"))" name="first-name" />
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <label for="last-name">@(this.Localize("lastName"))</label>
+                                            <input type="text" data-bind="value: invoice.LastName" id="last-name" maxlength="40" class="k-input" />
+                                        </div>
+                                    </div>
+                                    break;
+                            }
+
+                            @Html.Partial("Address/Address_" + countryCode)
+
+                            <div class="clear"></div>
+                            <div class="row" data-bind="visible:hideControl">
+                                <div class="col-xs-12">
+                                    <span>Please save contact to proceed</span>
+                                    <a class="forward right" data-bind="enabled: EnableCreateContact, click: CheckemailAndphone">@(this.Localize("SaveContact"))</a>
+                                </div>
+                            </div>
+                        </div>
+                    break;
+                }
+                <div class="row" data-bind="invisible:hideControl">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <label for="notes">
+                            <span>@(this.Localize("notes")):</span><br /><span>@(this.Localize("notesMessage"))</span>
+                        </label>
+                        <textarea rows="4" data-bind="value: invoice.Notes" cols="50" id="notes" class="k-textarea"></textarea>
+                    </div><div class="clear15"></div>
+                </div>
+                <div class="row" data-bind="visible:hideControl">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <span id="lblvalidEmailandPhone" class="red" data-bind="visible:isValidEmailAndPhone">@(this.Localize("invalidPhoneEmail"))</span>
+                    </div>
+               </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h2>@(this.Localize("productInformation"))</h2>
+                    </div>
+                    <div data-bind="visible:hideControl">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="radio" data-bind="checked:invoice.ReceiptChannel , events: {change: togglePricing}" name="ReceiptChannel" value="ProductSaleReceipt" id="invProductsale"><label for="invProductsale">@(this.Localize("Productsale"))</label>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="radio" data-bind="checked:invoice.ReceiptChannel, events: {change: togglePricing}" name="ReceiptChannel" value="ClubSaleReceipt" id="invClubReciept"><label for="invClubReciept">@(this.Localize("ClubReciept"))</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-bind="invisible:IsClubReciept">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12" id="div1">
+                            <label for="individual-products">@(this.Localize("individualProducts"))</label>
+                            <input type="text" id="individual-products"
+                                   class="k-input" data-role="autocomplete"
+                                   data-filter="startswith" data-text-field="Sku"
+                                   data-bind="source: autocompleteDataSource, value: selectedProduct"
+                                   data-template="template"
+                                   placeholder="@(this.Localize("typeSearch"))" name="individual-products" />
+                            <script id="template" type="text/x-kendo-template">
+                                ${ data.Sku } &nbsp; ${ data.ProductName }
+                            </script>
+                            <span class="red" data-bind="text: addProductErrorText "></span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 d-top d-left" id="div2">
+                            <a class="backward" data-bind="click: addProducts">@(this.Localize("add"))</a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 marginTop25" id="div3">
+                            <div class="center">@(this.Localize("or"))</div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 align-center marginTop25" id="div4" style="padding-right: 0">
+                            @Html.Partial("Products")
+                            <a class="icon icon-magnifier-ln-1" data-bind="click: clickProducts"><span>@(this.Localize("browseProducts"))</span></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 align-center marginTop25" div="div5" data-bind="invisible:hideControl">
+                            @Html.Partial("SavedCarts")
+                            <a class="icon icon-shopping-ln-1" data-bind="click: clickSavedCarts"><span>@(this.Localize("addSavedCart"))</span></a>
+                        </div>
+                    </div><div class="clear20"></div>
+
+                    <div class="row" id="div6">
+                        <div>
+                            <div id="dgProducts"
+                                 data-role="grid"
+                                 data-scrollable="false"
+                                 data-bind="source: invoice.InvoiceLines, events:{ dataBinding: onInvoiceLinesDataBinding }"
+                                 data-columns='[
+                        {"field": "",
+
+            "template": invEdit.deleteProductTemplate()
+            },
+            {"field": "Sku",
+            "title": "@(this.Localize("SkuColumnTitle"))"
+            },
+            {"field": "ProductName",
+            "title": "@(this.Localize("productName"))",
+            "attributes": {"style": "max-width: 350px;"},
+            "template": invEdit.productDescTemplate(),
+            "headerAttributes": {"style": "text-align: left;"}
+            },
+            {
+            "field": "Quantity",
+            "title": "@(this.Localize("qty"))",
+            "template": invEdit.productquantityTemplate(),
+            "headerAttributes": {"style": "text-align: center;"}
+            },
+            {
+            "field": "DisplayRetailPrice",
+            "title": "@(this.Localize("RetailPriceColumnTitle"))",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            },
+
+            {"field": "EarnBase",
+            "title": "@(this.Localize("EarnBase"))",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            },
+            {
+            "field": "DisplayTotalRetailPrice",
+            "title": "@(this.Localize("TotalPriceColumnTitle"))",
+            "attributes": {"style": "text-align: right;"},
+            "headerAttributes": {"style": "text-align: right;"}
+            }
+            ]'>
+                            </div>
+                            <span class="k-invalid-msg" data-for="individual-products"></span>
+
+                        </div>
+
+                        <div id="dvCustomerPricingInfo" class="ordering">
+                            <div>
+                                <div class="row">
+                                    <div class="col-xs-2 colpush-8">
+                                        <span class="m-left-label">@(this.Localize("Subtotal")):</span>
+                                    </div>
+                                    <div class="totals-right col-xs-2 colpush-8">
+                                        <span data-bind="text: invoice.InvoicePrice.DisplaySubtotal"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="red" data-bind="text: priceAlertText "></span>
+                            <div class="totals-discount-tax">
+                                <div class="row">
+                                    <div class="col-xs-2 colpush-2 align-right no-padding-right m-left">
+                                        <label class="m-left-label">@(this.Localize("discount")):</label>
+                                    </div>
+                                    <div class="col-xs-2 colpush-2">
+                                        <input id="discountPercentage" style="width:100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-min="0"
+                                               data-max="100"
+                                               data-decimals="2"
+                                               data-bind="value: invoice.InvoicePrice.DiscountPercentage, invisible: invoice.IsGdoMemberPricing, events: { change: onDiscountPercentageChange }" />
+
+                                        <input id="discountDropdown" data-role="dropdownlist"
+                                               data-auto-bind="false"
+                                               data-value-primitive="true"
+                                               data-bind="value: invoice.InvoicePrice.DiscountPercentage, source: discountsDataSource, visible: invoice.IsGdoMemberPricing, events: { change: onDiscountDropDownPercentageChange }"
+                                               class="k-input" />
+                                    </div>
+                                    <div class="col-xs-2 colpush-2 center totals-discount-tax-or">
+                                        <div class="center">
+                                            <span class="left">@(this.Localize("percentage"))</span>
+                                            <span>@(this.Localize("or"))</span>
+                                            <span class="right">@(this.Localize("currencySign"))</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 colpush-2">
+                                        <input id="discountAmount" style="width: 100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-decimals="2"
+                                               data-min="0"
+                                               data-bind="value: invoice.InvoicePrice.DiscountAmount, disabled: invoice.IsGdoMemberPricing ,  events: { change: onDiscountAmountChange }" />
+                                    </div>
+                                    <div class="totals-right col-xs-2 colpush-2 marginTop10">
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayDiscountedAmount"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a data-bind="click: resetToDefaultValueClicked">@this.Localize("resetToDefault")</a>
+                                    </div>
+
+                                    <div class="col-xs-2 align-right no-padding-right m-left">
+                                        @if (countryCode == "US")
+                                        {
+                                            <a data-bind="click: launchShippingHandling" class="icon icon-question-mark-ln-1 icon-help"></a>
+                                        }
+                                        <label class="m-left-label">@(this.Localize("HandlingFee")):</label>
+                                    </div>
+                                    <div class="col-xs-2 marginTop4">
+                                        <input id="shippingPercentage" style="width: 100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-min="0"
+                                               data-max="100"
+                                               data-decimals="2"
+                                               data-bind="value: invoice.InvoicePrice.ShippingPercentage ,  events: { change: onShippingPercentageChange }" />
+                                    </div>
+                                    <div class="col-xs-2 center totals-discount-tax-or marginTop4">
+                                        <div class="center">
+                                            <span class="left">@(this.Localize("percentage"))</span>
+                                            <span>@(this.Localize("or"))</span>
+                                            <span class="right">@(this.Localize("currencySign"))</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 marginTop4">
+                                        <input id="shippingAmount" style="width: 100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-decimals="2"
+                                               data-min="0"
+                                               data-bind="value: invoice.InvoicePrice.ShippingAmount ,  events: { change: onShippingAmountChange }" />
+                                    </div>
+                                    <div class="totals-right col-xs-2 marginTop10">
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayShipping"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-xs-2 colpush-2 align-right no-padding-right m-left">
+                                        <label>@(this.Localize("tax")):</label>
+                                    </div>
+                                    <div class="col-xs-2 colpush-2">
+                                        <input id="taxPercentage" style="width:100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-min="0"
+                                               data-max="100"
+                                               data-decimals="2"
+                                               data-bind="value: invoice.InvoicePrice.TaxPercentage ,  events: { change: onTaxPercentageChange }" />
+                                    </div>
+                                    <div class="col-xs-2 colpush-2 center totals-discount-tax-or">
+                                        <div class="center">
+                                            <span class="left">@(this.Localize("percentage"))</span>
+                                            <span>@(this.Localize("or"))</span>
+                                            <span class="right">@(this.Localize("currencySign"))</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 colpush-2">
+                                        <input id="taxAmount" style="width: 100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-decimals="2"
+                                               data-min="0"
+                                               data-bind="value: invoice.InvoicePrice.TaxAmount ,  events: { change: onTaxAmountChange }" />
+                                    </div>
+                                    <div class="totals-right col-xs-2 colpush-2 marginTop10">
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayCalculatedTax"></span>
+                                    </div>
+                                </div>
+                                <div class="row invoice-totals">
+                                    <div class="col-xs-3 col-sm-2 col-xs-push-6 col-sm-push-8">
+                                        <label>@(this.Localize("totalDue")):</label>
+                                    </div>
+                                    <div class="totals-right col-xs-3 col-sm-2 col-xs-push-6 col-sm-push-8 marginTop10">
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayTotalDue"></span>
+                                    </div>
+                                </div>
+                                <div class="row invoice-totals" data-bind="visible:hideControl">
+                                    <div class="col-xs-3 col-sm-2 col-xs-push-6 col-sm-push-8">
+                                        <label>@(this.Localize("VPColumnTitle")):</label>
+                                    </div>
+                                    <div class="totals-right col-xs-3 col-sm-2 col-xs-push-6 col-sm-push-8 marginTop10">
+                                        <span data-bind="text: invoice.InvoicePrice.TotalVolumePoints"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row" data-bind="visible:IsClubReciept">
+                    <div id="dvCustomerPricingInfo" class="wrapper ordering no-padding-right">
+                        <div class="row">
+                            <h5><span style="color:red">Important:</span> @(this.Localize("Information"))</h5>
+                            <h5> @(this.Localize("Information2"))</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 align-right">
+                                <label for="Description">@(this.Localize("ProductNameColumnTitle"))</label>
+                            </div>
+                            <div class="col-md-6 col-sm-9 col-xs-9">
+                                <input type="text" cols="40" rows="5" maxlength="40" id="lbldescription" data-bind="value: invoice.ClubInvoice.ClubRecieptProductName" validationmessage="@(this.Localize("reqInvoiceDescription"))" class="k-input" name="Description" />
+                                <span class="k-invalid-msg" data-for="lbldescription"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 align-right">
+                                <label for="QTY">@(this.Localize("QuantityColumnTitle"))</label>
+                            </div>
+                            <div class="col-md-6 col-sm-9 col-xs-9">
+                                <input type="text"
+                                       data-bind="value: invoice.ClubInvoice.ClubRecieptQuantity"  id="txtQTY"  oninput="this.value=this.value.replace(/[^0-9]/g,'');" class="k-input" name="QTY" validationmessage="@(this.Localize("reqQty"))" />
+                                <span class="k-invalid-msg" data-for="txtQTY"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 align-right">
+                                <label for="VP">@(this.Localize("VPColumnTitle"))</label>
+                            </div>
+                            <div class="col-md-6 col-sm-9 col-xs-9">
+                                <div class="col-xs-1" style="padding: 6px 0;text-align: center;">
+                                    VP
+                                </div>
+                                <div class="col-xs-11 no-padding">
+                                    <input type="text" id="txtVP" data-decimals="2" data-bind="value: invoice.ClubInvoice.ClubRecieptTotalVolumePoints, events: {change: Setvolume}" validationmessage="@(this.Localize("reqVolumePoint"))" class="k-input" name="tolalVP" onkeypress="return validateFloatKeyPress(this,event);" />
+                                    <span class="k-invalid-msg" data-for="txtVP"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3 align-right">
+                                <label for="Amount" >@(this.Localize("TotalPriceColumnTitle"))</label>
+                            </div>
+                            <div class="col-md-6 col-sm-9 col-xs-9">
+                                <div class="col-xs-1" style="padding: 6px 0;text-align: center;">
+                                    @(this.Localize("currencySign"))
+                                </div>
+                                <div class="col-xs-11 no-padding">
+                                    <input type="text" maxlength="10" id="lbltotalprice" data-bind="value: invoice.ClubInvoice.ClubRecieptDisplayTotalDue, events:{keypress:PreventMinus}" validationmessage="@(this.Localize("reqTotalAmount"))" class="k-input" name="TotalPrice" onkeypress="return validateFloatKeyPress(this,event);" />
+                                    <span class="k-invalid-msg" data-for="lbltotalprice"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" data-bind="visible:hideControl">
+                    <div>
+                        <input type="checkbox" name="Profitable" id="Profitable" value="Profitable" data-bind="checked: invoice.isProfitable,events:{change: toggleProfitable}" />@(this.Localize("Profit"))
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Purchased" id="Purchased" value="Purchased" data-bind="checked: invoice.isPurchased,events:{change: togglePurchased}" />@(this.Localize("purched"))
+                    </div>
+                    <br />
+                    <div>
+                        <span>@(this.Localize("Message1"))</span>
+                    </div>
+                </div>
+                <div class="row" data-bind="invisible:hideControl">
+                    <span id="priceInfoText">@(this.Localize("priceInfo"))</span>
+                </div>
+                <div class="row">
+                    <span class="red" data-bind="text: errorText "></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
+                        <a class="backward" data-bind="click: cancel">@(this.Localize("cancel"))</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12" data-bind="invisible:hideControl">
+                        <a class="backward price-button" data-bind="click: price">@(this.Localize("update"))</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 align-right no-padding" data-bind="invisible:hideControl">
+                        <a class="forward" data-bind="click: saveChanges">@(HttpContext.Current.Request.CurrentExecutionFilePath.ToString().ToLower().Contains("edit") ? this.Localize("Save") : this.Localize("continue"))</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 align-right no-padding" data-bind="visible:hideControl">
+                        <a class="forward" id="btnCreateReceipt" data-bind="disabled: EnableCreateContact,click: CreateReceipt">@(this.Localize("CreateReceipt"))</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3" id="dvinvPricing" data-bind="invisible:hideControl">
+                <div class="note-text col-xs-12">
+                    <p><span class="bold">@(this.Localize("note"))</span>@(this.Localize("invoiceMessage"))</p>
+                </div>
+
+                <div class="collapse-member-information col-xs-12" data-bind="invisible:hideControl">
+                    <div class="collpse-title">
+                        @(this.Localize("additionalMemberInfo"))
+                    </div>
+                    <a class="icon icon-arrow-circle-fl-7 icon-arrow-circle-fl-8 collpse-title"><span>@(this.Localize("show"))</span></a>
+                </div>
+                <div class="member-information col-xs-12" data-bind="invisible:hideControl" style="z-index: -1; left: -213px;">
+                    <div class="no-padding-right no-margins col-xs-12">
+                        <h3>@(this.Localize("memberInformation"))</h3>
+                    </div>
+                    <div class="no-margins col-xs-12" data-bind="visible:invoice.HasShippingAddress">
+                        <h4 class="my-tax-based">@(this.Localize("taxBased"))</h4>  <span data-bind="value: errorMessages['taxBasedToolTip']" data-role="tooltip" data-auto-hide="true" data-position="top"><a class="icon icon-question-mark-ln-1"></a></span>
+                    </div>
+                    <div class="col-xs-12" data-bind="visible:invoice.HasShippingAddress">
+                        <div>
+                            <input type="radio" data-bind="checked: invoice.InvoiceShipToAddress, events: {change: invoiceAddressClick}" name="invoiceAddress" value="false" id="inv-shipToAddress">
+                            <span data-bind="text: invoice.MemberAddress.Address1 "></span>
+                            <span data-bind="text: invoice.MemberAddress.Address2 "></span><br />
+                            <span data-bind="text: invoice.MemberAddress.City "></span>  <span data-bind="text: invoice.MemberAddress.State "></span> <span data-bind="text: invoice.MemberAddress.PostalCode "></span>
+                        </div>
+                        <div>
+                            @Html.Partial("MemberAddress")
+                            <a href="javascript:;" data-bind="click: ChangeClicked">@(this.Localize("ChangeAddressLink"))</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <h4 class="my-tax-based">@(this.Localize("taxBased"))</h4>  <span data-bind="value: errorMessages['taxBasedToolTip']" data-role="tooltip" data-auto-hide="true" data-position="top"><a class="icon icon-question-mark-ln-1"></a></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="radio" data-bind="checked: invoice.InvoiceShipToAddress, events: {change: invoiceAddressClick}" name="invoiceAddress" value="true" id="inv-member">@this.Localize("InvoiceShipToAddress")
+                    </div>
+                    <div class="no-padding-left no-padding-right col-xs-12">
+                        <div id="dgTotals" class="align-right" title="@(this.Localize("VPColumnTitle"))"
+                             data-role="grid"
+                             data-scrollable="false"
+                             data-bind="source: invoice.InvoiceLines"
+                             data-columns='[
+                            {
+                             "field": "TotalVolumePoint",
+                             "title": "@(this.Localize("VPColumnTitle"))",
+                             "headerAttributes": {"style": "text-align: right;max-width: 100px;"}
+                            },
+                            {
+                             "field": "DisplayYourPrice",
+                             "title": "@(this.Localize("YourPriceColumnTitle"))",
+                             "format": "{0:c}",
+                             "headerAttributes": {"style": "text-align: right;"}
+                            }]'>
+                        </div>
+                        <div class="align-right k-grid k-widget right-totals footer">
+                            <table>
+                                <tr>
+                                    <td><span data-bind="text: invoice.InvoicePrice.TotalVolumePoints"></span></td>
+                                    <td><span data-bind="text: invoice.InvoicePrice.DisplayTotalYourPrice"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="right-totals k-grid k-widget">
+                            <table class="totals-table">
+                                <tr>
+                                    <td><label><a class="icon icon-edit-ln-2" data-bind="click: editHandlingFeeClick"></a>@(this.Localize("HandlingFee")):</label></td>
+                                    <td>
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayMemberFreight, invisible: IsEditHandlingFeeClicked"></span>
+
+                                        <input id="editHandlingFee" style="width:100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-min="0"
+                                               data-decimals="2"
+                                               data-bind="value: invoice.InvoicePrice.MemberFreight, visible: IsEditHandlingFeeClicked, events: { change: onMemberHandlingFeeChange }" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label><a class="icon icon-edit-ln-2" data-bind="click: editTaxClick"></a>@(this.Localize("tax")):</label></td>
+                                    <td>
+                                        <span data-bind="text: invoice.InvoicePrice.DisplayMemberTax , invisible: IsEditTaxClickClicked"></span>
+                                        <input id="editMemberTax" style="width:100%"
+                                               data-role="numerictextbox"
+                                               data-spinners="false"
+                                               data-min="0"
+                                               data-decimals="2"
+                                               data-bind="value: invoice.InvoicePrice.MemberTax, visible: IsEditTaxClickClicked, events: { change: onMemberTaxChange }" />
+                                    </td>
+                                </tr>
+                                <tr class="bold">
+                                    <td><label>@(this.Localize("yourCost")):</label></td>
+                                    <td><span data-bind="text: invoice.InvoicePrice.DisplayMemberTotal"></span></td>
+                                </tr>
+                                <tr class="bold green profit">
+                                    <td><label>@(this.Localize("profit")):</label></td>
+                                    <td>
+                                        <div data-bind="text: invoice.InvoicePrice.DisplayProfit"></div>
+                                        <div data-bind="text: invoice.InvoicePrice.DisplayProfitPercentage"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="SendConfirmationforemail"
+         data-role="window"
+         data-title="@(this.Localize("Conformation"))"
+         data-modal="true"
+         data-visible="false"
+         data-max-width="560"
+         data-max-height="700"
+         data-actions="['Close']"
+         style="padding-left:20px !important">
+        <div>@(this.Localize("emailMessage"))</div><br /><br />
+        <div class="center">
+            <a class="backward" data-bind="click: CancelshowWarningforemail">@(this.Localize("cancel"))</a>
+            <a class="forward" data-bind="click: OkshowWarningforemail">@(this.Localize("Proceed"))</a>
+        </div>
+    </div>
+    <div id="SendConfirmation"
+         data-role="window"
+         data-title="@(this.Localize("Conformation"))"
+         data-modal="true"
+         data-visible="false"
+         data-max-width="460"
+         data-max-height="700"
+         data-actions="['Close']"
+         style="padding-left:20px !important;">
+        <div>@(this.Localize("profitMessage"))</div><br /><br />
+        <div class="center">
+            <a class="backward" data-bind="click: CancelshowWarning">@(this.Localize("cancel"))</a>
+            <a class="forward" data-bind="click: OkshowWarning">@(this.Localize("Proceed"))</a>
+        </div>
+    </div>
+</div>
+
+<script id="date-cell-template" type="text/x-kendo-template">
+    <span class="#= data.date > data.dates[0] ? 'disabledDay' : '' #">#= data.value #</span>
+</script>
+<script type="text/x-kendo-template" id="filterDropdownPropertiesTemplate">
+    #: data.DisplayName ? data.DisplayName : "" #
+</script>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://herbalife.com/2010/01/21/HL.Shipping.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/21/HL.Shipping.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="ShippingSource_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ShippingInterval" type="ser:duration" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Warehouse" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShippingSource_V01" nillable="true" type="tns:ShippingSource_V01" />
+</xs:schema>

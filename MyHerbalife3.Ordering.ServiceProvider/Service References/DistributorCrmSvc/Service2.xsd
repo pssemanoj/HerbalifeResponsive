@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Task" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Task" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd58" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ListTasksRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListTasksRequest" nillable="true" type="tns:ListTasksRequest" />
+  <xs:complexType name="ListTasksRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ListTasksRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListTasksRequest_V01" nillable="true" type="tns:ListTasksRequest_V01" />
+  <xs:complexType name="SaveTaskRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTaskRequest" nillable="true" type="tns:SaveTaskRequest" />
+  <xs:complexType name="SaveTasksStatusRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveTaskRequest">
+        <xs:sequence>
+          <xs:element xmlns:q3="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" minOccurs="0" name="NewStatus" nillable="true" type="q3:TaskStatusType" />
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TaskIDs" nillable="true" type="q4:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTasksStatusRequest_V01" nillable="true" type="tns:SaveTasksStatusRequest_V01" />
+  <xs:complexType name="SaveTaskRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveTaskRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsNew" type="xs:boolean" />
+          <xs:element xmlns:q5="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" minOccurs="0" name="Task" nillable="true" type="q5:Task_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTaskRequest_V01" nillable="true" type="tns:SaveTaskRequest_V01" />
+  <xs:complexType name="SaveTasksStatusResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" base="q6:SaveTaskResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveTasksStatusResponse_V01" nillable="true" type="tns:SaveTasksStatusResponse_V01" />
+  <xs:complexType name="GetTaskRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTaskRequest" nillable="true" type="tns:GetTaskRequest" />
+  <xs:complexType name="GetTaskByIDRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTaskRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TaskID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTaskByIDRequest_V01" nillable="true" type="tns:GetTaskByIDRequest_V01" />
+  <xs:complexType name="DeleteTaskRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteTaskRequest" nillable="true" type="tns:DeleteTaskRequest" />
+  <xs:complexType name="DeleteTasksByIDRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteTaskRequest">
+        <xs:sequence>
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TaskIDs" nillable="true" type="q9:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteTasksByIDRequest_V01" nillable="true" type="tns:DeleteTasksByIDRequest_V01" />
+</xs:schema>

@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Opłata roczna nie może być dodana do twojego koszyka</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Opłata roczna nie może być usunięta z twojego koszyka</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Jesteś pewny, że chcesz wykasować to zamówienie? Wciskając "OK" usuniesz wszystkie pozycje w swoim koszyku.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Z opłatą manipułacyjną nie można zamawiać innych produktów.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Zaległe produkty nie mogą być dodane do zamóweinia z opłatą roczną.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Transakcja odrzucona. Zweryfikuj dane karty.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Błąd formatu danych. Proszę podać prawidłowe dane.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Ten numer SKU już istnieje. Proszę wprowadź ponownie.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Można zakupić maksymalnie {0} bilety na dystrybucję.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Sprzedaż biletów nie jest prowadzona poprzez serwis internetowy.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Dostępność produktu {0} jest ograniczona do {1}. Zweryfikuj ilość, aby dodać go do koszyka.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Produkt {0}, jest potencjalnie na wyczerpaniu.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Ilość produktu o numerze SKU {0}, nie może przekraczać {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Nieprawidłowy kod pocztowy.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} letnia opłata manipulacyjna jest zaległa i musi być uregulowana zanim nastąpi "Odsprzedaż" produktów. Przejdź do zamówienia typu "Osobiste" i dokonaj opłaty manipulacyjnej.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Sprzedaż produktu {0} została wstrzymana, zamówiona ilość wynosi 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Ilość magazynu Today jest ograniczona do</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maksymalna ilość czasopism, które można dodać do koszyka to {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Podana Nazwa Własna już istnieje, proszę wprowadź inną.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Internetowy serwis zamówień jest niedostępny.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Elektroniczne składanie zamówień nie jest dozwolone.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Kwota całkowita nie odpowiada kwocie zamówienia.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Proszę dodać kwotę większa niż 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Sprawdź dane karty.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Sprawdź swoje ID i kod PIN i spróbuj ponownie. Jeśli problem nadal występuje zadzwoń do Działu Kontaktów z Dystrybutorami +48 22 703 76 00 (potem wybierz 1 i 2)</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Proszę ureguluj swoją opłatę manipulacyjną zanim dodasz produkty do koszyka.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Proszę ureguluj swoją opłatę manipulacyjną zanim dodasz bilet do koszyka.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Wprowadź numer.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Wprowadź ilość produktu o numerze SKU {0}.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Wprowadź nazwę miasta.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Podaj imię.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Proszę podać Nazwę Użytkownika.</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Podaj adres mailowy.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Wpisz informację o płatności</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Wprowadź trzycyfrowy kod autoryzacji CVV.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Podaj ilość opłat rocznych, które chcesz zakupić.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Adres email.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Podaj pierwsze imię</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Wpisz nazwisko</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Wpisz drugie imię</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Proszę uzupełnić obowiązkowe pola dotyczace wysyłki.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Wpisz kod pocztowy w odpowiednim formacie.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Wpisz numer wewnętrzny w odpowiednim formacie</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Do rąk:</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Numer kierunkowy</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Miasto.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Wprowadź numer wewnętrzny</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Wprowadź pierwsze imię.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Wprowadź nazwisko.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Wypełnij pola obowiązkowe.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Numer Telefonu</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Wprowadź nazwę ulicy.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Podaj kod pocztowy.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Wpisz numer telefonu w odpowiednim formacie</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Można zapisać maksymalnie {0} numerów kart. Jeśli chcesz dodać kolejny numer, usuń jeden z już istniejących.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Uwaga:&lt;br/&gt;Do przeglądania tej strony najlepiej użyć Internet Explorer or Firefox.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Wybierz lokalizację</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Czas wysyłki</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Wybierz rodzaj zamówienia</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Wybierz miejsce odbioru</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Wybierz miejsce odbioru</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Nazwisko osoby odbierającej</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Numer telefonu kontaktowego</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Czas odbioru</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Wybierz adres wysyłki</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Wybierz Tak/Nie</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Podstawowy adres nie może być skasowany.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Podstawowe informacje o odbiorze nie mogą być skasowane</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Przejdź do realizacji zamówienia</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Przejdź do strony głównej</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Wysyłka pod wprowadzony kod pocztowy nie jest możliwa</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU {0} jest niedostępny</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Przepraszamy, nie możesz dodać większej ilości produktów do koszyka dopóki przekraczasz limit zarobków.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Błąd systemu.</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>Miesiąc zamówienia został zmieniony.</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Dodane SKU {0} będzie przeniesione do zamówień zaległych..</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Stan jest nieprawidłowy</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Adres powinien zawierać przynajmniej jeden alfabet</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Adres powinien zawiarać przynajmniej jeden numer, jeden odstęp i jeden alfabet</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transakcja odrzucona, zweryfikuj dane karty. Jeśli problem nadal występuje zadzwoń do Działu Kontaktów z Dystrybutorami +48 22 703 76 00 (potem wybierz 1 i 2)</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transakcja odrzucona, skontaktuj się z Działem Kontaktów z Dystrybutorami +48 22 703 76 00 (potem wybierz 1 i 2)</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Nieprawidłowy kod pocztowy.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Koszyk jest pusty.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Zapasy porduktu {0} są ograniczone. Dostępne ilości to {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Żadne produkty nie zostały wybrane</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Nie zostały wybrane żadne produkty do kalkulacji punktów</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Ten adres już istnieje w bazie</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>### This order exceeds your purchasing limit. You have {0} VP remaining. Please amend your order to continue.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Transakcja została odrzucona</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Magazyn Today został dodany do koszyka</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Jeśli potrzebujesz pomocy przy zamówieniu skontaktuj się z Działem Zamówień. Dzwoń  od Pn-Pt w godzinach 10-18 pod numer 227037600 i wybierz tonowo 1.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Jeśli potrzebujesz pomocy przy zamówieniu skontaktuj się z Działem Zamówień. Dzwoń  od Pn-Pt w godzinach 10-18 pod numer 227037600 i wybierz tonowo 1.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Jeśli nie możesz dokończyć zamówienia, sprawdź adres i spróbuj jeszcze raz. Jeśli problem występuje nadal skontaktuj się z Działem Zamówień Herbalife.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Bilet jest już w twoim koszyku, chcesz wyczyścić jego zawartość?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Nie możesz wykasować numeru karty dopóki nie wprowadzisz następnego.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Nie można po raz kolejny użyć tej karty.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Nie można podać kilkakrotnie tego samego numeru karty.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Nie można dodać tego produku do koszyka.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Nie można przejść do {0} bez produktów w koszyku.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Jeśli wybierzesz opcję odbioru osobistego, produkty występujące jako zaległe w twoim koszyku zostaną usunięte. Czy na pewno chcesz kontynuować?</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Zmieniłeś miesiąc zamówienia na {0}. Czy chcesz kontynuować po zmianie?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Bilet jest już w twoim koszyku, chcesz wyczyścić jego zawartość?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>W twoim koszyku znajdują się już produkty</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Wybrałeś {0} jako miesiąc zamówienia. Czy chcesz kontynuować?</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>W przeglądarce produktów nie ma możliwości dodać ich do koszyka.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Opłatę manipulacyjną można uiścić tylko jeden rok wprzód.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Musisz skasować jeden z numerów kart aby zmienić produkty w koszyku.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Wybierz opcję dostawy, aby kontynuować</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Ostatnio złożyłeś identyczne zamówienie {0}. Jeśli chcesz zaprzestać kliknij ' anuluj zamówienie'. Jeśli chcesz kontynuować wciśnij 'Potwierdź'</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>{0} mija termin opłaty manipulacyjnej</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Masz zaległą opłatę roczną, która doda się do zamówienia automatycznie</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Masz zaległe opłaty roczne. Zostaną one dołączone do twojego koszyka.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Karta jest nieważna. Wciśnij 'Zmień' i wprowadź prawidłowa datę karty.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Twój Numer Identyfikacyjny nie istnieje, Proszę skontaktuj się z Działem Kontaktów z Dystrybutorami pod telefonem: 227037600 (wybierz tonowo 2).</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Twój Numer Identyfikacyjny nie istnieje, Proszę skontaktuj się z Działem Kontaktów z Dystrybutorami pod telefonem: 227037600 (wybierz tonowo 1, potem 2).</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Twoje poprzednie zamówienie zostało zatwierdzone przed zmianami, które zostały wprowadzone do koszyka. Numer zamówienia to {0}. Sprawdz status zamówienia dzwoniąc do Działu Zamówień: 22 7037600 tonowo 1, od Pn-Pt w godzinach 10-18. &lt;br&gt;Jeśli chcesz złożyć nowe zamówienie, dodaj ponownie produkty do koszyka .</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Wymagane opłaty roczne zostały w koszyku</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Informacje o wysyłce są nieaktualne, koszyk zostanie wyczyszczony</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Wybierz typ zamówienia</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Nie można zakończyć zamówienia z powodu przekroczonych limitów zakupowych</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Tylko Produkt można dodać do zamówienia z zaległą opłatą roczną.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Proszę wprowadź adres odbioru przesyłki.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Proszę wybierz adres wysyłki zanim złożysz to zamówienie.</value>
+  </data>
+</root>

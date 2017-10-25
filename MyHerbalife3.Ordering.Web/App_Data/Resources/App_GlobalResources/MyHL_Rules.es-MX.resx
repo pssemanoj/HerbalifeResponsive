@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>No se agregó el artículo de código:{0} al carrito ya que no está disponible</value>
+    <comment>_G1711</comment>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>No se agregó el artículo de código:{0} al carrito. Si usted desea agregarlo, por favor cambie el subtipo de order de A1 o B1.</value>
+    <comment>_G1712</comment>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Por favor, agregue los productos al carrito antes de agregar el código {0}.</value>
+    <comment>_G1713</comment>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>La cantidad para el código: {1} no debe exceder de {0}</value>
+    <comment>_G1714</comment>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>No puede comprar productos {0}.</value>
+    <comment>_G1719</comment>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>No puede aumentar la cantidad del artículo de código:{0} a más de {1} porque excede el límite de sus ganancias.</value>
+    <comment>_G1720</comment>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>No puede aumentar la cantidad del artículo de código:{0} a más de {1} porque excede el límite de sus puntos de volumen.</value>
+    <comment>_G1721</comment>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>El SKU:{0} no se ha agregado a su carrito desde que al agregarlo, ha excedido su límite de ingreso.</value>
+    <comment>_G1722</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>El SKU:{0} no se ha agregado a su carrito desde que al agregarlo, ha excedido su límite de puntos de volumen.</value>
+    <comment>_G1723</comment>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>El monto total excede su límite de monto de {0}</value>
+    <comment>_G1724</comment>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>El SKU:{0} no se ha agregado desde que al agregarlo a su carrito, ha excedido su Límite de Compra</value>
+    <comment>_G1725</comment>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La cantidad del SKU:{0} no puede incrementarse por {1} porque excede su Límite de Compra.</value>
+    <comment>_G1726</comment>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Consumo Personal</value>
+    <comment>_G1727</comment>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Reventa</value>
+    <comment>_G1728</comment>
+  </data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Esta orden excede el volumen permitido, Puntos de volumen restantes {0}. Los siguientes SKU (s) no han sido agregados a su carrito.</value>
+    <comment>_G2302</comment>
+  </data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>SKU del Artículo: {0}</value>
+    <comment>_G2303</comment>
+  </data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>SKU del Artículo: {0}</value>
+    <comment>_G2711</comment>
+  </data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Su orden de {0} excede el maximo de {1} por asociado cada {2} dias calendario.</value>
+    <comment>_G3505</comment>
+  </data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Como parte de nuestro programa de pedidos, los nuevos y existentes Asociados quiénes no han alcanzado el status de Supervisores Calificados, pueden pedir hasta{0} Puntos de Volumen Adquiridos Personalmente (PPV) en su primer pedido. Puedes acumular hasta {1} Puntos de Volumen PPV (incluyendo el pedido inicial) dentro de los próximos {2} días. Si este pedido supera los PPV permitidos, debe ser reducido a {3} Puntos de Volumen.</value>
+    <comment>_G3556</comment>
+  </data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Como parte de nuestro programa de pedidos, nuevos y existentes Asociados que aún no han alcanzado el estado de Supervisores calificados, pueden pedir hasta {0} Puntos Volume Adquiridos Personalmente (PPV) en su primer pedido. Puedes acumular hasta {1} Puntos de Volumen VPP (incluyendo el pedido inicial) dentro de los próximos {2} días. Si este pedido supera los PPV permitidos deben ser reducidos por {3} Puntos de Volumen. El siguiente SKU (s) no se ha (n) añadido a la cesta:</value>
+    <comment>_G3557</comment>
+  </data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>La cantidad del item SKU:{0} no puede aumentarse en {1} porque excede el limite permitido de sus puntos de Volumen.</value>
+    <comment>_G3558</comment>
+  </data>
+</root>

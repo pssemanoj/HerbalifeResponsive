@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>La référence SKU {0} n'a pas été ajoutée au panier, car elle n'est pas disponible pour Incaricati.</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>La référence {0} n'a pas été ajoutée au panier. Si vous désirez l'ajouter, veuillez changer le type de la commande en A1 ou B1.</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Veuillez ajouter les produits au panier avant d'ajouter la référence {0}.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>La quantité ne devrait pas dépasser {0} pour la référence {1}</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Ne peut acheter de produits {0}.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article référence {0} ne peut être augmentée de {0} car elle dépasse la limite de vos gains.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article référence {0} ne peut être augmentée de {0} car elle dépasse votre limite en Points Volume.</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>La référence SKU {0} n'a pas été ajouté au panier depuis en ajoutant que dans le panier, vous avez dépassé votre volume points de limite.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Cette commande dépasse votre limite d'achat. Vous avez {0} VP restants. Merci de modifier votre commande pour poursuivre.</value>
+  </data>
+</root>

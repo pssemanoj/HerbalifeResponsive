@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginError" xml:space="preserve">
+    <value>Prosím skontrolujte Vaše ID a PIN kód a skúste znova. Ak budú problémy pretrvávať, obráťte sa na Kontaktné centrum na čísle +421 2 322 723 13.</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Prosím, zadajte svoje ID distribútor</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Vyberte možnosť obnovenia kódu Pin</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Objemové body momentálne nie sú dostupné.</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Zaznamenali sme, že ste zadali identickú objednávku dňa {0}. Prosím potvrďte, že chcete pokračovať.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Upozornenie:&lt;br/&gt;Táto stránka je najlepšie zobrazovaná prostredníctvom Internet Explorer alebo Firefox.</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Chyba systému.</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Ľutujeme, nemôžete pridať položku/y do košíka, pretože pridaním prekročíte Váš príjmový limit.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU {0} nie je k dispozícii.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Prejsť na Domovskú stránku.</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Prejsť ku Kontrole.</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Preferencia primárneho miesta doručenia nemôže byť zmazaná.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Doručenie na zadané miesto (PSČ) nie je podporované.</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Objednávkový mesiac bol zmenený!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>PSČ nie je platné.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transakcia nie je povolená, prosíme, obráťte sa na Kontaktné centrum na čísle + 421 2 3227 23 00.</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Objednávka neobsahuje žiadne položky k nákupu.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Pre pridanie do objednávky nie sú vybraté žiadne položky.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Momentálny stav zásob pre položku {0} nie je dostatočný. Dostupné množstvo je {1}.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Štát nie je platný.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Pridané SKU {0} bude spätná objednávka.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Adresa ulice musí obsahovať najmenej jedno písmeno.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transakcia nie je povolená, prosíme, skontrolujte informácie ku karte. Ak problém pretrváva, obráťte sa na Kontaktné centrum na čísle + 421 2 3227 23 00.</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Adresa ulice musí obsahovať najmenej jedno číslo, jednu medzeru a jedno písmeno.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Telefónne číslo musí obsahovať 12 znakov</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>PSČ uveďte vo formáte 000 00</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Prosíme, vezmite na vedomie, že môžete uložiť detaily len ku maximálnemu počtu {0} kariet. Keď chcete pridať novú kartu, prosíme, vymažte jednu z Vašich existujúcich uložených kariet.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Predtým než dokončíte túto Objednávku na vyzdvihnutie, zadajte adresu doručenia.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Prosíme, vyplňte povinné pole.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Prosíme, vyplňte priezvisko</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Tel.číslo musí obsahovať 12 čísel a formát 421XXXYYYZZZ</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Prosíme, vyplňte pole Ulica v adrese.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Prosíme, vyplňte štát.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Prosíme, vyberte miesto.</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Prosíme, vyberte čas vyzdvihnutia.</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Prosíme, zadajte telefónne číslo osoby, ktorá vyzdvihne produkty.</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Prosíme, vyberte Adresu doručenia</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Primárna adresa nemôže byť zmazaná.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Prosíme, vyberte Áno/Nie.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Prosíme, vyberte Typ objednávky.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Prosíme, vyberte Čas doručenia</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Prosíme, vyberte Miesto vyzdvihnutia</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Prosíme, vyberte meno osoby, ktorá vyzdvihne produkty.</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Prosíme, vyberte Miesto vyzdvihnutia</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Pre kalkuláciu objemu nie sú vybraté žiadne položky.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Váš Ročný Členský administratívny poplatok je splatný, automaticky ho pridáme do Vášho nákupného košíka.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Váš Ročný Členský administratívny poplatok je splatný dňa {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Vaše Ročné Členské administratívne poplatky sú splatné. Boli pridané do Vášho nákupného košíka.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Platnosť Vašej kreditnej karty vypršala. Prosíme, kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Platnosť Vašej kreditnej karty vypršala. Prosíme, kliknite na Upraviť a aktualizujte dátum exspirácie.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Svoj obnovovací ročný poplatok si môžte obnociť nie skôr ako 90 dní pred jeho splatnosťou</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Úspešne ste pridali HFF do Vášho košíka.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Musíte vymazať jednu z Vašich kreditných kariet, aby ste mohli zmeniť položky v košíku.</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Мы заметили, что Вы разместили аналогичный заказ {0}. Пожалуйста, подтвердите, что Вы хотите продолжить.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Pre spracovanie objednávky musíte vybrať Doručenie alebo Vyzdvihnutie.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Nie sme schopní spracovať Vašu žiadosť, prosíme kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Nemôžete prejsť k Zhrnutiu objednávky, pretože Váš Nákupný limit bol prekročený.</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Prosíme, vyberte Typ objednávky z minikošíka</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Vaša predchádzajúca objednávka už bola potvrdená predtým, než boli vykonané zmeny vo Vašom košíku. Číslo Vašej objednávky je {0}. Status tejto objednávky si môžete overiť kontaktovaním Kontaktného centra na čísle + 421 2 3227 23 00, od pondelka do piatku v čase od 8:30 - 17:30 h. Prosíme, vezmite na vedomie, že môže trvať až 1 hodinu, pokým sa objednávka v systéme zobrazí. &lt;br&gt; Ak si želáte zadať novú objednávku, opätovne zadajte položky do Vášho košíka.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Nie sme schopní spracovať Vašu žiadosť, prosíme kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Vaše požadované Ročné Členské administratívne poplatky zostali vo Vašom košíku.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Informácie týkajúce sa prepravy už nie sú platné, Váš nákupný košík bude vymazaný.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Nie sme schopní dokončiť Vašu objednávku. Prosíme, skontrolujte Vašu adresu a skúste to znova. Ak problém pretrváva, kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Nie sme schopní dokončiť Vašu objednávku. Prosíme, kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00 a uveďte kód chyby 05.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Ľutujeme. Mena nemôže byť konvertovaná. Prosíme, kontaktuje Kontaktné centrum na čísle + 421 2 3227 23 00.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Pokúšate sa vymazať Vašu primárnu kartu. Prosíme, označte inú kartu ako primárnu predtým, než vymažete túto kartu.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Už máte v nákupnom košíku vstupenky na udalosť, chcete vymazať položky vo Vašom košíku?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Táto objednávka prekračuje Váš nákupný limit. Máte {0} zostávajúcich objemových bodov. Prosíme, upravte svoju objednávku, aby ste mohli pokračovať.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Táto adresa už existuje v testovacej databáze</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Táto transakcia bola pre túto kartu zamietnutá.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Nie sme schopní dokončiť Vašu objednávku. Prosíme, kontaktujte Kontaktné centrum na čísle + 421 2 3227 23 00 a uveďte kód chyby 01.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Časopis Today bol pridaný do košíka.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Nemôže už používať túto kartu z dôvodu niekoľkých zamietnutí.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Vo svojom košíku máte produkt/y. Chcete vymazať položky zo svojho košíka pred zakúpením vstupeniek na udalosť?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Vo svojom košíku máte vstupenky na udalosť, chcete vymazať položky zo svojho košíka?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Vybrali ste {0} ako duálny objednávkový mesiac. Je to v poriadku?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Zvolili ste si prezeranie produktov bez zadania objednávky, nebudete môcť pridať produkty do košíka.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Vybrali ste vyzdvihnutie vo WALDOS, kde sú obmedzené možnosti nákupu produktov.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Nemôžete pridať túto položku do Vášho košíka.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Prihlasovacie meno už existuje, prosíme pridajte nové Prihlasovacie meno</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Nemôže ísť na {0} stránku bez toho, aby ste pridali položky do Vášho košíka.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Pre túto objednávku ste zmenili objednávkový mesiac na {0}. Chcete pokračovať s týmto výberom?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Vo svojom košíku máte položky so spätnou objednávkou. Ak si vyberiete možnosť "Vyzdvihnutie", tieto položky budú odstránené. Chcete pokračovať? ("Áno" alebo "Nie")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online objednávka nie je možná.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Limit pre časopis Today je</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Potvrdenie adresy je požadované</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Prihlasovacie meno je už používané, prosíme, zadajte iné meno.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maximálny počet časopisov, ktorý môže byť pridaný do košíka je {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online objednávanie nie je možné.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Prosíme, vyberte dátum vyzdvihnutia</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Do objednávky Ročného Členského administratívneho poplatku môže byť pridaný iba produkt.</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Položka {0} je momentálne vypredaná, Vaše množstvo je nastavené na 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Autorizácia karty nebola úspešná. Prosíme, skontrolujte si Vaše karty.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Položky predobjednávky nemôžu byť pridané do objednávky Ročného Členského administratívneho poplatku.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Duplikátne SKU bolo zadané. Prosíme, zadajte SKU znova.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Chyba formátu údajov, prosíme, zadajte správne údaje.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Ročný Členský administratívny poplatok nemôže byť odstránený z Vášho košíka</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Ročný obnovovací poplatok SKU nemôže byť pridaný do vášho nákupného košíka</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Keďže vo vašej objednávke Ročného Členského administratívneho poplatku nie sú žiadne produkty, všetky položky, ktoré nie sú produktmi budú odstránené.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Ste si istý/á, že chcete zrušiť túto objednávku? Kliknutím na "OK" zmažete všetky položky z Vášho košíka.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Ľutujeme, nemáte zaregistrovanú kreditnú kartu. Prosíme, kontaktuje Kontaktné centrum na čísle + 421 2 3227 23 00.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Pre SKU {0}, množstvo nemôže byť prekročené {1}.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:{0} rokov Ročného Členského administratívneho poplatku je splatných a musí byť uhradených pred zadaním objednávky typu "Maloobchodný predaj". Prosíme, zmeňte Váš typ objednávky na "Osobná" pre úhradu Vášho Ročného Členského administratívneho poplatku.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Nesprávne PSČ.</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Nákup vstupeniek nie je na tejto stránke povolený.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Nákup vstupeniek na udalosť je limitovaný počtom {0} na objednávku.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Pre položku {0}, 1 alebo viac položiek môže byť spätne objednaných.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Pre položku {0} iba množstvo {1} je možné zadať. Prosíme, upravte zadané množstvo vo Vašom košíku.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Celková platba nesúhlasí s celkovým súčtom objednávky.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Prosíme, zadajte počet Ročných Členských administratívnych poplatkov, ktoré si želáte uhradiť.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Prosíme, zadajte overovací kód CVV.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Prosíme, zadajte platné Meno.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Prosíme, zadajte platnú e-mailovú adresu.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Prosíme, zadajte čiastku príspevku, okrem nuly (0).</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Prosíme, vyplňte meno.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Prosíme, zadajte informácie o platbe.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Prosíme, zadajte e-mailovú adresu.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Prosíme, zadajte platné Priezvisko.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Prosíme, vyplňte PSČ.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Prosíme, vyplňte meno osoby, ktorá prevezme produkty.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Prosíme, vyplňte predvoľbu.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Prosíme, vyplňte mesto.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Prosíme, vyplňte všetky povinné informácie o doručení.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Prosíme, zadajte platné Stredné meno.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Prosíme, vyplňte predvoľbu v správnom formáte.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Prosíme, vyplňte PSČ v správnom formáte.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Ospravedlňujeme sa, sme sa nepodarilo pridať kartu. Prosím skúste to znova s prezývkou nemajú číslo kreditnej karty.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Prosíme, skontrolujte si informácie o karte.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Prosíme, dokončite platbu Vášho Ročného Členského administratívneho poplatku predtým, než pridáte ďalšie produkty do košíka.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Prosíme, zadajte jediné Miesto vyzdvihnutia.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Prosíme, zadajte množstvo pre SKU {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Prosíme, dokončite platbu Vášho Ročného Členského administratívneho poplatku predtým, než si zakúpite vstupenky na udalosť.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Prosíme, zadajte číslo.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Prosíme, zadajte čiastku vyššiu než 0.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Prosíme, zadajte platné mesto.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Prosíme, zadajte platné Meno.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Pre dokončenie nastavenia vášho účtu ako nového Člena, prosím, vyberte si jednu z lokalít vašu krajinu a skúste to znova.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>PIN sa nedá načítať</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Cena položiek vo Vašom košíku bola zmenená z dôvodu chyby. Prosíme, odošlite Vašu objednávku ešte raz.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>Vaše nákupné privilégiá sú momentálne pozastavené dokým ´´ Ochrana vášho biznisu 101´´ školenie nebude dokončené. Pokiaľ si želáte dokončiť školenie teraz, prosíme kliknite na nasledujúci link: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; Pokiaľ si želáte ukončiť školenie do nasledujúcich 7 dní a objednávať teraz, kliknite OK pokračovať v nákupe, inak kliknite na Zrušiť.</value>
+    <comment>_G3158</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>Nie sme schopní spracovať Vašu požiadavku, prosíme, obráťte sa na Kontaktné centrum na +421 2 3227 23 00. Dôležité: Vaše nákupné privilégiá sú pozastavené, až pokiaľ nedokončíte školenie "Ochrana Vášho podnikania 101". Ak si želáte dokončiť školenie teraz, prosíme, kliknite na nasledujúci odkaz: &lt;a href=" " target="_blank"&gt;Odkaz&lt;/a&gt;</value>
+    <comment>_G3160</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Dôležité: Chrániť váš biznis 101 školenie</value>
+    <comment>_G3159</comment>
+  </data>
+  <data name="InvalidSMSNumber" xml:space="preserve">
+    <value>Vyzdvihnutie</value>
+    <comment>_G3285</comment>
+  </data>
+</root>

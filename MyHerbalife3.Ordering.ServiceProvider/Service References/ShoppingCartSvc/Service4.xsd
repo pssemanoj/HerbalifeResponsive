@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2013/12/18/HL.Order.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2013/12/18/HL.Order.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="OnlineOrderStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescriptionCN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OnlineOrderStatus" nillable="true" type="tns:OnlineOrderStatus" />
+</xs:schema>

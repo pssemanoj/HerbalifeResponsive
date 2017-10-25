@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Årsavgiften kan inte läggas till i kundvagnen</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Årsavgiften kan inte tas bort från kundvagnen</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort denna ordern? Om du klickar "OK" kommer allt att tas bort från kundvagnen.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Restorder produkter kan inte läggas till i en årsavgifts order.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Korttransaktionen blev inte godkännd.  Vänligen kontrollera kort detaljerna.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Fel format. Vänligen ändra till rätt format.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Du har använt samma art. nr. flera gånger. Vänligen försök igen.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Köp av event biljetter är inte tillåtet på denna sida.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Beklagar, du har inte ett registrerat kort hos oss. vänligen kontakta Distributör service: DRnordic@herbalife.com</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Ogilltigt post nummer</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Begränsat till 3 Today Magasin i varje beställning</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Namnet (tilltalsnamnet) är redan använt, Vänligen försök med ett annat namn.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online beställning är inte tillgängligt</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online beställning är inte tillåtet.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Bara produkter kan läggas i en årsavgift order</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Betalningsbelopp stämmer inte överens med totalbeloppet för denna ordern.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Vänligen sätt in ett antal högre än 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Vänligen kontrollera din kortinformation</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Kontrollera ditt distributörs-ID och din PIN-kod och försök igen. Om problemen kvarstår, kontakta distributörsavdelningen på 08 517 619 15</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Vänligen slutför din order med årsavgiften innan du lägger på andra produkter i kundvagnen.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Vänligen slutför din order med årsavgiften innan du beställer Event biljetter</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Vänligen uppge ett nummer</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Vänligen skriv in en giltig stad</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Vänligen skriv in giltigt namn</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Vänligen skriv in giltig mottagare</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Skriv in e-mail adress</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Skriv in betalnings information</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Vänligen skriv in CVV nummret.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Vänligen skriv in önskat antal årsavgifter som du vill betala.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Vänligen skriv in din email adress.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Vänligen skriv in giltig email adress.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Vänligen skriv in giltigt efternamn</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Vänligen skriv in giltigt mellan namn</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Vänligen skriv in obligatorisk leveransinformation.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Vänligen skriv in post nummer i rätt form.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Vänligen fyll i mottagar namn.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Vänligen fyll i post nummret.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Vänligen skriv in stad.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Vänligen fyll i förnamnet</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Vänligen fyll i efternamnet</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Vänligen fyll i alla obligatoriska fällt</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Vänligen fyll i telefon nummer</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vänligen fyll i stad.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Vänligen fyll i gatuadressen.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Vänligen fyll i postnummret.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Vänligen fyll i telefon nummret i rätt format.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Notera: Internet Explorer eller Firefox är bäst anpassad för att visa denna sidan.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Vänligen välj order typ.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Vänligen välj Ja/Nej</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Huvudadressen kan inte raderas. Vänligen välj en alternativ huvudadress och forsök igjen.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Fortsätt till kundvagnen</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Fortsätt till hemsidan</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Sändning till detta postnummer är inte tillåtet. Vänligen kontakta Distributör service.</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>SMS mobilnummer krävs</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>System fel</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Ordermånaden är ändrad)</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Staden är ogiltig.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transaktionen blev inte godkänd,  vänligen kontakta Distributör service: DRnordic@herbalife.com</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Postnummret är ogiltigt.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Det är ingen produkt till betalning i denna ordern.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Du har inte valt någon produkt att lägga i kundvagnen.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Inga produkter är valda för volumkalkulering.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Denna adressen finns redan i databastesten.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Denna transaktionen blev inte godkännd för detta kortet.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today nyhetsbrev har lagts till i kundvagnen</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Din order kunde inte slutföras. Vänligen kontakta Distributör service: Drnordic@herbalife.com</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Din order kunde inte slutföras. Vänligen kontakta Distributör service: Drnordic@herbalife.com</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Din order blev tyvärr inte lagt in i vårat system. Vänligen kontrollera leveransadressen och försök igen. Om problemet upstår igen, ta kontakt med Distributör service.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Vi beklagar, valutan kunde inte konventeras. Vänligen ta kontakt med Distributör service på tel: +47 67 12 66 67.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Du har redan Event biljetter i kundvagnen. Vill du tömma kundvagnen?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Du försöker att radera ett huvudkort. Välj ett annat kort som huvudkort för att kunna fullföra detta.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Du kan inte använda detta kortet pågrund av för många försök</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Du kan inte lägga till samma kortet flera gånger.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Du kan inte lägga till denna produkt i kundvagnen.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Du har event biljetter i kundvagnen, vill du tömma den?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Du har produkter i kundvagnen. Vill du ta bort dem för att kunna fortsätta handla event biljetter?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Du har valt all bläddra i produktlistan utan att beställa något och kommer inte att ha möjlighet att lägga något i kundvagnen.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Du har lagt till HFF i kundvagnen.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Du kan bara förhandsbeställa årsavgiften</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Du måste välja förhandsalternativ innan du fortsätter.</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Du har en årsavgift som har förfallit. Den har blivit lagt till i kundvagnen.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Du har flera årsavgifter som har förfallit. Dessa har blivit lagt till i kundvagnen.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Ditt kort har gått ut. Vänligen klicka på Ändra och uppdatera kortdetaljerna.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Ditt kort har gått ut, vänlig kontakta Distributör Service Service: Drnordic@herbalife.com</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>ID numret som du har angett är inte accepterat för beställning, Vänligen kontakta Distributör Service på tel: +47 67 12 66 67</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>ID numret som du har angett är inte accepterat för beställning, Vänligen kontakta Distributör Service på tel: +47 67 12 66 67</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Din obetalade årsavgift har blivit lagt till i kundvagnen</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Leveransinformationen är inte giltig längre. Kundvagnen kommer att tömmas.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Vänligen välj order typ från mini kundvagnen.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Eventbiljettköp är begränsade till {0} per beställning.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Endast {1} är tillgänglig för {0}. Vänligen ändra antalet för denna produkt i din kundvagn.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>1 eller flera artiklar kan bli restade för {0}.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Mängden kan inte överskrida {1} för {0}.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>{0} är för närvarande slutsåld, antal har blivit ändrat till 0.</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maximalt antal Nyhetsbrev som kan läggas till varukorg är {0}.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Vänligen ange antal för {0}</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Observera att du bara kan spara kortuppgifter för maximalt {0} kort. För att lägga till ett nytt kort, ta bort en av dina sparade befintliga kort.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>{0} är inte tillgjänglig</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>{0} kommer att ligga på restorder</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transaktionen blev inte godkänd,  vänligen kontakta Distributör service: DRnordic@herbalife.com</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Önskat antal av vald produkt (0) finns för närvarande inte på lager. Tillgängligt antal är (1)</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Du kan inte gå till {0} sidan med inga varor i din kundvagn</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Du har ändrat ordermånad för denna order till {0}. Vill du fortsätta med detta val?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Du har valt {0} som ordermånad, är detta korrekt?</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Du måste radera et Kort för at ändra produkterna i vagnen</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Du placerade nyligen en identisk order den {0}. Om detta är en dubbel order, klicka på "Avbryt Order". För att fortsätta med denna order, vänligen Slutför.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Din Årsavgift förfaller den {0}</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Din order blev registrerad innan du gjorde de slutliga förändringarna i din kundvagn. Ditt order nummer är {0}. Du kan verifiera din orderstatus på Mina beställningar, eller ringa Distributörservice på 08 517 619 15. (vänligen notera att det kan ta upp till 1 timme innan din order är synlig). Om du önskar göra en ny beställning, vänligen lägg nya produkter in din kundvagn.</value>
+  </data>
+</root>

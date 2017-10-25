@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι επειδή δεν είναι διαθέσιμο.</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι.Εάν θέλετε να το προσθέσετε, παρακαλώ αλλάξτε την υποκατηγορία απο A1 σε B1.</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Παρακαλώ προσθέστε προϊόντα στο καλάθι αγορών πριν προσθέσετε τον κωδικό sku {0}.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Η ποσότητα δεν μπορεί να υπερβαίνει το παραπάνω {0} για τους κωδικούς SKU: {1}</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Ο κωδικός προϊόντος SKU {0} δεν είναι διαθέσιμ,ος για Express Παράδοση. Παρακαλώ χρησιμοποιήστε την Standard Παράδοση για το συγκεκριμένο προϊόν.</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Οι κωδικοί SKU 0343, 0344, 2329 ή 2328 δεν είναι διαθέσιμοι για παράδοση Express</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Η ποσότητα των κωδικόν SKU δεν μπορεί να υπερβαίνει το παραπάνω {0}</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Δεν μπορεί να γίνει αγορά</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Δεν μπορεί να γίνει αγορά προϊόντων {0}.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του κωδικού SKU {0} δεν μπορεί να αυξηθεί κατά {1} γιατί ξεπερνάει το μέγιστο όριο Κερδών.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του κωδικού SKU {0} δεν μπορεί να αυξηθεί κατά {1} γιατί ξεπερνάει το μέγιστο όριο Ποσοτικών Μονάδων.</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι επειδή, προσπαθώντας να το προσθέσετε στο καλάθι , υπερβήκατε το όριο των ποσοτικών μονάδων σας.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Αυτή η παραγγελία υπερβαίνει το όριο αγορών σας. Έχετε {0} VP που απομένουν. Παρακαλώ τροποποιήστε την παραγγελία σας για να συνεχίσετε.</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Το συνολικό ποσόξεπερνάει το συνολικό όριο των {0}.</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι επειδή,  προσπαθώντας να το προσθέσετε στο καλάθι, υπερβήκατε το αγοραστικό σας όριο.</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του τεμαχίου SKU:{0} δεν μπορεί να αυξηθεί  {1} επειδή υπερβαίνει το αγοραστικό σας όριο.</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Προσωπικό όριο αγορών</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Μεταπώληση</value>
+  </data>
+</root>

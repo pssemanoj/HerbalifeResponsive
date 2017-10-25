@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdmin" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdmin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetDistributorWebsiteInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebsiteInformationResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorWebsiteInformation" nillable="true" type="q1:DistributorWebsiteInformation" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Locales" nillable="true" type="q2:ArrayOfstring" />
+          <xs:element minOccurs="0" name="PrimaryLocale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteInformationResponse_V01" nillable="true" type="tns:GetDistributorWebsiteInformationResponse_V01" />
+  <xs:complexType name="GetDistributorWebsiteInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteInformationResponseBase" nillable="true" type="tns:GetDistributorWebsiteInformationResponseBase" />
+  <xs:complexType name="GetDistSiteInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistSiteInformationResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorLocalizedWebsite" nillable="true" type="q4:DistributorLocalizedWebsite_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistSiteInformationResponse_V01" nillable="true" type="tns:GetDistSiteInformationResponse_V01" />
+  <xs:complexType name="GetDistSiteInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistSiteInformationResponseBase" nillable="true" type="tns:GetDistSiteInformationResponseBase" />
+  <xs:complexType name="DeleteProgramItemResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteProgramItemResponseBase" nillable="true" type="tns:DeleteProgramItemResponseBase" />
+  <xs:complexType name="DeleteProgramItemResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteProgramItemResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteProgramItemResponse_V01" nillable="true" type="tns:DeleteProgramItemResponse_V01" />
+  <xs:complexType name="DeleteProgramResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteProgramResponseBase" nillable="true" type="tns:DeleteProgramResponseBase" />
+  <xs:complexType name="DeleteProgramResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteProgramResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Deleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteProgramResponse_V01" nillable="true" type="tns:DeleteProgramResponse_V01" />
+  <xs:complexType name="GetProductProgramResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProductProgramResponseBase" nillable="true" type="tns:GetProductProgramResponseBase" />
+  <xs:complexType name="GetProductProgramResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProductProgramResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q9="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="Program" nillable="true" type="q9:Program" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProductProgramResponse_V01" nillable="true" type="tns:GetProductProgramResponse_V01" />
+  <xs:complexType name="GetProductProgramsnResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProductProgramsnResponseBase" nillable="true" type="tns:GetProductProgramsnResponseBase" />
+  <xs:complexType name="GetProductProgramsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProductProgramsnResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q11="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="Programs" nillable="true" type="q11:ArrayOfProgram" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProductProgramsResponse_V01" nillable="true" type="tns:GetProductProgramsResponse_V01" />
+  <xs:complexType name="SaveProgramItemResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramItemResponseBase" nillable="true" type="tns:SaveProgramItemResponseBase" />
+  <xs:complexType name="SaveProgramItemResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveProgramItemResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Saved" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramItemResponse_V01" nillable="true" type="tns:SaveProgramItemResponse_V01" />
+  <xs:complexType name="SaveProgramResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramResponseBase" nillable="true" type="tns:SaveProgramResponseBase" />
+  <xs:complexType name="SaveProgramResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveProgramResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Saved" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramResponse_V01" nillable="true" type="tns:SaveProgramResponse_V01" />
+  <xs:complexType name="GetPhotosResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPhotosResponseBase" nillable="true" type="tns:GetPhotosResponseBase" />
+  <xs:complexType name="GetPhotosResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetPhotosResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q15="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="Images" nillable="true" type="q15:ArrayOfPhoto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetPhotosResponse_V01" nillable="true" type="tns:GetPhotosResponse_V01" />
+  <xs:complexType name="SaveProgramsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q16:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramsResponseBase" nillable="true" type="tns:SaveProgramsResponseBase" />
+  <xs:complexType name="SaveProgramsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveProgramsResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Saved" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveProgramsResponse_V01" nillable="true" type="tns:SaveProgramsResponse_V01" />
+  <xs:complexType name="GetBannerElementsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBannerElementsResponseBase" nillable="true" type="tns:GetBannerElementsResponseBase" />
+  <xs:complexType name="GetBannerElementsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetBannerElementsResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q18="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="CustomBannerElements" nillable="true" type="q18:ArrayOfBannerStyle" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBannerElementsResponse_V01" nillable="true" type="tns:GetBannerElementsResponse_V01" />
+  <xs:complexType name="GetMemberBannerResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q19:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberBannerResponseBase" nillable="true" type="tns:GetMemberBannerResponseBase" />
+  <xs:complexType name="GetMemberBannerResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberBannerResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q20="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="MemberCustomBanner" nillable="true" type="q20:MemberBanner" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberBannerResponse_V01" nillable="true" type="tns:GetMemberBannerResponse_V01" />
+  <xs:complexType name="SaveMemberBannerResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q21:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberBannerResponseBase" nillable="true" type="tns:SaveMemberBannerResponseBase" />
+  <xs:complexType name="SaveMemberBannerResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMemberBannerResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BannerInfoSaved" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberBannerResponse_V01" nillable="true" type="tns:SaveMemberBannerResponse_V01" />
+  <xs:complexType name="DeleteMemberBannerResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q22:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberBannerResponseBase" nillable="true" type="tns:DeleteMemberBannerResponseBase" />
+  <xs:complexType name="DeleteMemberBannerResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteMemberBannerResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BannerInfoDeleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberBannerResponse_V01" nillable="true" type="tns:DeleteMemberBannerResponse_V01" />
+  <xs:complexType name="GetContentCheckResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q23:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetContentCheckResponse" nillable="true" type="tns:GetContentCheckResponse" />
+  <xs:complexType name="GetContentCheckResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetContentCheckResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckResult" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetContentCheckResponse_V01" nillable="true" type="tns:GetContentCheckResponse_V01" />
+  <xs:complexType name="GetDistributorWebsiteExtensionsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteExtensionsResponseBase" nillable="true" type="tns:GetDistributorWebsiteExtensionsResponseBase" />
+  <xs:complexType name="GetDistributorWebsiteExtensionsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebsiteExtensionsResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Extensions" nillable="true" type="q25:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebsiteExtensionsResponse_V01" nillable="true" type="tns:GetDistributorWebsiteExtensionsResponse_V01" />
+  <xs:complexType name="GetDistributorWebSiteSettingsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebSiteSettingsResponse" nillable="true" type="tns:GetDistributorWebSiteSettingsResponse" />
+  <xs:complexType name="GetDistributorWebSiteSettingsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorWebSiteSettingsResponse">
+        <xs:sequence>
+          <xs:element xmlns:q27="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorLocalizedWebsite" nillable="true" type="q27:DistributorLocalizedWebsite" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorWebSiteSettingsResponse_V01" nillable="true" type="tns:GetDistributorWebSiteSettingsResponse_V01" />
+  <xs:complexType name="GetCatalogsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCatalogsResponseBase" nillable="true" type="tns:GetCatalogsResponseBase" />
+  <xs:complexType name="GetCatalogsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetCatalogsResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q29="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="Catalogs" nillable="true" type="q29:ArrayOfCatalog_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCatalogsResponse_V01" nillable="true" type="tns:GetCatalogsResponse_V01" />
+  <xs:complexType name="GetWebsiteNavigationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q30:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetWebsiteNavigationResponseBase" nillable="true" type="tns:GetWebsiteNavigationResponseBase" />
+  <xs:complexType name="GetWebsiteNavigationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetWebsiteNavigationResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q31="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="WebsiteNavigation" nillable="true" type="q31:ArrayOfWebsiteNavigation_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetWebsiteNavigationResponse_V01" nillable="true" type="tns:GetWebsiteNavigationResponse_V01" />
+  <xs:complexType name="GetDistWebsiteThemesResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q32:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistWebsiteThemesResponseBase" nillable="true" type="tns:GetDistWebsiteThemesResponseBase" />
+  <xs:complexType name="GetDistWebsiteThemesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistWebsiteThemesResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q33="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="WebsiteThemes" nillable="true" type="q33:ArrayOfWebsiteTheme_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistWebsiteThemesResponse_V01" nillable="true" type="tns:GetDistWebsiteThemesResponse_V01" />
+  <xs:complexType name="GetDistWebsitesResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q34:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistWebsitesResponseBase" nillable="true" type="tns:GetDistWebsitesResponseBase" />
+  <xs:complexType name="GetDistWebsitesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistWebsitesResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q35="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorWebsites" nillable="true" type="q35:ArrayOfWebsiteGeneralInformation_V01" />
+          <xs:element minOccurs="0" name="WebsiteExtension" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistWebsitesResponse_V01" nillable="true" type="tns:GetDistWebsitesResponse_V01" />
+  <xs:complexType name="GetDSCountryInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q36="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q36:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSCountryInfoResponseBase" nillable="true" type="tns:GetDSCountryInfoResponseBase" />
+  <xs:complexType name="GetDSCountryInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSCountryInfoResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q37="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" minOccurs="0" name="DistributorWebsiteCountries" nillable="true" type="q37:ArrayOfDSCountryInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSCountryInfoResponse_V01" nillable="true" type="tns:GetDSCountryInfoResponse_V01" />
+  <xs:complexType name="GetWebsitePageContentListRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q38:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetWebsitePageContentListRequestBase" nillable="true" type="tns:GetWebsitePageContentListRequestBase" />
+  <xs:complexType name="GetWebsitePageContentListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetWebsitePageContentListRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SectionId" type="xs:int" />
+          <xs:element minOccurs="0" name="ThemeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetWebsitePageContentListRequest_V01" nillable="true" type="tns:GetWebsitePageContentListRequest_V01" />
+</xs:schema>

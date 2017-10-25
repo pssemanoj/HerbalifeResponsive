@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd20" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="EmailSubscriptionDetails_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmailSubscriptionDetails">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" minOccurs="0" name="CurrentEmail" nillable="true" type="q1:TrackedValue_V01EmailAddressBase" />
+          <xs:element minOccurs="0" name="EmailSubscriptionList" nillable="true" type="tns:ArrayOfEmailSubscriptionUnit" />
+          <xs:element minOccurs="0" name="IsOptOut" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsPrimaryEmail" type="xs:boolean" />
+          <xs:element xmlns:q2="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" minOccurs="0" name="NewEmail" nillable="true" type="q2:TrackedValue_V01EmailAddressBase" />
+          <xs:element minOccurs="0" name="PreferedFormat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferedLanguage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UpdateHDMS" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isDeleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailSubscriptionDetails_V01" nillable="true" type="tns:EmailSubscriptionDetails_V01" />
+  <xs:complexType name="EmailSubscriptionDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailSubscriptionDetails" nillable="true" type="tns:EmailSubscriptionDetails" />
+  <xs:complexType name="EmailSubscriptionUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSubscribed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailSubscriptionUnit" nillable="true" type="tns:EmailSubscriptionUnit" />
+  <xs:simpleType name="SubscriptionEmailType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Primary">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Second">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Third">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fourth">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubscriptionEmailType" nillable="true" type="tns:SubscriptionEmailType" />
+  <xs:complexType name="ArrayOfEmailSubscriptionUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailSubscriptionUnit" nillable="true" type="tns:EmailSubscriptionUnit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailSubscriptionUnit" nillable="true" type="tns:ArrayOfEmailSubscriptionUnit" />
+  <xs:complexType name="ArrayOfEmailSubscriptionDetails_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailSubscriptionDetails_V01" nillable="true" type="tns:EmailSubscriptionDetails_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailSubscriptionDetails_V01" nillable="true" type="tns:ArrayOfEmailSubscriptionDetails_V01" />
+  <xs:complexType name="GetEmailCategoryResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailCategoryResponseBase" nillable="true" type="tns:GetEmailCategoryResponseBase" />
+  <xs:complexType name="GetEmailCategoryResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetEmailCategoryResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmailSubscriptionList" nillable="true" type="tns:ArrayOfEmailSubscriptionUnit" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailCategoryResponse_V01" nillable="true" type="tns:GetEmailCategoryResponse_V01" />
+  <xs:complexType name="GetEmailCategoryRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailCategoryRequestBase" nillable="true" type="tns:GetEmailCategoryRequestBase" />
+  <xs:complexType name="GetEmailCategoryRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetEmailCategoryRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ListID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEmailCategoryRequest_V01" nillable="true" type="tns:GetEmailCategoryRequest_V01" />
+  <xs:complexType name="GetSharedEmailProfileResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSharedEmailProfileResponseBase" nillable="true" type="tns:GetSharedEmailProfileResponseBase" />
+  <xs:complexType name="GetSharedEmailProfileResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSharedEmailProfileResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SharedEmailProfileTable" nillable="true">
+            <xs:complexType>
+              <xs:annotation>
+                <xs:appinfo>
+                  <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:sequence>
+                <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSharedEmailProfileResponse_V01" nillable="true" type="tns:GetSharedEmailProfileResponse_V01" />
+  <xs:complexType name="GetSharedEmailProfileRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSharedEmailProfileRequestBase" nillable="true" type="tns:GetSharedEmailProfileRequestBase" />
+  <xs:complexType name="GetSharedEmailProfileRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSharedEmailProfileRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSharedEmailProfileRequest_V01" nillable="true" type="tns:GetSharedEmailProfileRequest_V01" />
+  <xs:complexType name="GetProfileByPhoneNumberRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProfileByPhoneNumberRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileByPhoneNumberRequest_V01" nillable="true" type="tns:GetProfileByPhoneNumberRequest_V01" />
+  <xs:complexType name="GetProfileByPhoneNumberRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileByPhoneNumberRequestBase" nillable="true" type="tns:GetProfileByPhoneNumberRequestBase" />
+  <xs:complexType name="GetProfileByPhoneNumberResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileByPhoneNumberResponseBase" nillable="true" type="tns:GetProfileByPhoneNumberResponseBase" />
+  <xs:complexType name="GetProfileByPhoneNumberResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProfileByPhoneNumberResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ProfileTable" nillable="true">
+            <xs:complexType>
+              <xs:annotation>
+                <xs:appinfo>
+                  <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:sequence>
+                <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileByPhoneNumberResponse_V01" nillable="true" type="tns:GetProfileByPhoneNumberResponse_V01" />
+  <xs:complexType name="GetTransactionsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTransactionsRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTransactionsRequest_V01" nillable="true" type="tns:GetTransactionsRequest_V01" />
+  <xs:complexType name="GetTransactionsRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTransactionsRequestBase" nillable="true" type="tns:GetTransactionsRequestBase" />
+  <xs:complexType name="GetTransactionsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTransactionsResponseBase" nillable="true" type="tns:GetTransactionsResponseBase" />
+  <xs:complexType name="GetTransactionsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetTransactionsResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Transactions" nillable="true">
+            <xs:complexType>
+              <xs:annotation>
+                <xs:appinfo>
+                  <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:sequence>
+                <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTransactionsResponse_V01" nillable="true" type="tns:GetTransactionsResponse_V01" />
+  <xs:complexType name="UnsubscribeResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UnsubscribeResponseBase" nillable="true" type="tns:UnsubscribeResponseBase" />
+  <xs:complexType name="UnsubscribeResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UnsubscribeResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UnsubscribeStatus" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UnsubscribeResponse_V01" nillable="true" type="tns:UnsubscribeResponse_V01" />
+  <xs:complexType name="UnsubscribeRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UnsubscribeRequestBase" nillable="true" type="tns:UnsubscribeRequestBase" />
+  <xs:complexType name="UnsubscribeRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UnsubscribeRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsUnsubscribeAll" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SubscriptionID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UnsubscribeRequest_V01" nillable="true" type="tns:UnsubscribeRequest_V01" />
+  <xs:complexType name="InsertTransactionRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q14:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertTransactionRequestBase" nillable="true" type="tns:InsertTransactionRequestBase" />
+  <xs:complexType name="InsertTransactionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:InsertTransactionRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ChangedEmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangedPreferredFormat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangedPreferredName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ChangedSMSNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Notes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PropertyTypes" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InsertTransactionRequest_V01" nillable="true" type="tns:InsertTransactionRequest_V01" />
+  <xs:complexType name="ProcessProfileQueueRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessProfileQueueRequestBase" nillable="true" type="tns:ProcessProfileQueueRequestBase" />
+  <xs:complexType name="ProcessProfileQueueRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessProfileQueueRequestBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessProfileQueueRequest_V01" nillable="true" type="tns:ProcessProfileQueueRequest_V01" />
+  <xs:complexType name="ProcessProfileQueueResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q16:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessProfileQueueResponseBase" nillable="true" type="tns:ProcessProfileQueueResponseBase" />
+  <xs:complexType name="ProcessProfileQueueResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessProfileQueueResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessProfileQueueResponse_V01" nillable="true" type="tns:ProcessProfileQueueResponse_V01" />
+  <xs:complexType name="ProcessEmailProfileUpdatesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEmailProfileUpdatesRequestBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessEmailProfileUpdatesRequest_V01" nillable="true" type="tns:ProcessEmailProfileUpdatesRequest_V01" />
+  <xs:complexType name="ProcessEmailProfileUpdatesRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessEmailProfileUpdatesRequestBase" nillable="true" type="tns:ProcessEmailProfileUpdatesRequestBase" />
+  <xs:complexType name="ProcessEmailProfileUpdatesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessEmailProfileUpdatesResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessEmailProfileUpdatesResponse_V01" nillable="true" type="tns:ProcessEmailProfileUpdatesResponse_V01" />
+  <xs:complexType name="ProcessEmailProfileUpdatesResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q18:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessEmailProfileUpdatesResponseBase" nillable="true" type="tns:ProcessEmailProfileUpdatesResponseBase" />
+  <xs:complexType name="StaffEmailSubscriptionDetails_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StaffEmailSubscriptionDetails">
+        <xs:sequence>
+          <xs:element xmlns:q19="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" minOccurs="0" name="CurrentEmail" nillable="true" type="q19:TrackedValue_V01EmailAddressBase" />
+          <xs:element minOccurs="0" name="EmailSubscriptionList" nillable="true" type="tns:ArrayOfEmailSubscriptionUnit" />
+          <xs:element minOccurs="0" name="IsOptOut" type="xs:boolean" />
+          <xs:element xmlns:q20="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" minOccurs="0" name="NewEmail" nillable="true" type="q20:TrackedValue_V01EmailAddressBase" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaffEmailSubscriptionDetails_V01" nillable="true" type="tns:StaffEmailSubscriptionDetails_V01" />
+  <xs:complexType name="StaffEmailSubscriptionDetails">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q21="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q21:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaffEmailSubscriptionDetails" nillable="true" type="tns:StaffEmailSubscriptionDetails" />
+  <xs:complexType name="ArrayOfStaffEmailSubscriptionDetails_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StaffEmailSubscriptionDetails_V01" nillable="true" type="tns:StaffEmailSubscriptionDetails_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStaffEmailSubscriptionDetails_V01" nillable="true" type="tns:ArrayOfStaffEmailSubscriptionDetails_V01" />
+  <xs:complexType name="StaffEmailSubscriptionUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSubscribed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StaffEmailSubscriptionUnit" nillable="true" type="tns:StaffEmailSubscriptionUnit" />
+  <xs:complexType name="CreateListResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q22:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateListResponseBase" nillable="true" type="tns:CreateListResponseBase" />
+  <xs:complexType name="CreateListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CreateListResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HLList" nillable="true" type="tns:HLList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateListResponse_V01" nillable="true" type="tns:CreateListResponse_V01" />
+  <xs:complexType name="HLList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExternalKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLList" nillable="true" type="tns:HLList" />
+  <xs:complexType name="CreateListRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q23:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateListRequestBase" nillable="true" type="tns:CreateListRequestBase" />
+  <xs:complexType name="CreateListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CreateListRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HLList" nillable="true" type="tns:HLList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreateListRequest_V01" nillable="true" type="tns:CreateListRequest_V01" />
+  <xs:complexType name="SearchListResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SearchListResponseBase" nillable="true" type="tns:SearchListResponseBase" />
+  <xs:complexType name="SearchListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SearchListResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HLSearchResults" nillable="true" type="tns:ArrayOfHLListResults" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SearchListResponse_V01" nillable="true" type="tns:SearchListResponse_V01" />
+  <xs:complexType name="ArrayOfHLListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HLListResults" nillable="true" type="tns:HLListResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHLListResults" nillable="true" type="tns:ArrayOfHLListResults" />
+  <xs:complexType name="HLListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EtListStatus" nillable="true" type="tns:ETListStatus" />
+      <xs:element minOccurs="0" name="HlList" nillable="true" type="tns:HLList" />
+      <xs:element minOccurs="0" name="ListID" type="xs:int" />
+      <xs:element minOccurs="0" name="ListName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLListResults" nillable="true" type="tns:HLListResults" />
+  <xs:complexType name="ETListStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RecordCount" type="xs:int" />
+      <xs:element minOccurs="0" name="RejectedCount" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ETListStatus" nillable="true" type="tns:ETListStatus" />
+  <xs:complexType name="SearchListRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q25:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SearchListRequestBase" nillable="true" type="tns:SearchListRequestBase" />
+  <xs:complexType name="SearchListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SearchListRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HlListSearchCriteria" nillable="true" type="tns:HLListSearchCriteria" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SearchListRequest_V01" nillable="true" type="tns:SearchListRequest_V01" />
+  <xs:complexType name="HLListSearchCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLListSearchCriteria" nillable="true" type="tns:HLListSearchCriteria" />
+  <xs:complexType name="ManageSubscriberRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManageSubscriberRequestBase" nillable="true" type="tns:ManageSubscriberRequestBase" />
+  <xs:complexType name="ManageSubscriberRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ManageSubscriberRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Action" type="tns:HLListAction" />
+          <xs:element minOccurs="0" name="DateFrom" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DateTo" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="List" nillable="true" type="tns:HLList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManageSubscriberRequest_V01" nillable="true" type="tns:ManageSubscriberRequest_V01" />
+  <xs:simpleType name="HLListAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CREATE">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="APPEND">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INSERT">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DELETE">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RETRIEVE">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UPDATE">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HLListAction" nillable="true" type="tns:HLListAction" />
+  <xs:complexType name="ManageSubscriberResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q27:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManageSubscriberResponseBase" nillable="true" type="tns:ManageSubscriberResponseBase" />
+  <xs:complexType name="ManageSubscriberResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ManageSubscriberResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HlListSubscriber" nillable="true" type="tns:HLListSubscriber" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ManageSubscriberResponse_V01" nillable="true" type="tns:ManageSubscriberResponse_V01" />
+  <xs:complexType name="HLListSubscriber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryOfProcessing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryOfResidence" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateFrom" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTo" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LocalFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LocalLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferredFormat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferredName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryActiveEmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Subscriptions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Team" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLListSubscriber" nillable="true" type="tns:HLListSubscriber" />
+  <xs:complexType name="UploadDSListRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadDSListRequestBase" nillable="true" type="tns:UploadDSListRequestBase" />
+  <xs:complexType name="UploadDSListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UploadDSListRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Action" type="tns:HLListAction" />
+          <xs:element minOccurs="0" name="DistributorIDTable" nillable="true">
+            <xs:complexType>
+              <xs:annotation>
+                <xs:appinfo>
+                  <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:sequence>
+                <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="HLList" nillable="true" type="tns:HLList" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadDSListRequest_V01" nillable="true" type="tns:UploadDSListRequest_V01" />
+  <xs:complexType name="UploadDSListResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q29:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadDSListResponseBase" nillable="true" type="tns:UploadDSListResponseBase" />
+  <xs:complexType name="UploadDSListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UploadDSListResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadDSListResponse_V01" nillable="true" type="tns:UploadDSListResponse_V01" />
+  <xs:complexType name="ResultListRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q30:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultListRequestBase" nillable="true" type="tns:ResultListRequestBase" />
+  <xs:complexType name="ResultListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultListRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultListRequest_V01" nillable="true" type="tns:ResultListRequest_V01" />
+  <xs:complexType name="ResultListResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q31:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultListResponseBase" nillable="true" type="tns:ResultListResponseBase" />
+  <xs:complexType name="ResultListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ResultListResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ResultList" nillable="true" type="tns:HLResultList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResultListResponse_V01" nillable="true" type="tns:ResultListResponse_V01" />
+  <xs:complexType name="HLResultList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Active" nillable="true" type="tns:ArrayOfHLActiveListResults" />
+      <xs:element minOccurs="0" name="Rejected" nillable="true" type="tns:ArrayOfHLRejectedListResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLResultList" nillable="true" type="tns:HLResultList" />
+  <xs:complexType name="ArrayOfHLActiveListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HLActiveListResults" nillable="true" type="tns:HLActiveListResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHLActiveListResults" nillable="true" type="tns:ArrayOfHLActiveListResults" />
+  <xs:complexType name="HLActiveListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ThroughDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLActiveListResults" nillable="true" type="tns:HLActiveListResults" />
+  <xs:complexType name="ArrayOfHLRejectedListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HLRejectedListResults" nillable="true" type="tns:HLRejectedListResults" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHLRejectedListResults" nillable="true" type="tns:ArrayOfHLRejectedListResults" />
+  <xs:complexType name="HLRejectedListResults">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RejectedReason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLRejectedListResults" nillable="true" type="tns:HLRejectedListResults" />
+  <xs:complexType name="OptInRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q32="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q32:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OptInRequestBase" nillable="true" type="tns:OptInRequestBase" />
+  <xs:complexType name="OptInRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OptInRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OptInRequest_V01" nillable="true" type="tns:OptInRequest_V01" />
+  <xs:complexType name="OptInResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q33="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q33:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OptInResponseBase" nillable="true" type="tns:OptInResponseBase" />
+  <xs:complexType name="OptInResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OptInResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OptInResponse_V01" nillable="true" type="tns:OptInResponse_V01" />
+  <xs:simpleType name="GdoPaymentTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CreditCard" />
+      <xs:enumeration value="Wire" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GdoPaymentTypes" nillable="true" type="tns:GdoPaymentTypes" />
+  <xs:complexType name="BulkEmail_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BulkEmail">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BulkEmailID" type="xs:int" />
+          <xs:element minOccurs="0" name="BulkEmailType" type="tns:BulkEmailType" />
+          <xs:element minOccurs="0" name="CommonContent" nillable="true" type="tns:EmailContent_V01" />
+          <xs:element minOccurs="0" name="EmailTemplateID" type="xs:int" />
+          <xs:element minOccurs="0" name="ExternalKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Recipients" nillable="true" type="tns:ArrayOfEmail_V01" />
+          <xs:element minOccurs="0" name="SendDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SendResponseID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SenderProfile" nillable="true" type="tns:ContactProfile_V01" />
+          <xs:element minOccurs="0" name="Status" type="tns:BulkEmailStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BulkEmail_V01" nillable="true" type="tns:BulkEmail_V01" />
+  <xs:complexType name="BulkEmail">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q34="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q34:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BulkEmail" nillable="true" type="tns:BulkEmail" />
+  <xs:simpleType name="BulkEmailStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Queued">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="InProcess">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Failed">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PerformingSend">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="QueuedToET">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateDataExtension">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateEmailDefinition">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UploadToFTP">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CreateImportDefinition">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ImportInProgress">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BulkEmailStatus" nillable="true" type="tns:BulkEmailStatus" />
+  <xs:complexType name="Email_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Email">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Content" nillable="true" type="tns:EmailContent_V01" />
+          <xs:element minOccurs="0" name="ReceiverProfile" nillable="true" type="tns:ContactProfile_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Email_V01" nillable="true" type="tns:Email_V01" />
+  <xs:complexType name="Email">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q35="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q35:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Email" nillable="true" type="tns:Email" />
+  <xs:complexType name="EmailContent_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmailContent">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CopyRight" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Footer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Tokens" nillable="true" type="q36:ArrayOfKeyValueOfstringstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailContent_V01" nillable="true" type="tns:EmailContent_V01" />
+  <xs:complexType name="EmailContent">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q37="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q37:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailContent" nillable="true" type="tns:EmailContent" />
+  <xs:complexType name="ContactProfile_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContactProfile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactProfile_V01" nillable="true" type="tns:ContactProfile_V01" />
+  <xs:complexType name="ContactProfile">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q38="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q38:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactProfile" nillable="true" type="tns:ContactProfile" />
+  <xs:simpleType name="BulkEmailType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ECARD">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALERTS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMAIL">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GDO">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DWS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OLC" />
+      <xs:enumeration value="BIZWORKS">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BulkEmailType" nillable="true" type="tns:BulkEmailType" />
+  <xs:complexType name="ArrayOfEmail_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Email_V01" nillable="true" type="tns:Email_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmail_V01" nillable="true" type="tns:ArrayOfEmail_V01" />
+  <xs:complexType name="ArrayOfContactProfile_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactProfile_V01" nillable="true" type="tns:ContactProfile_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContactProfile_V01" nillable="true" type="tns:ArrayOfContactProfile_V01" />
+  <xs:complexType name="GetSubscriptionsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q39="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q39:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ContactString" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="tns:SubscriptionType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSubscriptionsRequest" nillable="true" type="tns:GetSubscriptionsRequest" />
+  <xs:simpleType name="SubscriptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Email" />
+      <xs:enumeration value="SMS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubscriptionType" nillable="true" type="tns:SubscriptionType" />
+  <xs:complexType name="GetSubscriptionsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q40="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q40:ServiceResponseValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Subscriptions" nillable="true" type="tns:ArrayOfSubscriptionUnit" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSubscriptionsResponse" nillable="true" type="tns:GetSubscriptionsResponse" />
+  <xs:complexType name="ArrayOfSubscriptionUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubscriptionUnit" nillable="true" type="tns:SubscriptionUnit" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubscriptionUnit" nillable="true" type="tns:ArrayOfSubscriptionUnit" />
+  <xs:complexType name="SubscriptionUnit">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountryID" type="xs:int" />
+      <xs:element minOccurs="0" name="CountryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSubscribed" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubscriptionUnit" nillable="true" type="tns:SubscriptionUnit" />
+  <xs:complexType name="UpdateSubscriptionsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q41="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q41:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrentValue" nillable="true" type="tns:SubscriptionDetail" />
+          <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NewValue" nillable="true" type="tns:SubscriptionDetail" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSubscriptionsRequest" nillable="true" type="tns:UpdateSubscriptionsRequest" />
+  <xs:complexType name="SubscriptionDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContactString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsOptOut" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Subscriptions" nillable="true" type="tns:ArrayOfSubscriptionUnit" />
+      <xs:element minOccurs="0" name="Type" type="tns:SubscriptionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubscriptionDetail" nillable="true" type="tns:SubscriptionDetail" />
+  <xs:complexType name="UpdateSubscriptionsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q42="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q42:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSubscriptionsResponse" nillable="true" type="tns:UpdateSubscriptionsResponse" />
+  <xs:complexType name="ArrayOfHLListType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HLListType" nillable="true" type="tns:HLListType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHLListType" nillable="true" type="tns:ArrayOfHLListType" />
+  <xs:complexType name="HLListType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HLListType" nillable="true" type="tns:HLListType" />
+  <xs:simpleType name="TransactionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Email">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EmailSubscription">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EmailOptout">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PereferedName">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PreferedFormat">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSNumber1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSNumber2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSNumber3">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSNumber4">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">9</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSSubscription">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">10</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMSOptout">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">11</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TransactionType" nillable="true" type="tns:TransactionType" />
+</xs:schema>

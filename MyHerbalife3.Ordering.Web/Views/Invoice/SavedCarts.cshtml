@@ -1,0 +1,50 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvSavedCarts" style="display: none;"
+     data-role="window"
+     data-modal="true"
+     data-max-width="840px"
+     data-resizable="false"
+     data-actions="['close']">
+
+    <script type="text/x-kendo-template" id="savedCartsTpl">
+        <a class="savedCarts k-link" href="\\#savedCartsField" data-bind="click: selectSavedCarts">@(this.Localize("select"))</a>
+    </script>
+
+    <script type="text/x-kendo-tmpl" id="savedDateTpl">
+        <span>#= kendo.toString(kendo.parseDate(SavedDate, 'yyyy-MM-dd'), 'MM/dd/yyyy') #</span>
+    </script>
+
+    <div>
+        <div class="row">
+            <div class="col-sm-12 no-padding">
+                <h2>@(this.Localize("savedCartsTitle"))</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 cold-sm-5 col-xs-12">
+                <label for="savedCart-search">@(this.Localize("searchCarts"))</label>
+                <input id="savedCart-search" type="text" class="k-input" data-bind="value: savedCartsFilter" />
+            </div>
+            <div class="col-md-2 cold-sm-2 col-xs-12">
+                <label>&nbsp;</label>
+                <a class="backward" data-bind="click: searchSavedCarts">@(this.Localize("Search"))</a>
+            </div>
+        </div>
+        <div class="row">
+            <span>@this.Localize("savedCartMessage")</span>
+        </div>
+        <div class="row">
+            <div id="dgSavedCarts"
+                 data-role="grid"
+                 data-pageable='{"pageSize": 10, "refresh": true, "messages": {"itemsPerPage": "", "display": "{0} - {1} of {2}","empty":""}}'
+                 data-bind="source: savedCarts"
+                 data-scrollable="false"
+                 data-columns='[
+                 {"field": "SavedDate" ,"title": "@this.Localize("dateSaved")", "template" : invEdit.savedDateTemplate(), "headerAttributes": {"style": "text-align: left;"}, "attributes": {"style": "text-align: left;"}},
+                 {"field": "Name", "title":"@this.Localize("cartName")", "headerAttributes": {"style": "text-align: left;"}, "attributes": {"style": "text-align: left;"}},
+                 {"field": "VolumePoints", "title":"@this.Localize("volume")", "headerAttributes": {"style": "text-align: right;"}, "attributes": {"style": "text-align: right;"}},
+                 {"field": "select", "title" : " ", "template" : invEdit.savedCartsTemplate(), "attributes": {"class": "center"}} ]'>
+            </div>
+        </div>
+    </div>
+</div>

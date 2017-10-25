@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2012/04/01/HL.Order.ValueObjects.Invoices" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2012/04/01/HL.Order.ValueObjects.Invoices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" />
+  <xs:complexType name="GenerateInvoiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateInvoiceRequest" nillable="true" type="tns:GenerateInvoiceRequest" />
+  <xs:complexType name="GenerateInvoiceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateInvoiceRequest">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="Order" nillable="true" type="q2:Order" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateInvoiceRequest_V01" nillable="true" type="tns:GenerateInvoiceRequest_V01" />
+  <xs:complexType name="GetMemberInvoicesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoicesRequest" nillable="true" type="tns:GetMemberInvoicesRequest" />
+  <xs:complexType name="GetMemberInvoicesRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoicesRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicationCountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="From" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MemberId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="To" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoicesRequest_V01" nillable="true" type="tns:GetMemberInvoicesRequest_V01" />
+  <xs:complexType name="GetMemberInvoiceItemsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceItemsRequest" nillable="true" type="tns:GetMemberInvoiceItemsRequest" />
+  <xs:complexType name="GetMemberInvoiceItemsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoiceItemsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceItemsRequest_V01" nillable="true" type="tns:GetMemberInvoiceItemsRequest_V01" />
+  <xs:complexType name="SaveMemberInvoiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceRequest" nillable="true" type="tns:SaveMemberInvoiceRequest" />
+  <xs:complexType name="SaveMemberInvoiceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMemberInvoiceRequest">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" minOccurs="0" name="MemberInvoice" nillable="true" type="q6:MemberInvoice" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceRequest_V01" nillable="true" type="tns:SaveMemberInvoiceRequest_V01" />
+  <xs:complexType name="SaveMemberInvoiceStatusRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceStatusRequest" nillable="true" type="tns:SaveMemberInvoiceStatusRequest" />
+  <xs:complexType name="SaveMemberInvoiceStatusRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMemberInvoiceStatusRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element xmlns:q8="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" minOccurs="0" name="Status" type="q8:MemberInvoiceStatus" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceStatusRequest_V01" nillable="true" type="tns:SaveMemberInvoiceStatusRequest_V01" />
+  <xs:complexType name="DeleteMemberInvoiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberInvoiceRequest" nillable="true" type="tns:DeleteMemberInvoiceRequest" />
+  <xs:complexType name="DeleteMemberInvoiceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteMemberInvoiceRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberInvoiceRequest_V01" nillable="true" type="tns:DeleteMemberInvoiceRequest_V01" />
+  <xs:complexType name="GetMemberInvoiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceRequest" nillable="true" type="tns:GetMemberInvoiceRequest" />
+  <xs:complexType name="GetMemberInvoiceRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoiceRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceRequest_V01" nillable="true" type="tns:GetMemberInvoiceRequest_V01" />
+  <xs:complexType name="DeleteMemberInvoiceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteMemberInvoiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsDeleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberInvoiceResponse_V01" nillable="true" type="tns:DeleteMemberInvoiceResponse_V01" />
+  <xs:complexType name="DeleteMemberInvoiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteMemberInvoiceResponse" nillable="true" type="tns:DeleteMemberInvoiceResponse" />
+  <xs:complexType name="GetMemberInvoiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q12:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceResponse" nillable="true" type="tns:GetMemberInvoiceResponse" />
+  <xs:complexType name="GetMemberInvoiceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoiceResponse">
+        <xs:sequence>
+          <xs:element xmlns:q13="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" minOccurs="0" name="MemberInvoice" nillable="true" type="q13:MemberInvoice" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceResponse_V01" nillable="true" type="tns:GetMemberInvoiceResponse_V01" />
+  <xs:complexType name="GetMemberInvoicesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoicesResponse">
+        <xs:sequence>
+          <xs:element xmlns:q14="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" minOccurs="0" name="MemberInvoices" nillable="true" type="q14:ArrayOfMemberInvoice" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoicesResponse_V01" nillable="true" type="tns:GetMemberInvoicesResponse_V01" />
+  <xs:complexType name="GetMemberInvoicesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoicesResponse" nillable="true" type="tns:GetMemberInvoicesResponse" />
+  <xs:complexType name="GetMemberInvoiceItemsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q16:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceItemsResponse" nillable="true" type="tns:GetMemberInvoiceItemsResponse" />
+  <xs:complexType name="GetMemberInvoiceItemsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMemberInvoiceItemsResponse">
+        <xs:sequence>
+          <xs:element xmlns:q17="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.Invoices" minOccurs="0" name="MemberInvoiceItems" nillable="true" type="q17:ArrayOfMemberInvoiceItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMemberInvoiceItemsResponse_V01" nillable="true" type="tns:GetMemberInvoiceItemsResponse_V01" />
+  <xs:complexType name="GenerateInvoiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q18:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateInvoiceResponse" nillable="true" type="tns:GenerateInvoiceResponse" />
+  <xs:complexType name="GenerateInvoiceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GenerateInvoiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberInvoiceNumber" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GenerateInvoiceResponse_V01" nillable="true" type="tns:GenerateInvoiceResponse_V01" />
+  <xs:complexType name="SaveMemberInvoiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q19:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceResponse" nillable="true" type="tns:SaveMemberInvoiceResponse" />
+  <xs:complexType name="SaveMemberInvoiceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMemberInvoiceResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MemberInvoiceId" type="xs:int" />
+          <xs:element minOccurs="0" name="MemberInvoiceNumber" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceResponse_V01" nillable="true" type="tns:SaveMemberInvoiceResponse_V01" />
+  <xs:complexType name="SaveMemberInvoiceStatusResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q20:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceStatusResponse" nillable="true" type="tns:SaveMemberInvoiceStatusResponse" />
+  <xs:complexType name="SaveMemberInvoiceStatusResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveMemberInvoiceStatusResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsUpdated" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveMemberInvoiceStatusResponse_V01" nillable="true" type="tns:SaveMemberInvoiceStatusResponse_V01" />
+</xs:schema>

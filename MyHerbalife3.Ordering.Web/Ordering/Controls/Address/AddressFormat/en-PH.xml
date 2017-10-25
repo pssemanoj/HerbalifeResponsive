@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+    <Controls>
+
+      <Label cssStyle="AddressHeader" Name="Recipient" Grid.Row="0" Grid.Column="0" Grid.Colspan="3" Text="Care of Name *" />
+      <Label cssStyle="AddressHeader" Name="Street1" Grid.Row="2" Grid.Column="0" Grid.Colspan="3" Text="Street1 *" />
+      <Label cssStyle="AddressHeader" Name="Street2" Grid.Row="4" Grid.Column="0" Grid.Colspan="3" Text="Street2" />
+      <Label cssStyle="AddressHeader" Name="City" Grid.Row="6" Grid.Column="0" Text="City/Municipal *" />
+      <Label cssStyle="AddressHeader" Name="StateProvince" Grid.Row="6" Grid.Column="1" Text="State/Province *" />
+      <Label cssStyle="AddressHeader" Name="PostalCode" Grid.Row="6" Grid.Column="2" Text="Postal Code" />
+      <Label cssStyle="AddressHeader" Name="AreaCode" Grid.Row="8" Grid.Column="0" Text="Area Code *" />
+      <Label cssStyle="AddressHeader" Name="PhoneNumber" Grid.Row="8" Grid.Column="1" Text="Phone Number *" />
+      
+      
+      <TextBox cssStyle="EditAddress" Name="TBRecipient" Grid.Row="1" Grid.Column="0" Grid.Colspan="3" Text="{Binding Recipient}" Required="true" ValErrorMsg="InvalidRecipentName" ValReqMsg="NoFirstName" MinimumLength="1" MaximumLength="40" RegExp="^[a-zA-Z ]*$" IndexForTab="1"/>
+      <TextBox cssStyle="EditAddress" Name="TBStreet1" Grid.Row="3" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line1}"  Required="true" ValReqMsg="NoStreet1" KeyPressHandler="OnAddressKeyPress(event,this)" MinimumLength="1" MaximumLength="40" IndexForTab="2"/>
+      <TextBox cssStyle="EditAddress" Name="TBStreet2" Grid.Row="5" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line2}"  MaximumLength="40" IndexForTab="3"/>
+      <TextBox Name="TBCity" Grid.Row="7" Grid.Column="0" Text="{Binding Address.City}" Required="true" ValReqMsg="NoCity" IndexForTab="4" MinimumLength="1" MaximumLength="30"  />
+      <TextBox Name="TBState" Grid.Row="7" Grid.Column="1" Text="{Binding Address.StateProvinceTerritory}" Required="true" ValReqMsg="NoState" IndexForTab="5" MinimumLength="1" MaximumLength="20"  />
+      <TextBox cssStyle="EditAddress" Name="TBZip" Grid.Row="7" Grid.Column="2" Text="{Binding Address.PostalCode}" Required="false"  RegExp="^(\d{4})$"  ValReqMsg="NoZipCode" ValErrorMsg="InvalidZipCode" MaximumLength="4"  Width="15" IndexForTab="6"/>
+      <Label cssStyle="AddressErrorMsg_blue" Name="PostalCodeFormat" Grid.Row="7" Grid.Column="3" Text="Format: 4 digits" />
+      <TextBox cssStyle="EditAddress" Name="TBAreaCode" Grid.Row="9" Grid.Column="0" Text="{Binding AreaCode}"  Required="true" ValReqMsg="NoAreaCode"   ValErrorMsg="InvalidAreaCode" MaximumLength="3" RegExp="^(\d{3})$" Width="15px"  IndexForTab="7"/>
+      <TextBox cssStyle="EditAddress" Name="TBPhone" Grid.Row="9" Grid.Column="1"  Text="{Binding Phone}" Required="true"  ValErrorMsg="InvalidPhone" ValReqMsg="NoPhone" RegExp="^(\d{7,11})$"  MaximumLength="11" IndexForTab="8" />
+      <Label cssStyle="AddressErrorMsg_blue" Name="PhoneNumberFormat" Grid.Row="9" Grid.Column="2" Text="Format: 7-11 digits" />
+
+    </Controls>
+  </Grid>
+</AddressWindow>

@@ -1,0 +1,44 @@
+#countdown_dy, #countdown_hr, #countdown_min, #countdown_sec {
+  background-attachment: scroll;
+  background-clip: padding-box;
+  background-color:rgba(255, 143, 0, 1); 
+  box-shadow:0 3px 4px rgba(0, 0, 0, 0.4);
+  background-origin: padding-box;
+  border-image: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 100%;
+  border-radius: 3.375px;
+  box-shadow: none;
+  box-sizing: padding-box;  
+  display: inline-block;  
+  width:56.25px;
+  text-align:center;
+  clear:both;
+}
+
+.counterlbl {
+  clear: both;
+  color: rgba(48, 48, 48, 1);
+  display: block;
+  font-size: 8.75px;
+  font-weight: bold;
+  height: 8.75px;
+  margin-top: 5px;
+}
+
+.counterMsg {
+  color: #ff8f00;
+  font-size: 17.75px;
+  position: relative;
+  top: -15px;
+}
+
+.timerContent {
+    display: inline;
+    margin-right: 10px;
+
+    div {
+        display: inline-block;
+        margin-left: 3px;
+    }
+}

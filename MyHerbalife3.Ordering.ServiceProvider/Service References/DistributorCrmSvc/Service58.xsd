@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2014/04/30/HL.DistributorCRM.ValueObjects.Lead" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2014/04/30/HL.DistributorCRM.ValueObjects.Lead" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="LeadRegions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RegionId" type="xs:int" />
+      <xs:element minOccurs="0" name="RegionName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LeadRegions" nillable="true" type="tns:LeadRegions" />
+  <xs:complexType name="GetLeadRegionsListResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadRegionsListResponse" nillable="true" type="tns:GetLeadRegionsListResponse" />
+  <xs:complexType name="GetLeadRegionsListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadRegionsListResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LeadRegionsList" nillable="true" type="tns:ArrayOfLeadRegions" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadRegionsListResponse_V01" nillable="true" type="tns:GetLeadRegionsListResponse_V01" />
+  <xs:complexType name="ArrayOfLeadRegions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LeadRegions" nillable="true" type="tns:LeadRegions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLeadRegions" nillable="true" type="tns:ArrayOfLeadRegions" />
+  <xs:complexType name="GetLeadRegionsListRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadRegionsListRequest" nillable="true" type="tns:GetLeadRegionsListRequest" />
+  <xs:complexType name="GetLeadRegionsListRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetLeadRegionsListRequest">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetLeadRegionsListRequest_V01" nillable="true" type="tns:GetLeadRegionsListRequest_V01" />
+</xs:schema>

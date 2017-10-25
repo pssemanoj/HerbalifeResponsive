@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2011/01/25/HL.Distributor.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2011/01/25/HL.Distributor.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" />
+  <xs:complexType name="GetIFTEnrollmentResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIFTEnrollmentResponseBase" nillable="true" type="tns:GetIFTEnrollmentResponseBase" />
+  <xs:complexType name="GetIFTEnrollmentResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetIFTEnrollmentResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="IFTEnrollmentInfo" nillable="true" type="q2:IFTEnrollment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIFTEnrollmentResponse_V01" nillable="true" type="tns:GetIFTEnrollmentResponse_V01" />
+  <xs:complexType name="GetIFTEnrollmentRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIFTEnrollmentRequestBase" nillable="true" type="tns:GetIFTEnrollmentRequestBase" />
+  <xs:complexType name="GetIFTEnrollmentRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetIFTEnrollmentRequestBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetIFTEnrollmentRequest_V01" nillable="true" type="tns:GetIFTEnrollmentRequest_V01" />
+  <xs:complexType name="GetBankInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBankInformationResponseBase" nillable="true" type="tns:GetBankInformationResponseBase" />
+  <xs:complexType name="GetBankInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetBankInformationResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="BankInfo" nillable="true" type="q5:BankInformation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBankInformationResponse_V01" nillable="true" type="tns:GetBankInformationResponse_V01" />
+  <xs:complexType name="GetBankInformationRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBankInformationRequestBase" nillable="true" type="tns:GetBankInformationRequestBase" />
+  <xs:complexType name="GetBankInformationRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetBankInformationRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Iban" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocalCode1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocalCode2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SwiftCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBankInformationRequest_V01" nillable="true" type="tns:GetBankInformationRequest_V01" />
+  <xs:complexType name="GetCountryInformationResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCountryInformationResponseBase" nillable="true" type="tns:GetCountryInformationResponseBase" />
+  <xs:complexType name="GetCountryInformationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetCountryInformationResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="CountryInfo" nillable="true" type="q8:CountryInformation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCountryInformationResponse_V01" nillable="true" type="tns:GetCountryInformationResponse_V01" />
+  <xs:complexType name="GetCountryInformationRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCountryInformationRequestBase" nillable="true" type="tns:GetCountryInformationRequestBase" />
+  <xs:complexType name="GetCountryInformationRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetCountryInformationRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCountryInformationRequest_V01" nillable="true" type="tns:GetCountryInformationRequest_V01" />
+  <xs:complexType name="SaveIFTEnrollmentResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceResponseValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SubmitResponseStatus" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveIFTEnrollmentResponseBase" nillable="true" type="tns:SaveIFTEnrollmentResponseBase" />
+  <xs:complexType name="SaveIFTEnrollmentResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveIFTEnrollmentResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q11="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="Errors" nillable="true" type="q11:ArrayOfOCPaymentsErrors" />
+          <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+          <xs:element xmlns:q12="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="Validations" nillable="true" type="q12:ArrayOfOCPaymentsValidations" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveIFTEnrollmentResponse_V01" nillable="true" type="tns:SaveIFTEnrollmentResponse_V01" />
+  <xs:complexType name="SaveIFTEnrollmentRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q13:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveIFTEnrollmentRequestBase" nillable="true" type="tns:SaveIFTEnrollmentRequestBase" />
+  <xs:complexType name="SaveIFTEnrollmentRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SaveIFTEnrollmentRequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q14="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="IFTEnrollmentInfo" nillable="true" type="q14:IFTEnrollment" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveIFTEnrollmentRequest_V01" nillable="true" type="tns:SaveIFTEnrollmentRequest_V01" />
+  <xs:complexType name="ValidateIntermediaryBankRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q15:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateIntermediaryBankRequestBase" nillable="true" type="tns:ValidateIntermediaryBankRequestBase" />
+  <xs:complexType name="ValidateIntermediaryBankRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ValidateIntermediaryBankRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BSwiftCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IBAN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ISO" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ISwiftCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocalCode1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocalCode2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateIntermediaryBankRequest_V01" nillable="true" type="tns:ValidateIntermediaryBankRequest_V01" />
+  <xs:complexType name="ValidateIntermediaryBankResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ValidateIntermediaryBankResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q16="http://herbalife.com/2010/01/21/HL.Distributor.ValueObjects" minOccurs="0" name="BankInfo" nillable="true" type="q16:BankInformation" />
+          <xs:element minOccurs="0" name="isValidBank" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateIntermediaryBankResponse_V01" nillable="true" type="tns:ValidateIntermediaryBankResponse_V01" />
+  <xs:complexType name="ValidateIntermediaryBankResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q17:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ValidateIntermediaryBankResponseBase" nillable="true" type="tns:ValidateIntermediaryBankResponseBase" />
+</xs:schema>

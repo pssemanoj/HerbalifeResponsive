@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ep="http://schemas.herbalife.com/EmailPublisher/V03/EmailPublisher" blockDefault="#all" elementFormDefault="qualified" targetNamespace="http://schemas.herbalife.com/EmailPublisher/V03/EmailPublisher" version="3.0.1" id="EmailPublisher" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TrackingId" type="xs:string" />
+  <xs:element name="FormData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##other">
+          <xs:annotation>
+            <xs:documentation>
+							Data to be merged into the email form. Note that all the data needs to be enclosed by a single element.
+						</xs:documentation>
+          </xs:annotation>
+        </xs:any>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="FormId" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FromAddress" type="xs:string" />
+        <xs:element name="ReplyToAddress" type="xs:string" />
+        <xs:element name="SenderAddress" type="xs:string" />
+        <xs:element name="ToAddress" type="xs:string" />
+        <xs:element name="Subject" type="xs:string" />
+        <xs:element name="Body">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" />
+            </xs:sequence>
+            <xs:attribute name="IsHtml" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="LanguageCode" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

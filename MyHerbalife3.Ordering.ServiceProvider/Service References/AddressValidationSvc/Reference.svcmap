@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="086ed0c8-3cd6-409a-bb02-151c8d3011df" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AddressValidationService.xsd" MetadataType="Schema" ID="2e742932-fa96-466f-bfef-b1908619efcf" SourceId="1" SourceUrl="http://uscosprodwcfv/AddressServices/V02/Service/Schemas/AddressValidationService.xsd" />
+    <MetadataFile FileName="AddressServices.xsd" MetadataType="Schema" ID="28c2dfc2-3db1-4e65-95fa-994f5750aabb" SourceId="1" SourceUrl="http://uscosprodwcfv/AddressServices/V02/Service/Schemas/AddressServices.xsd" />
+    <MetadataFile FileName="AddressValidation.wsdl" MetadataType="Wsdl" ID="2d976633-e45b-41f2-a0eb-9ec977bc95bc" SourceId="1" SourceUrl="http://uscosprodwcfv/AddressServices/V02/Service/AddressValidation.asmx?wsdl" />
+    <MetadataFile FileName="AddressValidationServiceBinding.wsdl" MetadataType="Wsdl" ID="409430e3-0e1c-41d1-9119-05aa9717fd47" SourceId="1" SourceUrl="http://uscosprodwcfv/AddressServices/V02/Service/Schemas/AddressValidationServiceBinding.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

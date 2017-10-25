@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+    <Controls>
+
+      <Label cssStyle="Address" Name="TBStreet1"   Grid.Row="1"  Grid.Column="1"  Text="{Binding Address.Line1}"  />
+      <Label cssStyle="Address" Name="TBStreet2"   Grid.Row="2"  Grid.Column="1"  Text="{Binding Address.Line2}"  />
+      <Label cssStyle="Address" Name="TBCounty"    Grid.Row="3"  Grid.Column="1"  Text="{Binding Address.CountyDistrict}"   />
+      <Label cssStyle="Address" Name="TBCity"      Grid.Row="4"  Grid.Column="1"  Text="{Binding Address.City}" />
+      <Label cssStyle="Address" Name="TBTerritory" Grid.Row="5"  Grid.Column="1"  Text="{Binding Address.StateProvinceTerritory}" />
+      <Label cssStyle="Address" Name="TBZipCode"   Grid.Row="6"  Grid.Column="1"  Text="{Binding Address.PostalCode}"   />
+      <Label cssStyle="Address" Name="TBPhone"     Grid.Row="7"  Grid.Column="1"  Text="{Binding Phone}" Required="true"  />
+
+    </Controls>
+  </Grid>
+</AddressWindow>

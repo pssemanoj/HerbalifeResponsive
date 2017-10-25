@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Please add products to cart before adding sku {0}.</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>The total amount exceeds your total amount limit of {0}.</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Quantity of SKUs should not exceed above {0}</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Can't purchase.</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Resale</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since by adding that into the cart, you exceeded your Purchasing Limit.</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your Purchasing Limit.</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since by adding that into the cart, you exceeded your earnings  limit.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your earnings limit.</value>
+  </data>
+  <data name="EligibleForPromotionalSKU" xml:space="preserve">
+    <value>You are eligible for a promotional item. Your monthly order excess {0}{1}.</value>
+  </data>
+  <data name="NoDistributorNotes" xml:space="preserve">
+    <value>You haven’t submitted Ethical Form. Please contact Distributor Services for more information</value>
+  </data>
+  <data name="NoOrderMonth" xml:space="preserve">
+    <value>Please select the order month.</value>
+  </data>
+  <data name="NoPromoSku" xml:space="preserve">
+    <value>Promotional sku for {0} {1} is not present in the Product Catalog. Cannot add it to the cart.</value>
+  </data>
+  <data name="PromoInCart" xml:space="preserve">
+    <value>SKU {0} has been added to your cart, if the order is not shipped to your address then you should remove it from cart.</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Personal Consumption</value>
+  </data>
+  <data name="PostErrorRemainingPurchasingLimitsDiscountedRetailSummary" xml:space="preserve">
+    <value>This order exceeded the purchassing limits permitted, amount remaining: {0:F2}. The following SKU(s) have not been added to your cart.</value>
+  </data>
+  <data name="PostErrorRemainingPurchasingLimitsEarningsSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostErrorRemainingPurchasingLimitsVolumeSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>This order exceeded the order volume permitted, Volume Points remaining: {0:F2}. The following SKU(s) have not been added to your cart.</value>
+  </data>
+  <data name="PromotionalSkuAdded" xml:space="preserve">
+    <value>Promotional SKU added to your cart</value>
+  </data>
+  <data name="PromotionalSKURemoved" xml:space="preserve">
+    <value>Promotional SKU{0} has been removed from your cart. Your monthly order doesn't excess {1}{2}.</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Can't purchase products {0}. You can only place orders for Promotional and Literature items.</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Express Delivery shipping method cannot be used when any of skus 0343, 0344, 2329 or 2328 are in your cart.</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>The item: {0} can not be shipped using current shipping method: Express Delivery.</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart. If you wish to add, please change the order subtype to A1 or B1.</value>
+  </data>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since it is not available for Incaricati.</value>
+  </data>
+  <data name="SKUCZLimitation" xml:space="preserve">
+    <value>CZ Extravaganza event ticket should not be added with other item types. Please clear your cart if you want to add this items.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Quantity should not exceed above {0} for SKU: {1}</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Item SKU:{0} has not been added to the cart since by adding that into the cart, you exceeded your volume points  limit.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+  </data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Item SKU:{0}.</value>
+  </data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+  </data>
+  <data name="NoModifyPromoSku" xml:space="preserve">
+    <value>You can not modify the promotional sku</value>
+  </data>
+  <data name="VolumePointExceedsOnOrderMonth" xml:space="preserve">
+    <value>This order exceeded the Purchasing Limit permitted for the volume month {0}, Volume points remaining : {1}. The following SKU(s) have not been added to your cart.</value>
+  </data>
+  <data name="DisgardCommonMessage" xml:space="preserve">
+    <value>DisgardCommonMessage</value>
+  </data>
+  <data name="Croatia_SpecialMessage" xml:space="preserve">
+    <value>If order is paid by credit card, order must be paid with the business credit card or with their personal card if the purchase is under 5000 HRK. If order is paid by Wire, the transfer needs to be done from the Business Account or payer could pay from their personal account if the purchase is under 5000 HRK.</value>
+  </data>
+  <data name="ExceededSKULimitPerDay" xml:space="preserve">
+    <value>SKU {0} exceeded the number of quantity available to order for the day. Please come back tomorrow.</value>
+  </data>
+  <data name="ViewMap" xml:space="preserve">
+    <value>View Map</value>
+  </data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>As part of our ordering program, new &amp; existing Members who have not yet achieved the Fully Qualified Supervisor status, may order up to {0} Personally Purchased Volume points (PPV) on their first order. You may accumulate PPV up to {1} Volume Points (including the initial order) within the next {2} days.
+This order exceeds the allowable PPV and needs to be reduced by {3} Volume Points. The following SKU(s) have not been added to the cart:</value>
+  </data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>As part of our ordering program, new &amp; existing Members who have not yet achieved the Fully Qualified Supervisor status, may order up to {0} Personally Purchased Volume points (PPV) on their first order. You may accumulate PPV up to {1} Volume Points (including the initial order) within the next  {2} days.
+This order exceeds the allowable PPV and needs to be reduced by {3} Volume Points.</value>
+  </data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+  </data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Your order of {0} exceeds the maximum quantity of {1} per member every {2} calendar days.</value>
+  </data>
+  <data name="StandaloneSku" xml:space="preserve">
+    <value>Sku {0} cannot be combined with other products in this order.</value>
+  </data>
+  <data name="StandaloneSkus" xml:space="preserve">
+    <value>The product you are trying to add cannot be combined with the items in your cart.</value>
+  </data>
+  <data name="CroatiaNewMemberError" xml:space="preserve">
+    <value>Dear Member – please note that you will be able to order on-line 24 hrs after your Application has been keyed in Herbalife system. Thank you for understanding.</value>
+  </data>
+  <data name="EventProductLimitedToNAsHasSpouseName" xml:space="preserve">
+    <value>{0} limited to {1} as has spouse name</value>
+  </data>
+  <data name="EventProductAlreadyBeenPurchased" xml:space="preserve">
+    <value>Sorry, you already purchase {0}.</value>
+  </data>
+  <data name="EventMaxPurchased" xml:space="preserve">
+    <value>Sorry, you have reached the maximum quentity</value>
+  </data>
+  <data name="EventProductLimitedToNAsNoSpouseName" xml:space="preserve">
+    <value>{0} limited to {1} as no spouse name</value>
+  </data>
+  <data name="CanOnlyPurchaseInEventMode" xml:space="preserve">
+    <value>{0} can only be purchase in Event Mode.</value>
+  </data>
+  <data name="YouAreNotEligibleForEvent" xml:space="preserve">
+    <value>You are not eligible to purchase event product.</value>
+  </data>
+  <data name="FOPConsignmentVolumePointExceeds" xml:space="preserve">
+    <value>All Members who have not yet achieved the status of Supervisor may order up to {0} points personally purchased volume (PPV) in their first order and accumulate up to a maximum of {1} within the next PPV {2} days . Please reduce the volume points.</value>
+  </data>
+  <data name="FOPPersonalConsumptionVolumePointExceeds" xml:space="preserve">
+    <value>All members who have not placed orders may purchase up to a maximum of {0} points personally purchased volume (PPV) within the first {1} days from the date of the first order . Please reduce the volume points.</value>
+  </data>
+  <data name="LimitsExceededWithinDays" xml:space="preserve">
+    <value>Member is subject to 7 Day Cooling Off Purchase Limit of  £{0} and has already reached the limit. Member can only purchase items after the Cooling Off Period has been completed. The Cooling Off Period will end on: {1}</value>
+  </data>
+  <data name="LimitsThisOrderExceededWithinDays" xml:space="preserve">
+    <value>This order will put the Member over 7 Day Cooling Off Purchase Limit.  It is recommended to remove {0} GBP or more from the order to continue or cancel the order. The Cooling Off Period will end on: {1}</value>
+  </data>
+  <data name="LimitsInfoWithinDays" xml:space="preserve">
+    <value>New Members are subject to a 7 day cooling off period.  During this time Members are limited to £{0}.  Your cooling off period began on {1} and ends on {2}</value>
+  </data>
+  <data name="EligibleForChinaPromotionalSKU" xml:space="preserve">
+    <value>You are eligible for a promotional item</value>
+    </data>
+  <data name="RemainingVolumePointExceeds" xml:space="preserve">
+    <value>Items in your cart exceed the limit of the volume point. Please remove items of {0} Volume Points to continue with this order</value>
+  </data>
+  <data name="CombinedFormulaOneQuantityExceed" xml:space="preserve">
+    <value>The combined quantities of Formula-1 {0} exceeds purchase limit {1}.  You have remaining of quantity {2} for current volume month.</value>
+  </data>
+  <data name="ExceededSKULimitPerMonth" xml:space="preserve">
+    <value>SKU {0} exceeded the number of quantity {1} per volume month. Remaining quantity limit is {2}.</value>
+  </data>
+  <data name="ShortExpirationDate" xml:space="preserve">
+    <value>SKU {0} will be expired on {1}. Click “OK” to proceed .</value>
+  </data>
+  <data name="PromoSkuInventory" xml:space="preserve">
+    <value>No Promo SKUS</value>
+    </data>
+
+  <data name="NoValidEvent" xml:space="preserve">
+    <value>Sorry, there is no available event ticket at present .</value>
+  </data>
+  <data name="YouAreEligibleForEventPeriod" xml:space="preserve">
+    <value>You are eligible for ETO, please go to place event ticket orders during official ETO selling period.</value>
+  </data>
+  <data name="InvalidEventPeriod" xml:space="preserve">
+    <value>Sorry,you are not eligible for ETO.</value>
+  </data>
+  <data name="SKUOutOfStock" xml:space="preserve">
+    <value>You are eligible for ETO, but ETO sku is out of stock now.</value>
+  </data>
+  <data name="ErrorMessageToPCWhenhittheFOPLimits" xml:space="preserve">
+    <value>Your order exceeds: {0:F2}, please adjust your shopping cart and then submit the order.</value>
+  </data>
+  <data name="SRPromotionPhase2" xml:space="preserve">
+    <value>you are eligible for SR promotion phase2, the promo gift has been added to your cart.</value>
+  </data>
+</root>

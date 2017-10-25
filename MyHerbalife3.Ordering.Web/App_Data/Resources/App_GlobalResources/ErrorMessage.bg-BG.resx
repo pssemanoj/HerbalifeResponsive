@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Моля, попълнете пощенския код.</value>
+    <comment>_G2137</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Моля, попълнете името на получателя (на вниманието на).</value>
+    <comment>_G2136</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Моля, запишете адреса за доставка преди да можете да довършите тази поръчка с опция за получаване от Центъра за продажби.</value>
+    <comment>_G2150</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Моля, попълнете името на града.</value>
+    <comment>_G2138</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Моля, попълнете цялата информация, задължителна за доставката.</value>
+    <comment>_G2133</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Моля, попълнете общината.</value>
+    <comment>_G2144</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Моля, попълнете разширението в правилния формат.</value>
+    <comment>_G2135</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Моля, попълнете пощенския код в правилния формат.</value>
+    <comment>_G2134</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Моля, попълнете разширението.</value>
+    <comment>_G2139</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Моля, попълнете телефонния номер в правилния формат.</value>
+    <comment>_G2147</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Моля, имайте предвид, че можете да съхраните данни на максимум {0} карти. За да добавите нова карта, моля, изтрийте данните на една от вече въведените карти.</value>
+    <comment>_G2148</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Моля, попълнете полето с адреса.</value>
+    <comment>_G2145</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Моля, попълнете пощенския код.</value>
+    <comment>_G2146</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Моля, попълнете телефонния номер.</value>
+    <comment>_G2143</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Моля, попълнете фамилното име.</value>
+    <comment>_G2141</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Моля, попълнете собственото име.</value>
+    <comment>_G2140</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Моля, помнете:&lt;br/&gt;Този сайт може да бъде най-добре разглеждан с Internet Explorer или Firefox.</value>
+    <comment>_G2149</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Моля, попълнете задължителните полета.</value>
+    <comment>_G2142</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Необходимо е да въведете номер на мобилен телефон (за СМС, текстови съобщения).</value>
+    <comment>_G2167</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Не можете да направите поръчка. Само Членове от Кореа могат да правят поръчки от корейскиа уебсайт.</value>
+    <comment>_G2168</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>За съжаление, не можете да добавите този продукт (-и) към кошницата, тъй като ще надвишите Вашия лимит.</value>
+    <comment>_G2169</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Към началната страница</value>
+    <comment>_G2164</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Доставка до адрес с този пощенски код не се предлага.</value>
+    <comment>_G2165</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Продукт със SKU {0} не е наличен.</value>
+    <comment>_G2166</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Няма община с това име.</value>
+    <comment>_G2173</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Системна грешка.</value>
+    <comment>_G2170</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Месецът на поръчката беше променен!)</value>
+    <comment>_G2171</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Добавеният продукт със SKU {0} ще бъде наличен при следваща доставка.</value>
+    <comment>_G2172</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Премини към плащането</value>
+    <comment>_G2163</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Моля, изберете адрес на офис, където ще получите своята поръчка.</value>
+    <comment>_G2154</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Моля, изберете адрес на офис, където желаете да получите своята поръчка.</value>
+    <comment>_G2155</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Моля, въведете името на лицето, което ще получи поръчката.</value>
+    <comment>_G2156</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Моля, изберете местоположение (адрес).</value>
+    <comment>_G2151</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Моля, изберете часови диапазон за получаване на поръчката:</value>
+    <comment>_G2152</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Моля, изберете вид поръчка.</value>
+    <comment>_G2153</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Моля, изберете ДА/НЕ.</value>
+    <comment>_G2160</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Основният адрес не може да бъде изтрит.</value>
+    <comment>_G2161</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Избраният основен адрес за получаване на поръчка не може да бъде изтрит.</value>
+    <comment>_G2162</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Моля, изберете (въведете) телефона.</value>
+    <comment>_G2157</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Моля, изберете времеви диапазон кога желаете да получите поръчката от Центъра за продажби.</value>
+    <comment>_G2158</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Моля, изберете адрес за доставка.</value>
+    <comment>_G2159</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} years of AMSF is due and must be paid before placing a "Resale" type order. Please change your order type to "Personal" to pay for your AMSF.</value>
+    <comment>_G2104</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>В момента продукт {0} е с нулева складова наличност; затова количеството във Вашата кошница е изписано с 0.</value>
+    <comment>_G2105</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Невалиден пощенски код.</value>
+    <comment>_G2103</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>За продукт с код SKU {0} поръчаното количество не може да надвишава {1} бр.</value>
+    <comment>_G2101</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>За съжаление Вие нямате регистрирана кредитна карта в нашата система. Моля, свържете се с Отдела за контакти, тел.: 00800 118 44 33 (безплатен за България).</value>
+    <comment>_G2102</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Поръчка онлайн не може да бъде осъществена.</value>
+    <comment>_G2109</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Подаването на поръчки онлайн не може да бъде осъществено.</value>
+    <comment>_G2110</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Това име вече е регистрирано; моля, използвайте друго име.</value>
+    <comment>_G2108</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Ограничението за списание "Днес" е … бр.</value>
+    <comment>_G2106</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Максималният брой списания, който може да бъде сложен в кошницата, е {0} бр.</value>
+    <comment>_G2107</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>От продукт {0} за 1 или повече бройки е възможно да Ви бъдат изпратени при получаване на доставка.</value>
+    <comment>_G2100</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Не можете да добавите продукти, чиято доставка се очаква в Центъра за продажби, към поръчка, съдържаща Годишна такса за Членство.</value>
+    <comment>_G2093</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Проверката на картата не беше успешно извършена. Моля, проверете данните от картата.</value>
+    <comment>_G2094</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Тъй като в поръчката Ви, съдържаща Годишна такса за Членство, няма продукти, то всички артикули, които не са продукти ще бъдат премахнати.</value>
+    <comment>_G2092</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU номерата на Годишните такси за Членство не могат да бъдат изтрити от количката.</value>
+    <comment>_G2090</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Сигурен ли сте, че желаете да анулирате тази поръчка? Ако натиснете "ОК", Вашата кошница ще бъде изпразнена.</value>
+    <comment>_G2091</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Продажбата на билети за събития не е позволена на този сайт.</value>
+    <comment>_G2098</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>От продукт {0} има следната наличност: {1} бр. Моля, променете въведеното количество, за да можете да добавите този продукт към Вашата кошница.</value>
+    <comment>_G2099</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Продажбата на билети за събития е ограничена до {0} бр. за една поръчка.</value>
+    <comment>_G2097</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Грешка във формата на датата; моля, въведете правилната дата.</value>
+    <comment>_G2095</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Въведен е дублиран SKU номер. Моля, въведете кода отново.</value>
+    <comment>_G2096</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Само артикули от вид "продукти" могат да бъдат добавени към поръчка, съдържаща Годишна такса за членство.</value>
+    <comment>_G2111</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Моля, въведете имейл адрес.</value>
+    <comment>_G2125</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Моля, въведете кода за сигурност на картата (CVV).</value>
+    <comment>_G2127</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Моля, въведете дарителска сума, различна от нула (0).</value>
+    <comment>_G2124</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Моля, въведете валидно име.</value>
+    <comment>_G2122</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Моля, въведете валидно име.</value>
+    <comment>_G2123</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Моля, въведете валидно фамилно име.</value>
+    <comment>_G2131</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Моля, въведете валидно бащино име.</value>
+    <comment>_G2132</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Моля, въведете валидно собствено име.</value>
+    <comment>_G2130</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Моля, въведете количеството годишни такси за обслужване, които желаете да закупите.</value>
+    <comment>_G2128</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Моля, въведете валиден имейл адрес.</value>
+    <comment>_G2129</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Моля, въведете валиден град.</value>
+    <comment>_G2121</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Моля, проверете Вашия ID номер и ПИН код и пробвайте още веднъж. Ако проблемите продължават, обадете се за Център за Дистрибуторските Услуги - 00 800 118 44 33</value>
+    <comment>_G2115</comment>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU номерата на Годишните такси за Членство не могат да бъдат изтрити от количката.</value>
+    <comment>_G2089</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Моля, проверете данните на картата.</value>
+    <comment>_G2114</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Крайната сума за плащане не съвпада с крайната сума от поръчката.</value>
+    <comment>_G2112</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Моля, въведете сума по-голяма от 0.</value>
+    <comment>_G2113</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Моля, въведете количество за продукта SKU {0}.</value>
+    <comment>_G2119</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Моля, въведете уникален адрес, откъдето ще получите своята поръчка.</value>
+    <comment>_G2120</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Моля, въведете номер.</value>
+    <comment>_G2118</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Моля, завършете "покупката" на Вашата годишна такса преди да добавите други продукти към кошницата.</value>
+    <comment>_G2116</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Моля, завършете "покупката" на Вашата годишна такса преди да закупите билети за събитие.</value>
+    <comment>_G2117</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Изтича крайният срок за плащане на Вашата годишна членска такса. Таксата беше автоматично добавена към Вашата кошница.</value>
+    <comment>_G2210</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Вашата годишна такса за обслужване на членове следва да бъде платена до {0}</value>
+    <comment>_G2209</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Неотдавна Вие подадохте идентична поръчка – на дата: {0} г. Ако това е дублирана поръчка, натиснете "ОТМЯНА НА ПОРЪЧКАТА". За да продължите нататък, моля, подайте поръчката.</value>
+    <comment>_G2208</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Вашата кредитна карта е с изтекла давност. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33.</value>
+    <comment>_G2213</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Вашата кредитна карта е с изтекъл срок. Моля, натиснете "РЕДАКЦИЯ" и въведете новия краен срок.</value>
+    <comment>_G2212</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Изтича крайният срок за плащане на Вашите годишни такси за обслужване на членове. Таксите бяха добавени към Вашата кошница.</value>
+    <comment>_G2211</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Трябва да изберете вариант за доставка или получаване на поръчката в Центъра за продажби, за да можете да продължите нататък.</value>
+    <comment>_G2207</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Избрахте да разгледате продукти без да подадете поръчка. Няма да можете да добавите продукт към кошницата.</value>
+    <comment>_G2203</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Вие избрахте опция за получаване на поръчката от куриер. Ще има ограничение за продуктите, от които можете да направите поръчка.</value>
+    <comment>_G2202</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Избрахте {0} като месец за поръчката. Сигурен ли сте?</value>
+    <comment>_G2201</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Необходимо е да изтриете една от Вашите кредитни карти, за да промените продуктите във Вашата кошница.</value>
+    <comment>_G2206</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>You may only prepay one year of AMSF.</value>
+    <comment>_G2205</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Успешно добавихте дарение за семейната фондация Casa Herbalife към Вашата кошница.</value>
+    <comment>_G2204</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Моля, изберете вид поръчка (от мини-кошницата).</value>
+    <comment>_G2223</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>No backorderd should be allowed for deliveries to New Caledonia and French Polynesia.</value>
+    <comment>_G2222</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Моля, изберете начин на доставка.</value>
+    <comment>_G2221</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Моля, въведете информация за плащането.</value>
+    <comment>_G2126</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Моля, потвърдете адреса.</value>
+    <comment>_G2225</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Не можете да продължите към плащането на поръчката, тъй като сте надвишили лимита за покупки (поръчки).</value>
+    <comment>_G2224</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Кодът SKU {0} е невалиден (неточен).</value>
+    <comment>_G2220</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Вашата предишна поръчка вече беше подадена преди промените, направени във Вашата кошница. Поръчка е вписана под № {0}. Можете да проверите статута на тази поръчка, като се обадите на Центъра за продажби – тел.: +359 2 980 22 20, от понеделник до петък (10:00 – 18:00 ч.) и събота (10:00 – 14:00 ч.). Ако имате въпроси или нужда от помощ, звъннете на същия телефон или натиснете ТУК. (Моля, имайте предвид, че е необходим до 1 час техническо време, преди направената поръчка да бъде актуализирана в цялата система.) &lt;br&gt;Ако желаете да пристъпите към изготвянето на нова поръчка, моля, наново въведете продуктите във Вашата кошница).</value>
+    <comment>_G2216</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Вашият ID № не е допуснат в системата. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33.</value>
+    <comment>_G2215</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Вашият ID № не е допуснат в системата. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33.</value>
+    <comment>_G2214</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Моля, въведете община.</value>
+    <comment>_G2219</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Вашите данни за доставка вече не са актуални. Съдържанието във Вашата кошница ще бъде нулирано.</value>
+    <comment>_G2218</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Необходимата такса за годишно обслужване на членове беше добавена във Вашата кошница.</value>
+    <comment>_G2217</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Плащането с тази карта беше отхвърлено.</value>
+    <comment>_G2185</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Настоящата поръчка надвишава Вашия лимит за покупка. Вие имате останали {0} VP. Моля, променете своята поръчка, за да продължите.</value>
+    <comment>_G2184</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Този адрес е вече регистриран в нашата система данни.</value>
+    <comment>_G2183</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Поради технически причини Вашата поръчка не беше завършена. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33. Когато говорите с оператора, моля, уточнете: код на грешката: 05.</value>
+    <comment>_G2188</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Поради технически причини Вашата поръчка не беше завършена. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33). Когато говорите с оператора, моля, уточнете: код на грешката: 01.</value>
+    <comment>_G2187</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Списание "Днес" бе добавено към Вашата кошница.</value>
+    <comment>_G2186</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Няма избрани (маркирани) продукти, за да изчислите обем точки.</value>
+    <comment>_G2182</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Въведеният пощенски код е неверен.</value>
+    <comment>_G2178</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Плащането не може да бъде осъществено. Моля, свържете се с Отдела за контакти на тел.: 00800 118 44 33.</value>
+    <comment>_G2177</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Плащането не може да бъде осъществено. Моля, проверете данните и наличността в картата. Ако проблемът не бъде отстранен, моля, обадете се на Отдела за контакти на тел.: 00800 118 44 33 (безплатен за България).</value>
+    <comment>_G2176</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Няма избрани (маркирани) продукти, които да добавите към поръчката.</value>
+    <comment>_G2181</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>В момента продукт {0} няма достатъчно складова наличност; количеството в склада е {1} бр.</value>
+    <comment>_G2180</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Няма продукти, които да подлежат на покупка в тази поръчка.</value>
+    <comment>_G2179</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Вие имате продукт/-и във Вашата кошница. Желаете ли да изпразните кошницата преди да продължите към покупката на билети за събитие?</value>
+    <comment>_G2200</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Не можете да добавите този продукт към Вашата кошница.</value>
+    <comment>_G2195</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Не е позволено да добавяте една и съща карта повече от един път.</value>
+    <comment>_G2194</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Вие имате билети за събитие във Вашата кошница. Желаете ли да изпразните кошницата?</value>
+    <comment>_G2199</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Вие променихте месеца на поръчката за тази поръчка да бъде месец {0}. Желаете ли да продължите с този избор?</value>
+    <comment>_G2198</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Във Вашата количка има продукти, за които очакваме доставка, които ще бъдат изтрити, ако изберете варианта "Да получа поръчката в Центъра за продажби" като вариант за доставка. Желаете ли да продължите? ("ДА" или "НЕ")</value>
+    <comment>_G2197</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>За съжаление, не можем да превалутираме тази валута. Моля, свържете се с Отдела за контакти на телефон телефон: 00800 118 44 33 (безплатен за България).</value>
+    <comment>_G2190</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Вашата поръчка не беше обработена. Моля, проверете въведения адрес и опитайте отново. Ако проблемът продължи, моля, свържете се с Отдела за контакти на телефон 00800 118 44 33.</value>
+    <comment>_G2189</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Не можете да продължите към страница {0} без да имате продукти във Вашата кошница.</value>
+    <comment>_G2196</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Вие не можете повече да използвате тази карта – надвишен е допустимият брой откази.</value>
+    <comment>_G2193</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Вие искате да изтриете въведената основна карта. Моля, изберете друга карта за Ваша основна карта за плащане, преди да пристъпите към изтриването на тази карта.</value>
+    <comment>_G2192</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Вие вече имате билети за събитие във Вашата кошница. Желаете ли да изпразните кошницата?</value>
+    <comment>_G2191</comment>
+  </data>
+</root>

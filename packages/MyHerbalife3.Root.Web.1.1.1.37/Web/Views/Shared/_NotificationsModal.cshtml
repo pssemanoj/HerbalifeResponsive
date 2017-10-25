@@ -1,0 +1,31 @@
+﻿@*Modal from DB (notifications)*@
+@using System.Web.Mvc.Html
+@using MyHerbalife3.Core.ContentProxyProvider.Helpers
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+
+<div id="modalNotif" 
+     wire-mode="own, 1, 0, 2" 
+     wire-model="dismissableUiModel" 
+     class="hrblModalSkinOnly" 
+     data-role="window" 
+     data-modal="true" 
+     data-actions="" 
+     data-draggable="false" 
+     data-resizable="false" 
+     data-bind="visible: isVisible, centerWindow: true, getWidget: actualWidget" 
+     style="display:none" 
+     data-title="false"
+     data-centerWindow="true"
+     data-max-width="780">
+        <a class="close-icon" data-bind="visible: hasClose, click: closeWindow" style="display:none"><i class="icon-delete-fl-5"></i></a>
+        <img data-bind="attr: { src: imgSrc }, visible: imgSrc" src="" />
+        <h4 data-bind="text: title, visible: title"></h4>
+        <div data-bind="html: body">
+        </div>
+        <div class="bottomActBtns textLeft">
+            <a data-bind="click: onCallToAction, text: callToAction.text, attr: { href: callToAction.value }, visible: callToAction" class="btnForward right" href="#hrbl"></a>     
+            <a data-bind="click: onDismissForLater, text: showMeLater.text, visible: showMeLater" class="btn right" href="#hrbl"></a>
+            <a data-bind="click: onDismissIndefinite, text: doNotShowAgain.text, visible: doNotShowAgain" class="btn not-show-again-button" href="#hrbl"></a>        
+        </div>
+</div>

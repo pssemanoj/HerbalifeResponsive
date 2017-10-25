@@ -1,0 +1,1275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DECA9051-4215-473E-8A99-2227FA819528}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.ServiceProvider</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.ServiceProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <WebGreaseLibPath>$(SolutionDir)packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Caching, Version=1.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Caching.1.1.14.0\lib\HL.Blocks.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.CircuitBreaker, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.CircuitBreaker.1.1.1.0\lib\HL.Blocks.CircuitBreaker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Localization, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Localization.1.1.1.0\lib\HL.Blocks.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Api, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Api.1.1.1.0\lib\HL.Common.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Cryptography, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Cryptography.1.1.1.0\lib\HL.Common.Cryptography.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Utilities, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Utilities.1.1.1.0\lib\HL.Common.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife.Navigation.ApiAdapter, Version=1.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Navigation.ApiAdapter.1.0.11.0\lib\MyHerbalife.Navigation.ApiAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AdminProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AdminProvider.1.2.3.0\lib\MyHerbalife3.Core.AdminProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AuthenticationProvider, Version=1.2.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AuthenticationProvider.1.2.21.0\lib\MyHerbalife3.Core.AuthenticationProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.ContentProxyProvider, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.ContentProxyProvider.1.2.11.0\lib\MyHerbalife3.Core.ContentProxyProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.DistributorProvider, Version=1.2.36.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.DistributorProvider.1.2.36.0\lib\MyHerbalife3.Core.DistributorProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.ExperienceProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.ExperienceProvider.1.2.3.0\lib\MyHerbalife3.Core.ExperienceProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Infrastructure, Version=1.2.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Infrastructure.1.2.30.0\lib\MyHerbalife3.Shared.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Interfaces, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Interfaces.1.2.1.0\lib\MyHerbalife3.Shared.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.UI, Version=1.2.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.UI.1.2.38.0\lib\MyHerbalife3.Shared.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.605.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.1.1.605\lib\net46\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Core.1.4.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Newtonsoft, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Newtonsoft.1.4.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatalogSvcPartialClass.cs" />
+    <Compile Include="DistributorCmrSvcPartialClass.cs" />
+    <Compile Include="OrderSvcPartialClass.cs" />
+    <Compile Include="Service References\AddressValidationSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CatalogSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CommunicationSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CRMContactSVC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DistributorCrmSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DistributorSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EmailPublisherSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EventRestSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EventSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MobileAnalyticsSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NotificationAlertSVC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NotificationSVC\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OrderChinaSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PaymentGatewayBridgeSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ShippingChinaSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ShippingMexicoSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ShippingSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ShoppingCartSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SubmitOrderBTSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceClientProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CustomerOrderSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OrderSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingSvcPartialClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cultures.json" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AddressValidationSvc\AddressServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AddressValidationSvc\AddressValidation.wsdl" />
+    <None Include="Service References\AddressValidationSvc\AddressValidationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AddressValidationSvc\AddressValidationServiceBinding.wsdl" />
+    <None Include="Service References\CatalogSvc\CatalogBL.wsdl" />
+    <None Include="Service References\CatalogSvc\Service.wsdl" />
+    <None Include="Service References\CatalogSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service1.wsdl" />
+    <None Include="Service References\CatalogSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogSvc\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\CommunicationBL.wsdl" />
+    <None Include="Service References\CommunicationSvc\Service.wsdl" />
+    <None Include="Service References\CommunicationSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CommunicationSvc\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\CustomerOrderBL1.wsdl" />
+    <None Include="Service References\CustomerOrderSvc\Service1.wsdl" />
+    <None Include="Service References\CustomerOrderSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service141.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service1410.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service1411.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service1412.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service1413.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service1414.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service142.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service143.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service144.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service145.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service146.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service147.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service148.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerOrderSvc\Service149.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\DistributorCRMServiceBL.wsdl" />
+    <None Include="Service References\DistributorCrmSvc\Service.wsdl" />
+    <None Include="Service References\DistributorCrmSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service1.wsdl" />
+    <None Include="Service References\DistributorCrmSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service23.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service24.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service25.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service26.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service27.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service28.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service29.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service30.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service35.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service36.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service37.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service38.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service39.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service40.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service44.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service45.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service46.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service47.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service48.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service49.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service50.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service55.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service56.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service57.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service58.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service59.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service60.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorCrmSvc\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\DistributorBL.wsdl" />
+    <None Include="Service References\DistributorSvc\Service.wsdl" />
+    <None Include="Service References\DistributorSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DistributorSvc\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmailPublisherSvc\EmailPublisher.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmailPublisherSvc\Inbox.wsdl" />
+    <None Include="Service References\EmailPublisherSvc\InboxService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmailPublisherSvc\InboxServiceBinding.wsdl" />
+    <None Include="Service References\EventRestSvc\EventRest.wsdl" />
+    <None Include="Service References\EventRestSvc\EventRest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EventRestSvc\EventRest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EventRestSvc\EventRest2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EventRestSvc\EventRest3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EventRestSvc\EventRest4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EventRestSvc\EventRestBL.wsdl" />
+    <None Include="Service References\MobileAnalyticsSvc\MobileAnalytics1.wsdl" />
+    <None Include="Service References\MobileAnalyticsSvc\Service1.wsdl" />
+    <None Include="Service References\MobileAnalyticsSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileAnalyticsSvc\Service51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileAnalyticsSvc\Service52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileAnalyticsSvc\Service53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MobileAnalyticsSvc\Service54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OrderSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OrderSvc\Service21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OrderSvc\Service22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OrderSvc\Service23.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OrderSvc\Service24.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentGatewayBridgeSvc\PaymentGatewayBridgeBL.wsdl" />
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service.wsdl" />
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service1.wsdl" />
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping.wsdl" />
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingChinaSvc\Shipping.wsdl" />
+    <None Include="Service References\ShippingMexicoSvc\Shipping1.wsdl" />
+    <None Include="Service References\ShippingMexicoSvc\Shipping15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping151.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1510.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1511.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1512.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1513.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1514.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping152.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping153.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping154.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping155.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping156.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping157.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping158.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShippingMexicoSvc\Shipping159.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service.wsdl" />
+    <None Include="Service References\ShoppingCartSvc\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service1.wsdl" />
+    <None Include="Service References\ShoppingCartSvc\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service20.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service22.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service23.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service24.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service25.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service26.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service27.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ShoppingCartSvc\ShoppingCartBL.wsdl" />
+    <None Include="Service References\SubmitOrderBTSvc\Address.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\BizTalkServiceInstance.wsdl" />
+    <None Include="Service References\SubmitOrderBTSvc\configuration.svcinfo" />
+    <None Include="Service References\SubmitOrderBTSvc\Handling.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Message.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Order.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Payment.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Pricing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\ResponsePayment.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\Shipment.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\SubmitOrder.disco" />
+    <None Include="Service References\SubmitOrderBTSvc\SubmitOrder.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\SubmitOrder1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\SubmitOrder2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SubmitOrderBTSvc\SubmitOrder3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AddressValidationSvc\" />
+    <WCFMetadataStorage Include="Service References\CatalogSvc\" />
+    <WCFMetadataStorage Include="Service References\CommunicationSvc\" />
+    <WCFMetadataStorage Include="Service References\CRMContactSVC\" />
+    <WCFMetadataStorage Include="Service References\CustomerOrderSvc\" />
+    <WCFMetadataStorage Include="Service References\DistributorCrmSvc\" />
+    <WCFMetadataStorage Include="Service References\DistributorSvc\" />
+    <WCFMetadataStorage Include="Service References\EmailPublisherSvc\" />
+    <WCFMetadataStorage Include="Service References\EventRestSvc\" />
+    <WCFMetadataStorage Include="Service References\EventSvc\" />
+    <WCFMetadataStorage Include="Service References\MobileAnalyticsSvc\" />
+    <WCFMetadataStorage Include="Service References\NotificationAlertSVC\" />
+    <WCFMetadataStorage Include="Service References\NotificationSVC\" />
+    <WCFMetadataStorage Include="Service References\OrderChinaSvc\" />
+    <WCFMetadataStorage Include="Service References\OrderSvc\" />
+    <WCFMetadataStorage Include="Service References\PaymentGatewayBridgeSvc\" />
+    <WCFMetadataStorage Include="Service References\ShippingChinaSvc\" />
+    <WCFMetadataStorage Include="Service References\ShippingMexicoSvc\" />
+    <WCFMetadataStorage Include="Service References\ShippingSvc\" />
+    <WCFMetadataStorage Include="Service References\ShoppingCartSvc\" />
+    <WCFMetadataStorage Include="Service References\SubmitOrderBTSvc\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrderSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerOrderSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingMexicoSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorCrmSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CatalogSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrderChinaSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AddressValidationSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingChinaSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CommunicationSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EmailPublisherSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EventSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileAnalyticsSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentGatewayBridgeSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShoppingCartSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubmitOrderBTSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShoppingCartSvc\configuration.svcinfo" />
+    <None Include="Service References\ShoppingCartSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CatalogSvc\configuration.svcinfo" />
+    <None Include="Service References\CatalogSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AddressValidationSvc\configuration.svcinfo" />
+    <None Include="Service References\AddressValidationSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CommunicationSvc\configuration.svcinfo" />
+    <None Include="Service References\CommunicationSvc\configuration91.svcinfo" />
+    <None Include="Service References\CommunicationSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerOrderSvc\configuration.svcinfo" />
+    <None Include="Service References\CustomerOrderSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorCrmSvc\configuration.svcinfo" />
+    <None Include="Service References\DistributorCrmSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorCrmSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorSvc\configuration.svcinfo" />
+    <None Include="Service References\DistributorSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DistributorSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EmailPublisherSvc\configuration.svcinfo" />
+    <None Include="Service References\EmailPublisherSvc\configuration91.svcinfo" />
+    <None Include="Service References\EmailPublisherSvc\Inbox.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MobileAnalyticsSvc\configuration.svcinfo" />
+    <None Include="Service References\MobileAnalyticsSvc\configuration91.svcinfo" />
+    <None Include="Service References\MobileAnalyticsSvc\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\OrderSvc\configuration.svcinfo" />
+    <None Include="Service References\OrderSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PaymentGatewayBridgeSvc\configuration.svcinfo" />
+    <None Include="Service References\PaymentGatewayBridgeSvc\configuration91.svcinfo" />
+    <None Include="Service References\PaymentGatewayBridgeSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingChinaSvc\ChinaShipping.disco" />
+    <None Include="Service References\ShippingChinaSvc\configuration.svcinfo" />
+    <None Include="Service References\ShippingChinaSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingMexicoSvc\configuration.svcinfo" />
+    <None Include="Service References\ShippingMexicoSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingMexicoSvc\Shipping1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShippingSvc\configuration.svcinfo" />
+    <None Include="Service References\ShippingSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ShoppingCartSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SubmitOrderBTSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerOrderSvc\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EventRestSvc\EventRest.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EventRestSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EventRestSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\EventRestSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CatalogSvc\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NotificationSVC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NotificationAlertSVC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CRMContactSVC\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,324 @@
+﻿@using HL.Common.Configuration
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+@model MyHerbalife3.Ordering.ViewModel.Model.InvoiceDisplayModel
+@{
+    this.SetVerticalLayout("Ordering");
+    var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+    var countryCode = culture.Substring(3, 2);
+}
+
+<script type="text/javascript">
+    var display_InvoiceId = @(Html.Raw(Json.Encode(Model.InvoiceId)));
+    var display_Invoice_Action =@(Html.Raw(Json.Encode(Model.Action)));
+</script>
+
+<script type="text/x-kendo-template" id="productDescTpl">
+    <div>
+        <span data-bind="html: ProductName"></span>
+    </div>
+</script>
+
+<link type="text/css" href="/Ordering/CSS/invoices.css" rel="stylesheet">
+<link rel="stylesheet" href="/Ordering/CSS/ordering-responsive.css" type="text/css" />
+<div id="dvInvDisplay" class="container">
+    <div class="clear10"></div>
+    <div class="wrapper ordering">
+        <a href="/Ordering/Invoice"><i class="icon icon-arrow-circle-ln-27"></i>@this.Localize("returnToInvoice")</a>
+
+        <div class="row">
+            <h2>@this.Localize("viewInvoice") </h2>
+            <span>@this.Localize("viewInvoiceDescription")  <a target="_blank" href="@this.LocalizeGlobal("MemberInvoiceError", "userGuideLink")">@this.Localize("userGuide")</a></span>
+        </div>
+        <div class="row">
+            <div class="display-invoice col-sm-9" id="dvinvProduct">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 no-padding marginTop10">
+                        <img src="/Ordering/Images/independiente-hrbl.png" />
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 align-right receipt-title no-padding">
+                        <h1>@(this.Localize("invoice"))</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 no-padding" style="margin-bottom:10px;">
+                        <div>
+                            <span data-bind="text: invoice.MemberFirstName"></span>
+                            <span data-bind="text: invoice.MemberLastName"></span>
+                        </div>
+                        <div data-bind="visible:hideControl">
+                            <div data-bind="text: invoice.MemberAddress.Address1 "></div>
+                            <div data-bind="text: invoice.MemberAddress.Address2 "></div>
+                            <div data-bind="text: invoice.MemberAddress.City "></div>
+                            <span data-bind="text: invoice.MemberAddress.State "></span>
+                            <span data-bind="text: invoice.MemberAddress.PostalCode "></span>
+                        </div>
+                        <div data-bind="text: invoice.MemberEmailAddress "></div>
+                        <div data-bind="text: invoice.MemberPhoneNumber "></div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding">@(this.Localize("invoiceNumber")):</div>
+                            <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right">
+                                <div data-bind="text: invoice.DisplayMemberInvoiceNumber"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding">@(this.Localize("invoiceDate")):</div>
+                            <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right">
+                                <div data-bind="text: invoiceDate" style="overflow: hidden;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding" data-bind="invisible:Hide">@(this.Localize("status")):</div>
+                            <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right" data-bind="invisible:Hide">
+                                <div data-bind="text: invoice.DisplayInvoiceStatus"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding" data-bind="visible:Hide">@(this.Localize("ReceiptChannel")):</div>
+                            <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right" data-bind="visible:Hide">
+                                <div data-bind="text: invoice.DisplayReceiptChannel" style="word-break: break-all;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding" data-bind="visible:Hide">@(this.Localize("paymentType")):</div>
+                            <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right" data-bind="visible:Hide">
+                                <div data-bind="text: invoice.DisplayPaymentType"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div data-bind="visible: invoice.IsDisplayVat">
+                                <div class="col-md-5 col-sm-5 col-xs-6 left bold no-padding">@(this.Localize("vat")):</div>
+                                <div class="col-md-7 col-sm-7 col-xs-6 no-padding-right align-right">
+                                    <div data-bind="text: invoice.Vat"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="wrapper" />
+                <div class="row">
+                    <div class="col-sm-12 no-padding">
+                        <h2>@(this.Localize("shipTo")):</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div>
+                            <span data-bind="text: invoice.FirstName" style="text-transform:capitalize"></span>
+                            <span data-bind="text: invoice.LastName"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: invoice.Address.Address1"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: invoice.Address.Address2"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: invoice.Address.City"></span>
+                            <span data-bind="text: invoice.Address.State"></span>
+                            <span data-bind="text: invoice.Address.PostalCode"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: invoice.Email"></span>
+                        </div>
+                        <div>
+                            <span data-bind="text: invoice.Phone"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12 no-padding" data-bind="invisible:Hide">
+                        <label class="bold">@(this.Localize("notes")):</label>
+                        <span data-bind="text: invoice.Notes"></span>
+                    </div>
+                </div>
+                <hr class="wrapper" />
+                <div class="row" data-bind="visible:hideControl">
+                    <div id="dgProducts"
+                         data-role="grid"
+                         data-scrollable="false"
+                         style="margin-bottom:10px"
+                         data-bind="source: invoice.InvoiceLines , events:{ dataBinding: onInvoiceLinesDataBinding }"
+                         data-columns='[
+                                    {"field": "Sku",
+                                    "title": "@(this.Localize("sku"))"
+                                    },
+                                    {"field": "ProductName",
+                                    "title": "@(this.Localize("productName"))",
+                                    "template": invDisplay.productDescTemplate()
+                                    },
+                                    {
+                                    "field": "Quantity",
+                                    "title": "@(this.Localize("qty"))",
+                                    "attributes": {
+                                        "style": "text-align: center;"
+                                        }
+                                    },
+                                    {
+                                    "field": "DisplayRetailPrice",
+                                    "title": "@(this.Localize("retailPrice"))",
+                                    "headerAttributes": {"style": "text-align: right;"},
+                                    "attributes": {
+                                        "style": "text-align: right;"
+                                        }
+                                    },
+                                    {"field": "EarnBase",
+                                    "title": "@(this.Localize("earnBase"))",
+                                    "attributes": {"style": "text-align: right;"},
+                                    "headerAttributes": {"style": "text-align: right;"}
+                                    },
+                                    {
+                                    "field": "DisplayTotalRetailPrice",
+                                    "title": "@(this.Localize("totalPrice"))",
+                                    "headerAttributes": {"style": "text-align: right;"},
+                                    "attributes": {
+                                        "style": "text-align: right;"
+                                        }
+                                    }
+                                    ]'>
+                    </div>
+                    <div id="dvCustomerPricingInfo1" class="wrapper">
+                    </div>
+                    <div class="align-right col-xs-8 col-sm-10">
+                        <div>@(this.Localize("subtotal")):</div>
+                        <div>@(this.Localize("discount")):</div>
+                        <div data-bind="visible: invoice.IsDisplayFreeShipping">@(this.Localize("freeShipping")):</div>
+                        <div data-bind="invisible: invoice.IsDisplayFreeShipping">@(this.Localize("shipping")):</div>
+                        <div data-bind="invisible: invoice.HideTax">@(this.Localize("tax")):</div>
+                        <div class="total-due">@(this.Localize("yourTotalDue")):</div>
+                    </div>
+                    <div class="align-right col-xs-4 col-sm-2">
+                        <div data-bind="text: invoice.InvoicePrice.DisplaySubtotal"></div>
+                        <div data-bind="text: invoice.InvoicePrice.DisplayDiscountedAmount"></div>
+                        <div data-bind="text: invoice.InvoicePrice.DisplayShipping"></div>
+                        <div data-bind="invisible: invoice.HideTax, text: invoice.InvoicePrice.DisplayCalculatedTax"></div>
+                        <div data-bind="text: invoice.InvoicePrice.DisplayTotalDue" class="total-due"></div>
+                    </div>
+                </div>
+                <div data-bind="invisible:hideControl">
+                    <div id="dvCustomerPricingInfo">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-9 col-xs-9 align-right no-padding bold no-left-padding">@(this.Localize("ProductNameColumnTitle"))</div>
+                            <div class="col-md-3 col-sm-3 col-xs-3 align-right no-padding " data-bind="text: invoice.ClubInvoice.ClubRecieptProductName"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 col-sm-9 col-xs-9 align-right no-padding bold no-left-padding">@(this.Localize("QuantityColumnTitle"))</div>
+                            <div class="col-md-3 col-sm-3 col-xs-3 align-right no-padding" data-bind="text: invoice.ClubInvoice.ClubRecieptQuantity"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9 col-sm-9 col-xs-9 align-right no-padding total-due no-left-padding">@(this.Localize("yourTotalDue")):</div>
+                            <div class="col-md-3 col-sm-3 col-xs-3 align-right no-padding total-due">@(this.Localize("currencySign"))<span data-bind="text: invoice.ClubInvoice.ClubRecieptDisplayTotalDue"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 no-padding">
+                <ul class="right-options">
+                    <li>
+                        <a data-bind="click: printInvoiceClick" class="icon icon-printer-ln-1"><span>@(this.Localize("printInvoice"))</span></a>
+                    </li>
+                    <li>
+                        <a data-bind="click: sendEmailClick" class="icon icon-mail-ln-2"><span>@(this.Localize("emailInvoice"))</span></a>
+                    </li>
+                    <li data-bind="invisible:Hide">
+                        <a data-bind="click: editInvoiceClick" class="icon icon-edit-ln-2"><span>@(this.Localize("editInvoice"))</span></a>
+                    </li>
+                    <li>
+                        <a data-bind="click: viewDeletePopUp" class="icon icon-bin-ln-2"><span>@(this.Localize("deleteInvoice"))</span></a>
+                    </li>
+                    <li data-bind="invisible:Hide">
+                        <a data-bind="click: copyInvoiceClick" class="icon icon-files-ln-1"><span>@(this.Localize("copyToNewInvoice"))</span></a>
+                    </li>
+                    <li>
+                        <a data-bind="click: printInvoiceClick" class="icon icon-file-table-ln-1"><span>@(this.Localize("saveasPdf"))</span></a>
+                    </li>
+                    <li data-bind="visible:HideSMS">
+                        <a data-bind="click: sendSMSClick" class="icon icon-smartphone-ln-2"><span>@(this.Localize("sendText"))</span></a>
+                    </li>
+                    <li data-bind="invisible:Hide">
+                        <a data-bind="click: createOrderRedirect" class="icon icon-file-add-ln-1"><span>@(this.Localize("createOrder"))</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="emailSendedConfirmation"
+                 data-role="window"
+                 data-title="@this.Localize("ConfirmEmailSended")"
+                 data-modal="true"
+                 data-visible="false"
+                 data-actions=""
+                 data-max-width="460"
+                 data-max-height="700"
+                 style="padding-left:20px !important;">
+                <div class="center">
+                    @switch (countryCode)
+                    {
+                        case "JM":
+                        case "TT":
+                        case "CA":
+                            <div>@this.Localize("ConfirmEmailSendedText")</div>
+                            <br />
+                            <span id="lblEmailMessage" class="red" style="display:none">@this.Localize("EmailMessage")</span>
+                                <div ><input type="email" id="lblEmail" data-bind="value: invoice.OtherEmail" class="bold" style="width:300px" /></div>
+                                <br />
+                            break;
+                        default:
+                            <div >@this.Localize("ConfirmEmailSendedText") <span data-bind="text: invoice.Email" class="bold"></span></div><br />
+                            break;
+                    }
+                    <br />
+                    <a class="backward" data-bind="click: cancelEmailClick">@this.Localize("Cancel")</a>
+                    <a class="forward" data-bind="click: confirmEmailClick">@this.Localize("Send")</a>
+                </div>
+            </div>
+            <div id="confirmDeleteInvoice"
+                 data-role="window"
+                 data-title="@this.Localize("ConfirmInvoiceDeletion")"
+                 data-modal="true"
+                 data-visible="false"
+                 data-max-width="460"
+                 data-max-height="700"
+                 data-actions="['Close']"
+                 style="padding-left:20px !important;">
+                <div class="center">
+                    <div>@this.Localize("InvoiceConfirmDeletion") <span data-bind="text: invoice.DisplayMemberInvoiceNumber" class="bold"></span></div>
+                    <a class="forward" data-bind="click: deleteInvoiceClick">@this.Localize("Confirm")</a>
+                    <a class="backward" data-bind="click: closeDeleteInvoice">@this.Localize("Cancel")</a>
+                </div>
+            </div>
+            <div id="emailConfirmation"
+                 data-role="window"
+                 data-title="@this.Localize("Conformation")"
+                 data-modal="true"
+                 data-visible="false"
+                 data-max-width="460"
+                 data-max-height="700"
+                 data-actions="['Close']"
+                 style="padding-left:20px !important;">
+                <div class="center">
+                    <div>@this.Localize("InvoiceConfirmEmail")</div><br /><br />
+                    <a class="backward" data-bind="click: cancelClick">@this.Localize("Cancel")</a>
+                    <a class="forward" data-bind="click: confirmClick">@this.Localize("Send")</a><br /><br />
+                    <div>@this.Localize("InvoiceAcknowledgement")</div>
+                </div>
+            </div>
+            <div id="SMSConfirmation"
+                 data-role="window"
+                 data-title="@this.Localize("Conformation")"
+                 data-modal="true"
+                 data-visible="false"
+                 data-max-width="460"
+                 data-max-height="700"
+                 data-actions=""
+                 style="padding-left:20px !important;">
+                <div class="center">
+                    <div>@this.Localize("ConfirmSMSSendedText")</div><br />
+                    <span id="lblSMSMessage" class="red" style="display:none" >@this.Localize("erroeSMSMessage")</span>
+                    <div><input type="text" id="smsNumber" data-bind="value: invoice.SMSNumber" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10"  class="bold" style="width:300px" /></div>
+                    <br />      
+                    <a class="backward" data-bind="click: cancelSMSClick">@this.Localize("Cancel")</a>
+                    <a class="forward" data-bind="click: confirmSMSClick">@this.Localize("Send")</a><br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

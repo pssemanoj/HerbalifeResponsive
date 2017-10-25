@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ep="http://schemas.herbalife.com/EmailPublisher/V03/EmailPublisher" xmlns:epsi="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" blockDefault="#all" elementFormDefault="qualified" targetNamespace="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" version="3.0.1" id="InboxService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="EmailPublisher.xsd" namespace="http://schemas.herbalife.com/EmailPublisher/V03/EmailPublisher" />
+  <xs:element name="SubmitPredefinedRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ep:FormData" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="RequestId" type="xs:anyURI" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitPredefinedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ep:TrackingId" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="RequestId" type="xs:anyURI" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitCustomRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ep:Content" />
+        <xs:element minOccurs="0" name="ScheduledTime" type="xs:dateTime" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="RequestId" type="xs:anyURI" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitCustomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ep:TrackingId" />
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="RequestId" type="xs:anyURI" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

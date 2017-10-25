@@ -1,0 +1,17 @@
+﻿@using System.Globalization
+@{
+    Layout = "~/Views/Shared/_ApplicationLayout.cshtml";
+    var culture = CultureInfo.CurrentCulture.ToString();
+}
+
+
+<script src="@Url.Content("~/Ordering/Scripts/cultures/kendo.culture." + culture + ".min.js")"></script>
+@section HeadScripts {
+    @RenderSection("HeadScripts", false)
+    <script>
+        kendo.culture("@culture");
+    </script>
+
+}
+
+@RenderBody()

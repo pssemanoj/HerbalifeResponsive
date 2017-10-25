@@ -1,0 +1,86 @@
+// === Top Menu
+nav#mobileHeader {
+    @include breakpoint($mobile-range) {
+        background-color: $mobile-green;
+        display: table;
+        height: 50px;
+        margin: 0 auto;
+        max-width: $desktop;
+        min-width: $desktop/3;
+        position: relative;
+        width: 100%;
+        a {
+            border-right: 1px solid $mobile-green;
+            color: white;
+            display: table-cell;
+            line-height: 1px;
+            min-width: 20px;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            width: auto;
+            padding-left: 10px;
+            img{vertical-align: text-bottom;}
+            &.mobile-logo{
+                font-size: 24px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+
+        .cart-items {
+            div{
+                background-color: red;
+                border-radius: 50%;
+                box-sizing: border-box;
+                color: white;
+                float: right;
+                height: 25px;
+                padding-top: 12px;
+                position: relative;
+                text-align: center;
+                width: 25px;
+            }
+        }
+    }
+}
+a{
+    &.clone {
+        background-color: $mobile-green;
+        border-right: 1px solid $mobile-green;
+        color: white;
+        display: table-cell;
+        line-height: 1px;
+        min-width: 20px;
+        padding: 13px 10px;
+        position: fixed;
+        
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        vertical-align: middle;
+        width: auto;
+        &.left-menu {
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        &.cart-icon{
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            right: 0;
+        }
+    }
+}
+// === /Top Menu
+
+#UserInfo {
+    background-color: $mobile-green;
+    border-top: 1px solid $mobile-border-color;
+    box-sizing: border-box;
+    color: white;
+    padding: 0 20px;
+    position: fixed;
+    text-align: right;
+    top: 43px;
+    width: 100%;
+}

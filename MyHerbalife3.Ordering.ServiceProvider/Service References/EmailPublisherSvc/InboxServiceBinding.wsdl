@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:epsi="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" targetNamespace="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema targetNamespace="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox">
+      <s:include schemaLocation="InboxService.xsd" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SubmitPredefinedRequest_Msg">
+    <wsdl:part name="Request" element="epsi:SubmitPredefinedRequest" />
+  </wsdl:message>
+  <wsdl:message name="SubmitPredefinedResponse_Msg">
+    <wsdl:part name="Response" element="epsi:SubmitPredefinedResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitCustomRequest_Msg">
+    <wsdl:part name="Request" element="epsi:SubmitCustomRequest" />
+  </wsdl:message>
+  <wsdl:message name="SubmitCustomResponse_Msg">
+    <wsdl:part name="Response" element="epsi:SubmitCustomResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Inbox_PortType">
+    <wsdl:operation name="SubmitPredefined">
+      <wsdl:input message="epsi:SubmitPredefinedRequest_Msg" />
+      <wsdl:output message="epsi:SubmitPredefinedResponse_Msg" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustom">
+      <wsdl:input message="epsi:SubmitCustomRequest_Msg" />
+      <wsdl:output message="epsi:SubmitCustomResponse_Msg" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Inbox_Soap11Binding" type="epsi:Inbox_PortType">
+    <wsdl:documentation>
+      <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/" />
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitPredefined">
+      <soap:operation soapAction="http://herbalife.com/EmailPublisher/Service/Inbox/SubmitPredefined" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustom">
+      <soap:operation soapAction="http://herbalife.com/EmailPublisher/Service/Inbox/SubmitCustom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Inbox_Soap12Binding" type="epsi:Inbox_PortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitPredefined">
+      <soap12:operation soapAction="http://herbalife.com/EmailPublisher/Service/Inbox/SubmitPredefined" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustom">
+      <soap12:operation soapAction="http://herbalife.com/EmailPublisher/Service/Inbox/SubmitCustom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

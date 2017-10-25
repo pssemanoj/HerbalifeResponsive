@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Mailing" />
+      <xs:enumeration value="ShipTo" />
+      <xs:enumeration value="BillTo" />
+      <xs:enumeration value="PermanentLegal" />
+      <xs:enumeration value="Business" />
+      <xs:enumeration value="DeliverTo" />
+      <xs:enumeration value="MailingLocal" />
+      <xs:enumeration value="PermanentLegalLocal" />
+      <xs:enumeration value="BusinessLocal" />
+      <xs:enumeration value="Home" />
+      <xs:enumeration value="HomeLocal" />
+      <xs:enumeration value="CustomerFacing" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:complexType name="PhoneNumber_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AreaCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Extention" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneType" type="tns:PhoneType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PhoneNumber_V01" nillable="true" type="tns:PhoneNumber_V01" />
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Day" />
+      <xs:enumeration value="Evening" />
+      <xs:enumeration value="Fax" />
+      <xs:enumeration value="Mobile" />
+      <xs:enumeration value="NotSpecified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PhoneType" nillable="true" type="tns:PhoneType" />
+  <xs:complexType name="ArrayOfEmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmailAddress" nillable="true" type="tns:ArrayOfEmailAddress" />
+  <xs:complexType name="EmailAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmailAddress" nillable="true" type="tns:EmailAddress" />
+</xs:schema>

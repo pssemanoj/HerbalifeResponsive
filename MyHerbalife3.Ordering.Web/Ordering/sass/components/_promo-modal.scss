@@ -1,0 +1,64 @@
+﻿// =============
+// Promo Modal
+// -----
+// This is where you find the base styling for the promo modal
+//
+//==============
+
+#promoModal {
+    padding: 0;
+    width: 100%;
+
+    section {
+        border-bottom: 1px solid #B0B0B0;
+        padding: 20px 60px;
+        overflow: hidden;
+    }
+
+    section:first-child {
+        text-align: center;
+    }
+
+    section:first-child p {
+        display: inline-block;
+        font-size: 16px;
+        width: 500px;
+    }
+
+    section aside {
+        margin-left: 80px;
+        float: left;
+        width: 300px;
+    }
+
+    section img + aside {
+        margin-left: 0px;
+    }
+
+    section + section img {
+        margin-right: 60px;
+        float: left;
+    }
+
+    section aside + img {
+        margin: 0 0 0 60px;
+    }
+
+}
+
+#promoModal_wnd_title {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+    overflow: visible;
+    text-align: center;
+    width: 99%;
+}
+
+#promoModal_wnd_title + .k-window-actions {
+    display: none;
+}
+
+.k-header.orangeB {
+    background-color: #FAA634;
+}

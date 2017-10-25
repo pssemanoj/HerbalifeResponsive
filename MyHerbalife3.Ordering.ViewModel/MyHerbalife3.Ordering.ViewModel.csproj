@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C379451E-81AE-48DF-8BD1-E583ABD494F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.ViewModel</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Mobile.ValueObjects">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Mobile\v1.0\HL.Mobile.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\BankListResponseVewModel.cs" />
+    <Compile Include="CustomDateTimeConverter.cs" />
+    <Compile Include="DonationViewModel.cs" />
+    <Compile Include="ExpireCatalogCacheRequestViewModel.cs" />
+    <Compile Include="ExpireCatalogCacheResponseViewModel.cs" />
+    <Compile Include="Model\AddressViewModel.cs" />
+    <Compile Include="Model\AddressResponseViewModel.cs" />
+    <Compile Include="Model\AnnouncementRequestViewModel.cs" />
+    <Compile Include="Model\AnnouncementResponseViewModel.cs" />
+    <Compile Include="Model\AnnouncementViewModel.cs" />
+    <Compile Include="Model\ApfViewModel.cs" />
+    <Compile Include="Model\BackOrderDetail\BackOrderLocationViewModel.cs" />
+    <Compile Include="Model\BackOrderDetail\BackOrderDetailsViewModel.cs" />
+    <Compile Include="Model\BackOrderDetail\BackOrderSKUDetailViewModel.cs" />
+    <Compile Include="Model\BankViewModel.cs" />
+    <Compile Include="Model\BaseRequestViewModel.cs" />
+    <Compile Include="Model\BaseResponseViewModel.cs" />
+    <Compile Include="Model\BindCardResponseViewmodel.cs" />
+    <Compile Include="Model\BindedCardViewModel.cs" />
+    <Compile Include="Model\CardViewModel.cs" />
+    <Compile Include="Model\CustomShippingMethodViewModel.cs" />
+    <Compile Include="Model\DistributorShoppingCartItem.cs" />
+    <Compile Include="Model\DiscontinuedSkuItemResponseViewModel.cs" />
+    <Compile Include="Model\DualOrderMonthResponseViewModel.cs" />
+    <Compile Include="Model\DualOrderMonthViewModel.cs" />
+    <Compile Include="Model\FavouriteSKUUpdateItemViewModel.cs" />
+    <Compile Include="Model\GetDiscontinuedSkuParam.cs" />
+    <Compile Include="Model\GetFavouriteResponseWrapper.cs" />
+    <Compile Include="Model\ExpressTrackingInfoViewModel.cs" />
+    <Compile Include="Model\Invoice\ClubInvoiceModel.cs" />
+    <Compile Include="Model\Invoice\LegacyReceiptModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceCRMConatactModel.cs" />
+    <Compile Include="Model\Invoice\UpdateStatusModel.cs" />
+    <Compile Include="Model\MobilePghOrderRequestViewModel.cs" />
+    <Compile Include="Model\MobilePghOrderResponseViewModel.cs" />
+    <Compile Include="Model\MobilePghRequestViewModel.cs" />
+    <Compile Include="Model\MobilePghResponseWrapper.cs" />
+    <Compile Include="Model\FavouriteSetSKUResponseViewModel.cs" />
+    <Compile Include="Model\FavouriteSKUItemViewModel.cs" />
+    <Compile Include="Model\FavouriteSKUResponseViewModel.cs" />
+    <Compile Include="Model\FavouriteSKUViewModel.cs" />
+    <Compile Include="Model\GetFavouriteSKUParam.cs" />
+    <Compile Include="Model\MobileResponseViewModel.cs" />
+    <Compile Include="Model\MobileResponseWrapper.cs" />
+    <Compile Include="Model\MobileSandboxRequestViewModel.cs" />
+    <Compile Include="Model\MobileSandboxResponseViewModel.cs" />
+    <Compile Include="Model\MobileSandboxResponseWrapper.cs" />
+    <Compile Include="Model\OrderSummaryViewModel.cs" />
+    <Compile Include="Model\OrderResponseViewModel.cs" />
+    <Compile Include="Model\OrderTrackingViewModel.cs" />
+    <Compile Include="Model\OrderTracking\TrackingModel.cs" />
+    <Compile Include="Model\PayByPhoneResponseViewModel.cs" />
+    <Compile Include="Model\Payment\QuickPayPaymentViewModel.cs" />
+    <Compile Include="Model\Payment\WechatPaymentViewModel.cs" />
+    <Compile Include="Model\PreferredCustomerViewModel.cs" />
+    <Compile Include="Model\PickUpRequestViewModel.cs" />
+    <Compile Include="Model\PickUpResponseViewModel.cs" />
+    <Compile Include="Model\PickupViewModel.cs" />
+    <Compile Include="Model\ErrorViewModel.cs" />
+    <Compile Include="Model\ItemTotalsListViewModel.cs" />
+    <Compile Include="Model\OrdersResponseViewModel.cs" />
+    <Compile Include="Model\OrderSearchParameter.cs" />
+    <Compile Include="Model\Payment\CardPaymentViewModel.cs" />
+    <Compile Include="Model\Payment\CheckPaymentViewModel.cs" />
+    <Compile Include="Model\Payment\CreditCardViewModel.cs" />
+    <Compile Include="Model\Payment\CashPaymentViewModel.cs" />
+    <Compile Include="Model\ChargeViewModel.cs" />
+    <Compile Include="Model\HandlingInfoViewModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceAddressModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceCategoryModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceDisplayModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceEditModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceFilterDataModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceFilterModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceLineModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceModel.cs" />
+    <Compile Include="Model\Invoice\InvoicePriceModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceRootCategoryModel.cs" />
+    <Compile Include="Model\Invoice\InvoiceSearchModel.cs" />
+    <Compile Include="Model\Payment\DirectDepositPaymentViewModel.cs" />
+    <Compile Include="Model\Payment\LocalPaymentViewModel.cs" />
+    <Compile Include="Model\OrderItemViewModel.cs" />
+    <Compile Include="Model\OrderTotalsViewModel.cs" />
+    <Compile Include="Model\OrderViewModel.cs" />
+    <Compile Include="Model\Payment\PaymentViewModel.cs" />
+    <Compile Include="Model\Payment\PayPalPaymentViewModel.cs" />
+    <Compile Include="Model\PromotionViewModel.cs" />
+    <Compile Include="Model\OrderRequestViewModel.cs" />
+    <Compile Include="Model\QuoteResponseViewModel.cs" />
+    <Compile Include="Model\SavedCartViewModel.cs" />
+    <Compile Include="Model\SaveOrderResponseViewModel.cs" />
+    <Compile Include="Model\SetFavouriteRequestViewModel.cs" />
+    <Compile Include="Model\SetFavouriteSKUParam.cs" />
+    <Compile Include="Model\ShippingMethodsResponseViewModel.cs" />
+    <Compile Include="Model\ShippingViewModel.cs" />
+    <Compile Include="Model\SubmitOrderResultViewModel.cs" />
+    <Compile Include="Model\Invoice\UpdateInvoiceModelResult.cs" />
+    <Compile Include="Model\Payment\WirepaymentViewModel.cs" />
+    <Compile Include="Model\ValidationErrorViewModel.cs" />
+    <Compile Include="Model\WechatPrepayIdRequestViewModel.cs" />
+    <Compile Include="Model\WechatPrepayIdResponseViewModel.cs" />
+    <Compile Include="Model\WechatQueryOrderResponseViewModel.cs" />
+    <Compile Include="PayByPhoneRequestViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\CreateInvoiceFromOrderIdRequest.cs" />
+    <Compile Include="Request\GetCRMAddress.cs" />
+    <Compile Include="Request\GetInvoiceById.cs" />
+    <Compile Include="Request\GetInvoiceCategoryByFilter.cs" />
+    <Compile Include="Request\GetInvoicePaymentTypeByLocale.cs" />
+    <Compile Include="Request\GetInvoicesByFilter.cs" />
+    <Compile Include="Request\GetInvoiceStatusByLocale.cs" />
+    <Compile Include="Request\GetInvoiceTypesByLocale.cs" />
+    <Compile Include="Request\GetMemberAddressById.cs" />
+    <Compile Include="Request\GetMemberDiscountsByLocale.cs" />
+    <Compile Include="Request\GetMemberInvoiceErrorListByLocale.cs" />
+    <Compile Include="Request\GetSavedCartsByFilter.cs" />
+    <Compile Include="Model\WechatPrepayIdViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderViewModel.cd" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Configuration\MyHerbalife3.Ordering.Configuration.csproj">
+      <Project>{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}</Project>
+      <Name>MyHerbalife3.Ordering.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj">
+      <Project>{deca9051-4215-473e-8a99-2227fa819528}</Project>
+      <Name>MyHerbalife3.Ordering.ServiceProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Configuration\MyHerbalife3.Ordering.Configuration.csproj">
+      <Project>{f8f5f25b-ed7a-4d1e-b4ce-f6b6d98a7fce}</Project>
+      <Name>MyHerbalife3.Ordering.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

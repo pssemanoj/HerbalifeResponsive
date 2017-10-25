@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HL.Shipping.Mexico.ValueObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HL.Shipping.Mexico.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd2" namespace="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" />
+  <xs:complexType name="ShippingAlternativesForPostalCodeRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" base="q1:PostalCodeLookupRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShippingAlternativesForPostalCodeRequest_V01" nillable="true" type="tns:ShippingAlternativesForPostalCodeRequest_V01" />
+  <xs:complexType name="MunicipalitiesForStateRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" base="q2:MunicipalitiesForStateRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MunicipalitiesForStateRequest_V01" nillable="true" type="tns:MunicipalitiesForStateRequest_V01" />
+</xs:schema>

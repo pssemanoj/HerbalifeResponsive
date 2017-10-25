@@ -1,0 +1,61 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div style="page-break-before: always;">
+    <div style="height: 60px;"></div>
+    <br />
+    <span style="font-weight: bold;">@this.Localize("herbalifeRefund")</span><br />
+    <p>
+        @this.Localize("exchangePolicy1")
+        <br /><br />
+        @this.Localize("exchangePolicy2")
+    </p>
+
+    <br />
+
+    <div>
+        <p>
+            <span style="font-weight: bold">@this.Localize("noticeCancellation")</span>
+        </p>
+
+        <p>
+            @this.Localize("dateTransaction"): _______ / _______ /_______
+        </p>
+
+        <p>
+            @this.Localize("cancelText")
+        </p>
+
+        <p>
+            @this.Localize("cancelPolicy1")
+        </p>
+
+        <p>
+            @this.Localize("cancelPolicy2")
+        </p>
+
+        <p>
+            @this.Localize("cancelPolicy3")
+        </p>
+
+        <p>
+            @this.Localize("cancelTransactionText")
+        </p>
+
+        <p style="margin-left: 20%;">
+            @this.Localize("herbalifeDs"): ____________________________________<br /><br />
+            @this.Localize("address"): ______________________________________________<br /><br />
+            @this.Localize("city"): ________________________________ @this.Localize("state"):______ @this.Localize("zipCode"): ________<br /><br />
+            @this.Localize("notLaterThan"): _______ / _______ /_______<br />
+            @this.Localize("3daysAfterText")<br /><br />
+            @this.Localize("icancelText"):<br /><br /><br />
+
+            <span style="border-top: 1px solid; display: block; float: left; margin-right: 30px; width: 130px;">
+                @this.Localize("dateMonthYear")
+            </span>
+
+            <span style="border-top: 1px solid; display: block; float: left; width: 250px;">
+                @this.Localize("buyerSignature")
+            </span>
+
+        </p>
+    </div>
+</div>

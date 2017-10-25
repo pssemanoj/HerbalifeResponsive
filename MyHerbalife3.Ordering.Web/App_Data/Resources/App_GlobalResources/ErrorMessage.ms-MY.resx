@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU ASF tidak boleh ditambahkan ke troli</value>
+  <comment>_G2089</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU ASF tidak boleh dipindahkan ke troli</value>
+  <comment>_G2090</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Adakah anda pasti anda mahu membatalkan pesanan ini? Dengan mengklik "OK" akan mengeluarkan semua barangan daripada troli anda.</value>
+  <comment>_G2091</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Sebab tiada Produk dengan perintah ASF anda, semua perkara bukan-Produk telah dikeluarkan.</value>
+  <comment>_G2092</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Item melambatkan pesanan tidak boleh ditambah kepada perintah ASF</value>
+  <comment>_G2093</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Pengesahan Kad tidak berjaya. Sila semak semula kad anda.</value>
+  <comment>_G2094</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Kesilapan format data, sila masukkan data yang tepat.</value>
+  <comment>_G2095</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Salinan SKU {0} dimasukkan. Sila masukkan semula.</value>
+  <comment>_G2096</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Pembelian tiket acara adalah terhad kepada kuantiti {0} setiap pesanan.</value>
+  <comment>_G2097</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Pembelian Tiket Acara tidak dibenarkan di laman ini.</value>
+  <comment>_G2098</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Bagi barang {0} hanya terdapat kuantiti {1}. Sila ubah kuantiti yang dimasukkan untuk menambah barangan ini ke dalam troli anda.</value>
+  <comment>_G2099</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Bagi barang {0}, 1 atau lebih barang pesanan tertangguh boleh dibuat.</value>
+  <comment>_G2100</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Bagi SKU {0}, kuantiti tidak boleh melebihi {1}.</value>
+  <comment>_G2101</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Maaf, anda tidak ada kad kredit berdaftar di dalam fail. Sila hubungi Perkhidmatan Ahli di 03-26876333</value>
+  <comment>_G2102</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Poskod yang salah</value>
+  <comment>_G2103</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} tahun ASF kena dibayar dan perlu dibayar sebelum meletakkan jenis pesanan ke "Jual Semula". Sila tukar Jenis pesanan anda ke "Peribadi" untuk membayar ASF anda.</value>
+  <comment>_G2104</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Barang {0} kini berada di luar inventori is, kuantiti anda diset pada 0.</value>
+  <comment>_G2105</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Had untuk Majalah Today ialah</value>
+  <comment>_G2106</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Bilangan majalah yang maksimum yang boleh ditambah di dalam troli ialah {0}.</value>
+  <comment>_G2107</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Nama Timangan digunakan, sila masukkan nama lain.</value>
+  <comment>_G2108</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Tidak ada pesanan dalam talian.</value>
+  <comment>_G2109</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Pesanan dalam talian tidak dibenarkan.</value>
+  <comment>_G2110</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Hanya Produk boleh ditambah kepada pesanan ASF berdiri-sendiri</value>
+  <comment>_G2111</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Jumlah pembayaran tidak sepadan dengan jumlah pesanan.</value>
+  <comment>_G2112</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Sila tambah amaun yang lebih besar daripada 0.</value>
+  <comment>_G2113</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Sila semak maklumat kad.</value>
+  <comment>_G2114</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Sila semak ID Ahli dan Kod PIN dan cuba lagi. Jika masalah berterusan, sila hubungi Perkhidmatan Ahli pada 603-2687 6333</value>
+  <comment>_G2115</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Sila lengkapkan pembelian yuran tahunan sebelum menambah produk lain ke dalam troli anda.</value>
+  <comment>_G2116</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Sila lengkapkan pembelian yuran tahunan sebelum membeli tiket acara.</value>
+  <comment>_G2117</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Sila masukkan nombor</value>
+  <comment>_G2118</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Sila masukkan kuantiti untuk SKU {0}.</value>
+  <comment>_G2119</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Sila masukkan Lokasi Pungutan unik.</value>
+  <comment>_G2120</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Sila masukkan bandar yang sah.</value>
+  <comment>_G2121</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Sila masukkan Nama yang sah.</value>
+  <comment>_G2122</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Sila masukkan Nama Timangan yang sah.</value>
+  <comment>_G2123</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Sila masukkan amaun derma, kecuali sifar (0).</value>
+  <comment>_G2124</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Sila masukkan alamat emel.</value>
+  <comment>_G2125</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Sila masukkan maklumat pembayaran.</value>
+  <comment>_G2126</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Sila masukkan CVV.</value>
+  <comment>_G2127</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Sila masukkan kuantiti Yuran Tahunan Perkhidmatan Ahli yang ingin anda beli.</value>
+  <comment>_G2128</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Sila masukkan alamat emel yang sah.</value>
+  <comment>_G2129</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Sila masukkan Nama Pertama yang sah.</value>
+  <comment>_G2130</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Sila masukkan Nama Akhir yang sah</value>
+  <comment>_G2131</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Sila masukkan Nama Tengah yang sah</value>
+  <comment>_G2132</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Sila masukkan semua maklumat penghantaran yang penting.</value>
+  <comment>_G2133</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Sila masukkan kod kawasan di dalam format yang betul.</value>
+  <comment>_G2134</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Sila masukkan sambungan yang betul.</value>
+  <comment>_G2135</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Sila masukkan nama bagi pihak.</value>
+  <comment>_G2136</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Sila masukkan kod kawasan.</value>
+  <comment>_G2137</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Sila masukkan bandar.</value>
+  <comment>_G2138</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Sila masukkan sambungan.</value>
+  <comment>_G2139</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Sila masukkan nama pertama.</value>
+  <comment>_G2140</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Sila masukkan nama akhir.</value>
+  <comment>_G2141</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Sila masukkan medan yang penting.</value>
+  <comment>_G2142</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Sila masukkan nombor telefon.</value>
+  <comment>_G2143</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>Sila masukkan negeri.</value>
+  <comment>_G2144</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Sila masukkan medan alamat jalan.</value>
+  <comment>_G2145</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Sila masukkan poskod.</value>
+  <comment>_G2146</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Sila masukkan nombor telefon di dalam format yang betul.</value>
+  <comment>_G2147</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Sila ambil perhatian, anda boleh hanya simpan maklumat kad untuk maksimum {0} kad. Untuk menambah kad baharu, sila keluarkan salah satu daripada kad simpanan anda.</value>
+  <comment>_G2148</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Sila ambil perhatian:&lt;br/&gt;Laman ini dilhat dengan jelas sekali dengan Internet Explorer atauFirefox.</value>
+  <comment>_G2149</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Sila rekod alamat penghantaran sebelum anda boleh melengkapkan Pesanan Pungutan ini.</value>
+  <comment>_G2150</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Sila pilih lokasi*:</value>
+  <comment>_G2151</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Sila pilih masa Penghantaran</value>
+  <comment>_G2152</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Sila pilih Jenis Pesanan.</value>
+  <comment>_G2153</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Sila pilih lokasi Pungutan</value>
+  <comment>_G2154</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Sila pilih lokasi Pungutan</value>
+  <comment>_G2155</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Sila pilih nama Pungutan</value>
+  <comment>_G2156</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Sila memberikan nombor telefon Pungutan</value>
+  <comment>_G2157</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Sila pilih masa Pungutan</value>
+  <comment>_G2158</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Sila pilih Alamat Penghantaran</value>
+  <comment>_G2159</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Sila pilih Ya/Tidak</value>
+  <comment>_G2160</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Alamat Utama tidak b oleh dihapuskan.</value>
+  <comment>_G2161</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Pilihan Pungutan Utama tidak boleh dihapuskan.</value>
+  <comment>_G2162</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Terus ke Daftar Keluar</value>
+  <comment>_G2163</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Terus ke Laman Rumah</value>
+  <comment>_G2164</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Penghantaran dimasukkan ke dalam Poskod tidak disokong</value>
+  <comment>_G2165</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Tidak terdapat SKU {0} .</value>
+  <comment>_G2166</comment></data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Nombor Telefon Mudah Alih SMS diperlukan</value>
+  <comment>_G2167</comment></data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Maaf! Anda tidak boleh menempah pesanan. Hanya Ahli Korea boleh membeli pesanan dari laman web Korea.</value>
+  <comment>_G2168</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Maaf, anda tidak tambah barangan ke dalam troli dan dengan menambahkannya ke dalam troli anda telah melebihi had perolehan anda.</value>
+  <comment>_G2169</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>Kesilapan Sistem</value>
+  <comment>_G2170</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Bulan Pesanan telah diubah!)</value>
+  <comment>_G2171</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>SKU {0} yang ditambah pada pesanan tertangguh.</value>
+  <comment>_G2172</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Negeri ini tidak sah.</value>
+  <comment>_G2173</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Alamat jalan seharusnya mengandungi satu abjad.</value>
+  <comment>_G2174</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Alamat jalan seharusnya mengandungi satu nombor, ruang dan satu abjad.</value>
+  <comment>_G2175</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transaksi tidak dibenarkan, sila klik "Hantar" sekali lagi. Jika masalah ini berterusan, sila hubungi talian hangat perkhidmatan Ahli 03-26876333</value>
+  <comment>_G2176</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transaksi tidak dibenarkan, sila hubungi talian hangat perkhidmatan Ahli 03-26876333.</value>
+  <comment>_G2177</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Pos kod tidak sah.</value>
+  <comment>_G2178</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Tidak ada barangan untuk dibeli di dalam pesanan.</value>
+  <comment>_G2179</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Kini, tidak ada inventori yang mencukupi untuk barang {0}. Kuantiti yang ada {1}.</value>
+  <comment>_G2180</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Tidak ada barang yang dipilih untuk ditambah pada pesanan.</value>
+  <comment>_G2181</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Tidak ada barangan dipilih untuk menghitung volum.</value>
+  <comment>_G2182</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Alamat ini sudah ada di dalam ujian pangkalan data.</value>
+  <comment>_G2183</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Pesanan ini melebihi had pembelian anda. Anda ada baki VP {0}. Sila tukar pesanan anda untuk meneruskannya.</value>
+  <comment>_G2184</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Transaksi bagi kad ini ditolak</value>
+  <comment>_G2185</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Majalah Today ditambah ke dalam troli.</value>
+  <comment>_G2186</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Kami tidak dapat melengkapkan pesanan anda. Sila hubungi Perhubungan Ahli 03-26876333 untuk bantuan dan nyatakan kesilapan kod 01.</value>
+  <comment>_G2187</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Kami tidak dapat melengkapkan pesanan anda. Sila hubungi Perhubungan Ahli 03-26876333 untuk bantuan dan nyatakan kesilapan kod 05.</value>
+  <comment>_G2188</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Kami tidak dapat memproses pesanan anda. Sila semak alamat anda dan cuba lagi. Jika masalah ini berterusan sila hubungi Perkhidmatan Ahli.</value>
+  <comment>_G2189</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Maaf. Mata wang tidak dapat ditukarkan. Sila hubungi talian hangat perkhidmatan Ahli 03-26876333.</value>
+  <comment>_G2190</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Anda sudah ada barangan tiket acara di dalam troli anda, mahukah anda kosongkan troli anda?</value>
+  <comment>_G2191</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Anda cuba menghapuskan kad utama anda. Sila sediakan kad simpan lain sebagai kad utama anda sebelum anda menghapuskan kad ini.</value>
+  <comment>_G2192</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Anda tidak boleh lagi mengguna kad ini kerana ia ditolak beberapa kali.</value>
+  <comment>_G2193</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Anda tidak boleh menambah kad yang sama lebih daripada sekali.</value>
+  <comment>_G2194</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Anda tidak boleh menambah barangan ini ke dalam troli anda.</value>
+  <comment>_G2195</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Anda tidak boleh pergi ke halaman {0} dengan tiada barangan di dalam troli anda.</value>
+  <comment>_G2196</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Anda ada barangan pesanan tertangguh di dalam troli anda yang akan dikeluarkan jika anda pilih Kutip sebagai opsyen penghantaran anda. Adakah anda mahu meneruskannya? ("Ya" atau "Tidak")</value>
+  <comment>_G2197</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Anda telah menukar bulan pesanan untuk pesanan ini ke {0}. Adakah anda mahu meneruskan dengan pilihan ini?</value>
+  <comment>_G2198</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Anda ada barangan tiket acara di dalam troli anda. Adakah anda mahu kosongkan troli anda?</value>
+  <comment>_G2199</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Anda ada produk di dalam troli membeli-belah anda. Adakah anda mahu mengosongkan troli anda sebelum terus membeli tiket acara?</value>
+  <comment>_G2200</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Anda telah memilih {0} sebagai dwi pesanan bulan adakah ini betul?</value>
+  <comment>_G2201</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>tip daripada Anda telah memilih Kutip daripada WALDOS, terdapat produk terhad untuk dipesan.</value>
+  <comment>_G2202</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Anda memilih untuk semak imbas produk tanpa membuat pesanan, anda tidak boleh menambah produk ke dalam troli.</value>
+  <comment>_G2203</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Anda sudah berjaya menambah HFF ke dalam troli anda.</value>
+  <comment>_G2204</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Anda hanya boleh membayar 1 tahun ASF</value>
+  <comment>_G2205</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Anda mesti menghapuskan salah satu kad kredit anda untuk menukar barangan di dalam troli anda.</value>
+  <comment>_G2206</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Anda mesti memilih opsyen Penghantaran atau Pungutan untuk meneruskannya.</value>
+  <comment>_G2207</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Anda baru-baru ini membuat pesanan yang serupa pada {0}. Jika ini pesanan pendua, klik 'Batal Pesanan'. Untuk meneruskan pesanan ini, sila hantar.</value>
+  <comment>_G2208</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Yuran Tahunan Perkhidmatan Ahli anda adalah bertamah pada {0}</value>
+  <comment>_G2209</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Yuran Tahunan Perkhidmatan Ahli anda telah tamah, kami akan menambah ke dalam troli membeli-belah anda secara automatik.</value>
+  <comment>_G2210</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Yuran Tahunan Perkhidmatan Keahlian yang anda perlukan telah meninggalkan troli anda.</value>
+  <comment>_G2211</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Kad kredit anda sudah tamat tempoh. Sila klik Edit dan kemaskinikan tarikh tamat.</value>
+  <comment>_G2212</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Kad kredit anda sudah tamat tempoh. Sila hubungi Talian Hangat Perkhidmatan Ahli tempatan.</value>
+  <comment>_G2213</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>ID anda tidak diterima, sila hubungi Talian Hangat Perkhidmatan Ahli 03-26876333</value>
+  <comment>_G2214</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>ID anda tidak diterima, sila hubungi Talian Hangat Perkhidmatan Ahli 03-26876333</value>
+  <comment>_G2215</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Nombor pesanan anda yang dahulu ialah {0}. Anda boleh sahtentu status pesanan ini dengan menelefon Sokongan Pesanan di 03-26876333, 10 a.m. hingga 7 p.m. PST, Isnin-Jumaat. Sabtu 10 a.m. hingga 3 p.m. PST untuk bantuan atau dengan mengklik di sini. (Sila ambil perhatian, ia akan mengambil masa 1 jam sebelum pesanan dipaparkan.&lt;br&gt;Jika anda mahu membuat pesanan baharu, sila tambah semula barangan ke dalam troli anda.</value>
+  <comment>_G2216</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Yuran Tahunan Perkhidmatan Keahlian yang anda perlukan telah meninggalkan troli anda.</value>
+  <comment>_G2217</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Maklumat penghantaran anda sudah tidak sah, troli membeli-belah anda akan dikosongkan.</value>
+  <comment>_G2218</comment></data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Sila isikan negeri</value>
+  <comment>_G2219</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU {0} tidak sah.</value>
+  <comment>_G2220</comment></data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Sila pilih Kaedah Penghantaran</value>
+  <comment>_G2221</comment></data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Tiada pesanan lama dibenarkan dihantar ke New Caledonia dan French Polynesia.</value>
+  <comment>_G2222</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Sila pilih Jenis Pesanan dari troli mini</value>
+  <comment>_G2223</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Anda tidak boleh Mendaftar Keluar kerana anda sudah melebihi Had Pembelian anda</value>
+  <comment>_G2224</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Pengesahan alamat diperlukan</value>
+  <comment>_G2225</comment></data>
+</root>

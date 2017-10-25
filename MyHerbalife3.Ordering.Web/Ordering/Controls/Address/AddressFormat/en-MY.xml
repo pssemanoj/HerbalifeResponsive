@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+    <Controls>
+      <Label cssStyle="AddressHeader" Name="Recipient" Grid.Row="0" Grid.Column="0" Grid.Colspan="3" Text="Care of Name *" />
+
+      <TextBox cssStyle="EditAddress" Name="TBRecipient" Grid.Row="1" Grid.Column="0" Grid.Colspan="3" Text="{Binding Recipient}" Required="true" ValReqMsg="NoFirstName" MaximumLength="40" IndexForTab="1"/>
+
+      <Label cssStyle="AddressHeader" Name="Street1" Grid.Row="2" Grid.Column="0" Grid.Colspan="3" Text="Street1 *" />
+
+      <TextBox cssStyle="EditAddress" Name="TBStreet1" Grid.Row="3" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line1}"  Required="true" ValReqMsg="NoStreet1" KeyPressHandler="OnAddressKeyPress(event,this)" MaximumLength="40" IndexForTab="2"/>
+
+      <Label cssStyle="AddressHeader" Name="Street2" Grid.Row="4" Grid.Column="0" Grid.Colspan="3" Text="Street2" />
+
+      <TextBox cssStyle="EditAddress" Name="TBStreet2" Grid.Row="5" Grid.Column="0" Grid.Colspan="3" Text="{Binding Address.Line2}"  MaximumLength="40" IndexForTab="3"/>
+
+      <Label cssStyle="AddressHeader" Name="City" Grid.Row="6" Grid.Column="0" Text="City *" />
+      <Label cssStyle="AddressHeader" Name="StateProvince" Grid.Row="6" Grid.Column="3" Text="State *" />
+      <Label cssStyle="gdo-popup-form-field-padding" Name="Spacer" Grid.Row="6" Grid.Column="2" Text="" />
+      <Label cssStyle="AddressHeader" Name="PostalCode" Grid.Row="6" Grid.Column="1" Text="Postal Code *" />
+
+      <TextBox Name="TBCity" Grid.Row="7" Grid.Column="0" Text="{Binding Address.City}" Required="true" ValReqMsg="NoCity" IndexForTab="4" MaximumLength="30"  />
+      <ComboBox cssStyle="Address" Name="ddlState" Text="{Binding Address.StateProvinceTerritory}" Grid.Row="7" Grid.Column="3" ItemsSource="~/Ordering/Controls/Address/AddressFormat/en-MY-States.xml" XPath="/States/State" DisplayMemberPath="Name" DisplayIDPath="ID" IndexForTab="6" />
+      <TextBox cssStyle="EditAddress" Name="TBZip" Grid.Row="6" Grid.Column="1" Text="{Binding Address.PostalCode}" Required="true" ValErrorMsg="PostalCode" RegExp="^(\d{5})$"  ValReqMsg="NoZipCode" KeyPressHandler="OnMYZipCodeKeyPress(event,this)"  MaximumLength="5" IndexForTab="5"/>
+      <Label cssStyle="AddressErrorMsg_blue" Name="PostalCodeFormat" Grid.Row="6" Grid.Column="2" Text="Format: 5 digits" />
+      
+      <Label cssStyle="AddressHeader" Name="AreaCode" Grid.Row="8" Grid.Column="0" Text="Area Code *" />
+      <Label cssStyle="AddressHeader" Name="PhoneNumber" Grid.Row="8" Grid.Column="1" Text="Phone Number *" />
+      <TextBox cssStyle="EditAddress" Name="TBAreaCode" Grid.Row="8" Grid.Column="0" Text="{Binding AreaCode}"  KeyPressHandler="OnMYZipCodeKeyPress(event,this)" Required="true" ValReqMsg="NoAreaCode"   ValErrorMsg="InvalidAreaCode"  MaximumLength="3" RegExp="^(\d{2,3})$" IndexForTab="8"/>
+      <TextBox cssStyle="EditAddress" Name="TBPhone" Grid.Row="8" Grid.Column="1"  Text="{Binding Phone}" Required="true"  ValErrorMsg="Invalid Phone Number" ValReqMsg="NoPhone" RegExp="^(\d{6,8})$"  MaximumLength="8" IndexForTab="7" />
+      <Label cssStyle="AddressErrorMsg_blue" Name="AreaCodeFormat" Grid.Row="9" Grid.Column="0" Text="E.g: 03, 017, 016, 019" />
+      <Label cssStyle="AddressErrorMsg_blue" Name="PhoneNumberFormat" Grid.Row="9" Grid.Column="1" Text="Must be 6-8 digits" />
+    </Controls>
+  </Grid>
+</AddressWindow>

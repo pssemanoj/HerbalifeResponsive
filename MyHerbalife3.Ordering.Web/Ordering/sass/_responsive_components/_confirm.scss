@@ -1,0 +1,40 @@
+.gdo-nav-mid-confirm {
+    margin: 0 auto;
+    width: 300px;
+    @include breakpoint( $tablet) { width: 100%; }
+    @include breakpoint( $desktop) { margin: 0; width: 960px; }
+
+}
+
+[id$="pnlPaymentsSummary"] {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    @include breakpoint( $desktop) { padding: 0 ; }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+                padding:3px 0;
+                display:list-item;
+                list-style: disc !important;
+            }
+    }
+}
+
+.bttn-addcartfinal {
+    &.confirm { 
+        display: none;
+        @include breakpoint( $desktop) { display: block; }
+    }
+}
+
+.gdo-main-table.chkoutFullWidth {
+    table-layout: fixed;
+
+    div[id$="pnlAlternatePayment"] table {
+        table-layout: fixed;
+         @include breakpoint( $mobile-tablet-only) { width:100% !important; }
+    }
+}

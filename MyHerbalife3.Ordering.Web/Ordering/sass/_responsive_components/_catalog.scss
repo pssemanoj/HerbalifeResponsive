@@ -1,0 +1,68 @@
+#catalogContent {
+    
+    width: 100%;
+
+    @include breakpoint( $desktop ) { 
+        width: 558px;
+    }
+    
+}
+.gdo-catalog {
+
+    width: 100%;
+
+    @include breakpoint( $desktop ) { width: 551px; }
+
+    .gdo-pagination {
+
+        &:first-child table.gdo-main{
+            margin: 3px 0;
+            @include breakpoint( $desktop ) { margin: 3px 8px; }
+        }
+
+        .gdo-pagination p {
+            margin-right: 20px;
+            @include breakpoint( $desktop ) { margin-right: 0; }
+        }
+    }
+}
+
+.ordering {
+    .gdo-page-header-tbl{
+
+        width: 100%;
+
+        @include breakpoint( $desktop ) { 
+            width: 950px;
+        }
+
+    }
+}
+
+[id$="lblCustomerSupport"] { padding: 0 10px; }
+
+
+
+[id$="groupPlaceholderContainer"] {
+
+    > div {
+
+        display: block;
+        @include breakpoint( $desktop ) { display: inline-block; }
+
+    }
+
+    .gdo-product-td {
+
+        float: none;
+        width: 100%;
+
+        .gdo-ProdFrame, .gdo-ProdFrame-over {
+            width: 100%;
+        }
+
+        @include breakpoint( $desktop ) { float: right; }
+
+    }
+
+}

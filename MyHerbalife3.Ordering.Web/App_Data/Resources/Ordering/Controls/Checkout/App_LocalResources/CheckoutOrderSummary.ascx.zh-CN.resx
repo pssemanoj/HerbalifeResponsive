@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>删除</value>
+    <comment>_G591</comment>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>继续购物</value>
+    <comment>_G590</comment>
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>产品总价</value>
+    <comment>_G612</comment>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>确认取消</value>
+    <comment>_G589</comment>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>取消订购</value>
+    <comment>_G584</comment>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>您确定要取消?</value>
+    <comment>_G583</comment>
+  </data>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>继续新增产品</value>
+    <comment>_G582</comment>
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>购物车内没有产品</value>
+    <comment>_G585</comment>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>确认取消</value>
+    <comment>_G588</comment>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>结账离开</value>
+    <comment>_G587</comment>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>更改您的寄送地址选择表示在你的购物车中的产品缺货中或货到补寄。</value>
+    <comment>_G586</comment>
+  </data>
+  <data name="btnObservationOk.Text" xml:space="preserve">
+    <value>确认</value>
+    <comment>_G2797</comment>
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>产品名称</value>
+    <comment>_G602</comment>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>请选择寄送方式</value>
+    <comment>_G601</comment>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>否</value>
+    <comment>_G613</comment>
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>数量</value>
+    <comment>_G603</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>请选择寄送地址</value>
+    <comment>_G600</comment>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>是</value>
+    <comment>_G614</comment>
+  </data>
+  <data name="ReplaceCart.Text" xml:space="preserve">
+    <value>替换购物车</value>
+    <comment>_G2348</comment>
+  </data>
+  <data name="NewCartName.Text" xml:space="preserve">
+    <value>新的购物车名称</value>
+    <comment>_G2347</comment>
+  </data>
+  <data name="CartSaved" xml:space="preserve">
+    <value>此订单的副本已经被添加到您的已保存购物车。</value>
+    <comment>_G2350</comment>
+  </data>
+  <data name="lblWordOR.Text" xml:space="preserve">
+    <value>或</value>
+    <comment>_G2349</comment>
+  </data>
+  <data name="lblMessageCartName2.Text" xml:space="preserve">
+    <value>通过选择“替换车”，之前的购物车具有相同的名称将被删除。</value>
+    <comment>_G2346</comment>
+  </data>
+  <data name="lblAlert.Text" xml:space="preserve">
+    <value>警告！</value>
+    <comment>_G2343</comment>
+  </data>
+  <data name="CartName.Text" xml:space="preserve">
+    <value>购物车名称：</value>
+    <comment>_G2342</comment>
+  </data>
+  <data name="lblMessageCartName1.Text" xml:space="preserve">
+    <value>您可以以下的新名称或使用预充的名称储存您的购物车，或者您可以选择“替换购物车”。</value>
+    <comment>_G2345</comment>
+  </data>
+  <data name="lblNameExist.Text" xml:space="preserve">
+    <value>购物车名称已经存在！</value>
+    <comment>_G2344</comment>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>购物车已超出了最大的盈利限额</value>
+    <comment>_G608</comment>
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>产品货号</value>
+    <comment>_G607</comment>
+  </data>
+  <data name="CustomerOrdersSearchPageReturn" xml:space="preserve">
+    <value>返回我的客户订单搜寻</value>
+    <comment>_G2386</comment>
+  </data>
+  <data name="SaveCart.Text" xml:space="preserve">
+    <value>储存到购物车</value>
+    <comment>_G2341</comment>
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>产品单价</value>
+    <comment>_G606</comment>
+  </data>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>&lt;b style='color:red;'&gt;重要提示：&lt;/b&gt; &lt;br /&gt; &lt;ul&gt; &lt;li&gt;“大会资格”一经售出不接受任何非不可抗力而导致的退、换申请。&lt;/li&gt; &lt;li&gt; 您需前往您选择的“自提店铺”领取大会物资，请留意公司的后续通知。&lt;/ul&gt;</value>
+    <comment>_G3293</comment>
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>基本盈利</value>
+    <comment>_G592</comment>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>刪除</value>
+    <comment>_G605</comment>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>重新计算</value>
+    <comment>_G604</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>请选择提取选项</value>
+    <comment>_G598</comment>
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>订购摘要</value>
+    <comment>_G597</comment>
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>购货积分</value>
+    <comment>_G611</comment>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>请选择提取选项</value>
+    <comment>_G599</comment>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>如果您点选删除键，缺货产品将会呈现红色或货到补寄产品将呈现黄色.</value>
+    <comment>_G596</comment>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>无法取得订购限额</value>
+    <comment>_G610</comment>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>购物车已超出了最大的购货点数限额</value>
+    <comment>_G609</comment>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>返回</value>
+    <comment>_G594</comment>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>您可选择"返回"显示您先前之寄送地址</value>
+    <comment>_G595</comment>
+  </data>
+  <data name="lblObservationTitle.Text" xml:space="preserve">
+    <value>Please note...</value>
+    <comment>_G2798</comment>
+  </data>
+  <data name="PromoInCart" xml:space="preserve">
+    <value>SKU {0} has been added to your cart, if the order is not shipped to your address then you should remove it from cart.</value>
+    <comment>_G2799</comment>
+  </data>
+  <data name="DeleteHelp.Text" xml:space="preserve">
+    <value>-</value>
+    <comment>_G2379</comment>
+  </data>
+  <data name="lblPromoHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>赠品明细</value>
+    <comment>_G3431</comment>
+  </data>
+  <data name="lblHeaderChildSKU.Text" xml:space="preserve">
+    <value>次產品編號SKU</value>
+    <comment>_G3859</comment>
+  </data>
+  <data name="lblHeaderParentSKU.Text" xml:space="preserve">
+    <value>主產品編號SKU</value>
+    <comment>_G3858</comment>
+  </data>
+  <data name="ErrorCopyOrderDiscontinueSkuExist" xml:space="preserve">
+    <value>Sku {0} 已下架</value>
+  </data>
+  <data name="ErrorCopyOrderPromoEnd" xml:space="preserve">
+    <value>Sku {0} 促销已结束</value>
+  </data>
+  <data name="ErrorCopyOrderVirtualSkuExist" xml:space="preserve">
+    <value>Sku {0} 为虚拟商品不可复制</value>
+  </data>
+</root>

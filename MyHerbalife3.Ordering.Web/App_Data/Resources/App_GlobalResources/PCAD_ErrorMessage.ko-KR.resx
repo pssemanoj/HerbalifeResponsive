@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>연회비 번호는 장바구니에 추가 할 수 없습니다</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>연회비 번호는 장바구니에 추가 할 수 없습니다</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>주문을 취소하시겠습니까? 확인 누르면 제품이 장바구니에서 삭제됩니다.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>연회비 품목은 품목에는 비제품 항목이므로 삭제 됩니다.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>백오더 항목은 연회비 주문에 추가될 수 없습니다.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>카드승인요청이 실패되었습니다. 카드정보를 확인해 주십시오.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>데이터포맷 에러, 올바른 데이터를 입력하십시오</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>프로덕션 보너스 지급 기준</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>행사 티켓 주문 수량은 한 주문에 {0} 개로 한정됩니다.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>본 웹사이트에서 행사 티켓 구매를 할 수 없습니다.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>{0}의 경우  {1} 개의 수량만이 주문 가능합니다. 입력한 수량을 수정하고, 장바구니에 항목을 추가하시기 바랍니다.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>{0}의 경우1 개 이상을 백오더 주문하실 수 있습니다.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>품목번호{0} 의 경우 수량이  {1}을 초과할 수 없습니다.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>죄송합니다. 등록된 신용카드가 없습니다. 한국허벌라이프(주)고객서비스팀 1588-7577 (월-금 오전9시-오후6시) 로 연락하여 주시기 바랍니다.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>우편번호  오류</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:  "재판매" 유형 주문을 하기 전에 {0}년의 APF를 반드시 지급해야 합니다. APF 를 지불하기 위해 주문 타입을 "개인"으로 변경하시기 바랍니다.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>{0}은 현재 재고가 없습니다. 수량이 0으로 설정됩니다.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>투데이 메거진 제한</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>장바구니에 추가할 수 있는 최대 투데이지 수량은 {0}입니다.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>이미 사용하고 있는 닉네임 입니다. 다른 닉네임을 입력하여 주십시오.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>온라인 주문 서비스가 제공되지 않습니다.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>온라인 주문이 허용되지 않습니다.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>독립 APF 주문에는 제품만 추가할 수 있습니다.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>총 결제 금액과 총 주문 금액이 일치하지 않습니다.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>0보다 큰 액수를 추가하십시오.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>신용카드 정보를 확인하십시오.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>회원번호와 비밀번호 확인부탁드립니다.문제가 지속될 경우 한국허벌라이프(주)고객서비스팀 1588-7577 (월-금 오전9시-오후6시/토 12시-16시/ 마지막주 토 9시-14시) 로 연락 부탁드립니다.</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>장바구니에 다른 제품을 추가하기 전에연회비  구매를 완료하시기 바랍니다.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>장바구니에 다른 제품을 추가하기 전에연회비  구매를 완료하시기 바랍니다.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>숫자를 입력하여 주십시오.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>품목번호 수량을 입력해 주시기 바랍니다{0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>픽업 장소를 한 곳만 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>유효한 도시명를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>유효한 이름을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>유효한 닉네임을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>(0)을 제외한 기부액을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>이메일 주소를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>결제 정보를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>CVV 정보를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>구매하고자하는연회비 수량을 기입해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>유효한 이메일 주소를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>유효한 이름을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>유효한 성을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>유효한 중간이름을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>모든 필수 배송 정보를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>올바른  지역번호를 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>올바른 연장기간을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>제품을 대신 받으실 분 성명을 입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>지역번호를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>배송주소 "시"를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>연장기간을  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>이름을  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>성을  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>필수 항목을  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>전화번호를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>배송주소 "도" 를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>상세 주소를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>우편번호를 선택해 주시기 바랍니다.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>올바른 전화번호를  입력해 주시기 바랍니다.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>최대 {0}개의 카드 정보를 저장할 수 있습니다. 신규 카드를 추가하고자 할 경우, 기존 저장된 카드 중 하나를 삭제하시기 바랍니다.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>주의: &lt;br/&gt; 본 사이트는 인터넷 익스플로러 또는 파이어폭스등의 브라우저에서 가장 잘 보입니다.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>픽업주문을 완료하기 전에 배송주소를 기입하시기 바랍니다.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>장소를  선택하십시오.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>배송 시간을  선택하십시오.</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>미니 장바구니에서 주문 유형를 선택하십시오.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>픽업 장소를 선택하십시오.</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>픽업 장소를 선택하십시오.</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>픽업 시간을 선택하십시오.</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>픽업 장소 전화번호를 선택하십시오.</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>배송주소를 선택하십시오.</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>예/아니오를 선택하십시오.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>기본 주소는 삭제할 수 없습니다.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>선호 기본 픽업장소는 삭제할 수 없습니다.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>결제 하기</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>홈페이지로 이동하기</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>입력한 우편번호로는 배송되지 않습니다.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>품목번호{0}은 없습니다.</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>문자메시지 수신용 휴대폰 번호를 입력하여 주시기 바랍니다.</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>죄송합니다. 한국 웹사이트에서는 한국인 디스트리뷰터만이 주문을 할 수 있습니다.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>장바구니에 항목을 추가하면 수량 초과로  추가할 수 없습니다.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>시스템 에러</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(주문 실적월이 변경되었습니다!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>품목번호 {0} 은 백오더 주문으로 처리 예정입니다.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>배송주소 "도"가 유효하지 않습니다.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>상세 주소를 반드시 입력하셔야 합니다.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>상세 주소를 반드시 입력하셔야 합니다.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>카드 승인이 이루어 지지 않았습니다. 카드 정보를 다시 확인하여 주시기 바랍니다. 문제가 지속되면,한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락하여 부탁드립니다.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>카드 승인이 이루어 지지 않았습니다. 카드 정보를 다시 확인하여 주시기 바랍니다. 문제가 지속되면,한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-15시)로 연락하여 부탁드립니다.</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>우편번호가 유효하지 않습니다.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>구매한 제품이 없습니다.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>항목{0}의 경우 현재 재고가 충분하지 않습니다. 구입가능한 수량은 {1}입니다.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>선택된 제품이 없습니다.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>주문실적 계산을 위해 선택된 제품이 없습니다.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>본 주소는 배송 주소록에 이미 있습니다.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>주문이 수량한도를 초과했습니다. 남아있는 실적점수는  {0} 입니다. 구매를 계속하기를 원하시면 주문을 수정하시기 바랍니다.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>요청하신 카드 승인이 거절되었습니다.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>투데이 메거진이 장바구니에 추가되었습니다.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>주문을 완료할 수 없습니다. 문제가 지속되면 한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락 부탁드립니다.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>주문을 완료할 수 없습니다. 문제가 지속되면 한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락부탁드립니다.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>주문을 완료할 수 없습니다. 문제가 지속되면 한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락 부탁드립니다.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>죄송하지만 화폐 변경이 불가능합니다.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>장바구니에 이미 행사 티켓 항목이 들어있습니다. 장바구니를 비우시겠습니까?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>기본 카드 삭제를 시도하셨습니다. 본 카드를 삭제하기 전에 다른 저장된 카드를 기본 카드로 설정하시기 바랍니다.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>요청하신 신용 카드는 결제 불가 합니다</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>동일한 신용카드를 한 번 이상 추가할 수 없습니다.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>장바구니에 제품을 추가할 수 없습니다.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>장바구니가 비어있기 때문에 {0} 페이지로 이동할 수 없습니다.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>픽업을 배송 옵션으로 선택할 경우 장바구니의 백오더 제품은 제거됩니다. 계속하시겟습니까? (예/아니오)</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>주문 개월을 {0}으로 변경하였습니다. 이 선택을 계속하시겠습니까?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>장바구니에 행사티켓 항목이 있습니다. 장바구니를 비우시겠습니까?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>장바구니에 제품이 있습니다. 행사티켓 구매 전에 장바구니를 비우시겠습니까?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>선택한 실적월 {0} 을 확인해 주시겠습니까?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>WALDOS에서 픽업을 선택했기 때문에 주문서에 제품이 제한될 것입니다.</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>주문을 하지 않고 제품 보기만을 선택했기 때문에 장바구니에 제품을 담을 수 없습니다.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>성공적으로 장바구니에 HFF를 추가했습니다.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>연회비 1년간만 선지불이 가능합니다.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>계속하기 위해 배송 또는 픽업 옵션을 선택해야 합니다.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>{0}에 대한 동일한 주문을 최근 했습니다.중복 주문일 경우 "주문취소"를 클릭하고 주문을 계속하고자 하면 제출을 클릭하십시오.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>연회비  {0} 까지 지급하시기 바랍니다.</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>연회비만기일입니다. 자동적으로 장바구니에 담도록 하겠습니다.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>연회비만기일입니다.  장바구니에 추가 되었습니다.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>신용카드가 유효기간이 만료되었습니다. 수정을 클릭하고 만기일을 업데이트하시기 바랍니다.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>신용카드가 유효기간이 만료되었습니다.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>회원번호에러 입니다.문제가 지속될경우 한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락하여 부탁드립니다.</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>회원 번호 에러 입니다.문제가 지속될 경우 한국허벌라이프㈜ 고객서비스팀 1588-7577 (월-금 9시-18시/ 토요일 12시-16시,마지막주 토요일 9시-14시)로 연락하여 부탁드립니다.</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>장바구니를 변경하기 전에 이전 주문이 이미 완료되었습니다. 주문번호는  {0} 입니다. 주문상태는 여기를 클릭하시기 바랍니다. (주문이 나타나기까지 1시간이 소요될 수 있습니다. &lt;br&gt;I 신규 주문을 원할 경우 장바구니에 항목을 재추가하시기 바랍니다.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>연회비 처리가 장바구니에 추가되었습니다.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>배송 정보는 더 이상 유효하지 않습니다. 장바구니를 비우도록 하겠습니다.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>미니 장바구니에서 주문 유형를 선택하십시오.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>구매 한도가 초과되었기 때문에 결재창으로 이동할 수 없습니다.</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>픽업 시간을 선택 하십시오.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>장바구니에 담긴 제품을 변경하시려면 등록된 결제카드를 삭제하셔야 합니다.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>배송방법을 선택해 주시기 바랍니다.</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>뉴칼레도니아와 프랑스령 폴리네시아로는 백오더 주문을 하실수 없습니다.</value>
+  </data>
+</root>

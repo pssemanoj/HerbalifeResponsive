@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>O Código da Quota Anual não pode ser adiconado ao seu cesto de compras.</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>O Código da Quota Anual não pode ser retirado do seu cesto de compras</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Tem a certeza que quer cancelar esta encomenda? Carregue "OK" e serão retirados todos os produtos do seu cesto de compras.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Como não tem produtos com a quota anual, todos os items serão retirados.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Produtos de BAckorder não podem ser adicionados à quaota anual.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Não foi autorizado o pagamento com cartão. Por favor verifique os dados do seu cartão.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Data errada, por favor introduza a data correcta.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Foi introduzido código duplicado.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>O Limite Máximo de Bilhetes de Evento Event é de {0} por encomenda.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>A compra do bilhete para o evento não é permitida neste site.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Para o produto {0} só a quantidade de {1} está disponivel. Por favor corrija a quantidade inserida para adicionar ao cesto de compras.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Para o produto {0}, 1 ou mais quantidades podem ficar em backorder.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Para o código {0}, a quantidade não pode ultrapassar {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Lamento, mas não temos registos de cartões de crédito no nosso arquivo. Por favor contacte o Departamento de Encomendas através do número 21 771 4400 (opção 1)</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Código postal inválido.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} anos de anuidades sob pagamento e deverá ser paga antes de fazer a compra de produtos. Por favor, altere o tipo de compra para "Pessoal" para efectuar o pagamento da sua anuidade.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Produto {0} está esgotado, a quantidade será de 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>O limite da revista Today é de</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>O número máximo de revistas que pode ser adicionado ao cesto é {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Apelido já usado, por favor introduza um nome diferente.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Encomenda Online não disponível.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Não é permitida encomendar online.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Só produtos podem ser adicionados à compra da quaota anual</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>O total do pagamento não corresponde com o total da encomen da</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Por favor coloque valor superior a 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Por favor verifique informação do cartão.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Por favor verifique o seu Número de Membro Herbalife e Código Pin e tente de novo. Se os problemas continuarem, por favor contacte o Dept. de Apoio aos Membros Herbalife através no número 217714400</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Por favor complete a compra da quota anual antes de adicionar os outros produtos ao cesto.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Por favor complete a compra da quota anual antes de comprar os bilhetes de evento.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Por favor, introduza um número</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Por favor introduza a quantidade do código do produto {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Por favor introduza um único local de entrega.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Por favor insira uma cidade válida.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Por favor insira um nome válido.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Por favor insira um apelido válido.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Por favor insira o valor do donativo, excepto zero(0).</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Por favor insira a morada de email.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Por favor insira informação de pagamento.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Por favor insira o CVV.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Por favor insira a quantidade da quota anual que pretende pagar.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Por favor insira uma morada de email válida.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Por favor insira um Primeiro Nome válido.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Por favor insira um Último Nome válido.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Por favor insira o nome do meio válido.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Por favor preencha toda a informação de envio.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Por favor preencha o código da área no formato correcto</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Por favor preencha o código da extensão no formato correcto</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Por favor preencha o campo de "Ao cuidado de".</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Por favor preencha o campo do código da àrea.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Por favor coloque a cidade.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Por favor coloque a extensão.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Por favor coloque o primeiro nome.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Por facor coloque o último nome.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Por favor preencha os campos obrigatórios.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Por favor coloque o número de telefone.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Por favor preencha o campo da morada de entrega.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Por favor coloque o código postal.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Por favor coloque o número de telefone no formato correcto.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Por fvaor, note que só pode salvar detalhes de cartão no máximo de {0}. Para adicionar um novo cartão, por favor remova um dos cartões existentes.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Por favor, note que este site é visualizado melhor com Internet Explorer ou Firefox.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Por favor grave a morada de envio antes de completar a encomenda.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Por favor selecione o local.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Por favor selecione um tempo de envio</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Por favor selecione o tipo de encomenda.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Por favor o local de recolha.</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor seleccione o local de levantamento.</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Por favor, seleccione o Nome</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Por favor, seleccione o número de Telefone</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Por favor, seleccione um Tempo</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor seleccione a morada de envio</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Por favor selecione Sim/Não.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>A morada principal não pode ser apagada.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Os dados do local principal não pode ser apagada.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Seguir para finalizar</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Seguir para a página principal</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Código de Envio  não é suportado</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>O Código {0} não se encontra disponivel.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Lamentamos, mas não consegue adicionar os produtos ao cesto de compras, uma vez que adicionando mais produtos ao cesto excederá o limite dos ganhos.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Erro Sistema.</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(O Mês da Encomenda foi alterado!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>O código {0}  adicionado ficará em backorder.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>A morada deverá conter no minimo um  letra alfabetica.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>A morada deverá ter no minimo um número, um espaço, e uma letra alfabetica.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>A transacção não foi permitida, por favor carregue "Submeter" outra vez. Se o problema persistir, contacte a serviço de Apoio aos Membros Herbalife via 21 771 4400.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>A transacção não foi permitida, contacte o Departamento de Encomendas via 21 771 4400.</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>O codigo postal introduzido nao e valido.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>A sua encomenda não tem produtos para compra.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Neste momento não existem quantidades suficientes para o produto {0}. Disponivel a quantidade de {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Não tem produtos seleccionados para adicionar à encomenda.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Não tem produtos seleccionados para calcular os pontos de volume.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Esta morada já existe na base de dados.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>A encomenda excede o limite da sua compra.Tem {0} pontos de volume restantes. Por favor corrija a sua encomenda para continuar.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Não foi autorizada a transação para este cartão.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Revista Today foi adicionada ao seu cesto.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Não nos é possivel completar a sua encomenda. Por favor contacte o Departamento de Encomendas através do número 217714400 e mencione o código de erro 01.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Não nos é possivel completar a sua encomenda. Por favor contacte o Departamento de Encomendas através do número 217714400 e mencione o código de erro 05.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Não é possivel processar a sua encomenda. Por favor verifique a sua morada e tente novamente. Se o problema persistir, contacte o Departamento de Encomendas.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Não é possivel efectuar a conversão, por favor contacte o Departamento de Encomendas através do número 21 771 4400.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Já existe o bilhete do evento no seu cesto, quer limpar o seu cesto?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Estar a tentar apagar o seu cartão principal. Por favor, guarde de maneira diferente do seu cartão principal antes o apagar.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Não pode continuar a usar este cartão uma vez que já foi recusado várias vezes.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Não pode adicionar o mesmo cartão mais que uma vez.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Não pode adicionar este produto ao seu cesto.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Não pode continuar para a {0} página sem produtos no seu cesto.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Tem produtos em backorder no seu cesto que serão removidos se seleccionar Levantamento nas suas opções de envio. Deseja continuar? ("Sim" ou "Não")</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Alterou o mês de encomenda desta encomenda para {0}. Deseja continuar com esta selecção?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Já existe o bilhete do evento no seu cesto, quer limpar o seu cesto?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Já tem produto(s) nos eu cesto de compras. Deseja apagar antes de proceder á compra do bilhete do evento?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Seleccionou {0} como duplo mês está correcto?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Seleccionou Levantamento através WALDOS, haverá limite de produtos no formulário de encomenda.</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Escolheu navegar no produto sem colocar uma encomenda, não é possivel adiconar esse produto ao cesto.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Adicionou com sucesso HFF ao seu cesto.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Só poderá fazer o pagamento antecipado de um ano de quota anual.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Tem de seleccionar a opção de  Enviar ou Levantar antes de continuar.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>A sua encomenda anterior foi já submetida após as alterações que efectuou no seu cesto de compra. A sua encomenda tem o número {0}. Pode verificar o estado desta encomenda contactando o Departamento de Encomendas através do número 21 771 4400, das 9H00 às 18H00, Segunda-Sexta. (Por favor, tome em atenção que poderá levar 1 hora até a encomenda estar visivel.&lt;br&gt;Se desejar colocar uma nova encomenda , por favor adicione mais produtos ao seu cesto de compras.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>A sua quota anual está a pagamento apartir de {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>A sua quota anual está sob pagamento, será adicionado automáticamente ao seu cesto de compras.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>As suas quotas anuais estão sob pagamento. serão adicionadas  ao seu cesto.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>O seu cartão de crédito expirou. Edite ou actualize a data de validade.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>O seu cartão de crédito expirou. Por favor contacte o Departamento de Encomendas.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>O seu ID não foi aceite, por favor contacte o Departamento de Encomendas via 21 771 4400.</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>O seu ID não foi aceite, por favor contacte o Departamento de Encomendas via 21 771 4400.</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>A sua encomenda anterior foi já submetida após as alterações que efectuou no seu cesto de compra. A sua encomenda tem o número {0}. Pode verificar o estado desta encomenda contactando o Departamento de Apoio através do 21 771 4400, das 9 horas às 18 horas, Segunda-Sexta ou carregando aqui. (Por favor, tome em atenção que poderá levar 1 hora até a encomenda estar visivel.&lt;br&gt;Se desejar colocar uma nova encomenda , por favor adicione mais produtos ao seu cesto de compras.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>O seu pedido da quota anual ficará no seu cesto.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>A informação de envio não é mais válida, o cesto de compras será despejado.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Por favor selecione o tipo de encomenda do mini cesto.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Não pode finalizar a sua compra uma vez que excedeu o limite de compras.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Tem de apagar um dos seus cartões de crédito para poder alterar os item do seu cesto de compras</value>
+  </data>
+</root>

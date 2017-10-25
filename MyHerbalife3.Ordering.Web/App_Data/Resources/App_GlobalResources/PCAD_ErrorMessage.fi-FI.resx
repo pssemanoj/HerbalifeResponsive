@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Vuosimaksua ei voida lisätä ostoskoriin</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Vuosimaksua ei voida siirtää ostoskoriisi</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Haluatko varmasti poistaa tämän tilauksen? Jos painat "OK", ostoskorisi tyhjenee.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Koska vuosimaksutilauksessa ei ole tuotteita, kaikki ei tuotteet ovat poistettu.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Jälkitoimitustuotteita ei voi lisätä vuosimaksutilaukseen.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Kortin tarkistus ei onnistunut. Tarkista korttisi tiedot.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Väärä muoto. Anna tiedot oikeassa muodossa.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Sama tuotenumero on syötetty kaksi kertaa. Yritä uudestaan.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Tapahtumalippujen ostaminen on rajoitettu määrään {0} per tilaus</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Tapahtumalippujen tilaaminen ei ole sallittua tällä sivulla.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Tuotetta {0} saatavilla vain {1}. Muuta määrää lisätäksesi tuotteen ostoskoriin.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>1 tai useampi kappale tuotenumeroa {0} voi tulla jälkitoimituksena.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Tuotenumerolle {0} ei määrä voi olla enemmän kuin {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Sinulla ei valitettavasti ole luottokorttia rekisteröitynä järjestelmäämme. Ota yhteyttä Jälleenmyyjäpalveluihin: DRnordic@herbalife.com</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Väärä postinumero</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} vuoden vuosimaksu-maksut erääntyvät, ja ne on maksettava ennen jälleenmyyntitilauksen tekemistä. Muuta tilaustyypiksi "Henkilökohtainen", jotta voit maksaa vuosimaksusi.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Tuotetta {0} ei ole tällä hetkellä varastolla, joten sen määräksi on vaihdettu 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Today -lehti on rajoitettu määrään 3 tilausta kohden</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Lehtien maksimäärä per tilaus on {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Nimi on jo käytössä, anna toinen nimi.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online -tilaus ei ole käytettävissä.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online -tilaus ei ole sallittu.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Vuosimaksu -tilaukseen voidaan lisätä vain tuotteita</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Maksettu summa ei vastaa tämän tilauksen loppusummaa.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Laita määräksi enemmän kuin 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Tarkista korttitietosi.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Tarkista Jälleenmyyjä-ID:si ja PIN-koodisi ja yritä uudestaan. Jos ongelma toistuu, ota yhteyttä jälleenmyyjäpalveluihin numeroon 09 7251 9555.</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Tee valmiiksi vuosimaksutilaus ennenkuin lisäät muita tuotteita ostoskoriin.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Tee valmiiksi vuosimaksutilaus ennen kuin ostat tapahtumalippuja.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Anna numero.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Syötä määrä tuotenumerolle: {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Anna noutopaikan sijainti.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Täytä voimassaoleva kaupunki.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Täytä voimassaoleva nimi.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Täytä voimassaoleva vastaanottajan nimi.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Kirjoita lahjoitussumma, ilman nollaa (0)</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Täytä sähköpostiosoite.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Täytä  maksutiedot.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Täytä  CVV-numero.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Täytä kuinka monta vuosimaksua haluat maksaa.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Täytä voimassaoleva sähköpostiosoite.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Täytä voimassaoleva etunimi.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Täytä voimassaoleva sukunimi.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Täytä voimassaoleva toinen nimi.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Täytä pakolliset toimitustiedot.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Täytä postinumero oikeassa muodossa.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Täytä vastaanottajan c/o -nimi.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Täytä postinumero.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Täytä kaupunki.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Täytä etunimi.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Täytä sukunimi.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Täytä kaikki pakolliset kentät.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Täytä puhelinnumero.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vänligen fyll i stad.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Täytä katuosoite.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Täytä postinumero.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Täytä puhelinnumero oikeassa muodossa.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Huomioi, että tallennettuna voi olla enintään {0} korttia samaan aikaan. Voidaksesi lisätä uuden kortin, sinun tulee poistaa yksi jo tallennetuista korteista.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>HUOM: &lt;br/&gt; Tämä sivu näkyy parhaiten selaimilla Internet Explorer tai Firefox.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Tallenna lähetysosoite ennen tämän noutotilauksen täyttämistä.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Valitse sijainti.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Valitse tilaustyyppi.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Valitse Kyllä/Ei</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Ensisijaista osoitetta ei voi poistaa. Valitse vaihtoehtoinen ensisijainen osoite ennen kuin jatkat.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Ensisijaista noutosuosikkia ei voi poistaa.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Jatka Kassaan</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Jatka kotisivulle</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Lähetys tähän postinumeroon ei ole sallittu. Ota yhteyttä Jälleenmyyjäpalveluihin.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Tuotenumero {0} ei ole saatavissa</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Järjestelmävirhe</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Tilauskuukausi on muuttunut!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Tuotenumero {0} tulee jälkitoimituksena.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Valtio ei ole pätevä.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Katuosoitteen pitää sisältää vähintään yksi kirjain.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Katuosoitteen pitää sisältää vähintään yksi numero, yksi välilyönti ja yksi kirjain.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Maksutapahtumaa ei hyväksytty, ottakaa yhteyttä Jälleenmyyjäpalveluihin: DRnordic@herbalife.com</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Maksutapahtumaa ei hyväksytty, ottakaa yhteyttä Jälleenmyyjäpalveluihin: DRnordic@herbalife.com</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Postinumero on väärä.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Tilauksessa ei ole maksettavia tuotteita.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Tuotenumeroa {0} ei ole tällä hetkellä tarpeeksi varastossa. Saatavissa oleva määrä on {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Mitään tuotetta ei ole valittu tilaukseen lisättäväksi.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Mitään tuotteita ei ole valittu volyymipisteiden laskemiseen.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Tämä osoite on jo tietokantatestissä.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Tämä tilaus ylittää ostorajasi. Sinulla on jäljellä {0} volyymipistettä. Jatka muokkaamalla tilaustasi.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Kortin maksutoimitusta ei hyväksytty.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today -lehti on lisätty ostoskoriin.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Tilaustasi ei voitu vahvistaa. Ota yhteyttä Jälleenmyyjäpalveluihin: Drnordic@herbalife.com</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Tilaustasi ei voitu vahvistaa. Ota yhteyttä Jälleenmyyjäpalveluihin: Drnordic@herbalife.com</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Emme valitettavasti pystyneet käsittelemään tilaustasi. Tarkista osoitteesi ja yritä uudelleen. Jos ongelma uusiutuu, ota yhteyttä Jälleenmyyjäpalveluihin.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Valuuttaa ei valitettavasti voitu muuntaa. Ota yhteyttä Jälleenmyyjäpalveluihin numeroon 09 7251 9555.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Sinulla on jo tapahtumalippuja ostoskorissa. Haluatko tyhjentää ostoskorisi?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Olet poistamassa ensisijaista luottokorttiasi. Valitse toinen jo tallennettu kortti ensisijaiseksi kortiksesi ennen kuin poistat tämän kortin.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Et voi enää käyttää tätä korttia useiden yritysten vuoksi.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Et voi lisätä samaa korttia useaan kertaan.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Et voi lisätä tätä tuotetta ostoskoriin.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Et voi mennä sivulle {0}, kun ostoskorisi on tyhjä.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Ostoskorissasi on jälkitilaustuotteita, jotka poistetaan, jos valitset lähetysasetukseksi "Nouto". Haluatko jatkaa? (kyllä tai ei)</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Olet vaihtanut tämän tilauksen tilauskuukauden kuukauteen {0}. Haluatko jatkaa tämän valinnan kanssa?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Sinulla on tapahtumalippuja ostoskorissasi, haluatko tyhjentää sen?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Sinulla on tuotteita ostoskorissa. Haluatko tyhjentää ostoskorisi ennen kuin jatkat tapahtumalippujen ostoon?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Olet valinnut tilauskuukaudeksi {0}, onko tämä oikea valinta?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Olet valinnut selata tuotelistaa tilaamatta tuotteita. Et voi lisätä tuotteita ostoskoriin.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Olet lisännyt HFF:n ostoskoriin.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Voit maksaa vain yhden vuosimaksun ennakkoon.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Sinun tulee valita toimitustapa ennen kuin voit jatkaa.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Teit äskettäin identtisen tilauksen {0}. Jos tämä on sama tilaus, valitse "Keskeytä". Jos haluat jatkaa tätä tilausta, vahvista se.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Vuosimaksusi eräpäivä on {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Sinulla on erääntynyt vuosimaksu. Se on lisätty ostoskoriisi automaattisesti.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Sinulla on useampi erääntynyt vuosimaksu. Ne on lisätty ostoskoriisi automaattisesti.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Luottokorttisi ei ole enää voimassa. Paina "Muuta" ja päivitä korttitietosi.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Luottokorttisi ei ole enää voimassa. Ota yhteyttä Jälleenmyyjäpalveluihin: Drnordic@herbalife.com</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Antamasi ID-numero ei ole hyväksyttävä. Ota yhteyttä Jälleenmyyjäpalveluihin numeroon: 09 7251 9555</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Antamasi ID-numero ei ole hyväksyttävä. Ota yhteyttä Jälleenmyyjäpalveluihin numeroon: 09 7251 9556</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Aikaisempi tilauksesi vahvistettiin/lähetettiin ennen kuin teit muutoksia ostoskoriisi. Tilausnumerosi on {0}. Voit tarkistaa tilauksen statuksen ottamalla yhteyttä Jälleenmyyjäpalveluihin numeroon 09 7251 9555</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Maksamattomat vuosimaksusi on lisätty ostoskoriisi.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Toimitusosoitetietosi eivät ole enää voimassa. Ostoskorisi tyhjennetään.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Valitse tilaustyyppi miniostoskorista.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Et voi maksaa, sillä ostorajasi on ylittynyt</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Yksi luottokortti on poistettava, jotta ostoskorin tuotteita voi muuttaa</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Valitse toimitusosoite</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Kännykkänumero vaaditaan.</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Valitettavasti et voi tehdä tilausta. Vain korealaiset jälleenmyyjät voivat tehdä tilauksia Korean verkkosivustolta.</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Tuotenumero {0} ei ole käytössä.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Valitse toimitustapa</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Uuteen-Kaledoniaan ja Ranskan Polynesiaan ei toimiteta jälkitilauksia.</value>
+  </data>
+</root>

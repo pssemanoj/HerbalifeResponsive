@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Contact" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Contact" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd46" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:complexType name="ContactQuestionnaire_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Answer" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DisplayOrder" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Question" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactQuestionnaire_V01" nillable="true" type="tns:ContactQuestionnaire_V01" />
+  <xs:complexType name="ArrayOfContactPhone_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactPhone_V01" nillable="true" type="tns:ContactPhone_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContactPhone_V01" nillable="true" type="tns:ArrayOfContactPhone_V01" />
+  <xs:complexType name="ContactPhone_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsPrimary" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" minOccurs="0" name="PhoneType" nillable="true" type="q3:ContactPhoneType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactPhone_V01" nillable="true" type="tns:ContactPhone_V01" />
+  <xs:complexType name="ArrayOfContactQuestionnaire_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactQuestionnaire_V01" nillable="true" type="tns:ContactQuestionnaire_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContactQuestionnaire_V01" nillable="true" type="tns:ArrayOfContactQuestionnaire_V01" />
+  <xs:complexType name="ContactPhone">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactPhone" nillable="true" type="tns:ContactPhone" />
+  <xs:simpleType name="ContactNameSearchType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NameContains">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FirstNameStartsWith">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LastNameStartsWith">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContactNameSearchType" nillable="true" type="tns:ContactNameSearchType" />
+  <xs:complexType name="ContactFilter_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BirthDay" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactCreatedEndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ContactCreatedStartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ContactSource" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Interest" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsAdvancedSearch" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NameSearchTypeInd" type="tns:ContactNameSearchType" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SearchByEmail" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Skip" nillable="true" type="xs:int" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" name="SortList" nillable="true" type="q6:KeyValuePairOfstringstring" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Take" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContactFilter_V01" nillable="true" type="tns:ContactFilter_V01" />
+</xs:schema>

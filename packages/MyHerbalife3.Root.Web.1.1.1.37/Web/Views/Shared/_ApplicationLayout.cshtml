@@ -1,0 +1,37 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Core.ContentProxyProvider.Extensions
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var globalContext = (HttpContext.Current.ApplicationInstance as IGlobalContext);
+    var currentExperience = globalContext.CurrentExperience;
+}
+
+@section HeadLinks {
+    @RenderSection("HeadLinks", required: false)
+}
+
+@section HeadScripts {
+    @RenderSection("HeadScripts", required: false)
+}
+
+<div class="subheader">
+    @this.RenderSubHeaderSection()
+</div>
+
+            <!-- PAGE CONTENT -->
+<div id="principalContent" class="container columnCont">
+
+    <!--LEFT NAV-->
+    @if (currentExperience.ExperienceType != MyHerbalife3.Shared.ViewModel.ValueObjects.ExperienceType.Black)
+    {
+        <div id="LeftNavMenuCell">
+            @Html.Partial("_LeftNav")
+        </div>
+    }
+    <!--PRINCIPAL CONTENT-->
+    <div id="ContentCell">
+        @RenderBody()
+    </div>
+
+</div>

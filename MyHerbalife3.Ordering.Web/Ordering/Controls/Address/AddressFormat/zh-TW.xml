@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<AddressWindow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://herbalife.com/GlobaleAddress">
+  <Grid Width="100" Height="200" Grid.Row="0" Grid.Column="0">
+    <Controls>
+      <Label cssStyle="AddressHeader" Name="Street" Grid.Row="2" Grid.Column="2" Text="道路或街名或村里名稱 *" />
+      <Label cssStyle="AddressHeader" Name="PostalCode" Grid.Row="2" Grid.Column="4" Text="郵遞區號 *" />
+      <Label cssStyle="AddressHeader" Name="StateProvince" Grid.Row="2" Grid.Column="0" Text="縣市 *" />
+      <Label cssStyle="AddressHeader" Name="City" Grid.Row="2" Grid.Column="1" Text="鄉鎮市區 *" />
+      <Label cssStyle="AddressHeader" Name="Recipient" Grid.Row="0" Grid.Column="0" Text="收貨人姓名 *" />
+      <Label cssStyle="AddressHeader" Name="PhoneNumber" Grid.Row="0" Grid.Column="1" Text="行動電話號碼 *" />
+      <!--<Label cssStyle="AddressHeader" Name="TelAreaCode" Grid.Row="0" Grid.Column="1" Text="區域號碼*" />-->
+
+
+      <TextBox cssStyle="EditAddress" Name="TBStreet" Grid.Row="3" Grid.Column="2" Text="{Binding Address.Line1}"  Required="true" KeyPressHandler="OnAddressKeyPress(event,this)" MaximumLength="40" IndexForTab="7"/>
+      <TextBox cssStyle="EditAddress" Name="TBZip" Grid.Row="3" Grid.Column="4" Text="{Binding Address.PostalCode}" Required="true" ValErrorMsg="PostalCode" RegExp="^(\d{3})$"  ValReqMsg="NoZipCode" KeyPressHandler="OnTWZipCodeKeyPress(event,this)"  MaximumLength="3" IndexForTab="8"/>
+      <!--<TextBox cssStyle="EditAddress" Name="TBLast" Grid.Row="1" Grid.Column="0" Text="{Binding Attention.Last}" Required="true"   ValReqMsg="NoLastName" KeyPressHandler="OnAddressKeyPress(event,this)"  MaximumLength="50" IndexForTab="1"/>-->
+      <TextBox cssStyle="EditAddress" Name="TBRecipient" Grid.Row="1" Grid.Column="0" Text="{Binding Recipient}" Required="true" ValReqMsg="NoFirstName" MaximumLength="40" IndexForTab="2"/>
+      <!--<TextBox cssStyle="EditAddress" Name="TBAreaCode" Grid.Row="1" Grid.Column="1" Text="{Binding AreaCode}" Required="true"  ValErrorMsg="電話號碼錯誤" ValReqMsg="NoAreaCode" RegExp="^(\d{2}|\d{3}|\d{4})$"  MaximumLength="10" IndexForTab="3" />-->
+	  <TextBox cssStyle="EditAddress" Name="TBPhone" Grid.Row="1" Grid.Column="1" Text="{Binding Phone}" Required="true"  ValErrorMsg="電話號碼錯誤" ValReqMsg="NoPhone" RegExp="^\s?(\d{7,10})$"  MaximumLength="10" IndexForTab="5" />
+      <ComboBox cssStyle="Address" Name="ddlState" Text="{Binding Address.StateProvinceTerritory}" Dependent="ddlCity" Grid.Row="3" Grid.Column="0" ItemsSource="~/Ordering/Controls/Address/AddressFormat/zh-TW-CountyCity.xml" XPath="/CountyOrCity/CountyCity" DisplayMemberPath="Name" DisplayIDPath="ID" IndexForTab="6" />
+      <ComboBox cssStyle="Address" Name="ddlCity" Text="{Binding Address.City}" Required="true" Grid.Row="3" Grid.Column="1"  ItemsSource="~/Ordering/Controls/Address/AddressFormat/zh-TW-Area.xml" XPath="/Areas/Area[@CountyCity='{0}']" DisplayMemberPath="Name"  DisplayIDPath="ID" IndexForTab="7" />
+      <!--<TextBox Name="TBState" Grid.Row="3" Grid.Column="0" Text="{Binding StateProvinceTerritory}" />-->
+    </Controls>
+  </Grid>
+</AddressWindow>

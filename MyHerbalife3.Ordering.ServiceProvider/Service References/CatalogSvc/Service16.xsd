@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2010/09/20/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetSizeChartsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSizeChartsRequest" nillable="true" type="tns:GetSizeChartsRequest" />
+  <xs:complexType name="GetSizeChartsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSizeChartsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSizeChartsRequest_V01" nillable="true" type="tns:GetSizeChartsRequest_V01" />
+  <xs:complexType name="GetSizeChartsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSizeChartsResponse" nillable="true" type="tns:GetSizeChartsResponse" />
+  <xs:complexType name="GetSizeChartsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSizeChartsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SizeCharts" nillable="true" type="tns:ArrayOfSizeChart_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSizeChartsResponse_V01" nillable="true" type="tns:GetSizeChartsResponse_V01" />
+  <xs:complexType name="ArrayOfSizeChart_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SizeChart_V01" nillable="true" type="tns:SizeChart_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSizeChart_V01" nillable="true" type="tns:ArrayOfSizeChart_V01" />
+  <xs:complexType name="SizeChart_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SizeChart">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsDisplayable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="MeasureSizeList" nillable="true" type="tns:ArrayOfMeasureSizeItem_V01" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SizeChart_V01" nillable="true" type="tns:SizeChart_V01" />
+  <xs:complexType name="SizeChart">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2010/09/20/HL.Common.DataContract.ValueObjects" base="q3:VersionedReferenceObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SizeChart" nillable="true" type="tns:SizeChart" />
+  <xs:complexType name="ArrayOfMeasureSizeItem_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MeasureSizeItem_V01" nillable="true" type="tns:MeasureSizeItem_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMeasureSizeItem_V01" nillable="true" type="tns:ArrayOfMeasureSizeItem_V01" />
+  <xs:complexType name="MeasureSizeItem_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MeasureSizeItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Measure" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MeasureMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MeasureOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="Size" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SizeOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MeasureSizeItem_V01" nillable="true" type="tns:MeasureSizeItem_V01" />
+  <xs:complexType name="MeasureSizeItem">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2010/09/20/HL.Common.DataContract.ValueObjects" base="q4:VersionedReferenceObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MeasureSizeItem" nillable="true" type="tns:MeasureSizeItem" />
+</xs:schema>

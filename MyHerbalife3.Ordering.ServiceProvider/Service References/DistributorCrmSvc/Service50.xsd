@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Distributor" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Distributor" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetEnhancedVisibilityRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEnhancedVisibilityRequest" nillable="true" type="tns:GetEnhancedVisibilityRequest" />
+  <xs:complexType name="GetEnhancedVisibilityRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetEnhancedVisibilityRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetEnhancedVisibilityRequest_V01" nillable="true" type="tns:GetEnhancedVisibilityRequest_V01" />
+  <xs:complexType name="SetEnhancedVisibilityRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetEnhancedVisibilityRequest" nillable="true" type="tns:SetEnhancedVisibilityRequest" />
+  <xs:complexType name="SetEnhancedVisibilityRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetEnhancedVisibilityRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnhancedVisibility" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetEnhancedVisibilityRequest_V01" nillable="true" type="tns:SetEnhancedVisibilityRequest_V01" />
+</xs:schema>

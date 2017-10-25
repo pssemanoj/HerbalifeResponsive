@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>פריט מק"ט: {0}: לא נוסף לעגלת הקניות מכיוון שהוא לא זמין לממונה.</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>פריט מק"ט {0}: לא נוסף לעגלת הקניות. אם אתה רוצה להוסיף, אנא שנה את תת-סוג ההזמנה ל-A1 או B1.</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>אנא הוסף מוצרים לעגלה לפני הוספת המק"ט {0}.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>אין לעבור את הכמויות הנ"ל {0} למק"ט: {1}.</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>המק"ט {0} אינו זמין למשלוח אקספרס.</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>מק"טים 0343, 0344, 2329, או 2328 לא זמינים למשלוח אקספרס.</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>כמות המק"טים לא צריכה לעבור את {0} לעיל</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>לא ניתן לרכוש</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>לא יכול לרכוש מוצרים  {0}.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>לא ניתן להגדיל את כמות מק"ט  {0} ב-{1} מכיוון שהוא עובר את מגבלת ההכנסות שלך.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>לא ניתן להגדיל את כמות מק"ט  {0} ב-{1} מכיוון שהוא עובר את מגבלת נקודות הזיכוי שלך.</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>פריט מק"ט: {0} לא נוסף לעגלת הקניות מכיוון שבהוספת הפריט, תעבור את מגבלת נקודות הזיכוי שלך.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>הזמנה זו עולה על מגבלת הקניה שלך. יש לך יתרה של {0} נ"ז. אנא תקן את הזמנתך כדי להמשיך.</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>הסכום הכולל עובר את מגבלת הסכום הכללי בסך {0}</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>מק"ט פריט:{0}לא התווסף לעגלה מפני שבעת הוספתו לעגלה עברתם על מגבלות הקניה שלכם</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>כמות מק"ט פריט: {0} לא ניתן להגדיל ב{1} מפני שהיא עוברת את מגבלת הקניה שלכם.</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>תצרוכת אישית</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>מכירה חוזרת</value>
+  </data>
+</root>

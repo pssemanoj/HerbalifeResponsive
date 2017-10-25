@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Common.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Common.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="OrderCategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="RSO" />
+      <xs:enumeration value="APF" />
+      <xs:enumeration value="ETO" />
+      <xs:enumeration value="HSO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderCategoryType" nillable="true" type="tns:OrderCategoryType" />
+</xs:schema>

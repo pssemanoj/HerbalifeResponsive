@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Shipping/ChinaShipping.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+  <xs:complexType name="ServiceRequestParameter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceRequestParameter" nillable="true" type="tns:ServiceRequestParameter" />
+  <xs:complexType name="VersionedObjectBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VersionedObjectBase" nillable="true" type="tns:VersionedObjectBase" />
+  <xs:complexType name="ServiceResponseValue">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element name="Message" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParameterErrorList" nillable="true" type="tns:ArrayOfParameterError" />
+          <xs:element xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" name="Status" type="q1:ServiceResponseStatusType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResponseValue" nillable="true" type="tns:ServiceResponseValue" />
+  <xs:complexType name="ArrayOfParameterError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParameterError" nillable="true" type="tns:ParameterError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParameterError" nillable="true" type="tns:ArrayOfParameterError" />
+  <xs:complexType name="ParameterError">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" type="tns:ParameterErrorType" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParameterError" nillable="true" type="tns:ParameterError" />
+  <xs:simpleType name="ParameterErrorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Missing" />
+      <xs:enumeration value="Invalid" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ParameterErrorType" nillable="true" type="tns:ParameterErrorType" />
+</xs:schema>

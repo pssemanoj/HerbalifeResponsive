@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/Imports">
+      <xsd:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd0" namespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces" />
+      <xsd:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" />
+      <xsd:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/HLMobileAnalytics.ValueObjects" />
+      <xsd:import schemaLocation="http://cnshp1wcf00.hrbl.net/Service/MobileAnalytics/Service.svc?xsd=xsd4" namespace="http://Phoenix.hrbl.net/Public" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMobileAnalytics_LoadMobileAnalyticsTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadMobileAnalyticsTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_LoadMobileAnalyticsTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadMobileAnalyticsTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertActivityLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityLog" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertActivityLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_UpdateActivityLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityLog" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_UpdateActivityLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertActivityLogAsync_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityLogAsync" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_IsDistributorAuthorized_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsDistributorAuthorized" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_IsDistributorAuthorized_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsDistributorAuthorizedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertLeadContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLeadContact" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertLeadContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLeadContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetTenCustomerMissingMonths_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenCustomerMissingMonths" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetTenCustomerMissingMonths_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenCustomerMissingMonthsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetTenCustomerStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenCustomerStatus" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetTenCustomerStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenCustomerStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_SaveTenCustomerData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTenCustomerData" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_SaveTenCustomerData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTenCustomerDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_RegisterDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterDevice" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_RegisterDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetRegisteredDevice_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisteredDevice" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetRegisteredDevice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisteredDeviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertSubmittedOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSubmittedOrder" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_InsertSubmittedOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSubmittedOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetSubmittedOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubmittedOrder" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetSubmittedOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubmittedOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetActivityLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityLog" />
+  </wsdl:message>
+  <wsdl:message name="IMobileAnalytics_GetActivityLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivityLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMobileAnalytics">
+    <wsdl:operation name="LoadMobileAnalyticsTypes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/LoadMobileAnalyticsTypes" message="tns:IMobileAnalytics_LoadMobileAnalyticsTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/LoadMobileAnalyticsTypesResponse" message="tns:IMobileAnalytics_LoadMobileAnalyticsTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityLog">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertActivityLog" message="tns:IMobileAnalytics_InsertActivityLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertActivityLogResponse" message="tns:IMobileAnalytics_InsertActivityLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivityLog">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/UpdateActivityLog" message="tns:IMobileAnalytics_UpdateActivityLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/UpdateActivityLogResponse" message="tns:IMobileAnalytics_UpdateActivityLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityLogAsync">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertActivityLogAsync" message="tns:IMobileAnalytics_InsertActivityLogAsync_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDistributorAuthorized">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/IsDistributorAuthorized" message="tns:IMobileAnalytics_IsDistributorAuthorized_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/IsDistributorAuthorizedResponse" message="tns:IMobileAnalytics_IsDistributorAuthorized_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLeadContact">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertLeadContact" message="tns:IMobileAnalytics_InsertLeadContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertLeadContactResponse" message="tns:IMobileAnalytics_InsertLeadContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTenCustomerMissingMonths">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerMissingMonths" message="tns:IMobileAnalytics_GetTenCustomerMissingMonths_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerMissingMonthsResponse" message="tns:IMobileAnalytics_GetTenCustomerMissingMonths_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTenCustomerStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerStatus" message="tns:IMobileAnalytics_GetTenCustomerStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetTenCustomerStatusResponse" message="tns:IMobileAnalytics_GetTenCustomerStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTenCustomerData">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/SaveTenCustomerData" message="tns:IMobileAnalytics_SaveTenCustomerData_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/SaveTenCustomerDataResponse" message="tns:IMobileAnalytics_SaveTenCustomerData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterDevice">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/RegisterDevice" message="tns:IMobileAnalytics_RegisterDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/RegisterDeviceResponse" message="tns:IMobileAnalytics_RegisterDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisteredDevice">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetRegisteredDevice" message="tns:IMobileAnalytics_GetRegisteredDevice_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetRegisteredDeviceResponse" message="tns:IMobileAnalytics_GetRegisteredDevice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSubmittedOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertSubmittedOrder" message="tns:IMobileAnalytics_InsertSubmittedOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/InsertSubmittedOrderResponse" message="tns:IMobileAnalytics_InsertSubmittedOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubmittedOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetSubmittedOrder" message="tns:IMobileAnalytics_GetSubmittedOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetSubmittedOrderResponse" message="tns:IMobileAnalytics_GetSubmittedOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityLog">
+      <wsdl:input wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetActivityLog" message="tns:IMobileAnalytics_GetActivityLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2009/01/15/HLMobileAnalytics.Interfaces/IMobileAnalytics/GetActivityLogResponse" message="tns:IMobileAnalytics_GetActivityLog_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

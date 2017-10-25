@@ -1,0 +1,95 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvInvContacts" style="display: none;"
+     data-role="window"
+     data-modal="true"
+     data-max-width="700"
+     data-max-height="1000"
+     data-resizable="false"
+     data-actions="['close']">
+    
+    <script type="text/x-kendo-template" id="selectContactTpl">
+        <a class="selectContact k-link" href="\\#selectContactField" data-bind="click: selectContact">#:FirstName# #:LastName#</a>
+    </script>
+
+    <div>
+        <div class="row">
+            <div class="col-sm-12 no-padding">
+                <h2>@this.Localize("browseContactsTitle")</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 no-padding">
+                <label for="contacts-search">@this.Localize("searchContacts")</label>
+                <input id="contacts-search" type="text" class="k-input" data-bind="value: contactsFilter" />
+            </div>
+            <div class="col-sm-2 marginTop10 m-search-button">
+                <a class="backward" data-bind="click: SearchContacts">@this.Localize("Search") </a>
+            </div>
+        </div>
+        <span class="red" data-bind="text: contactsErrorText "></span>
+        <div class="table-scroll col-md-12 col-sm-12 col-xs-12">
+            <div id="dgContacts"
+                 data-role="grid"
+                 data-auto-bind="false"
+                 data-pageable='{"pageSize": 10, "refresh": false, "messages": {"itemsPerPage": "", "display": "{0} - {1} of {2}","empty":""}}'
+                 data-bind="source: contactsDataSource , events: { dataBound: contactsDataBound }"
+                 data-scrollable="false"
+                 data-columns='[{
+                    "field": "FirstName",
+                    "title": "@this.Localize("name")",
+                    "template": invEdit.selectContactTemplate(),
+                    "headerAttributes": {"style": "text-align: left; width:40%;"},
+                    "attributes": {"style": "text-align: left; width:40%; word-break: break-all"}
+                },
+                {
+                    "field": "EmailDetail.EmailAddress",
+                    "title":"@this.Localize("primaryEmailAddress")",
+                    "headerAttributes": {"style": "text-align: left;width:80%;"},
+                    "attributes": {"style": "text-align: left;width:80%;"}
+                },
+                  {
+                    "field": "FullAddressDisplay",
+                    "title":"@this.Localize("Address")",
+                    "headerAttributes": {"style": "text-align: left;"},
+                    "attributes": {"style": "text-align: left;"}
+                }
+                ]'>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div  id="modal-duplicate-contact" style="display: none;"
+     data-role="window"
+     data-max-width="560"
+     data-max-height="1000"
+     data-modal="true"
+     data-actions="{}">
+    <div class="modal-content">
+        <h4 class="center">@this.Localize("DuplicatesFound")</h4>
+        <br />
+        <p>@this.Localize("DuplicatesMsg")</p>
+        <!-- TODO - This should be a datasource depending on response, the we have to peform binding -->
+        <div class="address-list">
+            <div id="duplicated-contacts"
+                 class="address-item"
+                 data-role="listview"
+                 data-template="duplicated-contact-list"
+                 data-auto-bind="false"
+                 data-bind="source: duplicateContactsDataSource, events: {change: OnSelectDuplicatedContact}"
+                 style="overflow-y: scroll; max-height: 300px; overflow-x: hidden;"
+                 data-selectable="single"></div>
+        </div>
+        <a class="right forward" id="btnOverWrite" disabled data-bind="click: OverrideContact">@this.Localize("Overwrite")</a>
+        <a class="right backward" data-bind="click: SaveAsNewContact">@this.Localize("NewContact")</a>
+        <a class="backward left" data-bind="click: CancelOverride">@this.Localize("Cancel")</a>
+    </div>
+
+</div>
+<script id="duplicated-contact-list" type="text/x-kendo-template">
+    <div class="address-item">
+        <div class="address-info">
+            <strong>#: FirstName  + ' ' + LastName #</strong><br />
+        </div>
+    </div>
+</script>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Mã sãn phẩm {0} không thể thêm vào giỏ hàng từ khi nó không có tại Incaricati</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Mã sản phẩm:{0} đã được thêm vào giỏ hàng. Nếu bạn muốn thêm, vui lòng thay đổi loại đơn hàng từ A! sang B1</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Vui lòng thêm những sản phẩm trước khi thêm mã sản phẩm {0}</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Số lượng không vươt trên {0} cho mã sản phẩm {1}</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Mã sản phẩm {0} không có sẵn trong đơi hàng chuyển phát nhanh. Vui lòng chọn chuyển hàng bình thường cho hàng này</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Mã sản phẩm 0343,0344,2329 hoặc 2328 không có với vận chuyển nhanh</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Số lượng mã sản phẩm không vượt trên {0}</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Không thể mua hàng</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Không thể mua sản phẩm</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng SKU {0} không thể cao hơn {1} bởi nó đã vươt quá hạn mức bạn có</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng SKU {0} không thể cao hơn {1} bởi nó đã vươt quá hạn mức điểm</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Mã sản phẩm {0} đã được thêm vào giỏ hàng, bạn đã vươt quá hạn mức mua hàng</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Đơn hàng vượt quá hạn mức mua. Bạn có {0} VP còn lại. Vui lòng thay đổi đơn hàng để tiếp tục</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Tổng số vượt quá tổng hạn mức của {0}</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Mã sản phẩm {0} đã được thêm vào giỏ hàng, bạn đã vươt quá hạn mức mua hàng</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng mã sản phẩm {0} không thể cao hơn {1} bởi nó đã vượ quá hạn mức mua hàng</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Hàng hóa cá nhân</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Mua lại</value>
+  </data>
+</root>

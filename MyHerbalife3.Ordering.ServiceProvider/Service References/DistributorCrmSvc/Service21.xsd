@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2013/02/01/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2013/02/01/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GetDSBannedWordResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSBannedWordResponseBase" nillable="true" type="tns:GetDSBannedWordResponseBase" />
+  <xs:complexType name="GetDSBannedWordResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSBannedWordResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="BannedWords" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSBannedWordResponse_V01" nillable="true" type="tns:GetDSBannedWordResponse_V01" />
+</xs:schema>

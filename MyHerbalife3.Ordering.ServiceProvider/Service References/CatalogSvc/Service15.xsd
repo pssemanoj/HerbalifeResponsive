@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="GetInternetShoppingCartsResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInternetShoppingCartsResponse" nillable="true" type="tns:GetInternetShoppingCartsResponse" />
+  <xs:complexType name="GetInternetShoppingCartsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetInternetShoppingCartsResponse">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="ShoppingCarts" nillable="true" type="q2:ArrayOfShoppingCart_V04" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInternetShoppingCartsResponse_V01" nillable="true" type="tns:GetInternetShoppingCartsResponse_V01" />
+  <xs:complexType name="GetInternetShoppingCartsRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInternetShoppingCartsRequest" nillable="true" type="tns:GetInternetShoppingCartsRequest" />
+  <xs:complexType name="GetInternetShoppingCartsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetInternetShoppingCartsRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ShoppingCartFilterByDateRange" nillable="true" type="tns:ShoppingCartFilter" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetInternetShoppingCartsRequest_V01" nillable="true" type="tns:GetInternetShoppingCartsRequest_V01" />
+  <xs:complexType name="ShoppingCartFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiscardEmptyOrderNumbers" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Index" type="xs:int" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaxLength" type="xs:int" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OrderNumberToBeFetched" nillable="true" type="q4:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShoppingCartFilter" nillable="true" type="tns:ShoppingCartFilter" />
+  <xs:complexType name="GetSlowMovingSku">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiscountAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OriginalPrice" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SKU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSlowMovingSku" nillable="true" type="tns:GetSlowMovingSku" />
+</xs:schema>

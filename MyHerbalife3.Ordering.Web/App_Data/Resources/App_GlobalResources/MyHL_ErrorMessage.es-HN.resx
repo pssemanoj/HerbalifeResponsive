@@ -1,0 +1,768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Solo podras agregar 1 Cuota Anual por Servicios de Membresía a tu carrito de compras.</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Tu Cuota Anual por Servicios de Membresía no puede ser removida de tu carrito de compras.</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>¿Estás seguro(a) que deseas cancelar este pedido? Si presionas "Aceptar," todos los artículos serán eliminados de tu carrito de compras.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Ya que no existe ningún producto en tu pedido de Cuota Anual por Servicios de Membresía, todos los artículos que no sean productos han sido eliminados.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Los productos agotados no pueden ser incluidos en un pedido de la Cuota Anual por Servicios de Membresía.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>La autorización de la tarjeta no fue exitosa. Por favor revisa tus tarjetas.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Error en el formato de datos. Por favor, introduce los datos correctos.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Se ha ingresado un código de producto duplicado. Por favor introduce los datos nuevamente.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>La compra de entradas para eventos está limitada a la cantidad de {0} por pedido.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>La compra de entradas para eventos no está permitida en este sitio.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Para Item {0} sólo la cantidad de {1} está disponible. Por favor corrije la cantidad ingresada en tu carrito de compras..</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Uno o más artículos del código {0} pueden no estar disponibles.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Para el SKU {0}, máximo hasta {1} tickets por Membresía para el Asociado titular y/o cónyugue/pareja.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Lo sentimos, tú no tienes una tarjeta de crédito registrada en nuestros archivos. Por favor, llama al Departamento de Servicios al Asociado al (505) 2508 0760.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Código Postal inválido.</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: Estás debiendo {0} año(s) de Tu Cuota Anual por Servicios de Membresía, la cual debe ser pagada antes de colocar una orden del tipo "Re-venta". Por favor, cambia tu tipo de orden a "Personal" para pagar tu Cuota Anual por Servicios de Membresía.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>El artículo {0} actualmente no se encuentra disponible en el inventario, la cantidad será colocada en 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>El límite para la revista Hoy es</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>La máxima cantidad de revistas que pueden ser agregadas al carrito es {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Este nombre de usuario ya está asignado a alguen más, Por favor, ingresa un nombre diferente.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>La aplicación de Ordenes por Internet, no está disponible en este momento.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Los pedidos por Internet no están permitidos.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Sólo se puede añadir productos a una orden que incluya únicamente la Cuota Anual por Servicios de Membresía</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>El total del pago que estas realizando no coincide con el total a pagar por la orden.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>por favor, Agrega una cantidad mayor a cero</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Por favor, verifica la información de tu tarjeta.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Por favor, comprueba tu número ID de Asociado Independiente y su código PIN e inténtalo nuevamente. Si el problema persiste, contacta al Departamento de Servicio al Asociado llamando al 504-2508-0760</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Por favor, completa el pago de tu Cuota Anual por Servicios de Membresía antes de incluir otros productos en tu carrito de compras.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Por favor, completa el pago de tu Cuota Anual por Servicios de Membresía antes de comprar una entrada para el evento.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Por favor, proporciona un número.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Por favor, ingresa una cantidad para el artículo con SKU:{0}</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Por favor, ingresa un único lugar de recojo.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Por favor, ingresa una ciudad válida.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Por favor, ingresa un Nombre válido</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Lo sentimos, no pudimos agregar la tarjeta de crédito. Por favor intente de nuevo con un apodo que no contenga el número de la tarjeta de crédito</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Por favor, ingresa una cantidad de donación distinta de cero {0}.</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Por favor, ingresa una dirección de correo electrónico.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Por favor, ingresa la información para realizar el pago.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Por favor, ingresa el Código de Seguridad (CVV) de la parte posterior de tu tarjeta.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Por favor, ingresa la cantidad de Cuota Anual por Servicios de Membresía que deseas pagar.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Por favor, ingresa una dirección de correo electrónico válida.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Por favor, ingresa un Nombre válido.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Por favor, ingresa un Apellido válido.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Por favor, ingresa un segundo nombre válido.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Por favor, completa toda la información de envío requerida.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Por favor, completa el código del área con el formato correcto.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Por favor, completa la extensión con el formato correcto.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Por favor, completa el nombre de la persona que recibirá la orden.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Por favor, escribe el código del área.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Por favor, proporciona la Ciudad.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Por favor escribe la extensión.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Por favor, proporciona el Nombre.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Por favor, proporciona el Apellido.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Por favor, llena este campo el cual es obligatorio.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Por favor, proporciona el Número Telefónico.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Por favor proporciona el nombre del Departamento.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Por favor, completa el campo de la dirección.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Por favor, proporciona el Código Postal.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Por favor, ingresa el número de teléfono en el formato correcto.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Ten en cuenta que sólo puedes almacenar datos para un máximo de {0} tarjetas. Para añadir una nueva tarjeta, por favor elimina una de tus tarjetas ya existentes.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Por favor, ten en cuenta: &lt;br/&gt; Esta página se visualiza mejor con Internet Explorer o Firefox.</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Por favor, registra una dirección de envío antes de completar esta orden para retirar.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Por favor selecciona una ubicación.</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Por favor, selecciona horario de envío.</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Por favor, selecciona el tipo de pedido.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Por favor, selecciona el lugar de quien retira.</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor, selecciona el lugar de quien retira</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Por favor, selecciona el nombre de quien retira.</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Por favor, selecciona el número telefónico de quien retira</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Por favor, selecciona el horario de quien retira.</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor, selecciona una dirección de entrega.</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Por favor, selecciona Sí/No.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>La dirección principal no puede ser borrada.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>La preferencia principal de recojo no puede ser borrada.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Proceda a Colocar Pedido.</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Ir a la página principal.</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>No realizamos envíos para el Codigo Postal ingresado.</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>El artículo con código {0} no está disponible.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Numero SMS es requerido</value>
+    <comment>_G1245</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>¡Lo lamentamos! No puedes colocar la orden, solo los Asociados Independientes Koreanos pueden comprar en el sitio web de Korea</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Lo sentimos, No puedes añadir el(los) artículo(s) a tu carrito de compras, ya que de hacerlo, excederías tu límite de ganancias.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Error en el sistema.</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(¡El mes de volumen de la orden ha sido cambiado!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>El artículo con código {0} añadido quedará pendiente de entrega.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>El departamento es inválido.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>El nombre de la calle debe contener al menos una letra.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>La dirección debe incluir al menos un número, un espacio y una letra.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>La transacción no está permitida, por favor verifica la información de tu tarjeta de crédito. Si el problema persiste, comunícate con el Departamento de Servicios al Asociado al (504) 2508-0760</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>La transacción no está permitida, por favor comunícate con el Departamento de Servicio al Asociado al (504) 2508-0760</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>El código postal no es válido.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>No hay ningún artículo a comprar en el pedido.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Lo sentimos, en este momento no hay suficientes existencias para el producto {0}. La cantidad actual disponible es de {1} unidad(es).</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>No hay artículos seleccionados para agregar a la orden.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>No hay artículos seleccionados para calcular el volumen.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Esta dirección ya existe en la base de datos de prueba.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Esta orden excede tu límite de compra. Tú tienes {0} puntos de volumen restantes. Por favor, ajusta tu orden para continuar.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Esta transacción ha sido denegada para esta tarjeta</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>La Revista Hoy ha sido añadida a su carrito de compras.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>No podemos completar tu pedido. Por favor, comunícate con el Departamento de Servicio al Asociado al (504) 2508-0760 para que puedan ayudarte.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>No podemos completar tu pedido. Por favor, comunícate con el Departamento de Servicio al Asociado al (504) 2508-0760 para que puedan ayudarte.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>No podemos procesar tu orden. Por favor verifica la dirección e intenta nuevamente. Si el problema persiste, por favor contacta al Departamento de Servicio al Asociado.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Lo sentimos. La moneda no puede ser convertida. Por favor, contacta al Departamento de Servicio al Asociado al (504) 2508-0760.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Ya tienes entradas a eventos en tu carrito, ¿Deseas vaciar tu carrito de compras?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Estás intentando borrar tu tarjeta principal. Por favor, guarda una tarjeta diferente como principal antes de eliminar ésta.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Usted ya no puede usar esta tarjeta, ya que ha sido denegada en varias ocasiones.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Sobrenombre ya existe, por favor agrega uno nuevo</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Tú no puedes incluir este artículo en tu carrito de compras.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>No puedes pasar a la página {0} si no tienes productos en tu carrito de compras.</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Tienes unos productos no disponibles en tu selección que serán eliminados del pedido si seleccionas "recojo" como opción de envío. ¿Deseas continuar? ("Sí" o "No")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Haz cambiado el mes de volumen para esta orden al mes {0}. ¿Deseas continuar con esta selección? ("Sí" o "No")</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Tienes entradas a eventos en tu carrito ¿Deseas vaciar tu carrito de compras?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Tienes productos en tu carrito de compra. ¿Deseas eliminarlos de tu carrito antes de proceder con la compra de entradas para eventos?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Has seleccionado {0} como tu mes de pedido, ¿Es esto correcto?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Usted ha seleccionado recoger en WALDOS, allí habrán productos limitados para ordenar.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Haz seleccionado revisar producto sin colocar una orden, por lo que no podrás agregar producto al carrito.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Has agregado exitosamente HFF a tu selección.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Sólo puedes pagar por adelantada una sola Cuota Anual por Servicios de Membresía</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Debes borrar una de tus tarjetas de crédito para cambiar los artículos en tu carrito.</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Debes seleccionar una dirección de envío para continuar.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Recientemente efectuaste una orden idéntica en {0}. Si esta es una orden duplicada, selecciona "Cancelar Orden". Para continuar con la orden, elije "Enviar".</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Tu Cuota Anual por Servicios de Membresía vence el {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Tu Cuota Anual por Servicios de Membresía está vencida, incluiremos automáticamente el cargo de la cuota en tu orden.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Tu Cuota Anual por Servicios de Membresía está vencida y ha sido agregada a tu carrito de compras.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Tu tarjeta de crédito ha expirado. Por favor, haz clic en Editar y actualiza la fecha de expiración.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Tu tarjeta de crédito ha caducado. Por favor, contacta al emisor de tu tarjeta.</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>No se pudo procesar tu solicitud, por favor contacta a Servicios al Asociado al (506) 20105959</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>No se pudo procesar tu solicitud, por favor contacta a Servicios al Asociado al (506) 20105959</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Tu pedido anterior ya había sido procesado antes de los cambios que se hicieron en tu carrito. Tu número de pedido es {0}. Puedes verificar el estado de esta orden llamando al Departamento de Servicio al Asociado, de 9:00 am a 6:00pm, de lunes a viernes, y los sábados de 9:00am a 1:00pm para recibir ayuda, o haciendo clic aquí. (Ten en cuenta que tu pedido puede tardar hasta 1 hora en reflejarse. &lt;br&gt; Si desea hacer un pedido nuevo, por favor vuelve a añadir artículos en tu carrito.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>La Cuota Anual por Servicio de Mebresía se ha dejado en tu carrito.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Tu información de envío ya no es válida, los artículos seleccionados de la compra serán eliminados.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Favor complete el county</value>
+    <comment>_G1297</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>El SKU {0} es invalido</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Por favor selecciona un método de envío</value>
+    <comment>_G1299</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>No backorderd should be allowed for deliveries to New Caledonia and French Polynesia.</value>
+    <comment>_G1300</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Por favor, selecciona el tipo de pedido desde el mini carrito.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>No puedes finalizar tu pedido ya que has excedido tu límite de compras.</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Confirmación de dirección es requerida</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Por favor especifica un número RG</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Favor selecciona una dirección</value>
+    <comment>_G2311</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Por favor ingresa instrucciones de envío</value>
+    <comment>_G2351</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Por favor ingresa nombre del courier</value>
+    <comment>_G2352</comment>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Favor provee la dirección de cobro de tu tarjeta</value>
+    <comment>_G2513</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Notamos que colocaste un pedido idéntico {0}. Por favor confirma si deseas proceder.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Por favor selecciona la fecha de retiro</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Favor ingrese su ID de Asociado Independiente Herbalife</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Favor seleccione la opción de Recuperar PIN</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Volumen no esta disponible en este momento.</value>
+    <comment>_A914</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Para completar la configuración de tu cuenta como un nuevo Asociado Independiente Herbalife, por favor selecciona uno de los idiomas de tu país de procesamiento y vuelve a intentarlo.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>El PIN no puede ser recuperado</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Los precios de tus items en el carrito de compras variaron, debido a un error. Por favor reenvie tu orden.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Tu solicitud no puede ser procesada en este momento por problemas técnicos. Favor intenta nuevamente</value>
+    <comment>_A1045</comment>
+  </data>
+  <data name="PricingError" xml:space="preserve">
+    <value>Lo sentimos, no podemos procesar tu compra, por favor intenta más tarde. Si el problema persiste, ponte en contacto con Servicio al Asociado.</value>
+    <comment>_G3774</comment>
+  </data>
+  <data name="RequiredELearning" xml:space="preserve">
+    <value>Asociado no ha completado Entrenamiento Básico en Línea</value>
+    <comment>_G3776</comment>
+  </data>
+  <data name="PickUpLocationRemoved" xml:space="preserve">
+    <value>El lugar de retiro que tu has selecionado ya no está disponible, favor selecciona una nueva dirección</value>
+    <comment>_G3777</comment>
+  </data>
+  <data name="CityTooLong" xml:space="preserve">
+    <value>City name is too long</value>
+    <comment>_G3867</comment>
+  </data>
+  <data name="InvalidShippingAddress" xml:space="preserve">
+    <value>Por favor revisa tu dirección de envío, la dirección actual no es correcta.</value>
+    <comment>_G3783</comment>
+  </data>
+  <data name="SKUNotAvailableBOLink" xml:space="preserve">
+    <value>For a full list of product availability, please &lt;a href="/Ordering/Inventory"&gt;; click here. &lt;/a&gt;</value>
+    <comment>_G3829</comment>
+  </data>
+  <data name="KountReviewOrder" xml:space="preserve">
+    <value>Para recibir los ultimos estatus de esta orden, favor visite &lt;a href="/account/pendingorders" target="_self"&gt;Mis Pedidos&lt;/a&gt;.</value>
+    <comment>_G3715</comment>
+  </data>
+  <data name="KountDeclinedOrder" xml:space="preserve">
+    <value>Please contact Member Business Practice and Compliance at (310)216-6056</value>
+    <comment>_G3712</comment>
+  </data>
+  <data name="InvalidRGNumberSelected" xml:space="preserve">
+    <value>证件号码输入有误，请输入正确的证件号码。</value>
+    <comment>_G3714</comment>
+  </data>
+  <data name="ShortExpirationDate" xml:space="preserve">
+    <value>Alert: SKU {0} will be expired on {1}. Click “OK” to proceed and click “cancel” to delete it from the shopping cart.</value>
+    <comment>_G3934</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>El procesamiento de su reciente solicitud de Membresia puede tomar 12-18 horas. Después de que su solicitud haya sido procesada usted será capaz de hacer pedidos. Por favor, vuelva más tarde para completar su pedido</value>
+    <comment>_GXXXX</comment>
+  </data>
+</root>

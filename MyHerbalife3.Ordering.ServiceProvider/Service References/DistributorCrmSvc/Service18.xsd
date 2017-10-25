@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Qualification" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Qualification" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Qualification" />
+  <xs:complexType name="GetDistributorQualificationResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorQualificationResponse" nillable="true" type="tns:GetDistributorQualificationResponse" />
+  <xs:complexType name="GetDistributorQualificationResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorQualificationResponse">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Qualification" minOccurs="0" name="DistributorQualifications" nillable="true" type="q2:ArrayOfDistributorQualification" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorQualificationResponse_V01" nillable="true" type="tns:GetDistributorQualificationResponse_V01" />
+  <xs:complexType name="GetDistributorQualificationRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDistributorQualificationRequest" nillable="true" type="tns:GetDistributorQualificationRequest" />
+  <xs:complexType name="GetAllQualificationsForDSRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorQualificationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryOfProcessing" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetAllQualificationsForDSRequest_V01" nillable="true" type="tns:GetAllQualificationsForDSRequest_V01" />
+  <xs:complexType name="GetQualificationForEventRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDistributorQualificationRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryOfProcessing" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EventId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetQualificationForEventRequest_V01" nillable="true" type="tns:GetQualificationForEventRequest_V01" />
+</xs:schema>

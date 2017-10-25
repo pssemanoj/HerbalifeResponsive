@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>ไม่สามารถเพิ่มรหัสสินค้าสำหรับการชำระค่าธรรมเนียมรายปีในรถเข็นของคุณได้</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>ไม่สามารถยกเลิกรหัสของค่าธรรมเนียมสมาชิกภาพประจำปีจากการสั่งซื้อได้</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่ที่จะยกเลิกการสั่งซื้อครั้งนี้ คลิกที่ "ตกลง" เพื่อลบทุกรายการออกจากรถเข็นสั่งสินค้าของคุณ</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>เนื่องจากไม่มีการสั่งผลิตภัณฑ์ร่วมกับการชำระเงินค่าธรรมเนียมสมาชิกภาพประจำปี รายการที่ไม่ใช่ผลิตภัณฑ์จะถูกยกเลิกทั้งหมด</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>ไม่สามารถเพิ่มรายการสั่งซื้อที่ยังไม่มีสินค้าร่วมกับการชำระค่าธรรมเนียมสมาชิกภาพได้</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>ไม่สามารถอนุมัติบัตรได้ โปรดตรวจสอบบัตรของคุณ</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>รูปแบบข้อมูลไม่ถูกต้อง โปรดกรอกข้อมูลที่ถูกต้อง</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>มีการใส่รหัสสินค้าซ้ำ โปรดใส่ใหม่</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>มีการจำกัดจำนวนการสั่งซื้อบัตรเข้างาน {0} บัตรต่อการสั่งซื้อ 1 ครั้ง</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อบัตรเข้างานในเว็บไซต์นี้</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>สำหรับรายการ {0} สามารถสั่งซื้อได้ในจำนวน {1} หากต้องการสั่งซื้อ โปรดแก้ไขจำนวน</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>สำหรับรายการ {0} อาจมีสินค้า 1 หรือ 2 รายการที่ยังไม่พร้อมจำหน่าย</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>สำหรับรายการ {0} จำนวนที่สั่งซื้อจะต้องไม่เกิน {1}</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>ขออภัย คุณยังไม่ได้ทำการลงทะเบียนบัตรเครดิต โปรดติดต่อแผนกบริการสมาชิกที่หมายเลข 02 600 1600</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:ค้างชำระค่าธรรมเนียมสมาชิกภาพ {0} ปี และต้องชำระก่อนการสั่งซื้อประเภท "ขายซ้ำ" โปรดเปลี่ยนประเภทของการสั่งซื้อเป็น "ส่วนตัว" เพื่อชำระค่าธรรมเนียมสมาชิกภาพประจำปี</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>รายการ {0} หมดชั่วคราว จำนวนจะถูกตั้งค่าเป็น 0</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>จำนวนที่จำกัดของวารสารทูเดย์คือ</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>จำนวนสูงสุดของวารสารทูเดย์ที่สามารถเพิ่มในรถเข็นสั่งซื้อคือ {0}</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>ชื่อเฉพาะได้ถูกใช้แล้ว โปรดใส่ชื่อที่ไม่ซ้ำ</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อทางออนไลน์ได้</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>ไม่อนุญาตให้สั่งซื้อทางออนไลน์</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>ในคำสั่งซื้อเพื่อชำระค่าธรรมเนียมสมาชิกภาพประจำปี สามารถเพิ่มได้เฉพาะการสั่งซื้อผลิตภัณฑ์เท่านั้น</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>ยอดรวมที่ชำระไม่ตรงกับยอดรวมของการสั่งซื้อ</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>โปรดเพิ่มจำนวนที่มากกว่า 0</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>โปรดตรวจสอบข้อมูลบัตร</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>โปรดตรวจสอบหมายเลขสมาชิกและรหัสผ่าน และลองใหม่ หากยังพบปัญหา โปรดติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>กรุณาชำระค่าธรรมเนียมรายปีก่อนทำการใส่ผลิตภัณฑ์อื่นๆ ในรายการสั่งซื้อ</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>กรุณาชำระค่าธรรมเนียมรายปีก่อนการสั่งซื้อบัตรงานประชุม</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>กรุณาใส่จำนวน</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>กรุณาใส่จำนวนของรหัสสินค้า {0}</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>กรุณาใส่ชื่อเขต/อำเภอที่ถูกต้อง</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อที่ถูกต้อง</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>ขออภัยเราไม่สามารถเพิ่มการ์ด กรุณาลองอีกครั้งกับฉายาไม่มีหมายเลขบัตรเครดิต</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>กรุณาใส่ยอดการบริจาค นอกจากศูนย์ (0)</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>กรุณาใส่อีเมล์ แอ็ดเดรส</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลการชำระเงิน</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>กรุณาใส่หมายเลข 3 ตัวหลังบัตรเครดิต</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>โปรดใส่จำนวนปีของค่าธรรมเนียมสมาชิกภาพประจำปีที่คุณต้องการชำระ</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>กรุณาใส่อีเมล์ แอ็ดเดรสที่ถูกต้อง</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อที่ถูกต้อง</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>กรุณาใส่นามสกุลที่ถูกต้อง</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลการจัดส่งที่สำคัญ</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสพื้นที่ในรูปแบบที่ถูกต้อง</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>กรุณาใส่เบอร์ต่อในรูปแบบที่ถูกต้อง</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อผู้รับ</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสพื้นที่</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>กรุณาใส่เขต/อำเภอ</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>กรุณาใส่เบอร์ต่อ</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>กรุณาใส่ชื่อ</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>กรุณาใส่นามสกุล</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>กรุณาใส่ข้อมูลในช่องที่สำคัญ</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรศัพท์</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>กรุณาใส่ที่อยู่</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>กรุณาใส่รหัสไปรษณ๊ย์</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรศัพท์ในรูปแบบที่ถูกต้อง(10 หลัก)</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>โปรดทราบว่าท่านสามารถบันทึกข้อมูลบัตรเครดิตได้สูงสุด {0} ใบ ถ้าท่านต้องการเพิ่มข้อมูลบัตรใหม่ กรุณายกเลิกข้อมูลบัตรเก่าที่มีอยู่ในระบบ</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>โปรดทราบว่า: &lt;br/&gt; เวบไซด์นี้จะสามารถใช้งานได้ดีบน Internet Explorer หรือ Firefox</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>กรุณาบันทึกที่อยู่จัดส่งก่อน ท่านจึงจะสามารถดำเนินการคำสั่งซื้อที่รับเองเสร็จสิ้นได้</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>กรุณาเลือกสถานที่</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>กรุณาเลือกเวลาสำหรับจัดส่ง</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>กรุณาเลือกประเภทคำสั่งซื้อ</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>กรุณาเลือกสถานที่รับสินค้า</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกสถานที่รับสินค้า</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>กรุณาเลือกชื่อผู้รับสินค้า</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรเพื่อรับสินค้า</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>กรุณาเลือกเวลาที่จะรับสินค้า</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>กรุณาเลือกที่อยู่สำหรับจัดส่ง</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>กรุณาเลือก ใช่/ไม่ใช่</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>ไม่สามารถลบที่อยู่หลักได้</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>ไม่สามารถลบตัวเลือกรับสินค้าหลักได้</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>ดำเนินการต่อเพื่อชำระเงิน</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>ดำเนินการต่อยังหน้าหลัก</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>การจัดส่งไปยังรหัสไปรษณีย์ที่ระบุไม่สามารถดำเนินการได้</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อรหัส {0} ได้ในขณะนี้</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>ขออภัย คุณไม่สามารถเพิ่มรายการสินค้าเข้าสู่รถเข็นสั่งซื้อ เพราะการเพิ่มสินค้าใส่ในรถเข็น จะทำให้คุณมีขีดจำกัดของรายได้เกินที่กำหนด</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>ระบบผิดพลาด</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(มีการเปลี่ยนเดือนสั่งซื้อ!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>รหัสสินค้า {0} ที่เพิ่มจะเป็นรายการที่ยังไม่พร้อมจำหน่าย</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>ไม่มีข้อมูลของจังหวัด</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>ที่อยู่จะต้องมีอย่างน้อย 1 ตัวอักษร</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>ที่อยู่จะต้องมีอย่างน้อย 1 หมายเลข 1 ช่องว่าง และ 1 ตัวอักษร</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>ไม่อนุญาตให้ดำเนินการ กรุณาตรวจสอบรายละเอียดบัตร หากยังเกิดปัญหา กรุณาติดต่อแผนกบริการสมาชิก 02 660 1600</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>ไม่อนุญาตให้ดำเนินการ กรุณาติดต่อแผนกบริการสมาชิก 02 660 1600</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>รหัสไปรษณีย์ไม่ถูกต้อง</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>ไม่พบรายการในคำสั่งซื้อนี้</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>จำนวนสินค้าคงคลังสำหรับรายการ {0} ไม่เพียงพอ จำนวนที่สามารถสั่งซื้อได้ {1}</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>ไม่พบรายการที่เลือกเพื่อเพิ่มในคำสั่งซื้อนี้</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>ไม่พบรายการที่เลือกเพื่อคำนวณคะแนน</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>ที่อยู่นี้อยู่ในฐานของมูลทดลองแล้ว</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>คำสั่งซื้อนี้เกินกว่าขีดจำกัดการสั่งซื้อของคุณ คุณมี {0} คะแนนคงเหลือ โปรดทำการแก้ไขคำสั่งซื้อของคุณก่อนดำเนินการต่อ</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>การทำรายการตัดบัตรเครดิตไม่ได้รับการอนุมัติ</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>วารสารทูเดย์ถูกเพิ่มในรถเข็นสั่งซื้อแล้ว</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการคำสั่งซื้อของคุณได้ โปรดติดต่อแผนกบริการสมาชิก 02 660 1600</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการคำสั่งซื้อของคุณได้ โปรดติดต่อแผนกบริการสมาชิก 02 660 1600</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการคำสั่งซื้อของคุณได้ โปรดตรวจสอบที่อยู่และลองใหม่ หากยังเกิดปัญหา กรุณาติดต่อแผนกบริการสมาชิก ที่หมายเลข 02 660 1600</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>ขออภัย ไม่สามารถคำนวณอัตราแลกเปลี่ยนได้ กรุณาติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>คุณมีรายการเกี่ยวกับบัตรเข้างานในรถเข็นสั่งซื้อของคุณ คุณต้องการที่จะลบข้อมูลหรือไม่</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>คุณกำลังพยายามที่จะลบข้อมูลบัตรหลัก โปรดบันทึกบัตรอื่นๆให้เป็นบัตรหลักกอ่นที่จะบัตรนี้</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>คุณไม่สามารถใช้บัตรนี้ได้เนื่องจากถูกปฏิเสธหลายครั้ง</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>ชื่อเฉพาะนี้มีแล้ว กรุณาใส่ชื่อเฉพาะใหม่</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>คุณไม่สามารถเพิ่มรายการนี้สู่รถเข็นสั่งซื้อของคุณ</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>{0} คุณไม่สามารถไปที่หน้า {0} หากไม่มีรายการสินค้าในรถเข็นสั่งซื้อ</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>คุณมีสินค้าที่ยังไม่พรอมจำหน่ายอยู่ในรถเข็นสั่งซื้อ โดยรายการนี้จะถูกลบออกหากคุณเลือกที่จะรับสินค้า คุณต้องการไปต่อหรือไม่ ("ใช่' หรือ "ไม่ใช่")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>คุณได้ทำการเปลี่ยนแปลงเดือนคะแนนสำหรับคำสั่งซื้อนี้ {0} คุณต้องการไปต่อหรือไม่</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>คุณมีรายการเกี่ยวกับบัตรเข้างานในรถเข็นสั่งซื้อของคุณ คุณต้องการที่จะลบข้อมูลหรือไม่</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>คุณมีรายการผลิตภัณฑ์อยู่ในรถเข็นสั่งซื้อของคุณ คุณต้องการที่จะลบข้อมูลก่อนที่จะสั่งซื้อบัตรเข้างานหรือไม่</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>คุณได้เลือก {0} เป็นเดือนสั่งซื้อ ถูกต้องหรือไม่</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>คุณได้เลือกรักสินค้าจาก WALDOS ซึ่งจะมีรายการจำกัดที่สามารถสั่งซื้อได้</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>คุณได้เลือกดูผลิตภัณฑ์โดยไม่ได้มีการสั่งซื้อ คุณจะไม่สามารถเพิ่มผลิตภัณฑ์เข้าสู่รถเข็นสั่งซื้อได้</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>คุณได้เพิ่ม HFF เข้าสู่รถเข็นสำเร็จแล้ว</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>คุณสามารถชำระค่าสมาชิกรายปีได้ล่วงหน้า 90 วันก่อนถึงวันครบกำหนดชำระ</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>คุณต้องลบหนึ่งในบัตรเครดิตเพื่อเปลี่ยนแปลงรายการในรถเข็นสั่งซื้อของคุณ</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>คุณต้องเลือกว่าต้องการจัดส่งหรือรับสินค้าหากต้องการดำเนินการต่อ</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>คุณได้ทำการสั่งซื้อสินค้าแบบเดียวกันไปเมื่อเร็วๆนี้ในวันที่ {0} หากคำสั่งซื้อนี้เป็นคำสั่งซื้อซ้ำ คลิกที่ "ยกเลิกคำสั่งซื้อ" หากต้องการดำเนินการต่อ โปรดคลิกส่ง</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>ค่าธรรมเนียมสมาชิกภาพประจำปีครบกำหนดในวันที่ {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>ค่าธรรมเนียมสมาชิกภาพประจำปีของคุณถึงกำหนดแล้ว เราจะเพิ่มค่าค่าธรรมเนียมสมาชิกภาพประจำปีในการสั่งซื้อของคุณโดยอัตโนมัติ</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>ค่าธรรมเนียมรายปีของคุณถึงกำหนดชำระ ค่าใช้จ่ายทั้งหมดถูกเพิ่มในรถเข็นสั่งซื้อของคุณ</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>บัตรเครดิตของคุณหมดอายุ โปรดคลิกแก้ไขและอัพเดตวันหมดอายุ</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>บัตรเครดิตของคุณหมดอายุ โปรดติดต่อแผนกบริการสมาชิก</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการตามคำขอของคุณได้ โปรดติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการตามคำขอของคุณได้ โปรดติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>คำสั่งซื้อของคุณถูกส่งก่อนการเปลี่ยนแปลงที่คุณได้แก้ไขในรถเข็นสั่งซื้อของคุณ  หมายเลขใบสั่งซื้อของคุณคือ{0}  คุณสามารถตรวจสอบสถานะของคำสั่งซื้อโดยการติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600 วันจันทร์-ศุกร์ เวลา 9.00 น.-18.00 น. เพื่อขอความช่วยเหลือหรือคลิกที่นี่ (โปรดทราบว่า อาจต้องใช้เวลาประมาณ 1 ชั่วโมงกว่าที่คำสั่งซื้อนี้จะปรากฏ &lt;br&gt;  หากคุณต้องการทำการสั่งซื้อใหม่ โปรดเพิ่มรายการเข้าสู่รถเข็นสั่งซื้ออีกครั้ง</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>ค่าธรรมเนียมสมาชิกภาพประจำปีที่คุณต้องชำระยังค้างอยู่ในการสั่งซื้อของคุณ</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>ข้อมูลการจัดส่งของคุณไม่สามารถใช้ได้แล้ว รายการในรถเข็นสั่งซื้อจะถูกลบ</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>ต้องการการยืนยันที่อยู่</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>เราสังเกตว่าคุณได้สั่งซื้อแบบเดียวกันนี้ในวันที่ {0}   โปรดยืนยันว่าคุณต้องการที่จะดำเนินการ</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>โปรดเลือกวันที่รับสินค้า</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>ไม่สามารถสั่งซื้อรหัส {0} ได้</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="NoSubDistrict" xml:space="preserve">
+    <value>กรุณากรอกตำบล/แขวง</value>
+    <comment>_G2800</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>โปรดใส่หมายเลขสมาชิก</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>โปรดระบุทางเลือกในการค้นหารหัส</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>ไม่สามารถตรวจสอบคะแนนได้ในขณะนี้</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>เพื่อให้การกำหนดตั้งค่าบัญชีในฐานะสมาชิกใหม่ โปรดเลือกประเทศของท่านอย่างน้อยหนึ่งประเทศและลองอีกครั้ง</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>ไม่สามารถเรียกข้อมูลรหัสผ่านได้</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>ราคาของสินค้าที่สั่งซื้อถูกทำให้เปลี่ยนไปเนื่องจากความผิดพลาด กรุณายื่นสั่งซื้ออีกครั้ง</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>สำคัญ: การปกป้องธุรกิจของท่าน 101</value>
+    <comment>_G3159</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>สิทธิในการซื้อของท่านได้ถูกพักไว้ในขณะนี้ จนกว่าได้รับคำร้อง "การปกป้องธุรกิจของท่าน 101" การอบรมได้เสร็จสมบูรณ์ หากท่านต้องการที่จะเสร็จสิ้นการอบรมเดี๋ยวนี้ สามารถคลิกลิงค์นี้ &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; หากท่านต้องการเสร็จสิ้นการอบรมภายใน 7 วัน และดำเนินการสั่งซื้อสินค้าเดี๋ยวนี้ สามารถคลิก ตกลง เพื่อทำการสั่งซื้อ หรือคลิก ยกเลิก</value>
+    <comment>_G3158</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>เราไม่สามารถดำเนินการตามคำขอได้ โปรดติดต่อแผนกบริการสมาชิกที่หมายเลข 02 660 1600 สิทธิ์ในการสั่งซื้อของคุณถูกระงับชั่วคราวจนกว่าการอบรม "101 การคุ้มครองธุรกิจของคุณ" จะถูกดำเนินการเรียบร้อยแล้ว หากคุณต้องการที่จะอบรมในตอนนี้ โปรดคลิกที่ลิงค์ด้านล่าง: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt;</value>
+    <comment>_G3160</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>การดำเนินการใบสมัครของคุณอาจใช้เวลา 12-18 ชั่วโมง คุณสามารถทำการสั่งซื้อได้หลังจากใบสมัครของคุณถูกดำเนินการแล้ว โปรดเข้าสู่ระบบเพื่อดำเนินการคำสั่งซื้อของคุณในภายหลัง</value>
+    <comment>_GXXXX</comment>
+  </data>
+  <data name="CityTooLong" xml:space="preserve">
+    <value>ชื่อเมืองยาวเกินไป</value>
+    <comment>_G3882</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Please enter a unique Pick Up location.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="SMSNotificationErrorMessage" xml:space="preserve">
+    <value>กรุณาใส่เบอร์โทรศัพท์เพื่อรับ SMS ยืนยันจากเฮอร์บาไลฟ์</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="PuckUpCorierPhoneNumberErrorMessage" xml:space="preserve">
+    <value> กรุณาใส่เบอร์โทรศัพท์เพื่อรับ SMS ยืนยันจาก 7-11</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="NoPickUpNameEnteredFor7-11" xml:space="preserve">
+    <value>กรุณาใส่ชื่อผู้รับสินค้า</value>
+    <comment>_G1201</comment>
+  </data>
+  
+</root>

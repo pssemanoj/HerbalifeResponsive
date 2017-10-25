@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BottomMessage.InnerText" xml:space="preserve">
+    <value>Créez un PDF pour imprimer et partager plus facilement.</value>
+  <comment>_G2713</comment></data>
+  <data name="CustomerDiscountTitle.InnerText" xml:space="preserve">
+    <value>Escompte Client</value>
+  <comment>_G2714</comment></data>
+  <data name="CustomerPriceColumnName.HeaderText" xml:space="preserve">
+    <value>Prix Client</value>
+  <comment>_G2715</comment></data>
+  <data name="CustomerPriceHelpText.Text" xml:space="preserve">
+    <value>Le Prix Client est le montant chargé au client pour couvrir les frais de Taxes et Expédition/Cueillette &amp; Manutention et maintenir votre niveau de profit. Vous pouvez réduire ce prix en ajoutant une Escompte Client.&lt;br /&gt;&lt;br /&gt;Prix Client = Prix de Détail avec Escompte + Taxes + E/C&amp;M</value>
+  <comment>_G2716</comment></data>
+  <data name="DefaultCityText" xml:space="preserve">
+    <value>Ville</value>
+  <comment>_G2717</comment></data>
+  <data name="DefaultFileName" xml:space="preserve">
+    <value>Liste de Prix</value>
+  <comment>_G2718</comment></data>
+  <data name="DefaultStateOption" xml:space="preserve">
+    <value>Province</value>
+  <comment>_G2719</comment></data>
+  <data name="DefaultZipCodeText" xml:space="preserve">
+    <value>Code Postal</value>
+  <comment>_G2720</comment></data>
+  <data name="DiscountCostHelpText.Text" xml:space="preserve">
+    <value>L’Escompte du Détail est le prix qu’un Membre paye pour le produit seulement. C’est calculé premièrement en multipliant l’Escompte Membre par la Base Gagnée, ensuite en soustrayant le résultat du Prix de Détail. &lt;br /&gt;&lt;br /&gt;Escompte du Détail = Prix de Détail - (Base Gagnée x Escompte Membre)</value>
+  <comment>_G2721</comment></data>
+  <data name="DistributorCostColumnName.HeaderText" xml:space="preserve">
+    <value>Esc. du Détail</value>
+  <comment>_G2722</comment></data>
+  <data name="DistributorCostTitle.InnerText" xml:space="preserve">
+    <value>Pourcentage d’Escompte</value>
+  <comment>_G2723</comment></data>
+  <data name="DistributorLoadedCostColumnName.HeaderText" xml:space="preserve">
+    <value>Prix DS</value>
+  <comment>_G2724</comment></data>
+  <data name="DistributorLoadedCostText.Text" xml:space="preserve">
+    <value>Le Prix Distributeur est le montant complet chargé qu’un Distributeur paye pour le produit. Il inclut les frais de taxes et Expédition/Cueillette &amp; Manutention. &lt;br /&gt;&lt;br /&gt;Prix Distributeur = Escompte du Détail + Taxes + E/C&amp;M</value>
+  <comment>_G2725</comment></data>
+  <data name="EarnBaseColumnName.HeaderText" xml:space="preserve">
+    <value>Base Gagnée</value>
+  <comment>_G2726</comment></data>
+  <data name="ExportButton.Text" xml:space="preserve">
+    <value>Télécharger PDF</value>
+  <comment>_G2727</comment></data>
+  <data name="FindTaxButton.Text" xml:space="preserve">
+    <value>Calculer la Taxe</value>
+  <comment>_G2728</comment></data>
+  <data name="InvalidAddresstText" xml:space="preserve">
+    <value>Adresse non valide, la taxe de vente a été fixée par défaut</value>
+  <comment>_G2729</comment></data>
+  <data name="InvalidInputText" xml:space="preserve">
+    <value>Entrée non valide, valeur fixée par défaut.</value>
+  <comment>_G2730</comment></data>
+  <data name="NoRecordsMessage.Text" xml:space="preserve">
+    <value>Catalogue non disponible.</value>
+  <comment>_G2731</comment></data>
+  <data name="OnlyCustomerPrice.Text" xml:space="preserve">
+    <value>Montrer SEULEMENT la colonne Prix Client</value>
+  <comment>_G2732</comment></data>
+  <data name="ProductNameColumnName.HeaderText" xml:space="preserve">
+    <value>Nom du Produit</value>
+  <comment>_G2733</comment></data>
+  <data name="RetailPriceColumnName.HeaderText" xml:space="preserve">
+    <value>Prix de Détail</value>
+  <comment>_G2734</comment></data>
+  <data name="SalesTaxMessage.InnerText" xml:space="preserve">
+    <value>Entrez la taxe provinciale si vous la connaissez ou utilisez l’outil Trouver Taxe pour obtenir la taxe exacte pour l'adresse sélectionnée.&lt;/br&gt;Vous pouvez également ajuster la valeur manuellement à n’importe quel moment.&lt;/br&gt;Celle-ci sera ajoutée à la colonne "Prix Client".</value>
+  <comment>_G2735</comment></data>
+  <data name="SalesTaxTitle.InnerText" xml:space="preserve">
+    <value>Taxe de Vente</value>
+  <comment>_G2736</comment></data>
+  <data name="ShippingAndHandlingMessage.InnerText" xml:space="preserve">
+    <value>Entrez un pourcentage à ajouter à chaque produit. Vous pouvez le modifier pour couvrir vos frais d’Expédition/Cueillette.&lt;/br&gt;Cette valeur est ajoutée à la colonne "Prix Client".</value>
+  <comment>_G2737</comment></data>
+  <data name="ShippingAndHandlingTitle.InnerText" xml:space="preserve">
+    <value>Transport et Manutention</value>
+  <comment>_G2738</comment></data>
+  <data name="SkuColumnName.HeaderText" xml:space="preserve">
+    <value>Référence</value>
+  <comment>_G2739</comment></data>
+  <data name="TopMessage.InnerText" xml:space="preserve">
+    <value>Cet outi calcule le prix total pour les clients, incluant le coût des Taxes, E/C&amp;M et Escompte.</value>
+  <comment>_G2740</comment></data>
+  <data name="VolumePointsColumnName.HeaderText" xml:space="preserve">
+    <value>Points volume</value>
+  <comment>_G2741</comment></data>
+  <data name="EstimateButton.Text" xml:space="preserve">
+    <value>Estimer E/C&amp;M</value>
+  <comment>_G2742</comment></data>
+  <data name="CalculateButton.Text" xml:space="preserve">
+    <value>Calculer</value>
+  <comment>_G2743</comment></data>
+  <data name="PriceListUpdatedText" xml:space="preserve">
+    <value>Liste de prix mise à jour</value>
+  <comment>_G2782</comment></data>
+  <data name="DefaultStreetAddressText" xml:space="preserve">
+    <value>Adresse de rue</value>
+  <comment>_G2785</comment></data>
+  <data name="lblErrorMsgTaxlookup1.Text" xml:space="preserve">
+    <value>Tous les champs obligatoires</value>
+  <comment>_G2786</comment></data>
+  <data name="lblErrorMsgTaxlookup2.Text" xml:space="preserve">
+    <value>ERREUR: Veuillez compléter tous les champs</value>
+  <comment>_G2787</comment></data>
+  <data name="PriceListErrorText" xml:space="preserve">
+    <value>Erreur. S'il vous plaît valeurs de recommandation et essayez de nouveau</value>
+  <comment>_G2788</comment></data>
+</root>

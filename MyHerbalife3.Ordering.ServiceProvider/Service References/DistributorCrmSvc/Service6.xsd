@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="SaveDSBannedWordsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSBannedWordsResponseBase" nillable="true" type="tns:SaveDSBannedWordsResponseBase" />
+  <xs:complexType name="SaveDSWebsiteInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSWebsiteInfoResponseBase" nillable="true" type="tns:SaveDSWebsiteInfoResponseBase" />
+  <xs:complexType name="SaveDSApprovedInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveDSApprovedInfoResponseBase" nillable="true" type="tns:SaveDSApprovedInfoResponseBase" />
+</xs:schema>

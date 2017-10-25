@@ -1,0 +1,77 @@
+.apparel-product {
+
+    img {
+        &[id$="ProdImage"] {
+            height: auto;
+            margin: 0;
+            width: 100%;
+        }
+    }
+    
+    .static_wrap{
+        width: 270px;
+
+        #dynamic_wrap1{ width: 270px; }
+
+    }
+    .tabs-content-wrap {
+        .inline.col-md-4.center { width: 270px; }
+    }
+    
+    div[id$="imageSection"] a { margin: 0 auto 0.4em; }
+
+    div[id$="divPrint"] { display: none; }
+}
+
+// === Size Chart
+.sizeChartTable {
+
+    .size-chart {
+
+        @include breakpoint(0 $breakpoint-tablet) {
+            @include scroll-table;
+        }
+
+    }
+    .hide {display: block;}
+
+    .size-chart { 
+
+        margin-bottom: 20px;
+        width: 100%;
+
+        td { 
+
+            border: 1px solid #ccc;
+            height: 14px;
+            padding: 5px;
+            text-align: center; 
+
+            &.left-size { text-align: left; }
+        }
+
+        th {
+
+            &.measurement-head {
+
+                background-color: #75BF44;
+                color: $white;
+                height: 15px;
+                padding: 5px;
+
+            }
+
+        }
+
+    }
+
+}
+.measurement-message {
+    color: #646464;
+    font-size: 12px;
+}
+div[id$="_divProductDetail"].product-detail-jp{
+    .product-image {
+		a { margin: 0 auto 0.4em; }
+    }
+}

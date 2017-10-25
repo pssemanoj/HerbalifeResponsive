@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2008/06/23/HL.Catalog.Interfaces" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2010/09/20/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa4wcf01.hrbl.net/Service/Catalog/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" />
+  <xs:element name="GetDiscontinuedProductDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q1:GetCatalogItemsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscontinuedProductDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetDiscontinuedProductDetailsResult" nillable="true" type="q2:GetCatalogItemsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetKoreanProductDescriptions">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetKoreanProductDescriptionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetKoreanProductDescriptionsResult" nillable="true" type="q3:GetKoreanProductDescriptionsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q4:GetCatalogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetCatalogResult" nillable="true" type="q5:GetCatalogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalogItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q6:GetCatalogItemRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalogItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetCatalogItemResult" nillable="true" type="q7:GetCatalogItemResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalogItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q8:GetCatalogItemsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCatalogItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetCatalogItemsResult" nillable="true" type="q9:GetCatalogItemsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q10:GetShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetShoppingCartResult" nillable="true" type="q11:GetShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q12:CopyShoppingCartRequest_V01" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="CopyShoppingCartResult" nillable="true" type="q13:GetShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscontinuedSku">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q14:GetDiscontinuedSkusRequest_V01" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDiscontinuedSkuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetDiscontinuedSkuResult" nillable="true" type="q15:GetDiscontinuedSkuResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInternetShoppingCarts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="request" nillable="true" type="q16:GetInternetShoppingCartsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInternetShoppingCartsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="GetInternetShoppingCartsResult" nillable="true" type="q17:GetInternetShoppingCartsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q18:InsertShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="InsertShoppingCartResult" nillable="true" type="q19:InsertShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q20:UpdateShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="UpdateShoppingCartResult" nillable="true" type="q21:UpdateShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCartItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q22:InsertShoppingCartItemRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCartItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="InsertShoppingCartItemResult" nillable="true" type="q23:InsertShoppingCartItemResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q24:DeleteShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="DeleteShoppingCartResult" nillable="true" type="q25:DeleteShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CloseShoppingCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q26:CloseShoppingCartRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CloseShoppingCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="CloseShoppingCartResult" nillable="true" type="q27:CloseShoppingCartResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWebClientAuthKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q28:GetWebAuthKeyRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWebClientAuthKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetWebClientAuthKeyResult" nillable="true" type="q29:GetWebAuthKeyResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAPFDue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q30:GetAPFPaidRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAPFDueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetAPFDueResult" nillable="true" type="q31:GetAPFPaidResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAPFDue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q32:UpdateAPFPaidRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAPFDueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="UpdateAPFDueResult" nillable="true" type="q33:UpdateAPFPaidResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDualMonthDates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q34:GetDualMonthDatesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDualMonthDatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetDualMonthDatesResult" nillable="true" type="q35:GetDualMonthDatesResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEOMDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q36:GetEOMDateRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEOMDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetEOMDateResult" nillable="true" type="q37:GetEOMDateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInventory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q38:GetInventoryRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInventoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetInventoryResult" nillable="true" type="q39:GetInventoryResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://herbalife.com/2010/09/20/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q40:GetProductInfoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProductInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://herbalife.com/2010/09/20/HL.Catalog.ValueObjects" minOccurs="0" name="GetProductInfoResult" nillable="true" type="q41:GetProductInfoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchProducts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q42:SearchProductRequest_V01" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchProductsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="SearchProductsResult" nillable="true" type="q43:SearchProductsResponse_V01" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q44:CopyInvoiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="CopyInvoiceResult" nillable="true" type="q45:CopyInvoiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTopSellers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q46:GetTopSellersRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTopSellersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetTopSellersResult" nillable="true" type="q47:GetTopSellersResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEligibleForPromo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q48:GetEligibleForPromoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEligibleForPromoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetEligibleForPromoResult" nillable="true" type="q49:GetEligibleForPromoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEligibleForPromo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q50:UpdateEligibleForPromoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEligibleForPromoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="UpdateEligibleForPromoResult" nillable="true" type="q51:UpdateEligibleForPromoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExemptedDistributors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q52:GetExemptedDistributorRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExemptedDistributorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetExemptedDistributorsResult" nillable="true" type="q53:GetExemptedDistributorResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q54:GenerateCachedCatalogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedCatalogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="GenerateCachedCatalogResult" nillable="true" type="q55:GenerateCachedCatalogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedInventory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q56:GenerateCachedCatalogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedInventoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="GenerateCachedInventoryResult" nillable="true" type="q57:GenerateCachedCatalogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnouncementInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q58:AnnouncementInfoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnnouncementInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetAnnouncementInfoResult" nillable="true" type="q59:AnnouncementInfoResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyMemberInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q60:CopyMemberInvoiceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CopyMemberInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="CopyMemberInvoiceResult" nillable="true" type="q61:CopyMemberInvoiceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q62:GetMobileOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetMobileOrderResult" nillable="true" type="q63:GetMobileOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q64:GetMobileOrdersRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetMobileOrdersResult" nillable="true" type="q65:GetMobileOrdersResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveMobileOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q66:SaveMobileOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveMobileOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="SaveMobileOrderResult" nillable="true" type="q67:SaveMobileOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMobileOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q68:InsertMobileOrderDetailRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertMobileOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="InsertMobileOrderDetailResult" nillable="true" type="q69:InsertMobileOrderDetailResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q70:GetMobileOrderDetailRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMobileOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetMobileOrderDetailResult" nillable="true" type="q71:GetMobileOrderDetailResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMobileOrderDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q72:DeleteMobileOrderRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteMobileOrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="DeleteMobileOrderDetailResult" nillable="true" type="q73:DeleteMobileOrderResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCartItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q74:InsertShoppingCartItemsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertShoppingCartItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="InsertShoppingCartItemsResult" nillable="true" type="q75:InsertShoppingCartItemsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCartUpdatedDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q76:GetCartUpdatedDateRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCartUpdatedDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetCartUpdatedDateResult" nillable="true" type="q77:GetCartUpdatedDateResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshCatalogCache">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q78:RefreshCatalogCacheRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RefreshCatalogCacheResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="RefreshCatalogCacheResult" nillable="true" type="q79:RefreshCatalogCacheResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCacheReference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q80:GetCacheReferenceRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCacheReferenceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="GetCacheReferenceResult" nillable="true" type="q81:GetCacheReferenceResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedProductInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q82:GenerateCachedCatalogRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerateCachedProductInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://herbalife.com/2014/01/10/HL.Catalog.ValueObjects" minOccurs="0" name="GenerateCachedProductInfoResult" nillable="true" type="q83:GenerateCachedCatalogResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSlowMovingSkuInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q84:GetSlowMovingSkuRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSlowMovingSkuInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" minOccurs="0" name="GetSlowMovingSkuInfoResult" nillable="true" type="q85:GetSlowMovingSkuResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSizeCharts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" minOccurs="0" name="request" nillable="true" type="q86:GetSizeChartsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSizeChartsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://herbalife.com/2015/11/07/HL.Catalog.ValueObjects" minOccurs="0" name="GetSizeChartsResult" nillable="true" type="q87:GetSizeChartsResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

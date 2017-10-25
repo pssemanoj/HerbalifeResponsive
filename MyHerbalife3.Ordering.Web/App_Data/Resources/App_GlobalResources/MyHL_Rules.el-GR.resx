@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι επειδή δεν είναι διαθέσιμο.</value>
+  <comment>_G1711</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι.Εάν θέλετε να το προσθέσετε, παρακαλώ αλλάξτε την υποκατηγορία απο A1 σε B1.</value>
+  <comment>_G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Παρακαλώ προσθέστε προϊόντα στο καλάθι αγορών πριν προσθέσετε τον κωδικό sku {0}.</value>
+  <comment>_G1713</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Η ποσότητα δεν μπορεί να υπερβαίνει το παραπάνω {0} για τους κωδικούς SKU: {1}</value>
+  <comment>_G1714</comment></data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Ο κωδικός προϊόντος SKU {0} δεν είναι διαθέσιμ,ος για Express Παράδοση. Παρακαλώ χρησιμοποιήστε την Standard Παράδοση για το συγκεκριμένο προϊόν.</value>
+  <comment>_G1715</comment></data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Οι κωδικοί SKU 0343, 0344, 2329 ή 2328 δεν είναι διαθέσιμοι για παράδοση Express</value>
+  <comment>_G1716</comment></data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Η ποσότητα των κωδικόν SKU δεν μπορεί να υπερβαίνει το παραπάνω {0}</value>
+  <comment>_G1717</comment></data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Δεν μπορεί να γίνει αγορά</value>
+  <comment>_G1718</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Δεν μπορεί να γίνει αγορά προϊόντων {0}.</value>
+  <comment>_G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του κωδικού SKU {0} δεν μπορεί να αυξηθεί κατά {1} γιατί ξεπερνάει το μέγιστο όριο Κερδών.</value>
+  <comment>_G1720</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του κωδικού SKU {0} δεν μπορεί να αυξηθεί κατά {1} γιατί ξεπερνάει το μέγιστο όριο Ποσοτικών Μονάδων.</value>
+  <comment>_G1721</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Κωδικός Προϊόντος:{0} δεν έχει προστεθεί στη κάρτα, απο τη στιγμή που θα προστεθεί στη κάρτα θα υπερβείτε το όριο των κερδών σας.</value>
+  <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Κωδικός Προϊόντος:{0} δεν έχει προστεθεί στη κάρτα, απο τη στιγμή που θα προστεθεί στη κάρτα θα υπερβείτε το όριο των Ποσοτικών σας Μονάδων.</value>
+  <comment>_G1723</comment></data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Το συνολικό ποσόξεπερνάει το συνολικό όριο των {0}.</value>
+  <comment>_G1724</comment></data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Προιόν SKU:{0} δεν έχει προστεθεί στο καλάθι επειδή, προσπαθώντας να το προσθέσετε στο καλάθι, υπερβήκατε το αγοραστικό σας όριο.</value>
+  <comment>_G1725</comment></data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Η ποσότητα του τεμαχίου SKU:{0} δεν μπορεί να αυξηθεί {1} επειδή υπερβαίνει το αγοραστικό σας όριο.</value>
+  <comment>_G1726</comment></data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Προσωπικό όριο αγορών</value>
+  <comment>_G1727</comment></data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Μεταπώληση</value>
+  <comment>_G1728</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Αυτή η παραγγελία έχει υπερβεί το επιτρεπόμενο όριο των παραγγελιών, Ποσοτικές Μονάδες που υπολείπονται: {0}. Οι παρακάτω κωδικοί SKU δεν έχουν προστεθεί στην κάρτα σας.</value>
+  <comment>_G2302</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Κωδικός SKU:{0}.</value>
+  <comment>_G2303</comment></data>
+  <data name="NoPromoSku" xml:space="preserve">
+    <value>Το Promotional sku για το {0} {1} δεν παρουσιάζεται στον τιμοκατάλογο προϊόντων. Δεν μπορείτε να το προσθέσετε στο καλάθι.</value>
+  <comment>_G2566</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Κωδικός SKU:{0}.</value>
+  <comment>_G2711</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Η παραγγελία σας των {0} ξεπερνά την μέγιστη ποσότητα των {1} ανά Ανεξάρτητο Συνεργάτη κάθε {2} ημερολογιακές ημέρες.</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Ως μέρους του προγράμματος παραγγελιοληψίας, νέοι &amp; υφιστάμενοι Ανεξάρτητοι Συνεργάτες που ακόμη δεν έχουν επιτύχει το επίπεδο του Πλήρως Εγκεκριμένου Επικεφαλής Συμβούλου, μπορούν να πραγματοποιήσουν παραγγελίες ύψους {0} Προσωπικά Αγορασμένων Ποσοτικών Μονάδων (PPV) στη πρώτη τους παραγγελία. Μπορείτε να συγκεντρώσετε αθροιστικά PPV μέχρι {1} Ποσοτικές Μονάδες (περιλαμβανομένου της αρχικής παραγγελίας) μέσα στις επόμενες {2} ημέρες. Αυτή η παραγγελία υπερβαίνει το επιτρεπόμενο όριο σε PPV και πρέπει να μειωθεί κατά {3} Ποσοτικές Μονάδες.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Ως μέρους του προγράμματος παραγγελιοληψίας, νέοι &amp; υφιστάμενοι Ανεξάρτητοι Συνεργάτες που ακόμη δεν έχουν επιτύχει το επίπεδο του Πλήρως Εγκεκριμένου Επικεφαλής Συμβούλου, μπορούν να πραγματοποιήσουν παραγγελίες ύψους {0} Προσωπικά Αγορασμένων Ποσοτικών Μονάδων (PPV) στη πρώτη τους παραγγελία. Μπορείτε να συγκεντρώσετε αθροιστικά PPV μέχρι {1} Ποσοτικές Μονάδες (περιλαμβανομένου της αρχικής παραγγελίας) μέσα στις επόμενες {2} ημέρες. Αυτή η παραγγελία υπερβαίνει το επιτρεπόμενο όριο σε PPV και πρέπει να μειωθεί κατά {3} Ποσοτικές Μονάδες. Ο ακόλουθος κωδικός SKU δεν έχει προστεθεί στο καλάθι αγορών:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>The quantity of the item SKU:{0} can not be increased by {1} because it exceeds your volume points limit.</value>
+      <comment>_G3558</comment></data>
+</root>

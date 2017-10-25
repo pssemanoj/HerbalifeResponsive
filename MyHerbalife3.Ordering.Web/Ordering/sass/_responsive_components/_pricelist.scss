@@ -1,0 +1,148 @@
+// Pricelist
+
+#divPriceListButton2, #divPriceListButton3 {
+    
+    float: none;
+    margin: 3px;
+    width: auto;
+
+    @include breakpoint( $desktop ) { 
+        float: right;
+        margin: 0;
+    }
+    
+}
+
+.gdo-nav-mid {
+    float: none;
+    padding-left: 0;
+    width: span(4);
+
+    @include breakpoint( $tablet ) { 
+        float: left;
+        width: 440px;
+    }
+    @include breakpoint( $desktop ) { 
+        padding-left: 2px;
+        width: 575px;
+    }
+
+    div[id$="upPriceList"] {
+        margin: 0 auto;
+        width: span(4);
+        @include breakpoint( $desktop ) { 
+            margin: 0 8px;
+            width: 550px;
+        }
+    }
+}
+.row {
+    &.product-info {
+        padding: 15px 10px;
+        .left-side {
+            @include span(3);
+            .col-Product{ @include span(4); }
+            .bold { @include span(2); }
+            .align-right{ @include span(2 last); }
+        }
+        .right-side {
+            @include span(1 last);
+            #titleQTY { display: block; text-align: center; }
+            .col-Avail div td { border: none; }
+        }
+        &.gdo-row-odd, &.gdo-row-even {
+            border-bottom: 1px solid #d6d6d6;
+            border-top: 1px solid #d6d6d6;
+            clear: both;
+        }
+    }   
+}
+
+// Order Quick View
+div[id$="gdoNavRight"] {
+    width: span(4);
+
+    @include breakpoint( $tablet ) { 
+        width: 180px;
+    }
+
+    #gdo-right-column-orderquickview, #gdo-right-column-crosssell, #gdo-right-column-mexicoorderquickview {
+        margin: 0 auto;
+        width: span(3.5);
+        @include breakpoint( $tablet ) { 
+            margin: 0 0 10px 10px;
+            width: 170px;
+        }
+    }
+
+    .shipping-pickup-module .gdo-select-box select {
+        max-width: 100%;
+        width: span(4);
+        @include breakpoint( $tablet ) { 
+            max-width: 160px;
+            width: 160px;
+        }
+    }
+}
+
+[id$="dlPickupInfo"] {
+    [id$="lbAddress"]{
+        padding: 0;
+        margin: 0;
+        @include breakpoint( $tablet ) { padding: 0 0 0 40px; margin: 1.5em 0; }
+    }
+} 
+
+.action-buttons {
+    text-align: right;
+    > div {
+
+        display: block;
+        @include breakpoint( $tablet ) { display: inline-block; }
+
+    }
+}
+.row-group {
+
+    .inline { 
+        display: block; 
+        float: none; 
+        margin-right: 0;
+
+        @include breakpoint( $desktop ) { 
+            margin-right: 5px;
+            display: inline;
+            float: left;
+        }
+    }
+
+}
+
+[id$="CheckoutButtonDisabled"] {
+
+    padding-right: 0!important;
+    @include breakpoint( $tablet ) { padding-right: 10px; }
+
+}
+
+.backorderErrorMsg {
+
+	> span {
+		width: 100%;
+        @include breakpoint( $desktop ) { width: 465px; }
+	}
+	
+}
+
+.gdo-pricelist-tbl-top td {
+    padding: 0px;
+}
+
+div[id$="pnlProductDetailControl"] {
+    > div {
+        width: 317px;
+         @include breakpoint( $tablet ) {
+             width: 100%
+         }
+    }
+}

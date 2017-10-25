@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GridQty.Text" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="GridSKU.Text" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="GridTotalPrice.Text" xml:space="preserve">
+    <value>Your Total Price</value>
+  </data>
+  <data name="GridTotalVolPoints.Text" xml:space="preserve">
+    <value>Total Vol Pts.</value>
+  </data>
+  <data name="GridUnitRetailPrice.Text" xml:space="preserve">
+    <value>Unit Retail Price</value>
+  </data>
+  <data name="lblLoyaltyProgram.Text" xml:space="preserve">
+    <value>Customer Loyalty Program:</value>
+  </data>
+  <data name="lblPrice.Text" xml:space="preserve">
+    <value>Your Price:</value>
+  </data>
+  <data name="lblShipping.Text" xml:space="preserve">
+    <value>Shipping &amp; Handling:</value>
+  </data>
+  <data name="lblSubtotal.Text" xml:space="preserve">
+    <value>Subtotal:</value>
+  </data>
+  <data name="lblTax.Text" xml:space="preserve">
+    <value>Tax:</value>
+  </data>
+  <data name="ltEmail.Text" xml:space="preserve">
+    <value>Email Address:</value>
+  </data>
+  <data name="ltInvoiceDate.Text" xml:space="preserve">
+    <value>Invoice Date:</value>
+  </data>
+  <data name="ltInvoiceNumber.Text" xml:space="preserve">
+    <value>Invoice #:</value>
+  </data>
+  <data name="ltInvoiceStatus.Text" xml:space="preserve">
+    <value>Invoice Status:</value>
+  </data>
+  <data name="ltInvoiceType.Text" xml:space="preserve">
+    <value>Invoice Type:</value>
+  </data>
+  <data name="ltlTotalDue.Text" xml:space="preserve">
+    <value>Your Total Due:</value>
+  </data>
+  <data name="ltManageInvoice.Text" xml:space="preserve">
+    <value>Manage Your Invoice</value>
+  </data>
+  <data name="ltName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="ltNotes.Text" xml:space="preserve">
+    <value>Notes:</value>
+  </data>
+  <data name="ltPhone.Text" xml:space="preserve">
+    <value>Phone #:</value>
+  </data>
+  <data name="ltSendPaymentTo.Text" xml:space="preserve">
+    <value>Please Send Payment To:</value>
+  </data>
+  <data name="ltShipto.Text" xml:space="preserve">
+    <value>Ship To:</value>
+  </data>
+  <data name="NoRecordsMessage.Text" xml:space="preserve">
+    <value>No orders were found matching your search criterias. Please redefine your search.</value>
+  </data>
+  <data name="lblItemSubTotalCaption.Text" xml:space="preserve">
+    <value>Subtotals:</value>
+  </data>
+  <data name="ltPageDesc1.Text" xml:space="preserve">
+    <value>Please review your invoice below.</value>
+  </data>
+  <data name="ltPageDesc2.Text" xml:space="preserve">
+    <value>Use the links at the top right to manage this invoice and more.</value>
+  </data>
+  <data name="ltPageHeading.Text" xml:space="preserve">
+    <value>View Invoice</value>
+  </data>
+  <data name="lnkBackToInvoiceList.Text" xml:space="preserve">
+    <value>Return to My Invoices</value>
+  </data>
+  <data name="lnkCopyInvoice.Text" xml:space="preserve">
+    <value>Copy to New Invoice</value>
+  </data>
+  <data name="lnkDeleteInvoice.Text" xml:space="preserve">
+    <value>Delete Invoice</value>
+  </data>
+  <data name="lnkEmailInvoice.Text" xml:space="preserve">
+    <value>Email Invoice</value>
+  </data>
+  <data name="lnkMakeChanges.Text" xml:space="preserve">
+    <value>Make Changes</value>
+  </data>
+  <data name="lnkPrintInvoice.Text" xml:space="preserve">
+    <value>Print Invoice</value>
+  </data>
+  <data name="lnkSavePDF.Text" xml:space="preserve">
+    <value>Save as a PDF</value>
+  </data>
+  <data name="lnkCreateOrder.Text" xml:space="preserve">
+    <value>Create Order</value>
+  </data>
+</root>

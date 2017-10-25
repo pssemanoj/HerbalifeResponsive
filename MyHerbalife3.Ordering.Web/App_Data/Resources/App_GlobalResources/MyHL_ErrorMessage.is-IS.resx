@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Ekki er unnt að bæta greiðslu á árlegu vinnslugjaldi í innkaupakörfuna.</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Ekki er unnt að fjarlægja greiðslu á árlegu vinnslugjaldi úr innkaupakörfunni.</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Ert þú viss um að þú viljir hætta við þessa pöntun? Ef þú smellir á „í lagi“ verða allar vörur fjarlægðar úr innkaupakörfunni.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value />
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Ekki er unnt að bæta vörum í biðpöntun við pöntun til að greiða árlegt vinnslugjald.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Ekki tókst að fá heimild fyrir greiðslu með korti. Vinsamlegast athugaðu kortaupplýsingarnar.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Formið er ekki rétt. Vinsamlegast gefðu upplýsingar á réttu formi.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Þú hefur gefið upp sama vörunúmerið tvisvar. Vinsamlegast reyndu aftur.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Miðafjöldi er takmarkaður við {0} í hverri pöntun.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Ekki er heimilt að panta miða á viðburði á þessari síðu.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Vörunúmer {0}: Fjöldi sem til er á lager er {1} stk. Vinsamlegast breyttu fjöldanum sem þú óskar eftir svo þú getir bætt vörunni í innkaupakörfuna.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Af vörunúmeri {0} er unnt að setja 1 eða fleiri stk. í biðpöntun.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Fjöldinn má ekki vera meiri en {1} stk. af vörunúmeri {0}.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Því miður er ekkert kort skráð á þig hjá okkur. Vinsamlegast hafðu samband við þjónustudeildina fyrir Meðlimi í síma 800 9896.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Ógilt póstnúmer</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value />
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Í augnablikinu er {0} ekki til á lager og því var fjöldanum breytt í 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Að hámarki er heimilt að panta 3 Today tímarit í hverri pöntun.</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Hámarksfjöldi tímarita sem bæta má í körfuna er {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Þetta nafn er þegar í notkun. Vinsamlegast veldu annað nafn.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Netpöntun er ekki í boði núna.</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Netpöntun er ekki heimil.</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Einungis er heimilt að bæta vörum við pöntun til að greiða árlegt vinnslugjald.</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Greidd upphæð stemmir ekki við heildarupphæðina fyrir þessa pöntun.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Vinsamlegast sláðu inn upphæð sem er hærri en 0.</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Vinsamlegast athugaðu kortaupplýsingarnar.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Vinsamlegast athugaðu dreifingaraðilanúmer og PIN-númer og reyndu aftur. Ef vandamálin leysast ekki skaltu hafa samband við þjónustudeildina fyrir dreifingaraðila í síma 800 9896.</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Vinsamlegast gakktu frá pöntun um að greiða árlegt vinnslugjald áður en þú bætir öðrum vörum í körfuna.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Vinsamlegast gakktu frá greiðslu á árlegu vinnslugjaldi áður en þú pantar miða á viðburði.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp númer.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp fjölda fyrir vörunúmer {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value />
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt nafn.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Því miður gátum við ekki bætt inn kortinu þínu. Vinsamlegast reyndu aftur með gælunafni ef þú ert ekki með kreditkortanúmer.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value />
+    <comment>_G1202</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp tölvupóstfang.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp greiðsluupplýsingar.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp öryggisnúmer korts.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp fjöldann af greiðslum á árlegu vinnslugjaldi sem þú vilt ganga frá.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp tölvupóstfang.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt skírnarnafn.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt eftirnafn.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp gilt millinafn.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp nauðsynlegar sendingarupplýsingar.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp svæðisnúmer á réttu formi.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value />
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp nafn móttakanda.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp svæðisnúmer.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value />
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp skírnarnafn.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp eftirnafn.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Vinsamlegast fylltu út alla nauðsynlega reiti.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp símanúmer.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp sveitarfélag.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Vinsamlegast fylltu út reitinn fyrir götuheimilisfang.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp póstnúmer.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Vinsamlegast gefðu upp símanúmer á réttu formi.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Vinsamlegast athugaðu að þú getur einungis vistað {0} kort í einu. Vinsamlegast eyddu korti sem fyrir er ef þú vilt gefa upp nýtt kort.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Athugaðu: Internet Explorer eða Firefox gagnast best til að skoða þessa síðu.</value>
+    <comment>_H279</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value />
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value />
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value />
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Vinsamlegast veldu tegund pöntunar.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value />
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value />
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Nafn sækjanda vantar</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Símanúmer sækjanda vantar</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value />
+    <comment>_G1236</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Vinsamlegast veldu Já/Nei.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Ekki er unnt að eyða aðalheimilisfangi. Vinsamlegast gerðu annað heimilisfang að aðalheimilisfangi og reyndu aftur.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value />
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Ganga frá kaupum</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Fara á Heimasíðu</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Sending á þetta póstnúmer er ekki heimil. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila.</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Vörunúmer {0} er ekki fáanlegt.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value />
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Kerfisbilun</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Pöntunarmánuður hefur breyst.)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Vörunúmer {0} verður sett í biðpöntun.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Sveitarfélag er ógilt.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value />
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Ekki er hægt að nota Póstbox sem heimilisfang</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Viðskiptin voru ekki heimiluð. Vinsamlegast athugaðu kortaupplýsingarnar þínar. Ef vart verður við sama vandamál á ný skaltu hafa samband við þjónustudeildina fyrir Meðlimi í síma 800 9896.</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Viðskiptin voru ekki heimiluð. Vinsamlegast hafðu samband við þjónustudeildina fyrir Meðlimi í síma 800 9896.</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Póstnúmer er ógilt.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Engar vörur eru til greiðslu í þessari pöntun.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Í augnablikinu er ekki nógu mikill fjöldi á lager af vörunúmeri {0}. Fjöldi í boði: {1} stk.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Þú hefur ekki valið neinar vörur til að bæta í körfuna.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Engar vörur hafa verið valdar til að reikna út viðskiptapunkta.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Þetta heimilisfang finnst nú þegar í gagnagrunninum.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value />
+    <comment>_G1262</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Þessi viðskipti voru ekki heimiluð með þessu korti.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today tímaritinu hefur verið bætt í körfuna.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Ekki var unnt að ganga frá pöntuninni. Vinsamlegast hafðu samband við þjónustudeildina fyrir Meðlimi í síma 800 9896.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Ekki var unnt að ganga frá pöntuninni. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila: Drnordic@herbalife.com.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Afgreiðsla pöntunarinnar tókst því miður ekki. Vinsamlegast athugaðu afhendingarheimilisfangið og reyndu aftur. Vinsamlegast hafðu samband við þjónustudeildina fyrir dreifingaraðila ef vart verður við vandamálið á ný.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Okkur þykir það leitt en við gátum ekki skipt gjaldmiðlinum. Vinsamlegast hafðu samband við þjónustudeildina fyrir Meðlimi í síma 800 9896.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Þú ert þegar með miða á viðburð í körfunni. Vilt þú tæma körfuna?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Þú ert að reyna að eyða aðalkortinu þínu. Vinsamlegast veldu annað kort sem aðalkort svo þú getir eytt þessu.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Þú getur ekki lengur notað þetta kort vegna þess hve oft því hefur verið hafnað.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Stuttnefnið er þegar til, veldu þér vinsamlegast nýtt stuttnefni (nikk).</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Þú getur ekki bætt þessari vöru í innkaupakörfuna.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Þú getur ekki komist á staðfestingasíðuna meðan innkaupakarfan er tóm</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value />
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Þú hefur breytt pöntunarmánuði fyrir þessa pöntun í {mánuður}. Vilt þú halda þig við þetta val og halda áfram?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Þú ert þegar með miða á viðburð í innkaupakörfunni þinni. Vilt þú tæma körfuna?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Þú ert þegar með vörur í innkaupakörfunni þinni. Vilt þú fjarlægja þær til að geta gengið frá miðakaupum á viðburð?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Þú hefur valið {0} sem pöntunarmánuð, er það rétt?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value />
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Þú hefur valið að skoða vörulistann án þess að panta og gefst því ekki kostur á að bæta neinu í innkaupakörfuna.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Þú hefur bætt HFF í körfuna.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Þú getur aðeins fyrirframgreitt upp að 90 dögum fyrir settan greiðsludag árgjalds.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Þú verður að velja hvernig þú vilt fá vöruna senda áður en þú heldur áfram.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Við tókum eftir að þú lagðir inn nákvæmlega eins pöntun þann {0}. Vinsamlegast staðfestu að þú viljir halda áfram.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Árlegt vinnslugjald þitt er á gjalddaga {0}.</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Árlegt vinnslugjald þitt er gjaldfallið. Greiðslu á því hefur verið bætt í innkaupakörfuna þína.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Fleiri en eitt árlegt vinnslugjald er gjaldfallið. Greiðslu á þeim hefur verið bætt í innkaupakörfuna þína.</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Kortið þitt er útrunnið. Vinsamlegast smelltu á „breyta“ og uppfærðu kortaupplýsingarnar.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Kortið þitt er að renna út. Vinsamlegast hafðu samband við þjónustudeildina fyrir Meðlimi: msis@herbalife.com</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Við getum ekki unnið fyrirspurnina þína, vinsamlegast hafðu samband við Þjónustudeild Meðlimi í síma 800 9896.</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Við getum ekki unnið fyrirspurnina þína, vinsamlegast hafðu samband við Þjónustudeild Meðlimi í síma 800 9896. 
+</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Fyrri pöntun þín hafði þegar verið staðfest/send áður en þú gerðir breytingar á innkaupakörfunni. Pöntunarnúmer þitt er {0}. Þú getur athugað hvernig gengur að afgreiða pöntunina með því að fara inn á Pantanirnar Mínar eða hringja í síma 800 9896.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Gjaldfallnar greiðslur á árlegu vinnslugjaldi hafa verið settar í innkaupakörfuna.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Sendingarupplýsingar þínar eru ekki lengur gildar. Karfan verður tæmd.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Vörunúmer {0} er ógilt.</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Vinsamlegast veldu tegund af pöntun úr litlu körfunni.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value />
+    <comment>_G1302</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Staðfesting á heimilisfangi er þörf</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Við tókum eftir að þú lagðir inn nákvæmlega eins pöntun þann {0}. Vinsamlegast staðfestu að þú viljir halda áfram.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Vinsamlegast settu inn Dreifingaraðila ID</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Vinsamlegast veldu valkostinn endurheimt Pin númers.</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Viðskiptapunktar ekki í boði á þessum tíma</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>You must delete one of your credit cards to change the items in your cart</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Til að ljúka uppsetningu á viðskiptareikningi þínum sem nýr aðili að Herbalife þarftu að velja eina af staðsetningunum frá vinnslulandi þínu og reyna aftur.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>Ekki er hægt að ná í PIN-númer</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Verðið fyrir vörur í innkaupakörfunni hefur breyst vegna villu. Vinsamlegast sendu pöntunina aftur.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Ekki er hægt að vinna úr beiðni þinni núna af tæknilegum ástæðum. Reyndu vinsamlegast síðar.</value>
+    <comment>_1A8</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Vinnsla á nýjum umsóknum meðlima getur tekið allt að 12 - 18 klukkutíma. Eftir að vinnslu er lokið getur þú byrjað að panta. Vinsmalegast hafið samaband seinna til að klára pöntun.</value>
+    <comment>_GXXXX</comment>
+  </data>
+</root>

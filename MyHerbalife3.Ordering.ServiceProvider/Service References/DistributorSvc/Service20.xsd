@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2013/03/01/HL.Distributor.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2013/03/01/HL.Distributor.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Distributor/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetMessageDetailsRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMessageDetailsRequestBase" nillable="true" type="tns:GetMessageDetailsRequestBase" />
+  <xs:complexType name="GetMessageDetailsRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMessageDetailsRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Type" type="tns:MessageType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMessageDetailsRequest_V01" nillable="true" type="tns:GetMessageDetailsRequest_V01" />
+  <xs:simpleType name="MessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EMAIL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MessageType" nillable="true" type="tns:MessageType" />
+  <xs:complexType name="GetMessageDetailsResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMessageDetailsResponseBase" nillable="true" type="tns:GetMessageDetailsResponseBase" />
+  <xs:complexType name="GetMessageDetailsResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMessageDetailsResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MessageDetails" nillable="true" type="tns:ArrayOfDistributorMessage_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMessageDetailsResponse_V01" nillable="true" type="tns:GetMessageDetailsResponse_V01" />
+  <xs:complexType name="ArrayOfDistributorMessage_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DistributorMessage_V01" nillable="true" type="tns:DistributorMessage_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistributorMessage_V01" nillable="true" type="tns:ArrayOfDistributorMessage_V01" />
+  <xs:complexType name="DistributorMessage_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DistributorMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreatedDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="tns:MessageStatus" />
+          <xs:element minOccurs="0" name="Type" type="tns:MessageType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorMessage_V01" nillable="true" type="tns:DistributorMessage_V01" />
+  <xs:complexType name="DistributorMessage">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DistributorMessage" nillable="true" type="tns:DistributorMessage" />
+  <xs:simpleType name="MessageStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="READ" />
+      <xs:enumeration value="UNREAD" />
+      <xs:enumeration value="DELETE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MessageStatus" nillable="true" type="tns:MessageStatus" />
+  <xs:complexType name="SetMessageStatusRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMessageStatusRequestBase" nillable="true" type="tns:SetMessageStatusRequestBase" />
+  <xs:complexType name="SetMessageStatusRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetMessageStatusRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MessageDetails" nillable="true" type="tns:ArrayOfDistributorMessage_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMessageStatusRequest_V01" nillable="true" type="tns:SetMessageStatusRequest_V01" />
+  <xs:complexType name="SetMessageStatusResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMessageStatusResponseBase" nillable="true" type="tns:SetMessageStatusResponseBase" />
+  <xs:complexType name="SetMessageStatusResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetMessageStatusResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MessagesUpdated" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetMessageStatusResponse_V01" nillable="true" type="tns:SetMessageStatusResponse_V01" />
+  <xs:complexType name="GetDocumentDeliveryPrefRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDocumentDeliveryPrefRequestBase" nillable="true" type="tns:GetDocumentDeliveryPrefRequestBase" />
+  <xs:complexType name="GetDocumentDeliveryPrefRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDocumentDeliveryPrefRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Type" type="tns:DocumentType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDocumentDeliveryPrefRequest_V01" nillable="true" type="tns:GetDocumentDeliveryPrefRequest_V01" />
+  <xs:simpleType name="DocumentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TAX" />
+      <xs:enumeration value="PERSONALMESSAGES" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DocumentType" nillable="true" type="tns:DocumentType" />
+  <xs:complexType name="DocumentDeliveryPreference_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DocumentDeliveryPreference">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DeliveryType" type="tns:DeliveryType" />
+          <xs:element minOccurs="0" name="DocumentType" type="tns:DocumentType" />
+          <xs:element minOccurs="0" name="EmailExists" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Tin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DocumentDeliveryPreference_V01" nillable="true" type="tns:DocumentDeliveryPreference_V01" />
+  <xs:complexType name="DocumentDeliveryPreference">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DocumentDeliveryPreference" nillable="true" type="tns:DocumentDeliveryPreference" />
+  <xs:simpleType name="DeliveryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EMAIL" />
+      <xs:enumeration value="POSTALMAIL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DeliveryType" nillable="true" type="tns:DeliveryType" />
+  <xs:complexType name="SetDocumentDeliveryPrefRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:DistributorRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetDocumentDeliveryPrefRequestBase" nillable="true" type="tns:SetDocumentDeliveryPrefRequestBase" />
+  <xs:complexType name="SetDocumentDeliveryPrefRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetDocumentDeliveryPrefRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Preference" nillable="true" type="tns:DocumentDeliveryPreference_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetDocumentDeliveryPrefRequest_V01" nillable="true" type="tns:SetDocumentDeliveryPrefRequest_V01" />
+  <xs:complexType name="SetDocumentDeliveryPrefResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetDocumentDeliveryPrefResponseBase" nillable="true" type="tns:SetDocumentDeliveryPrefResponseBase" />
+  <xs:complexType name="SetDocumentDeliveryPreferenceResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SetDocumentDeliveryPrefResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PreferenceUpdated" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SetDocumentDeliveryPreferenceResponse_V01" nillable="true" type="tns:SetDocumentDeliveryPreferenceResponse_V01" />
+</xs:schema>

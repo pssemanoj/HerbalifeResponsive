@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.5, 8.625" name="NewResponseRedirectionLogic">
+  <activityRootModelMoniker Id="d966c301-0132-48d5-aed5-116777c28abd" />
+  <nestedChildShapes>
+    <initialNodeShape Id="e2be5fec-b2bf-4a1a-90ea-3fa6dff0ea1d" absoluteBounds="4.75, 2, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="d7483aa7-44f6-4131-9c52-76556bb5108c" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <decisionNodeShape Id="8797a964-bdca-4f59-9686-1614bcb11ce4" absoluteBounds="4.625, 3.125, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="a59f202f-4e0a-4c46-af1e-9fb4ea605d29" LastKnownName="Decision2" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="b8f3df65-f228-4f29-9b52-e8fecd495266" absoluteBounds="11.5, 3.125, 1.75, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="f43459b8-b70b-4758-a8f0-cac11ab463e0" LastKnownName="session.OrderStatus=Submitted" />
+    </actionShape>
+    <decisionNodeShape Id="540ea320-ea48-4090-8f26-5a25dd5b49a9" absoluteBounds="9.875, 3.125, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="d8d56353-4b69-44f7-8d7c-36deb45e92c1" LastKnownName="Decision21" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <activityFinalNodeShape Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" absoluteBounds="9.5, 8.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="1486d67d-e460-46a3-9628-62f22685d330" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <decisionNodeShape Id="68a6b1c4-968d-4943-8856-c18b248741a8" absoluteBounds="4.625, 3.75, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="5793b234-8f7e-4583-85bd-ffa6cd3a573b" LastKnownName="Decision3" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="142d3a32-0a39-441f-a2fc-22df0064d79f" absoluteBounds="8.375, 6.75, 1.75, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="401245b6-7148-4d66-8fc3-9d29b853d39c" LastKnownName="session.OrderStatus=Unknown" />
+    </actionShape>
+    <actionShape Id="8c858b4a-f1aa-4cf1-8ec2-13ea21a1ea24" absoluteBounds="8.375, 7.375, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="8c331e54-f4bf-4872-a2e7-8c1744ab0b2d" LastKnownName="Redirect to Catalog" />
+    </actionShape>
+    <decisionNodeShape Id="b1651c3b-b21a-4954-aced-2cd6b4d68ed2" absoluteBounds="4.625, 4.5, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="904191f3-1d2f-46ad-9b78-e73cb75c8e13" LastKnownName="Decision31" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <decisionNodeShape Id="cb0270a9-55c6-4667-8cb3-7ffe80b9639f" absoluteBounds="7.375, 3.75, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="cbbc154e-c188-439d-bc68-ec83483a6c8f" LastKnownName="Decision12" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="f1aaad1e-654a-417c-a2fa-8c3e36aa61f6" absoluteBounds="8, 3.75, 1.5, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="f7a03aff-3378-4375-acab-240d4101ff37" LastKnownName="CloseCart" />
+    </actionShape>
+    <decisionNodeShape Id="94bf7e68-96b2-49dc-99c2-0e85715a8487" absoluteBounds="4.625, 6.125, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="a1579ae6-077e-42e1-93d1-6fc5bf1065cb" LastKnownName="Decision4" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="cc7956e1-8966-4887-84b1-efb7924d2286" absoluteBounds="6.125, 6.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="5a588436-94fe-4459-aa65-4cc69fda34b3" LastKnownName="Redirect to Checkout" />
+    </actionShape>
+    <actionShape Id="1297ebdd-5593-4ac6-9384-ef6b43f0ac86" absoluteBounds="5.75, 7, 2.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="052bbbc9-2c3d-4add-9999-3c7eab64a0fd" LastKnownName="session.OrderStatus=OrderSubmitFailed" />
+    </actionShape>
+    <decisionNodeShape Id="3eb7b6d1-fa08-4651-8e91-f1acd0a317a7" absoluteBounds="9.875, 4.5, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="6c67cc78-f4e6-4cfd-8b20-2dc9e8b74292" LastKnownName="Decision7" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="bdfab5ad-ecdc-4947-8981-6b193a6cc677" absoluteBounds="10, 5.375, 2, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e5a38afa-4d81-43aa-99fb-86c3cfea6bce" LastKnownName="session.OrderStatus=BeingSubmitted" />
+    </actionShape>
+    <actionShape Id="f31faf48-169d-41f1-9997-6f9372ed7d0b" absoluteBounds="10.75, 6.125, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9b73dcd8-8132-4aea-9ef6-997f2982399d" LastKnownName="Submit async" />
+    </actionShape>
+    <decisionNodeShape Id="353aa527-70eb-4e36-98b2-39f134fcb6cd" absoluteBounds="8.5, 6.125, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="80872cf5-df57-4504-8b60-d0e02e0ac355" LastKnownName="Decision9" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <controlFlowConnector edgePoints="[(10.237767300825 : 3.324732699175); (11.5 : 3.33747774376806)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="f2025698-4e8b-4b5d-8ada-268909b5e3fc" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="10.815032786502471, 3.1329889254235215, 0.125, 0.1341145783662796" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="540ea320-ea48-4090-8f26-5a25dd5b49a9" />
+        <actionShapeMoniker Id="b8f3df65-f228-4f29-9b52-e8fecd495266" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 3.3125); (9.875 : 3.3125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="41852610-9faf-4bd9-9292-63623b9c1228" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="8797a964-bdca-4f59-9686-1614bcb11ce4" />
+        <decisionNodeShapeMoniker Id="540ea320-ea48-4090-8f26-5a25dd5b49a9" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(13.03125 : 3.5); (13.03125 : 8.14967609937385); (9.61225542725596 : 8.14967609937385)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="12dfb015-a352-4190-bb5b-bfa2c579f4f9" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b8f3df65-f228-4f29-9b52-e8fecd495266" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.97847653202253 : 7.75); (8.97847653202253 : 8.16934886020596); (9.50269376182891 : 8.16934886020596)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="dd43f4f1-65d3-4726-9945-8435e67e0079" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="8c858b4a-f1aa-4cf1-8ec2-13ea21a1ea24" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.9375 : 7.125); (8.9375 : 7.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="66096b93-1805-44e4-9a27-8de6b8012d09" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="142d3a32-0a39-441f-a2fc-22df0064d79f" />
+        <actionShapeMoniker Id="8c858b4a-f1aa-4cf1-8ec2-13ea21a1ea24" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.80147058823529 : 4.11397058823529); (4.80147058823529 : 4.51102941176471)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="ba082025-a541-424a-a0ba-2fe5a2a58abe" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="68a6b1c4-968d-4943-8856-c18b248741a8" />
+        <decisionNodeShapeMoniker Id="b1651c3b-b21a-4954-aced-2cd6b4d68ed2" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 3.9375); (7.375 : 3.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="2233b123-034b-48e7-abae-39b484243d5f" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="5, 3.5625, 0.62205219268798828, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="68a6b1c4-968d-4943-8856-c18b248741a8" />
+        <decisionNodeShapeMoniker Id="cb0270a9-55c6-4667-8cb3-7ffe80b9639f" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.75 : 3.9375); (8 : 3.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="036892f0-0490-4db5-add6-e37626f25c08" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.4375, 3.5, 1.2180807590484619, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="cb0270a9-55c6-4667-8cb3-7ffe80b9639f" />
+        <actionShapeMoniker Id="f1aaad1e-654a-417c-a2fa-8c3e36aa61f6" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(7.25 : 6.32007648731977); (8.24406986924962 : 6.32007648731977); (8.24406986924962 : 8.15625); (9.50837341226347 : 8.15625)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="834b424f-e6c8-4a82-ab21-6f08a085f10d" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="cc7956e1-8966-4887-84b1-efb7924d2286" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 6.3125); (6.125 : 6.3125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="fd5dac6d-b240-44f9-9610-0467508411b3" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.875, 5.875, 1.0240703821182251, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="94bf7e68-96b2-49dc-99c2-0e85715a8487" />
+        <actionShapeMoniker Id="cc7956e1-8966-4887-84b1-efb7924d2286" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.8125 : 7.375); (6.8125 : 8.16038447798152); (9.5061883807224 : 8.16038447798152)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="1cf3cda4-159b-450e-86fd-0d4a51d1b3c3" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="1297ebdd-5593-4ac6-9384-ef6b43f0ac86" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(11.65625 : 6.5); (11.65625 : 8.15836052235026); (9.61779141743798 : 8.15836052235026)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="a7711c9d-cab0-4e2c-9099-d571f1e8b50c" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f31faf48-169d-41f1-9997-6f9372ed7d0b" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(11.6824267277288 : 5.75); (11.6824267277288 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="4fa64b07-e8eb-44af-b41d-b9f7b9a1bd4d" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="bdfab5ad-ecdc-4947-8981-6b193a6cc677" />
+        <actionShapeMoniker Id="f31faf48-169d-41f1-9997-6f9372ed7d0b" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.875 : 6.3125); (10.75 : 6.3125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="e459c030-fdce-4229-94a0-2f80e53aa3c2" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="8.6875, 5.875, 2.7114074230194092, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="353aa527-70eb-4e36-98b2-39f134fcb6cd" />
+        <actionShapeMoniker Id="f31faf48-169d-41f1-9997-6f9372ed7d0b" />
+      </nodes>
+    </controlFlowConnector>
+    <decisionNodeShape Id="8514047c-10c1-45db-8afd-503a112765e4" absoluteBounds="9.875, 3.875, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="19e9e018-6dd3-4e09-85d6-67772fe283be" LastKnownName="Decision5" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="19ed22b5-6323-4428-ae70-4fda23991526" absoluteBounds="11.625, 3.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="a4128227-d42b-4311-8d31-f25e4c88fb11" LastKnownName="SubmitOrder" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(4.8125 : 4.875); (4.8125 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="dbf9cf95-752a-4ad3-ba02-9176bad111c3" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="b1651c3b-b21a-4954-aced-2cd6b4d68ed2" />
+        <decisionNodeShapeMoniker Id="94bf7e68-96b2-49dc-99c2-0e85715a8487" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(10.25 : 4.0625); (11.625 : 4.0625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="b8131dd8-947b-41bf-9fcb-b29ce81a0c68" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="10.1875, 3.75, 1.5655420995114291, 0.2821180522441864" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="8514047c-10c1-45db-8afd-503a112765e4" />
+        <actionShapeMoniker Id="19ed22b5-6323-4428-ae70-4fda23991526" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(12.6459366655156 : 4.25); (12.6459366655156 : 8.14965998363799); (9.61224317201107 : 8.14965998363799)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="ba10c636-82cc-40b5-9862-7233a2a9dc00" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="19ed22b5-6323-4428-ae70-4fda23991526" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(10.0625 : 4.25); (10.0625 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="4d656897-0524-4d31-810c-b7c7106f3235" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="8514047c-10c1-45db-8afd-503a112765e4" />
+        <decisionNodeShapeMoniker Id="3eb7b6d1-fa08-4651-8e91-f1acd0a317a7" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(10.072021484375 : 4.865478515625); (10.072021484375 : 5.090576171875); (10.06884765625 : 5.090576171875); (10.06884765625 : 5.375)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="1bdd000e-912a-4f12-a51d-185389bd117f" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="9.259521484375, 5.052978515625, 1.3639683723449707, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="3eb7b6d1-fa08-4651-8e91-f1acd0a317a7" />
+        <actionShapeMoniker Id="bdfab5ad-ecdc-4947-8981-6b193a6cc677" />
+      </nodes>
+    </controlFlowConnector>
+    <joinNodeShape Id="efdfb92b-f267-40e5-b8e1-2aa15a6024ae" absoluteBounds="7.125, 4.625, 1.75, 0.125" customColor="32, 32, 32">
+      <joinNodeMoniker Id="8cdc6ad6-ee93-4a15-9834-2b0a388cb332" LastKnownName="Join1" />
+      <relativeChildShapes />
+    </joinNodeShape>
+    <controlFlowConnector edgePoints="[(7.56156562273435 : 4.12406562273435); (7.56156562273435 : 4.385); (7.55969002270951 : 4.385); (7.55969002270951 : 4.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="0c159ef9-311f-4c06-a7f6-027411b34593" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="cb0270a9-55c6-4667-8cb3-7ffe80b9639f" />
+        <joinNodeShapeMoniker Id="efdfb92b-f267-40e5-b8e1-2aa15a6024ae" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.4375 : 4.125); (8.4375 : 4.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="48310f5a-1192-4c05-a74c-0f5420f2bda3" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="f1aaad1e-654a-417c-a2fa-8c3e36aa61f6" />
+        <joinNodeShapeMoniker Id="efdfb92b-f267-40e5-b8e1-2aa15a6024ae" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.6875 : 4.75); (8.6875 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="6ef68277-0dc3-47b3-8ef1-9145f01ba6ab" />
+      <relativeChildShapes />
+      <nodes>
+        <joinNodeShapeMoniker Id="efdfb92b-f267-40e5-b8e1-2aa15a6024ae" />
+        <decisionNodeShapeMoniker Id="353aa527-70eb-4e36-98b2-39f134fcb6cd" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(8.6875 : 6.5); (8.6875 : 6.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="33b84a4c-9755-47d1-bab9-f5dc033ef82b" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="353aa527-70eb-4e36-98b2-39f134fcb6cd" />
+        <actionShapeMoniker Id="142d3a32-0a39-441f-a2fc-22df0064d79f" />
+      </nodes>
+    </controlFlowConnector>
+    <decisionNodeShape Id="a7c107fe-f387-43e5-a2fb-a75faece035b" absoluteBounds="4.625, 2.375, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="f23738cd-e35a-4fe4-8032-1c44927b1b3f" LastKnownName="Decision6" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <controlFlowConnector edgePoints="[(4.98002883310719 : 2.58247116689281); (12.8537462247826 : 2.58247116689281); (12.8537462247826 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="4f45f513-4edf-410d-9464-d0ac1fc9b961" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="a7c107fe-f387-43e5-a2fb-a75faece035b" />
+        <actionShapeMoniker Id="b8f3df65-f228-4f29-9b52-e8fecd495266" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.8125 : 2.125); (4.8125 : 2.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="3fa93c43-096a-4155-912f-753318737759" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="e2be5fec-b2bf-4a1a-90ea-3fa6dff0ea1d" />
+        <decisionNodeShapeMoniker Id="a7c107fe-f387-43e5-a2fb-a75faece035b" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.8125 : 2.75); (4.8125 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="9959b83e-0e0b-4bca-8a08-648e28dab85b" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="a7c107fe-f387-43e5-a2fb-a75faece035b" />
+        <decisionNodeShapeMoniker Id="8797a964-bdca-4f59-9686-1614bcb11ce4" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.8125 : 3.5); (4.8125 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="b464f6e9-fafb-417d-b9f7-006ba262a2a0" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="8797a964-bdca-4f59-9686-1614bcb11ce4" />
+        <decisionNodeShapeMoniker Id="68a6b1c4-968d-4943-8856-c18b248741a8" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(10.0634597315106 : 3.49904026848938); (10.0634597315106 : 3.87595973151062)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="f296f5f2-0359-4572-b875-57635d882bff" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="9.5, 3.5625, 1.2268698215484619, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="540ea320-ea48-4090-8f26-5a25dd5b49a9" />
+        <decisionNodeShapeMoniker Id="8514047c-10c1-45db-8afd-503a112765e4" />
+      </nodes>
+    </controlFlowConnector>
+    <actionShape Id="cc2beff4-1b21-41d8-b108-07d89ec500df" absoluteBounds="5.75, 5.125, 2, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="1b6020e2-4e7c-4d7d-ac45-f297597ad01e" LastKnownName="session.OrderStatus=Unknown" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(4.99526054858735 : 4.69223945141265); (6.76813220914235 : 4.69223945141265); (6.76813220914235 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="c36722a9-4066-418c-809e-b54704fefaff" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="b1651c3b-b21a-4954-aced-2cd6b4d68ed2" />
+        <actionShapeMoniker Id="cc2beff4-1b21-41d8-b108-07d89ec500df" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.77840388510496 : 5.5); (6.77840388510496 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="1f34d269-09de-4951-b387-8ebd78a54484" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="cc2beff4-1b21-41d8-b108-07d89ec500df" />
+        <actionShapeMoniker Id="cc7956e1-8966-4887-84b1-efb7924d2286" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(10.2354619408564 : 4.70203805914356); (12.4262632649712 : 4.70203805914356); (12.4262632649712 : 8.14738808254535); (9.61042999142616 : 8.14738808254535)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="7978c9cf-1186-4c40-9863-fd50ed9ac89f" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="3eb7b6d1-fa08-4651-8e91-f1acd0a317a7" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+    <decisionNodeShape Id="accbf25d-f032-4ee0-a3a0-a6ef591e59d2" absoluteBounds="4.625, 7, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="205e063b-437a-4842-8b32-5a38a85676c5" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <actionShape Id="311b25d3-f2b5-47ce-9ca2-889a058a322c" absoluteBounds="3.375, 7.75, 1.875, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="0308254a-5d13-44f2-ac7e-43a293d26814" LastKnownName="Set label to PaymentGatewayOrderSubmitFailed" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(4.8125 : 7.375); (4.8125 : 7.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="a62152f0-4333-40da-8c83-591f9b7566fe" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="accbf25d-f032-4ee0-a3a0-a6ef591e59d2" />
+        <actionShapeMoniker Id="311b25d3-f2b5-47ce-9ca2-889a058a322c" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5 : 7.1875); (5.75 : 7.1875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="2305d1cd-e7bd-4a64-8dfe-34f8a7a8259e" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="accbf25d-f032-4ee0-a3a0-a6ef591e59d2" />
+        <actionShapeMoniker Id="1297ebdd-5593-4ac6-9384-ef6b43f0ac86" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.83988552834827 : 6.47261447165173); (4.83988552834827 : 7.02738552834827)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="81f8657d-0a6c-4596-b33f-65479bb0531c" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="94bf7e68-96b2-49dc-99c2-0e85715a8487" />
+        <decisionNodeShapeMoniker Id="accbf25d-f032-4ee0-a3a0-a6ef591e59d2" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.25 : 8.17217757124029); (9.50190731746404 : 8.17217757124029)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+      <controlFlowMoniker Id="1fdbdf9c-d811-4d36-bfda-5ca07d5ef834" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="311b25d3-f2b5-47ce-9ca2-889a058a322c" />
+        <activityFinalNodeShapeMoniker Id="0c2352b3-ca81-498b-a025-a3cbf9d39bfe" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

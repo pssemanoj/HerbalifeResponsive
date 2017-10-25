@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.pricing" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" elementFormDefault="qualified" targetNamespace="http://bt.orderingsystem.hrbl.v01.pricing" id="Pricing" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pricing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="AmountDue" type="xs:decimal" />
+        <xs:element name="FreightAmount" type="xs:decimal" />
+        <xs:element name="FreightTaxAmount" type="xs:decimal" />
+        <xs:element name="PHAmount" type="xs:decimal" />
+        <xs:element name="PHTaxAmount" type="xs:decimal" />
+        <xs:element name="TaxAmount" type="xs:decimal" />
+        <xs:element name="VolumePoints" type="xs:decimal" />
+        <xs:element name="MiscAmount" type="xs:decimal" />
+        <xs:element name="LocalTaxCharge" nillable="true" type="xs:string" />
+        <xs:element name="LogisticsCharge" nillable="true" type="xs:string" />
+        <xs:element name="IcmsTax" nillable="true" type="xs:string" />
+        <xs:element name="IpiTax" nillable="true" type="xs:string" />
+        <xs:element name="TotalMarketingFund" nillable="true" type="xs:string" />
+        <xs:element name="TaxedNet" nillable="true" type="xs:string" />
+        <xs:element name="DiscountedItemsTotal" nillable="true" type="xs:string" />
+        <xs:element name="TotalProductRetail" nillable="true" type="xs:string" />
+        <xs:element name="TotalCollateralRetail" nillable="true" type="xs:string" />
+        <xs:element name="TotalPromotionalRetail" nillable="true" type="xs:string" />
+        <xs:element name="ItemsTotal" nillable="true" type="xs:string" />
+        <xs:element name="VolumePointsRate" nillable="true" type="xs:string" />
+        <xs:element name="TotalDiscount" type="xs:string" />
+        <xs:element name="TotalTaxBeforeDiscount" type="xs:string" />
+        <xs:element name="TotalTaxAfterDiscount" type="xs:string" />
+        <xs:element name="PromotionAmount" type="xs:string" />
+        <xs:element name="AOPAmount" type="xs:string" />
+        <xs:element name="FirstDonationAmount" type="xs:string" />
+        <xs:element name="SecondDonationAmount" type="xs:string" />
+        <xs:element name="TotalPackageWeight" type="xs:string" />
+        <xs:element name="TotalInsuranceAmount" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

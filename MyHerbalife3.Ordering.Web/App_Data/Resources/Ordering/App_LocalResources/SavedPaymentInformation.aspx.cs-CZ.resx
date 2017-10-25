@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EditResource1.Text" xml:space="preserve">
+    <value>Upravit</value>
+    <comment>_G170</comment>
+  </data>
+  <data name="DeleteResource1.Text" xml:space="preserve">
+    <value>Smazat</value>
+    <comment>_G169</comment>
+  </data>
+  <data name="lblCustomerSupportResource1.Text" xml:space="preserve">
+    <value>Pro pomoc s objednávkou volejte (+420) 235 090 252 od 8:30 do 17:30 pondělí - pátek.
+&lt;br /&gt;
+Každou středu 12:00-13:00 je objednávkové oddělení uzavřeno
+&lt;br /&gt;
+(pokud středa není posledním dnem měsíce)</value>
+    <comment>_G172</comment>
+  </data>
+  <data name="TemplateFieldResource6.HeaderText" xml:space="preserve">
+    <value>Datum expirace</value>
+    <comment>_G171</comment>
+  </data>
+  <data name="CreateAndManagePaymentInfo.Text" xml:space="preserve">
+    <value>Vytvořit a spravovat mé platební informace pro rychlejší dokončení objednávky v budoucnosti.</value>
+    <comment>_G168</comment>
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value>Jméno držitele karty</value>
+    <comment>_G165</comment>
+  </data>
+  <data name="btnAddPaymentInfoResource1.Text" xml:space="preserve">
+    <value>Přidat novou platební kartu</value>
+    <comment>_G164</comment>
+  </data>
+  <data name="TemplateFieldResource4.HeaderText" xml:space="preserve">
+    <value>Typ karty*:</value>
+    <comment>_G167</comment>
+  </data>
+  <data name="TemplateFieldResource5.HeaderText" xml:space="preserve">
+    <value>Číslo karty</value>
+    <comment>_G166</comment>
+  </data>
+  <data name="Pager.NextPageText" xml:space="preserve">
+    <value>Další</value>
+    <comment>_G173</comment>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Uložené platební karty</value>
+    <comment>_G180</comment>
+  </data>
+  <data name="Results.Text" xml:space="preserve">
+    <value>Výsledky</value>
+    <comment>_G179</comment>
+  </data>
+  <data name="Showing.Text" xml:space="preserve">
+    <value>Zobrazení</value>
+    <comment>_G182</comment>
+  </data>
+  <data name="SavedPaymentInformationTitle.Text" xml:space="preserve">
+    <value>Uložené platební karty</value>
+    <comment>_G181</comment>
+  </data>
+  <data name="PrimaryPaymentCannotDelete" xml:space="preserve">
+    <value>Původní informace o platbě nemohou být smazány</value>
+    <comment>_G178</comment>
+  </data>
+  <data name="Of.Text" xml:space="preserve">
+    <value>z</value>
+    <comment>_G175</comment>
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>jméno*:</value>
+    <comment>_G174</comment>
+  </data>
+  <data name="PrimaryResource1.Text" xml:space="preserve">
+    <value>Primární |</value>
+    <comment>_G177</comment>
+  </data>
+  <data name="Pager.PreviousPageText" xml:space="preserve">
+    <value>Předcházející</value>
+    <comment>_G176</comment>
+  </data>
+</root>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+  <xs:complexType name="GetDSComplianceBannedWordResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSComplianceBannedWordResponseBase" nillable="true" type="tns:GetDSComplianceBannedWordResponseBase" />
+  <xs:complexType name="GetDSComplianceBannedWordResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSComplianceBannedWordResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="BannedWords" nillable="true" type="q2:ArrayOfDSComplianceBannedWord_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSComplianceBannedWordResponse_V01" nillable="true" type="tns:GetDSComplianceBannedWordResponse_V01" />
+  <xs:complexType name="GetDSWebsiteInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSWebsiteInfoResponseBase" nillable="true" type="tns:GetDSWebsiteInfoResponseBase" />
+  <xs:complexType name="GetDSWebsiteInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSWebsiteInfoResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="ContactInfo" nillable="true" type="q4:DSComplianceWebsiteInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSWebsiteInfoResponse_V01" nillable="true" type="tns:GetDSWebsiteInfoResponse_V01" />
+  <xs:complexType name="GetMultipleDSWebsiteInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMultipleDSWebsiteInfoResponseBase" nillable="true" type="tns:GetMultipleDSWebsiteInfoResponseBase" />
+  <xs:complexType name="GetMultipleDSWebsiteInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetMultipleDSWebsiteInfoResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="ContactInfo" nillable="true" type="q6:ArrayOfDSComplianceWebsiteInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetMultipleDSWebsiteInfoResponse_V01" nillable="true" type="tns:GetMultipleDSWebsiteInfoResponse_V01" />
+  <xs:complexType name="GetDSComplianceReportResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSComplianceReportResponse" nillable="true" type="tns:GetDSComplianceReportResponse" />
+  <xs:complexType name="GetDSComplianceReportResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetDSComplianceReportResponse">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" minOccurs="0" name="Report" nillable="true" type="q8:ArrayOfDSComplianceReport_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetDSComplianceReportResponse_V01" nillable="true" type="tns:GetDSComplianceReportResponse_V01" />
+</xs:schema>

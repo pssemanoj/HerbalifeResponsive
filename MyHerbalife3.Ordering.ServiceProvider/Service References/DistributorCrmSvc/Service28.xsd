@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Qualification" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Qualification" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="QualificationPromotionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="All" />
+      <xs:enumeration value="DecemberCashPromotion" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="QualificationPromotionType" nillable="true" type="tns:QualificationPromotionType" />
+</xs:schema>

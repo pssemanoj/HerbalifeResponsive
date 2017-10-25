@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.Distributor.ValueObjects.Bizworks" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.Distributor.ValueObjects.Bizworks" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd52" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Calendar" />
+  <xs:complexType name="SaveAppointmentRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Calendar" base="q1:SaveAppointmentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Appointment" nillable="true" type="q1:Appointment_V01" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsNew" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UpdateDatesOnly" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SaveAppointmentRequest_V01" nillable="true" type="tns:SaveAppointmentRequest_V01" />
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.shipment" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://bt.orderingsystem.hrbl.v01.address" elementFormDefault="qualified" targetNamespace="http://bt.orderingsystem.hrbl.v01.shipment" id="Shipment" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd2" namespace="http://bt.orderingsystem.hrbl.v01.address" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.address" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Shipment">
+    <xs:annotation>
+      <xs:appinfo />
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="WarehouseCode" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Warehouse code responsible for processing order</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ShippingMethodID" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Shipping method code</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Recipient" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Person/Business name</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Phone" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>Phone number at the shipping address</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element maxOccurs="1" ref="ns0:Address" />
+        <xs:element name="DeliveryTypeCode" type="xs:string" />
+        <xs:element name="StoreId" type="xs:string" />
+        <xs:element name="StoreName" type="xs:string" />
+        <xs:element name="MobilePhone" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

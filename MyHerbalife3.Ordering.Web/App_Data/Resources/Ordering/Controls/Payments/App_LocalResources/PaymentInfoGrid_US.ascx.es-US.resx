@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblGrandTotalResource1.Text" xml:space="preserve">
+    <value>Suma total</value>
+    <comment>_G3402</comment>
+  </data>
+  <data name="lblInstallmentsHeaderResource.Text" xml:space="preserve">
+    <value>Cuotas</value>
+    <comment>_G3403</comment>
+  </data>
+  <data name="lblCVVHeaderResource1.Text" xml:space="preserve">
+    <value>Código de Seguridad*</value>
+    <comment>_G3400</comment>
+  </data>
+  <data name="lblDirectDepositAmountDueResource1.Text" xml:space="preserve">
+    <value>Cantidad Total de Ingreso en Efectivo</value>
+    <comment>_G3401</comment>
+  </data>
+  <data name="lblPaymentGatewayAmountDueResource1.Text" xml:space="preserve">
+    <value>Cantidad Total para autorizar:</value>
+    <comment>_G3404</comment>
+  </data>
+  <data name="lbLumpSum.Text" xml:space="preserve">
+    <value>Pago total</value>
+    <comment>_G3407</comment>
+  </data>
+  <data name="lblWireAmountDueResource1.Text" xml:space="preserve">
+    <value>Total de Transferencia Bancaria a pagar:</value>
+    <comment>_G3408</comment>
+  </data>
+  <data name="lblPayNearMeAmountResource1.Text" xml:space="preserve">
+    <value>Total de PayNearMe a pagar:</value>
+    <comment>_G3405</comment>
+  </data>
+  <data name="lblSMSMobileResource1.Text" xml:space="preserve">
+    <value>Numero de mobil para mensajes de texto:</value>
+    <comment>_G3406</comment>
+  </data>
+  <data name="lbInstallments.Text" xml:space="preserve">
+    <value>Cuotas</value>
+    <comment>_G3398</comment>
+  </data>
+  <data name="hdrPayOptions.HeaderText" xml:space="preserve">
+    <value>Opciones de pago</value>
+    <comment>_G3394</comment>
+  </data>
+  <data name="hdrNickName.HeaderText" xml:space="preserve">
+    <value>Apodo</value>
+    <comment>_G3393</comment>
+  </data>
+  <data name="lbBonus1.Text" xml:space="preserve">
+    <value>Bono 1</value>
+    <comment>_G3396</comment>
+  </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>Balance:</value>
+    <comment>_G3395</comment>
+  </data>
+  <data name="hdrIssueNumber.HeaderText" xml:space="preserve">
+    <value>Número de Edición o Fecha</value>
+    <comment>_G3392</comment>
+  </data>
+  <data name="hdrCardNumber.HeaderText" xml:space="preserve">
+    <value>Número de tarjeta de crédito*</value>
+    <comment>_G3389</comment>
+  </data>
+  <data name="lbBonus2.Text" xml:space="preserve">
+    <value>Bono 2</value>
+    <comment>_G3397</comment>
+  </data>
+  <data name="hdrExpiration.HeaderText" xml:space="preserve">
+    <value>Fecha de vencimiento *</value>
+    <comment>_G3391</comment>
+  </data>
+  <data name="hdrCardType.HeaderText" xml:space="preserve">
+    <value>Tipo de tarjeta de crédito*</value>
+    <comment>_G3390</comment>
+  </data>
+  <data name="lbPayOptions.Text" xml:space="preserve">
+    <value>Opciones de pago</value>
+    <comment>_G3409</comment>
+  </data>
+  <data name="PayNearMeAcknowledgement.Text" xml:space="preserve">
+    <value>Al marcar esta casilla, usted acepta que ha leido, entendido y que cumplirá con las directrices para pagos PayNearMe.</value>
+    <comment>_G3421</comment>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Seleccionar</value>
+    <comment>_G3422</comment>
+  </data>
+  <data name="lnkEdit.Text" xml:space="preserve">
+    <value>Editar</value>
+    <comment>_G3419</comment>
+  </data>
+  <data name="PaymentAcknowledgement.Text" xml:space="preserve">
+    <value>Al marcar esta casilla, usted acepta que ha leido, entendido y que cumplirá con las directrices para pagos por Transferencia Bancaria.</value>
+    <comment>_G3420</comment>
+  </data>
+  <data name="smsMobileMessage.Text" xml:space="preserve">
+    <value>Si usted desea recibir su boleta de pago en un mensaje de texto SMS por favor proporcione su número de teléfono móvil a continuación:</value>
+    <comment>_G3423</comment>
+  </data>
+  <data name="OrderTotalThresholdError" xml:space="preserve">
+    <value>El total a pagar para este pedido ha excedido el límite de pago de PayNearMe. Por favor reduzca la cantidad de su pedido a menos de o igual a $1,000.</value>
+    <comment>_G3425</comment>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Depósito Directo</value>
+    <comment>_G3417</comment>
+  </data>
+  <data name="smsMobileTitle.Text" xml:space="preserve">
+    <value>BOLETA DE PAGO SMS:</value>
+    <comment>_G3424</comment>
+  </data>
+  <data name="smsMobileFormat.Text" xml:space="preserve">
+    <value>Por favor, capture números únicamente</value>
+    <comment>_G3426</comment>
+  </data>
+  <data name="lbSelectMonth1.Text" xml:space="preserve">
+    <value>Seleccionar mes 1:</value>
+    <comment>_G3412</comment>
+  </data>
+  <data name="lbSelectMonth2.Text" xml:space="preserve">
+    <value>Seleccionar mes 2:</value>
+    <comment>_G3413</comment>
+  </data>
+  <data name="lbRevolving.Text" xml:space="preserve">
+    <value>Giratorio</value>
+    <comment>_G3410</comment>
+  </data>
+  <data name="lbSelectMonth.Text" xml:space="preserve">
+    <value>Seleccionar Mes:</value>
+    <comment>_G3411</comment>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Tarjeta de Crédito</value>
+    <comment>_G3414</comment>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Dinero en efectivo en 7-Eleven® o Family Dollar®</value>
+    <comment>_G3418</comment>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Transferencia</value>
+    <comment>_G3416</comment>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Portal de Pago</value>
+    <comment>_G3415</comment>
+  </data>
+  <data name="btnAddNewCreditCardResource1.Text" xml:space="preserve">
+    <value>Añadir una Nueva Tarjeta de Crédito</value>
+    <comment>_G3497</comment>
+  </data>
+  <data name="lblCardsLimitMessageResource1.Text" xml:space="preserve">
+    <value>Usted puede usar hasta {0} tarjetas para hacer este pedido</value>
+    <comment>_G3503</comment>
+  </data>
+  <data name="lblHapBottomMessageResource1.Text" xml:space="preserve">
+    <value>Su orden total puede cambiar dependiendo de factores como producto habilitado o su nivel de descuento. Su orden total será confirmada cuando su orden del mes sea procesada en su fecha límite seleccionada.</value>
+    <comment>_G3855</comment>
+  </data>
+  <data name="lblHapBottomMessageResource1.Text1" xml:space="preserve">
+    <value>Su orden total puede cambiar dependiendo de factores como producto habilitado o su nivel de descuento. Su orden total será confirmada cuando su orden del mes sea procesada en su fecha límite seleccionada.</value>
+    <comment>_G3855</comment>
+  </data>
+  <data name="HapAcknowledgment.Text" xml:space="preserve">
+    <value>Al enviar este orden, un orden Advantage Program Herbalife se activará. Este es un pedido recurrente mensual. Cada mes, el orden en el expediente será enviado y facturado a la información indicada en mi pedido Programa de Ventajas Herbalife. Puedo actualizar o cancelar este pedido en cualquier momento.</value>
+    <comment>_1G95</comment>
+  </data>
+</root>

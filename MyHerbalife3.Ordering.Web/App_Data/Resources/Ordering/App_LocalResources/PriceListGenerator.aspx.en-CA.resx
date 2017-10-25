@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BottomMessage.InnerText" xml:space="preserve">
+    <value>Create a PDF for easier printing and sharing.</value>
+  </data>
+  <data name="CustomerDiscountTitle.InnerText" xml:space="preserve">
+    <value>Customer Discount</value>
+  </data>
+  <data name="CustomerPriceColumnName.HeaderText" xml:space="preserve">
+    <value>Customer Price</value>
+  </data>
+  <data name="CustomerPriceHelpText.Text" xml:space="preserve">
+    <value>Customer Price is the amount to charge a customer to cover Tax and Shipping &amp; Handling, and maintain your profit level.  You may reduce this price by adding a Customer Discount.&lt;br /&gt;&lt;br /&gt;Customer Price = Retail Price with Discount + Tax + S&amp;H</value>
+  </data>
+  <data name="DefaultCityText" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="DefaultFileName" xml:space="preserve">
+    <value>Price list</value>
+  </data>
+  <data name="DefaultStateOption" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="DefaultZipCodeText" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="DiscountCostHelpText.Text" xml:space="preserve">
+    <value>Discounted Retail is the price that a Distributor pays just for the product.  It is calculated by first multiplying the Distributor Discount by the Earn Base, then subtracting that from the Retail Price.&lt;br /&gt;&lt;br /&gt;Discounted Retail = Retail Price - (Earn Base x Distributor Discount)</value>
+  </data>
+  <data name="DistributorCostColumnName.HeaderText" xml:space="preserve">
+    <value>Discounted Retail</value>
+  </data>
+  <data name="DistributorCostTitle.InnerText" xml:space="preserve">
+    <value>Discount Percentage</value>
+  </data>
+  <data name="DistributorLoadedCostColumnName.HeaderText" xml:space="preserve">
+    <value>Distributor Price</value>
+  </data>
+  <data name="DistributorLoadedCostText.Text" xml:space="preserve">
+    <value>Distributor Price is the fully loaded amount that a Distributor pays for product.  It includes Tax and Shipping &amp;Handling.    &lt;br /&gt;&lt;br /&gt;Distributor Price = Discounted Retail + Tax + S&amp;H</value>
+  </data>
+  <data name="EarnBaseColumnName.HeaderText" xml:space="preserve">
+    <value>Earn Base</value>
+  </data>
+  <data name="ExportButton.Text" xml:space="preserve">
+    <value>Download PDF</value>
+  </data>
+  <data name="FindTaxButton.Text" xml:space="preserve">
+    <value>Calculate local sales tax</value>
+  </data>
+  <data name="InvalidAddresstText" xml:space="preserve">
+    <value>Invalid address, sales tax has been set to default.</value>
+  </data>
+  <data name="InvalidInputText" xml:space="preserve">
+    <value>Invalid input, it has been set to default.</value>
+  </data>
+  <data name="NoRecordsMessage.Text" xml:space="preserve">
+    <value>Catalog not available.</value>
+  </data>
+  <data name="OnlyCustomerPrice.Text" xml:space="preserve">
+    <value>Show ONLY Customer Price Column</value>
+  </data>
+  <data name="ProductNameColumnName.HeaderText" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="RetailPriceColumnName.HeaderText" xml:space="preserve">
+    <value>Retail Price</value>
+  </data>
+  <data name="SalesTaxMessage.InnerText" xml:space="preserve">
+    <value>Enter the state Tax if you know it, or use the find Tax tool to get exact tax for any address in the U.S.&lt;/br&gt;You can also manually adjust the values at any time.&lt;/br&gt;This will be added to "Customer Price" column.</value>
+  </data>
+  <data name="SalesTaxTitle.InnerText" xml:space="preserve">
+    <value>Sales Tax</value>
+  </data>
+  <data name="ShippingAndHandlingMessage.InnerText" xml:space="preserve">
+    <value>Enter a percentage to be added to each product. You can modify this to cover your shipping expenses.&lt;/br&gt;This value is added to the "Customer Price" column.</value>
+  </data>
+  <data name="ShippingAndHandlingTitle.InnerText" xml:space="preserve">
+    <value>Shipping &amp; Handling</value>
+  </data>
+  <data name="SkuColumnName.HeaderText" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="TopMessage.InnerText" xml:space="preserve">
+    <value>This tool calculates the total price to charge customers, including tax, shipping and handling and discounts.</value>
+  </data>
+  <data name="VolumePointsColumnName.HeaderText" xml:space="preserve">
+    <value>Volume Points</value>
+  </data>
+  <data name="EstimateButton.Text" xml:space="preserve">
+    <value>Estimate S&amp;H</value>
+  </data>
+  <data name="CalculateButton.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="DefaultStreetAddressText" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="lblErrorMsgTaxlookup1.Text" xml:space="preserve">
+    <value>All fields required</value>
+  </data>
+  <data name="lblErrorMsgTaxlookup2.Text" xml:space="preserve">
+    <value>ERROR: Please complete all fields</value>
+  </data>
+  <data name="PriceListErrorText" xml:space="preserve">
+    <value>Error. Please Review values and try again</value>
+  </data>
+</root>

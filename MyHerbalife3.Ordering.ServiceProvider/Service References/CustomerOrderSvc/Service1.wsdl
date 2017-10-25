@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2008/06/23/HL.Order.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2008/06/23/HL.Order.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2008/06/23/HL.Order.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd0" namespace="http://herbalife.com/2008/06/23/HL.Order.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd5" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2008/11/11/HL.Order.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd8" namespace="http://herbalife.com/2008/06/23/HL.Catalog.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.PaymentTypes" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2008/06/23/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects.China" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa4wcf01/Service/CustomerOrder/Service.svc?xsd=xsd14" namespace="http://schemas.datacontract.org/2004/07/HL.Order.ValueObjects.CustomerOrder" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICustomerOrderService_SaveOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SaveOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrders" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SaveCustomerDiscount_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerDiscount" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SaveCustomerDiscount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCustomerDiscountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetCustomerDiscounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDiscounts" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetCustomerDiscounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerDiscountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetDeserializedCustomerOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeserializedCustomerOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetDeserializedCustomerOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeserializedCustomerOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SettleAndPullOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SettleAndPullOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SettleAndPullOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SettleAndPullOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetTaxItemRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxItemRate" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetTaxItemRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxItemRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetTaxRate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRate" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetTaxRate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaxRateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetShippingMethod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingMethod" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetShippingMethod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetPaginatedOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaginatedOrders" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetPaginatedOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPaginatedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetCustomerOrderCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerOrderCount" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetCustomerOrderCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomerOrderCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_CancelOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelOrder" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_CancelOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetAbandonedOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAbandonedOrders" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetAbandonedOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAbandonedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SetCartAsFollowedUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetCartAsFollowedUp" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SetCartAsFollowedUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetCartAsFollowedUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetOrdersToTrakingEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersToTrakingEmail" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_GetOrdersToTrakingEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrdersToTrakingEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SetOrderTrackingEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderTrackingEmail" />
+  </wsdl:message>
+  <wsdl:message name="ICustomerOrderService_SetOrderTrackingEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetOrderTrackingEmailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICustomerOrderService">
+    <wsdl:operation name="SaveOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveOrder" message="tns:ICustomerOrderService_SaveOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveOrderResponse" message="tns:ICustomerOrderService_SaveOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrders">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrders" message="tns:ICustomerOrderService_GetOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrdersResponse" message="tns:ICustomerOrderService_GetOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomerDiscount">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveCustomerDiscount" message="tns:ICustomerOrderService_SaveCustomerDiscount_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveCustomerDiscountResponse" message="tns:ICustomerOrderService_SaveCustomerDiscount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerDiscounts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerDiscounts" message="tns:ICustomerOrderService_GetCustomerDiscounts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerDiscountsResponse" message="tns:ICustomerOrderService_GetCustomerDiscounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeserializedCustomerOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetDeserializedCustomerOrder" message="tns:ICustomerOrderService_GetDeserializedCustomerOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetDeserializedCustomerOrderResponse" message="tns:ICustomerOrderService_GetDeserializedCustomerOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SettleAndPullOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SettleAndPullOrder" message="tns:ICustomerOrderService_SettleAndPullOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SettleAndPullOrderResponse" message="tns:ICustomerOrderService_SettleAndPullOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxItemRate">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxItemRate" message="tns:ICustomerOrderService_GetTaxItemRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxItemRateResponse" message="tns:ICustomerOrderService_GetTaxItemRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRate">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxRate" message="tns:ICustomerOrderService_GetTaxRate_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxRateResponse" message="tns:ICustomerOrderService_GetTaxRate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingMethod">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetShippingMethod" message="tns:ICustomerOrderService_GetShippingMethod_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetShippingMethodResponse" message="tns:ICustomerOrderService_GetShippingMethod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaginatedOrders">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetPaginatedOrders" message="tns:ICustomerOrderService_GetPaginatedOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetPaginatedOrdersResponse" message="tns:ICustomerOrderService_GetPaginatedOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerOrderCount">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerOrderCount" message="tns:ICustomerOrderService_GetCustomerOrderCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerOrderCountResponse" message="tns:ICustomerOrderService_GetCustomerOrderCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/CancelOrder" message="tns:ICustomerOrderService_CancelOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/CancelOrderResponse" message="tns:ICustomerOrderService_CancelOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAbandonedOrders">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetAbandonedOrders" message="tns:ICustomerOrderService_GetAbandonedOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetAbandonedOrdersResponse" message="tns:ICustomerOrderService_GetAbandonedOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCartAsFollowedUp">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetCartAsFollowedUp" message="tns:ICustomerOrderService_SetCartAsFollowedUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetCartAsFollowedUpResponse" message="tns:ICustomerOrderService_SetCartAsFollowedUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersToTrakingEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrdersToTrakingEmail" message="tns:ICustomerOrderService_GetOrdersToTrakingEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrdersToTrakingEmailResponse" message="tns:ICustomerOrderService_GetOrdersToTrakingEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderTrackingEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetOrderTrackingEmail" message="tns:ICustomerOrderService_SetOrderTrackingEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetOrderTrackingEmailResponse" message="tns:ICustomerOrderService_SetOrderTrackingEmail_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICustomerOrderService" type="tns:ICustomerOrderService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrders">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCustomerDiscount">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SaveCustomerDiscount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerDiscounts">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerDiscounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeserializedCustomerOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetDeserializedCustomerOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SettleAndPullOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SettleAndPullOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxItemRate">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxItemRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTaxRate">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetTaxRate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingMethod">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetShippingMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaginatedOrders">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetPaginatedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerOrderCount">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetCustomerOrderCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/CancelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAbandonedOrders">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetAbandonedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCartAsFollowedUp">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetCartAsFollowedUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrdersToTrakingEmail">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/GetOrdersToTrakingEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetOrderTrackingEmail">
+      <soap:operation soapAction="http://herbalife.com/2008/06/23/HL.Order.Interfaces/ICustomerOrderService/SetOrderTrackingEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd37" namespace="http://herbalife.com/2010/01/29/HL.DistributorCRM.ValueObjects.Email" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd51" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" />
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+  <xs:complexType name="ArrayOfKeyValueOfintstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfintstring">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" type="xs:int" />
+            <xs:element name="Value" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfintstring" nillable="true" type="tns:ArrayOfKeyValueOfintstring" />
+  <xs:complexType name="ArrayOfint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="int" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint" />
+  <xs:complexType name="ArrayOfKeyValueOfintArrayOfDistributorWebsiteContentListItemSelection_V01pQXfhPrt">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfintArrayOfDistributorWebsiteContentListItemSelection_V01pQXfhPrt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" type="xs:int" />
+            <xs:element xmlns:q1="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" name="Value" nillable="true" type="q1:ArrayOfDistributorWebsiteContentListItemSelection_V01" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfintArrayOfDistributorWebsiteContentListItemSelection_V01pQXfhPrt" nillable="true" type="tns:ArrayOfKeyValueOfintArrayOfDistributorWebsiteContentListItemSelection_V01pQXfhPrt" />
+  <xs:complexType name="ArrayOfKeyValueOfintArrayOfDistributorWebsitePageContentSelection_V01pQXfhPrt">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfintArrayOfDistributorWebsitePageContentSelection_V01pQXfhPrt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" type="xs:int" />
+            <xs:element xmlns:q2="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" name="Value" nillable="true" type="q2:ArrayOfDistributorWebsitePageContentSelection_V01" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfintArrayOfDistributorWebsitePageContentSelection_V01pQXfhPrt" nillable="true" type="tns:ArrayOfKeyValueOfintArrayOfDistributorWebsitePageContentSelection_V01pQXfhPrt" />
+  <xs:complexType name="ArrayOfKeyValueOfDwsWebsiteFlagsbooleanFKpjpdKU">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfDwsWebsiteFlagsbooleanFKpjpdKU">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q3="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" name="Key" type="q3:DwsWebsiteFlags" />
+            <xs:element name="Value" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfDwsWebsiteFlagsbooleanFKpjpdKU" nillable="true" type="tns:ArrayOfKeyValueOfDwsWebsiteFlagsbooleanFKpjpdKU" />
+  <xs:complexType name="ArrayOfKeyValueOfstringstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringstring">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringstring" nillable="true" type="tns:ArrayOfKeyValueOfstringstring" />
+  <xs:complexType name="ArrayOfboolean">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="boolean" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfboolean" nillable="true" type="tns:ArrayOfboolean" />
+  <xs:complexType name="ArrayOfdateTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="dateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdateTime" nillable="true" type="tns:ArrayOfdateTime" />
+  <xs:complexType name="ArrayOfdecimal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="decimal" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfdecimal" nillable="true" type="tns:ArrayOfdecimal" />
+  <xs:complexType name="ArrayOfKeyValueOfstringdateTime">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringdateTime">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" type="xs:dateTime" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringdateTime" nillable="true" type="tns:ArrayOfKeyValueOfstringdateTime" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMailingTokenrTNrHKga">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMailingTokenrTNrHKga">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q4="http://herbalife.com/2010/01/29/HL.DistributorCRM.ValueObjects.Email" name="Value" nillable="true" type="q4:MailingToken" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMailingTokenrTNrHKga" nillable="true" type="tns:ArrayOfKeyValueOfstringMailingTokenrTNrHKga" />
+  <xs:complexType name="ArrayOfKeyValueOfstringdecimal">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringdecimal">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" type="xs:decimal" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringdecimal" nillable="true" type="tns:ArrayOfKeyValueOfstringdecimal" />
+  <xs:complexType name="ArrayOfKeyValueOfQuestion_V01ArrayOfOption_V01tHRLfgva">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfQuestion_V01ArrayOfOption_V01tHRLfgva">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q5="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" name="Key" nillable="true" type="q5:Question_V01" />
+            <xs:element xmlns:q6="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" name="Value" nillable="true" type="q6:ArrayOfOption_V01" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfQuestion_V01ArrayOfOption_V01tHRLfgva" nillable="true" type="tns:ArrayOfKeyValueOfQuestion_V01ArrayOfOption_V01tHRLfgva" />
+  <xs:complexType name="ArrayOfKeyValueOfintArrayOfintty7Ep6D1">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfintArrayOfintty7Ep6D1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" type="xs:int" />
+            <xs:element name="Value" nillable="true" type="tns:ArrayOfint" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfintArrayOfintty7Ep6D1" nillable="true" type="tns:ArrayOfKeyValueOfintArrayOfintty7Ep6D1" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfstringty7Ep6D1">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfstringty7Ep6D1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" nillable="true" type="tns:ArrayOfstring" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfstringty7Ep6D1" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfstringty7Ep6D1" />
+  <xs:complexType name="ArrayOfKeyValueOfDwsCountryFlagsbooleanFKpjpdKU">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfDwsCountryFlagsbooleanFKpjpdKU">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:q7="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" name="Key" type="q7:DwsCountryFlags" />
+            <xs:element name="Value" type="xs:boolean" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfDwsCountryFlagsbooleanFKpjpdKU" nillable="true" type="tns:ArrayOfKeyValueOfDwsCountryFlagsbooleanFKpjpdKU" />
+</xs:schema>

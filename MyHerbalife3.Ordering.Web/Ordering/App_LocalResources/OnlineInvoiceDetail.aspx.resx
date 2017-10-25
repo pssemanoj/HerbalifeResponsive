@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmptyPostCode.Text" xml:space="preserve">
+    <value>Please enter Post Code</value>
+  </data>
+  <data name="EmptyRecipient.Text" xml:space="preserve">
+    <value>Please enter a recipient!</value>
+  </data>
+  <data name="EmptyStreetAddress.Text" xml:space="preserve">
+    <value>Please enter a street address!</value>
+  </data>
+  <data name="ErrorEmptyCity.Text" xml:space="preserve">
+    <value>Please enter City</value>
+  </data>
+  <data name="ErrorEmptyCustomTitle.Text" xml:space="preserve">
+    <value>Please enter custom title</value>
+  </data>
+  <data name="ErrorEmptyDistrict.Text" xml:space="preserve">
+    <value>Please enter the area</value>
+  </data>
+  <data name="ErrorEmptyProvince.Text" xml:space="preserve">
+    <value>Please enter province</value>
+  </data>
+  <data name="ErrorSplitAmount1.Text" xml:space="preserve">
+    <value>Please enter a split invoice 1!</value>
+  </data>
+  <data name="ErrorSplitAmount2.Text" xml:space="preserve">
+    <value>Please enter a split invoice 2!</value>
+  </data>
+  <data name="ErrorSplitAmount3.Text" xml:space="preserve">
+    <value>Please enter a split invoice 3!</value>
+  </data>
+  <data name="ErrorSplitAmountNotMatch.Text" xml:space="preserve">
+    <value>Split amount did not match with total amount {0} the difference is {1} yuan</value>
+  </data>
+  <data name="InvoiceDetailAmount1.Text" xml:space="preserve">
+    <value>Amount 1</value>
+  </data>
+  <data name="InvoiceDetailAmount2.Text" xml:space="preserve">
+    <value>Amount 2</value>
+  </data>
+  <data name="InvoiceDetailAmount3.Text" xml:space="preserve">
+    <value>Amount 3</value>
+  </data>
+  <data name="InvoiceDetailBillingAmount.Text" xml:space="preserve">
+    <value>Billing Amount</value>
+  </data>
+  <data name="InvoiceDetailBillingComplete.Text" xml:space="preserve">
+    <value>Your billing application has been submitted, will be sent within 7 working days by registered letter, thank you</value>
+  </data>
+  <data name="InvoiceDetailButtonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="InvoiceDetailButtonConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="InvoiceDetailCheckBoxLastAddress.Text" xml:space="preserve">
+    <value>Use last invoice delivery address</value>
+  </data>
+  <data name="InvoiceDetailCity.Text" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="InvoiceDetailConfirm.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="InvoiceDetailDefaultHeader.Text" xml:space="preserve">
+    <value>Order Invoice - Description</value>
+  </data>
+  <data name="InvoiceDetailDistrict.Text" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="InvoiceDetailEmail.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="InvoiceDetailInvoiceContent.Text" xml:space="preserve">
+    <value>InvoiceContent</value>
+  </data>
+  <data name="InvoiceDetailInvoices.Text" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
+  <data name="InvoiceDetailInvoiceTitle.Text" xml:space="preserve">
+    <value>Invoice Title</value>
+  </data>
+  <data name="InvoiceDetailInvoiceType.Text" xml:space="preserve">
+    <value>Invoice Type</value>
+  </data>
+  <data name="InvoiceDetailMailingAddress.Text" xml:space="preserve">
+    <value>Mailing Address</value>
+  </data>
+  <data name="InvoiceDetailPhone.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="InvoiceDetailPostCode.Text" xml:space="preserve">
+    <value>Post Code</value>
+  </data>
+  <data name="InvoiceDetailProvince.Text" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="InvoiceDetailRadioButtonCorporate.Text" xml:space="preserve">
+    <value>Corporate</value>
+  </data>
+  <data name="InvoiceDetailRadioButtonPersonal.Text" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="InvoiceDetailReceiver.Text" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="InvoiceDetailSingleInvoiceHeader.Text" xml:space="preserve">
+    <value>Order Invoice - Single Invoice</value>
+  </data>
+  <data name="InvoiceDetailSplitInto.Text" xml:space="preserve">
+    <value>Split Into</value>
+  </data>
+  <data name="InvoiceDetailSplitInvoiceHeader.Text" xml:space="preserve">
+    <value>Order Invoice - Split Invoice</value>
+  </data>
+  <data name="InvoiceDetailStreet.Text" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="InvoiceDetailTitle.Text" xml:space="preserve">
+    <value>Herbalife</value>
+  </data>
+  <data name="ErrorEmptyInvoiceTitle.Text" xml:space="preserve">
+    <value>Please enter Invoice Title</value>
+  </data>
+  <data name="ErrorEmptyRecipient.Text" xml:space="preserve">
+    <value>Please enter recipient name</value>
+  </data>
+  <data name="ErrorInvalidEmailFormat.Text" xml:space="preserve">
+    <value>Invalid Email Format</value>
+  </data>
+  <data name="InvoiceDetailInvoiceTitleCustomer.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="InvoiceDetailInvoiceTitleCustomize.Text" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="InvoiceDetailInvoiceTitlePurchaser.Text" xml:space="preserve">
+    <value>Purchaser</value>
+  </data>
+  <data name="InvoiceDetailProductDetailHealthyFood.Text" xml:space="preserve">
+    <value>Healthy Food</value>
+  </data>
+  <data name="InvoiceDetailProductDetailHerbalifeProduct.Text" xml:space="preserve">
+    <value>HerbalifeProduct</value>
+  </data>
+  <data name="InvoiceDetailProductDetailHerbalifeShipment.Text" xml:space="preserve">
+    <value>Herbalife products Shipment</value>
+  </data>
+  <data name="ErrorRdcIdNotFound.Text" xml:space="preserve">
+    <value>Rdc Number not found</value>
+  </data>
+  <data name="InvoiceDetailConfirmMessage.Text" xml:space="preserve">
+    <value>Please Confirm your Invoice detail</value>
+  </data>
+  <data name="InvoiceDetailContactNoInvalidLength.Text" xml:space="preserve">
+    <value>Invalid Contact number format</value>
+  </data>
+  <data name="InvoiceDetailPostCodeInvalidLength.Text" xml:space="preserve">
+    <value>Invalid Zip format</value>
+  </data>
+  <data name="EmptyContactNumber.Text" xml:space="preserve">
+    <value>Please enter a Contact Number</value>
+  </data>
+</root>

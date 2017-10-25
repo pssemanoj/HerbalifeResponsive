@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>SKU barang : {0} tidak ditambahkan karena tidak tersedia untuk Incaricati</value>
+    <comment>_G1711</comment>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan dalam keranjang. Jika anda ingin ditambahkan, mohon ubah sub tipe pesanan anda ke A1 atau B1</value>
+    <comment>_G1712</comment>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>tolong tambahkan produk sebelum menambahkan SKU</value>
+    <comment>_G1713</comment>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>kuantititas tidak boleh melebihi {0} untuk Sku :{1}</value>
+    <comment>_G1714</comment>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>SKU{0} tidak tersedia untuk antaran cepat. Mohon gunakan antaran biasa untuk barang ini</value>
+    <comment>_G1715</comment>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>SKU 0343,0344, 2329, atau 2328 tidak tersedia untuk antaran cepat</value>
+    <comment>_G1716</comment>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>kuantitas SKU tidak dapat melebihi {0}</value>
+    <comment>_G1717</comment>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Tidak bisa membeli</value>
+    <comment>_G1718</comment>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Tidak bisa membeli produk {0}. Anda hanya dapat memesan untuk barang promosi dan literatur</value>
+    <comment>_G1719</comment>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas dari SKU {0} tidak bisa ditambah oleh {1} karena melebihi batas pendapatan</value>
+    <comment>_G1720</comment>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Kuantitas dari SKU {0} tidak bisa ditambah oleh {1} karena melebihi batas jumlah</value>
+    <comment>_G1721</comment>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>SKU barang : {0} tidak ditambahkan ke dalam keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas pendapatan anda</value>
+    <comment>_G1722</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan ke dalam keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas jumlah</value>
+    <comment>_G1723</comment>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>jumlah total melebihi batas anda {0}</value>
+    <comment>_G1724</comment>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>SKU barang :{0} tidak ditambahkan ke dalam keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas pembelian anda</value>
+    <comment>_G1725</comment>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas dari barang SKU :{0} tidak bisa ditambahkan oleh {1} karena melebihi batas pembelian</value>
+    <comment>_G1726</comment>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>konsumsi pribadi</value>
+    <comment>_G1727</comment>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>jual kembali</value>
+    <comment>_G1728</comment>
+  </data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Order ini melebihi volume order yang diperbolehkan, jumlah Volume Points tersisa: {0}. SKU berikut belum ditambahkan ke daftar belanja anda.</value>
+    <comment>_G2302</comment>
+  </data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>SKU Produk:{0}.</value>
+    <comment>_G2303</comment>
+  </data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>SKU Produk:{0}.</value>
+    <comment>_G2711</comment>
+  </data>
+  <data name="PostErrorRemainingPurchasingLimitsEarningsSummary" xml:space="preserve">
+    <value>No value in Base RESX. Leave cell empty.</value>
+    <comment>_G2300</comment>
+  </data>
+  <data name="PostErrorRemainingPurchasingLimitsVolumeSummary" xml:space="preserve">
+    <value>No value in Base RESX. Leave cell empty.</value>
+    <comment>_G2301</comment>
+  </data>
+  <data name="PromotionalSkuAdded" xml:space="preserve">
+    <value>SKU Promosi ditambahkan ke keranjang Anda</value>
+    <comment>_G3315</comment>
+  </data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Your order of {0} exceeds the maximum quantity of {1} per member every {2} calendar days.</value>
+    <comment>_G3505</comment>
+  </data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Merupakan bagian dari program penjualan kami, terbaru &amp; Member yang tidak mencapau status Fully Qualified Supervisor, apat memerintahkan untuk poin Volume {0} Pembelian Pribadi (PPV) pada urutan pertama mereka. Anda dapat terakumulasi PPV hingga {1} Volume Points (termasuk pesanan awal) dalam {2} hari berikutnya. Pesanan ini melebihi PPV diijinkan dan harus dikurangi dengan {3} Volume Points.</value>
+    <comment>_G3556</comment>
+  </data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Merupakan bagian dari program penjualan kami, terbaru &amp; Member yang tidak mencapau status Fully Qualified Supervisor, apat memerintahkan untuk poin Volume {0} Pembelian Pribadi (PPV) pada urutan pertama mereka. Anda dapat terakumulasi PPV hingga {1} Volume Points (termasuk pesanan awal) dalam {2} hari berikutnya. Pesanan ini melebihi PPV diijinkan dan harus dikurangi dengan {3} Volume Points.</value>
+    <comment>_G3557</comment>
+  </data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>kuantitas item SKU: {0} tidak dapat ditingkatkan dengan {1} karena melebihi batas poin volume.</value>
+    <comment>_G3558</comment>
+  </data>
+  <data name="NoPromoSku" xml:space="preserve">
+    <value>SKU promo untuk {0} {1} tidak ada dalam katalog produk. Tidak dapat menambahkan SKU ke dalam keranjang belanja.</value>
+    <comment>_G2566</comment>
+  </data>
+  <data name="RemainingVolumePointExceeds" xml:space="preserve">
+    <value>Item di keranjang Anda telah melewati batas volume point. Mohon kurangi item sebanyak {0} volume point untuk dapat melanjutkan order ini.</value>
+  </data>
+  <data name="NoModifyPromoSku" xml:space="preserve">
+    <value>Anda tidak dapat memodifikasi SKU promosi tersebut.</value>
+    <comment>_G3755</comment>
+  </data>
+  <data name="PromotionalSKURemoved" xml:space="preserve">
+    <value>Promotional SKU {0} has been removed from your cart.</value>
+  </data>
+</root>

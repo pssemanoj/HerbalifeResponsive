@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LocationLengthValidator.ErrorMessage" xml:space="preserve">
+    <value>La località non può avere più di 50 caratteri</value>
+    <comment>_B1046</comment>
+  </data>
+  <data name="LocationPropmpt.Text" xml:space="preserve">
+    <value>Luogo:</value>
+    <comment>_B1048</comment>
+  </data>
+  <data name="LocationPrompt.Text" xml:space="preserve">
+    <value>Luogo</value>
+    <comment>_B1045</comment>
+  </data>
+  <data name="NotesField.Text" xml:space="preserve">
+    <value>Note</value>
+    <comment>_B1280</comment>
+  </data>
+  <data name="DescriptionPrompt.Text" xml:space="preserve">
+    <value>Descrizione</value>
+    <comment>_B1279</comment>
+  </data>
+  <data name="Note.Text" xml:space="preserve">
+    <value>NOTA: Se si specifica un'ora, l'attività comparirà nel Calendario. In caso contrario apparirà solo una linea nella lista delle tue attività.</value>
+    <comment>_B1277</comment>
+  </data>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>Annulla</value>
+    <comment>_B301</comment>
+  </data>
+  <data name="AppointmentCategoryType_EVENT" xml:space="preserve">
+    <value>Evento</value>
+    <comment>_B710</comment>
+  </data>
+  <data name="AppointmentCategoryType_APPT" xml:space="preserve">
+    <value>Appuntamenti</value>
+    <comment>_B238</comment>
+  </data>
+  <data name="EndTime.TimeView.TimeFormat" xml:space="preserve">
+    <value>h:mm tt</value>
+    <comment>_B885</comment>
+  </data>
+  <data name="SubjectRequiredValidator.ErrorMessage" xml:space="preserve">
+    <value>L'oggetto è obbligatorio</value>
+    <comment>_B1781</comment>
+  </data>
+  <data name="TypePrompt.Text" xml:space="preserve">
+    <value>Tipo:</value>
+    <comment>_B1912</comment>
+  </data>
+  <data name="StartTimePrompt.Text" xml:space="preserve">
+    <value>Ora di inizio:</value>
+    <comment>_B1748</comment>
+  </data>
+  <data name="SubjectLengthValidator.ErrorMessage" xml:space="preserve">
+    <value>L'oggetto non può avere più 50 caratteri</value>
+    <comment>_B1777</comment>
+  </data>
+  <data name="SubjectPrompt.Text" xml:space="preserve">
+    <value>*Oggetto</value>
+    <comment>_B52</comment>
+  </data>
+  <data name="AppointmentCategoryType_PHCALL" xml:space="preserve">
+    <value>Telefonate</value>
+    <comment>_B1421</comment>
+  </data>
+  <data name="RequiredFieldLabel.Text" xml:space="preserve">
+    <value>*Campi Obbligatori</value>
+    <comment>_B47</comment>
+  </data>
+  <data name="StartTime.TimeView.TimeFormat" xml:space="preserve">
+    <value>h:mm tt</value>
+    <comment>_B888</comment>
+  </data>
+  <data name="NoteLengthValidator.ErrorMessage" xml:space="preserve">
+    <value>Le note non possono avere più di 200 caratteri.</value>
+    <comment>_B1283</comment>
+  </data>
+  <data name="EndTimePrompt.Text" xml:space="preserve">
+    <value>Ora di termine</value>
+    <comment>_B698</comment>
+  </data>
+  <data name="AppointmentCategoryType_OTHER" xml:space="preserve">
+    <value>Altro</value>
+    <comment>_B1332</comment>
+  </data>
+  <data name="AppointmentCategoryType_PERSNL" xml:space="preserve">
+    <value>Personale</value>
+    <comment>_B1393</comment>
+  </data>
+  <data name="SharedTimeView.TimeFormat" xml:space="preserve">
+    <value>h:mm tt</value>
+    <comment>_B886</comment>
+  </data>
+  <data name="SaveButton.Text" xml:space="preserve">
+    <value>Salva</value>
+    <comment>_B1603</comment>
+  </data>
+  <data name="AppointmentCategoryType_MEETNG" xml:space="preserve">
+    <value>Riunioni</value>
+    <comment>_B1073</comment>
+  </data>
+  <data name="FollowUpHeader.Text" xml:space="preserve">
+    <value>Assistenza (Follow-Up)</value>
+    <comment>_B844</comment>
+  </data>
+  <data name="AppointmentCategoryType_FOLLUP" xml:space="preserve">
+    <value>Assistenza (Follow-Up)</value>
+    <comment>_B845</comment>
+  </data>
+  <data name="SharedTimeView.TimeView.HeaderText" xml:space="preserve">
+    <value>Periodo</value>
+    <comment>_B1852</comment>
+  </data>
+  <data name="AllDayPrompt.Text" xml:space="preserve">
+    <value>Tutta la giornata</value>
+    <comment>_B207</comment>
+  </data>
+  <data name="EndTime.TimeView.HeaderText" xml:space="preserve">
+    <value>Periodo</value>
+    <comment>_B1851</comment>
+  </data>
+  <data name="StartTime.TimeView.HeaderText" xml:space="preserve">
+    <value>Periodo</value>
+    <comment>_B1855</comment>
+  </data>
+</root>

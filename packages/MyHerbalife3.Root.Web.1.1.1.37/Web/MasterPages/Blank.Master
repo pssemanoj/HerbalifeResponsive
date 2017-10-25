@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blank.master.cs" Inherits="HL.MyHerbalife.Web.MasterPages.Blank" %>
+
+<%@ Import Namespace="MyHerbalife3.Shared.UI.Helpers" %>
+<%@ Import Namespace="MyHerbalife3.Shared.Infrastructure.Helpers" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.Controls" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.ValueObjects" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register Src="~/Controls/Template/MetaHeader.ascx" TagName="MetaHeader" TagPrefix="templates" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="myhl2">
+<head id="Head1" runat="server">
+    <!-- Blank Brown -->
+   <templates:MetaHeader runat="server"></templates:MetaHeader>    
+    <title runat="server" id="Title"></title>
+    <!-- Styles
+        ================================================== -->
+    <asp:PlaceHolder runat="server">
+             <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS1.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite1.css") %>
+             <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS2.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite2.css") %>
+             <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS3.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite3.css") %>            
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="headLinks" runat="server"></asp:ContentPlaceHolder>
+    <cc1:SafeRender id="localeCss" runat="server" FilePath="/Content/{0}/css/{0}.css" SafeString='<link rel="stylesheet" href="{0}" type="text/css" />' />
+
+    <!-- SCRIPTS -->
+    <asp:PlaceHolder runat="server">
+         <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyJS.txt", "/SharedUI/Scripts/",vertical + "/Scripts/bundle/legacycommon.js") %>
+    </asp:PlaceHolder>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    
+    <asp:PlaceHolder runat="server">
+        <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/legacyvertical.txt", "/",vertical + "/Scripts/bundle/legacyvertical.js") %>
+    </asp:PlaceHolder>
+
+    <!--[if lt IE 9]>
+            <script src="/SharedUI/Scripts/html5.js"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="contentHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body" runat="server">
+    <form id="form1" runat="server">
+        <telerik:radscriptmanager runat="server" id="_RadScriptManager" scriptmode="Release"
+            enablescriptlocalization="true" enablescriptglobalization="true" />
+        <div>
+            <asp:contentplaceholder id="contentBody" runat="server">
+        </asp:contentplaceholder>
+            <cc1:StatusDisplay id="StatusDisplay" runat="server" visible="False" enableviewstate="False"
+                meta:resourcekey="StatusDisplayResource1" status="None" />
+        </div>
+        <div class="hrblModalNew" id="redirectionWarning" style="display: none;">
+            <h3>
+                <asp:literal id="redirectWarningTitle" text="You are being redirected" meta:resourcekey="redirectWarningTitle" runat="server"></asp:literal>
+            </h3>
+            <div>
+                <p>
+                    <asp:literal id="Literal1"
+                        meta:resourcekey="redirectWarningText"
+                        text="You are now leaving Herbalife's website.  Press OK to continue to the third party link you have clicked or Cancel to stay on Herbalife's website." runat="server"></asp:literal>
+                </p>
+            </div>
+            <div class="bottomActBtns">
+                <a class="backward">
+                    <asp:literal id="redirectWarningCancel" text="Cancel" meta:resourcekey="redirectWarningCancel" runat="server"></asp:literal>
+                </a>
+                <a class="forward">
+                    <asp:literal id="redirectWarningOk" text="Ok" meta:resourcekey="redirectWarningOk" runat="server"></asp:literal>
+                </a>
+            </div>
+        </div>
+    </form>
+    <cc1:TealeafAnalytics id="tealeafBlankMaster" runat="server"></cc1:TealeafAnalytics>
+</body>
+</html>

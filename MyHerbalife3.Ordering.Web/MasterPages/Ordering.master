@@ -1,0 +1,220 @@
+﻿<%@ Master 
+    Language="C#" 
+    AutoEventWireup="true"
+    MasterPageFile="Site.Master" 
+    CodeBehind="Ordering.master.cs" 
+    Inherits="MyHerbalife3.Ordering.Web.MasterPages.OrderingMaster" %>
+
+<%@ MasterType VirtualPath="Site.Master"  %>
+<%@ Register Src="~/Ordering/Controls/MessageBox.ascx" TagName="MessageBox" TagPrefix="hrblMessageBox" %>
+<%@ Register Src="~/Ordering/Controls/MessageBox2.ascx" TagName="MessageBox2" TagPrefix="hrblMessageBox2" %>
+<%@ Import Namespace="MyHerbalife3.Ordering.Configuration.ConfigurationManagement" %>
+<%@ Register TagPrefix="lnmnu2" TagName="leftnavmenu2" Src="~/Controls/Navigation/LeftNavMenu.ascx" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.ValueObjects" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register TagPrefix="cc2" Namespace="MyHerbalife3.Shared.UI.Controls" Assembly="MyHerbalife3.Shared.UI" %>
+<asp:Content runat="server" ID="Content1" ContentPlaceHolderID="head">
+    <!-- STYLES FOR ORDERING -->
+    <link rel="stylesheet" href="/Ordering/CSS/myhl2-ordering.css" type="text/css" />
+    <% if (HLConfigManager.Configurations.DOConfiguration.IsResponsive && IsMobile()) { %>
+            <link rel="stylesheet" href="/Ordering/CSS/hrbl.responsive.min.css" type="text/css" />
+            <link rel="stylesheet" href="/Ordering/CSS/myhl2-ordering-responsive.css" type="text/css" />
+            <script type="text/javascript" src="/Ordering/Scripts/myhl2-ordering-responsive.js?v=1"></script>
+    <% } %>
+    <!-- HTML5 shim and Respond.js IE8 support of media queries -->
+    <!--[if lt IE 9]>
+        <script src="/Ordering/Scripts/Respond/respond.min.js"></script>
+    <![endif]-->
+    <cc2:SafeRender runat="server" ID="localeProductCSS" FilePath="/Content/{0}/Products/css/{0}_Products.css" SafeString='<link rel="stylesheet" href="{0}" type="text/css" />'/> 
+    
+    <asp:ContentPlaceHolder runat="server" ID="HeaderContent">
+         <asp:ContentPlaceHolder runat="server" ID="ProductRecomendationsContent"></asp:ContentPlaceHolder>
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content runat="server" ID="PageHeader" ContentPlaceHolderID="PageHeaderArea">
+      
+    
+     <% if (HLConfigManager.Configurations.PickupOrDeliveryConfiguration.HasGoogleMap)
+        { %> 
+    <% var url = HLConfigManager.Configurations.PickupOrDeliveryConfiguration.MapURL; %>
+           <script type="text/javascript" src="<%=url%>"></script>
+    <% } %>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var pnlAnnouncements = $("#<%= pnlAnnouncements.ClientID %>");
+            if (pnlAnnouncements.length > 0) {
+                var isShowBulletinBoard = "<%= Session["showBulletinBoard"] %>";
+                var src;
+                if (isShowBulletinBoard == "False") {
+                    src = '../SharedUI/Images/icons/Arrow_Down_01.png';
+                    $("#pnl1").hide();
+                } else {
+                    src = '../SharedUI/Images/icons/Arrow_Up_01.png';
+                    $("#pnl1").show();
+                }
+                $("#btn1").attr("src", src);
+                $("#btn1").click(function () {
+                    $("#pnl1").slideToggle("slow");
+                    var src1 = '';
+                    if ($("#btn1").attr('src') == "../SharedUI/Images/icons/Arrow_Down_01.png") {
+                        src1 = '../SharedUI/Images/icons/Arrow_Up_01.png';
+                    } else {
+                        src1 = '../SharedUI/Images/icons/Arrow_Down_01.png';
+                    }
+                    $("#btn1").attr("src", src1);
+                    $.ajax({
+                        type: "POST",
+                        url: "Pricelist.aspx/SetBulletinBoardSession",
+                        data: "{}",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                });
+                });
+            }
+            cronometro();
+        });
+    </script>
+    <asp:Panel runat="server" ID="pnlAnnouncements">
+        <div id="ContentDisplay" class="gdo-pricelist-tbl">
+            <asp:Label class="gdo-page-header" ID="lblAnnouncements" runat="server"
+                meta:resourcekey="Announcements"></asp:Label><img id="btn1" src="../SharedUI/Images/icons/Arrow_Down_01.png" class="gdo-float-right" />
+            <div id="pnl1" class="gdo-display-none">
+                <asp:Literal runat="server" ID="litAnnouncementsInfo"></asp:Literal>
+            </div>
+        </div>
+    </asp:Panel>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
+        <ContentTemplate>
+            <div class="container ordering">
+                <h1 class="gdo-page-header-tbl">
+                    <asp:Label class="gdo-page-header" ID="_PageHeader" runat="server" Text="Header"
+                        meta:resourcekey="_PageHeader"></asp:Label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                        
+                    <input type="hidden" runat='server' id="hTargetDate" value="" />                            
+                    <input type="hidden" runat='server' id="hcurrentDate" value="" />
+                                            
+                    <div runat="server" id="counter" class="right" Visible="False">                        
+                        <asp:Label Cssclass="counterMsg" ID="EndMonth" runat="server" Text="" meta:resourcekey="EndofMonth"></asp:Label>
+                        <div class="timerContent">
+                            <div>
+                                <span id="countdown_dy"> </span>
+                                <asp:Label ID="lDays" runat="server" CssClass="counterlbl" Text="" meta:resourcekey="Days"></asp:Label>
+                            </div>
+                            <div>
+                                <span id="countdown_hr"> </span>
+                                <asp:Label ID="lHours" runat="server" CssClass="counterlbl" Text="" meta:resourcekey="Hours"></asp:Label>
+                            </div>
+                            <div>
+                                <span id="countdown_min"> </span>
+                                <asp:Label ID="lMinutes" runat="server" CssClass="counterlbl" Text="" meta:resourcekey="Minutes"></asp:Label>
+                            </div>
+                        </div>
+                        <%--<div style="visibility: hidden">
+                            <span id="countdown_sec"> </span>
+                            <asp:Label ID="lSeconds" runat="server" CssClass="counterlbl" Text="" meta:resourcekey="Seconds"></asp:Label>
+                        </div>                            --%>
+                    </div>
+                </h1>
+            </div>
+
+            <% if (HLConfigManager.Configurations.DOConfiguration.IsResponsive && IsMobile()) { %>
+
+                <% string pageName = this.Request.Url.Segments.Last().ToLower(); %>
+                <!-- Mobile Top Menu -->
+                <div class="topSticky visible-xs">
+                    <nav id="mobileHeader" class="topSticky">
+                        <%-- Hide Left Menu for certain pages --%>
+                        <% if (!(pageName.Contains("shoppingcart") || pageName.Contains("checkout"))) { %>
+                            <a id="leftMenu" class="left-menu" href="javascript:;">
+                                <img src="/Ordering/Images/icons/line/menu.png" class="left-menu-img" />
+                            </a>
+                        <% } %>
+                        
+                        <a id="mobileLogo" class="mobile-logo" href="/Ordering/Catalog.aspx">myHerbalife</a>
+                        <a id="accountIcon" class="account-icon" href="javascript:;">
+                            <img src="/Ordering/Images/icons/line/account.png" class="left-menu-img" />
+                        </a>
+                        <%-- Hide Mini Cart for certain pages --%>
+                        <% if ( !(pageName.Contains("shoppingcart") || pageName.Contains("checkout") || 
+                                  pageName.Contains("confirm") || pageName.Contains("savedcarts") ||
+                                  pageName.Contains("orderpreferences") || pageName.Contains("savedpaymentinformation") ||
+                                  pageName.Contains("savedshippingaddress") || pageName.Contains("savedpickupcourierlocation") ||
+                                  pageName.Contains("faq") || pageName.Contains("orderlistview") || pageName.Contains("donation"))
+                        ) { %>
+                            <a class="cart-items" href="javascript:;"><div id="cartItems" runat="server">-</div></a>
+                            <a id="CartIcon" class="cart-icon" href="javascript:;">
+                                <img src="/Ordering/Images/icons/line/cart.png" class="left-menu-img" />
+                                <img src="/Ordering/Images/icons/line/arrow-left.png" class="arrow" />
+                            </a>
+                        <% } %>
+                    </nav>
+                </div>
+            <% } %>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>
+<asp:Content runat="server" ID="_Content" ContentPlaceHolderID="ContentArea">
+    <div class="container-fluid ordering">
+        <asp:UpdatePanel ID="upStatusDisplay" runat="server" UpdateMode="Always">
+            <ContentTemplate>
+                <div id="divLabelErrors" class="gdo-edit-header" style="border-bottom: 0px">
+                    <cc1:StatusDisplay ID="StatusDisplay" runat="server" Visible="false" EnableViewState="false" />
+                </div>
+                <asp:Panel ID="pnlMessageBox" runat="server" Visible="False">
+                    <div class="gdo-edit-header" style="border-bottom: 0px">
+                        <asp:Label Font-Bold="true" ForeColor="red" runat="server" ID="txtTitle"></asp:Label>
+                        <p runat="server" id="txtMessage" style="color:red;">
+                        </p>
+                    </div>
+                </asp:Panel>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <hrblMessageBox:MessageBox ID="uchrblMessageBoxControl" runat="server" />
+        <hrblMessageBox2:MessageBox2 ID="uchrblMessageBoxControl2" runat="server" />
+
+        <div id="TableContent" class="container-fluid">
+            <div id="divHeaderRow" runat="server" visible="false">
+                <div class="headerbar">
+                    <div class="headerbar_leftcap">
+                    </div>
+                    <div class="headerbar_slidingdoor">
+                        <div class="headerbar_icon">
+                            <img alt="image" src="/Content/Global/img/gdo/icons/step1.gif" /></div>
+                        <div class="headerbar_text">
+                            <asp:Label ID="lblCheckoutStep1Header" runat="server" Text="Step 1 of 4 - Review Cart"
+                                meta:resourcekey="StepOneToFourReviewCart"></asp:Label></div>
+                    </div>
+                </div>
+            </div>
+            <div id="divCustomerOrder" runat="server" visible="false">
+                <div>
+                    <asp:PlaceHolder ID="plCustomerOrder" runat="server" />
+                </div>
+            </div>
+            <div>
+                <div runat="server" id="divleft" class="gdo-nav-left col-sm-2">
+                    <div runat="server" id="LeftPanel">
+                    </div>
+                    <!--LEFT NAV-->
+                    <div id="LeftNavMenuCell" runat="server">
+                        <asp:Panel ID="_LeftNavMenuPanel2" runat="server" CssClass="noindex" Visible="False">
+                            <lnmnu2:leftnavmenu2 ID="_LeftNavMenu2" runat="server" />
+                        </asp:Panel>
+                    </div>                
+                </div>
+                <div id="gdoNavMid" runat="server" class="gdo-nav-mid col-sm-7">
+                    <div id="divCenter" runat="server">
+                        <asp:ContentPlaceHolder runat="server" ID="ProductsContent">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div id="gdoNavRight" runat="server" class="gdo-nav-right col-sm-3">
+                    <div runat="server" id="divSpacer" class="gdo-spacer3">
+                    </div>
+                    <div runat="server" id="RightPanel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

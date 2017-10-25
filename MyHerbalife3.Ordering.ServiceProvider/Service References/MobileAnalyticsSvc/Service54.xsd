@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Phoenix.hrbl.net/Public" elementFormDefault="qualified" targetNamespace="http://Phoenix.hrbl.net/Public" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+  <xs:simpleType name="TenCustomerFormStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Submitted" />
+      <xs:enumeration value="NotSubmitted" />
+      <xs:enumeration value="Retired" />
+      <xs:enumeration value="Exempt" />
+      <xs:enumeration value="NotAllowed" />
+      <xs:enumeration value="SubmittedPreviousMonth" />
+      <xs:enumeration value="SubmittedCurrentMonth" />
+      <xs:enumeration value="NotAllowedSubmitted" />
+      <xs:enumeration value="NotAllowedNotSubmitted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TenCustomerFormStatus" nillable="true" type="tns:TenCustomerFormStatus" />
+</xs:schema>

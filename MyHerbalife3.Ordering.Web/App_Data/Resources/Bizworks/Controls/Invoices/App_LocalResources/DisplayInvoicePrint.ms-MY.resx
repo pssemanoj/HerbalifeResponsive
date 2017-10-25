@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GridDescription.Text" xml:space="preserve">
+    <value>Penerangan</value>
+    <comment>_G3248</comment>
+  </data>
+  <data name="lblSubtotal.Text" xml:space="preserve">
+    <value>Jumlah Kecil:</value>
+    <comment>_G3258</comment>
+  </data>
+  <data name="lblTax.Text" xml:space="preserve">
+    <value>Cukai:</value>
+    <comment>_G3259</comment>
+  </data>
+  <data name="lblPrice.Text" xml:space="preserve">
+    <value>Harga Ahli:</value>
+    <comment>_G3256</comment>
+  </data>
+  <data name="lblShipping.Text" xml:space="preserve">
+    <value>Penghantaran &amp; Pengendalian:</value>
+    <comment>_G3257</comment>
+  </data>
+  <data name="GridTotalPrice.Text" xml:space="preserve">
+    <value>Jumlah Harga Ahli</value>
+    <comment>_G3251</comment>
+  </data>
+  <data name="GridSKU.Text" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_G3250</comment>
+  </data>
+  <data name="GridQty.Text" xml:space="preserve">
+    <value>Kuantiti</value>
+    <comment>_G3249</comment>
+  </data>
+  <data name="GridTotalVolPoints.Text" xml:space="preserve">
+    <value>Jumlah Poin Vol.</value>
+    <comment>_G3252</comment>
+  </data>
+  <data name="lblLoyaltyProgram.Text" xml:space="preserve">
+    <value>Program Kesetiaan Pelanggan:</value>
+    <comment>_G3255</comment>
+  </data>
+  <data name="lblItemSubTotalCaption.Text" xml:space="preserve">
+    <value>Jumlah Kecil:</value>
+    <comment>_G3254</comment>
+  </data>
+  <data name="GridUnitRetailPrice.Text" xml:space="preserve">
+    <value>Harga Runcit Unit</value>
+    <comment>_G3253</comment>
+  </data>
+  <data name="ltPhone.Text" xml:space="preserve">
+    <value>Telefon #:</value>
+    <comment>_G3270</comment>
+  </data>
+  <data name="ltNoticeContent.Text" xml:space="preserve">
+    <value>&lt;p&gt; Anda, pembeli, boleh membatalkan transaksi ini pada sebarang masa sebelum tengah malam hari perniagaan ketiga selepas tarikh urus niaga ini. &lt;/p&gt;&lt;p&gt; Lihat "Notis Pembatalan" di belakang borang ini untuk penjelasan hak ini. Selepas tempoh pembatalan 3 hari yang diberikan di atas, anda masih dilindungi oleh DASAR BALIK HERBALIFE sebagai set sebagainya. &lt;/p&gt;</value>
+    <comment>_G3269</comment>
+  </data>
+  <data name="ltNotes.Text" xml:space="preserve">
+    <value>Nota:</value>
+    <comment>_G3268</comment>
+  </data>
+  <data name="ltSendPaymentTo.Text" xml:space="preserve">
+    <value>Sila Hantar Pembayaran Kepada:</value>
+    <comment>_G3271</comment>
+  </data>
+  <data name="ltAgreement.Text" xml:space="preserve">
+    <value>Saya faham bahawa pesanan ini boleh dianggap sebagai jemputan untuk meminta saya dari semasa ke semasa, dengan pemahaman bahawa saya akan berada di bawah kewajipan untuk membeli.</value>
+    <comment>_G3260</comment>
+  </data>
+  <data name="ltShipto.Text" xml:space="preserve">
+    <value>Hantar Ke:</value>
+    <comment>_G3272</comment>
+  </data>
+  <data name="ltThankYou.Text" xml:space="preserve">
+    <value>Terima Kasih Untuk Pesanan Anda!</value>
+    <comment>_G3273</comment>
+  </data>
+  <data name="ltInvoice.Text" xml:space="preserve">
+    <value>Invois</value>
+    <comment>_G3263</comment>
+  </data>
+  <data name="ltImportantNotice.Text" xml:space="preserve">
+    <value>Notis penting</value>
+    <comment>_G3262</comment>
+  </data>
+  <data name="ltEmail.Text" xml:space="preserve">
+    <value>Alamat e-mel:</value>
+    <comment>_G3261</comment>
+  </data>
+  <data name="ltInvoiceDate.Text" xml:space="preserve">
+    <value>Tarikh Invois:</value>
+    <comment>_G3264</comment>
+  </data>
+  <data name="ltName.Text" xml:space="preserve">
+    <value>Nama:</value>
+    <comment>_G3267</comment>
+  </data>
+  <data name="ltlTotalDue.Text" xml:space="preserve">
+    <value>Jumlah:</value>
+    <comment>_G3266</comment>
+  </data>
+  <data name="ltInvoiceNumber.Text" xml:space="preserve">
+    <value>Invois #:</value>
+    <comment>_G3265</comment>
+  </data>
+</root>

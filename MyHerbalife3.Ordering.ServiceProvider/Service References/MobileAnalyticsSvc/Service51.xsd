@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2009/01/15/HLMobileAnalytics.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LoadMobileAnalyticsTypesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityTypes" nillable="true" type="tns:ArrayOfActivityType" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypes" nillable="true" type="tns:ArrayOfEventType" />
+      <xs:element minOccurs="0" name="PlatformTypes" nillable="true" type="tns:ArrayOfPlatformType" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoadMobileAnalyticsTypesResponse" nillable="true" type="tns:LoadMobileAnalyticsTypesResponse" />
+  <xs:complexType name="ArrayOfActivityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActivityType" nillable="true" type="tns:ActivityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActivityType" nillable="true" type="tns:ArrayOfActivityType" />
+  <xs:complexType name="ActivityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityTypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ActivityTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowInList" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActivityType" nillable="true" type="tns:ActivityType" />
+  <xs:complexType name="ArrayOfEventType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventType" nillable="true" type="tns:EventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventType" nillable="true" type="tns:ArrayOfEventType" />
+  <xs:complexType name="EventType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EventTypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ShowInList" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventType" nillable="true" type="tns:EventType" />
+  <xs:complexType name="ArrayOfPlatformType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PlatformType" nillable="true" type="tns:PlatformType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPlatformType" nillable="true" type="tns:ArrayOfPlatformType" />
+  <xs:complexType name="PlatformType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PlatformTypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlatformTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="ShowInList" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlatformType" nillable="true" type="tns:PlatformType" />
+  <xs:complexType name="InsertActivityLogRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientBuild" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OSName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OSVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequestXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderResponseXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlatformTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Protocol" type="xs:int" />
+      <xs:element minOccurs="0" name="RawHeaders" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawResponse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserAgent" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertActivityLogRequest" nillable="true" type="tns:InsertActivityLogRequest" />
+  <xs:complexType name="InsertActivityLogResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityLogId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InsertActivityLogResponse" nillable="true" type="tns:InsertActivityLogResponse" />
+  <xs:complexType name="UpdateActivityLogRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityLogID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ActivityTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientBuild" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IPAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OSName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OSVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequestXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderResponseXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlatformTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Protocol" type="xs:int" />
+      <xs:element minOccurs="0" name="RawHeaders" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawResponse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserAgent" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateActivityLogRequest" nillable="true" type="tns:UpdateActivityLogRequest" />
+  <xs:complexType name="UpdateActivityLogResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateActivityLogResponse" nillable="true" type="tns:UpdateActivityLogResponse" />
+  <xs:complexType name="RegisteredDevice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceLocale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="PlatformType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarehouseCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisteredDevice" nillable="true" type="tns:RegisteredDevice" />
+  <xs:complexType name="RegisteredDeviceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdminPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceLocalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisteredDeviceResponse" nillable="true" type="tns:RegisteredDeviceResponse" />
+  <xs:complexType name="GetActivityLogRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Page" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetActivityLogRequest" nillable="true" type="tns:GetActivityLogRequest" />
+  <xs:complexType name="ArrayOfActivityLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ActivityLog" nillable="true" type="tns:ActivityLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActivityLog" nillable="true" type="tns:ArrayOfActivityLog" />
+  <xs:complexType name="ActivityLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActivityTypeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Locale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequest" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderRequestXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderResponseXml" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PlatformTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="RawHeaders" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawResponse" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Success" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="UserAgent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="activityLogId" type="xs:int" />
+      <xs:element minOccurs="0" name="activityTypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActivityLog" nillable="true" type="tns:ActivityLog" />
+</xs:schema>

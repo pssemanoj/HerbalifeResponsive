@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HL.MyHerbalife.Web.Site" %>
+<%@ Register Src="~/Controls/Logon/LogonStatusView.ascx" TagName="LogonStatusView" TagPrefix="uc1" %>
+<%@ Register Src="~/Controls/SiteFooter.ascx" TagName="SiteFooter" TagPrefix="uc2" %>
+<%@ Register Src="~/Controls/Navigation/TabbedNav.ascx" TagName="TabbedNav" TagPrefix="mnu" %>
+<%@ Register Src="~/Controls/Navigation/LeftNavMenu.ascx" TagName="LeftNavMenu" TagPrefix="lnmnu" %>
+<%@ Register Src="~/Controls/SearchBox.ascx" TagName="SearchBox" TagPrefix="uc3" %>
+<%@ Register Src="~/Controls/AlertContainer.ascx" TagPrefix="alc" TagName="AlertContainer" %>
+<%@ Register Src="~/Controls/Logon/LocaleSelector.ascx" TagName="LocaleSelector" TagPrefix="LS" %>
+<%@ Register Src="~/Controls/Template/MetaHeader.ascx" TagName="MetaHeader" TagPrefix="templates" %>
+<%@ Import Namespace="MyHerbalife3.Shared.UI.Helpers" %>
+<%@ Import Namespace="MyHerbalife3.Shared.Infrastructure.Helpers" %>
+<%@ Register Src="~/Controls/RestrictedMessage.ascx" TagPrefix="alc" TagName="rmsg" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.Controls" Assembly="MyHerbalife3.Shared.UI" %>
+
+<!DOCTYPE html>
+<html class="myhl2">
+    <head runat="server">
+        <!-- MASTER BROWN ASPX PAGES -->
+        <templates:MetaHeader runat="server"></templates:MetaHeader>    
+        <title runat="server" id="Title"></title>
+
+        <!-- Styles
+        ================================================== -->
+        <asp:PlaceHolder runat="server">
+             <% = BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS1.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite1.css") %>
+             <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS2.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite2.css") %>
+             <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyCSS3.txt", "/SharedUI/CSS/",vertical + "/CSS/bundle/legacysite3.css") %>     
+        </asp:PlaceHolder>
+
+        <!-- SCRIPTS -->
+        <asp:PlaceHolder runat="server">
+            <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonLegacyJS.txt", "/SharedUI/Scripts/",vertical + "/Scripts/bundle/legacycommon.js") %>
+        </asp:PlaceHolder>
+    
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    
+        <asp:PlaceHolder runat="server">
+            <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/legacyvertical.txt", "/",vertical + "/Scripts/bundle/legacyvertical.js") %>
+        </asp:PlaceHolder>
+
+        <!--[if lt IE 9]>
+            <script src="/SharedUI/Scripts/html5.js"></script>
+        <![endif]-->
+
+
+        <cc1:SafeRender id="localeCss" runat="server" FilePath="/Content/{0}/css/{0}.css" SafeString='<link rel="stylesheet" href="{0}" type="text/css" />' />
+
+    </head>
+    <body id="body" runat="server">
+        <form id="form1" runat="server">
+            <telerik:radscriptmanager runat="server" id="_RadScriptManager" scriptmode="Release"
+                                      enablescriptlocalization="true" enablescriptglobalization="true" AsyncPostBackTimeout="300" />
+
+            <div id="hrblSiteWrapper">
+            
+                <!--HEADER-->
+                <header id="HeaderArea" class="noindex">
+
+                        <a class="left" id="Logo" href=<%= FormsAuthentication.DefaultUrl %>>
+                            <img src="<%= LogoUrl %>" />
+                        </a>
+
+                    <div id="LoginView" class="left">
+                        <asp:LoginView ID="_LoginView1" runat="server">
+                            <LoggedInTemplate>
+                                <uc1:logonstatusview id="LogonStatusView1" runat="server" />
+                            </LoggedInTemplate>
+                        </asp:LoginView>                
+                    </div>
+                    <div id="Search" class="left">
+                        <asp:LoginView ID="_LoginView2" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Customer">
+                                    <ContentTemplate>
+                                        <% if (IsSearchBoxEnabled)
+                                           { %>
+                                        <uc3:SearchBox id="SearchBox" runat="server"  />
+                                        <% } %>
+                                    </ContentTemplate>
+
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                            <LoggedInTemplate>
+                                <% if (IsSearchBoxEnabled)
+                                   { %>
+                                <uc3:SearchBox id="SearchBox" runat="server"  />
+                                <% } %>
+                                <ls:LocaleSelector id="_localSelector" runat="server"></ls:LocaleSelector>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>                                            
+                </header>
+            
+                <!--TOP NAV-->
+                <nav class="noindex" style="width: 955px;">
+                    <mnu:TabbedNav runat="server" id="_MainMenu" />
+                    <div style="clear: both; display: block; position: relative;">
+                        <%--This div fixes rendering of the tabbed nav in Chrome.--%>
+                    </div>
+                    <% if (_GlobalContext.CultureConfiguration.IsDSAlertsEnabled)
+                        { %>
+                    <alc:AlertContainer runat="server" id="_AlertContainer" />
+                    <% } %>
+                    <alc:rmsg runat="server" id="restrictedmsg" />
+                </nav>
+            
+                <!--CONTENT AREA-->
+                <section>
+                    <!--MESSAGES-->
+                    <div>
+                        <asp:ContentPlaceHolder ID="PageHeaderArea" runat="server">
+                        </asp:ContentPlaceHolder>                
+                    </div>                
+                    <div>
+                        <!--LEFT NAV-->
+                        <div id="LeftNavMenuCell" class="left">
+                            <asp:Panel ID="_LeftNavMenuPanel" runat="server" CssClass="noindex">
+                                <lnmnu:LeftNavMenu id="_LeftNavMenu" runat="server" />
+                            </asp:Panel>                    
+                        </div>
+                        <!--PRINCIPAL CONTENT-->
+                        <div id="ContentCell" class="left">
+                            <asp:ContentPlaceHolder ID="ContentArea" runat="server">
+                                [Default content when nothing is targeting the content area]
+                            </asp:ContentPlaceHolder>                                        
+                        </div>                
+                    </div>    
+                        
+                </section>
+
+                <footer class="noindex">
+                    <asp:Panel ID="pn_deletedId" runat="server">
+                        <uc2:sitefooter id="FooterArea" runat="server" />
+                    </asp:Panel>
+                </footer>
+
+            </div>
+            <div class="noindex serverSig">
+                <span>
+                    <%= HttpContext.Current.ApplicationInstance.ServerStamp() %>
+                </span>
+            </div>
+            
+        </form>
+        <cc1:TealeafAnalytics id="tealeafSiteMaster" runat="server" />
+    </body>
+</html>

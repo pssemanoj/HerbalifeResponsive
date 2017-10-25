@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CancelHapOrderResource1.Text" xml:space="preserve">
+    <value>OK</value>
+    <comment>_G3793</comment>
+  </data>
+  <data name="CancelResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>_G3794</comment>
+  </data>
+  <data name="RenewHapOrderResource1.Text" xml:space="preserve">
+    <value>Optar</value>
+    <comment>_G3795</comment>
+  </data>
+  <data name="CancelModalDescription.Text" xml:space="preserve">
+    <value>&lt;p&gt;Al cancelar esta Orden Permanente HAP, dejará de recibir un pedido mensual. Puede volver en cualquier momento para crear una nueva orden HAP visitando la página de Órdenes de HAP. ¿Seguro que deseas cancelar esta Orden Permanente HAP? &lt;/p&gt; &lt;p&gt;&lt;strong&gt;Por favor espere unos minutos para que el estado de su pedido HAP sea actualizado.&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="RenewModalDescription.Text" xml:space="preserve">
+    <value>&lt;p&gt;Al optar usted permanecerá en el programa de ventaja de Herbalife (HAP). Continuaremos en procesar su orden HAP cada mes en su fecha límite  y enviaremos su orden dentro de 4 días hábiles una vez que su pago sea procesado.&lt;/p&gt;
+    &lt;p&gt;Puede cambiar su pedido HAP o cancelar el programa HAP en cualquier momento antes o hasta la fecha límite en MiHerbalife.com en la sección de Mis Pedidos HAP o llamando Servicios al Asociado 1-866-866-4744.&lt;/p&gt;</value>
+  </data>
+  <data name="EditModalDescription.Text" xml:space="preserve">
+    <value>&lt;p&gt;Su orden actual del programa de ventaja Herbalife (HAP) es establecido con Sistema de Pago Automatizado (APS)&lt;/p&gt;
+      &lt;div class="Wire_transfer_info" style="font-size:14px !important;"&gt;&lt;ul&gt;
+      &lt;li&gt;Si desea continuar realizando cambios en línea tendrá que cambiar su método de pago a tarjeta de crédito.&lt;/li&gt;
+      &lt;li&gt;Si usted desea continuar usando APS como su método de pago necesita contactar a Servicios Al Asociado para para actualizar su pedido.&lt;/li&gt;
+      &lt;/ul&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="EditHapOrderResource1.Text" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CancelRenewResource1.Text" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+</root>

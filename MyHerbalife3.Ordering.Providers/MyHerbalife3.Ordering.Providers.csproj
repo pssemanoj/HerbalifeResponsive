@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8D594DC-CE64-44E3-94EE-38031596DC81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyHerbalife3.Ordering.Providers</RootNamespace>
+    <AssemblyName>MyHerbalife3.Ordering.Providers</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <WebGreaseLibPath>$(SolutionDir)packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'QA4C|AnyCPU'">
+    <OutputPath>bin\QA4C\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HL.MyHerbalife.Providers.Ordering.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'China|AnyCPU'">
+    <OutputPath>bin\China\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>HL_ASPNET_MVC_Security-Prod.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>$(SolutionDir)packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\PAYCLUB_PLUGIN\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.Blocks.Caching, Version=1.1.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Caching.1.1.14.0\lib\HL.Blocks.Caching.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.CircuitBreaker, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.CircuitBreaker.1.1.1.0\lib\HL.Blocks.CircuitBreaker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Blocks.Localization, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Blocks.Localization.1.1.1.0\lib\HL.Blocks.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Api, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Api.1.1.1.0\lib\HL.Common.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Configuration, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Configuration.1.1.1.0\lib\HL.Common.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Cryptography, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Cryptography.1.1.1.0\lib\HL.Common.Cryptography.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.Interfaces, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.Interfaces.1.1.1.0\lib\HL.Common.DataContract.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.DataContract.ValueObjects, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.DataContract.ValueObjects.1.1.1.0\lib\HL.Common.DataContract.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Logging, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Logging.1.1.2.0\lib\HL.Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.Utilities, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.Utilities.1.1.1.0\lib\HL.Common.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Common.ValueObjects, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.Common.ValueObjects.1.1.19.0\lib\HL.Common.ValueObjects.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="HL.Content.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Content\Prod\HL.Content.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.Content.ValueObjects">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Content\Prod\HL.Content.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.GatewayPayment.ValueObjects">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\GatewayPayment\Prod\HL.GatewayPayment.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.Mobile.ValueObjects, Version=2.14.5.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Mobile\v1.0\HL.Mobile.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.PaymentGatewayBridge.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Legacy\PaymentGatewayBridge\Prod\HL.PaymentGatewayBridge.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.PaymentGatewayBridge.ValueObjects">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\HL\Legacy\PaymentGatewayBridge\Prod\HL.PaymentGatewayBridge.ValueObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.PGH.Api, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.PGH.Api.dll.1.0.10\lib\net461\HL.PGH.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="HL.PGH.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\HL.PGH.Contracts.dll.1.0.11\lib\net461\HL.PGH.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.EMSECASPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\SharedReference\PagoElectronico\v1.0\Interop.EMSECASPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PConnect">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\PuntoWeb\v1.0\Interop.PConnect.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\SharedReference\Microsoft\EntLib\v6.0\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>$(SolutionDir)packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="MyHerbalife.Navigation.ApiAdapter, Version=1.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Navigation.ApiAdapter.1.0.11.0\lib\MyHerbalife.Navigation.ApiAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AdminProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AdminProvider.1.2.3.0\lib\MyHerbalife3.Core.AdminProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.AuthenticationProvider, Version=1.2.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.AuthenticationProvider.1.2.21.0\lib\MyHerbalife3.Core.AuthenticationProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.ContentProxyProvider, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.ContentProxyProvider.1.2.11.0\lib\MyHerbalife3.Core.ContentProxyProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.DistributorProvider, Version=1.2.36.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.DistributorProvider.1.2.36.0\lib\MyHerbalife3.Core.DistributorProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Core.ExperienceProvider, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Core.ExperienceProvider.1.2.3.0\lib\MyHerbalife3.Core.ExperienceProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Infrastructure, Version=1.2.30.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Infrastructure.1.2.30.0\lib\MyHerbalife3.Shared.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.Interfaces, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.Interfaces.1.2.1.0\lib\MyHerbalife3.Shared.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.LegacyProviders, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.LegacyProviders.1.2.1.0\lib\MyHerbalife3.Shared.LegacyProviders.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.UI, Version=1.2.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.UI.1.2.38.0\lib\MyHerbalife3.Shared.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MyHerbalife3.Shared.ViewModel, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\MyHerbalife3.Shared.ViewModel.1.2.11.0\lib\MyHerbalife3.Shared.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PlugInClient">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\PAYCLUB_PLUGIN\PlugInClient.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.1.605.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.1.1.605\lib\net46\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Core, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Core.1.4.0\lib\net45\StackExchange.Redis.Extensions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StackExchange.Redis.Extensions.Newtonsoft, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\StackExchange.Redis.Extensions.Newtonsoft.1.4.0\lib\net45\StackExchange.Redis.Extensions.Newtonsoft.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VPOS20_PLUGIN">
+      <HintPath>..\..\..\..\..\..\..\SharedReference\VPOS20_PLUGIN\VPOS20_PLUGIN.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APFDueProvider.cs" />
+    <Compile Include="CartWidgetSource.cs" />
+    <Compile Include="CatalogHelper.cs" />
+    <Compile Include="CatalogProvider.cs" />
+    <Compile Include="CatalogProviderLoader.cs" />
+    <Compile Include="ChinaCatalogProvider.cs" />
+    <Compile Include="ChinaDistributorProviderLoader.cs" />
+    <Compile Include="ChinaPromotionProvider.cs" />
+    <Compile Include="ChinaPromotionProviderLoader.cs" />
+    <Compile Include="China\DeliveryOptionTypes.cs" />
+    <Compile Include="China\OrderStatusFilterType.cs" />
+    <Compile Include="China\PreOrderStatusFilterType.cs" />
+    <Compile Include="Communication\CommunicationSvcProvider.cs" />
+    <Compile Include="ConfiguredParam.cs" />
+    <Compile Include="ConfiguredProperty.cs" />
+    <Compile Include="CopyOrderProvider.cs" />
+    <Compile Include="CustomerOrderProvider.cs" />
+    <Compile Include="DiscontinuedSkuLoader.cs" />
+    <Compile Include="DistributorContactLoader.cs" />
+    <Compile Include="DistributorContactProvider.cs" />
+    <Compile Include="DistributorOrderingProfileProvider.cs" />
+    <Compile Include="EventHandling\EventArgs\HLEventArgs.cs" />
+    <Compile Include="EventTicketProviderLoader.cs" />
+    <Compile Include="ExpireCatalogCacheProvider.cs" />
+    <Compile Include="FavouriteSkuLoader.cs" />
+    <Compile Include="DistributorOrderingProfileProviderLoader.cs" />
+    <Compile Include="EmailHelperLoader.cs" />
+    <Compile Include="EmailLegacyProvider.cs" />
+    <Compile Include="ExceptionPolicy.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="HLShoppingCartEmailValues.cs" />
+    <Compile Include="HTMLHelper.cs" />
+    <Compile Include="Installments\InstallmentsProvider.cs" />
+    <Compile Include="Interface\HLMap.cs" />
+    <Compile Include="FraudControl\FraudControlProvider.cs" />
+    <Compile Include="Interface\IChinaDistributorProviderLoader.cs" />
+    <Compile Include="Interface\IChinaPromotionProviderLoader.cs" />
+    <Compile Include="Interface\IDistributorContactLoader.cs" />
+    <Compile Include="Interface\IEventTicketProviderLoader.cs" />
+    <Compile Include="Interface\IDiscontinuedSkuLoader.cs" />
+    <Compile Include="Interface\IFavouriteSkuLoader.cs" />
+    <Compile Include="Interface\IDistributorOrderingProfileProviderLoader.cs" />
+    <Compile Include="Interface\IEmailHelperLoader.cs" />
+    <Compile Include="Interface\IMembershipLoader.cs" />
+    <Compile Include="Interface\IOrderChinaProviderLoader.cs" />
+    <Compile Include="Interface\IOrderProviderLoader.cs" />
+    <Compile Include="Interface\IPaymentInfoProviderLoader.cs" />
+    <Compile Include="Interface\ICatalogProviderLoader.cs" />
+    <Compile Include="Interface\IShoppingCartProviderLoader.cs" />
+    <Compile Include="Map\MapAPI.cs" />
+    <Compile Include="MembershipLoader.cs" />
+    <Compile Include="Mobile\MobileActivityLogProvider.cs" />
+    <Compile Include="Mobile\MobileAddressProvider.cs" />
+    <Compile Include="Mobile\MobileAnnouncementProvider.cs" />
+    <Compile Include="Mobile\MobileDualOrderMonthProvider.cs" />
+    <Compile Include="Mobile\MobileFavouriteSKUProvider.cs" />
+    <Compile Include="Mobile\MobileGetDisconinuedSkuProvider.cs" />
+    <Compile Include="Mobile\MobileOrderSummaryProvider.cs" />
+    <Compile Include="Mobile\MobileOrderTrackingProvider.cs" />
+    <Compile Include="Mobile\MobilePayByPhoneProvider.cs" />
+    <Compile Include="Mobile\MobilePghProvider.cs" />
+    <Compile Include="Mobile\MobilePickUpProvider.cs" />
+    <Compile Include="Mobile\MobileCustomersProvider.cs" />
+    <Compile Include="Mobile\MobileOrderProvider.cs" />
+    <Compile Include="Mobile\MobileQuickPayProvider.cs" />
+    <Compile Include="Mobile\MobileQuoteHelper.cs" />
+    <Compile Include="Mobile\MobileQuoteProvider.cs" />
+    <Compile Include="Mobile\MobileWechatHelper.cs" />
+    <Compile Include="Mobile\MobileWechatProvider.cs" />
+    <Compile Include="MyOrdersSource.cs" />
+    <Compile Include="NotificationProvider.cs" />
+    <Compile Include="ObjectMappingHelper.cs" />
+    <Compile Include="OLCDataProvider.cs" />
+    <Compile Include="OrderChinaProvider.cs" />
+    <Compile Include="OrderChinaProviderLoader.cs" />
+    <Compile Include="OrderingProfile\DistributorOrderingProfileFactory.cs" />
+    <Compile Include="OrderingProfile\IDistributorOrderingProfileFactory.cs" />
+    <Compile Include="FOP\IPurchaseRestrictionManager.cs" />
+    <Compile Include="FOP\IPurchaseRestrictionManagerFactory.cs" />
+    <Compile Include="OrderingProfile\IPurchasingLimitManager.cs" />
+    <Compile Include="OrderingProfile\IPurchasingLimitManagerFactory.cs" />
+    <Compile Include="FOP\PurchaseRestrictionManager.cs" />
+    <Compile Include="FOP\PurchaseRestrictionManagerFactory.cs" />
+    <Compile Include="OrderingProfile\PurchasingLimitManager.cs" />
+    <Compile Include="OrderingProfile\PurchasingLimitManagerFactory.cs" />
+    <Compile Include="OrderProviderLoader.cs" />
+    <Compile Include="PageConfig.cs" />
+    <Compile Include="PanelConfig.cs" />
+    <Compile Include="PanelControlsConfiguration.cs" />
+    <Compile Include="PanelUserControl.cs" />
+    <Compile Include="Payments\AtcPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\AtcPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\BancodoBrazilElectronicTransferPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\BancodoBrazilElectronicTransferPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\BankInfoProvider.cs" />
+    <Compile Include="Payments\BankSlipBoldCronPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\BankSlipBoldCronPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\BankSlipBrasPagPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\BankSlipBrasPagPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\BankSlipPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\BankSlipPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\BradescoElectronicTransferPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\BradescoElectronicTransferPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\BrazilPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\BrazilPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\ChilePaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\CL_ServiPagPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\CL_ServiPagPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\CN_99BillCNPInvoker.cs" />
+    <Compile Include="Payments\CN_99BillCNPResponse.cs" />
+    <Compile Include="Payments\CN_99BillPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\CN_99BillPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\CN_99BillQuickPayInvoker.cs" />
+    <Compile Include="Payments\CN_99BillQuickPayResponse.cs" />
+    <Compile Include="Payments\ColombiaPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\CO_PsePaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\CO_PsePaymentGatewayResponse.cs" />
+    <Compile Include="Payments\CyberSourcePaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\CyberSourcePaymentGatewayResponse.cs" />
+    <Compile Include="Payments\HU_PayUPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\HU_PayUPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\ItauBoldCronElectronicTransferPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\ItauBoldCronElectronicTransferPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\MK_TutunskaPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\MK_TutunskaPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\PaymentInfoProviderLoader.cs" />
+    <Compile Include="Payments\PGHPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PGHPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PagoSeguroPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PagoSeguroPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\CredomaticPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\CredomaticPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\EcuadorPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\ItauElectronicTransferPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\ItauElectronicTransferPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\ParaguayPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\PayclubPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\PayclubPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PF_OsbPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\PF_OsbPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\ProdubancoPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\ProdubancoPaymentGatewayResponse.cs.cs" />
+    <Compile Include="Payments\PY_BanCardPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\PY_BanCardPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\CN_99BillQuickPayProvider.cs" />
+    <Compile Include="Payments\RomcardPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\RomcardPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\RS_BancaintesaPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\RS_BancaintesaPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\TokenizationServiceProxy.cs" />
+    <Compile Include="Payments\UY_OcaPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\UY_OcaPaymentGateWayResponse.cs" />
+    <Compile Include="Payments\VN_VNPayPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\VN_VNPayPaymentGatewayResponse.cs" />
+    <Compile Include="FOP\PurchaseRestrictionProvider.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RecentOrdersSource.cs" />
+    <Compile Include="ResultViews\PriceListItemView.cs" />
+    <Compile Include="Payments\UruguayPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\UY_VpaymentPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\UY_VpaymentPaymentGateWayResponse.cs" />
+    <Compile Include="ResultViews\MyHLCopyOrderResult.cs" />
+    <Compile Include="ResultViews\MyHlResultViewResult.cs" />
+    <Compile Include="CountryTinCodeProvider.cs" />
+    <Compile Include="CreateOrderHelper.cs" />
+    <Compile Include="CrossSell\CrossSellInfo.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EventHandling\CreditCardAuthenticationCompletedEventArgs.cs" />
+    <Compile Include="EventHandling\CreditCardAuthorizationFailedEventArgs.cs" />
+    <Compile Include="EventHandling\CrossSellEventArgs.cs" />
+    <Compile Include="EventHandling\DeliveryOptionEventArgs.cs" />
+    <Compile Include="EventHandling\EventTypes.cs" />
+    <Compile Include="EventHandling\OrderSubTypeEventArgs.cs" />
+    <Compile Include="EventHandling\PageVisitRefusedEventArgs.cs" />
+    <Compile Include="EventHandling\PaymentInfoEventArgs.cs" />
+    <Compile Include="EventHandling\ProductDetailEventArgs.cs" />
+    <Compile Include="EventHandling\ShippingAddressEventArgs.cs" />
+    <Compile Include="EventHandling\ShoppingCartEventArgs.cs" />
+    <Compile Include="Interface\IShippingProvider.cs" />
+    <Compile Include="ResultViews\MyHLProductItemView.cs" />
+    <Compile Include="MyHLShoppingCart.cs" />
+    <Compile Include="ResultViews\MyHLShoppingCartView.cs" />
+    <Compile Include="ResultViews\MyHlShoppingCartViewResult.cs" />
+    <Compile Include="OrderMonth.cs" />
+    <Compile Include="OrderProvider.cs" />
+    <Compile Include="PanelControlConfigLoader.cs" />
+    <Compile Include="Payments\ChronoPayPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\ChronoPayPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\DecidirPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\DecidirPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\HSBCPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\HSBCPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\MultiMerchantVisaNetPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\MultiMerchantVisaNetPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\MyGatePaymentGatewayInvoker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Payments\MyGatePaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PagoElectronicoPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PagoElectronicoPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PagosOnlinePaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PagosOnlinePaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PaymentInfoProvider.cs" />
+    <Compile Include="Payments\PeruPaymentGateWayInvoker.cs" />
+    <Compile Include="Payments\PolCardPaymentGatewayResponse.cs.cs" />
+    <Compile Include="Payments\PolCardPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PuntoWebPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\PuntoWebPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\PuntoWebSignature.cs" />
+    <Compile Include="Payments\RBSPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\RBSPaymentGatewayResponse.cs" />
+    <Compile Include="Payments\RegCreditCardProvider.cs" />
+    <Compile Include="Payments\WebPayPaymentGatewayInvoker.cs" />
+    <Compile Include="Payments\WebPayPaymentGatewayResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingLimitProvider.cs" />
+    <Compile Include="ResultViews\ProductResultView.cs" />
+    <Compile Include="RulesManagement\HLRulesManager.cs" />
+    <Compile Include="RulesManagement\MyHerbalifeRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IDiscountRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IFTMRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IHFFRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IInventoryRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IOrderManagementRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IPromoRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IPurchaseRestrictionRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\ISavedCartManagementRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IShoppingCartIntegrityRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IShoppingCartManagementRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IShoppingCartRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\ITaxationRule.cs" />
+    <Compile Include="RulesManagement\RuleInterfaces\IValidateDistributorRule.cs" />
+    <Compile Include="RulesManagement\RuleSet.cs" />
+    <Compile Include="RulesManagement\ServerRulesManager.cs" />
+    <Compile Include="RulesManagement\ShoppingCartRuleReason.cs" />
+    <Compile Include="SessionInfo.cs" />
+    <Compile Include="SessionLessInfoManager.cs" />
+    <Compile Include="Shipping\ShippingMapType.cs" />
+    <Compile Include="Shipping\ShippingProvider_AT.cs" />
+    <Compile Include="Shipping\ShippingProvider_BE.cs" />
+    <Compile Include="Shipping\ShippingProvider_BG.cs" />
+    <Compile Include="Shipping\ShippingProvider_SK.cs" />
+    <Compile Include="Shipping\ShippingProvider_BA.cs" />
+    <Compile Include="Shipping\ShippingProvider_BY.cs" />
+    <Compile Include="Shipping\ShippingProvider_CN.cs" />
+    <Compile Include="Shipping\ShippingProvider_CZ.cs" />
+    <Compile Include="Shipping\ShippingProvider_DO.cs" />
+    <Compile Include="Shipping\ShippingProvider_ES.cs" />
+    <Compile Include="Shipping\ShippingProvider_HR.cs" />
+    <Compile Include="Shipping\ShippingProvider_HU.cs" />
+    <Compile Include="Shipping\ShippingProvider_JM.cs" />
+    <Compile Include="Shipping\ShippingProvider_FR.cs" />
+    <Compile Include="Shipping\ShippingProvider_GT.cs" />
+    <Compile Include="Shipping\ShippingProvider_KZ.cs" />
+    <Compile Include="Shipping\ShippingProvider_MK.cs" />
+    <Compile Include="Shipping\ShippingProvider_HN.cs" />
+    <Compile Include="Shipping\ShippingProvider_MN.cs" />
+    <Compile Include="Shipping\ShippingProvider_MO.cs" />
+    <Compile Include="Shipping\ShippingProvider_NI.cs" />
+    <Compile Include="Shipping\ShippingProvider_NZ.cs" />
+    <Compile Include="Shipping\ShippingProvider_PF.cs" />
+    <Compile Include="Shipping\ShippingProvider_PH.cs" />
+    <Compile Include="Shipping\ShippingProvider_PR.cs" />
+    <Compile Include="Shipping\ShippingProvider_PY.cs" />
+    <Compile Include="Shipping\ShippingProvider_RS.cs" />
+    <Compile Include="Shipping\ShippingProvider_SI.cs" />
+    <Compile Include="Shipping\ShippingProvider_SV.cs" />
+    <Compile Include="Shipping\ShippingProvider_PA.cs" />
+    <Compile Include="Shipping\ShippingProvider_EC.cs" />
+    <Compile Include="Shipping\ShippingProvider_BO.cs" />
+    <Compile Include="Shipping\DeliveryOption.cs" />
+    <Compile Include="Shipping\ShippingInfo.cs" />
+    <Compile Include="Shipping\ShippingProvider.cs" />
+    <Compile Include="Shipping\ShippingProviderBase.cs" />
+    <Compile Include="Shipping\ShippingProvider_AR.cs" />
+    <Compile Include="Shipping\ShippingProvider_AU.cs" />
+    <Compile Include="Shipping\ShippingProvider_BR.cs" />
+    <Compile Include="Shipping\ShippingProvider_CA.cs" />
+    <Compile Include="Shipping\ShippingProvider_CH.cs" />
+    <Compile Include="Shipping\ShippingProvider_CL.cs" />
+    <Compile Include="Shipping\ShippingProvider_CO.cs" />
+    <Compile Include="Shipping\ShippingProvider_CR.cs" />
+    <Compile Include="Shipping\ShippingProvider_DE.cs" />
+    <Compile Include="Shipping\ShippingProvider_DK.cs" />
+    <Compile Include="Shipping\ShippingProvider_FI.cs" />
+    <Compile Include="Shipping\ShippingProvider_GR.cs" />
+    <Compile Include="Shipping\ShippingProvider_HK.cs" />
+    <Compile Include="Shipping\ShippingProvider_ID.cs" />
+    <Compile Include="Shipping\ShippingProvider_IE.cs" />
+    <Compile Include="Shipping\ShippingProvider_IL.cs" />
+    <Compile Include="Shipping\ShippingProvider_IN.cs" />
+    <Compile Include="Shipping\ShippingProvider_IS.cs" />
+    <Compile Include="Shipping\ShippingProvider_IT.cs" />
+    <Compile Include="Shipping\ShippingProvider_JP.cs" />
+    <Compile Include="Shipping\ShippingProvider_KR.cs" />
+    <Compile Include="Shipping\ShippingProvider_MX.cs" />
+    <Compile Include="Shipping\ShippingProvider_MY.cs" />
+    <Compile Include="Shipping\ShippingProvider_NL.cs" />
+    <Compile Include="Shipping\ShippingProvider_NO.cs" />
+    <Compile Include="Shipping\ShippingProvider_PE.cs" />
+    <Compile Include="Shipping\ShippingProvider_PL.cs" />
+    <Compile Include="Shipping\ShippingProvider_PT.cs" />
+    <Compile Include="Shipping\ShippingProvider_RO.cs" />
+    <Compile Include="Shipping\ShippingProvider_RU.cs" />
+    <Compile Include="Shipping\ShippingProvider_SE.cs" />
+    <Compile Include="Shipping\ShippingProvider_SG.cs" />
+    <Compile Include="Shipping\ShippingProvider_TH.cs" />
+    <Compile Include="Shipping\ShippingProvider_TR.cs" />
+    <Compile Include="Shipping\ShippingProvider_TW.cs" />
+    <Compile Include="Shipping\ShippingProvider_UA.cs" />
+    <Compile Include="Shipping\ShippingProvider_UK.cs" />
+    <Compile Include="Shipping\ShippingProvider_US.cs" />
+    <Compile Include="Shipping\ShippingProvider_UY.cs" />
+    <Compile Include="Shipping\ShippingProvider_VE.cs" />
+    <Compile Include="Shipping\ShippingProvider_VN.cs" />
+    <Compile Include="Shipping\ShippingProvider_ZA.cs" />
+    <Compile Include="Shipping\TaxAreaIdProvider.cs" />
+    <Compile Include="ShoppingCartChinaProvider.cs" />
+    <Compile Include="ShoppingCartProvider.cs" />
+    <Compile Include="ShoppingCartProviderLoader.cs" />
+    <Compile Include="SKULimitationProvider.cs" />
+    <Compile Include="ThreeDPaymentProvider.cs" />
+    <Compile Include="TopSellerSource.cs" />
+    <Compile Include="UserControlParam.cs" />
+    <Compile Include="WebClientAuthenticationProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cultures.json" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RulesManagement\RulesManagement.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.AddressLookup\MyHerbalife3.Ordering.AddressLookup.csproj">
+      <Project>{936a5ff2-9804-4d1a-b4ba-bf58ee12e9b6}</Project>
+      <Name>MyHerbalife3.Ordering.AddressLookup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Configuration\MyHerbalife3.Ordering.Configuration.csproj">
+      <Project>{f8f5f25b-ed7a-4d1e-b4ce-f6b6d98a7fce}</Project>
+      <Name>MyHerbalife3.Ordering.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Interfaces\MyHerbalife3.Ordering.Interfaces.csproj">
+      <Project>{f0974943-52ed-4e42-8e4c-152022aa53ec}</Project>
+      <Name>MyHerbalife3.Ordering.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Providers.BT\MyHerbalife3.Ordering.Providers.BT.csproj">
+      <Project>{647c9431-4e94-41aa-b9dc-bf9ae52e85f8}</Project>
+      <Name>MyHerbalife3.Ordering.Providers.BT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj">
+      <Project>{deca9051-4215-473e-8a99-2227fa819528}</Project>
+      <Name>MyHerbalife3.Ordering.ServiceProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.SharedProviders\MyHerbalife3.Ordering.SharedProviders.csproj">
+      <Project>{8a4f64c5-0c64-4a43-ab41-91b83c5cee38}</Project>
+      <Name>MyHerbalife3.Ordering.SharedProviders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.ViewModel\MyHerbalife3.Ordering.ViewModel.csproj">
+      <Project>{C379451E-81AE-48DF-8BD1-E583ABD494F6}</Project>
+      <Name>MyHerbalife3.Ordering.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyHerbalife3.Ordering.Widgets\MyHerbalife3.Ordering.Widgets.csproj">
+      <Project>{b8f7cfe2-2394-4593-b1e8-db8739948421}</Project>
+      <Name>MyHerbalife3.Ordering.Widgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

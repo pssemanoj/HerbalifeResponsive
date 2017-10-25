@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value></value>
+  <comment>_*G1711</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value></value>
+  <comment>_*G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Por favor, introduzca productos a la cesta de la compra antes de añadir la referencia {0}.</value>
+  <comment>_*G1713</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>La cantidad no debe exceder por encima de {0} para la Referencia {1}.</value>
+  <comment>_*G1714</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>No puede comprar productos {0}</value>
+  <comment>_*G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value></value>
+  <comment>_*G1720</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value></value>
+  <comment>_*G1721</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Artículo REF:{0} no ha sido agregado a su cesta, ya que excede su límite de ganancias.</value>
+  <comment>_*G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Artículo REF:{0} no ha sido agregado a su cesta, ya que excede su límite de puntos de volumen</value>
+  <comment>_*G1723</comment></data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Este pedido excede el volumen permitido por pedido. Volumen de Puntos restantes: {0}. Las siguientes referencias no han sido añadidas al carrito.</value>
+  <comment>_*G2302</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Nº de Referencia:{0}.</value>
+  <comment>_*G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Nº de Referencia:{0}.</value>
+  <comment>_*G2711</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>La cantidad para la siguiente referencia: {0} no puede ser aumentado por {1} porque excede su límite de puntos de volumen.</value>
+      <comment>_*G3558</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Su pedido de {0} excede la cantidad máxima de {1} por Miembro de Herbalife cada {2} días de calendario.</value>
+      <comment>_*G3505</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Como parte de nuestro programa de creación de órdenes, Miembros de Herbalife nuevos y existentes, quienes aún no hayan cumplido su Calificación a Supervisor, podrán ordenar hasta {0} puntos de volumen personalmente adquiridos (PPV) en su primera orden. Usted podrá acumular hasta {1} puntos de volumen (incluyendo la orden inicial) hasta los próximos {2} días. Esta orden excede el volumen permitido y debe ser reducida en {3} puntos de volumen. Las siguientes referencias no serán agregados a su carrito de compra:</value>
+      <comment>_*G3557</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Como parte de nuestro programa de creación de órdenes, Miembros de Herbalife nuevos y existentes, quienes aún no hayan cumplido su Calificación a Supervisor, podrán ordenar hasta {0} puntos de volumen personalmente adquiridos (PPV) en su primera orden. Usted podrá acumular hasta {1} puntos de volumen (incluyendo la orden inicial) hasta los próximos {2} días. Esta orden excede el volumen permitido y debe ser reducida en {3} puntos de volumen.</value>
+      <comment>_*G3556</comment></data>
+</root>

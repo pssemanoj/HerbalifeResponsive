@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblEventTicketsMessageResource.Text" xml:space="preserve">
+    <value>"&lt;b style='color:red;'&gt;Анхаарна уу - захиалгаа шалгана уу&lt;/b&gt;
+ &lt;br /&gt;
+ Арга хэмжээний тасалбарыг худалдан авснаар та дараах зүйлсийг зөвшөөрч байна:
+ &lt;br/&gt;
+ &lt;ul&gt;
+ &lt;li&gt;Тасалбарыг буцаах болон дамжуулж болохгүй&lt;/li&gt;
+ &lt;li&gt;Та арга хэмжээний болзлыг хангасан байна.&lt;/li&gt;
+ &lt;li&gt;Ирц нь сайн дурынх &lt;/li&gt;
+ &lt;li&gt; Та хуулийн дагуу энэ арга хэмжээнд оролцож байгаа ба эд зүйлс алдах, гэмтэх, амь насаа алдах, тахир дутуу болох тохиолдолд мэдэгдэх болон үл мэдэгдэх нэмэжлэлээс Herbalife-ыг чөлөөлж байна. &lt;/li&gt;
+ &lt;li&gt;Herbalife арга хэмжээний үеэр бичлэг хийх, зураг авах ба таны зураг,дуу хоолойг дотооддоо Herbalife-ын промоушенд ашиглах магадлалтай.&lt;/li&gt;
+ &lt;/ul&gt;"</value>
+    <comment>_*G3293</comment>
+  </data>
+  <data name="PromoInCart" xml:space="preserve">
+    <value>Серийн Дугаар {0} Таны сагсанд нэмэгдлээ, хэрэв захиалга Таны хаяг руу илгээгдээгүй бол та сагснаасаа хасна уу.</value>
+    <comment>_*G2799</comment>
+  </data>
+  <data name="btnObservationOk.Text" xml:space="preserve">
+    <value>Ok</value>
+    <comment>_*G2797</comment>
+  </data>
+  <data name="lblObservationTitle.Text" xml:space="preserve">
+    <value>Анхаарна уу...</value>
+    <comment>_*G2798</comment>
+  </data>
+  <data name="lbVolumePointsResource1.Text" xml:space="preserve">
+    <value>Оноо&lt;/br&gt;</value>
+    <comment>_*G611</comment>
+  </data>
+  <data name="ErrorGettingPurchasingLimits" xml:space="preserve">
+    <value>Худалдан авах хязгаарыг тодорхойлох боломжгүй</value>
+    <comment>_*G610</comment>
+  </data>
+  <data name="MaxEarningsVolExceeded" xml:space="preserve">
+    <value>Сагс онооны дээд хэмжээний хязгаараас хэтэрсэн байна.</value>
+    <comment>_*G609</comment>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Тийм</value>
+    <comment>_*G614</comment>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>Үгүй</value>
+    <comment>_*G613</comment>
+  </data>
+  <data name="lbYourPriceResource1.Text" xml:space="preserve">
+    <value>Үнэ&lt;br /&gt;</value>
+    <comment>_*G612</comment>
+  </data>
+  <data name="Remove.Text" xml:space="preserve">
+    <value>Устгах</value>
+    <comment>_*G605</comment>
+  </data>
+  <data name="Recalculate.Text" xml:space="preserve">
+    <value>Дахин Тооцоолох</value>
+    <comment>_*G604</comment>
+  </data>
+  <data name="lbQtyResource1.Text" xml:space="preserve">
+    <value>Тоо ширхэг</value>
+    <comment>_*G603</comment>
+  </data>
+  <data name="MaxEarningsLimitsExceeded" xml:space="preserve">
+    <value>Сагс онооны урамшууллын дээд хэмжээний хязгаараас хэтэрсэн байна.</value>
+    <comment>_*G608</comment>
+  </data>
+  <data name="lblSkuResource1.Text" xml:space="preserve">
+    <value>Серийн дугаар</value>
+    <comment>_*G607</comment>
+  </data>
+  <data name="lbRetailResource1.Text" xml:space="preserve">
+    <value>Үнэ бодох суурь&lt;br /&gt;</value>
+    <comment>_*G606</comment>
+  </data>
+  <data name="CancelOrder.Text" xml:space="preserve">
+    <value>Захиалгыг цуцлах</value>
+    <comment>_*G584</comment>
+  </data>
+  <data name="DeleteHelp.Text" xml:space="preserve">
+    <value />
+    <comment>_*G2379</comment>
+  </data>
+  <data name="lbCartEmpty.Text" xml:space="preserve">
+    <value>Сагс хоосон байна.</value>
+    <comment>_*G585</comment>
+  </data>
+  <data name="lblConfirmUnavailableText1.Text" xml:space="preserve">
+    <value>Хүргэх хаягаа өөрчлөх хэсгийг сонгосноор таны сагсан дахь зүйлс захиалагдах боломжгүй эсвэл агуулахад ирэхээр захиалах боломжтой байдалд орох болно.</value>
+    <comment>_*G586</comment>
+  </data>
+  <data name="AddMoreProducts.Text" xml:space="preserve">
+    <value>Нэмж Бүтээгдэхүүн Захиалах</value>
+    <comment>_*G582</comment>
+  </data>
+  <data name="lblConfirmCancelText.Text" xml:space="preserve">
+    <value>Та цуцлахдаа итгэлтэй байна уу?</value>
+    <comment>_*G583</comment>
+  </data>
+  <data name="Checkout.Text" xml:space="preserve">
+    <value>Худалдан авалтаа дуусгах</value>
+    <comment>_*G587</comment>
+  </data>
+  <data name="lbRemoveResource1.Text" xml:space="preserve">
+    <value>Устгах</value>
+    <comment>_*G591</comment>
+  </data>
+  <data name="lbEarnBaseResource1.Text" xml:space="preserve">
+    <value>Урамшуулал бодох суурь</value>
+    <comment>_*G592</comment>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Худалдан авалтаа үргэлжлүүлэх</value>
+    <comment>_*G590</comment>
+  </data>
+  <data name="lblConfirmationUnavailable.Text" xml:space="preserve">
+    <value>Цуцлалтыг баталгаажуулах</value>
+    <comment>_*G588</comment>
+  </data>
+  <data name="lblConfirmCancel.Text" xml:space="preserve">
+    <value>Цуцлалтыг баталгаажуулах</value>
+    <comment>_*G589</comment>
+  </data>
+  <data name="GoBack.Text" xml:space="preserve">
+    <value>Буцах</value>
+    <comment>_*G594</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Очиж Авах байршлаа сонгоно уу</value>
+    <comment>_*G598</comment>
+  </data>
+  <data name="lblHeaderSummaryResource1.Text" xml:space="preserve">
+    <value>Захиалгын хураангуй</value>
+    <comment>_*G597</comment>
+  </data>
+  <data name="PickUpOptionNotPopulated" xml:space="preserve">
+    <value>Очиж Авах сонголтыг сонгоно уу</value>
+    <comment>_*G599</comment>
+  </data>
+  <data name="lbProdNameResource1.Text" xml:space="preserve">
+    <value>Бүтээгдэхүүний нэр</value>
+    <comment>_*G602</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Хүргэлтийн хаяг оруулна уу</value>
+    <comment>_*G600</comment>
+  </data>
+  <data name="lblConfirmRemoveItems.Text" xml:space="preserve">
+    <value>Хэрэв, Та Устгах товчийг дарвал бүх боломжгүй зүйлс улаанаар харин агуулахад ирэхээр захиалах боломжтой зүйлс шар өнгөөр харагдах болно.</value>
+    <comment>_*G596</comment>
+  </data>
+  <data name="ShippingOptionNotPopulated" xml:space="preserve">
+    <value>Хүргэлтийн аргыг сонгоно уу.</value>
+    <comment>_*G601</comment>
+  </data>
+  <data name="lblConfirmGoBack.Text" xml:space="preserve">
+    <value>Та Буцахыг дарвал, Таны өмнөх хүргэлтийн хаяг харагдах болно.</value>
+    <comment>_*G595</comment>
+  </data>
+  <data name="lblHeaderChildSKU.Text" xml:space="preserve">
+    <value>Дагалдах SKU/Зүйлс</value>
+    <comment>_G3859</comment>
+  </data>
+  <data name="lblHeaderParentSKU.Text" xml:space="preserve">
+    <value>Ерөнхий SKU/Зүйлс</value>
+    <comment>_G3858</comment>
+  </data>
+</root>

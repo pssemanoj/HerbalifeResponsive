@@ -1,0 +1,60 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+<div id="dvInvMyOrders" style="display: none;"
+     data-role="window"
+     data-min-width="650"
+     data-max-width="720"
+     data-min-height="450"
+     data-modal="true"
+     data-resizable="false"
+     data-actions="['close']">
+
+    <script type="text/x-kendo-template" id="selectMyOrdersTpl">
+        <a class="selectMyOrders k-link" href="\\#selectMyOrdersField" data-bind="click: selectMyOrders">@(this.Localize("select"))</a>
+    </script>
+
+    <script type="text/x-kendo-tmpl" id="dateMyOrdersTpl">
+        <span>#= kendo.toString(kendo.parseDate(Date, 'yyyy-MM-dd'), 'MM/dd/yyyy') #</span>
+    </script>
+
+    <div class="wrapper">
+        <div id="loading"></div>
+        <div class="row">
+            <div class="no-padding-left twelve-cols">
+                <h2>@(this.Localize("createInvoiceTitle"))</h2>
+            </div>
+        </div>
+        <div class="row">
+            <span>@(this.Localize("sixMonthsMsg"))</span>
+        </div>
+        <div class="row">
+            <div class="no-padding-left six-cols">
+                <span><label for="order-search">@(this.Localize("searchOrders"))</label> <label for="order-search">@(this.Localize("enterOrderNumber"))</label></span>
+                <input id="order-search" type="text" class="k-input" data-bind="value: myOrdersFilter" />
+            </div>
+            <div class="no-padding-left one-cols">
+                <label>&nbsp;</label>
+                <a class="backward no-margins" data-bind="click: searchMyOrders">@(this.Localize("Search"))</a>
+            </div>
+        </div>
+        <div class="row">
+            <span class="red" data-bind="text: myOrdersErrorText "></span>
+        </div>
+        <div class="row">
+            <div id="dgMyOrders"
+                 data-role="grid"
+                 data-auto-bind="false"
+                 data-pageable='{"pageSize": 10, "refresh": true, "messages": {"itemsPerPage": "", "display": "{0} - {1} of {2}","empty":""}}'
+                 data-bind="source: myOrdersDataSource, events: { dataBound: myOrdersDataBound }"
+                 data-scrollable="false"
+                 data-columns='[
+                 {"field": "Id" ,"title": "@this.Localize("orderId")", "headerAttributes": {"style": "text-align: left;"}},
+                 {"field": "Date", "title":"@this.Localize("date")", "template" : invSearch.dateMyOrdersTemplate(), "headerAttributes": {"style": "text-align: left;"}},
+                 {"field": "Name" ,"title": "@this.Localize("name")", "headerAttributes": {"style": "text-align: left;"}},
+                 {"field": "Status", "title":"@this.Localize("status")", "headerAttributes": {"style": "text-align: left;"}},
+                 {"field": "Volume", "title":"@this.Localize("volume")", "headerAttributes": {"style": "text-align: right;"}, "attributes": {"style": "text-align: right;"}},
+                 {"field": "Total", "title":"@this.Localize("total")", "headerAttributes": {"style": "text-align: right;"}, "attributes": {"style": "text-align: right;"}},
+                 {"field": "select", "title" : " ", "template" : invSearch.selectMyOrdersTemplate()} ]'>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ns4="http://bt.orderingsystem.hrbl.v01.orderproperty" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://bt.orderingsystem.hrbl.v01.item" xmlns="http://bt.orderingsystem.hrbl.v01.order" xmlns:ns1="http://bt.orderingsystem.hrbl.v01.responsepayment" targetNamespace="http://bt.orderingsystem.hrbl.v01.order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd13" namespace="http://bt.orderingsystem.hrbl.v01.responsepayment" />
+  <xs:import schemaLocation="http://usws1qa3bt01.hrbl.net:80/BT.Order/SubmitOrder.svc?xsd=xsd11" namespace="http://bt.orderingsystem.hrbl.v01.item" />
+  <xs:annotation>
+    <xs:appinfo>
+      <b:references xmlns:b="http://schemas.microsoft.com/BizTalk/2003">
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.responsepayment" />
+        <b:reference targetNamespace="http://bt.orderingsystem.hrbl.v01.item" />
+      </b:references>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Response">
+    <xs:annotation>
+      <xs:appinfo />
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ReferenceID" type="xs:string" />
+        <xs:element name="OrderID" type="xs:string" />
+        <xs:element name="ReceivedDate" type="xs:dateTime" />
+        <xs:element name="OrderMonth" type="xs:string" />
+        <xs:element name="CountryOfProcessing" type="xs:string" />
+        <xs:element name="DiscountPercentage" type="xs:decimal" />
+        <xs:element name="DistributorID" type="xs:string" />
+        <xs:element name="OrderItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns0:Item" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResponsePayments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" ref="ns1:ResponsePayment" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Status" type="xs:string" />
+        <xs:element name="Message" type="xs:string" />
+        <xs:element name="PaymentStatus" type="xs:string" />
+        <xs:element name="PayNearMeId" type="xs:string" />
+        <xs:element name="PayNearMeTrackingUrl" type="xs:string" />
+        <xs:element name="PayNearMeSlipUrl" type="xs:string" />
+        <xs:element name="PayNearMeSlipPdfUrl" type="xs:string" />
+        <xs:element name="PayNearMeCardSlipPdfUrl" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

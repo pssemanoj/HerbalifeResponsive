@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/10/HL.Shipping.Mexico.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd14" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="PostalCodeLookupRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PostalCodeLookupRequest" nillable="true" type="tns:PostalCodeLookupRequest" />
+  <xs:complexType name="PickupAlternativesForColonyRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesForColonyRequest" nillable="true" type="tns:PickupAlternativesForColonyRequest" />
+  <xs:complexType name="PickupAlternativesForColonyRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PickupAlternativesForColonyRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Colony" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Municipality" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesForColonyRequest_V01" nillable="true" type="tns:PickupAlternativesForColonyRequest_V01" />
+  <xs:complexType name="PickupAlternativesForPostalCodeRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesForPostalCodeRequest" nillable="true" type="tns:PickupAlternativesForPostalCodeRequest" />
+  <xs:complexType name="PickupAlternativesForPostalCodeRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PickupAlternativesForPostalCodeRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesForPostalCodeRequest_V01" nillable="true" type="tns:PickupAlternativesForPostalCodeRequest_V01" />
+  <xs:complexType name="AllStatesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AllStatesResponse" nillable="true" type="tns:AllStatesResponse" />
+  <xs:complexType name="AllStatesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AllStatesResponse">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="StateNames" nillable="true" type="q5:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AllStatesResponse_V01" nillable="true" type="tns:AllStatesResponse_V01" />
+  <xs:complexType name="MunicipalitiesForStateRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MunicipalitiesForStateRequest" nillable="true" type="tns:MunicipalitiesForStateRequest" />
+  <xs:complexType name="MunicipalitiesForStateResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MunicipalitiesForStateResponse" nillable="true" type="tns:MunicipalitiesForStateResponse" />
+  <xs:complexType name="MunicipalitiesForStateResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MunicipalitiesForStateResponse">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Municipalities" nillable="true" type="q8:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MunicipalitiesForStateResponse_V01" nillable="true" type="tns:MunicipalitiesForStateResponse_V01" />
+  <xs:complexType name="ColoniesForMunicipalityResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ColoniesForMunicipalityResponse" nillable="true" type="tns:ColoniesForMunicipalityResponse" />
+  <xs:complexType name="ColoniesForMunicipalityResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ColoniesForMunicipalityResponse">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ColonyNames" nillable="true" type="q10:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ColoniesForMunicipalityResponse_V01" nillable="true" type="tns:ColoniesForMunicipalityResponse_V01" />
+  <xs:complexType name="ZipCodeLookupResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ZipCodeLookupResponse" nillable="true" type="tns:ZipCodeLookupResponse" />
+  <xs:complexType name="ZipCodeLookupResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ZipCodeLookupResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ZipCodeLookupResponse_V01" nillable="true" type="tns:ZipCodeLookupResponse_V01" />
+</xs:schema>

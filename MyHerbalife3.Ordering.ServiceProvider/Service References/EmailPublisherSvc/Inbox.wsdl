@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:i0="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Email Publisher Inbox Service</wsdl:documentation>
+  <wsdl:import namespace="http://schemas.herbalife.com/EmailPublisher/V03/Service/Inbox" location="Schemas/InboxServiceBinding.wsdl" />
+  <wsdl:types />
+  <wsdl:service name="Inbox">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Email Publisher Inbox Service</wsdl:documentation>
+    <wsdl:port name="Inbox" binding="i0:Inbox">
+      <soap:address location="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Inbox1" binding="i0:Inbox">
+      <soap:address location="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Inbox2" binding="i0:Inbox">
+      <soap12:address location="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Inbox3" binding="i0:Inbox">
+      <soap12:address location="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

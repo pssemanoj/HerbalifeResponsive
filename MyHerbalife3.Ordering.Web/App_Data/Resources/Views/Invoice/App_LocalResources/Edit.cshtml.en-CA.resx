@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="YourPriceColumnTitle" xml:space="preserve">
+    <value>Your Price</value>
+    <comment>_GI119</comment>
+  </data>
+  <data name="ChangeAddressLink" xml:space="preserve">
+    <value>Change</value>
+    <comment>_GI52</comment>
+  </data>
+  <data name="zipCode" xml:space="preserve">
+    <value>Postal Code</value>
+    <comment>_GI120</comment>
+  </data>
+  <data name="collapse" xml:space="preserve">
+    <value>Collapse</value>
+    <comment>_GI54</comment>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>City</value>
+    <comment>_GI53</comment>
+  </data>
+  <data name="continue" xml:space="preserve">
+    <value>Continue</value>
+    <comment>_GI55</comment>
+  </data>
+  <data name="currencySign" xml:space="preserve">
+    <value>$</value>
+    <comment>_GI57</comment>
+  </data>
+  <data name="createTitle" xml:space="preserve">
+    <value>Create New Customer Receipt</value>
+    <comment>_GI56</comment>
+  </data>
+  <data name="TotalPriceColumnTitle" xml:space="preserve">
+    <value>Total Price</value>
+    <comment>_GI112</comment>
+  </data>
+  <data name="totalVP" xml:space="preserve">
+    <value>Total Volume</value>
+    <comment>_GI113</comment>
+  </data>
+  <data name="totalDue" xml:space="preserve">
+    <value>Total Due</value>
+    <comment>_GI110</comment>
+  </data>
+  <data name="totalPrice" xml:space="preserve">
+    <value>Total Price</value>
+    <comment>_GI111</comment>
+  </data>
+  <data name="typeSearch" xml:space="preserve">
+    <value>Type product name or SKU</value>
+    <comment>_GI114</comment>
+  </data>
+  <data name="yourCost" xml:space="preserve">
+    <value>Your Cost</value>
+    <comment>_GI117</comment>
+  </data>
+  <data name="yourPrice" xml:space="preserve">
+    <value>Your Price</value>
+    <comment>_GI118</comment>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Price Receipt</value>
+    <comment>_GI115</comment>
+  </data>
+  <data name="VPColumnTitle" xml:space="preserve">
+    <value>Total Volume</value>
+    <comment>_GI116</comment>
+  </data>
+  <data name="change" xml:space="preserve">
+    <value>Change</value>
+    <comment>_GI51</comment>
+  </data>
+  <data name="backOrderMsg" xml:space="preserve">
+    <value>Some products in the saved cart are no longer available and will not be included in your customer Receipt</value>
+    <comment>_GI246</comment>
+  </data>
+  <data name="newProductPriceDiffersMsg" xml:space="preserve">
+    <value>Product prices on this Receipt may not match the order. Prices may have changed since order {0} was created</value>
+    <comment>_GI245</comment>
+  </data>
+  <data name="savedCartAddressMsg" xml:space="preserve">
+    <value>Please review your address for accuracy. If this is correct, please click continue</value>
+    <comment>_GI248</comment>
+  </data>
+  <data name="savedCartNameMsg" xml:space="preserve">
+    <value>You currently have items in your cart. If you would like to save your current cart for later use, enter a name below.</value>
+    <comment>_GI247</comment>
+  </data>
+  <data name="additionalMemberInfo" xml:space="preserve">
+    <value>Additional Member Information</value>
+    <comment>_GI242</comment>
+  </data>
+  <data name="reqProducts" xml:space="preserve">
+    <value>Products are required</value>
+    <comment>_GI95</comment>
+  </data>
+  <data name="PhoneOrEmail" xml:space="preserve">
+    <value>Phone Or Email Required </value>
+  </data>
+  <data name="moreMemberInfo" xml:space="preserve">
+    <value>More Member Information</value>
+    <comment>_GI244</comment>
+  </data>
+  <data name="otherMemberInfo" xml:space="preserve">
+    <value>Other Member Information</value>
+    <comment>_GI243</comment>
+  </data>
+  <data name="priceInfo" xml:space="preserve">
+    <value>Click "Reset" whenever you want to reset the all  value .</value>
+    <comment>_GI252</comment>
+  </data>
+  <data name="browseContacts" xml:space="preserve">
+    <value>Browse Contacts</value>
+    <comment>_GI48</comment>
+  </data>
+  <data name="areaCode" xml:space="preserve">
+    <value>Area Code</value>
+    <comment>_GI47</comment>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>_GI50</comment>
+  </data>
+  <data name="browseProducts" xml:space="preserve">
+    <value>Browse Products</value>
+    <comment>_GI49</comment>
+  </data>
+  <data name="returnToInvoice" xml:space="preserve">
+    <value>Return to Receipt</value>
+    <comment>_GI256</comment>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>Add</value>
+    <comment>_GI45</comment>
+  </data>
+  <data name="shipping" xml:space="preserve">
+    <value>Shipping &amp; Handling Fee</value>
+    <comment>_GI262</comment>
+  </data>
+  <data name="addSavedCart" xml:space="preserve">
+    <value>Add Saved Cart</value>
+    <comment>_GI46</comment>
+  </data>
+  <data name="invoiceType" xml:space="preserve">
+    <value>Receipt Type</value>
+    <comment>_GI75</comment>
+  </data>
+  <data name="lastName" xml:space="preserve">
+    <value>Last Name</value>
+    <comment>_GI76</comment>
+  </data>
+  <data name="member" xml:space="preserve">
+    <value>Member</value>
+    <comment>_GI77</comment>
+  </data>
+  <data name="invoiceInformation" xml:space="preserve">
+    <value>Customer Information</value>
+    <comment>_GI72</comment>
+  </data>
+  <data name="invoiceMessage" xml:space="preserve">
+    <value>This Receipt will not adjust any credit card charges that are processed for orders made on your website. For those orders, please be sure the Receipt you create reflects exact charges as paid.</value>
+    <comment>_GI73</comment>
+  </data>
+  <data name="InvoiceShipToAddress" xml:space="preserve">
+    <value>Receipt Ship-To Address</value>
+    <comment>_GI74</comment>
+  </data>
+  <data name="memberInformation" xml:space="preserve">
+    <value>Member Information</value>
+    <comment>_GI78</comment>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>or</value>
+    <comment>_GI82</comment>
+  </data>
+  <data name="orEnter" xml:space="preserve">
+    <value>or enter information below</value>
+    <comment>_GI83</comment>
+  </data>
+  <data name="percentage" xml:space="preserve">
+    <value>%</value>
+    <comment>_GI84</comment>
+  </data>
+  <data name="note" xml:space="preserve">
+    <value>Note:</value>
+    <comment>_GI79</comment>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>Notes</value>
+    <comment>_GI80</comment>
+  </data>
+  <data name="notesMessage" xml:space="preserve">
+    <value>“Notes entered here will appear on the on Receipt”</value>
+    <comment>_GI81</comment>
+  </data>
+  <data name="EarnBase" xml:space="preserve">
+    <value>Earn Base</value>
+    <comment>_GI62</comment>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email Address</value>
+    <comment>_GI63</comment>
+  </data>
+  <data name="ext" xml:space="preserve">
+    <value>Ext</value>
+    <comment>_GI64</comment>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Sale Date</value>
+    <comment>_GI59</comment>
+  </data>
+  <data name="DeleteColumnTitle" xml:space="preserve">
+    <value>Delete Column Title</value>
+    <comment>_GI60</comment>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>Discount</value>
+    <comment>_GI61</comment>
+  </data>
+  <data name="faceToface" xml:space="preserve">
+    <value>Check here if this sale was made in person</value>
+    <comment>_GI65</comment>
+  </data>
+  <data name="HandlingFee" xml:space="preserve">
+    <value>Handling Fee</value>
+    <comment>_GI69</comment>
+  </data>
+  <data name="individualProducts" xml:space="preserve">
+    <value>Add Individual Products</value>
+    <comment>_GI70</comment>
+  </data>
+  <data name="instructions" xml:space="preserve">
+    <value>Complete the fields below, then click the Continue button to view your Receipt.</value>
+    <comment>_GI71</comment>
+  </data>
+  <data name="fee" xml:space="preserve">
+    <value>Handing Fee</value>
+    <comment>_GI66</comment>
+  </data>
+  <data name="firstName" xml:space="preserve">
+    <value>First Name</value>
+    <comment>_GI67</comment>
+  </data>
+  <data name="handling" xml:space="preserve">
+    <value>Handling</value>
+    <comment>_GI68</comment>
+  </data>
+  <data name="sku" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_GI101</comment>
+  </data>
+  <data name="SkuColumnTitle" xml:space="preserve">
+    <value>SKU</value>
+    <comment>_GI102</comment>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>State</value>
+    <comment>_GI103</comment>
+  </data>
+  <data name="RetailPriceColumnTitle" xml:space="preserve">
+    <value>Retail Price</value>
+    <comment>_GI98</comment>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>Select</value>
+    <comment>_GI99</comment>
+  </data>
+  <data name="show" xml:space="preserve">
+    <value>Show</value>
+    <comment>_GI100</comment>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>Taxes</value>
+    <comment>_GI107</comment>
+  </data>
+  <data name="taxBased" xml:space="preserve">
+    <value>My Tax Based On</value>
+    <comment>_GI108</comment>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Edit Receipt</value>
+    <comment>_GI109</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Status</value>
+    <comment>_GI104</comment>
+  </data>
+  <data name="streetAddress" xml:space="preserve">
+    <value>Street Address</value>
+    <comment>_GI105</comment>
+  </data>
+  <data name="Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+    <comment>_GI106</comment>
+  </data>
+  <data name="retailPrice" xml:space="preserve">
+    <value>Retail Price</value>
+    <comment>_GI97</comment>
+  </data>
+  <data name="productInformation" xml:space="preserve">
+    <value>Product Information</value>
+    <comment>_GI88</comment>
+  </data>
+  <data name="ProductNameColumnTitle" xml:space="preserve">
+    <value>Consumption Name </value>
+    <comment>_GI89</comment>
+  </data>
+  <data name="profit" xml:space="preserve">
+    <value>Estimated profit</value>
+    <comment>_GI90</comment>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Phone Number</value>
+    <comment>_GI85</comment>
+  </data>
+  <data name="phoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+    <comment>_GI86</comment>
+  </data>
+  <data name="productDescription" xml:space="preserve">
+    <value>Product Descrption</value>
+    <comment>_GI87</comment>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>Qty</value>
+    <comment>_GI91</comment>
+  </data>
+  <data name="customer" xml:space="preserve">
+    <value>Customer</value>
+    <comment>_GI58</comment>
+  </data>
+  <data name="reqStatus" xml:space="preserve">
+    <value>Status is required</value>
+    <comment>_GI96</comment>
+  </data>
+  <data name="reqInvoiceDate" xml:space="preserve">
+    <value>Date is reqruired</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="reqInvoiceDescription" xml:space="preserve">
+    <value>Consumption plan name is required</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="reqVolumePoint" xml:space="preserve">
+    <value>Volume Point  is required</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="reqQty" xml:space="preserve">
+    <value>Quantity   is required</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="reqTotalAmount" xml:space="preserve">
+    <value>Total Price is required</value>
+    <comment>_GI94</comment>
+  </data>
+  <data name="QuantityColumnTitle" xml:space="preserve">
+    <value>Quantity</value>
+    <comment>_GI92</comment>
+  </data>
+  <data name="reqFirstName" xml:space="preserve">
+    <value>First Name is required</value>
+    <comment>_GI93</comment>
+  </data>
+  <data name="userGuide" xml:space="preserve">
+    <value />
+  </data>
+  <data name="resetToDefault" xml:space="preserve">
+    <value>Reset to default values</value>
+  </data>
+  <data name="purched" xml:space="preserve">
+    <value>Verify you have purchased the inventory in Canada</value>
+  </data>
+  <data name="Profit" xml:space="preserve">
+    <value>Verify it's a profitable sale</value>
+  </data>
+  <data name="EmailReq" xml:space="preserve">
+    <value>A valid Email Address is required. </value>
+  </data>
+  <data name="EmailorPhoneReq" xml:space="preserve">
+    <value> Either Email or Phone must be Entered. </value>
+  </data>
+  <data name="PhoneVelidation" xml:space="preserve">
+    <value> Phone number should be 10 characters. </value>
+  </data>
+  <data name="Productsale" xml:space="preserve">
+    <value>Retail Sale</value>
+  </data>
+  <data name="ClubReciept" xml:space="preserve">
+    <value>Club Visit/Sale</value>
+  </data>
+  <data name="productName" xml:space="preserve">
+    <value>Product Name </value>
+  </data>
+  <data name="paymentType" xml:space="preserve">
+    <value>Payment Type</value>
+    <comment>_GI104</comment>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Please check the Nutritional Information on the Product Label for each SKU in order to calculate the accurate Serving Size for the Product. In order to calculate the VP of each Product, you may use the following formula: Volume of the SKU / Total Number of servings = Volume Point per Serving.</value>  
+  </data>
+  <data name="Information2" xml:space="preserve">
+    <value>As per current limit applied on the site,Consumption Plans can have 20 VP per every 1 Qty added.</value>
+  </data>
+  <data name="emailMessage" xml:space="preserve">
+    <value>Email or Telephone number is required for the sale to count toward AMP qualification.  Click Submit if you wish to proceed or click Cancel if you wish to edit the receipt or end the process.</value>
+  </data>
+  <data name="profitMessage" xml:space="preserve">
+    <value>You have either not acknowledged that it’s a profitable sale or the inventory is purchased in Canada.  Submit if you agree, else Cancel to acknowledge.</value>
+  </data>
+  <data name="Proceed" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="CreateReceipt" xml:space="preserve">
+    <value>Create Receipt</value>
+  </data>
+  <data name="Conformation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="invalidPhoneEmail" xml:space="preserve">
+    <value>Please provide customer email or phone.</value>
+  </data>
+  <data name="Message1" xml:space="preserve">
+    <value>Receipts delivered to customers will request that the customer click a link to help you validate the sale with Herbalife</value>
+  </data>
+  <data name="country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="countryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="SaveContact" xml:space="preserve">
+    <value>Save contacts</value>
+  </data>
+  <data name="processedMsg" xml:space="preserve">
+    <value>Please save contact to proceed.</value>
+  </data>
+</root>

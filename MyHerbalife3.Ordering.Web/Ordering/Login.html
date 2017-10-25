@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="IE=9,IE=8" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+    <script src="//kendo.cdn.telerik.com/2014.1.528/js/kendo.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20130526/json2.min.js"></script>
+    <script type="text/javascript">
+            function AuthModel() {
+                this.userName = "",
+                this.password = "",
+                this.loginClick = function() {
+                    var authViewModel = { userName: this.userName, password: this.password};
+                    $.ajax({
+                        url: "/Ordering/OrderingAuth/Logon",
+                        type: 'POST',
+                        data: JSON.stringify(authViewModel),
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            $('#loading').text('');
+
+                            if (data =="False") {
+                                alert("error");
+                            } else {
+                                document.location.href = "/Ordering/Pricelist.aspx";
+                                $('#loading').text('请稍等，您被重定向').css({'font-weight':'bold', 'color': '#7AC142'});
+                            }
+                        },
+                        error: function (data) {
+                        },
+                        beforeSend: function () {
+                            $('#loading').html('<div><img src="../Ordering/SharedUI/Images/loadingAnimation.gif"/></div><div>请稍等...</div>');
+                        }
+                    });
+
+                };
+            }
+
+            $(document).ready(function () {
+                var authModel = kendo.observable(new AuthModel());
+                kendo.bind($("#dvOrderingLogin"), authModel);
+
+                $("input[type=password]").on("keydown", function (e) {
+                    if (e.keyCode === 13) {
+                        var btn = $("#btnLogin");
+                        btn.focus();
+                        btn.click();
+                    }
+                });
+            });
+    </script>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Proxima Nova',Oxygen,sans-serif;
+            margin: 0;
+        }
+
+        h2, h3 {
+            font-weight: normal;
+        }
+
+        .container {
+            display: block;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        #logo-only {
+            height: 23px;
+            margin: 0 auto;
+            padding: 15px 0;
+            width: 150px;
+        }
+
+        @media (min-width: 660px) {
+            header #logo-only {
+                float: left;
+                margin: 12px 0;
+                padding: 0;
+            }
+        }
+
+        header {
+            background-color: #eee;
+            color: #fff;
+            height: auto;
+            width: 100%;
+        }
+
+        header {
+            height: 50px;
+        }
+
+        .login-container {
+            background-color: #f3f3f3;
+            color: #515151;
+            margin: 150px auto 0;
+            padding: 30px 40px;
+            max-width: 380px;
+            min-width: 300px;
+        }
+
+        #dvOrderingLogin h3 {
+            margin: 15px 0 0;
+        }
+
+        #dvOrderingLogin input {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 2px;
+            box-sizing: border-box;
+            color: #515151;
+            margin: 5px 0 0;
+            outline: medium none;
+            padding: 7px;
+            width: 100%;
+        }
+
+        .button-submit {
+            background-color: #0080ff;
+            border: 0 none;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 15px 0;
+            outline: 0 none;
+            padding: 0.5em 1.5em;
+            text-align: center;
+            width: 100%;
+        }
+
+            .button-submit:hover {
+                background-color: #148aff;
+            }
+
+        #loading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div id="logo-only">
+                <a href="javascript:void;"><img src="Ordering/SharedUI/Images/Herbalife-Logo.png"></a>
+            </div>
+        </div>
+    </header>
+    <div class="login-container">
+        <h2>康宝莱客户登陆</h2>
+        <div id="dvOrderingLogin">
+            <div>
+                <h3>资格证号</h3>
+                <input type="text" data-bind="value: userName" placeholder="资格证号" />
+            </div>
+            <div>
+                <h3>密码</h3>
+                <input type="password" data-bind="value: password" placeholder="密码" />
+            </div>
+            <div>
+                <button data-role="button" data-bind="click: loginClick" class="button-submit" id="btnLogin">登录</button>
+            </div>
+        </div>
+        <div id="loading"></div>
+    </div>
+</body>
+</html>

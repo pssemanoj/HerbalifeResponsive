@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://bt.orderingsystem.hrbl.v01.handling" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://bt.orderingsystem.hrbl.v01.handling" id="Handling" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Handling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="IncludeInvoice">
+          <xs:annotation>
+            <xs:documentation>Specify how to handle invoice</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="WITHPACKAGE" />
+              <xs:enumeration value="TODISTRIBUTOR" />
+              <xs:enumeration value="RECYCLEINVOICE" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="PickupName" type="xs:string">
+          <xs:annotation>
+            <xs:documentation>For pick up order Name of person picking up order</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ShippingInstructions" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

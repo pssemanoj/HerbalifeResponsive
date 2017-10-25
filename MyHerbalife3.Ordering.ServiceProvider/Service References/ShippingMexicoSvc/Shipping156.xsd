@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd8" namespace="http://herbalife.com/2010/01/21/HL.Shipping.ValueObjects" />
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/Shipping/Mexico/Shipping.Mexico.svc?xsd=xsd10" namespace="http://herbalife.com/2008/06/23/HL.Shipping.ValueObjects" />
+  <xs:complexType name="ShippingAlternativesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShippingAlternativesResponse" nillable="true" type="tns:ShippingAlternativesResponse" />
+  <xs:complexType name="ArrayOfShippingOption_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShippingOption_V01" nillable="true" type="tns:ShippingOption_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShippingOption_V01" nillable="true" type="tns:ArrayOfShippingOption_V01" />
+  <xs:complexType name="ShippingOption_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ShippingOption">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CourierName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayOrder" type="xs:int" />
+          <xs:element minOccurs="0" name="End" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FreightCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+          <xs:element xmlns:q2="http://herbalife.com/2010/01/21/HL.Shipping.ValueObjects" minOccurs="0" name="ShippingSource" nillable="true" type="q2:ShippingSource_V01" />
+          <xs:element minOccurs="0" name="Start" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="WarehouseCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ShippingOption_V01" nillable="true" type="tns:ShippingOption_V01" />
+  <xs:complexType name="ShippingOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShippingOption" nillable="true" type="tns:ShippingOption" />
+  <xs:complexType name="ArrayOfCityBoxAddress_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CityBoxAddress_V01" nillable="true" type="tns:CityBoxAddress_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCityBoxAddress_V01" nillable="true" type="tns:ArrayOfCityBoxAddress_V01" />
+  <xs:complexType name="CityBoxAddress_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ShippingOption">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CountyDistrict" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FreightCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Line2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LocationDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StateProvinceTerritory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WarehouseCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CityBoxAddress_V01" nillable="true" type="tns:CityBoxAddress_V01" />
+  <xs:complexType name="PickupAlternativesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesResponse" nillable="true" type="tns:PickupAlternativesResponse" />
+  <xs:complexType name="PickupAlternativesResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PickupAlternativesResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PickupAlternatives" nillable="true" type="tns:ArrayOfPickupOption_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupAlternativesResponse_V01" nillable="true" type="tns:PickupAlternativesResponse_V01" />
+  <xs:complexType name="ArrayOfPickupOption_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PickupOption_V01" nillable="true" type="tns:PickupOption_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPickupOption_V01" nillable="true" type="tns:ArrayOfPickupOption_V01" />
+  <xs:complexType name="PickupOption_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ShippingOption_V01">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BranchName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q4="http://herbalife.com/2008/06/23/HL.Shipping.ValueObjects" minOccurs="0" name="PickupAddress" nillable="true" type="q4:ShippingAddress_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PickupOption_V01" nillable="true" type="tns:PickupOption_V01" />
+</xs:schema>

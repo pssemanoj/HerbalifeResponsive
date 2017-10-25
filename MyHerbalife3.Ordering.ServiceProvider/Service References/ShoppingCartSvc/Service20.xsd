@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://HL.orderimport.hrbl.v01.order.valueobjects" elementFormDefault="qualified" targetNamespace="http://HL.orderimport.hrbl.v01.order.valueobjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/ShoppingCart/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" />
+  <xs:simpleType name="FControlOrderStatusTypeForQuery">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Pending" />
+      <xs:enumeration value="DeclinedRealTime" />
+      <xs:enumeration value="DeclinedRealTimeFraudulent" />
+      <xs:enumeration value="FcontrolBackendDecline" />
+      <xs:enumeration value="FcontrolBackendDeclineFraudulent" />
+      <xs:enumeration value="Processed" />
+      <xs:enumeration value="Errored" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FControlOrderStatusTypeForQuery" nillable="true" type="tns:FControlOrderStatusTypeForQuery" />
+  <xs:complexType name="ArrayOfFControlOrderForQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FControlOrderForQuery" nillable="true" type="tns:FControlOrderForQuery" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFControlOrderForQuery" nillable="true" type="tns:ArrayOfFControlOrderForQuery" />
+  <xs:complexType name="FControlOrderForQuery">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FControlOverride" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FControlOverrideApprover" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FControlStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HpsStatus" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://herbalife.com/2008/06/23/HL.Order.ValueObjects" minOccurs="0" name="Order" nillable="true" type="q1:Order_V01" />
+      <xs:element minOccurs="0" name="OrderNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FControlOrderForQuery" nillable="true" type="tns:FControlOrderForQuery" />
+</xs:schema>

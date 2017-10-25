@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/11/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/11/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" />
+  <xs:complexType name="GetProfileSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileSubscriptionResponseBase" nillable="true" type="tns:GetProfileSubscriptionResponseBase" />
+  <xs:complexType name="GetProfileSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetProfileSubscriptionResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" minOccurs="0" name="SubscriptionProfile" nillable="true" type="q2:SubscriptionProfile_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProfileSubscriptionResponse_V01" nillable="true" type="tns:GetProfileSubscriptionResponse_V01" />
+  <xs:complexType name="FixBrokenProfileRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FixBrokenProfileRequestBase" nillable="true" type="tns:FixBrokenProfileRequestBase" />
+  <xs:complexType name="FixBrokenProfileRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FixBrokenProfileRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FixBrokenProfileRequest_V01" nillable="true" type="tns:FixBrokenProfileRequest_V01" />
+  <xs:complexType name="UpdateProfileSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateProfileSubscriptionResponseBase" nillable="true" type="tns:UpdateProfileSubscriptionResponseBase" />
+  <xs:complexType name="UpdateProfileSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateProfileSubscriptionResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateProfileSubscriptionResponse_V01" nillable="true" type="tns:UpdateProfileSubscriptionResponse_V01" />
+  <xs:complexType name="IsUniqueEmailAddressResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueEmailAddressResponse" nillable="true" type="tns:IsUniqueEmailAddressResponse" />
+  <xs:complexType name="IsUniqueEmailAddressResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IsUniqueEmailAddressResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsUniqueEmail" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueEmailAddressResponse_V01" nillable="true" type="tns:IsUniqueEmailAddressResponse_V01" />
+  <xs:complexType name="GetStaffProfileSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetStaffProfileSubscriptionResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" minOccurs="0" name="StaffSubscriptionProfile" nillable="true" type="q6:StaffSubscriptionProfile_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetStaffProfileSubscriptionResponse_V01" nillable="true" type="tns:GetStaffProfileSubscriptionResponse_V01" />
+  <xs:complexType name="GetStaffProfileSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetStaffProfileSubscriptionResponseBase" nillable="true" type="tns:GetStaffProfileSubscriptionResponseBase" />
+  <xs:complexType name="UpdateStaffProfileSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateStaffProfileSubscriptionResponseBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateStaffProfileSubscriptionResponse_V01" nillable="true" type="tns:UpdateStaffProfileSubscriptionResponse_V01" />
+  <xs:complexType name="UpdateStaffProfileSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateStaffProfileSubscriptionResponseBase" nillable="true" type="tns:UpdateStaffProfileSubscriptionResponseBase" />
+  <xs:complexType name="EmailValidatorResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailValidatorResponseBase" nillable="true" type="tns:EmailValidatorResponseBase" />
+  <xs:complexType name="EmailValidatorResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmailValidatorResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" minOccurs="0" name="ValidationResults" nillable="true" type="q10:EmailValidator_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailValidatorResponse_V01" nillable="true" type="tns:EmailValidatorResponse_V01" />
+  <xs:complexType name="ProcessListResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q11:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessListResponseBase" nillable="true" type="tns:ProcessListResponseBase" />
+  <xs:complexType name="ProcessListResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProcessListResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" minOccurs="0" name="Job" nillable="true" type="q12:UploadJob_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProcessListResponse_V01" nillable="true" type="tns:ProcessListResponse_V01" />
+</xs:schema>

@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Може да платите годишна членарина само за 1 година</value>
+  <comment>_G1167</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU броевите на годишната членарина не може да се преместат во кошничката</value>
+  <comment>_G1168</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Сигурни сте дека сакате да ја сторнирате нарачката? Со кликање на „ОК“ ќе се избришат сите производи од вашата кошничка.</value>
+  <comment>_G1169</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Бидејќи нема производи со вашата нарачка за годишна членарина, од кошничката ќе бидат избришани сите ставки што не се производи.</value>
+  <comment>_G1170</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Во нарачка за годишна членарина не може да се додадат ставки од заостанати нарачки.</value>
+  <comment>_G1171</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Картичката не е прифатена. Проверете ги вашите картички.</value>
+  <comment>_G1172</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Погрешен формат на податоци, внесете точни податоци.</value>
+  <comment>_G1173</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Внесовте шифра што се дуплира. Внесете повторно.</value>
+  <comment>_G1174</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Во една нарачка може да се купат најмногу {0} влезници за настани.</value>
+  <comment>_G1175</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>На овој сајт не е дозволено купување на влезници за настани.</value>
+  <comment>_G1176</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>За производот {0} е достапна само количина {1}. Коригирајте ја внесената количина за да го додадете овој производ во кошничката.</value>
+  <comment>_G1177</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>За ставка {0}, 1 или повеќе може да се направат како заостаната нарачка.</value>
+  <comment>_G1178</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>За SKU {0}, количината не може да биде поголема од {1}.</value>
+  <comment>_G1179</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Се извинуваме, во базата на податоци нема регистрирано ваша кредитна картичка. Јавете се во Службата за услуги на Дистрибутерите</value>
+  <comment>_G1180</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Погрешен поштенски број.</value>
+  <comment>_G1181</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: Доцните со плаќањето годишна членарина {0} години и пред да направите нарачка од типот „Повторна продажба“ мора да ја платите членарината. Сменете го типот на нарачка во „Лична“ за да ја платите годишната членарина.</value>
+  <comment>_G1182</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Во моментов производот {0} го нема на залиха, количината е сега 0.</value>
+  <comment>_G1183</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Лимит за списанието „Today“ е</value>
+  <comment>_G1184</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Во кошничката може да се додадат максимум {0} списанија.</value>
+  <comment>_G1185</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Псевдонимот е зафатен, внесете друго име.</value>
+  <comment>_G1186</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Онлајн нарачката не е достапна.</value>
+  <comment>_G1187</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Не е дозволено онлајн нарачување.</value>
+  <comment>_G1188</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Во нарачка за плаќање годишна членарина може да се додаде само производ</value>
+  <comment>_G1189</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Вкупниот износ на уплата не се совпаѓа со вкупниот износ на нарачката.</value>
+  <comment>_G1190</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Додајте износ повисок од 0.</value>
+  <comment>_G1191</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Проверете ги податоците за картичката.</value>
+  <comment>_G1192</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Проверете го ID бројот и PIN кодот на Членот и обидете се повторно. Ако повторно има проблеми, јавете се во Одделот за Членови на +385 1 3820 184</value>
+  <comment>_*R125</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Завршете со купувањето на годишната членарина пред да додадете други производи во кошничката.</value>
+  <comment>_G1194</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Завршете со купувањето на годишната членарина пред да купите влезници за настани.</value>
+  <comment>_G1195</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Внесете број.</value>
+  <comment>_G1196</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Внесете количина за шифра {0}.</value>
+  <comment>_G1197</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Внесете единствена локација за подигање.</value>
+  <comment>_G1198</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Внесете точен град.</value>
+  <comment>_G1199</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Внесете точно име.</value>
+  <comment>_G1200</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Внесете точен псевдоним.</value>
+  <comment>_G1201</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Внесете износ на донација, освен нула (0).</value>
+  <comment>_G1202</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Внесете имејл адреса.</value>
+  <comment>_G1203</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Внесете податоци за плаќањето.</value>
+  <comment>_G1204</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Внесете CVV.</value>
+  <comment>_G1205</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Внесете колку годишни членарини сакате да купите.</value>
+  <comment>_G1206</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Внесете точна имејл адреса.</value>
+  <comment>_G1207</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Внесете точно име.</value>
+  <comment>_G1208</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Внесете точно презиме.</value>
+  <comment>_G1209</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Внесете точно средно име.</value>
+  <comment>_G1210</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Внесете ги сите задолжителни податоци за испораката.</value>
+  <comment>_G1211</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Внесете го карактеристичниот број во соодветен формат.</value>
+  <comment>_G1212</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Внесете ја екстензијата во соодветен формат.</value>
+  <comment>_G1213</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Внесете примач.</value>
+  <comment>_G1214</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Внесете карактеристичен број.</value>
+  <comment>_G1215</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Внесете град.</value>
+  <comment>_G1216</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Внесете ја наставката</value>
+  <comment>_G1217</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Внесете име</value>
+  <comment>_G1218</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Внесете презиме</value>
+  <comment>_G1219</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Пополнете го задолжителното поле.</value>
+  <comment>_G1220</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Внесете телефонски број.</value>
+  <comment>_G1221</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>Внесете држава.</value>
+  <comment>_G1222</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Пополнете го полето за адреса.</value>
+  <comment>_G1223</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Внесете поштенски број.</value>
+  <comment>_G1224</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Внесете го телефонскиот број во соодветен формат.</value>
+  <comment>_G1225</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Може да зачувате максимум {0} податоци за картички. За да додадете нова картичка, избришете картичка од веќе зачуваните картички.</value>
+  <comment>_G1226</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Важно:&lt;br/&gt;Овој сајт има најдобар приказ со Internet Explorer или Firefox.</value>
+  <comment>_*H279</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Внесете адреса на испорака пред да ја завршите оваа нарачка за подигање.</value>
+  <comment>_G1228</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Изберете локација.</value>
+  <comment>_G1229</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Изберете време на испорака.</value>
+  <comment>_G1230</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Изберете тип на нарачка.</value>
+  <comment>_G1231</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Изберете локација на подигање.</value>
+  <comment>_G1232</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Изберете локација на подигање.</value>
+  <comment>_G1233</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Изберете име на лице кое го врши подигањето</value>
+  <comment>_G1234</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Внесете телефонски број на лице кое го врши подигањето</value>
+  <comment>_G1235</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Изберете време на подигање</value>
+  <comment>_G1236</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Изберете адреса на испорака</value>
+  <comment>_G1237</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Изберете Да/Не.</value>
+  <comment>_G1238</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Примарната адреса не може да се избрише.</value>
+  <comment>_G1239</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Параметрите за примарното подигање не се бришат.</value>
+  <comment>_G1240</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Продолжете со плаќањето.</value>
+  <comment>_G1241</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Продолжете на првата страница.</value>
+  <comment>_G1242</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Не е можна испорака до внесениот поштенски број</value>
+  <comment>_G1243</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU-бројот {0} не е достапен.</value>
+  <comment>_G1244</comment></data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Задолжителен е број за СМС пораки.</value>
+  <comment>_G1245</comment></data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Се извинуваме! Нема да може да направите нарачка, од веб-сајтот на Кореја може да прават нарачки само Дистрибутери од Кореја.</value>
+  <comment>_G1246</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Се извинуваме, не може да ги додадете производите во кошничката бидејќи со нивно додавање го надминувате лимитот на заработка.</value>
+  <comment>_G1247</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>Системска грешка.</value>
+  <comment>_G1248</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Месецот на нарачка е сменет!)</value>
+  <comment>_G1249</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Додадениот шифра {0} ќе се се однесува на заостанати нарачки.</value>
+  <comment>_G1250</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Погрешна држава.</value>
+  <comment>_G1251</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Адресата треба да содржи најмалку една буква.</value>
+  <comment>_G1252</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Адресата треба да содржи најмалку еден број, едно празно место и една буква.</value>
+  <comment>_G1253</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Трансакцијата не е дозволена, проверете ги податоците за кредитните картички. Ако повторно има проблеми, јавете се во Службата за услуги на Дистрибутерите</value>
+  <comment>_G1254</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Трансакцијата не е дозволена, јавете се во Службата за услуги на Дистрибутерите</value>
+  <comment>_G1255</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Погрешен поштенски број.</value>
+  <comment>_G1256</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Во нарачката нема производи за купување.</value>
+  <comment>_G1257</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Во моментов нема доволно залихи за производот {0}. Расположлива количина е {1}.</value>
+  <comment>_G1258</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Не се избрани производи за додавање во нарачката.</value>
+  <comment>_G1259</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Не се избрани производи за да се пресмета волуменот.</value>
+  <comment>_G1260</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Веќе ја има оваа адреса во базата податоци</value>
+  <comment>_G1261</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Нарачката го надминува лимитот за купување. Имате преостанати {0} ВП. Коригирајте ја нарачката за да продолжите.</value>
+  <comment>_G1262</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Трансакцијата е одбиена за оваа картичка</value>
+  <comment>_G1263</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Списанието „Today“ е додадено во кошничката.</value>
+  <comment>_G1264</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Не можеме да ја завршиме вашата нарачка. За помош, исконтактирајте ја Службата за односи со Дистрибутери на 1-310-218-6089 и кажете им дека кодот за грешка е 01.</value>
+  <comment>_G1265</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Не можеме да ја завршиме вашата нарачка. За помош, исконтактирајте ја Службата за односи со Дистрибутери и кажете им дека кодот за грешка е 05.</value>
+  <comment>_G1266</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Не можеме да ја процесираме вашата нарачка. Проверете ја вашата адреса и обидете се повторно. Ако повторно има проблеми, исконтактирајте ја Службата за услуги на Дистрибутерите.</value>
+  <comment>_G1267</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Се извинуваме. Валутата не може да се претвори во друга, исконтактирајте ја Службата за услуги на Дистрибутерите.</value>
+  <comment>_G1268</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Веќе имате влезници за настани во кошничката, дали сакате да ја испразните кошничката?</value>
+  <comment>_G1269</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Вашата примарна картичка ќе биде избришана. Пред да ја избришете оваа картичка, зачувајте друга картичка како примарна.</value>
+  <comment>_G1270</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Повеќе не може да ја користите оваа картичка поради неколкукратни одбивања</value>
+  <comment>_G1271</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Иста картичка не може да додавате повеќе од еднаш.</value>
+  <comment>_G1272</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Овој производ не може да го додадете во кошничката.</value>
+  <comment>_G1273</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Без производи во кошничката не може да одите на страница {0}.</value>
+  <comment>_G1274</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Во вашата кошничка имате заостанати нарачки што ќе се избришат ако како опција за испорака изберете подигање. Дали сакате да продолжите? („Да“ или „Не“)</value>
+  <comment>_G1275</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Месецот на нарачка за оваа нарачка го сменивте во {0}. Сакате ли да продолжите со овој избор?</value>
+  <comment>_G1276</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Имате влезници за настани во кошничката, дали сакате да ја испразните кошничката?</value>
+  <comment>_G1277</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Имате производи во кошничката. Дали сакате да ја испразните кошничката пред да продолжите да купувате влезници за настани?</value>
+  <comment>_G1278</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Дали го избравте {0} како месец на нарачка?</value>
+  <comment>_G1279</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Избравте подигање од WALDOS, изборот на производи што ќе може да ги нарачате е ограничен.</value>
+  <comment>_G1280</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Избравте да пребарате производ без да направите нарачка, тој производ нема да може да го додадете во кошничката.</value>
+  <comment>_G1281</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Успешно го додадовте HFF во кошничката.</value>
+  <comment>_G1282</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Може да платите годишна членарина само за 1 година</value>
+  <comment>_G1283</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Мора да избришете една од вашите кредитни картички за да ги смените производите во кошничката</value>
+  <comment>_G1284</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>За да продолжите мора да изберете опција за испорака или за подигање.</value>
+  <comment>_G1285</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Неодамна направивте идентична нарачка на {0}. Ако е ова дупликат нарачка, кликнете „Сторнирај нарачка“. За да продолжите со нарачката, кликнете „Испрати“.</value>
+  <comment>_G1286</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Вашата годишна членарина треба да се плати на {0}</value>
+  <comment>_G1287</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Треба да платите годишна членарина, автоматски ќе ја додадеме во кошничката со производи.</value>
+  <comment>_G1288</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Треба да платите годишн членаринa. Ja додадовме во вашата кошничка.</value>
+  <comment>_G1289</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Вашата кредитна картичка е истечена. Кликнете на „Измени“ и ажурирајте го датумот на истекување.</value>
+  <comment>_G1290</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Вашата кредитна картичка е истечена. Јавете се на директната линија на вашата локална Служба за услуги на Дистрибутерите.</value>
+  <comment>_G1291</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Не можеме да го процесираме барањето, исконтактирајте ја Службата за услуги на Дистрибутерите на (МСТ ИНТЕРНЕСХНЕЛ Д.О.О.Е.Л., БЛВД. ИЛИНДЕН 103 ЛОК.1, 1000 СКОПЈЕ)</value>
+  <comment>_G1292</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Не можеме да го процесираме барањето, исконтактирајте ја Службата за услуги на Дистрибутерите на (МСТ ИНТЕРНЕСХНЕЛ Д.О.О.Е.Л., БЛВД. ИЛИНДЕН 103 ЛОК.1, 1000 СКОПЈЕ)</value>
+  <comment>_G1293</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Вашата претходна нарачка беше испратена пред направените измени во кошничката. Бројот на вашата нарачка е {0}. Статусот на оваа нарачка може да го потврдите со јавување во Службата за помош при нарачка на +389 231 09215 од 9:00 до 17:00 ч. од понеделник до петок. [Пацифичко стандардно време] или со кликање овде. (Може да биде потребен и 1 час пред нарачката да се прикаже.&lt;br&gt;Ако сакате да направите нова нарачка, додајте повторно производи во кошничката.</value>
+  <comment>_G1294</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Вашата задолжителна годишна членарина е оставена во кошничката.</value>
+  <comment>_G1295</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Вашите податоци за испорака веќе не важат, кошничката со производи ќе биде испразнета.</value>
+  <comment>_G1296</comment></data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Внесете околија.</value>
+  <comment>_G1297</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Погрешен SKU-број {0}.</value>
+  <comment>_G1298</comment></data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Изберете начин на испорака</value>
+  <comment>_G1299</comment></data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Во Нова Каледонија и Француска Полинезија не може да се прават заостанати нарачки.</value>
+  <comment>_G1300</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Изберете тип на нарачка од мини-кошничката.</value>
+  <comment>_G1301</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Купувањето не може да се изврши бидејќи го надминувате лимитот за купување</value>
+  <comment>_G1302</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Задолжителна е потврда на адресата</value>
+  <comment>_G2070</comment></data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Внесете број на регистрација.</value>
+  <comment>_G2310</comment></data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Изберете адреса на Дистрибутер.</value>
+  <comment>_G2311</comment></data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Внесете инструкции за испорака.</value>
+  <comment>_G2351</comment></data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Внесете име на фирма за достава.</value>
+  <comment>_G2352</comment></data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Уплатата за нарачката не е одобрена, ако се сомневате, исконтактирајте ја Службата за услуги на Дистрибутерите</value>
+  <comment>_G2512</comment></data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Внесете ги задолжителните податоци за адресата за фактурирање:</value>
+  <comment>_G2513</comment></data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Драг Дистрибутеру, заради ваша безбедност, Herbalife ја избра оваа нарачка за да изврши ревизија. Нарачката ќе биде пуштена што е можно побргу. Согласно безбедносната политика, Herbalife врши анализа на нарачки по случаен избор.</value>
+  <comment>_G2514</comment></data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Неодамна направивте идентична нарачка на {0}, број на нарачка {1}. За да продолжите со нарачката, испратете ја сега. 4. Ако не сакате да продолжите, кликнете на „Сторнирај нарачка“.</value>
+  <comment>_G2635</comment></data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Изберете датум на подигање.</value>
+  <comment>_G2712</comment></data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Ве молиме внесете го вашиот ID број.</value>
+  <comment>_*H281</comment></data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Ве молиме изберете Пин обновување опција</value>
+  <comment>_*H282</comment></data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Please select a valid date. Sunday is invalid for pickup/delivery.</value>
+      <comment>_G2845</comment></data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>За да го завршите подесувањето на вашиот профил како нов Член изберете една од локациите во вашата земја на процесирање и обидете се повторно.</value>
+      <comment>_*R123</comment></data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>PIN кодот не може да биде откриена</value>
+      <comment>_*H284</comment></data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Вашето барање во моментов не може да се процесира поради технички проблеми. Ве молиме обидете се подоцна.</value>
+      <comment>_*A1045</comment></data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Волумените не се достапни во моментов</value>
+      <comment>_*A914</comment></data>
+</root>

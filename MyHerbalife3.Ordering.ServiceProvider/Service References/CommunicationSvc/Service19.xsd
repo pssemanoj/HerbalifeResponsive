@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="TwitterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Get" />
+      <xs:enumeration value="Set" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TwitterType" nillable="true" type="tns:TwitterType" />
+  <xs:simpleType name="RequestType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MostRecent" />
+      <xs:enumeration value="Specific" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RequestType" nillable="true" type="tns:RequestType" />
+  <xs:simpleType name="GSMNewsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Athlete" />
+      <xs:enumeration value="Team" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GSMNewsType" nillable="true" type="tns:GSMNewsType" />
+  <xs:simpleType name="GSMType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="News" />
+      <xs:enumeration value="MatchSchedule" />
+      <xs:enumeration value="TeamScores" />
+      <xs:enumeration value="TeamStandings" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GSMType" nillable="true" type="tns:GSMType" />
+</xs:schema>

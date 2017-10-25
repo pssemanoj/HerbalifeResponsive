@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Anda telah menambahkan HFF ke dalam keranjang</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Silahkan tambahkan angka lebih besar dari 0</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Konfirmasi alamat dibutuhkan</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Alamat ini sudah ada di database</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Majalah hari ini telah ditambahkan ke dalam keranjang</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Silahkan masukkan angka</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Batas pembelian Majalah Today adalah</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Angka maksimum dari majalah yang dapat ditambahkan ke keranjang adalah {0}</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Annual Membership Service Fee dalam jatuh tempo , kami akan secara otomatis menambahkan dalam shopping cart Anda </value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Annual Membership Service Fee adalah hak Anda , kami akan secara otomatis menambahkan dalam shopping cart Anda </value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Jatuh tempo Annual Membership Service Fee Anda {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:{0} tahun AMSF jatuh tempo dan harus dibayar sebelum menempatkan "Resale" Jenis order. Silahkan mengubah jenis pesanan Anda ke "pribadi" untuk membayar AMSF Anda.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>SIlahkan masukan kuantiti dari Annual Membership Service Fee yang ingin Anda beli</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>SKU {0} yang ditambahkan akan menjadi Backorder</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Untuk barang {0} hanya {1} yang tersedia. Mohon rubah kuantitas yang dimasukkan untuk menambahkan ke dalam keranjang anda</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Untuk barang {0}, 1 atau lebih dapat di backorder</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>kami tidak dapat menyelesaikan pesanan anda. Mohon hubungi Member Services untuk bantuan 021-293 40900 dan sebutkan kode eror 05</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>kami tidak dapat menyelesaikan pesanan anda. Mohon hubungi Member Services untuk bantuan021-5760950 dan sebutkan kode eror 01</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Silahkan catat : tempat ini paling baik ditampilkan dengan Internet Explorer atau Firefox</value>
+    <comment>_G1227</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Apakah anda yakin ingin membatalkan pesanan ini? Mengklik "OK" akan membuang semua barang dari keranjang anda</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Anda hanya membayar 1 tahun AMSF</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU AMSF tidak dapat dihapus dari cart Anda</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Anda hanya membayar 1 tahun AMSF</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Kami tidak dapat memproses pesanan Anda, Silahkan hubungi Member Services di 021-29340900</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CantBuyBecauseofTraining" xml:space="preserve">
+    <value>Kami tidak dapat memproses permintaan Anda, silakan hubungi Member Services di i 62-21 29 340 900. Penting: hak membeli Anda saat ini ditangguhkan sampai dibutuhkan " Melindungi Bisnis Anda 101 " pelatihan selesai. Jika Anda ingin menyelesaikan pelatihan sekarang, silakan klik pada link berikut: href " target="_blank"&gt; Tautan &lt;/a&gt; </value>
+    <comment>_G3160</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Kami tidak dapat memproses permintaan Anda, silahkan hubungi Member Service di (021 2934 0900)</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Anda tidak bisa pergi ke halaman {0} karena tidak ada barang dalam keranjang anda</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Anda harus memilih opsi pengiriman atau penjemputan untuk lanjut</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Anda tidak lagi dapat menggunakan kartu ini karena penolakan berkali-kali</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Kartu kredit anda habis masa berlakunya. Mohon hubungi Member Services terdekat</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Kartu kredit anda habis masa berlakunya. Mohon klik ubah dan perbaharui tanggal masa berlaku</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Transaksi menggunakan kartu ini tidak berhasil.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Silahkan pilih Ya/Tidak</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Silahkan masukkan jumlah donasi, kecuali nol</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Anda memiliki barang yang dipesan kembali dalam keranjang yang akan dibuat jika anda memilih jemputan sebagai opsi pengiriman. Apakah anda ingin lanjut?("ya" atau "tidak")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Anda memiliki produk dalam keranjang belanja anda. Apakah anda ingin untuk membersihkan keranjang anda sebelum melakukan pembelian tiket acara?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Silahkan Penuhi biaya pembelian tahunan sebelum menambahkan produk lain ke keranjang</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Maaf ! Anda tidak dapat memsan, hanya Member korea yang dapat membeli dari website Korea</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>kami mohon maaf. Valuta asing anda tidak bisa dikonversi. Mohon hubungi Member Services 021-293 40900</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Silahkan masukkan CVV</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Pemesanan online tidak diizinkan</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Pemesanan online tidak tersedia</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Nama panggilan telah digunakan, mohon masukkan nama yang berbeda</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Usernama sudah terdaftar, silahkan masukkan username baru</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Pesanan sebelumnya telah dikumpulkan sebelum perubahan yang terjadi dalam keranjang anda. Nomor pesanan anda adalah [0}. Anda dapat mengecek status pesanan anda dengan menelepon Member Services 021-293 409000, Senin-Jumat Jam 09.30 - 18.00. Sabtu 09.00 - 13.00. untuk bantuan klik disini. (mohon catat bahwa akan membutuhkan waktu 1 jam sebelum pesanan ditampilkan. jika anda ingin menambahkan pesanan baru, mohon tambahkan kembali barang anda ke dalam keranjang</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Silahkan masukkan lokasi Pengambilan yang Spesifik</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>SKU yang sama telah dimasukkan. Mohon tulis ulang</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Maaf, anda tidak bisa menambahkan barang ke keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas pendapatan</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Pembelian tiket pesanan tidak diizinkan di situs ini</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Silahkan Penuhi biaya pembelian tahunan sebelum membeli tiket acara</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Anda memiliki tiket acara dalam keranjang, apakah anda ingin untuk membersihkan keranjang anda?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Pembelian tiket acara dibatasi {0} per pesanan</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Transaksi pembayaran untuk pesanan anda tidak diotorisasi, jika hal ini meragukan, mohon hubungi departemen layanan Member (11-38797844)</value>
+    <comment>_G2512</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Kesalahan format data, tolong masukkan data yang benar</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Lanjut ke Laman utama</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Silahkan masukkan kode area yang benar</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Silahkan masukkan kota yang benar</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Silahkan masukkan alamat email yang benar</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Silahkan masukkan ekstensi yang benar</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Silahkan masukkan Nama Depan yang benar</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Silahkan masukkan Nama Belakang yang benar</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Silahkan masukkan Nama Tengah yang benar</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Maaf kami tidak dapat menambahkan kartu Anda. Coba lagi dengan nama panggilan tidak memiliki nomor kartu kredit.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Silahkan isi nomor telepon dengan benar</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Silahkan masukkan Nama yang benar</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU {0} tidak benar</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Negara Bagian tidak valid</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Alamat Jalan harus mengandung minimal satu angka, satu spasi, dan satu huruf</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Alamat Jalan harus mengandung minimal satu huruf</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>kode pos tidak benar</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Anda telah memilih untuk melihat produk tanpa memesan, anda tidak dapat menambahkan produk ke keranjang</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Untuk Member, untuk keamanan anda, pesanan ini dipilih oleh analisis audit Herbalife. Akan dirilis secepatnya. Sesuai dengan kebijakan keamanan kami, Herbalife memilih acak beberapa pesanan untuk dianalisa</value>
+    <comment>_G2514</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Persediaan tidak cukup untuk barang {0}. Jumlah yang tersedia {1}</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Informasi pengiriman tidak lagi berlaku, keranjang belanja akan dibersihkan</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Please check your Member ID and PIN Code and try again. If the problems persists please contact Member Services at 1-310-218-6089</value>
+    <comment>_R125</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Silahkan catat bahwa anda hanya dapat menyimpan detail kartu anda untuk maksimum {0} kartu. Jika ingin menambah, tolong hapus salah satu data kartu anda</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Untuk SKU {0}, kuantitasnya tidak dapat melebihi {1}</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Anda telah memiliki tiket acara dalam keranjang, apakah anda ingin membersihkan keranjang?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Anda harus menghapus salah satu kartu kredit untuk mengganti barang dalam keranjang</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Tolong pilih Tipe Pesanan dari keranjang kecil</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Silahkan isi kode area</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Tidak ada pemesanan yang diizinkan untuk pengantaran ke New Caledonia dan French Polynesia</value>
+    <comment>_G1300</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Item Backorder tidak dapat ditambahkan dalam pesanan AMSF</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Tolong sediakan kebutuhan informasi alamat penagihan</value>
+    <comment>_G2513</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Mohon maaf anda tidak memiliki kartu kredit yang terdaftar. Mohon menghubungi Member Services di 021 - 293 40900</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Silahkan isi penggantian nama</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Anda tidak bisa Keluar karena Batas Pembelian anda melebihi batas</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Silahkan isi kota</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Silahkan isi wilayah</value>
+    <comment>_G1297</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Silahkan masukkan nama kurir</value>
+    <comment>_G2352</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Silahkan catat alamat pengiriman sebelum menyelesaikan pemesanan jemputan</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Silahkan pilih alamat Member</value>
+    <comment>_G2311</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Please enter your Member ID</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Silahkan masukkan alamat email</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Silahkan isi ekstensi</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Silahkan isi nama depan</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Tidak ada barang yang dipilih untuk dimasukkan dalam pesanan</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Tidak ada barang yang dipilih untuk dihitung Volumenya</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Tidak ada barang yang akan dibeli dalam pesanan</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Silahkan isi nama akhir</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Hanya produk yang bisa ditambahkan ke dalam cart pesanan AMSF</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Pesanan produk yang tidak dengan AMSF Anda , semua item non-produk akan dihapuskan</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Silahkan pilih tipe pesanan</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Silahkan masukkan info pembayaran</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Silahkan isi nomor telepon</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Silahkan pilih lokasi</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Silahkan pilih nama Pengambil</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Silahkan pilih telepon Pengambilan</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Silahkan pilih waktu Pengambilan</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Mohon pilih opsi Pin Recovery</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Silahkan jelaskan nomor RG</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Silahkan pilih metode pengiriman</value>
+    <comment>_G1299</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Silahkan pilih waktu pengiriman</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>Nomor SMS dibutuhkan</value>
+    <comment>_G3286</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Silahkan isi negara</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Silahkan isi alamat</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Silahkan isi kode pos</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Otorisasi kartu tidak berhasil. Mohon tinjau ulang kartu anda</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Anda telah mengganti bulan pesanan untuk pesanan ini menjadi {0}. Apakah anda ingin melanjutkan dengan pilihan ini?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Bulan Pemesanan telah berubah!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Barang {0} sedang habis, jumlah anda diubah menjadi 0</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Silahkanperiksa informasi kartu</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Silahkan pilih lokasi Pengambilan</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Silahkan pilih lokasi penjemputan</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>PIN tidak bisa di ambil</value>
+    <comment>_R124</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Anda telah memesan pesanan yang sama di {0}. Jika ini salinan pesanan, klik "batalkan pesanan". Untuk melanjutkan pesanan ini, mohon kumpulkan</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Kami memperingatkan Anda untuk menempatkan pesanan identik pada {0}. Mohon konfirmasi jika Anda ingin melanjutkan.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Kode pos salah</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>Harga untuk item dalam keranjang Anda telah berubah karena ada kesalahan. Silakan kembali mengirimkan pesanan Anda.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Alamat Utama tidak bisa dihapus</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Anda mencoba untuk menghapus kartu utama. Mohon buat kartu simpanan yang berbeda untuk kartu utama sebelum menghapus kartu ini</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Pilihan Pengambilan Utama tidak bisa dihapus</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Lanjut ke Keluar</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Silahkan masukkan jumlah untuk SKU</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Diperlukan Annual Membership Service fees untuk ditinggalkan dalam cart Anda.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Silahkan isi bidang yang wajib</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transaksi tidak diizinkan, mohon periksa informasi kartu, jika masalah berkelanjutan, hubungi Member Services di 021-293 40900</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Anda telah memilih {0} sebagai bulan pemesanan kembar apakah ini benar?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Silahkan masukkan informasi pengiriman</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Silahkan masukkan instruksi pengiriman</value>
+    <comment>_G2351</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Silahkan pilih Alamat Pengiriman</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU tidak tersedia</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Anda tidak dapat memasukkan barang ini dalam keranjang anda</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Kesalahan Sistem</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Jumlah pembayaran tidak sesuai dengan total pemesanan</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="TrainingMessage" xml:space="preserve">
+    <value>Kami todak berhasil memroses permintaan Anda, harap menghubungi Member Services di 62-21 29 340 900. Penting: Hak pembelian Anda saat ini ditunda hingga persyaratan training "Melindungi Bisnis Anda 101" diselesaikan. Jika Anda ingin melengkapi training ini sekarang, silahkan klik tautan berikut: &lt;a href=" " target="_blank"&gt;Link&lt;/a&gt; Jika Anda ingin melengkapi training tersebut dalam waktu 7 hari kedepan dan melanjutkan pembelian produk sekarang, klik OK untuk melanjutkan pembelian, jika tidak klik Batal.</value>
+    <comment>_G3158</comment>
+  </data>
+  <data name="TrainingTitle" xml:space="preserve">
+    <value>Penting: Training Melindungi Bisnis Anda 101</value>
+    <comment>_G3159</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transaksi tidak diizinkan, mohon hubungi Member Services di 021-293 40900</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>kami tidak dapat memproses pesanan anda. Mohon periksa alamat anda dan coba lagi. Jika masalah berlanjut mohon hubungi Member Services</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Volume tidak tersedia pada saat ini</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Pesanan ini melebihi batas pembelian. Anda memiliki sisa {0} VP. Tolong ubah pesanan anda untuk melanjutkan</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Anda telah memilih penjemputan dari WALDOS, akan ada pembatasan produk untuk dipesan</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Untuk melengkapi pembuatan akun untuk anggota baru , silahkan pilih salah satu lokasi dari negara Anda untuk di proses dan coba lagi</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Pengiriman ke Kode Pos tersebut tidak di support</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Pengolahan aplikasi Member terbaru Anda dapat diambil dalam waktu 12-18 jam. Setelah aplikasi Anda  diproses Anda akan dapat menempatkan pesanan. Silakan periksa kembali nanti untuk menyelesaikan pesanan Anda.</value>
+    <comment>_GXXXX</comment>
+  </data>
+</root>

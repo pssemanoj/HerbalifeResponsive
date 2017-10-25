@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>APF sku ne mogu da se dodaju u vašu korpu</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>APF sku ne mogu da se uklone iz vaše korpe</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Jeste li sigurni da želite da otkažete ovu porudžbinu? Ako kliknete na "OK", iz vaše korpe će biti uklonjeni svi artikli.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Pošto nema Proizvoda u vašoj APF porudžbini, uklonjene su sve stavke koje nisu Proizvodi.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Stavke iz zaostale porudžbine ne mogu da se dodaju u APF porudžbinu</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Autorizacija kartice nije uspela. Molimo vas da pregledate vaše podatke o karticama.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Pojavila se greška u formatu podataka. Molimo vas da unesete ispravne podatke.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Ista oznaka za jedinično pakovanje (SKU) uneta je dva puta. Molimo vas da ponovite unos.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Prilikom kupovine ulaznica za događaje, broj ulaznica je ograničen na {0} po porudžbini.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Na ovoj stranici nije dozvoljena kupovina ulaznica za događaje.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Za artikal {0} na raspolaganju je samo količina {1}. Molimo vas da promenite unetu količinu kako biste dodali ovaj artikal u vašu korpu.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Za artikal {0}, 1 ili više artikala mogu da budu isporučeni kad ih bude u zalihama.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Za jedinično pakovanje {0}, količina ne sme da prelazi {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Žao nam je, nemate registrovanu kreditnu karticu. Molimo pozovite Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Nevažeći poštanski broj.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} godina APF je dospela za naplatu i mora biti plaćena pre podnošenja porudžbine tipa "Preprodaja". Molimo promenite vrstu porudžbine u "Lična" kako biste platili svoj APF.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Artikl {0} se trenutno ne nalazi u inventaru, vaša količina je podešena na 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Ograničenje za Today magazin je</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maksimalan broj magaizna koji mogu da se dodaju u korpu je  {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Ovaj nadimak već postoji, molimo unesite drugo ime.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Poručivanje putem Interneta nije dostupno.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Poručivanje putem Interneta nije dozvoljeno.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Samo Proizvod može da se doda u Samostalnu APF porudžbinu</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Plaćanje ukupnog iznosa se ne podudara sa ukupnim iznosom porudžbine.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Molimo dodajte iznos veći od 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Molimo proverite podatke na kartici.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Molimo proverite vašu Identifikaciju Člana i PIN kod i pokušajte ponovo. Ukoliko se problem nastavi, molimo pozovite Odelenje za Članove na broj  +381 11 7856 494</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Molimo završite kupovinu godišnje članarine pre nego što dodate druge proizvode u korpu.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Molimo završite kupovinu godišnje članarine pre nego što kupite karte za događaje.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Molimo unesite broj.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Molimo unesite količinu za šifru {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Molimo unesite lokaciju za preuzimanje.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Molimo unesite ispravno ime grada.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Molimo unesite ispravno ime.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Molimo unesite ispravan nadimak.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Molimo unesite iznos donacije, osim (0).</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Molimo unesite i-mejl adresu.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Molimo unesite informacije o plaćanju.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Molimo unesite CVV.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Molimo upišite količinu za Godišnju članarinu koje želite da kupite.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Molimo unesite ispravnu i-mejl adresu.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Molimo unesite ispravno ime.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Molimo unesite ispravno prezime.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Molimo unesite srednje ime.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Molimo popunite sve obavezne informacije o slanju.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Molimo popunite pozivni broj u odgovarajućem formatu.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Molimo popunite lokal u odgovarajućem formatu.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Molimo popunite ime osobe kod koje stanujete.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Molimo popunite pozivni broj.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Molimo popunite ime grada.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Molimo popunite lokal.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Molimo popunite ime.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Molimo popunite prezime.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Molimo popunite obavezno polje.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Molimo popunite broj telefona.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Molimo popunite ime države.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Molimo popunite polje za adresu.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Molimo popunite poštanski broj.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Molimo popunite broj telefona u odgovarajućem formatu.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Molimo obratite pažnju da možete da sačuvate samo podatke najviše {0} kartice. Da biste dodali još jednu karticu, molimo obrišite jednu od vaših već postojećih sačuvanih kartica.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Molimo obratite pažnju:&lt;br/&gt; Ova Internet stranica se najbolje vidi putem Internet Explorer-a ili Firefox-a.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Molimo ubeležite adresu za slanje pre nego popunite porudžbinu za preuzimanje.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Molimo odaberite lokaciju.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Molimo odaberite vreme slanja.</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Molimo odredite vrstu porudžbine.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Molimo odaberite lokaciju za preuzimanje.</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Molimo odaberite lokaciju za preuzimanje.</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Molimo odaberite ime osobe koja preuzima robu.</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Molimo odaberite broj telefona za preuzimanje.</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Molimo odaberite vreme preuzimanja.</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Molimo odaberite adresu za slanje.</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Molimo odaberite Da/Ne.</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Prvobitna adresa ne može da se izbriše.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Prvobitnii podaci o željenom preuzimanju se ne mogu izbrisati.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Nastavite do završnog koraka</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Nastavite do naslovne strane.</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Isporuka na uneti poštanski broj nije podržana.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Šifra {0} nije dostupna.</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>SMS Broj mobilnog telefona je obavezan.</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Žao nam je! Ne možete da izvršite porudžbinu. Samo Članovi iz Koreje mogu da izvrše porudžbine sa korejskog website-a.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Žao nam je, ovaj artikl/e ne možete da dodate u korpu, pošto ste prekoračili ograničenje zarade.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Greška u sistemu.</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Promenjen je mesec porudžbine!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Šifra {0} će biti dodata na listu proizvoda kojih trenutno nema na stanju skladišta.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Ime države je neispravno.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Adresa ulice treba da sadrži najmanje jedno slovo.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Adresa ulice treba da sadrži najmanje jedan broj, jedan razmak, i jedno slovo.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Transakcija nije dozvoljena, molimo proverite informacije na kartici. Ukoliko se problem nastavi, pozovite Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Transakcija nije dozvoljena, molimo  pozovite Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Poštanski broj nije ispravan.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Porudžbina ne sadrži artikle za kupovinu.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Trenutno nema dovoljno inventara za artikl  {0}. Dostupna količina  {1}</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Nijedan artikl nije odabran za dodavanje u porudžbinu.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Nijedan artikl nije odabran kako bi se obračunala količina.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Ova adresa već postoji u bazi podataka.</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Ova porudžbina prekoračuje ograničenje za kupovinu. Preostalo vam je  {0} VP. Molimo promenite porudžbinu kako bi nastavili.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Transakcija ove kartice je odbijena.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Magazin Today je dodat u korpu.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Nismo u mogućnosti da izvršimo vašu porudžbinu. Molimo kontaktirajte Odelenje za Članove na broj +385 1 3820 184 i navedite šifru greške 01.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Nismo u mogućnosti da izvršimo vašu porudžbinu. Molimo kontaktirajte Odelenje za Članove na broj +385 1 3820 184 i navedite šifru greške 05.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Nismo u mogućnosti da obradimo vašu porudžbinu. Molimo proverite svoju adresu i pokušajte ponovo. Ukoliko se problem nastavi, molimo kontaktirajte Odelenje za Članove.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Žao nam je. Valuta ne može da se konvertuje. Molimo kontaktirajte Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Već ste dodali u korpu karte za događaje, da li želite da ispraznite svoju korpu?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Pokušavate da izbrišete svoju prvobitnu karticu. Molimo sačuvajte neku drugu karticu kao primarnu u pre nego obrišete postojeću.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Više niste u mogućnosti da koristite ovu karticu jer je nekoliko puta odbijena.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Ne možete da dodate istu karticu više od jednog puta.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Ne možete da dodate ovaj artikl u korpu.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Ne možete da posetite {0} stranu bez artikala u korpi.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>U korpi imate artikle kojih nema u inventaru koji će biti uklonjeni ukoliko odaberete preuzmi kao način slanja. Da li želite da nastavite? ("Da" ili "Ne")</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Promenili ste mesec porudžbine u ovoj porudžbinii na {0}. Da li želite da nastavite sa ovom odabranom opcijom?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Imate karte za događaje u korpi, da li želite da ispraznite  korpu?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Imate proizvod/e u korpi za kupovinu. Da li želite da je ispraznite pre nego nastavite sa kupovinom karata?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Odabrali ste  {0} kao dupli mesec porudžbine da li je ovo tačno?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Odabrali ste preuzmi od WALDOS-a, biće ograničen broj proizvoda koji će se naručivati.</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Odabrali ste da pretražujete proizvode, a da niste izvršili porudžbinu, nećete biti u mogućnosti da dodajete proizvode u korpu.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Uspešno ste dodali HFF u korpu.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Možete unapred da platite samo 1 godinu APF-a.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Morate da izbrišete jednu od svojih kreditnih kartica kako biste promenili artikle u korpi.</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Morate da odaberete način slanja  ili preuzimanja kako biste nastavili.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Nedavno ste izvršili identičnu porudžbinu  {0}. Ukoliko je ovo dvostruka porudžbina, kliknite "otkaži porudžbinu". Da bi nastavili sa ovom porudžbinom, molimo pošaljite.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Vaša Godišnja članarina dospeva za naplatu {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Vaša Godišnja članarina dospeva za naplatu, dodaćemo je automatski u vašu korpu.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Vaše Godišnje članarine su dospele za naplatu. Dodate su u vašu korpu.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Vaša kreditna kartica je istekla. Molimo kliknite uredi i promenite datum isteka.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Vaša kreditna kartica je istekla. Molimo kontaktirajte lokalno Odelenje za Članove.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Vaša identifikacija nije prihvaćena, molimo kontaktirajte Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Vaša identifikacija nije prihvaćena, molimo kontaktirajte Odelenje za Članove na broj +385 1 3820 184.</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Vaša prethodna porudžbina je već podneta pre nego što su izvršene izmene u vašoj korpi. Broj vaše porudžbine je {0}. Možete da potvrdite status ove porudžbine tako što ćete da pozovete Službu podrške kod naručivanja na broj  +381 11 7856 494, od 09:00 do 17:00 časova, od ponedeljka do petka ili kliknite ovde. (Napominjemo da može da prođe do sat vremena pre nego što porudžbina bude prikazana.&lt;br&gt;Ukoliko želite da izvršite novu porudžbinu, molimo da ponovo dodate stavke u vašu korpu.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Vaše željene Godišnje članarine su stavljene u vašu korpu.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Podaci o slanju nisu više ispravni, korpa za kupovinu će biti ispražnjena.</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Molimo popunite ime države.</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Šifra {0} je neispravna.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Molimo odaberite način slanja.</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Kod isporuke u Novu Kaledoniju i Francusku Polineziju, nije dozvoljeno poručivanje proizvoda kojih trenutno nema u inventaru, a koji se isporučuju tek kad pristignu u zalihe.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Molimo odaberite vrstu porudžbine u mini korpi.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Ne možete da idete do završnog koraka  jer ste premašili ograničenje za kupovinu.</value>
+  </data>
+</root>

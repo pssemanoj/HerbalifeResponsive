@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>품목번호: 현재 제품 재고가 없기때문에 장바구니에 {0}이 추가되지 않았습니다.</value>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>품목번호: 장바구니에{0}이 추가되지 않았습니다. 추가를 원하면 주문 하위유형을 A1 또는 B1으로 변경하기 바랍니다.</value>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>품목번호{0}을 추가하기 전에 장바구니에 제품을 추가하십시오 {0}.</value>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>품목번호 수량은  {0} 을 초과할 수 없습니다: {1}</value>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>{0} 제품 구매를 할 수 없습니다.</value>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>수량 한도를 초과하기 때문에 품목번호 {0} 의 수량은  {1}로 증가될 수 없습니다.</value>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>실적점수 한도를 초과하기 때문에 품목번호 {0} 의 수량은 {1}로 증가될 수 없습니다. .</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>주문이 수량한도를 초과했습니다. 남아있는 실적점수는  {0} 입니다. 구매를 계속하기를 원하시면 주문을 수정하시기 바랍니다.</value>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>품목번호 {0} 은 빠른 배송이 불가능합니다. 다른 배송방법을 선택하십시오.</value>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>품목번호 0343, 0344, 2329 혹은 2328은 빠른 배송이 불가합니다.</value>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>품목번호당 {0}개 이상 주문하실 수 없습니다.</value>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>구매할 수 없습니다.</value>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>실적점수 한도 초과로 품목번호{0} 를 장바구니에 추가할 수 없습니다.</value>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>총 결제금액이 당신의 결제한도 {0}을 초과 하였습니다.</value>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>수량한도 초과로 품목번호{0} 를 장바구니에 추가할 수 없습니다.</value>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>수량한도를 초과하기 때문에 품목번호 {0} 의 수량은 {1}로 증가될 수 없습니다. .</value>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>개인 소비</value>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>재판매</value>
+  </data>
+</root>

@@ -1,0 +1,294 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Rules", "MyHerbalife3.Ordering.Rules\MyHerbalife3.Ordering.Rules.csproj", "{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Providers", "MyHerbalife3.Ordering.Providers\MyHerbalife3.Ordering.Providers.csproj", "{B8D594DC-CE64-44E3-94EE-38031596DC81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Configuration", "MyHerbalife3.Ordering.Configuration\MyHerbalife3.Ordering.Configuration.csproj", "{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Controllers", "MyHerbalife3.Ordering.Controllers\MyHerbalife3.Ordering.Controllers.csproj", "{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Web", "MyHerbalife3.Ordering.Web\MyHerbalife3.Ordering.Web.csproj", "{C174E91F-36C3-42C2-9643-2D2896ACBCAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Invoices", "MyHerbalife3.Ordering.Invoices\MyHerbalife3.Ordering.Invoices.csproj", "{3EA8A94F-0C3C-4B86-B11D-D345F434281D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.ViewModel", "MyHerbalife3.Ordering.ViewModel\MyHerbalife3.Ordering.ViewModel.csproj", "{C379451E-81AE-48DF-8BD1-E583ABD494F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Interfaces", "MyHerbalife3.Ordering.Interfaces\MyHerbalife3.Ordering.Interfaces.csproj", "{F0974943-52ED-4E42-8E4C-152022AA53EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Web.Test", "MyHerbalife3.Ordering.Web.Test\MyHerbalife3.Ordering.Web.Test.csproj", "{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Providers.BT", "MyHerbalife3.Ordering.Providers.BT\MyHerbalife3.Ordering.Providers.BT.csproj", "{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F0A4ED63-5B7B-4B51-85CE-16AC0466925C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.Widgets", "MyHerbalife3.Ordering.Widgets\MyHerbalife3.Ordering.Widgets.csproj", "{B8F7CFE2-2394-4593-B1E8-DB8739948421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.SharedProviders", "MyHerbalife3.Ordering.SharedProviders\MyHerbalife3.Ordering.SharedProviders.csproj", "{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.ServiceProvider", "MyHerbalife3.Ordering.ServiceProvider\MyHerbalife3.Ordering.ServiceProvider.csproj", "{DECA9051-4215-473E-8A99-2227FA819528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.AddressLookup", "MyHerbalife3.Ordering.AddressLookup\MyHerbalife3.Ordering.AddressLookup.csproj", "{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHerbalife3.Ordering.WebAPI", "MyHerbalife3.Ordering.WebAPI\MyHerbalife3.Ordering.WebAPI.csproj", "{BFAD967D-9C94-4BED-AD02-7064876EC2AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		QA4|Any CPU = QA4|Any CPU
+		QA4C|Any CPU = QA4C|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.QA4C|Any CPU.ActiveCfg = QA4C|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.QA4C|Any CPU.Build.0 = QA4C|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F8FDB5-9337-458A-9DC3-5F1EF3A71B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.QA4C|Any CPU.ActiveCfg = QA4C|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.QA4C|Any CPU.Build.0 = QA4C|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D594DC-CE64-44E3-94EE-38031596DC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F5F25B-ED7A-4D1E-B4CE-F6B6D98A7FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B83C09-2CF3-4A98-BB8D-0EC91A28657C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.QA4|Any CPU.ActiveCfg = QA4|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.QA4|Any CPU.Build.0 = QA4|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C174E91F-36C3-42C2-9643-2D2896ACBCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA8A94F-0C3C-4B86-B11D-D345F434281D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C379451E-81AE-48DF-8BD1-E583ABD494F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0974943-52ED-4E42-8E4C-152022AA53EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF077307-0B24-44EE-83DC-D74D4DE8A6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.QA4|Any CPU.ActiveCfg = Debug|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.QA4|Any CPU.Build.0 = Debug|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647C9431-4E94-41AA-B9DC-BF9AE52E85F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.QA4|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.QA4|Any CPU.Build.0 = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F7CFE2-2394-4593-B1E8-DB8739948421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.QA4|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.QA4|Any CPU.Build.0 = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4F64C5-0C64-4A43-AB41-91B83C5CEE38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.QA4|Any CPU.ActiveCfg = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.QA4|Any CPU.Build.0 = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECA9051-4215-473E-8A99-2227FA819528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.QA4|Any CPU.ActiveCfg = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.QA4|Any CPU.Build.0 = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936A5FF2-9804-4D1A-B4BA-BF58EE12E9B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.QA4|Any CPU.ActiveCfg = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.QA4|Any CPU.Build.0 = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.QA4C|Any CPU.ActiveCfg = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.QA4C|Any CPU.Build.0 = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFAD967D-9C94-4BED-AD02-7064876EC2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.ExceptionHandling.Logging.6.0.1304.0\lib\NET45
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/enterpriseapplications
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyHerbalife3.Ordering.ServiceProvider\\MyHerbalife3.Ordering.ServiceProvider.csproj
+		SccProjectName1 = MyHerbalife3.Ordering.ServiceProvider
+		SccLocalPath1 = MyHerbalife3.Ordering.ServiceProvider
+		SccProjectUniqueName2 = MyHerbalife3.Ordering.Configuration\\MyHerbalife3.Ordering.Configuration.csproj
+		SccProjectName2 = MyHerbalife3.Ordering.Configuration
+		SccLocalPath2 = MyHerbalife3.Ordering.Configuration
+		SccProjectUniqueName3 = MyHerbalife3.Ordering.AddressLookup\\MyHerbalife3.Ordering.AddressLookup.csproj
+		SccProjectName3 = MyHerbalife3.Ordering.AddressLookup
+		SccLocalPath3 = MyHerbalife3.Ordering.AddressLookup
+		SccProjectUniqueName4 = MyHerbalife3.Ordering.SharedProviders\\MyHerbalife3.Ordering.SharedProviders.csproj
+		SccProjectName4 = MyHerbalife3.Ordering.SharedProviders
+		SccLocalPath4 = MyHerbalife3.Ordering.SharedProviders
+		SccProjectUniqueName5 = MyHerbalife3.Ordering.ViewModel\\MyHerbalife3.Ordering.ViewModel.csproj
+		SccProjectName5 = MyHerbalife3.Ordering.ViewModel
+		SccLocalPath5 = MyHerbalife3.Ordering.ViewModel
+		SccProjectUniqueName6 = MyHerbalife3.Ordering.Interfaces\\MyHerbalife3.Ordering.Interfaces.csproj
+		SccProjectName6 = MyHerbalife3.Ordering.Interfaces
+		SccLocalPath6 = MyHerbalife3.Ordering.Interfaces
+		SccProjectUniqueName7 = MyHerbalife3.Ordering.Providers.BT\\MyHerbalife3.Ordering.Providers.BT.csproj
+		SccProjectName7 = MyHerbalife3.Ordering.Providers.BT
+		SccLocalPath7 = MyHerbalife3.Ordering.Providers.BT
+		SccProjectUniqueName8 = MyHerbalife3.Ordering.Widgets\\MyHerbalife3.Ordering.Widgets.csproj
+		SccProjectName8 = MyHerbalife3.Ordering.Widgets
+		SccLocalPath8 = MyHerbalife3.Ordering.Widgets
+		SccProjectUniqueName9 = MyHerbalife3.Ordering.Providers\\MyHerbalife3.Ordering.Providers.csproj
+		SccProjectName9 = MyHerbalife3.Ordering.Providers
+		SccLocalPath9 = MyHerbalife3.Ordering.Providers
+		SccProjectUniqueName10 = MyHerbalife3.Ordering.Rules\\MyHerbalife3.Ordering.Rules.csproj
+		SccProjectName10 = MyHerbalife3.Ordering.Rules
+		SccLocalPath10 = MyHerbalife3.Ordering.Rules
+		SccProjectUniqueName11 = MyHerbalife3.Ordering.Invoices\\MyHerbalife3.Ordering.Invoices.csproj
+		SccProjectName11 = MyHerbalife3.Ordering.Invoices
+		SccLocalPath11 = MyHerbalife3.Ordering.Invoices
+		SccProjectUniqueName12 = MyHerbalife3.Ordering.WebAPI\\MyHerbalife3.Ordering.WebAPI.csproj
+		SccProjectName12 = MyHerbalife3.Ordering.WebAPI
+		SccLocalPath12 = MyHerbalife3.Ordering.WebAPI
+		SccProjectUniqueName13 = MyHerbalife3.Ordering.Controllers\\MyHerbalife3.Ordering.Controllers.csproj
+		SccProjectName13 = MyHerbalife3.Ordering.Controllers
+		SccLocalPath13 = MyHerbalife3.Ordering.Controllers
+		SccProjectUniqueName14 = MyHerbalife3.Ordering.Web\\MyHerbalife3.Ordering.Web.csproj
+		SccProjectName14 = MyHerbalife3.Ordering.Web
+		SccLocalPath14 = MyHerbalife3.Ordering.Web
+		SccProjectUniqueName15 = MyHerbalife3.Ordering.Web.Test\\MyHerbalife3.Ordering.Web.Test.csproj
+		SccProjectName15 = MyHerbalife3.Ordering.Web.Test
+		SccLocalPath15 = MyHerbalife3.Ordering.Web.Test
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/enterpriseapplications
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyHerbalife3.Ordering.Rules\\MyHerbalife3.Ordering.Rules.csproj
+		SccProjectName1 = MyHerbalife3.Ordering.Rules
+		SccLocalPath1 = MyHerbalife3.Ordering.Rules
+		SccProjectUniqueName2 = MyHerbalife3.Ordering.Providers\\MyHerbalife3.Ordering.Providers.csproj
+		SccProjectName2 = MyHerbalife3.Ordering.Providers
+		SccLocalPath2 = MyHerbalife3.Ordering.Providers
+		SccProjectUniqueName3 = MyHerbalife3.Ordering.Configuration\\MyHerbalife3.Ordering.Configuration.csproj
+		SccProjectName3 = MyHerbalife3.Ordering.Configuration
+		SccLocalPath3 = MyHerbalife3.Ordering.Configuration
+		SccProjectUniqueName4 = MyHerbalife3.Ordering.Controllers\\MyHerbalife3.Ordering.Controllers.csproj
+		SccProjectName4 = MyHerbalife3.Ordering.Controllers
+		SccLocalPath4 = MyHerbalife3.Ordering.Controllers
+		SccProjectUniqueName5 = MyHerbalife3.Ordering.Web\\MyHerbalife3.Ordering.Web.csproj
+		SccProjectName5 = MyHerbalife3.Ordering.Web
+		SccLocalPath5 = MyHerbalife3.Ordering.Web
+		SccProjectUniqueName6 = MyHerbalife3.Ordering.Invoices\\MyHerbalife3.Ordering.Invoices.csproj
+		SccProjectName6 = MyHerbalife3.Ordering.Invoices
+		SccLocalPath6 = MyHerbalife3.Ordering.Invoices
+		SccProjectUniqueName7 = MyHerbalife3.Ordering.ViewModel\\MyHerbalife3.Ordering.ViewModel.csproj
+		SccProjectName7 = MyHerbalife3.Ordering.ViewModel
+		SccLocalPath7 = MyHerbalife3.Ordering.ViewModel
+		SccProjectUniqueName8 = MyHerbalife3.Ordering.Interfaces\\MyHerbalife3.Ordering.Interfaces.csproj
+		SccProjectName8 = MyHerbalife3.Ordering.Interfaces
+		SccLocalPath8 = MyHerbalife3.Ordering.Interfaces
+		SccProjectUniqueName9 = MyHerbalife3.Ordering.Web.Test\\MyHerbalife3.Ordering.Web.Test.csproj
+		SccProjectName9 = MyHerbalife3.Ordering.Web.Test
+		SccLocalPath9 = MyHerbalife3.Ordering.Web.Test
+		SccProjectUniqueName10 = MyHerbalife3.Ordering.Providers.BT\\MyHerbalife3.Ordering.Providers.BT.csproj
+		SccProjectName10 = MyHerbalife3.Ordering.Providers.BT
+		SccLocalPath10 = MyHerbalife3.Ordering.Providers.BT
+		SccProjectUniqueName11 = MyHerbalife3.Ordering.Widgets\\MyHerbalife3.Ordering.Widgets.csproj
+		SccProjectName11 = MyHerbalife3.Ordering.Widgets
+		SccLocalPath11 = MyHerbalife3.Ordering.Widgets
+		SccProjectUniqueName12 = MyHerbalife3.Ordering.SharedProviders\\MyHerbalife3.Ordering.SharedProviders.csproj
+		SccProjectName12 = MyHerbalife3.Ordering.SharedProviders
+		SccLocalPath12 = MyHerbalife3.Ordering.SharedProviders
+		SccProjectUniqueName13 = MyHerbalife3.Ordering.ServiceProvider\\MyHerbalife3.Ordering.ServiceProvider.csproj
+		SccProjectName13 = MyHerbalife3.Ordering.ServiceProvider
+		SccLocalPath13 = MyHerbalife3.Ordering.ServiceProvider
+		SccProjectUniqueName14 = MyHerbalife3.Ordering.AddressLookup\\MyHerbalife3.Ordering.AddressLookup.csproj
+		SccProjectName14 = MyHerbalife3.Ordering.AddressLookup
+		SccLocalPath14 = MyHerbalife3.Ordering.AddressLookup
+		SccProjectUniqueName15 = MyHerbalife3.Ordering.WebAPI\\MyHerbalife3.Ordering.WebAPI.csproj
+		SccProjectName15 = MyHerbalife3.Ordering.WebAPI
+		SccLocalPath15 = MyHerbalife3.Ordering.WebAPI
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/enterpriseapplications
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MyHerbalife3.Ordering.Rules\\MyHerbalife3.Ordering.Rules.csproj
+		SccProjectName1 = MyHerbalife3.Ordering.Rules
+		SccLocalPath1 = MyHerbalife3.Ordering.Rules
+		SccProjectUniqueName4 = MyHerbalife3.Ordering.Providers\\MyHerbalife3.Ordering.Providers.csproj
+		SccProjectName4 = MyHerbalife3.Ordering.Providers
+		SccLocalPath4 = MyHerbalife3.Ordering.Providers
+		SccProjectUniqueName5 = MyHerbalife3.Ordering.Web\\MyHerbalife3.Ordering.Web.csproj
+		SccProjectName5 = MyHerbalife3.Ordering.Web
+		SccLocalPath5 = MyHerbalife3.Ordering.Web
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU-urile Pentru taxa anuală de procesare nu pot fii adăugate în coşul de cumpărături</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU-urile Pentru taxa anuală de procesare nu pot fii adăugate în coşul de cumpărături</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Eşti sigur că doreşti să anulezi această comandă? Prin apăsarea opţiunii OK, toate produsele din coşul de cumpărături vor fi şterse.</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Deoarece nu există produse în această comandă în care plătiţi taxa anuală de procesare, toate articolele care nu sunt produse au fost şterse.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Articolele care nu sunt momentan pe stoc nu pot fi adăugate în comanda în care se plăteşte taxa anuală de procesare</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Autorizarea cardului dvs a eşuat. Vă rugăm verificaţi detaliile cardului.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Format dată incorect. Vă rugăm verificaţi data.</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>SKU-ul este dublat. Vă rugăm reintroduceţi.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Se pot achiziţiona doar {0} bilete.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>De pe acest site nu se pot achiziţiona bilete la evenimente.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Pentru produsul {0} mai sunt disponibile {1} bucăţi. Vă rugăm modificaţi comanda pentru a fi adăgată în coşul de cumpărături.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Pentru produsul {0}, 1 sau mai multe produse este posibil să nu se afle pe stoc.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Pentru SKU {0}, cantitatea nu poate depăşi {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Ne pare rău dar nu aveţi cardul înregistrat. Vă rugăm sunaţi la numărul 004 021 310 24 10</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Cod poştal invalid.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} aveţi de achitat taxa anuală de procesare pentru a avea dreptul să plasaţi comandă de produse pentru "Revânzare". Vă rugăm schimbaţi tipul comenzii în "Personal" şi achitaţi taxa anuală de procesare.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Produsul {0} nu se află momentan pe stoc, cantitatea dvs este 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Limita pentru Today Magazin este</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Numărul maxim de reviste ce pot fi adăugate în coş este {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Această denumire a fost deja folosită, vă rugăm folosiţi altă denumire.</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Comanda online nu este disponibilă.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Comanda online nu este permisă.</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Doar Produse pot fi adăugate la comenzile în care se achită şi taxa anuală de procesare</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Plata nu acoperă comanda.</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Vă rugăm adăugaţi o sumă mai mare de 0.</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Vă rugăm verificaţi informaţiile cardului.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Vă rugăm verificaţi ID-ul de Distribuitor şi codul PIN şi încercaţi din nou. Dacă problemele persistă sunaţi la numărul: +4 021 316 59 32(33)</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Vă rugăm achitaţi taxa anuală de procesare înainte să adăugaţi produse în coşul de cumpărături.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Vă rugăm achitaţi taxa anuală de procesare înainte să achiziţionaţi bilete la eveniment.</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Vă rugăm introduceţi un număr.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Vă rugăm să completaţi cantitatea pentru SKU {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Vă rugăm introduceţi o singură locaţie de unde se vor ridica produsele.</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Vă rugăm introduceţi un oraş valid.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Vă rugăm introduceţi un nume valid.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Vă rugăm introduceţi o denumire validă.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Vă rugăm introduceţi o sumă validă pentru donaţie, care să nu fie 0.</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Vă rugăm introduceţi adresa de email.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Vă rugăm introduceţi informaţiile plăţii.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Vă rugăm introduceţi ultimele 3 cifre de pe spatele cardului.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Vă rugăm specificaţi câte taxe anuale de procesare doriţi să achitaţi.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Vă rugăm introduceţi adresa de email.</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Vă rugăm introduceţi Prenumele.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Vă rugăm introduceţi Numele.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Vă rugăm introduceţi al doilea Prenume.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Vă rugăm introduceţi toate detaliile de adresă cerute.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Vă rugăm introduceţi codul poştal în formatul adecvat.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Vă rugăm introduceţi extensia în formatul adecvat.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Vă rugăm completaţi denumirea firmei.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Vă rugăm introduceţi codul zonei.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Vă rugăm introduceţi oraşul.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Vă rugăm introduceţi extensia.</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Vă rugăm completaţi prenumele.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Vă rugăm completaţi numele.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Vă rugăm completaţi câmpurile obligatorii.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Vă rugăm completaţi numărul de telefon.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Vă rugăm completaţi judeţul.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Vă rugăm completaţi adresa.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Vă rugăm completaţi codul poştal.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Vă rugăm completaţi numărul de telefon în formatul corect.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Atenţie, puteţi salva detaliile a {0} carduri. Pentru a adăuga un nou card vă rugăm să ştergeţi detaliile unuia din cardurile salvate.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Reţineţi:&lt;br/&gt;Acest site funcţionează la calitate optimă cu Internet Explorer sau Firefox.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Vă rugăm să înregistraţi o adresă de livrare înainte de a completa adresa de unde doriţi să ridicaţi comanda.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Vă rugăm selectaţi o locaţie.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Vă rugăm selectaţi perioada de ridicare a comenzii.</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Vă rugăm selectaţi un tip de comandă.</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Vă rugăm selectaţi o locaţie de unde veţi ridica produsele.</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Vă rugăm selectaţi o locaţie de unde veţi ridica produsele.</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Vă rugăm selectaţi numele persoanei care ridică produsele.</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Vă rugăm selectaţi telefonul persoanei care ridică produsele.</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Vă rugăm selectaţi perioada în care veţi ridica produsele.</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Vă rugăm selectaţi adresa de livrare.</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Vă rugăm selectaţi Da/Nu</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Adresa principală nu poate fi ştearsă.</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Preferinţele principale pentru locaţia de unde se ridică produsele nu se pot şterge.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Vă rugăm apăsaţi butonul Continuă.</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Întoarcere la pagina de start.</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Livrarea la codul poştal indicat nu este posibilă.</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU {0} nu este disponibil.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Ne pare rău însă nu mai puteţi adăuga în coş alte produse deoarece depăşiţi limita câştigurilor.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Eroare de sistem.</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Luna comenzii a fost schimbată!)</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>SKU-ul {0}  adăugat va fi trimis în momentul în care îl avem pe stoc.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Judeţul este invalid.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Numele străzii trebuie să conţină cel puţin o literă.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Numele străzii trebuie să conţină cel puţin un număr, un spaţiu şi o literă.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Tranzacţia nu este permisă, vă rugăm verificaţi cardul. Dacă problema persistă sunaţi la Biroul de Relaţii cu Distribuitorii, la numerele de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Tranzacţia nu este permisă, vă rugăm sunaţi la Biroul de Relaţii cu Distribuitorii, la numerele de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Codul poştal nu este valid.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>În comandă nu sunt produse.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Nu se află atâtea bucăţi din produsul  {0} pe stoc. Cantitatea disponibilă {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Nu a fost selectat niciun produs pentru a fi adăugat pe comandă.</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Nu a fost selectat niciun produs pentru a se calcula Volumul de Puncte.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Această adresă deja există în baza de date</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Această comandă depăşeşte limita de 7,500 VP. Mai aveţi dreptul să comandaţi {0} VP. Vă rugăm modificaţi comanda pentru a continua.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Tranzacţia pentru acest card a fost refuzată</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today Magazine a fost adăugat în coş.</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Nu putem procesa comanda dvs. Vă rugăm sunaţi la +4 0264 442 537 sau +4 021 310 24 10 şi specificaţi codul de eroare 01.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Nu putem procesa comanda dvs. Vă rugăm sunaţi la +4 0264 442 537 sau +4 021 310 24 10 şi specificaţi codul de eroare 05.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Nu putem procesa comanda dvs. Vă rugăm verificaţi adresa şi încercaţi din nou. Dacă problema persistă contactaţi Departamentul de Relaţii cu Distribuitorii la nr de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Ne pare rău. Această monedă nu poate fi convertită. Vă rugăm contactaţi Departamentul de Relaţii cu Distribuitorii la nr de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Aveţi în coş bilete la eveniment. Doriţi să goliţi coşul?</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Sunteţi pe cale să ştergeţi cardul principal. Vă rugăm introduceţi detaliile unui alt card înainte de a le şterge pe acestea.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Nu mai puteţi folosi acest card deoarece a fost respins de mai multe ori</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Nu puteţi adăuga acelaşi card de mai multe ori.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Nu puteţi adăuga acest produs în coş.</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Nu puteţi accesa pagina {0} fără produse în coş.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Aveţi în coş produse ce nu se află pe stoc, iar acestea vor fi şterse în cazul în care selectaţi la detalii de livrare Ridicare Produse . Doriţi să continuaţi? ("Da" sau "Nu"?)</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Deoarece aţi schimbat luna, comandă dvs va fi plasată în luna {0}. Doriţi să continuaţi cu această opţiune?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Aveţi în coş bilete la eveniment. Doriţi să goliţi coşul?</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Aveţi produse în coşul de cumpărături. Doriţi să goliţi coşul înainte să achiziţionaţi bilete la eveniment?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Aţi selectat {0} ca lună dublă. Este corect?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Aţi selectat Ridicare de la Centru. Din acest motiv vor fi mai puţine produse în comandă.</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Aţi selectat doar căutare produse fără să plasaţi comandă şi nu veţi putea adăuga produse în coş.</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Aţi adăugat HFF în coş.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Puteţi plăti în avans doar o taxă anuală de procesare.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Trebuie să ştergeţi detaliile unui card pentru a schimba produsele din coş</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Pentru a continua trebuie selectat Livrare sau Ridicare Produse.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Recent aţi plasat o comandă identică în {0}. Dacă este o comadă dublată apăsaţi "Anulare Comandă". Pentru a continua această comandă apăsaţi Trimite.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Taxa dvs anuală de procesare expiră la {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Deoarece taxa dvs anuală de procesare expiră o vom adăuga automat în coş.</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Deoarece aveţi taxe anuale de procesare neplătite acestea au fost automat adăugate în coş.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Cardul dvs a expirat. Vă rugăm apăsaţi Editare şi actualizaţi data expirării cardului.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Cardul dvs a expirat. Vă rugăm contactaţi Departamentul de Relaţii cu Distribuitorii la nr de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>ID-ul dvs nu funcţionează. Vă rugăm contactaţi Departamentul de Relaţii cu Distribuitorii la nr de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>ID-ul dvs nu funcţionează. Vă rugăm contactaţi Departamentul de Relaţii cu Distribuitorii la nr de telefon +4 021 316 59 32/33.</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Comanda dvs anterioară a fost trimisă înainte de a face modificările. Comanda dvs are numărul {0}. Puteţi verifica situaţia acestei comenzi sunând la +4 0264 442 537 sau +4 021 310 24 10 de Luni până Vineri între orele 10.00 şi 18.00 sau apăsaţi aici. (Atenţie, poate dura chiar şi 1 oră până ce comanda va fi vizibilă).&lt;br&gt;Dacă doriţi să plasaţi o nouă comandă, vă rugăm adăugaţi din nou produse în coş.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Taxa anuală de procesare a fost lăsată în coşul de cumpărături.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Detaliile dvs de livrare nu mai sunt valabile, coşul de cumpărături va fi golit.</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU-ul {0} nu este valid.</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Vă rugăm selectaţi Tipul Comenzii din mini-coş</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Nu puteţi continua deoarece aţi depăţit limita de achiziţionare</value>
+  </data>
+</root>

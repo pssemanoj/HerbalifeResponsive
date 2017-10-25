@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f3adc07b-eb0b-4556-b6d6-bb31ee89b162" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InboxServiceBinding.wsdl" MetadataType="Wsdl" ID="6e84fbd2-7d45-48d4-892d-9b432e76bfa8" SourceId="1" SourceUrl="http://usslcprodwcf00/EmailPublisher/V03/Service/Schemas/InboxServiceBinding.wsdl" />
+    <MetadataFile FileName="Inbox.wsdl" MetadataType="Wsdl" ID="5e5842d0-677a-4ca4-ac87-564851402758" SourceId="1" SourceUrl="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx?wsdl" />
+    <MetadataFile FileName="InboxService.xsd" MetadataType="Schema" ID="38a83a94-5c2f-4979-8ce6-8ebeaf9d1efa" SourceId="1" SourceUrl="http://usslcprodwcf00/EmailPublisher/V03/Service/Schemas/InboxService.xsd" />
+    <MetadataFile FileName="EmailPublisher.xsd" MetadataType="Schema" ID="351c26a8-6186-46d0-b4a6-256e10c72451" SourceId="1" SourceUrl="http://usslcprodwcf00/EmailPublisher/V03/Service/Schemas/EmailPublisher.xsd" />
+    <MetadataFile FileName="Inbox.disco" MetadataType="Disco" ID="4dae26d7-1a66-40fe-9610-38c7722220f1" SourceId="1" SourceUrl="http://usslcprodwcf00/EmailPublisher/V03/Service/Inbox.asmx?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

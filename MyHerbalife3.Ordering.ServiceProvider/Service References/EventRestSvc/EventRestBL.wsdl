@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://herbalife.com/2009/01/15/HL.Event.Interfaces" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EventRestBL" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://herbalife.com/2009/01/15/HL.Event.Interfaces" location="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IEventRestInterface" type="i0:IEventRestInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CopyLandingPage">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/CopyLandingPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachmentFlyer">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetAttachmentFlyer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventDetails">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventImage">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventSubtypes">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventSubtypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEventsList">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetEventsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocales">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLocales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLandingPage">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SaveLandingPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLandingPage">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchLandingPageEvents">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/SearchLandingPageEvents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLandingPage">
+      <soap:operation soapAction="http://herbalife.com/2009/01/15/HL.Event.Interfaces/IEventRestInterface/GetLandingPage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EventRestBL">
+    <wsdl:port name="BasicHttpBinding_IEventRestInterface" binding="tns:BasicHttpBinding_IEventRestInterface">
+      <soap:address location="http://usws1qa2wcf01.hrbl.net/Service/Event/EventRest.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

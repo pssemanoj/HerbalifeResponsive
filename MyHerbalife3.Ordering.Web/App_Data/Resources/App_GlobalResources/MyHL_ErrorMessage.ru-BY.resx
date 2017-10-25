@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Основное предпочтение для выдачи заказа не может быть удалено.</value>
+    <comment>_G1240</comment>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Перейти к оплате заказа</value>
+    <comment>_G1241</comment>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Перейти на главную страницу</value>
+    <comment>_G1242</comment>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Пожалуйста выберите адрес доставки.</value>
+    <comment>_G1237</comment>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Пожалуйста выберите Да/Нет.</value>
+    <comment>_G1238</comment>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Основной адрес не может быть удален.</value>
+    <comment>_G1239</comment>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>К сожалению, Вы не можете добавить этот товар в заказ, так как это превысит Ваш лимит заказов для личного потребления.</value>
+    <comment>_G1247</comment>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Системная ошибка.</value>
+    <comment>_G1248</comment>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Месяц заказа был изменен!)</value>
+    <comment>_G1249</comment>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Доставка по выбранному индексу недоступна</value>
+    <comment>_G1243</comment>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>Позиции {0} нет в наличии.</value>
+    <comment>_G1244</comment>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>К сожалению вы, не сможете разместить заказ, так как только Независимые Партнеры России могут размещать заказы на данном сайте.</value>
+    <comment>_G1246</comment>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Пожалуйста выберите время выдачи заказа.</value>
+    <comment>_G1236</comment>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Вы можете сохранить данные максимум {0} карт. Чтобы сохранить данные новой карты, пожалуйста, удалите одну из существующих.</value>
+    <comment>_G1226</comment>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Внимание:&lt;br/&gt;Данный сайт лучше всего просматривать с помощью Internet Explorere или Firefox.</value>
+    <comment>_H279</comment>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Пожалуйста, введите любой адрес для того, чтобы завершить заказ с получением в Центре Продаж.</value>
+    <comment>_G1228</comment>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Пожалуйста введите название улицы.</value>
+    <comment>_G1223</comment>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Пожалуйста введите индекс.</value>
+    <comment>_G1224</comment>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Пожалуйста введите корректный номер телефона.</value>
+    <comment>_G1225</comment>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Пожалуйста выберите локацию.</value>
+    <comment>_G1229</comment>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Пожалуйста выберите место выдачи заказа.</value>
+    <comment>_G1233</comment>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Пожалуйста, введите имя получателя в Центре Продаж</value>
+    <comment>_G1234</comment>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Пожалуйста, введите телефон получателя заказа</value>
+    <comment>_G1235</comment>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Пожалуйста выберите время отправки.</value>
+    <comment>_G1230</comment>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Пожалуйста выберите тип заказа.</value>
+    <comment>_G1231</comment>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Пожалуйста выберите место выдачи заказа.</value>
+    <comment>_G1232</comment>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>Номер серии {0}, временно отсутствует на складе и будет добавлен в заказ с выдачей позже.</value>
+    <comment>_G1250</comment>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Невозможно завершить заказ. Пожалуйста, обратитесь в Отдел Заказов по телефону бесплатной линии 8 801 100 7373 и назовите код ошибки 05.</value>
+    <comment>_G1266</comment>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Невозможно продолжить размещение заказа. Пожалуйста, проверьте адрес и попробуйте снова. Если проблема сохранится, обратитесь в Отдел Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1267</comment>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>К сожалению, не удалось выполнить конвертацию валют. Пожалуйста, обратитесь в в Отдел Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1268</comment>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Оплата заказа данной картой была отклонена.</value>
+    <comment>_G1263</comment>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Журнал "Today" был добавлен в корзину.</value>
+    <comment>_G1264</comment>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Невозможно завершить заказ. Пожалуйста, обратитесь в Отдел Заказов по телефону бесплатной линии 8 801 100 7373 и назовите код ошибки 01.</value>
+    <comment>_G1265</comment>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>В корзине присутствуют билеты на мероприятие. Вы хотите очистить корзину?</value>
+    <comment>_G1269</comment>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Вы не можете перейти на {0} страницу оплаты, так как ваша корзина пуста</value>
+    <comment>_G1274</comment>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>В вашем заказе присутствуют продукты, временно отсутствующие на складе. Если Вы выберете получение в Центре Продаж как способ доставки данные товары будут удалены из корзины. Вы хотите продолжить? ("Да" или "Нет")</value>
+    <comment>_G1275</comment>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Вы изменили месяц размещения заказа на {0}. Вы хотите продолжить?</value>
+    <comment>_G1276</comment>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Вы пытаетесь удалить данные вашей основной платежной карты. Пожалуйста, сохраните другую карту как основную прежде чем удалять данные этой карты.</value>
+    <comment>_G1270</comment>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Вы больше не можете оплачивать товары данной картой, так как оплата данной картой была отклонена несколько раз.</value>
+    <comment>_G1271</comment>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Вы не можете добавить данный продукт в корзину.</value>
+    <comment>_G1273</comment>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>К сожалению, транзакция отклонена. Пожалуйста, проверьте данные карты. Если проблема сохранится, свяжитесь с Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1254</comment>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>К сожалению, транзакция отклонена. Пожалуйста, свяжитесь с Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1255</comment>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Неверный почтовый индекс.</value>
+    <comment>_G1256</comment>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Неверная область/край.</value>
+    <comment>_G1251</comment>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Название улицы должно содержать хотя бы одну букву.</value>
+    <comment>_G1252</comment>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Название улицы должно содержать хотя бы одно число, один пробел и одну букву.</value>
+    <comment>_G1253</comment>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Невозможно перейти к оплате, так как в заказ не включен ни одна позиция.</value>
+    <comment>_G1257</comment>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Не выбрано ни одного продукта для расчета количества очков.</value>
+    <comment>_G1260</comment>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Данный адрес уже существует в тестовой базе данных.</value>
+    <comment>_G1261</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Данный заказ превышает Ваш лимит очков по заказам. Вы можете заказать на {0} очков. Для того, чтобы продолжить, пожалуйста, измените заказ соответственно.</value>
+    <comment>_G1262</comment>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>В настоящий момент продукт {0} отсутствует на складе в указанном количестве. Доступное количество продукта {1}.</value>
+    <comment>_G1258</comment>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Не выбрано ни одного продукта для добавления в заказ.</value>
+    <comment>_G1259</comment>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>В вашей корзине присутствуют билеты на мероприятия, вы уверены что хотите очистить корзину?</value>
+    <comment>_G1277</comment>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Вы можете включить в заказ журнал "Today" в количестве не более</value>
+    <comment>_G1184</comment>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Количество журналов доступное для заказа {0}.</value>
+    <comment>_G1185</comment>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Данное имя пользователя уже используется. Пожалуйста, выберите другое.</value>
+    <comment>_G1186</comment>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Неверный почтовый индекс.</value>
+    <comment>_G1181</comment>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: Вам необходимо погасить задолженность по оплате Ежегодного взноса за компьютерное обслуживание за {0} год/лет перед тем как делать заказ типа "Перепродажа". Пожалуйста, измените тип заказа на "Личный" и оплатите задолженность по оплате Ежегодного взноса за компьютерное обслуживание.</value>
+    <comment>_G1182</comment>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Товара {0} в настоящее время нет в наличии - количество изменено на 0.</value>
+    <comment>_G1183</comment>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>В настоящий момент система интернет заказов недоступна</value>
+    <comment>_G1187</comment>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Пожалуйста, введите количество превышающее 0</value>
+    <comment>_G1191</comment>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Пожалуйста, проверьте данные карты.</value>
+    <comment>_G1192</comment>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Пожалуйста, завершите оплату ежегодного взноса за компьютерное обслуживание перед тем как добавлять другие товары в корзину.</value>
+    <comment>_G1194</comment>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>В настоящий момент интернет заказы не разрешены</value>
+    <comment>_G1188</comment>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Только продукт может быть включен в автономный заказ на оплату Ежегодного взноса за компьютерное обслуживание.</value>
+    <comment>_G1189</comment>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Сумма к оплате не совпадает со стоимостью заказа.</value>
+    <comment>_G1190</comment>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>К сожалению, Ваша карта не зарегистрирована. Пожалуйста, свяжитесь Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1180</comment>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Так как Вы не включили Продукт в заказ на оплату Ежегодного взноса за компьютерное обслуживание, все не продуктовые товары были удалены.</value>
+    <comment>_G1170</comment>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Товары, временно отсутствующие на складе, не могут быть добавлены в заказ на оплату Ежегодного взноса за компьютерное обслуживание.</value>
+    <comment>_G1171</comment>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Не удалось авторизовать карту. Пожалуйста, уточните данные карты.</value>
+    <comment>_G1172</comment>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU номер ежегодного взноса за обслуживание не доступен онлайн и не может быть добавлен в Вашу онлайн корзину.</value>
+    <comment>_G1167</comment>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Номера серии для оплаты Ежегодного взноса за компьютерное обслуживание не могут быть удалены из корзины.</value>
+    <comment>_G1168</comment>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите отменить заказ? После нажатия "OK" корзина будет очищена.</value>
+    <comment>_G1169</comment>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Ошибка в формате данных. Пожалуйста, введите данные в правильном формате.</value>
+    <comment>_G1173</comment>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Товар {0} доступен в количестве {1}. Пожалуйста, измените количество данного товара чтобы добавить его в корзину.</value>
+    <comment>_G1177</comment>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Наименование {0} временно отсутствует и может быть заказано с последующим получением.</value>
+    <comment>_G1178</comment>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>Для данного Номера серии {0} количество не может превышать {1}.</value>
+    <comment>_G1179</comment>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Номер серии введен дважды. Пожалуйста, проверьте данные.</value>
+    <comment>_G1174</comment>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>За заказ возможно приобрести до {0} билетов на мероприятие.</value>
+    <comment>_G1175</comment>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Приобретение билетов на мероприятия недоступно на данном сайте.</value>
+    <comment>_G1176</comment>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Пожалуйста введите добавочный номер в правильном формате.</value>
+    <comment>_G1213</comment>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Пожалуйста введите имя получателя.</value>
+    <comment>_G1214</comment>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Пожалуйста введите почтовый индекс.</value>
+    <comment>_G1215</comment>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Пожалуйста введите правильное Отчество.</value>
+    <comment>_G1210</comment>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Пожалуйста введите всю необходимую информацию для доставки.</value>
+    <comment>_G1211</comment>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Пожалуйста введите почтовый индекс в корректном формате.</value>
+    <comment>_G1212</comment>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Пожалуйста введите название города.</value>
+    <comment>_G1216</comment>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Пожалуйста заполните все обязательные поля.</value>
+    <comment>_G1220</comment>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Пожалуйста введите номер телефона.</value>
+    <comment>_G1221</comment>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Пожалуйста введите название области/края/республики.</value>
+    <comment>_G1222</comment>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Пожалуйста введите добавочный номер.</value>
+    <comment>_G1217</comment>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Пожалуйста введите Имя.</value>
+    <comment>_G1218</comment>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Пожалуйста введите Фамилию.</value>
+    <comment>_G1219</comment>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Пожалуйста введите правильную Фамилию.</value>
+    <comment>_G1209</comment>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Пожалуйста, точно введите название Центра Продаж.</value>
+    <comment>_G1198</comment>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Пожалуйста введите правильное название города.</value>
+    <comment>_G1199</comment>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Пожалуйста введите правильно Имя.</value>
+    <comment>_G1200</comment>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Пожалуйста, совершите оплату ежегодного взноса за компьютерное обслуживание перед приобретением билетов на мероприятия.</value>
+    <comment>_G1195</comment>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Пожалуйста введите число.</value>
+    <comment>_G1196</comment>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Пожалуйста введите количество для Номера серии {0}.</value>
+    <comment>_G1197</comment>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Пожалуйста введите сумму для пожертвования, кроме нуля (0)</value>
+    <comment>_G1202</comment>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Пожалуйста введите количество лет за которое будет произведена оплата Ежегодного взноса за компьютерное обслуживание.</value>
+    <comment>_G1206</comment>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Пожалуйста введите правильный адрес электронной почты.</value>
+    <comment>_G1207</comment>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Пожалуйста введите правильное Имя.</value>
+    <comment>_G1208</comment>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Пожалуйста введите адрес электронной почты.</value>
+    <comment>_G1203</comment>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Пожалуйста введите данные для оплаты.</value>
+    <comment>_G1204</comment>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Пожалуйста введите CVV код.</value>
+    <comment>_G1205</comment>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Данное имя пользователя уже используется. Пожалуйста, выберите другое.</value>
+    <comment>_G3290</comment>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Извините, мы не могли добавить вашу карту. Пожалуйста, попробуйте снова с ником, не имеющим номера кредитной карты.</value>
+    <comment>_G3277</comment>
+  </data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>The price for the items in your cart has changed due to an error. Please re-submit your order.</value>
+    <comment>_G3278</comment>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Пожалуйста, введите имя курьера</value>
+    <comment>_G2352</comment>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Ваша транзакция не была одобрена. Если у Вас возникли вопросы, пожалуйста, свяжитесь Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G2512</comment>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Пожалуйста, предоставьте необходимые данные адреса.</value>
+    <comment>_G2513</comment>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Пожалуйста, введите данные доставки</value>
+    <comment>_G2351</comment>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Необходимо подтверждение адреса доставки</value>
+    <comment>_G2070</comment>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Пожалуйста, выберите номер RG</value>
+    <comment>_G2310</comment>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>пожалуйста, выберите адрес Независимого Партнера</value>
+    <comment>_G2311</comment>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Уважаемый Независимый Партнер, для Вашей безопасности данный заказ был выбран для прохождения аудита Herbalife. Он будет выпущен в ближайшее время. Согласно политике Herbalife, заказы для проведения анализа выбираются в случайном порядке.</value>
+    <comment>_G2514</comment>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Мы заметили, что Вы разместили аналогичный заказ {0}. Пожалуйста, подтвердите, что Вы хотите продолжить.</value>
+    <comment>_G2635</comment>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Пожалуйста, выберите дату, когда сможете забрать заказ.</value>
+    <comment>_G2712</comment>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Вам необходимо оплатить Ежегодный взнос за компьютерное обслуживание. Оплата Ежегодного взноса за компьютерное обслуживание будет автоматически включена в ваш заказ</value>
+    <comment>_G1289</comment>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Вам необходимо оплатить Ежегодный взнос за компьютерное обслуживание. Оплата Ежегодного взноса за компьютерное обслуживание будет автоматически включена в ваш заказ.</value>
+    <comment>_G1288</comment>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Вам необходимо оплатить Ежегодный взнос за компьютерное обслуживание до {0}</value>
+    <comment>_G1287</comment>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Срок действия кредитной карты истек. Пожалуйста нажмите "Редактировать" и измените срок действия карты.</value>
+    <comment>_G1290</comment>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>В вашей корзине присутствуют продукты. Вы уверены что хотите очистить корзину перед тем как перейти к покупке билетов на мероприятия?</value>
+    <comment>_G1278</comment>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Ваш запрос не может быть обработан. Пожалуйста, свяжитесь с Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1292</comment>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Срок действия кредитной карты истек. Пожалуйста, обратитесь в Отдел дистанционных заказов.</value>
+    <comment>_G1291</comment>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Вы выбрали {0} как месяц для заказа, данная информация верна?</value>
+    <comment>_G1279</comment>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Вы должны выбрать доставку или получение в Центре Продаж чтобы продолжить.</value>
+    <comment>_G1285</comment>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Необходимо удалить данные одной из кредитных карт, чтобы изменить содержание корзины.</value>
+    <comment>_G1284</comment>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Вы можете внести предоплату за ваше компьютерное обслуживание не ранее чем за  90 дней до официальной даты его оплаты.</value>
+    <comment>_G1283</comment>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Добровольное пожертвование в Семейный фонд Herbalife было успешно добавлено в корзину.</value>
+    <comment>_G1282</comment>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Мы заметили, что Вы разместили аналогичный заказ {0}. Пожалуйста, подтвердите, что Вы хотите продолжить.</value>
+    <comment>_G1286</comment>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Вы выбрали получение в WALDOS как способ доставки. В этом случае выбор продуктов, доступных для заказа, будет ограничен.</value>
+    <comment>_G1280</comment>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Вы выбрали просмотр товаров без возможности размещения заказа. Вы не сможете добавить товары в корзину.</value>
+    <comment>_G1281</comment>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Пожалуйста, выберете способ доставки</value>
+    <comment>_G1299</comment>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Бэкордер для Новой Каледонии и Французской полинезии недоступен</value>
+    <comment>_G1300</comment>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Пожалуйста, выберете тип заказа в мини-корзине.</value>
+    <comment>_G1301</comment>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Вы не можете завершить заказ, так как превышен лимит очков для заказов.</value>
+    <comment>_G1302</comment>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Ваш запрос не может быть обработан. Пожалуйста, свяжитесь с Отделом Заказов по телефону бесплатной линии 8 801 100 7373.</value>
+    <comment>_G1293</comment>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Предыдущий заказ был размещен до того, как Вы внесли новые изменения. Номер Вашего заказа {0}. Вы можете уточнить статус заказа, обратившись в Отдел Заказов по телефону бесплатной линии 8 801 100 7373 в рабочие часы c 10:30 до 19:00 , ПН-ПТ, или нажав сюда. (Пожалуйста, учтите, что может потребоваться около часа, чтобы заказ появился в системе.) &lt;br&gt; Чтобы разместить новый заказ, пожалуйста, заново добавьте товары в корзину.</value>
+    <comment>_G1294</comment>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU {0} неверен</value>
+    <comment>_G1298</comment>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Указанная информация для доставки более не действительна. Корзины будет очищена.</value>
+    <comment>_G1296</comment>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Оплата Ежегодного взноса за компьютерное обслуживание добавлена в корзину.</value>
+    <comment>_G1295</comment>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Пожалуйста, проверьте свой ID номер Независимого Партнера и ПИН-код и попробуйте снова. Если проблема не будет решена, свяжитесь с Департаментом Сервиса и Продаж по телефону бесплатной линии 8 800 200 7474</value>
+    <comment>_H280</comment>
+  </data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Для завершения установки Вашей учетной записи в качестве нового Партнера, просим Вас выбрать регион Вашей страны обработки и попробовать снова.</value>
+    <comment>_R123</comment>
+  </data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>Не возможно получить данные PIN кода</value>
+    <comment>_H284</comment>
+  </data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Пожалуйста, выберите вариант восстановления ПИН-кода</value>
+    <comment>_H282</comment>
+  </data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Пожалуйста, введите ваш ID Независимого Партнера</value>
+    <comment>_H281</comment>
+  </data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Объемы недоступны для просмотра на данный момент</value>
+    <comment>_A923</comment>
+  </data>
+  <data name="NoMemberFoundInHMS" xml:space="preserve">
+    <value>Для обработки Вашей заявки на статус Независимого Партнера может потребоваться от 12 до 18 часов. После обработки Вашей заявки Вы сможете размещать заказы. Пожалуйста, зайдите на сайт позднее для завершения Вашего заказа.</value>
+    <comment>_GXXXX</comment>
+  </data>
+  <data name="APFFeeDueFuturePopup" xml:space="preserve">
+    <value>Вам необходимо оплатить ежегодный взнос за компьютерное обслуживание до {0}. Во избежание каких-либо перерывов, пожалуйста, оплатите ежегодный взнос за обслуживание в срок или до срока оплаты.</value>
+  </data>
+  <data name="APFFeeDuePastPopup" xml:space="preserve">
+    <value>Ваш ежегодный взнос за компьютерное обслуживание должен был быть оплачен {0}.  Во избежание каких-либо перерывов в вашем бизнесе, пожалуйста, оплатите ежегодный взнос за обслуживание как можно скорее.</value>
+  </data>
+  <data name="APFFeeDueTodayPopup" xml:space="preserve">
+    <value>Вам необходимо оплатить ежегодный взнос за компьютерное обслуживание сегодня. Во избежание каких-либо перерывов, пожалуйста, оплатите ежегодный взнос за обслуживание сегодня.</value>
+  </data>
+  <data name="Pay now" xml:space="preserve">
+    <value>Оплатить сейчас</value>
+  </data>
+  <data name="Remind Me Later" xml:space="preserve">
+    <value>Напомните мне позднее</value>
+  </data>
+</root>

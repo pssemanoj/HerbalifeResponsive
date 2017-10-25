@@ -1,0 +1,16 @@
+.gdo-order-pref-container {
+    margin: 0;
+    @include breakpoint( $tablet) { margin: 5px 5px 5px 20px; }
+}
+.gdo-float-left {
+    margin-right: 0;
+    @include breakpoint( $tablet) { margin-right: 10px; }
+}
+
+.gdo-order-pref-display-box div {
+    display: block;
+    padding: 0 15px 10px;
+}
+
+[id$="UpdatePanelAddress"] { @extend .width-100; }
+[id$="gvmobSavedShippingAddress"] { @extend .width-100; }

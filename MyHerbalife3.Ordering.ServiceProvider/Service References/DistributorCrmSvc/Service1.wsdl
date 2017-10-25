@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd40" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2010/11/25/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2009/01/15/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd5" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2015/02/19/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2007/12/12/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd8" namespace="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2011/01/18/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd12" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.DSWebAdmin" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2011/10/1/HL.DistributorCRM.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd14" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Qualification" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd15" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Qualification" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd16" namespace="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Qualification" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd17" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd18" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Lead.UserManagement" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd19" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd20" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd21" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd22" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Contact" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd23" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd24" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd25" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd26" namespace="http://herbalife.com/2010/02/17/HL.DistributorCRM.ValueObjects.Contact" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd27" namespace="http://herbalife.com/2013/08/01/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd28" namespace="http://herbalife.com/2013/11/27/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd29" namespace="http://herbalife.com/2013/11/26/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd30" namespace="http://herbalife.com/2014/04/30/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd31" namespace="http://herbalife.com/2014/09/16/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd32" namespace="http://herbalife.com/2014/10/30/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd33" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Survey" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd34" namespace="http://herbalife.com/2015/02/11/HL.DistributorCRM.ValueObjects.Survey" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd35" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Survey" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd36" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd37" namespace="http://herbalife.com/2010/01/29/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd38" namespace="http://herbalife.com/2010/09/23/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd39" namespace="http://herbalife.com/2010/10/27/HL.DistributorCRM.ValueObjects.Lead" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd41" namespace="http://herbalife.com/2012/10/22/HL.DistributorCRM.Lead.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd42" namespace="http://herbalife.com/2010/10/05/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd43" namespace="http://herbalife.com/2007/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd44" namespace="http://herbalife.com/2010/12/12/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd45" namespace="http://herbalife.com/2013/02/01/HL.DistributorCRM.ValueObjects.DSWebAdminCompliance" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd46" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd47" namespace="http://herbalife.com/2010/02/178/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd48" namespace="http://herbalife.com/2011/01/10/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd49" namespace="http://herbalife.com/2011/01/21/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd50" namespace="http://herbalife.com/2011/01/11/HL.DistributorCRM.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd51" namespace="http://herbalife.com/2010/12/10/HL.DistributorCRM.ValueObjects.Exam" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd52" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Calendar" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd53" namespace="http://herbalife.com/2010/01/11/HL.Distributor.ValueObjects.Bizworks" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd54" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Calendar" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd55" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Contact" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd56" namespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.Contact" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd57" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Task" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd58" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Task" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd59" namespace="http://herbalife.com/2010/01/10/HL.DistributorCRM.ValueObjects.Distributor" />
+      <xsd:import schemaLocation="http://usws1qa3wcf01.hrbl.net/Service/DistributorCRM/Service.svc?xsd=xsd60" namespace="http://herbalife.com/2010/01/11/HL.DistributorCRM.ValueObjects.Distributor" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDistributorCRMService_SaveLeadQualificationEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadQualificationEvent" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadQualificationEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadQualificationEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_EnableDistributorToReceiveHL24Leads_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnableDistributorToReceiveHL24Leads" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_EnableDistributorToReceiveHL24Leads_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnableDistributorToReceiveHL24LeadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ValidateMercadoPagoAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMercadoPagoAccount" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ValidateMercadoPagoAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateMercadoPagoAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMercadoPagoAccessKeys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMercadoPagoAccessKeys" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMercadoPagoAccessKeys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMercadoPagoAccessKeysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPayPalToken_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayPalToken" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPayPalToken_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayPalTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPayPalAccountId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayPalAccountId" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPayPalAccountId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPayPalAccountIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CreatePayPalBillingAgreement_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePayPalBillingAgreement" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CreatePayPalBillingAgreement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePayPalBillingAgreementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProPayAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProPayAccount" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProPayAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProPayAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProductPrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductPrograms" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProductPrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProductProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductProgram" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetProductProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProgram" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SavePrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePrograms" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SavePrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgram" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPhotos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotos" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPhotos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCustomBannerElements_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomBannerElements" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCustomBannerElements_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomBannerElementsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMemberCustomBannerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberCustomBannerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMemberCustomBannerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberCustomBannerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMemberCustomBannerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMemberCustomBannerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMemberCustomBannerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMemberCustomBannerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteMemberCustomBannerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMemberCustomBannerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteMemberCustomBannerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMemberCustomBannerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateMemberSiteStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberSiteStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateMemberSiteStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMemberSiteStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_TransferSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransferSite" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_TransferSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransferSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAllBannedWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBannedWords" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAllBannedWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBannedWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveBannedWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBannedWords" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveBannedWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBannedWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveBlockInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBlockInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveBlockInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBlockInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMultipleDistInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultipleDistInfos" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMultipleDistInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMultipleDistInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveApprovedDistInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovedDistInfos" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveApprovedDistInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveApprovedDistInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReport" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSBannedWords_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSBannedWords" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSBannedWords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSBannedWordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSBannedWordsPermissive_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSBannedWordsPermissive" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSBannedWordsPermissive_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSBannedWordsPermissiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMembershipUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembershipUser" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMembershipUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMembershipUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAllMembershipRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMembershipRoles" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAllMembershipRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllMembershipRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMembershipUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMembershipUser" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMembershipUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMembershipUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetActiveDirectoryUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveDirectoryUser" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetActiveDirectoryUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveDirectoryUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddActiveDirectoryUserToGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddActiveDirectoryUserToGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddActiveDirectoryUserToGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddActiveDirectoryUserToGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ExportDistributorContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExportDistributorContacts" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ExportDistributorContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExportDistributorContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurvey" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveSurvey_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSurvey" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveSurvey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveSurveyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetSurveyStatusByReference_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyStatusByReference" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetSurveyStatusByReference_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSurveyStatusByReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEmailComplianceSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailComplianceSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEmailComplianceSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailComplianceSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveEmailComplianceSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEmailComplianceSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveEmailComplianceSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveEmailComplianceSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SavePrimaryAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:SavePrimaryAddress" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SavePrimaryAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SavePrimaryAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEmailTemplates_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailTemplates" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEmailTemplates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailTemplatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMailing_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMailing" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveMailing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveMailingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListRecipients_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListRecipients" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListRecipients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListRecipientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetOptOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptOut" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetOptOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOptOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveOptOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOptOut" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveOptOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveOptOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMailingHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingHistory" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMailingHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMailingHistoryDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingHistoryDetail" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMailingHistoryDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMailingHistoryDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_InvokeMailingWorkflow_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeMailingWorkflow" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_InvokeMailingWorkflow_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvokeMailingWorkflowResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CheckMailingQuota_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMailingQuota" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CheckMailingQuota_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckMailingQuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendCancelOptOutMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendCancelOptOutMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendCancelOptOutMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendCancelOptOutMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDefaultMailingTokens_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDefaultMailingTokens" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDefaultMailingTokens_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDefaultMailingTokensResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDefaultMailingTokens_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultMailingTokens" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDefaultMailingTokens_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultMailingTokensResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendTriggeredMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendTriggeredMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendTriggeredMessageG_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessageG" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendTriggeredMessageG_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessageGResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetExactTargetSubscriber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExactTargetSubscriber" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetExactTargetSubscriber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExactTargetSubscriberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetBulkEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBulkEmail" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetBulkEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBulkEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateBulkEmailStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBulkEmailStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateBulkEmailStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBulkEmailStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendSmsTriggeredMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSmsTriggeredMessage" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SendSmsTriggeredMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSmsTriggeredMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorQualifications_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorQualifications" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorQualifications_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorQualificationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetExamByExamId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByExamId" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetExamByExamId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExamByExamIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLastExamByDistributorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastExamByDistributorId" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLastExamByDistributorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastExamByDistributorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorExamAnswers_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorExamAnswers" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorExamAnswers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorExamAnswersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ResetDistributorExam_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetDistributorExam" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ResetDistributorExam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetDistributorExamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListAppointments_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListAppointments" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListAppointments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointment" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveAppointment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAppointment" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteAppointments_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppointments" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteAppointments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCalendarSettingsByOwner_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalendarSettingsByOwner" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCalendarSettingsByOwner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCalendarSettingsByOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveCalendarSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCalendarSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveCalendarSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCalendarSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByName" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadContactInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadContactInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadContactInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadContactInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByOwner_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByOwner" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByOwner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByFilter" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContact" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetContactByContactDistributorID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactByContactDistributorID" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetContactByContactDistributorID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactByContactDistributorIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContact" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ImportContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportContacts" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ImportContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContact" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContactList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContactList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CopyContactList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyContactList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CopyContactList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyContactListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContactsByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByID" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteContactsByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteContactsByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddContactsToList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactsToList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddContactsToList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddContactsToListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactListsByOwner_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactListsByOwner" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactListsByOwner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactListsByOwnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContactIsNewStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContactIsNewStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContactIsNewStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContactIsNewStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByContactListIDs_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByContactListIDs" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListContactsByContactListIDs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListContactsByContactListIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddDistributorsToContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDistributorsToContacts" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddDistributorsToContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDistributorsToContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListTasks" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTask" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTask" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveTasksStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTasksStatus" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveTasksStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveTasksStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTasks" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_DeleteTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContactList_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContactList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveContactList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveContactListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEnhancedVisibility_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnhancedVisibility" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetEnhancedVisibility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnhancedVisibilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SetEnhancedVisibility_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetEnhancedVisibility" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SetEnhancedVisibility_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetEnhancedVisibilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListDistributorByFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListDistributorByFilter" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ListDistributorByFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListDistributorByFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddDistributorsToDistributorCRM_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDistributorsToDistributorCRM" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_AddDistributorsToDistributorCRM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDistributorsToDistributorCRMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadQualification_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadQualification" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadQualification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadQualificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadOption" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadOption" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSLeadProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSLeadProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDSLeadProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSLeadProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDSLeadProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDSLeadProfile" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDSLeadProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDSLeadProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadCountryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadCountryList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadCountryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadCountryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadRegionsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadRegionsList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadRegionsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadRegionsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountriesLanguages_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountriesLanguages" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountriesLanguages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountriesLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountryID" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountriesByRegion_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountriesByRegion" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadCountriesByRegion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadCountriesByRegionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSLeadSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSLeadSearch" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSLeadSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSLeadSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadBasicInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadBasicInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadBasicInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadBasicInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadDetailHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadDetailHistory" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadDetailHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadDetailHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadsForDS_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadsForDS" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadsForDS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadsForDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetPendingLeads_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetPendingLeads" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetPendingLeads_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetPendingLeadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadActionCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadActionCode" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadActionCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadActionCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetReAssignmentReason_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetReAssignmentReason" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetReAssignmentReason_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetReAssignmentReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDashboardCities_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDashboardCities" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDashboardCities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDashboardCitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveReAssignedLead_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveReAssignedLead" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveReAssignedLead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveReAssignedLeadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDistributorInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDistributorInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDistributorInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDistributorInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSDistributorSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSDistributorSearch" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSDistributorSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSDistributorSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSQualifiedMemberSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSQualifiedMemberSearch" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSQualifiedMemberSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSQualifiedMemberSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDistributorForLeadReassign_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDistributorForLeadReassign" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDistributorForLeadReassign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDistributorForLeadReassignResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetQualificationOverride_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetQualificationOverride" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetQualificationOverride_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetQualificationOverrideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetAssignmentOverride_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetAssignmentOverride" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetAssignmentOverride_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetAssignmentOverrideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDSDashboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDSDashboard" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetDSDashboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetDSDashboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateLeadByDistributor_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLeadByDistributor" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateLeadByDistributor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLeadByDistributorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormLookUp_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormLookUp" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormLookUp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormLookUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormCountries" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetAdminDashboard_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetAdminDashboard" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetAdminDashboard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetAdminDashboardResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetSourceForCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetSourceForCountry" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetSourceForCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetSourceForCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormRules_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormRules" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormRules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetLeadFormSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetLeadFormSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveLeadFormRules_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveLeadFormRules" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveLeadFormRules_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveLeadFormRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMaintenanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaintenanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetMaintenanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMaintenanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SetMaintenanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMaintenanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SetMaintenanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMaintenanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateMaintenanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMaintenanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateMaintenanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateMaintenanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CancelMaintenanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelMaintenanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CancelMaintenanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelMaintenanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAssignmentCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentCountries" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetAssignmentCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateAssignmentCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignmentCountry" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_UpdateAssignmentCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignmentCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadFollowupDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadFollowupDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveLeadFollowupDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveLeadFollowupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadFollowupDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadFollowupDetails" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadFollowupDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadFollowupDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetCustomerPropertiesNative_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetCustomerPropertiesNative" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSGetCustomerPropertiesNative_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSGetCustomerPropertiesNativeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveCustomerPropertiesNative_InputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveCustomerPropertiesNative" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_LMSSaveCustomerPropertiesNative_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LMSSaveCustomerPropertiesNativeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPromoGift_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromoGift" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPromoGift_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromoGiftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPromoGiftValues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromoGiftValues" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetPromoGiftValues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPromoGiftValuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_BindPromoGiftItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:BindPromoGiftItems" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_BindPromoGiftItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BindPromoGiftItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CheckContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContent" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_CheckContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebsiteCountryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebsiteCountryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebsiteCountryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebsiteCountryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteExtensions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteExtensions" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteExtensions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteExtensionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebSiteSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebSiteSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebSiteSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebSiteSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebSiteSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebSiteSettings" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebSiteSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebSiteSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCatalogs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogs" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetCatalogs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCatalogsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteNavigation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteNavigation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteNavigation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteNavigationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteThemes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteThemes" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteThemes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteThemesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ValidateWebExtension_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWebExtension" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_ValidateWebExtension_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateWebExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitesByDistributorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitesByDistributorId" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitesByDistributorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitesByDistributorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebsiteInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebsiteInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_SaveDistributorWebsiteInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDistributorWebsiteInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteInformation" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteCountryInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteCountryInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetDistributorWebsiteCountryInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorWebsiteCountryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitePageContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitePageContent" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitePageContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitePageContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitePageContentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitePageContentList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsitePageContentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsitePageContentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteDisplayModuleContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteDisplayModuleContent" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteDisplayModuleContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteDisplayModuleContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteDisplayModuleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteDisplayModuleList" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteDisplayModuleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteDisplayModuleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteContentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteContentById" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetWebsiteContentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteContentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadQualificationEvents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadQualificationEvents" />
+  </wsdl:message>
+  <wsdl:message name="IDistributorCRMService_GetLeadQualificationEvents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLeadQualificationEventsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDistributorCRMService">
+    <wsdl:operation name="SaveLeadQualificationEvent">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadQualificationEvent" message="tns:IDistributorCRMService_SaveLeadQualificationEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadQualificationEventResponse" message="tns:IDistributorCRMService_SaveLeadQualificationEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnableDistributorToReceiveHL24Leads">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/EnableDistributorToReceiveHL24Leads" message="tns:IDistributorCRMService_EnableDistributorToReceiveHL24Leads_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/EnableDistributorToReceiveHL24LeadsResponse" message="tns:IDistributorCRMService_EnableDistributorToReceiveHL24Leads_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateMercadoPagoAccount">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateMercadoPagoAccount" message="tns:IDistributorCRMService_ValidateMercadoPagoAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateMercadoPagoAccountResponse" message="tns:IDistributorCRMService_ValidateMercadoPagoAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMercadoPagoAccessKeys">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMercadoPagoAccessKeys" message="tns:IDistributorCRMService_GetMercadoPagoAccessKeys_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMercadoPagoAccessKeysResponse" message="tns:IDistributorCRMService_GetMercadoPagoAccessKeys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayPalToken">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalToken" message="tns:IDistributorCRMService_GetPayPalToken_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalTokenResponse" message="tns:IDistributorCRMService_GetPayPalToken_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPayPalAccountId">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalAccountId" message="tns:IDistributorCRMService_GetPayPalAccountId_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPayPalAccountIdResponse" message="tns:IDistributorCRMService_GetPayPalAccountId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayPalBillingAgreement">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CreatePayPalBillingAgreement" message="tns:IDistributorCRMService_CreatePayPalBillingAgreement_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CreatePayPalBillingAgreementResponse" message="tns:IDistributorCRMService_CreatePayPalBillingAgreement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProPayAccount">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProPayAccount" message="tns:IDistributorCRMService_GetProPayAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProPayAccountResponse" message="tns:IDistributorCRMService_GetProPayAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductPrograms">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductPrograms" message="tns:IDistributorCRMService_GetProductPrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductProgramsResponse" message="tns:IDistributorCRMService_GetProductPrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductProgram">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductProgram" message="tns:IDistributorCRMService_GetProductProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetProductProgramResponse" message="tns:IDistributorCRMService_GetProductProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProgram">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveProgram" message="tns:IDistributorCRMService_SaveProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveProgramResponse" message="tns:IDistributorCRMService_SaveProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePrograms">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SavePrograms" message="tns:IDistributorCRMService_SavePrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveProgramsResponse" message="tns:IDistributorCRMService_SavePrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProgram">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteProgram" message="tns:IDistributorCRMService_DeleteProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteProgramResponse" message="tns:IDistributorCRMService_DeleteProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhotos">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPhotos" message="tns:IDistributorCRMService_GetPhotos_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPhotosResponse" message="tns:IDistributorCRMService_GetPhotos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomBannerElements">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCustomBannerElements" message="tns:IDistributorCRMService_GetCustomBannerElements_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCustomBannerElementsResponse" message="tns:IDistributorCRMService_GetCustomBannerElements_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberCustomBannerInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMemberCustomBannerInfo" message="tns:IDistributorCRMService_GetMemberCustomBannerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMemberCustomBannerInfoResponse" message="tns:IDistributorCRMService_GetMemberCustomBannerInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMemberCustomBannerInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMemberCustomBannerInfo" message="tns:IDistributorCRMService_SaveMemberCustomBannerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMemberCustomBannerInfoResponse" message="tns:IDistributorCRMService_SaveMemberCustomBannerInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMemberCustomBannerInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteMemberCustomBannerInfo" message="tns:IDistributorCRMService_DeleteMemberCustomBannerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteMemberCustomBannerInfoResponse" message="tns:IDistributorCRMService_DeleteMemberCustomBannerInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMemberSiteStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMemberSiteStatus" message="tns:IDistributorCRMService_UpdateMemberSiteStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMemberSiteStatusResponse" message="tns:IDistributorCRMService_UpdateMemberSiteStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferSite">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/TransferSite" message="tns:IDistributorCRMService_TransferSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/TransferSiteResponse" message="tns:IDistributorCRMService_TransferSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBannedWords">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllBannedWords" message="tns:IDistributorCRMService_GetAllBannedWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllBannedWordsResponse" message="tns:IDistributorCRMService_GetAllBannedWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBannedWords">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBannedWords" message="tns:IDistributorCRMService_SaveBannedWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBannedWordsResponse" message="tns:IDistributorCRMService_SaveBannedWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorInformation" message="tns:IDistributorCRMService_GetDistributorInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorInformationResponse" message="tns:IDistributorCRMService_GetDistributorInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBlockInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBlockInformation" message="tns:IDistributorCRMService_SaveBlockInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveBlockInformationResponse" message="tns:IDistributorCRMService_SaveBlockInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMultipleDistInfos">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMultipleDistInfos" message="tns:IDistributorCRMService_GetMultipleDistInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMultipleDistInfosResponse" message="tns:IDistributorCRMService_GetMultipleDistInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApprovedDistInfos">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveApprovedDistInfos" message="tns:IDistributorCRMService_SaveApprovedDistInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveApprovedDistInfosResponse" message="tns:IDistributorCRMService_SaveApprovedDistInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReport">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetReport" message="tns:IDistributorCRMService_GetReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetReportResponse" message="tns:IDistributorCRMService_GetReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSBannedWords">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWords" message="tns:IDistributorCRMService_GetDSBannedWords_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWordsResponse" message="tns:IDistributorCRMService_GetDSBannedWords_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSBannedWordsPermissive">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWordsPermissive" message="tns:IDistributorCRMService_GetDSBannedWordsPermissive_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSBannedWordsPermissiveResponse" message="tns:IDistributorCRMService_GetDSBannedWordsPermissive_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMembershipUser">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMembershipUser" message="tns:IDistributorCRMService_GetMembershipUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMembershipUserResponse" message="tns:IDistributorCRMService_GetMembershipUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllMembershipRoles">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllMembershipRoles" message="tns:IDistributorCRMService_GetAllMembershipRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAllMembershipRolesResponse" message="tns:IDistributorCRMService_GetAllMembershipRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMembershipUser">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMembershipUser" message="tns:IDistributorCRMService_SaveMembershipUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMembershipUserResponse" message="tns:IDistributorCRMService_SaveMembershipUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveDirectoryUser">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetActiveDirectoryUser" message="tns:IDistributorCRMService_GetActiveDirectoryUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetActiveDirectoryUserResponse" message="tns:IDistributorCRMService_GetActiveDirectoryUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddActiveDirectoryUserToGroup">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddActiveDirectoryUserToGroup" message="tns:IDistributorCRMService_AddActiveDirectoryUserToGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddActiveDirectoryUserToGroupResponse" message="tns:IDistributorCRMService_AddActiveDirectoryUserToGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExportDistributorContacts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ExportDistributorContacts" message="tns:IDistributorCRMService_ExportDistributorContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ExportDistributorContactsResponse" message="tns:IDistributorCRMService_ExportDistributorContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurvey">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurvey" message="tns:IDistributorCRMService_GetSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurveyResponse" message="tns:IDistributorCRMService_GetSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSurvey">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveSurvey" message="tns:IDistributorCRMService_SaveSurvey_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveSurveyResponse" message="tns:IDistributorCRMService_SaveSurvey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSurveyStatusByReference">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurveyStatusByReference" message="tns:IDistributorCRMService_GetSurveyStatusByReference_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetSurveyStatusByReferenceResponse" message="tns:IDistributorCRMService_GetSurveyStatusByReference_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailComplianceSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailComplianceSettings" message="tns:IDistributorCRMService_GetEmailComplianceSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailComplianceSettingsResponse" message="tns:IDistributorCRMService_GetEmailComplianceSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveEmailComplianceSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveEmailComplianceSettings" message="tns:IDistributorCRMService_SaveEmailComplianceSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveEmailComplianceSettingsResponse" message="tns:IDistributorCRMService_SaveEmailComplianceSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SavePrimaryAddress">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SavePrimaryAddress" message="tns:IDistributorCRMService_SavePrimaryAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SavePrimaryAddressResponse" message="tns:IDistributorCRMService_SavePrimaryAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailTemplates">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailTemplates" message="tns:IDistributorCRMService_GetEmailTemplates_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEmailTemplatesResponse" message="tns:IDistributorCRMService_GetEmailTemplates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveMailing">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMailing" message="tns:IDistributorCRMService_SaveMailing_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveMailingResponse" message="tns:IDistributorCRMService_SaveMailing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRecipients">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListRecipients" message="tns:IDistributorCRMService_ListRecipients_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListRecipientsResponse" message="tns:IDistributorCRMService_ListRecipients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOptOut">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetOptOut" message="tns:IDistributorCRMService_GetOptOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetOptOutResponse" message="tns:IDistributorCRMService_GetOptOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveOptOut">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveOptOut" message="tns:IDistributorCRMService_SaveOptOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveOptOutResponse" message="tns:IDistributorCRMService_SaveOptOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingHistory">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistory" message="tns:IDistributorCRMService_GetMailingHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistoryResponse" message="tns:IDistributorCRMService_GetMailingHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMailingHistoryDetail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistoryDetail" message="tns:IDistributorCRMService_GetMailingHistoryDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMailingHistoryDetailResponse" message="tns:IDistributorCRMService_GetMailingHistoryDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InvokeMailingWorkflow">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/InvokeMailingWorkflow" message="tns:IDistributorCRMService_InvokeMailingWorkflow_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/InvokeMailingWorkflowResponse" message="tns:IDistributorCRMService_InvokeMailingWorkflow_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMailingQuota">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckMailingQuota" message="tns:IDistributorCRMService_CheckMailingQuota_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckMailingQuotaResponse" message="tns:IDistributorCRMService_CheckMailingQuota_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCancelOptOutMessage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendCancelOptOutMessage" message="tns:IDistributorCRMService_SendCancelOptOutMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendCancelOptOutMessageResponse" message="tns:IDistributorCRMService_SendCancelOptOutMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDefaultMailingTokens">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDefaultMailingTokens" message="tns:IDistributorCRMService_SaveDefaultMailingTokens_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDefaultMailingTokensResponse" message="tns:IDistributorCRMService_SaveDefaultMailingTokens_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultMailingTokens">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDefaultMailingTokens" message="tns:IDistributorCRMService_GetDefaultMailingTokens_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDefaultMailingTokensResponse" message="tns:IDistributorCRMService_GetDefaultMailingTokens_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessage" message="tns:IDistributorCRMService_SendTriggeredMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessageResponse" message="tns:IDistributorCRMService_SendTriggeredMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessageG">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessageG" message="tns:IDistributorCRMService_SendTriggeredMessageG_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendTriggeredMessageGResponse" message="tns:IDistributorCRMService_SendTriggeredMessageG_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExactTargetSubscriber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExactTargetSubscriber" message="tns:IDistributorCRMService_GetExactTargetSubscriber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExactTargetSubscriberResponse" message="tns:IDistributorCRMService_GetExactTargetSubscriber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBulkEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetBulkEmail" message="tns:IDistributorCRMService_GetBulkEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetBulkEmailResponse" message="tns:IDistributorCRMService_GetBulkEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBulkEmailStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateBulkEmailStatus" message="tns:IDistributorCRMService_UpdateBulkEmailStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateBulkEmailStatusResponse" message="tns:IDistributorCRMService_UpdateBulkEmailStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSmsTriggeredMessage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendSmsTriggeredMessage" message="tns:IDistributorCRMService_SendSmsTriggeredMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SendSmsTriggeredMessageResponse" message="tns:IDistributorCRMService_SendSmsTriggeredMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorQualifications">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorQualifications" message="tns:IDistributorCRMService_GetDistributorQualifications_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorQualificationsResponse" message="tns:IDistributorCRMService_GetDistributorQualifications_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExamByExamId">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExamByExamId" message="tns:IDistributorCRMService_GetExamByExamId_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetExamByExamIdResponse" message="tns:IDistributorCRMService_GetExamByExamId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastExamByDistributorId">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLastExamByDistributorId" message="tns:IDistributorCRMService_GetLastExamByDistributorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLastExamByDistributorIdResponse" message="tns:IDistributorCRMService_GetLastExamByDistributorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorExamAnswers">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorExamAnswers" message="tns:IDistributorCRMService_SaveDistributorExamAnswers_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorExamAnswersResponse" message="tns:IDistributorCRMService_SaveDistributorExamAnswers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetDistributorExam">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ResetDistributorExam" message="tns:IDistributorCRMService_ResetDistributorExam_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ResetDistributorExamResponse" message="tns:IDistributorCRMService_ResetDistributorExam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAppointments">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListAppointments" message="tns:IDistributorCRMService_ListAppointments_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListAppointmentsResponse" message="tns:IDistributorCRMService_ListAppointments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppointment">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAppointment" message="tns:IDistributorCRMService_GetAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAppointmentResponse" message="tns:IDistributorCRMService_GetAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppointment">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveAppointment" message="tns:IDistributorCRMService_SaveAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveAppointmentResponse" message="tns:IDistributorCRMService_SaveAppointment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppointments">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteAppointments" message="tns:IDistributorCRMService_DeleteAppointments_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteAppointmentsResponse" message="tns:IDistributorCRMService_DeleteAppointments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalendarSettingsByOwner">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCalendarSettingsByOwner" message="tns:IDistributorCRMService_GetCalendarSettingsByOwner_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCalendarSettingsByOwnerResponse" message="tns:IDistributorCRMService_GetCalendarSettingsByOwner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCalendarSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveCalendarSettings" message="tns:IDistributorCRMService_SaveCalendarSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveCalendarSettingsResponse" message="tns:IDistributorCRMService_SaveCalendarSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByName">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByName" message="tns:IDistributorCRMService_ListContactsByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByNameResponse" message="tns:IDistributorCRMService_ListContactsByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadContactInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadContactInfo" message="tns:IDistributorCRMService_GetLeadContactInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadContactInfoResponse" message="tns:IDistributorCRMService_GetLeadContactInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByOwner">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByOwner" message="tns:IDistributorCRMService_ListContactsByOwner_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByOwnerResponse" message="tns:IDistributorCRMService_ListContactsByOwner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByFilter">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByFilter" message="tns:IDistributorCRMService_ListContactsByFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByFilterResponse" message="tns:IDistributorCRMService_ListContactsByFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContact">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContact" message="tns:IDistributorCRMService_GetContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContactResponse" message="tns:IDistributorCRMService_GetContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactByContactDistributorID">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContactByContactDistributorID" message="tns:IDistributorCRMService_GetContactByContactDistributorID_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetContactByContactDistributorIDResponse" message="tns:IDistributorCRMService_GetContactByContactDistributorID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveContact">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContact" message="tns:IDistributorCRMService_SaveContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactResponse" message="tns:IDistributorCRMService_SaveContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportContacts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ImportContacts" message="tns:IDistributorCRMService_ImportContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ImportContactsResponse" message="tns:IDistributorCRMService_ImportContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContact" message="tns:IDistributorCRMService_DeleteContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactResponse" message="tns:IDistributorCRMService_DeleteContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactList" message="tns:IDistributorCRMService_DeleteContactList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactListResponse" message="tns:IDistributorCRMService_DeleteContactList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyContactList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CopyContactList" message="tns:IDistributorCRMService_CopyContactList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CopyContactListResponse" message="tns:IDistributorCRMService_CopyContactList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContactsByID">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactsByID" message="tns:IDistributorCRMService_DeleteContactsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteContactsByIDResponse" message="tns:IDistributorCRMService_DeleteContactsByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContactsToList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddContactsToList" message="tns:IDistributorCRMService_AddContactsToList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddContactsToListResponse" message="tns:IDistributorCRMService_AddContactsToList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContactListsByOwner">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactListsByOwner" message="tns:IDistributorCRMService_ListContactListsByOwner_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactListsByOwnerResponse" message="tns:IDistributorCRMService_ListContactListsByOwner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveContactIsNewStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactIsNewStatus" message="tns:IDistributorCRMService_SaveContactIsNewStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactIsNewStatusResponse" message="tns:IDistributorCRMService_SaveContactIsNewStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListContactsByContactListIDs">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByContactListIDs" message="tns:IDistributorCRMService_ListContactsByContactListIDs_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListContactsByContactListIDsResponse" message="tns:IDistributorCRMService_ListContactsByContactListIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDistributorsToContacts">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToContacts" message="tns:IDistributorCRMService_AddDistributorsToContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToContactsResponse" message="tns:IDistributorCRMService_AddDistributorsToContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListTasks">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListTasks" message="tns:IDistributorCRMService_ListTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListTasksResponse" message="tns:IDistributorCRMService_ListTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTask">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTask" message="tns:IDistributorCRMService_SaveTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTaskResponse" message="tns:IDistributorCRMService_SaveTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTask">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetTask" message="tns:IDistributorCRMService_GetTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetTaskResponse" message="tns:IDistributorCRMService_GetTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveTasksStatus">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTasksStatus" message="tns:IDistributorCRMService_SaveTasksStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveTasksStatusResponse" message="tns:IDistributorCRMService_SaveTasksStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTasks">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteTasks" message="tns:IDistributorCRMService_DeleteTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/DeleteTasksResponse" message="tns:IDistributorCRMService_DeleteTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveContactList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactList" message="tns:IDistributorCRMService_SaveContactList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveContactListResponse" message="tns:IDistributorCRMService_SaveContactList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEnhancedVisibility">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEnhancedVisibility" message="tns:IDistributorCRMService_GetEnhancedVisibility_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetEnhancedVisibilityResponse" message="tns:IDistributorCRMService_GetEnhancedVisibility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetEnhancedVisibility">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetEnhancedVisibility" message="tns:IDistributorCRMService_SetEnhancedVisibility_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetEnhancedVisibilityResponse" message="tns:IDistributorCRMService_SetEnhancedVisibility_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListDistributorByFilter">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListDistributorByFilter" message="tns:IDistributorCRMService_ListDistributorByFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ListDistributorByFilterResponse" message="tns:IDistributorCRMService_ListDistributorByFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDistributorsToDistributorCRM">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToDistributorCRM" message="tns:IDistributorCRMService_AddDistributorsToDistributorCRM_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/AddDistributorsToDistributorCRMResponse" message="tns:IDistributorCRMService_AddDistributorsToDistributorCRM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadQualification">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualification" message="tns:IDistributorCRMService_GetLeadQualification_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualificationResponse" message="tns:IDistributorCRMService_GetLeadQualification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadOption">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadOption" message="tns:IDistributorCRMService_GetLeadOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadOptionResponse" message="tns:IDistributorCRMService_GetLeadOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadOption">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadOption" message="tns:IDistributorCRMService_SaveLeadOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadOptionResponse" message="tns:IDistributorCRMService_SaveLeadOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSLeadProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSLeadProfile" message="tns:IDistributorCRMService_GetDSLeadProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDSLeadProfileResponse" message="tns:IDistributorCRMService_GetDSLeadProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDSLeadProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDSLeadProfile" message="tns:IDistributorCRMService_SaveDSLeadProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDSLeadProfileResponse" message="tns:IDistributorCRMService_SaveDSLeadProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadInfo" message="tns:IDistributorCRMService_SaveLeadInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadInfoResponse" message="tns:IDistributorCRMService_SaveLeadInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadCountryList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadCountryList" message="tns:IDistributorCRMService_GetLeadCountryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadCountryListResponse" message="tns:IDistributorCRMService_GetLeadCountryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadRegionsList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadRegionsList" message="tns:IDistributorCRMService_GetLeadRegionsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadRegionsListResponse" message="tns:IDistributorCRMService_GetLeadRegionsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountriesLanguages">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesLanguages" message="tns:IDistributorCRMService_LMSGetLeadCountriesLanguages_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesLanguagesResponse" message="tns:IDistributorCRMService_LMSGetLeadCountriesLanguages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountryID">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountryID" message="tns:IDistributorCRMService_LMSGetLeadCountryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountryIDResponse" message="tns:IDistributorCRMService_LMSGetLeadCountryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadCountriesByRegion">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesByRegion" message="tns:IDistributorCRMService_LMSGetLeadCountriesByRegion_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadCountriesByRegionResponse" message="tns:IDistributorCRMService_LMSGetLeadCountriesByRegion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSLeadSearch">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSLeadSearch" message="tns:IDistributorCRMService_LMSLeadSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSLeadSearchResponse" message="tns:IDistributorCRMService_LMSLeadSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadBasicInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadBasicInfo" message="tns:IDistributorCRMService_LMSGetLeadBasicInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadBasicInfoResponse" message="tns:IDistributorCRMService_LMSGetLeadBasicInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadDetailHistory">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadDetailHistory" message="tns:IDistributorCRMService_LMSGetLeadDetailHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadDetailHistoryResponse" message="tns:IDistributorCRMService_LMSGetLeadDetailHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadsForDS">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadsForDS" message="tns:IDistributorCRMService_LMSGetLeadsForDS_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadsForDSResponse" message="tns:IDistributorCRMService_LMSGetLeadsForDS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetPendingLeads">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetPendingLeads" message="tns:IDistributorCRMService_LMSGetPendingLeads_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetPendingLeadsResponse" message="tns:IDistributorCRMService_LMSGetPendingLeads_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadActionCode">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadActionCode" message="tns:IDistributorCRMService_LMSGetLeadActionCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadActionCodeResponse" message="tns:IDistributorCRMService_LMSGetLeadActionCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadTypes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadTypes" message="tns:IDistributorCRMService_LMSGetLeadTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadTypesResponse" message="tns:IDistributorCRMService_LMSGetLeadTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetReAssignmentReason">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetReAssignmentReason" message="tns:IDistributorCRMService_LMSGetReAssignmentReason_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetReAssignmentReasonResponse" message="tns:IDistributorCRMService_LMSGetReAssignmentReason_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDashboardCities">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDashboardCities" message="tns:IDistributorCRMService_LMSGetDashboardCities_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDashboardCitiesResponse" message="tns:IDistributorCRMService_LMSGetDashboardCities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveReAssignedLead">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveReAssignedLead" message="tns:IDistributorCRMService_LMSSaveReAssignedLead_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveReAssignedLeadResponse" message="tns:IDistributorCRMService_LMSSaveReAssignedLead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDistributorInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorInfo" message="tns:IDistributorCRMService_LMSGetDistributorInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorInfoResponse" message="tns:IDistributorCRMService_LMSGetDistributorInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSDistributorSearch">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSDistributorSearch" message="tns:IDistributorCRMService_LMSDistributorSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSDistributorSearchResponse" message="tns:IDistributorCRMService_LMSDistributorSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSQualifiedMemberSearch">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSQualifiedMemberSearch" message="tns:IDistributorCRMService_LMSQualifiedMemberSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSQualifiedMemberSearchResponse" message="tns:IDistributorCRMService_LMSQualifiedMemberSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDistributorForLeadReassign">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorForLeadReassign" message="tns:IDistributorCRMService_LMSGetDistributorForLeadReassign_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDistributorForLeadReassignResponse" message="tns:IDistributorCRMService_LMSGetDistributorForLeadReassign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetQualificationOverride">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetQualificationOverride" message="tns:IDistributorCRMService_LMSGetQualificationOverride_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetQualificationOverrideResponse" message="tns:IDistributorCRMService_LMSGetQualificationOverride_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetAssignmentOverride">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAssignmentOverride" message="tns:IDistributorCRMService_LMSGetAssignmentOverride_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAssignmentOverrideResponse" message="tns:IDistributorCRMService_LMSGetAssignmentOverride_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetDSDashboard">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDSDashboard" message="tns:IDistributorCRMService_LMSGetDSDashboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetDSDashboardResponse" message="tns:IDistributorCRMService_LMSGetDSDashboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLeadByDistributor">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateLeadByDistributor" message="tns:IDistributorCRMService_UpdateLeadByDistributor_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateLeadByDistributorResponse" message="tns:IDistributorCRMService_UpdateLeadByDistributor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormLookUp">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormLookUp" message="tns:IDistributorCRMService_LMSGetLeadFormLookUp_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormLookUpResponse" message="tns:IDistributorCRMService_LMSGetLeadFormLookUp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormCountries">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormCountries" message="tns:IDistributorCRMService_LMSGetLeadFormCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormCountriesResponse" message="tns:IDistributorCRMService_LMSGetLeadFormCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetAdminDashboard">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAdminDashboard" message="tns:IDistributorCRMService_LMSGetAdminDashboard_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetAdminDashboardResponse" message="tns:IDistributorCRMService_LMSGetAdminDashboard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetSourceForCountry">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetSourceForCountry" message="tns:IDistributorCRMService_LMSGetSourceForCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetSourceForCountryResponse" message="tns:IDistributorCRMService_LMSGetSourceForCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormRules">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormRules" message="tns:IDistributorCRMService_LMSGetLeadFormRules_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormRulesResponse" message="tns:IDistributorCRMService_LMSGetLeadFormRules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetLeadFormSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormSettings" message="tns:IDistributorCRMService_LMSGetLeadFormSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetLeadFormSettingsResponse" message="tns:IDistributorCRMService_LMSGetLeadFormSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveLeadFormRules">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveLeadFormRules" message="tns:IDistributorCRMService_LMSSaveLeadFormRules_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveLeadFormRulesResponse" message="tns:IDistributorCRMService_LMSSaveLeadFormRules_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaintenanceSchedule">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMaintenanceSchedule" message="tns:IDistributorCRMService_GetMaintenanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetMaintenanceScheduleResponse" message="tns:IDistributorCRMService_GetMaintenanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMaintenanceSchedule">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetMaintenanceSchedule" message="tns:IDistributorCRMService_SetMaintenanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SetMaintenanceScheduleResponse" message="tns:IDistributorCRMService_SetMaintenanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMaintenanceSchedule">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMaintenanceSchedule" message="tns:IDistributorCRMService_UpdateMaintenanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateMaintenanceScheduleResponse" message="tns:IDistributorCRMService_UpdateMaintenanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelMaintenanceSchedule">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CancelMaintenanceSchedule" message="tns:IDistributorCRMService_CancelMaintenanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CancelMaintenanceScheduleResponse" message="tns:IDistributorCRMService_CancelMaintenanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentCountries">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAssignmentCountries" message="tns:IDistributorCRMService_GetAssignmentCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetAssignmentCountriesResponse" message="tns:IDistributorCRMService_GetAssignmentCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignmentCountry">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateAssignmentCountry" message="tns:IDistributorCRMService_UpdateAssignmentCountry_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/UpdateAssignmentCountryResponse" message="tns:IDistributorCRMService_UpdateAssignmentCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLeadFollowupDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadFollowupDetails" message="tns:IDistributorCRMService_SaveLeadFollowupDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveLeadFollowupDetailsResponse" message="tns:IDistributorCRMService_SaveLeadFollowupDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadFollowupDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadFollowupDetails" message="tns:IDistributorCRMService_GetLeadFollowupDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadFollowupDetailsResponse" message="tns:IDistributorCRMService_GetLeadFollowupDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSGetCustomerPropertiesNative">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetCustomerPropertiesNative" message="tns:IDistributorCRMService_LMSGetCustomerPropertiesNative_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSGetCustomerPropertiesNativeResponse" message="tns:IDistributorCRMService_LMSGetCustomerPropertiesNative_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LMSSaveCustomerPropertiesNative">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveCustomerPropertiesNative" message="tns:IDistributorCRMService_LMSSaveCustomerPropertiesNative_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/LMSSaveCustomerPropertiesNativeResponse" message="tns:IDistributorCRMService_LMSSaveCustomerPropertiesNative_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPromoGift">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGift" message="tns:IDistributorCRMService_GetPromoGift_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGiftResponse" message="tns:IDistributorCRMService_GetPromoGift_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPromoGiftValues">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGiftValues" message="tns:IDistributorCRMService_GetPromoGiftValues_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetPromoGiftValuesResponse" message="tns:IDistributorCRMService_GetPromoGiftValues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BindPromoGiftItems">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/BindPromoGiftItems" message="tns:IDistributorCRMService_BindPromoGiftItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/BindPromoGiftItemsResponse" message="tns:IDistributorCRMService_BindPromoGiftItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckContent">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckContent" message="tns:IDistributorCRMService_CheckContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/CheckContentResponse" message="tns:IDistributorCRMService_CheckContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebsiteCountryInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteCountryInfo" message="tns:IDistributorCRMService_SaveDistributorWebsiteCountryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteCountryInfoResponse" message="tns:IDistributorCRMService_SaveDistributorWebsiteCountryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteExtensions">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteExtensions" message="tns:IDistributorCRMService_GetDistributorWebsiteExtensions_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteExtensionsResponse" message="tns:IDistributorCRMService_GetDistributorWebsiteExtensions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebSiteSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebSiteSettings" message="tns:IDistributorCRMService_SaveDistributorWebSiteSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebSiteSettingsResponse" message="tns:IDistributorCRMService_SaveDistributorWebSiteSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebSiteSettings">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebSiteSettings" message="tns:IDistributorCRMService_GetDistributorWebSiteSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebSiteSettingsResponse" message="tns:IDistributorCRMService_GetDistributorWebSiteSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCatalogs">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCatalogs" message="tns:IDistributorCRMService_GetCatalogs_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetCatalogsResponse" message="tns:IDistributorCRMService_GetCatalogs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteNavigation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteNavigation" message="tns:IDistributorCRMService_GetWebsiteNavigation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteNavigationResponse" message="tns:IDistributorCRMService_GetWebsiteNavigation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteThemes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteThemes" message="tns:IDistributorCRMService_GetWebsiteThemes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteThemesResponse" message="tns:IDistributorCRMService_GetWebsiteThemes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateWebExtension">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateWebExtension" message="tns:IDistributorCRMService_ValidateWebExtension_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/ValidateWebExtensionResponse" message="tns:IDistributorCRMService_ValidateWebExtension_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitesByDistributorId">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitesByDistributorId" message="tns:IDistributorCRMService_GetWebsitesByDistributorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitesByDistributorIdResponse" message="tns:IDistributorCRMService_GetWebsitesByDistributorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDistributorWebsiteInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteInformation" message="tns:IDistributorCRMService_SaveDistributorWebsiteInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/SaveDistributorWebsiteInformationResponse" message="tns:IDistributorCRMService_SaveDistributorWebsiteInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteInformation">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteInformation" message="tns:IDistributorCRMService_GetDistributorWebsiteInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteInformationResponse" message="tns:IDistributorCRMService_GetDistributorWebsiteInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorWebsiteCountryInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteCountryInfo" message="tns:IDistributorCRMService_GetDistributorWebsiteCountryInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetDistributorWebsiteCountryInfoResponse" message="tns:IDistributorCRMService_GetDistributorWebsiteCountryInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitePageContent">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContent" message="tns:IDistributorCRMService_GetWebsitePageContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContentResponse" message="tns:IDistributorCRMService_GetWebsitePageContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsitePageContentList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContentList" message="tns:IDistributorCRMService_GetWebsitePageContentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsitePageContentListResponse" message="tns:IDistributorCRMService_GetWebsitePageContentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteDisplayModuleContent">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleContent" message="tns:IDistributorCRMService_GetWebsiteDisplayModuleContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleContentResponse" message="tns:IDistributorCRMService_GetWebsiteDisplayModuleContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteDisplayModuleList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleList" message="tns:IDistributorCRMService_GetWebsiteDisplayModuleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteDisplayModuleListResponse" message="tns:IDistributorCRMService_GetWebsiteDisplayModuleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteContentById">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteContentById" message="tns:IDistributorCRMService_GetWebsiteContentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetWebsiteContentByIdResponse" message="tns:IDistributorCRMService_GetWebsiteContentById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLeadQualificationEvents">
+      <wsdl:input wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualificationEvents" message="tns:IDistributorCRMService_GetLeadQualificationEvents_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2010/01/21/HL.DistributorCRM.Interfaces/IDistributorCRMService/GetLeadQualificationEventsResponse" message="tns:IDistributorCRMService_GetLeadQualificationEvents_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

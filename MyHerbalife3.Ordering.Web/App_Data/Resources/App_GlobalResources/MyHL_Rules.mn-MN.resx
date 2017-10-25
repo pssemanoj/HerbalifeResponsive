@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExceededSKULimitPerDay" xml:space="preserve">
+    <value>SKU {0} өнөөдөр захиалж болох хэмжээнээс хэтэрлээ. Та маргааш дахин ирнэ үү.</value>
+    <comment>_*G3495</comment>
+  </data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>SKU дугаар:{0}.</value>
+    <comment>_*G2711</comment>
+  </data>
+  <data name="NoPromoSku" xml:space="preserve">
+    <value>Промо sku {0} {1} Бүтээгдэхүүний Каталогит байхгүй тул сагсанд нэмэх боломжгүй.</value>
+    <comment>_*G2566</comment>
+  </data>
+  <data name="NoDistributorNotes" xml:space="preserve">
+    <value>Ёс Зүйн маягтаа бөглөн явуулаагүй байна. Дэлгэрэнгүй мэдээллийг Мэдээлэл Харилцааны Албанаас авна уу.</value>
+    <comment>_*G2815</comment>
+  </data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>SKU:{0} серийн дугаартай бүтээгдэхүүний тоо {1}-р нэмэгдэх боломжгүй байна. Энэ нь таны онооны хязгаарлалтаас хэтэрч байна.</value>
+    <comment>_*G3558</comment>
+  </data>
+  <data name="ViewMap" xml:space="preserve">
+    <value>Газрын зураг харах</value>
+    <comment>_*G3506</comment>
+  </data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Таны {0} захиалга {2} өдөрт захиалж болох {1} хамгийн дээд хэмжээнээс хэтэрсэн байна</value>
+    <comment>_*G3505</comment>
+  </data>
+  <data name="CroatiaNewMemberError" xml:space="preserve">
+    <value>Эрхэм хүндэт Гишүүн таны Гэрээ Herbalife-ын системд бүртгэгдсэнээс 24 цагийн дараа онлайнаар захиалга хийх боломжтойг анхааралдаа авна уу.</value>
+    <comment>_*G3555</comment>
+  </data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Манай захиалгын системийн хүрээнд шинэ болон хуучин Гишүүд нь Бүрэн баталгаажсан Супервайзор статуст хүрээгүй тохиолдолд Хувийн дугаар дээрээ хийж буй эхний захиалга нь {0}-с хэтэрч болохгүй юм. Та Хувийн дугаар дээрээ хийж буй оноогоо дараагийн {2} өдрийн хооронд {1} хүртэл цуглуулж болох юм. энэ захиалгын оноо зөвшөөрөгдсөн хэмжээнээс хэтэрч байгаа тул {3} хүртэл бууруулах шаардлагатай байна. Дараах серийн дугаартай бүтээгдэхүүнүүд таны сагсанд нэмэгдэх боломжгүй байна.</value>
+    <comment>_*G3557</comment>
+  </data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Манай захиалгын системийн хүрээнд шинэ болон хуучин Гишүүд нь Бүрэн баталгаажсан Супервайзор статуст хүрээгүй тохиолдолд Хувийн дугаар дээрээ хийж буй эхний захиалга нь {0}-с хэтэрч болохгүй юм. Та Хувийн дугаар дээрээ хийж буй оноогоо дараагийн {2} өдрийн хооронд {1} хүртэл цуглуулж болох юм. энэ захиалгын оноо зөвшөөрөгдсөн хэмжээнээс хэтэрч байгаа тул {3} хүртэл бууруулах шаардлагатай байна.</value>
+    <comment>_*G3556</comment>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Худалдан авах боломжгүй</value>
+    <comment>_*G1718</comment>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Серийн дугааруудын тоо ширхэг {0}-с хэтэрч болохгүй.</value>
+    <comment>_*G1717</comment>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>{0} бүтээгдэхүүнийг худалдан авах боломжгүй. Та зөвхөн Промо бүтээгдэхүүн болон Ном сэтгүүлийн захиалга хийх боломжтой</value>
+    <comment>_*G1719</comment>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Таны онооны хязгаар хэтрэх тул SKU {0} -ий тоо {1} -р ихсэж болохгүй.</value>
+    <comment>_*G1721</comment>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Таны борлуулалтын хязгаарлалтыг давах тул SKU {0} -ий тоо {1} -р ихсэж болохгүй.</value>
+    <comment>_*G1720</comment>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>0343, 0344, 2329 эсвэл 2328 SKU-дыг шуурхай хүргэлтээр хүргэх боломжгүй.</value>
+    <comment>_*G1716</comment>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>SKU:{0} бүтээгдэхүүн таны сагсанд нэмэгдсэнгүй. Та хэрвээ нэмэхийг хүсч байвал захиалгын төрлөө A1-с B1 рүү солино уу.</value>
+    <comment>_*G1712</comment>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>{0} серийн дугаарыг нэмэхээс өмнө сагсандаа бүтээгдэхүүнээ нэмнэ үү.</value>
+    <comment>_*G1713</comment>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>SKU {0}-г шуурхай хүргэлтээр хүргэх боломжгүй. Энгийн хүргэлтийн үйлчилгээг сонгоно уу.</value>
+    <comment>_*G1715</comment>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>{1} серийн дугаарын хувьд тоо хэмжээ нь {0} ширхэгээс хэтэрч болохгүй.</value>
+    <comment>_*G1714</comment>
+  </data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>SKU дугаар:{0}.</value>
+    <comment>_*G2303</comment>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Дахин борлуулах</value>
+    <comment>_*G1728</comment>
+  </data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Энэ захиалга зөвшөөрөгдсөн онооны хязгаараас хэтэрч байна: {0}. Дараах SKU кодууд Таны сагсанд нэмэгдсэнгүй.</value>
+    <comment>_*G2302</comment>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Хувийн хэрэглээ</value>
+    <comment>_*G1727</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>SKU:{0} таны сагс руу нэмэгдээгүй байна. Учир нь үүнийг нэмснээр таны онооны хязгаараас хэтрэх болно.</value>
+    <comment>_*G1723</comment>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>SKU:{0} таны сагс руу нэмэгдээгүй байна. Учир нь үүнийг нэмснээр таны борлуулалтын хязгаараас хэтрэх болно.</value>
+    <comment>_*G1722</comment>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Нийт дүн {0} хязгаарлалтаас хэтэрч байна.</value>
+    <comment>_*G1724</comment>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Таны худалдан авалтын хязгаар хэтрэх тул SKU {0} -ий тоо {1} -р ихсэж болохгүй.</value>
+    <comment>_*G1726</comment>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>SKU:{0} таны сагс руу нэмэгдээгүй байна. Учир нь үүнийг нэмснээр таны худалдан авалтын хязгаараас хэтрэх болно.</value>
+    <comment>_*G1725</comment>
+  </data>
+</root>

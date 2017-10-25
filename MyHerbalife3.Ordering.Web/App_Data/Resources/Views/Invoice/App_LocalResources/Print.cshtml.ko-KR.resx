@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="3daysAfterText" xml:space="preserve">
+    <value>(날짜: 주문날의 3일 후)</value>
+    <comment>_GI171</comment>
+  </data>
+  <data name="discount" xml:space="preserve">
+    <value>할인율</value>
+    <comment>_GI258</comment>
+  </data>
+  <data name="subtotal" xml:space="preserve">
+    <value>소계</value>
+    <comment>_GI257</comment>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>이름</value>
+    <comment>_GI195</comment>
+  </data>
+  <data name="notes" xml:space="preserve">
+    <value>주의사항</value>
+    <comment>_GI196</comment>
+  </data>
+  <data name="noticeCancellation" xml:space="preserve">
+    <value>취소 통지</value>
+    <comment>_GI197</comment>
+  </data>
+  <data name="invoiceDate" xml:space="preserve">
+    <value>인보이스 일자</value>
+    <comment>_GI192</comment>
+  </data>
+  <data name="invoiceId" xml:space="preserve">
+    <value>내역서 #</value>
+    <comment>_GI193</comment>
+  </data>
+  <data name="iunderStandText" xml:space="preserve">
+    <value>전 이 주문으로 때로 초대를 받을 수 있다는 점을 이해하며 반드시 구매할 필요가 없다는 점을 이해합니다.</value>
+    <comment>_GI194</comment>
+  </data>
+  <data name="pleaseSendPayment" xml:space="preserve">
+    <value>결제 금액을 여기로 보내주시기 바랍니다:</value>
+    <comment>_GI200</comment>
+  </data>
+  <data name="productName" xml:space="preserve">
+    <value>제품명</value>
+    <comment>_GI201</comment>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>수량</value>
+    <comment>_GI202</comment>
+  </data>
+  <data name="notLaterThan" xml:space="preserve">
+    <value>다음 명시된 날짜 이전:</value>
+    <comment>_GI198</comment>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>전화번호</value>
+    <comment>_GI199</comment>
+  </data>
+  <data name="cancelText" xml:space="preserve">
+    <value>구매자는 거래일 후 세번째 영업일 이전까지는 언제든지 거래를 취소할 수 있습니다. 위에서 명시된 3일의 취소기간은 허벌라이프의 환불규정에 의해 보호됩니다.</value>
+    <comment>_GI178</comment>
+  </data>
+  <data name="earnBase" xml:space="preserve">
+    <value>프로덕션 보너스 지급 기준</value>
+    <comment>_GI183</comment>
+  </data>
+  <data name="emailAddress" xml:space="preserve">
+    <value>이메일 주소</value>
+    <comment>_GI184</comment>
+  </data>
+  <data name="exchangePolicy1" xml:space="preserve">
+    <value>허벌라이프는 제품 교환 또는 전액 환불을 제공합니다. 영수증 날짜로 부터 30일 이내에 환불 요청하시면 절차에 따라 교환 또는 환불이 가능합니다.</value>
+    <comment>_GI185</comment>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>도시</value>
+    <comment>_GI180</comment>
+  </data>
+  <data name="dateMonthYear" xml:space="preserve">
+    <value>일/월/년</value>
+    <comment>_GI181</comment>
+  </data>
+  <data name="dateTransaction" xml:space="preserve">
+    <value>거래 일자</value>
+    <comment>_GI182</comment>
+  </data>
+  <data name="icancelText" xml:space="preserve">
+    <value>거래를 취소 합니다.</value>
+    <comment>_GI189</comment>
+  </data>
+  <data name="importantNotice" xml:space="preserve">
+    <value>중요 공지</value>
+    <comment>_GI190</comment>
+  </data>
+  <data name="invoice" xml:space="preserve">
+    <value>인보이스</value>
+    <comment>_GI191</comment>
+  </data>
+  <data name="exchangePolicy2" xml:space="preserve">
+    <value>허벌라이프의 환불 정책은 법적 요구사항보다 더 나아가 소비자 보호까지 중요시 여기고 있습니다.</value>
+    <comment>_GI186</comment>
+  </data>
+  <data name="herbalifeDs" xml:space="preserve">
+    <value>독립 허벌라이프 회원</value>
+    <comment>_GI187</comment>
+  </data>
+  <data name="herbalifeRefund" xml:space="preserve">
+    <value>허벌라이프 환불 정책</value>
+    <comment>_GI188</comment>
+  </data>
+  <data name="cancelTransactionText" xml:space="preserve">
+    <value>거래 취소를 원할 시에는 우편으로 청약철회 요청서를 다음의 주소로 보내주시기 바랍니다:</value>
+    <comment>_GI179</comment>
+  </data>
+  <data name="retailPrice" xml:space="preserve">
+    <value>기준가</value>
+    <comment>_GI203</comment>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>주소</value>
+    <comment>_GI172</comment>
+  </data>
+  <data name="yourTotalDue" xml:space="preserve">
+    <value>총 금액</value>
+    <comment>_GI213</comment>
+  </data>
+  <data name="zipCode" xml:space="preserve">
+    <value>우편번호</value>
+    <comment>_GI214</comment>
+  </data>
+  <data name="buyerSignature" xml:space="preserve">
+    <value>구매자의 서명</value>
+    <comment>_GI173</comment>
+  </data>
+  <data name="cancelPolicy2" xml:space="preserve">
+    <value>이 계약 또는 판매에 따라 고객에게 제공되는 모든 제품은 취소 되었을 시에도 같은 상태를 유지하고 있어야 반품이 가능합니다.</value>
+    <comment>_GI176</comment>
+  </data>
+  <data name="cancelPolicy3" xml:space="preserve">
+    <value>구매 취소 후, 제품 반환 요구를 하였지만 판매자에게로 부터 20일 동안 연락이 없을 경우, 계약에 따른 의무없이 제품을 처분할 권리가 있습니다.</value>
+    <comment>_GI177</comment>
+  </data>
+  <data name="buyerText" xml:space="preserve">
+    <value>구매자는 거래일 후 세번째 영업일 이전까지는 언제든지 거래를 취소할 수 있습니다.&lt;/p&gt;&lt;p&gt;자세한 설명은 뒷면의 &amp;quot;상품 매매 계약사항&amp;quot;을 참조하시기 바랍니다. 위에서 명시된 3일의 취소기간은 허벌라이프의 환불규정에 의해 보호됩니다.</value>
+    <comment>_GI174</comment>
+  </data>
+  <data name="cancelPolicy1" xml:space="preserve">
+    <value>거래 취소시, 거래와 관련된 모든 결제는 거래 취소 통지 후 10일 이내에 모두 환불됩니다.</value>
+    <comment>_GI175</comment>
+  </data>
+  <data name="shipTo" xml:space="preserve">
+    <value>배송지</value>
+    <comment>_GI206</comment>
+  </data>
+  <data name="sku" xml:space="preserve">
+    <value>품목번호</value>
+    <comment>_GI207</comment>
+  </data>
+  <data name="shipping" xml:space="preserve">
+    <value>택배</value>
+    <comment>_GI204</comment>
+  </data>
+  <data name="shippingAndHandling" xml:space="preserve">
+    <value>배송비</value>
+    <comment>_GI205</comment>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>도</value>
+    <comment>_GI208</comment>
+  </data>
+  <data name="totalPrice" xml:space="preserve">
+    <value>총 금액:</value>
+    <comment>_GI211</comment>
+  </data>
+  <data name="yourPrice" xml:space="preserve">
+    <value>금액</value>
+    <comment>_GI212</comment>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>세금</value>
+    <comment>_GI209</comment>
+  </data>
+  <data name="thankyou" xml:space="preserve">
+    <value>주문해 주셔서 감사합니다!</value>
+    <comment>_GI210</comment>
+  </data>
+  <data name="vat" xml:space="preserve">
+    <value>부가가치세 등록</value>
+    <comment>_GI286</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>주문 상태</value>
+  </data>
+  <data name="freeShippingAndHandling" xml:space="preserve">
+    <value>무료 배송</value>
+  </data>
+</root>

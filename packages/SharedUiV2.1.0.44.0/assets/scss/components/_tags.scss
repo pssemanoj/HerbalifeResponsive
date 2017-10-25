@@ -1,0 +1,13 @@
+
+	/* Tags
+	================================================== */
+
+	@mixin tag ($color: $green, $pad: 0 10px) {
+		font-size: 10px;
+		font-weight: bold;
+		padding: $pad;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $color;
+		@include box-shadow($box-shadow);
+	}

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Cette commande dépasse le volume autorisé, les Points Volume restant sont de: {0}. Les articles suivants n'ont pas été ajoutés à votre panier.</value>
+      <comment>_G2302</comment></data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Commande destinée à la revente</value>
+      <comment>_G1728</comment></data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>La référence {0} n'a pas été ajoutée à votre panier car sinon vous dépassez votre limite d'achat.</value>
+      <comment>_G1725</comment></data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article référence {0} ne peut être augmentée de {0} car elle dépasse votre limite en Euros pour consommation personnelle.</value>
+      <comment>_G1726</comment></data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Commande destinée à la consommation personnelle</value>
+      <comment>_G1727</comment></data>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>La référence SKU {0} n'a pas été ajoutée au panier, car elle n'est pas disponible pour Incaricati.</value>
+      <comment>_G1711</comment></data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Réf. article:{0}.</value>
+      <comment>_G2303</comment></data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Réf. article:{0}.</value>
+      <comment>_G2711</comment></data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>La quantité ne devrait pas dépasser {0} pour la référence: {1}</value>
+      <comment>_G1714</comment></data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>La référence SKU {0} n'a pas été ajouté au panier. Si vous désirez l'ajouter, Veuillez changer le sous-type de la commande à A1 ou B1.</value>
+      <comment>_G1712</comment></data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Veuillez ajouter les produits au panier avant d'ajouter la référence {0}.</value>
+      <comment>_G1713</comment></data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>L'article référence {0} n'a pas été ajouté au panier, car en l'ajoutant vous dépassez la limite de vos gains.</value>
+      <comment>_G1722</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>L'article référence {0} n'a pas été ajouté au panier, car en l'ajoutant vous dépassez votre limite en Points Volume.</value>
+      <comment>_G1723</comment></data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article référence {0} ne peut être augmentée de {0} car elle dépasse votre limite en Points Volume.</value>
+      <comment>_G1721</comment></data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>Ne peut acheter de produits {0}.</value>
+      <comment>_G1719</comment></data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article référence {0} ne peut être augmentée de {0} car elle dépasse la limite de vos gains.</value>
+      <comment>_G1720</comment></data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>votre commande de {0} dépasse la quantité maximale de {1} par Membre chaque {2} jour calendaire .</value>
+      <comment>_G3505</comment></data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Dans le cadre de notre programme de commande, les Membres nouveaux et existants qui n'ont pas encore atteint le statut de Superviseur pleinement Qualifié, peuvent commander jusqu'à {0} points Volume Personnellement Achetés (PPV) sur leur première commande. Vous pouvez accumuler PPV jusqu'à {1} Points Volume (y inclus la commande initiale) dans les {2} prochains jours. Cette commande dépasse les PPV permis et doit être réduite de {3} Points Volume.</value>
+      <comment>_G3556</comment></data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Dans le cadre de notre programme de commande, les Membres nouveaux et existants qui n'ont pas encore atteint le statut de Superviseur pleinement Qualifié, peuvent commander jusqu'à {0} points Volume Personnellement Achetés (PPV) sur leur première commande. Vous pouvez accumuler PPV jusqu'à {1} Points Volume (y inclus la commande initiale) dans les {2} prochains jours. Cette commande dépasse les PPV permis et doit être réduite de {3} Points Volume. Les articles suivants SKU(s) n'ont pas été ajoutés au panier:</value>
+      <comment>_G3557</comment></data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>La quantité de l'article SKU:{0} ne peut être augmenté de {1} car elle dépasse votre limite de points volume.</value>
+      <comment>_G3558</comment></data>
+</root>

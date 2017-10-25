@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd5" namespace="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd12" namespace="http://herbalife.com/HL.Communication.ValueObjects" />
+  <xs:complexType name="UpdateSMSSubscriberSubscriptionRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSMSSubscriberSubscriptionRequestBase" nillable="true" type="tns:UpdateSMSSubscriberSubscriptionRequestBase" />
+  <xs:complexType name="UpdateSMSSubscriberSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSMSSubscriberSubscriptionResponseBase" nillable="true" type="tns:UpdateSMSSubscriberSubscriptionResponseBase" />
+  <xs:complexType name="UpdateSMSSubscriberSubscriptionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateSMSSubscriberSubscriptionRequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q3="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" minOccurs="0" name="SmsSubscriberData" nillable="true" type="q3:SmsSubscriberData_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSMSSubscriberSubscriptionRequest_V01" nillable="true" type="tns:UpdateSMSSubscriberSubscriptionRequest_V01" />
+  <xs:complexType name="ArrayOfSmsSubscriberInfo_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SmsSubscriberInfo_V01" nillable="true" type="tns:SmsSubscriberInfo_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSmsSubscriberInfo_V01" nillable="true" type="tns:ArrayOfSmsSubscriberInfo_V01" />
+  <xs:complexType name="SmsSubscriberInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="RemoveSubscriber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SmsClassifier" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SmsNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SmsSubscriptions" nillable="true" type="tns:ArrayOfSmsSubscription_V01" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmsSubscriberInfo_V01" nillable="true" type="tns:SmsSubscriberInfo_V01" />
+  <xs:complexType name="ArrayOfSmsSubscription_V01">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SmsSubscription_V01" nillable="true" type="tns:SmsSubscription_V01" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSmsSubscription_V01" nillable="true" type="tns:ArrayOfSmsSubscription_V01" />
+  <xs:complexType name="SmsSubscription_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:VersionedObjectBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PublicationId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PublicationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubscribedFlag" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SmsSubscription_V01" nillable="true" type="tns:SmsSubscription_V01" />
+  <xs:complexType name="UpdateSMSSubscriberSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UpdateSMSSubscriberSubscriptionResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" minOccurs="0" name="ErrorInfo" nillable="true" type="q6:SmsErrorInfo" />
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UpdateSMSSubscriberSubscriptionResponse_V01" nillable="true" type="tns:UpdateSMSSubscriberSubscriptionResponse_V01" />
+  <xs:complexType name="DeleteSMSSubscriberSubscriptionRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteSMSSubscriberSubscriptionRequestBase" nillable="true" type="tns:DeleteSMSSubscriberSubscriptionRequestBase" />
+  <xs:complexType name="DeleteSMSSubscriberSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteSMSSubscriberSubscriptionResponseBase" nillable="true" type="tns:DeleteSMSSubscriberSubscriptionResponseBase" />
+  <xs:complexType name="DeleteSMSSubscriberSubscriptionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteSMSSubscriberSubscriptionRequestBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteSMSSubscriberSubscriptionRequest_V01" nillable="true" type="tns:DeleteSMSSubscriberSubscriptionRequest_V01" />
+  <xs:complexType name="DeleteSMSSubscriberSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DeleteSMSSubscriberSubscriptionResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeleteSMSSubscriberSubscriptionResponse_V01" nillable="true" type="tns:DeleteSMSSubscriberSubscriptionResponse_V01" />
+  <xs:complexType name="GetTwitterRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" base="q9:GetTwitterRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Count" nillable="true" type="xs:string" />
+          <xs:element xmlns:q10="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" minOccurs="0" name="RequestType" type="q10:TwitterType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTwitterRequest_V01" nillable="true" type="tns:GetTwitterRequest_V01" />
+  <xs:complexType name="GetFlickrRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" base="q11:GetFlickrRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Album" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Count" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
+          <xs:element xmlns:q12="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" minOccurs="0" name="RequestType" type="q12:RequestType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetFlickrRequest_V01" nillable="true" type="tns:GetFlickrRequest_V01" />
+  <xs:complexType name="GetGSMRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" base="q13:GetGSMRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Count" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element xmlns:q14="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" minOccurs="0" name="NewsType" type="q14:GSMNewsType" />
+          <xs:element xmlns:q15="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" minOccurs="0" name="RequestType" type="q15:GSMType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetGSMRequest_V01" nillable="true" type="tns:GetGSMRequest_V01" />
+  <xs:complexType name="SubscriptionProfile_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SubscriptionProfile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="APFDueDate" nillable="true" type="xs:string" />
+          <xs:element xmlns:q16="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" minOccurs="0" name="Address" nillable="true" type="q16:Address_V01" />
+          <xs:element minOccurs="0" name="ApplicationDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CoutryProcessingCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DSorSP" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DayPhone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorTeam" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailGlobalOptOut" type="xs:boolean" />
+          <xs:element xmlns:q17="http://herbalife.com/HL.Communication.ValueObjects" minOccurs="0" name="EmailSubscriptionDetails" nillable="true" type="q17:ArrayOfEmailSubscriptionDetails_V01" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsDeleted" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaxNumEmails" type="xs:int" />
+          <xs:element minOccurs="0" name="MaxNumSms" type="xs:int" />
+          <xs:element minOccurs="0" name="SmsGlobalOptOut" type="xs:boolean" />
+          <xs:element xmlns:q18="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" minOccurs="0" name="SmsSubscriptionDetails" nillable="true" type="q18:SmsSubscriberData_V01" />
+          <xs:element minOccurs="0" name="UpdateHDMS" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UpdateSubscriptions" nillable="true" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SubscriptionProfile_V01" nillable="true" type="tns:SubscriptionProfile_V01" />
+  <xs:complexType name="SubscriptionProfile">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q19:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SubscriptionProfile" nillable="true" type="tns:SubscriptionProfile" />
+  <xs:complexType name="StaffSubscriptionProfile">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q20:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaffSubscriptionProfile" nillable="true" type="tns:StaffSubscriptionProfile" />
+  <xs:complexType name="StaffSubscriptionProfile_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:StaffSubscriptionProfile">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CoutryProcessingCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailGlobalOptOut" type="xs:boolean" />
+          <xs:element xmlns:q21="http://herbalife.com/HL.Communication.ValueObjects" minOccurs="0" name="EmailSubscriptionDetails" nillable="true" type="q21:ArrayOfStaffEmailSubscriptionDetails_V01" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferedFormat" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreferedName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaffSubscriptionProfile_V01" nillable="true" type="tns:StaffSubscriptionProfile_V01" />
+  <xs:complexType name="GetSMSSubscriberSubscriptionResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSMSSubscriberSubscriptionResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q22="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" minOccurs="0" name="SmsSubscriberData" nillable="true" type="q22:SmsSubscriberData_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberSubscriptionResponse_V01" nillable="true" type="tns:GetSMSSubscriberSubscriptionResponse_V01" />
+  <xs:complexType name="GetSMSSubscriberSubscriptionResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q23:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberSubscriptionResponseBase" nillable="true" type="tns:GetSMSSubscriberSubscriptionResponseBase" />
+  <xs:complexType name="EmailValidator_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EmailValidator">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="failedValidation" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="valid" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailValidator_V01" nillable="true" type="tns:EmailValidator_V01" />
+  <xs:complexType name="EmailValidator">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q24:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EmailValidator" nillable="true" type="tns:EmailValidator" />
+  <xs:complexType name="UploadJob_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:UploadJob">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activity" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ExternalKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="ImportName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadJob_V01" nillable="true" type="tns:UploadJob_V01" />
+  <xs:complexType name="UploadJob">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q25:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UploadJob" nillable="true" type="tns:UploadJob" />
+  <xs:complexType name="GetSMSSubscriberInfoRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q26:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberInfoRequestBase" nillable="true" type="tns:GetSMSSubscriberInfoRequestBase" />
+  <xs:complexType name="GetSMSSubscriberInfoResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q27:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberInfoResponseBase" nillable="true" type="tns:GetSMSSubscriberInfoResponseBase" />
+  <xs:complexType name="GetBasicDistributorRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSMSSubscriberInfoRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrimaryMobileNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBasicDistributorRequest_V01" nillable="true" type="tns:GetBasicDistributorRequest_V01" />
+  <xs:complexType name="GetSMSSubscriberInfoResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSMSSubscriberInfoResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="SMSSubscriberBasicInfo" nillable="true" type="tns:SMSSubscriberBasicInfo_V01" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberInfoResponse_V01" nillable="true" type="tns:GetSMSSubscriberInfoResponse_V01" />
+  <xs:complexType name="SMSSubscriberBasicInfo_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SMSSubscriberBasicInfoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SMSMobileNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SMSSubscriberBasicInfo_V01" nillable="true" type="tns:SMSSubscriberBasicInfo_V01" />
+  <xs:complexType name="SMSSubscriberBasicInfoBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q28:VersionedObjectBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SMSSubscriberBasicInfoBase" nillable="true" type="tns:SMSSubscriberBasicInfoBase" />
+  <xs:complexType name="IsUniqueSMSMobileNumberRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q29:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueSMSMobileNumberRequestBase" nillable="true" type="tns:IsUniqueSMSMobileNumberRequestBase" />
+  <xs:complexType name="IsUniqueSMSMobileNumberResponseBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q30="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q30:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueSMSMobileNumberResponseBase" nillable="true" type="tns:IsUniqueSMSMobileNumberResponseBase" />
+  <xs:complexType name="IsUniqueSMSMobileNumberRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IsUniqueSMSMobileNumberRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DistributorId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueSMSMobileNumberRequest_V01" nillable="true" type="tns:IsUniqueSMSMobileNumberRequest_V01" />
+  <xs:complexType name="IsUniqueSMSMobileNumberResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:IsUniqueSMSMobileNumberResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsUniqueMobileNumber" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="IsUniqueSMSMobileNumberResponse_V01" nillable="true" type="tns:IsUniqueSMSMobileNumberResponse_V01" />
+  <xs:complexType name="GetSMSSubscriberSubscriptionRequestBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q31="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q31:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberSubscriptionRequestBase" nillable="true" type="tns:GetSMSSubscriberSubscriptionRequestBase" />
+  <xs:complexType name="GetSMSSubscriberSubscriptionRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetSMSSubscriberSubscriptionRequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSMSSubscriberSubscriptionRequest_V01" nillable="true" type="tns:GetSMSSubscriberSubscriptionRequest_V01" />
+</xs:schema>

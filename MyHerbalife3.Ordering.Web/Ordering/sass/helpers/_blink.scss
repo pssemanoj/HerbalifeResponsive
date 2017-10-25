@@ -1,0 +1,62 @@
+	// =============
+	// Blink
+	//==============
+
+    $a-repeat: infinite;
+    $a-duration: 0.75s;
+    .blink {
+      opacity: 1;
+      -webkit-animation: blink $a-duration $a-repeat;
+      -moz-animation: blink $a-duration $a-repeat;
+      animation: blink $a-duration $a-repeat;
+    }
+
+    $a-repeat: 3;
+    .blink-3 {
+      opacity: 1;
+      -webkit-animation: blink $a-duration $a-repeat;
+      -moz-animation: blink $a-duration $a-repeat;
+      animation: blink $a-duration $a-repeat;
+    }
+
+    $a-repeat: 5;
+    .blink-5 {
+      opacity: 1;
+      -webkit-animation: blink $a-duration $a-repeat;
+      -moz-animation: blink $a-duration $a-repeat;
+      animation: blink $a-duration $a-repeat;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @-moz-keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }

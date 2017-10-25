@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://herbalife.com/2007/12/12/HL.Communication.Interfaces" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://herbalife.com/2007/12/12/HL.Communication.Interfaces" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/Imports">
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd21" namespace="http://herbalife.com/2007/12/12/HL.Communication.Interfaces" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd1" namespace="http://herbalife.com/2007/12/12/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd3" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.Interfaces" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd4" namespace="http://herbalife.com/2010/04/01/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd5" namespace="http://herbalife.com/2010/12/13/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd6" namespace="http://herbalife.com/2010/12/13/HL.Sports.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd7" namespace="http://herbalife.com/2010/09/17/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd8" namespace="http://herbalife.com/2010/01/11/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd9" namespace="http://herbalife.com/2007/12/12/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd10" namespace="http://herbalife.com/2010/3/6/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd11" namespace="http://herbalife.com/2008/06/10/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd12" namespace="http://herbalife.com/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd13" namespace="http://herbalife.com/2011/03/20/HL.Common.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd14" namespace="http://herbalife.com/2010/01/10/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd16" namespace="http://herbalife.com/2011/01/10/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd17" namespace="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd18" namespace="http://herbalife.com/2011/01/21/HL.Communication.ValueObjects.Email" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd19" namespace="http://herbalife.com/2011/01/11/HL.Communication.ValueObjects" />
+      <xsd:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Communication/Service.svc?xsd=xsd20" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberInfo" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsUniqueSMSMobileNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueSMSMobileNumber" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsUniqueSMSMobileNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueSMSMobileNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateSMSSubscriberSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSMSSubscriberSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateSMSSubscriberSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSMSSubscriberSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeleteSMSSubscriberSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSMSSubscriberSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeleteSMSSubscriberSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSMSSubscriberSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberSubscriptionReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberSubscriptionReport" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSMSSubscriberSubscriptionReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSMSSubscriberSubscriptionReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ValidateEmailOnET_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateEmailOnET" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ValidateEmailOnET_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateEmailOnETResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SubscribeToeNewsletter_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeToeNewsletter" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SubscribeToeNewsletter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeToeNewsletterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeclineToeNewsletter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineToeNewsletter" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeclineToeNewsletter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineToeNewsletterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UnsubscribeToeNewsletter_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeToeNewsletter" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UnsubscribeToeNewsletter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeToeNewsletterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_eNewsletterIsSubscribed_InputMessage">
+    <wsdl:part name="parameters" element="tns:eNewsletterIsSubscribed" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_eNewsletterIsSubscribed_OutputMessage">
+    <wsdl:part name="parameters" element="tns:eNewsletterIsSubscribedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_CheckDoubleOptInDataExtensionRecordExistsForToday_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDoubleOptInDataExtensionRecordExistsForToday" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_CheckDoubleOptInDataExtensionRecordExistsForToday_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckDoubleOptInDataExtensionRecordExistsForTodayResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTwitterTweets_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTwitterTweets" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTwitterTweets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTwitterTweetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetGSMFeeds_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGSMFeeds" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetGSMFeeds_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGSMFeedsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetFlickrPhotos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlickrPhotos" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetFlickrPhotos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFlickrPhotosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetVideoFromPlayLists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoFromPlayLists" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetVideoFromPlayLists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVideoFromPlayListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_FixBrokenProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:FixBrokenProfile" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_FixBrokenProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FixBrokenProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetEmailCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetEmailCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmailCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateProfileSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfileSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateProfileSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProfileSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsUniqueEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsUniqueEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUniqueEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSharedEmailProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSharedEmailProfile" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSharedEmailProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSharedEmailProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileByPhoneNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileByPhoneNumber" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileByPhoneNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileByPhoneNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DoUnsubscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoUnsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DoUnsubscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoUnsubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactions" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_InsertTransaction_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_InsertTransaction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessProfileQueue_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessProfileQueue" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessProfileQueue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessProfileQueueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessEmailProfileUpdates_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessEmailProfileUpdates" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessEmailProfileUpdates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessEmailProfileUpdatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetStaffProfileSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStaffProfileSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetStaffProfileSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStaffProfileSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateStaffProfileSubscription_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStaffProfileSubscription" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateStaffProfileSubscription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStaffProfileSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSubscriptionsForEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionsForEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSubscriptionsForEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionsForEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileSubscriptionForNewEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileSubscriptionForNewEmail" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetProfileSubscriptionForNewEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileSubscriptionForNewEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_CreateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_CreateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UploadDSList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadDSList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UploadDSList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadDSListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SearchList_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SearchList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ManageSubscriber_InputMessage">
+    <wsdl:part name="parameters" element="tns:ManageSubscriber" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ManageSubscriber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ManageSubscriberResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetHLListTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHLListTypes" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetHLListTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHLListTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetResultList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetResultList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsPendingList_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPendingList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_IsPendingList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPendingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessList" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_ProcessList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_OptIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:OptIn" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_OptIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OptInResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeleteAllListData_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllListData" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_DeleteAllListData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllListDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SendTriggeredMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessage" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SendTriggeredMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendTriggeredMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SendBulkEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendBulkEmail" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_SendBulkEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendBulkEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CreateDataExtension_InputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CreateDataExtension" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CreateDataExtension_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CreateDataExtensionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_PerformSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:BT_PerformSend" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_PerformSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BT_PerformSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CreateImportDefinition_InputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CreateImportDefinition" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CreateImportDefinition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CreateImportDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CheckImportProcess_InputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CheckImportProcess" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BT_CheckImportProcess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BT_CheckImportProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BulkSendDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:BulkSendDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_BulkSendDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BulkSendDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetDistributorsEmails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorsEmails" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetDistributorsEmails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistributorsEmailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_UpdateSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTransactionTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionTypes" />
+  </wsdl:message>
+  <wsdl:message name="ICommunicationService_GetTransactionTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionTypesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICommunicationService">
+    <wsdl:operation name="GetSMSSubscriberInfo">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberInfo" message="tns:ICommunicationService_GetSMSSubscriberInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberInfoResponse" message="tns:ICommunicationService_GetSMSSubscriberInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueSMSMobileNumber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueSMSMobileNumber" message="tns:ICommunicationService_IsUniqueSMSMobileNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueSMSMobileNumberResponse" message="tns:ICommunicationService_IsUniqueSMSMobileNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSSubscriberSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscription" message="tns:ICommunicationService_GetSMSSubscriberSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscriptionResponse" message="tns:ICommunicationService_GetSMSSubscriberSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSMSSubscriberSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSMSSubscriberSubscription" message="tns:ICommunicationService_UpdateSMSSubscriberSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSMSSubscriberSubscriptionResponse" message="tns:ICommunicationService_UpdateSMSSubscriberSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMSSubscriberSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteSMSSubscriberSubscription" message="tns:ICommunicationService_DeleteSMSSubscriberSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteSMSSubscriberSubscriptionResponse" message="tns:ICommunicationService_DeleteSMSSubscriberSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSSubscriberSubscriptionReport">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscriptionReport" message="tns:ICommunicationService_GetSMSSubscriberSubscriptionReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSMSSubscriberSubscriptionReportResponse" message="tns:ICommunicationService_GetSMSSubscriberSubscriptionReport_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmailOnET">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ValidateEmailOnET" message="tns:ICommunicationService_ValidateEmailOnET_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ValidateEmailOnETResponse" message="tns:ICommunicationService_ValidateEmailOnET_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubscribeToeNewsletter">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SubscribeToeNewsletter" message="tns:ICommunicationService_SubscribeToeNewsletter_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SubscribeToeNewsletterResponse" message="tns:ICommunicationService_SubscribeToeNewsletter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeclineToeNewsletter">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeclineToeNewsletter" message="tns:ICommunicationService_DeclineToeNewsletter_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeclineToeNewsletterResponse" message="tns:ICommunicationService_DeclineToeNewsletter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeToeNewsletter">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UnsubscribeToeNewsletter" message="tns:ICommunicationService_UnsubscribeToeNewsletter_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UnsubscribeToeNewsletterResponse" message="tns:ICommunicationService_UnsubscribeToeNewsletter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="eNewsletterIsSubscribed">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/eNewsletterIsSubscribed" message="tns:ICommunicationService_eNewsletterIsSubscribed_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/eNewsletterIsSubscribedResponse" message="tns:ICommunicationService_eNewsletterIsSubscribed_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckDoubleOptInDataExtensionRecordExistsForToday">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CheckDoubleOptInDataExtensionRecordExistsForToday" message="tns:ICommunicationService_CheckDoubleOptInDataExtensionRecordExistsForToday_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CheckDoubleOptInDataExtensionRecordExistsForTodayResponse" message="tns:ICommunicationService_CheckDoubleOptInDataExtensionRecordExistsForToday_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTwitterTweets">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTwitterTweets" message="tns:ICommunicationService_GetTwitterTweets_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTwitterTweetsResponse" message="tns:ICommunicationService_GetTwitterTweets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGSMFeeds">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetGSMFeeds" message="tns:ICommunicationService_GetGSMFeeds_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetGSMFeedsResponse" message="tns:ICommunicationService_GetGSMFeeds_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlickrPhotos">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetFlickrPhotos" message="tns:ICommunicationService_GetFlickrPhotos_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetFlickrPhotosResponse" message="tns:ICommunicationService_GetFlickrPhotos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVideoFromPlayLists">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetVideoFromPlayLists" message="tns:ICommunicationService_GetVideoFromPlayLists_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetVideoFromPlayListsResponse" message="tns:ICommunicationService_GetVideoFromPlayLists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscription" message="tns:ICommunicationService_GetProfileSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscriptionResponse" message="tns:ICommunicationService_GetProfileSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FixBrokenProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/FixBrokenProfile" message="tns:ICommunicationService_FixBrokenProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/FixBrokenProfileResponse" message="tns:ICommunicationService_FixBrokenProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmailCategory">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetEmailCategory" message="tns:ICommunicationService_GetEmailCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetEmailCategoryResponse" message="tns:ICommunicationService_GetEmailCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProfileSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateProfileSubscription" message="tns:ICommunicationService_UpdateProfileSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateProfileSubscriptionResponse" message="tns:ICommunicationService_UpdateProfileSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUniqueEmailAddress">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueEmailAddress" message="tns:ICommunicationService_IsUniqueEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsUniqueEmailAddressResponse" message="tns:ICommunicationService_IsUniqueEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSharedEmailProfile">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSharedEmailProfile" message="tns:ICommunicationService_GetSharedEmailProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSharedEmailProfileResponse" message="tns:ICommunicationService_GetSharedEmailProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileByPhoneNumber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileByPhoneNumber" message="tns:ICommunicationService_GetProfileByPhoneNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileByPhoneNumberResponse" message="tns:ICommunicationService_GetProfileByPhoneNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoUnsubscribe">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DoUnsubscribe" message="tns:ICommunicationService_DoUnsubscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DoUnsubscribeResponse" message="tns:ICommunicationService_DoUnsubscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactions">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactions" message="tns:ICommunicationService_GetTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactionsResponse" message="tns:ICommunicationService_GetTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTransaction">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/InsertTransaction" message="tns:ICommunicationService_InsertTransaction_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/InsertTransactionResponse" message="tns:ICommunicationService_InsertTransaction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessProfileQueue">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessProfileQueue" message="tns:ICommunicationService_ProcessProfileQueue_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessProfileQueueResponse" message="tns:ICommunicationService_ProcessProfileQueue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessEmailProfileUpdates">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessEmailProfileUpdates" message="tns:ICommunicationService_ProcessEmailProfileUpdates_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessEmailProfileUpdatesResponse" message="tns:ICommunicationService_ProcessEmailProfileUpdates_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStaffProfileSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetStaffProfileSubscription" message="tns:ICommunicationService_GetStaffProfileSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetStaffProfileSubscriptionResponse" message="tns:ICommunicationService_GetStaffProfileSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStaffProfileSubscription">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateStaffProfileSubscription" message="tns:ICommunicationService_UpdateStaffProfileSubscription_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateStaffProfileSubscriptionResponse" message="tns:ICommunicationService_UpdateStaffProfileSubscription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionsForEmailAddress">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptionsForEmailAddress" message="tns:ICommunicationService_GetSubscriptionsForEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptionsForEmailAddressResponse" message="tns:ICommunicationService_GetSubscriptionsForEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileSubscriptionForNewEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscriptionForNewEmail" message="tns:ICommunicationService_GetProfileSubscriptionForNewEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetProfileSubscriptionForNewEmailResponse" message="tns:ICommunicationService_GetProfileSubscriptionForNewEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CreateList" message="tns:ICommunicationService_CreateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/CreateListResponse" message="tns:ICommunicationService_CreateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadDSList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UploadDSList" message="tns:ICommunicationService_UploadDSList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UploadDSListResponse" message="tns:ICommunicationService_UploadDSList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SearchList" message="tns:ICommunicationService_SearchList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SearchListResponse" message="tns:ICommunicationService_SearchList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ManageSubscriber">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ManageSubscriber" message="tns:ICommunicationService_ManageSubscriber_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ManageSubscriberResponse" message="tns:ICommunicationService_ManageSubscriber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHLListTypes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetHLListTypes" message="tns:ICommunicationService_GetHLListTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetHLListTypesResponse" message="tns:ICommunicationService_GetHLListTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetResultList" message="tns:ICommunicationService_GetResultList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetResultListResponse" message="tns:ICommunicationService_GetResultList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPendingList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsPendingList" message="tns:ICommunicationService_IsPendingList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/IsPendingListResponse" message="tns:ICommunicationService_IsPendingList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessList">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessList" message="tns:ICommunicationService_ProcessList_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/ProcessListResponse" message="tns:ICommunicationService_ProcessList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OptIn">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/OptIn" message="tns:ICommunicationService_OptIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/OptInResponse" message="tns:ICommunicationService_OptIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllListData">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteAllListData" message="tns:ICommunicationService_DeleteAllListData_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/DeleteAllListDataResponse" message="tns:ICommunicationService_DeleteAllListData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTriggeredMessage">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendTriggeredMessage" message="tns:ICommunicationService_SendTriggeredMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendTriggeredMessageResponse" message="tns:ICommunicationService_SendTriggeredMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendBulkEmail">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendBulkEmail" message="tns:ICommunicationService_SendBulkEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/SendBulkEmailResponse" message="tns:ICommunicationService_SendBulkEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BT_CreateDataExtension">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateDataExtension" message="tns:ICommunicationService_BT_CreateDataExtension_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateDataExtensionResponse" message="tns:ICommunicationService_BT_CreateDataExtension_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BT_PerformSend">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_PerformSend" message="tns:ICommunicationService_BT_PerformSend_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_PerformSendResponse" message="tns:ICommunicationService_BT_PerformSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BT_CreateImportDefinition">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateImportDefinition" message="tns:ICommunicationService_BT_CreateImportDefinition_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CreateImportDefinitionResponse" message="tns:ICommunicationService_BT_CreateImportDefinition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BT_CheckImportProcess">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CheckImportProcess" message="tns:ICommunicationService_BT_CheckImportProcess_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BT_CheckImportProcessResponse" message="tns:ICommunicationService_BT_CheckImportProcess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BulkSendDetails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BulkSendDetails" message="tns:ICommunicationService_BulkSendDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/BulkSendDetailsResponse" message="tns:ICommunicationService_BulkSendDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributorsEmails">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetDistributorsEmails" message="tns:ICommunicationService_GetDistributorsEmails_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetDistributorsEmailsResponse" message="tns:ICommunicationService_GetDistributorsEmails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptions">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptions" message="tns:ICommunicationService_GetSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetSubscriptionsResponse" message="tns:ICommunicationService_GetSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriptions">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSubscriptions" message="tns:ICommunicationService_UpdateSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/UpdateSubscriptionsResponse" message="tns:ICommunicationService_UpdateSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionTypes">
+      <wsdl:input wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactionTypes" message="tns:ICommunicationService_GetTransactionTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://herbalife.com/2007/12/12/HL.Communication.Interfaces/ICommunicationService/GetTransactionTypesResponse" message="tns:ICommunicationService_GetTransactionTypes_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

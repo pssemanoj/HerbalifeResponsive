@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.DSWebAdmin" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/01/21/HL.DistributorCRM.ValueObjects.DSWebAdmin" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="DistributorLegalType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PrivatePerson" />
+      <xs:enumeration value="Company" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DistributorLegalType" nillable="true" type="tns:DistributorLegalType" />
+</xs:schema>

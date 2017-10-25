@@ -1,0 +1,70 @@
+﻿#region-selector-page{	
+    padding: $gutter 0;
+    background: $lightgrey;
+    
+    > div{
+        @include m4-t8-d12-e16;
+        @include breakpoint($desktop) { padding: 0 50px; }
+    }    
+		
+	aside {
+		width: 100%;
+		@include breakpoint($desktop) { @include gallery(3 of 12); }
+		@include breakpoint($ext-desktop) { @include gallery(4 of 16); }
+
+		h4 {
+			position: relative;
+			background-color: $white;
+			padding: 8px 10px 7px;
+			@include breakpoint($desktop) {
+				background-color: transparent;
+				padding: 0;
+				pointer-events: none;
+			}
+			&.show-countries {
+				&:after { content: "\e297"; }
+			}
+			&:after {
+				content: "\e296";
+				font-family: $myherbalife;
+				font-size: 18px;
+				position: absolute;
+				right: 10px;
+				top: 7px;
+				@include breakpoint($tablet) { top: 10px; }
+				@include breakpoint($desktop) { display: none; }
+			}
+		}
+
+		ul {
+			margin: 0;
+			max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s ease-in-out;
+
+			@include breakpoint($desktop) { 
+                max-height: none; 
+                margin: 0 0 $gutter;
+			}
+			li {
+				line-height: 20px;
+			}
+		}
+	}
+
+    .show-countries + ul{
+        max-height: 1000px; 
+        margin: 0 0 $gutter;
+         
+        @include breakpoint($desktop) { 
+            max-height: none;
+        }     
+    }
+}
+/*Fix to scroll on k-list-container*/
+.k-animation-container{
+    .k-list-container{
+        overflow: auto;
+    }
+}
+

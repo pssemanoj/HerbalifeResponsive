@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>APF skus cannot be added to your cart_G1439</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>APF skus cannot be removed to your cart_G1440</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Are you sure you want to cancel this order? Clicking "OK" will remove all items from your cart._G1441</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>As there are no Products with your APF order, all non-Product items have been removed._G1442</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Backordered items cannot be added to an APF order_G1443</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Card Authorization was not successful. Please review your cards._G1444</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Data format error, please enter the correct data._G1445</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Duplicate SKU has been entered. Please re-enter._G1446</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Event Ticket purchases are limited to quantity of {0} per order.</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Event Ticket Purchases are not allowed on this site._G1448</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>For item {0} only a quantity of {1} is available. Please amend the quantity entered to add this item to your cart.</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>For item {0}, 1 or more items may be backordered.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>For SKU {0}, the quantity cannot exceed {1}.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>I'm sorry you don't have a registered credit card on file.  Please call Member Services at  080-906-7070._G1452</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Invalid zip code._G1453</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} years of APF is due and must be paid before placing a "Resale" type order. Please change your order type to "Personal" to pay for your APF.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Item {0} is currently out of inventory, your quantity is set to 0.</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Limit for Today Magazine is_G1456</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Maximum number of magazines that can be added to cart is {0}.</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Nickname is already used, please enter a different name._G1458</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Online order is not available._G1459</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Online ordering is not allowed._G1460</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Only Product can be added to a Standalone APF order_G1461</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Payment total does not match order total._G1462</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Please add an amount greater than 0._G1463</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Please check card information._G1464</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Please check your Member ID and PIN Code and try again.   If the problems persists please contact Member Services at 1-866-866-4744_G1465</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Please complete your annual fee purchase before adding other products to cart._G1466</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Please complete your annual fee purchase before purchasing event tickets._G1467</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Please enter a number._G1468</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Please enter a quantity for SKU {0}.</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Please enter a unique Pick Up location._G1470</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Please enter a valid city._G1471</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Please enter a valid Name._G1472</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Please enter a valid Nickname._G1473</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Please enter donation amount, except zero(0)._G1474</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Please enter email address._G1475</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Please enter payment info._G1476</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Please enter the CVV._G1477</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Please enter the quantity of Annual Processing Fee you would like to purchase._G1478</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Please enter valid email address._G1479</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Please enter valid First Name._G1480</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Please enter valid Last Name._G1481</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Please enter valid Middle Name._G1482</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Please fill all mandatory shipping information._G1483</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Please fill area code in proper format._G1484</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Please fill extension in proper format._G1485</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Please fill out care of name._G1486</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Please fill out the area code._G1487</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Please fill out the city._G1488</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Please fill out the extension._G1489</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Please fill out the first name_G1490</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Please fill out the last name._G1491</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Please fill out the mandatory field._G1492</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Please fill out the phone number._G1493</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Please fill out the state._G1494</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Please fill out the street address field._G1495</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Please fill out the zip code._G1496</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Please fill phone number in proper format._G1497</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Please note that you can only save card details for a maximum of {0} cards. In order to add a new card, please remove one of your existing saved cards.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Please Note:&lt;br/&gt;This site is best viewed with Internet Explorer or Firefox._G1499</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Please record a shipping address before you can complete this Pick Up Order._G1500</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Please select a location._G1501</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Please select a Shipping time_G1502</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Please select an Order Type._G1503</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Please select the Pick Up location_G1504</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Please select the Pick Up Location_G1505</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Please select the pick up name_G1506</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Please select the pick up phone_G1507</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Please select the Pick Up time_G1508</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Please select the Shipping Address_G1509</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Please select Yes/No._G1510</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Primary Address cannot be deleted._G1511</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Primary Pick Up  Preference cannot be deleted._G1512</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Proceed to Checkout_G1513</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Proceed to Homepage._G1514</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Shipping to the entered Zip is not supported_G1515</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU {0} is not available.</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>SMS Mobile number is required._G1517</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Sorry! You will not be able to place an order, Only Korean Members can purchase orders from Korea website._G1518</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Sorry, you can not add the item(s) to the cart since by adding them into the cart, you exceed your earnings limit._G1519</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>System Error._G1520</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(The Order Month has changed!)_G1521</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>The SKU {0}  added will be on back order.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>The state is invalid._G1523</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>The street address should contain atleast one alphabet._G1524</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>The street address should contain atleast one number, one space, and one alphabet._G1525</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>The transaction is not permitted, please check card information. If problem persists, contact the Member services hotline (866) 622-1222._G1526</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>The transaction is not permitted,please contact the Member service hotline 080-906-7070._G1527</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>The Zip code is not valid._G1528</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>There are no items to purchase in the order._G1529</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>There is currently not enough inventory for item {0}. Available quantity {1}.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>There were no items selected to add to the order._G1531</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>There were no items selected to calculate volume._G1532</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>This address already exists in the database test_G1533</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>This order exceeds your purchasing limit. You have {0} VP remaining. Please amend your order to continue.</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>This transaction was declined for this card_G1535</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Today magazine has been added to the cart._G1536</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>We are unable to complete your order. Please contact Member Relations for assistance (866) 866-4744 and mention error code 01._G1537</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>We are unable to complete your order. Please contact Member Relations for assistance (866) 866-4744 and mention error code 05._G1538</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>We are unable to process your order.  Please check your address and try again.  If problem persists please contact Member Services._G1539</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>We're sorry. The currency could not be converted.please contact the Member service hotline 080-906-7070._G1540</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>You already have event ticket items in your cart, do you want to clear your cart?_G1541</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>You are attempting to delete your primary card. Please make a different saved card your primary card before you delete this card._G1542</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>You can no longer use this card due to multiple declines_G1543</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>You cannot add the same card more than once._G1544</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>You cannot add this item to your cart._G1545</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>You cannot go to the {0} page with no items in your cart.</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>You have backorder items in your cart that will be removed if you select  Pick Up as your shipping option. Do you wish to continue? ("Yes" or "No")_G1547</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>You have changed the order month for this order to {0}. Do you wish to continue with this selection?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>You have event ticket items in your cart, do you want to clear your cart?_G1549</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>You have product(s) in your shopping cart. Do you want to clear your cart before proceed to purchase event tickets?_G1550</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>You have selected {0} as the dual order month is this correct?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>You have selected Pick Up from WALDOS, there will be limited products to order from._G1552</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>You have selected to browse product without placing an order, you won't be able to add product to the cart._G1553</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>You have successfully added HFF to the cart._G1554</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>You may only prepay one year of APF._G1555</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>You must delete one of your credit cards to change the items in your cart_G1556</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>You must select a Shipping or Pick Up option to proceed._G1557</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>You recently placed an identical order on {0}. If this is a duplicate order, click "Cancel Order". To continue with this order, please submit.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Your Annual Processing Fee is due on {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Your Annual Processing Fee is due, we'll add into your shopping cart automatically._G1560</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Your Annual Processing Fees are due. They have been added to your cart._G1561</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Your credit card is expired. Please click Edit and update the expiration date._G1562</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Your credit card is expired. Please contact local Member Service Hotline._G1563</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Your ID is not acceptable, please contact Member Services on 0800 437 225, Monday - Friday 10.00am - 7:30pm (New Zealand time)_G1564</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Your ID is not acceptable, please contact Member Services on 0800 437 225, Monday - Friday 10.00am - 7:30pm (New Zealand time)_G1565</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Your previous order was already submitted prior to the changes that were made to your cart. Your order number is {0}. You can verify the status of this order by calling Order Support at 1-866-866-4744, 9 a.m. to 6 p.m. PST, Monday - Friday. Saturday 6 a.m. to 2 p.m. PST for assistance or by clicking here. (Please note that it may take up to 1 hour before the order is displayed.&lt;br&gt;If you would like to place a new order, please re-add items to your cart.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Your required Annual Processing fees have been left in your cart._G1567</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Your shipping information is no longer valid, shopping cart will be cleared._G1568</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Please fill out the county._G1569</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>The SKU {0} is invalid.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Please select a Shipping Method_G1571</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>No backorderd should be allowed for deliveries to New Caledonia and French Polynesia._G1572</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Please select the Order Type from the mini cart_G1573</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>You cannot Check Out as your Purchasing Limits have been exceeded_G1574</value>
+  </data>
+</root>

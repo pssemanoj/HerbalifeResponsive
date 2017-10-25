@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SKU5565Limitations" xml:space="preserve">
+    <value>Mã sản phẩm:{0} đã không được thêm vào giỏ hàng từ khi nó không có sẵn ở Incaricati</value>
+    <comment>_*G1711</comment>
+  </data>
+  <data name="SKU5564Limitations" xml:space="preserve">
+    <value>Mã sản phẩm:{0} đã được thêm vào giỏ hàng. Nếu bạn muốn thêm, vui lòng thay đổi loại đơn hàng từ A! sang B1</value>
+    <comment>_*G1712</comment>
+  </data>
+  <data name="AddProductFirst" xml:space="preserve">
+    <value>Vui lòng thêm sản phẩm trước khi thêm mã sẩn phẩm {0}</value>
+    <comment>_*G1713</comment>
+  </data>
+  <data name="SKUQuantityExceeds" xml:space="preserve">
+    <value>Số lương không vượt trên {0} cho mã sản phẩm {1}</value>
+    <comment>_*G1714</comment>
+  </data>
+  <data name="RestrictedSkuForShippingMethod" xml:space="preserve">
+    <value>Mã sản phẩm {0} không có sẵn trong đơi hàng chuyển phát nhanh. Vui lòng chọn chuyển hàng bình thường cho hàng này</value>
+    <comment>_*G1715</comment>
+  </data>
+  <data name="RestrictedShippingMethodForSku" xml:space="preserve">
+    <value>Mã sản phẩm 0343,0344,2329 hoac 2328 không có với vận chuyển nhanh</value>
+    <comment>_*G1716</comment>
+  </data>
+  <data name="AnySKUQuantityExceeds" xml:space="preserve">
+    <value>Số lượng mã sản phẩm không vượt trên {0}</value>
+    <comment>_*G1717</comment>
+  </data>
+  <data name="CantPurchase" xml:space="preserve">
+    <value>Không thể mua hàng</value>
+    <comment>_*G1718</comment>
+  </data>
+  <data name="PurchaseLimitTypeProductCategory" xml:space="preserve">
+    <value>không thể mua sản phẩm {0}. Bạn chỉ có thể đặt hàng cho sản phẩm khuyến mãi và tài liệu sách</value>
+    <comment>_*G1719</comment>
+  </data>
+  <data name="EarningExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng SKU {0} không thể cao hơn {1} bởi nó đã vươt quá hạn mức bạn có</value>
+    <comment>_*G1720</comment>
+  </data>
+  <data name="VolumePointExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng SKU {0} không thể cao hơn {1} bởi nó đã vươt quá hạn mức điểm</value>
+    <comment>_*G1721</comment>
+  </data>
+  <data name="EarningExceeds" xml:space="preserve">
+    <value>Mã sản phẩm {0}, 1 hoặc nhiều hơn 1 có thể không còn tồn hàng</value>
+    <comment>_*G1722</comment>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Mã sản phẩm {0} đã được thêm vào giỏ hàng, bạn đã vươt quá hạn mức mua hàng</value>
+    <comment>_*G1723</comment>
+  </data>
+  <data name="AmountLimitExceeds" xml:space="preserve">
+    <value>Tổng số vượt quá tổng hạn mức của {0}</value>
+    <comment>_*G1724</comment>
+  </data>
+  <data name="DiscountedRetailExceeds" xml:space="preserve">
+    <value>Mã sản phẩm {0} đã được thêm vào giỏ hàng, bạn đã vươt quá hạn mức mua hàng</value>
+    <comment>_*G1725</comment>
+  </data>
+  <data name="DiscountedRetailExceedsByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng mã sản phẩm {0} không thể cao hơn {1} bởi nó đã vượ quá hạn mức mua hàng</value>
+    <comment>_*G1726</comment>
+  </data>
+  <data name="PersonalConsumption" xml:space="preserve">
+    <value>Hàng hóa cá nhân</value>
+    <comment>_*G1727</comment>
+  </data>
+  <data name="Consignment" xml:space="preserve">
+    <value>Mua lại</value>
+    <comment>_*G1728</comment>
+  </data>
+  <data name="PostErrorRemainingThresholdLimitsVolumeSummary" xml:space="preserve">
+    <value>Đơn hàng vượt quá doanh số cho phép. Điểm doanh số còn lại là {0}. Mã hàng sau đây không được thêm vào giỏ hàng của bạn</value>
+    <comment>_*G2302</comment>
+  </data>
+  <data name="VolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Mã sản phẩm:{0}.</value>
+    <comment>_*G2303</comment>
+  </data>
+  <data name="VolumePointExceedsThreshold" xml:space="preserve">
+    <value>Mã sản phẩm:{0}.</value>
+    <comment>_*G2711</comment>
+  </data>
+  <data name="NoDistributorNotes" xml:space="preserve">
+    <value>Bạn chưa nộp Mẫu đơn Đạo lý kinh doanh. Để biết thêm chi tiết vui lòng liên hệ Phòng Dịch Vụ Thành viên</value>
+    <comment>_*G2815</comment>
+  </data>
+  <data name="PromotionalSkuAdded" xml:space="preserve">
+    <value>SKU khuyển mãi đã được thêm vào giỏ hàng</value>
+    <comment>_*G3315</comment>
+  </data>
+  <data name="SKULimitExceedByDay" xml:space="preserve">
+    <value>Đơn hàng của bạn {0} vượt quá số lượng tối đa {1} mỗi Thành Viên mỗi {2} ngày.</value>
+    <comment>_*G3505</comment>
+  </data>
+  <data name="FOPVolumePointExceedsOnCheckout" xml:space="preserve">
+    <value>Theo quy định, Thành Viên chưa phải là Giám Sát Viên chỉ có thể đặt đơn hàng đầu tiên tối đa {0} điểm doanh số mua trực tiếp (PPV). Bạn có thể tích lũy điểm doanh số mua trực tiếp lên đến {1} Volume Points (bao gồm điểm của đơn hàng đầu tiên trong vòng {2} ngày.Đơn hàng này vượt quá điểm doanh số mua trực tiếp cho phép và cần giảm xuống {3} điểm</value>
+    <comment>_*G3556</comment>
+  </data>
+  <data name="FOPVolumePointExceeds" xml:space="preserve">
+    <value>Theo quy định, Thành Viên chưa phải là Giám Sát Viên chỉ có thể đặt đơn hàng đầu tiên tối đa {0} điểm doanh số mua trực tiếp (PPV). Bạn có thể tích lũy điểm doanh số mua trực tiếp lên đến {1} Volume Points (bao gồm điểm của đơn hàng đầu tiên trong vòng {2} ngày.Đơn hàng này vượt quá điểm doanh số mua trực tiếp cho phép và cần giảm xuống {3} điểm. Các mã hàng dưới đây không được thêm vào giỏ hàng:</value>
+    <comment>_*G3557</comment>
+  </data>
+  <data name="FOPVolumePointExceedsThresholdByIncreasingQuantity" xml:space="preserve">
+    <value>Số lượng của mã hàng:{0} không thể tăng lên {1} vì số lượng này vượt quá giới hạn điểm doanh số của bạn</value>
+    <comment>_*G3558</comment>
+  </data>
+  <data name="FOPConsignmentVolumePointExceeds" xml:space="preserve">
+    <value>Thành Viên chưa phải là Giám Sát Viên chỉ có thể đặt đơn hàng đầu tiên tối đa {0} điểm doanh số mua trực tiếp (PPV). Bạn có thể tích lũy điểm doanh số mua trực tiếp lên đến {1} Volume Points bao gồm điểm của đơn hàng đầu tiên trong vòng {2} ngày. Vui lòng giảm điểm</value>
+    <comment>_*G3638</comment>
+  </data>
+  <data name="FOPPersonalConsumptionVolumePointExceeds" xml:space="preserve">
+    <value>Thành Viên chỉ có thể đặt đơn hàng tối đa {0} điểm doanh số mua trực tiếp (PPV) đơn hàng đầu tiên trong vòng {1} ngày.Đơn hàng này vượt quá điểm doanh số mua trực tiếp cho phép và cần giảm điểm.</value>
+    <comment>_*G3639</comment>
+  </data>
+  <data name="CroatiaNewMemberError" xml:space="preserve">
+    <value>Thành Viên thân mến - Xin lưu ý Quý khách có thể đặt hàng trực tuyến sau 24 giờ hồ sơ của bạn được cập nhật trên hệ thống Herbalife. Chân thành cám ơn.</value>
+    <comment>_*G3555</comment>
+  </data>
+  <data name="RemainingVolumePointExceeds" xml:space="preserve">
+    <value>Các mục hàng hóa trong giỏ của bạn vượt quá giới hạn điểm doanh số. Vui lòng loại bỏ các mục hàng hóa với {0} Điểm Doanh Số để tiếp tục đơn hàng này.</value>
+    <comment>_G3719</comment>
+  </data>
+</root>

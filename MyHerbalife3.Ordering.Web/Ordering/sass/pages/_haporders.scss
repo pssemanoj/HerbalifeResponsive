@@ -1,0 +1,68 @@
+
+	/* HAP Orders
+	================================================== */
+    #divNotificationRenew.notification-warning { display: inline-block; }
+	#hap-orders {
+		margin-bottom: 50px;
+		#left-nav {
+			@include span(4);
+			@include breakpoint($breakpoint-tablet) 		{ display: none; }
+	        @include breakpoint($breakpoint-desktop) 		{ @include span(3); display: block; }
+			@include breakpoint($breakpoint-ext-desktop) 	{ @include span(4); }
+			li {
+                a { padding: 10px; }
+            }
+		}
+
+		.main-content { 
+        	width: 100%;
+        	p { max-width: 620px; }
+			#hap-table {
+				font-size: 12px;
+				@include breakpoint($breakpoint-desktop) { font-size: 14px; }
+			} 
+		}
+
+	}
+
+    table#hap-table { 
+        width: 100%; 
+        border-bottom: 1px solid $softgrey;
+
+        h1, h2, h2, h4, h5, h6 {
+            margin: 0; 
+            padding: 0 
+        }
+
+        th { 
+            border-bottom: 1px solid $lightgrey; 
+            color: $lightblack;
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        thead tr { 
+            background: none !important; 
+            color: $lightblack !important; 
+        }
+        tbody tr {
+            &:nth-child(2n+1) { background-color: $offwhite; }
+        }
+        td { 
+            border-bottom: 1px solid $lightgrey;
+        }
+        td:first-child, th:first-child { padding-left:10px; }
+
+        th,td {
+            vertical-align:middle; 
+            padding: 5px 10px; 
+            text-align: center; 
+            &.r { text-align: right !important; }
+            &.l { text-align: left !important; }
+            &.c { text-align: center !important; }
+            /*&.hide-mobile {
+                display: none;
+                @include breakpoint($breakpoint-tablet) { display: table-cell; }
+            }*/
+        }
+    }

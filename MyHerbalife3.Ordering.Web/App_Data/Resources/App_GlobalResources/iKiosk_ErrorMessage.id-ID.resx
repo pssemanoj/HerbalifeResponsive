@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>SKU dari APF tidak bisa ditambahkan ke keranjang_G1575</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>SKU dari APF tidak bisa dibuang dari keranjang_G1576</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>apakah anda yakin ingin membatalkan pesanan ini? Mengklik "OK" akan membuang semua barang dari keranjang anda_G1577</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>selama tidak ada produk dengan pemesanan APF anda, seluruh barang non produk telah dibuang_G1578</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>barang yang dipesan kembali tidak dapat ditambahkan ke pesanan APF_G1579</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>otorisasi kartu tidak berhasil. Mohon tinjau ulang kartu anda_G1580</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>kesalahan format data, tolong masukkan data yang benar_G1581</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>SKU yang sama telah dimasukkan. Mohon diisi ulang_G1582</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>pembelian tiket acara dibatasi {0} per pesanan</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>pembelian tiket pesanan tidak diizinkan dalam tempat ini_G1584</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>untuk barang {0} hanya {1} yang tersedia. Mohon rubah kuantitas yang dimasukkan untuk menambahkan ke dalam keranjang anda</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>untuk barang {0}, 1 atau lebih dapat dipesan ulang</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>untuk SKU {0}, kuantitasnya tidak dapat melebihi {1}</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>kami mohon maaf anda tidak memiliki kartu kredit yang terdaftar dalam file kami. Mohon telepon Distributor Service     021 293 40900_G1588</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>kode pos salah_G1589</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} tahun dari APF jatuh tempo dan harus dibayar sebelum menaruh pesanan tipe "penjualan kembali". Mohon ganti tipe pesanan anda ke "Pribadi" untuk membayar APF anda</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>barang {0} sedang habis, jumlah anda diubah menjadi 0</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>batas majalah hari ini adalah_G1592</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>angka maksimum dari majalah yang dapat ditambahkan ke keranjang adalah {0}</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>nama panggilan telah digunakan, mohon masukkan nama yang berbeda_G1594</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>pemesanan online tidak tersedia_G1595</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>pemesanan online tidak diizinkan_G1596</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>hanya produk yang dapat dimasukkan dalam pesanan APF yang mandiri_G1597</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>jumlah pembayaran tidak sesuai dengan total pemesanan_G1598</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>tolong tambahkan angka lebih besar dari 0_G1599</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Silahkan  periksa informasi kartu_G1600</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Periksa ID Distributor dan kode PIN anda lalu cobalah kembali. Jika masalah tetap terjadi mohon hubungi Distributor Services di 021-293 40900_G1601</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Silahkan  lengkapi biaya pembelian awal sebelum menambahkan produk lain ke keranjang_G1602</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Silahkan  lengkapi biaya pembelian awal sebelum membeli tiket acara_G1603</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Silahkan  masukkan angka_G1604</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Silahkan  masukkan kuantitas untuk SKU_G1605</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Silahkan  masukkan lokasi penjemputan yang unik_G1606</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Silahkan  masukkan kota yang benar_G1607</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Silahkan  masukkan nama yang benar_G1608</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Silahkan  masukkan nama panggilan yang benar_G1609</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Silahkan  masukkan jumlah donasi, kecuali 3_G1610</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Silahkan  masukkan alamat email_G1611</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Silahkan  masukkan info pembayaran_G1612</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Silahkan  masukkan CVV_G1613</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Silahkan  masukkan kuantitas dari biaya pemrosesan awal yang ingin dibeli_G1614</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Silahkan  masukkan alamat email yang benar_G1615</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Silahkan  masukkan nama depan yang benar_G1616</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Silahkan  masukkan nama belakang yang benar_G1617</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Silahkan  masukkan nama tengah yang benar_G1618</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Silahkan  masukkan informasi pengiriman_G1619</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Silahkan  masukkan kode area yang benar_G1620</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Silahkan  masukkan ekstensi yang benar_G1621</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Silahkan  isi penggantian nama_G1622</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Silahkan  isi kode area_G1623</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Silahkan  isi kota_G1624</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Silahkan  isi ekstensi_G1625</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Silahkan  isi nama depan_G1626</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Silahkan  isi nama depan_G1627</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Silahkan  isi bidang yang wajib_G1628</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Silahkan  isi nomor telepon_G1629</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Silahkan  isi negara_G1630</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Silahkan  isi alamat_G1631</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Silahkan  isi kode pos_G1632</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Silahkan  isi nomor telepon dengan benar_G1633</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Silahkan  catat bahwa anda hanya dapat menyimpan kartu detail anda untuk maksimum {0} kartu. Jika ingin menambah, tolong hapus simpanan kartu anda</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Silahkan  catat : tempat ini paling baik ditampilkan dengan Internet Explorer atau Firefox_G1635</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Silahkan  catat alamat pengiriman sebelum menyelesaikan pemesanan jemputan_G1636</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Silahkan pilih lokasi_G1637</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Silahkan  pilih waktu pengiriman_G1638</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Silahkan  pilih tipe pesanan_G1639</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Silahkan  pilih lokasi penjemputan_G1640</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Silahkan  pilih lokasi penjemputan_G1641</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Silahkan  pilih nama penjemputan_G1642</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Silahkan  pilih telepon penjemputan_G1643</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Silahkan  pilih waktu penjemputan_G1644</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Silahkan  pilih alamat pengiriman_G1645</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Silahkan  pilih ya/tidak_G1646</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>alamat utama tidak bisa dihapus_G1647</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>preferensi penjemputan utama tidak bisa dihapus_G1648</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>lanjut ke keluar_G1649</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>lanjut ke halaman utama_G1650</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>pengiriman ke kode pos tidak didukung_G1651</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>SKU tidak tersedia  _G1652</value>
+  </data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>nomor SMS dibutuhkan_G1653</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Maaf! Anda tidak dapat memsan, hanya distributor korea yang dapat membeli dari website Korea_G1654</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>maaf, anda tidak bisa menambahkan barang ke keranjang karena dengan menambahkan ke dalam keranjang, anda melebihi batas pendapatan_G1655</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>kesalahan sistem_G1656</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(bulan pemesanan telah berubah!)_G1657</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>SKU {0} yang ditambahkan  akan menjadi pemesanan kembali</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>negara salah_G1659</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>alamat harus mengandung minimal satu huruf_G1660</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>alamat harus mengandung minimal satu angka, satu spasi, dan satu huruf_G1661</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>transaksi tidak diizinkan, mohon periksa informasi kartu, jika masalah berkelanjutan, hubungi Distributor Service   021 293 40900_G1662</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>transaksi tidak diizinkan, mohon hubungi Distributor Service  021 293 40900_G1663</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>kode pos tidak benar_G1664</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>tidak ada barang yang akan dibeli dalam pesanan_G1665</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>persediaan tidak cukup untuk barang {0}. Jumlah yang tersedia {1}</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>tidak ada barang yang dipilih untuk dimasukkan dalam pesanan_G1667</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>tidak ada barang yang dipilih untuk dihitung_G1668</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>alamat ini sudah ada di database_G1669</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>pesanan ini melebihi batas pembelian. Anda memiliki sisa {0} VP. Tolong ubah pesanan anda untuk melanjutkan</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>transaksi ini ditolak untuk kartu ini_G1671</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>majalah hari ini telah ditambahkan ke dalam keranjang_G1672</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>kami tidak dapat menyelesaikan pesanan anda. Mohon hubungi relasi distributor untuk bantuan  021 293 40900 dan sebutkan kode eror 01_G1673</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>kami tidak dapat menyelesaikan pesanan anda. Mohon hubungi relasi distributor untuk bantuan  021 293 40900 dan sebutkan kode eror 05_G1674</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>kami tidak dapat memproses pesanan anda. Mohon periksa alamat anda dan coba lagi. Jika masalah berlanjut mohon hubungi layanan distributor_G1675</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>kami mohon maaf. Valuta asing anda tidak bisa dikonversi. Mohon hubungi Distributor Service  021 293 40900_G1676</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Anda telah memiliki tiket acara dalam keranjang, apakah anda ingin membersihkan keranjang?_G1677</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Anda mencoba untuk menghapus kartu utama. Mohon buat kartu simpanan yang berbeda untuk kartu utama sebelum menghapus kartu ini_G1678</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Anda tidak lagi dapat menggunakan kartu ini karena penolakan berkali-kali_G1679</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>anda tidak dapat memasukkan kartu yang sama lebih dari satu_G1680</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Anda tidak dapat memasukkan barang ini dalam keranjang anda_G1681</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Anda tidak bisa pergi ke halaman {0} karena tidak ada barang dalam keranjang anda</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Anda memiliki barang yang dipesan kembali dalam keranjang yang akan dibuat jika anda memilih jemputan sebagai opsi pengiriman. Apakah anda ingin lanjut?("ya" atau "tidak")_G1683</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Anda telah mengganti bulan pesanan untuk pesanan ini menjadi {0}. Apakah anda ingin melanjutkan dengan pilihan ini?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Anda memiliki tiket acara dalam keranjang, apakah anda ingin untuk membersihkan keranjang anda?_G1685</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Anda memiliki produk dalam keranjang belanja anda. Apakah anda ingin untuk membersihkan keranjang anda sebelum melakukan pembelian tiket acara?_G1686</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Anda telah memilih {0} sebagai bulan pemesanan kembar apakah ini benar?</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>Anda telah memilih penjemputan dari WALDOS, akan ada pembatasan produk untuk dipesan_G1688</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Anda telah memilih untuk melihat produk tanpa memesan, anda tidak dapat menambahkan produk ke keranjang_G1689</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>Anda telah menambahkan HFF ke dalam keranjang_G1690</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Anda hanya dapat membayar dimuka satu tahun dari APF_G1691</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Anda harus menghapus salah satu kartu kredit untuk mengganti barang dalam keranjang_G1692</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Anda harus memilih opsi pengiriman atau penjemputan untuk lanjut_G1693</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Anda telah memesan pesanan yang sama di {0}. Jika ini salinan pesanan, klik "batalkan pesanan". Untuk melanjutkan pesanan ini, mohon kumpulkan</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>pembayaran pemrosesan utama anda akan jatuh tempo pada {0}</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>pembayaran pemrosesan utama anda telah jatuh tempo, kami akan memasukkan dalam keranjang belanja anda secara otomatis_G1696</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>pembayaran pemrosesan utama anda telah jatuh tempo. Telah ditambahkan dalam keranjang anda_G1697</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>kartu kredit anda habis masa berlakunya. Mohon klik ubah dan perbaharui tanggal masa berlaku_G1698</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>kartu kredit anda habis masa berlakunya. Mohon hubungi layanan distributor terdekat_G1699</value>
+  </data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>ID anda tidak dapat diterima, mohon hubungi layanan Distributor Services 021 293 40900_G1700</value>
+  </data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>ID anda tidak dapat diterima, mohon hubungi layanan Distributor Services 021 293 40900_G1701</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>pesanan sebelumnya telah dikumpulkan sebelum perubahan yang terjadi dalam keranjang anda. Nomor pesanan anda adalah [0}. Anda dapat mengecek status pesanan anda dengan menelepon bantuan pesanan di  021 293 40900, 09.30-18.00, senin-jumat. sabtu 6 pagi sampai 2 sore. untuk bantuan klik disini. (mohon catat bahwa akan membutuhkan waktu 1 jam sebelum pesanan ditampilkan. jika anda ingin menambahkan pesanan baru, mohon tambahkan kembali barang anda ke dalam keranjang_G1702</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>biaya pemrosesan utama anda telah ditinggalkan dalam keranjang_G1703</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>informasi pengiriman tidak lagi berlaku, keranjang belanja akan dibersihkan_G1704</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>tolong isi wilayah_G1705</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>SKU {0} tidak benar</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>tolong pilih metode pengiriman_G1707</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>tidak ada pemesanan yang diizinkan untuk pengantaran ke New Caledonia dan French Polynesia_G1708</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>tolong pilih tipe order dari keranjang kecil_G1709</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>anda tidak bisa keluar saat batas pembelian anda melebihi batas_G1710</value>
+  </data>
+</root>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" elementFormDefault="qualified" targetNamespace="http://herbalife.com/2010/02/02/HL.Shipping.ValueObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://usslcprodwcf00.hrbl.net/Service/Shipping/ChinaShipping.svc?xsd=xsd2" namespace="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" />
+  <xs:complexType name="GetUnsupportedExpressAddressRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q1:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExpressCompany" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUnsupportedExpressAddressRequest" nillable="true" type="tns:GetUnsupportedExpressAddressRequest" />
+  <xs:complexType name="GetUnsupportedExpressAddressResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q2:ServiceResponseValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="WarningMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUnsupportedExpressAddressResponse" nillable="true" type="tns:GetUnsupportedExpressAddressResponse" />
+  <xs:complexType name="GetExpressCompanyRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetExpressCompanyRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IncludeFeeDetail" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExpressCompanyRequest_V01" nillable="true" type="tns:GetExpressCompanyRequest_V01" />
+  <xs:complexType name="GetExpressCompanyRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q3:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddressID" type="xs:int" />
+          <xs:element minOccurs="0" name="DistributorID" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExpressCompanyRequest" nillable="true" type="tns:GetExpressCompanyRequest" />
+  <xs:complexType name="GetProvinceStoreMappingResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q4:ServiceResponseValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Mappings" nillable="true" type="tns:ArrayOfProvinceStoreMapping" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProvinceStoreMappingResponse" nillable="true" type="tns:GetProvinceStoreMappingResponse" />
+  <xs:complexType name="ArrayOfProvinceStoreMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProvinceStoreMapping" nillable="true" type="tns:ProvinceStoreMapping" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProvinceStoreMapping" nillable="true" type="tns:ArrayOfProvinceStoreMapping" />
+  <xs:complexType name="ProvinceStoreMapping">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProvinceID" type="xs:int" />
+      <xs:element minOccurs="0" name="ProvinceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StoreID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProvinceStoreMapping" nillable="true" type="tns:ProvinceStoreMapping" />
+  <xs:complexType name="GetProvinceStoreMappingRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q5:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetProvinceStoreMappingRequest" nillable="true" type="tns:GetProvinceStoreMappingRequest" />
+  <xs:complexType name="GetExpressCompanyResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q6:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExpressCompanyResponse" nillable="true" type="tns:GetExpressCompanyResponse" />
+  <xs:complexType name="GetExpressCompanyResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetExpressCompanyResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExpressCompanies" nillable="true" type="tns:ArrayOfExpressCompany" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetExpressCompanyResponse_V01" nillable="true" type="tns:GetExpressCompanyResponse_V01" />
+  <xs:complexType name="ArrayOfExpressCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExpressCompany" nillable="true" type="tns:ExpressCompany" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExpressCompany" nillable="true" type="tns:ArrayOfExpressCompany" />
+  <xs:complexType name="ExpressCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BasePrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EstimatedFee" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ExpressCompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="ExpressCompanyInfo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpressCompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FirstWeight" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RenewalPrice" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExpressCompany" nillable="true" type="tns:ExpressCompany" />
+  <xs:complexType name="GetUnsupportedAddressRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q7:ServiceRequestParameter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="District" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUnsupportedAddressRequest" nillable="true" type="tns:GetUnsupportedAddressRequest" />
+  <xs:complexType name="GetBaiduMapJavascriptResponse_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetBaiduMapJavascriptResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Script" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBaiduMapJavascriptResponse_V01" nillable="true" type="tns:GetBaiduMapJavascriptResponse_V01" />
+  <xs:complexType name="GetBaiduMapJavascriptResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q8:ServiceResponseValue">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBaiduMapJavascriptResponse" nillable="true" type="tns:GetBaiduMapJavascriptResponse" />
+  <xs:complexType name="GetUnsupportedAddressResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q9:ServiceResponseValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="WarningMessage" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetUnsupportedAddressResponse" nillable="true" type="tns:GetUnsupportedAddressResponse" />
+  <xs:complexType name="GetBaiduMapJavascriptRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://herbalife.com/2007/12/12/HL.Common.DataContract.ValueObjects" base="q10:ServiceRequestParameter">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBaiduMapJavascriptRequest" nillable="true" type="tns:GetBaiduMapJavascriptRequest" />
+  <xs:complexType name="GetBaiduMapJavascriptRequest_V01">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GetBaiduMapJavascriptRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="APIurl" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetBaiduMapJavascriptRequest_V01" nillable="true" type="tns:GetBaiduMapJavascriptRequest_V01" />
+</xs:schema>

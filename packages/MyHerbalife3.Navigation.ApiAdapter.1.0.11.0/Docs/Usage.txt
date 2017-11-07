@@ -1,0 +1,42 @@
+﻿a. Add a new config section entry
+<section name="Caches" type="HL.Blocks.Caching.Configuration.CacheConfiguration, HL.Blocks.Caching"/>
+b. The sync configs section should look like below
+<Caches>
+    <add name="catalog" isDefault="true">
+		<providers>
+			<add key="aspcache" objType="HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2[[DistributorWebsites.WebRole.ValueObjects.Models.CatalogModel, DistributorWebsites.WebRole.ValueObjects, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+			<settings>
+				<add key="TimeoutSeconds" keyValue="30" ></add>
+			</settings>
+			</add>
+			<add key="appFabricCache" objType="HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2[[DistributorWebsites.WebRole.ValueObjects.Models.CatalogModel, DistributorWebsites.WebRole.ValueObjects, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+			<settings>
+				<add key="LocalCacheSize" keyValue="100000" ></add>
+				<add key="AppFabricCacheRefreshIntervalSeconds" keyValue="1800" ></add>
+				<add key="LocalCacheTimeoutSeconds" keyValue="300" ></add>
+				<add key="CacheServiceUri" keyValue="Herbalife.cache.windows.net" ></add>
+				<add key="CacheServicePort" keyValue="22233" ></add>
+				<add key="SecurityKey" keyValue="YWNzOmh0dHBzOi8vaGVyYmFsaWZlLWNhY2hlLmFjY2Vzc2NvbnRyb2wud2luZG93cy5uZXQvV1JBUHYwLjkvJm93bmVyJm5CVitWRHlKTFlZNmoyMzN6MS91NWIvZlFRbzlWWlllWjNuVzFOeG5TdDg9Jmh0dHA6Ly9IZXJiYWxpZmUuY2FjaGUud2luZG93cy5uZXQ=" ></add>
+			</settings>
+			</add>
+			<add key="blobCache" objType="HL.Blocks.Caching.CacheProviders.AzureBlobCache`2[[DistributorWebsites.WebRole.ValueObjects.Models.CatalogModel, DistributorWebsites.WebRole.ValueObjects, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+			<settings>
+				<add key="BlobName" keyValue="catalog.xml" ></add>
+				<add key="ContainerAddress" keyValue="catalog" ></add>              
+			</settings>
+			</add>
+		</providers>
+    </add>
+    
+  </Caches>
+c. Add providers which are required. 
+d. objType is the FullTypeName of the class that needs to be cached.
+
+----------------------------------------------------------------------
+REDIS CACHE 
+----------------------------------------------------------------------
+
+In order to connect to an redis instance following  app setting keys must be included in Web.config file
+"RedisHost"  Redis Instance Server Name 
+"RedisSsl"   True / False
+"RedisPassword" 

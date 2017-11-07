@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Csak 1 éves díjat fizethet előre</value>
+  <comment>_G1167</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>Az éves díjat külön rendelésben tudja rendezni.</value>
+  <comment>_G1168</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Biztos benne, hogy törölni szeretné ezt a megrendelést? Ha az OK gombra kattint, az összes tétel eltűnik a kosarából.</value>
+  <comment>_G1169</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Mivel az éves díjat külön rendelésben kell fizetnie, minden más tétel eltávolításra került.</value>
+  <comment>_G1170</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Nem szerepelhetnek más tételek az éves díj mellett.</value>
+  <comment>_G1171</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>A bankkártya engedélyezés sikertelen. Kérjük ellenőrizze a kártyaadatokat.</value>
+  <comment>_G1172</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Hibás dátum formátum, kérjük adja meg a helyes adatokat.</value>
+  <comment>_G1173</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Ez a cikkszám már szerepel a rendelésben, kérjük növelje annak mennyiségét.</value>
+  <comment>_G1174</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>A megvásárolható jegyek száma rendelésenként {0} lehet</value>
+  <comment>_G1175</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Rendezvény jegy vásárlása ezen az oldalon nem megengedett.</value>
+  <comment>_G1176</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>A {0} termékből összesen {1} elérhető. Kérjük a folytatáshoz módosítsa a mennyiséget ennek megfelelően.</value>
+  <comment>_G1177</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>A {0} termékből legalább egy darab csak későbbi kiszállítással elérhető (backorder).</value>
+  <comment>_G1178</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>A {0} termék mennyisége nem lehet több, mint {1}.</value>
+  <comment>_G1179</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Sajnáljuk, Önnek nincs regisztrált bankkártyája, kérjük hívja a Tanácsadói Kapcsolatok Osztályát a 06-1-299-7010-es telefonszámon.</value>
+  <comment>_G1180</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Érvénytelen irányítószám</value>
+  <comment>_G1181</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>{0} évnyi eljárási díj tartozása van, amelyet rendeznie kell "Kereskedői" típusú rendeléshez. Kérjük az éves díj fizetéséhez váltsa át a rendelést "Saját" típusúra.</value>
+  <comment>_G1182</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>A {0} cikkszámú termék jelenleg nincs készleten, ezért ennek mennyiségét lenullázzuk.</value>
+  <comment>_G1183</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>A Today Magazin limitje</value>
+  <comment>_G1184</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>A kosárba tehető magazinok maximális száma: {0}.</value>
+  <comment>_G1185</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Ez a becenév már használatban van, kérjük adjon meg másik becenevet.</value>
+  <comment>_G1186</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Az online rendelés nem elérhető.</value>
+  <comment>_G1187</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Az online rendelés nem megengedett.</value>
+  <comment>_G1188</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>A különálló Éves Díj rendeléshez nem adható hozzá más tétel.</value>
+  <comment>_G1189</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>A fizetett összeg nem egyezik a rendelés végösszegével.</value>
+  <comment>_G1190</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Kérjük adjon meg nullánál nagyobb összeget.</value>
+  <comment>_G1191</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Kérjük ellenőrizze a kártyaadatokat.</value>
+  <comment>_G1192</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Kérjük ellenőrizze az Azonosító (ID) számát és PIN kódját és próbálja újra. Amennyiben a hiba megismétlődik, kérjük hívja a Tagsági Kapcsolatok Osztályát a 06 1 299 7010-es telefonszámon</value>
+  <comment>_*R125</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Kérjük fizesse be Éves Díját, mielőtt termékeket helyez a kosarába.</value>
+  <comment>_G1194</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Kérjük fizesse be Éves Díját, mielőtt rendezvényünkre jegyet rendel.</value>
+  <comment>_G1195</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Kérjük adjon meg egy számot.</value>
+  <comment>_G1196</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Kérjük adja meg a {0} cikkszámú tételből rendelni kívánt mennyiséget.</value>
+  <comment>_G1197</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value></value>
+  <comment>_G1198</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes városnevet.</value>
+  <comment>_G1199</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes nevet.</value>
+  <comment>_G1200</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes becenevet.</value>
+  <comment>_G1201</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Kérjük adjon meg e-mail címet.</value>
+  <comment>_G1203</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Kérjük adja meg a fizetési információkat.</value>
+  <comment>_G1204</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Kérjük adja meg az ellenőrzőszámot (CVV).</value>
+  <comment>_G1205</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Kérjük adja meg a fizetni kívánt Éves Eljárási Díj mennyiségét.</value>
+  <comment>_G1206</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes e-mail címet.</value>
+  <comment>_G1207</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes keresztnevet.</value>
+  <comment>_G1208</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Kérjük adjon meg érvényes vezetéknevet.</value>
+  <comment>_G1209</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value></value>
+  <comment>_G1210</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Kérjük tölste ki az összes kötelező szállítási adatot.</value>
+  <comment>_G1211</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Kérjük a körzetszámot a megfelelő formátumban írja be.</value>
+  <comment>_G1212</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Kérjük a melléket a megfelelő formátumban írja be.</value>
+  <comment>_G1213</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Kérjük adja meg a címzett nevét.</value>
+  <comment>_G1214</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Kérjük adja meg a körzetszámot.</value>
+  <comment>_G1215</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Kérjük adja meg a várost.</value>
+  <comment>_G1216</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Kérjük adja meg a melléket.</value>
+  <comment>_G1217</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Kérjük adja meg a keresztnevet.</value>
+  <comment>_G1218</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Kérjük adja meg a vezetéknevet.</value>
+  <comment>_G1219</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Kérjük töltse ki az összes kötelező mezőt.</value>
+  <comment>_G1220</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Kérjük adja meg a telefonszámot.</value>
+  <comment>_G1221</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>Kérjük adja meg a megyét.</value>
+  <comment>_G1222</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Kérjük adja meg a pontos címet.</value>
+  <comment>_G1223</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Kérjük adja meg az irányítószámot.</value>
+  <comment>_G1224</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Kérjük adja meg a telefonszámot a megfelelő formátumban (8-9 számjegy, kötőjel nélkül).</value>
+  <comment>_G1225</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Felhívjuk figyelmét, hogy maximum {0} kártya adatait tudja elmenteni. További kártya hozzáadásához kérjük törölje az egyik mentett kártyáját.</value>
+  <comment>_G1226</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Felhívjuk figyelmét: &lt;br/&gt; ez az oldal Internet Explorer vagy Firefox böngészőben működik megfelelően.</value>
+  <comment>_*H279</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Kérjük adjon meg egy kiszállítási címet, mielőtt áruátvételes rendelését rögzítené.</value>
+  <comment>_G1228</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Kérjük válasszon helyszínt.</value>
+  <comment>_G1229</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Kérjük válasszon kiszállítási időpontot</value>
+  <comment>_G1230</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Kérjük válassza ki a rendelés típusát</value>
+  <comment>_G1231</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Kérjük válassza ki az áruátvétel helyét</value>
+  <comment>_G1232</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Kérjük válassza ki az áruátvétel helyét</value>
+  <comment>_G1233</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Kérjük válassza ki az áruátvevő nevét</value>
+  <comment>_G1234</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Kérjük adja meg az áruátvevő telefonszámát.</value>
+  <comment>_G1235</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Kérjük válassza ki az áruátvétel idejét</value>
+  <comment>_G1236</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Kérjük válassza ki a Kiszállítási címet</value>
+  <comment>_G1237</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Kérjük válasszon: Igen/Nem.</value>
+  <comment>_G1238</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Az elsődleges cím nem törölhető.</value>
+  <comment>_G1239</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Az elsődleges áruátvételi preferencia nem törölhető.</value>
+  <comment>_G1240</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Tovább a fizetéshez</value>
+  <comment>_G1241</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Tovább a főoldalra</value>
+  <comment>_G1242</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>A megadott címre történő szállítás nem lehetséges.</value>
+  <comment>_G1243</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>A {0} cikkszám (SKU) nem elérhető.</value>
+  <comment>_G1244</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Sajnáljuk, de ezek a tételek nem adhatóak hozzá a kosárhoz, mert azzal túllépné vásárlási limitjét.</value>
+  <comment>_G1247</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>Rendszerhiba</value>
+  <comment>_G1248</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(A rendelés volumenhónapja megváltozott!)</value>
+  <comment>_G1249</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>A {0} cikkszám (SKU) csak későbbi kiszállítással elérhető (backorder), így került bele a kosarába.</value>
+  <comment>_G1250</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Érvénytelen megye</value>
+  <comment>_G1251</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Az utca elnevezésének tartalmaznia kell legalább egy betűt.</value>
+  <comment>_G1252</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Az utca elnevezésének tartalmaznia kell legalább egy betűt, egy számot és egy szóközt.</value>
+  <comment>_G1253</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>A tranzakció nem engedélyezett, kérem ellenőrizze a kártyaadatokat. Ha a probléma továbbra is fennáll, kérem lépjen kapcsolatba a Tanácsadói Kapcsolatok Osztályával a +36 1 299 7010-es telefonszámon</value>
+  <comment>_G1254</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>A tranzakció nem engedélyezett, kérem lépjen kapcsolatba a Tanácsadói Kapcsolatok Osztályával a +36 1 299 7010-es telefonszámon</value>
+  <comment>_G1255</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Érvénytelen irányítószám</value>
+  <comment>_G1256</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Nincsenek tételek kiválasztva a vásárláshoz</value>
+  <comment>_G1257</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>A {0} termékből jelenleg nincs elegendő készleten. Elérhető mennyiség {1}.</value>
+  <comment>_G1258</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Nem választott ki tételeket a rendeléshez.</value>
+  <comment>_G1259</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Nem választott ki tételeket a volumen kiszámításához.</value>
+  <comment>_G1260</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Ez a cím már szereper az adatbázisban</value>
+  <comment>_G1261</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Ez a rendelés meghaladja a vásárlási keretét. Felhasználható Volumenpontja:{0} Kérem a folytatáshoz módosítsa rendelését!</value>
+  <comment>_G1262</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>A tranzakció ezen a kártyán elutasításra került.</value>
+  <comment>_G1263</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>A Today magazin a kosárba került.</value>
+  <comment>_G1264</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Sajnos rendelését nem tudtuk feldolgozni. Kérjük kérem forduljon a Tanácsadói kapcsolatok osztályához a +36 1 299 7010-es telefonszámon és hivatkozzon a 01-es hibakódra.</value>
+  <comment>_G1265</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Sajnos rendelését nem tudtuk feldolgozni. Kérjük kérem forduljon a Tanácsadói kapcsolatok osztályához a +36 1 299 7010-es telefonszámon és hivatkozzon a 05-ös hibakódra.</value>
+  <comment>_G1266</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Rendelését nem tudja folytatni.Kérjük ellenőrizze a címet és próbálja újra. Ha probléma merülne fel, kérem forduljon a Tanácsadói kapcsolatok osztályához a +36 1 299 7010-es telefonszámon.</value>
+  <comment>_G1267</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Sajnáljuk, ez a pénznem nem használható. Kérjük hívja a Tanácsadói Kapcsolatok osztályát a 06-1-299-7010-es telefonszámon.</value>
+  <comment>_G1268</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Ön már a kosarába helyezett rendezvény jegyeket, törölni szeretné kosarát?</value>
+  <comment>_G1269</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Ön az elsődleges kártyáját próbálja törölni. Kérjük állítson be másik kártyát elsődlegesként, mielőtt törli ezt a kártyát.</value>
+  <comment>_G1270</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>A továbbiakban nem használhatja ezt a kártyát a többszöri visszautasítás miatt.</value>
+  <comment>_G1271</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Ugyanazt a kártyát csak egyszer lehet használni</value>
+  <comment>_G1272</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Ezt a tételt nem lehet a kosárba tenni.</value>
+  <comment>_G1273</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Üres kosárral em mehet tovább a {0} oldalra.</value>
+  <comment>_G1274</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Kosarában vannak csak későbbi szállítással elérhető tételek, amelyek törlésre kerülnek, ha átállítja rendelését áruátvételre. Kívánja folytatni? ("Igen" vagy "Nem")</value>
+  <comment>_G1275</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Ön átállította a rendelés hónapját erre: {0}. Szeretné így folytatni?</value>
+  <comment>_G1276</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Kosarában rendezvény jegyek vannak, törölni szeretné kosarát?</value>
+  <comment>_G1277</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Kosarában termékek vannak. Törölni szeretné kosarát, mielőtt a továbblép a jegyvásárláshoz?</value>
+  <comment>_G1278</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Ön a {0} volumenhónapot választotta, biztos benne?</value>
+  <comment>_G1279</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  <comment>_G1280</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Ön a termékek rendelés nélküli megtekintését választotta, ebben a nézetben nem fog tudni termékeket tenni a korárba.</value>
+  <comment>_G1281</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value></value>
+  <comment>_G1282</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Csak 1 éves díjat fizethet előre</value>
+  <comment>_G1283</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>A kosár tartalmának változtatásához törölnie kell legalább az egyik bankkártyájának adatait.</value>
+  <comment>_G1284</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>A folytatáshoz válassza a Kiszállítást vagy Árufelvételt.</value>
+  <comment>_G1285</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Nemrégiben rögzített egy ugyanilyen rendelést: {0}. Amennyiben ezt véletlenül rögzítette újból, kattintson a Rendelés törlésére. Ha szeretné folytatni ezt a megrendelést, kattintson a Tovább a fizetéshez gombra.</value>
+  <comment>_G1286</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Tanácsadói éves díjának esedékessége: {0}</value>
+  <comment>_G1287</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Tanácsadói éves díja esedékes, kérjük külön rendelésben rendezze.</value>
+  <comment>_G1288</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Tanácsadói éves díja esedékes. Összege a kosárba került</value>
+  <comment>_G1289</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Hitelkártyájának érvényessége lejárt. Lejárati dátum frissítése és szerkesztése</value>
+  <comment>_G1290</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Hitelkártyájának érvényessége lejárt, kérem forduljon a Tanácsadói kapcsolatok osztályához a +36 1 299 7010-es telefonszámon</value>
+  <comment>_G1291</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>Kérését nem tudjuk végrehajtani, kérjük vegye fel a kapcsolatot a Tanácsadói Kapcsolatok Osztályával a 06 1 299 7010-es telefonszámon.</value>
+  <comment>_G1292</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>Kérését nem tudjuk végrehajtani, kérjük vegye fel a kapcsolatot a Tanácsadói Kapcsolatok Osztályával a 06 1 299 7010-es telefonszámon.</value>
+  <comment>_G1293</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Az előző rendelését már lezárta, ezután nem tudja módosítani. A rendelési száma: {0}. Rendelésének állapotát a rendelési számra kattintva ellenőrizheti, vagy további segítségért hívja a Tanácsadói Kapcsolatok Osztályát a 06-1-299-7010-es telefonszámon szerdai napok kivételével munkanapokon 9:00 és 17:30 között, szerdánként pedig 10:00-17:30 között. (Felhívjuk figyelmét, hogy a rendelés feldolgozásának átfutási ideje egy órát is igénybe vehet, mielőtt megjelenne a rendelések között. &lt;br&gt; Ha szeretne újabb rendelést létrehozni, helyezze a termékeket ismét a kosárba.</value>
+  <comment>_G1294</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>A Tanácsadói éves díj összege a kosárban maradt.</value>
+  <comment>_G1295</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>A kiszállítási információ érvényessége lejárt, a kosár tartalma törlésre kerül.</value>
+  <comment>_G1296</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>Érvénytelen cikkszám: {0}</value>
+  <comment>_G1298</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Kérjük válassza ki a rendelés típusát a mini kosárból</value>
+  <comment>_G1301</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Nem léphet tovább a fizetéshez, mivel túllépte vásárlási limitjét.</value>
+  <comment>_G1302</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>A cím megerősítése szükséges</value>
+  <comment>_G2070</comment></data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Ön már létrehozott egy azonos rendelést {0}, amelynek a rendelési száma {1}. Ha ezzel a rendeléssel szeretné folytatni, kérjük hagyja jóvá most.Ha nem szeretné folytatni, törölje a rendelést</value>
+  <comment>_G2635</comment></data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Kérjük válassza ki az áruátvétel dátumát</value>
+  <comment>_G2712</comment></data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>Kérjük munkanapot adjon meg. Vasárnap nem lehet árut átvenni.</value>
+  <comment>_G2845</comment></data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Kérjük adja meg Tagsági azonosítóját (ID)</value>
+  <comment>_*H281</comment></data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Kérjük válasszon a PIN kód visszaállítási lehetőségek közül.</value>
+  <comment>_*H282</comment></data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>A volumen jelenleg nem elérhető.</value>
+  <comment>_*A914</comment></data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Profilja beállításainak befejezéséhez kérjük válassza ki eljáró országának helyi képviseletét és próbálja újra.</value>
+      <comment>_*R123</comment></data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>A PIN kód nem elérhető</value>
+      <comment>_*H284</comment></data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Kérését pillanatnyilag nem tudjuk végrehajtani technikai okok miatt. Kérjük próbálja meg később.</value>
+      <comment>_*A1045</comment></data>
+</root>

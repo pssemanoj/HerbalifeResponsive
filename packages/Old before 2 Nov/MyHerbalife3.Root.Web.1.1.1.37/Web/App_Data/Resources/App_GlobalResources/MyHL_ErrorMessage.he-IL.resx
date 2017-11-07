@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>לא ניתן להוסיף מק"ט דמי חידוש חברות שנתיים לעגלת הקניות שלך</value>
+  <comment>_G1167</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>לא ניתן להסיר מק"ט דמי חידוש חברות שנתיים מעגלת הקניות שלך</value>
+  <comment>_G1168</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>האם אתה בטוח שאתה רוצה לבטל הזמנה זו? לחיצה על "כן" תסיר את כל הפריטים מעגלת הקניות שלך.</value>
+  <comment>_G1169</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>כיוון שאין מוצרים עם הזמנת דמי חידוש חברות השנתיים, כל הפריטים שאינם מוצרים הוסרו.</value>
+  <comment>_G1170</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>פריטים בהמתנה לא ניתן להוסיף להזמנת דמי חידוש חברות שנתיים</value>
+  <comment>_G1171</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>אישור כרטיס לא הצליח. אנא בדוק את הכרטיסים שלך.</value>
+  <comment>_G1172</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>שגיאות פורמט נתונים, אנא הכנס נתונים נכונים.</value>
+  <comment>_G1173</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>הוכנס מק"ט כפול. אנא הכנס מחדש.</value>
+  <comment>_G1174</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>רכישות כרטיסים לאירוע מוגבלות לכמות של {0} בכל הזמנה.</value>
+  <comment>_G1175</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>רכישות כרטיסים לאירועים אינן אפשריות באתר זה.</value>
+  <comment>_G1176</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>בעבור פריט {0} רק כמות של {1} זמינה. אנא תקן את הכמות שהוכנסה כדי להוסיף את הפריט הזה לעגלת הקניות שלכם.</value>
+  <comment>_G1177</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>בעבור פריט {0}, ניתן להזמין רק פריט 1 או יותר להזמנה בהמתנה</value>
+  <comment>_G1178</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>למק"ט {0}, לא ניתן לעבור את הכמות {1}</value>
+  <comment>_G1179</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>אני מצטער,אין לך כרטיס אשראי רשום במערכת. אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_G1180</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>מיקוד לא תקין.</value>
+  <comment>_G1181</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT: {0} תוקף תשלום דמי חידוש חברות השנתיים פג ויש להשלים את התשלום עבורם לפני שניתן לבצע הזמנה מסוג "מכירה חוזרת". אנא שנה את סוג ההזמנה ל"אישי" כדי לשלם את דמי חידוש החברות השנתיים</value>
+  <comment>_G1182</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>פריט {0} לא נמצא במלאי כרגע, הכמות שהוזנה אופסה ל-0</value>
+  <comment>_G1183</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>המגבלה למגזין Today היא</value>
+  <comment>_G1184</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>מספר מקסימום של מגזינים שניתן להוסיף לעגלת הקניות הוא {0}.</value>
+  <comment>_G1185</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>הכינוי כבר בשימוש, אנא הכנס שם שונה.</value>
+  <comment>_G1186</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>הזמנה מקוונת אינה זמינה.</value>
+  <comment>_G1187</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>הזמנה מקוונת אינה מאושרת.</value>
+  <comment>_G1188</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>ניתן להוסיף רק מוצרים להזמנת דמי חידוש חברות שנתיים העומדת בפני עצמה.</value>
+  <comment>_G1189</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>סך כל התשלום אינו תואם את סך כל ההזמנה.</value>
+  <comment>_G1190</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>נא להוסיף סכום הגבוה מ-0.</value>
+  <comment>_G1191</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>אנא בדוק את פרטי הכרטיס.</value>
+  <comment>_G1192</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>אנא בדוק את מספר ה-ID חבר שלך ואת הקוד הסודי ונסה שוב. אם הבעיה נמשכת אנא התקשר למחלקת קשרי שירות בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_*R125</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>אנא מלא את רכישת דמי החברות השנתיים שלך לפני שאתה מוסיף פריטים אחרים לעגלת הקניות.</value>
+  <comment>_G1194</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>אנא מלא את רכישת דמי החברות השנתיים שלך לפני שאתה מוסיף רכישה של כרטיסים לאירוע.</value>
+  <comment>_G1195</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>אנא הכנס מספר.</value>
+  <comment>_G1196</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>אנא הכנס כמות למק"ט {0}.</value>
+  <comment>_G1197</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>אנא הכנס מקום איסוף אחד.</value>
+  <comment>_G1198</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>אנא הכנס עיר נכונה.</value>
+  <comment>_G1199</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>אנא הכנס שם נכון.</value>
+  <comment>_G1200</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>אנא הכנס כינוי נכון.</value>
+  <comment>_G1201</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>אנא הכנס סכום תרומה, חוץ מאפס (0)</value>
+  <comment>_G1202</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>אנא הכנס כתובת דואר אלקטרוני.</value>
+  <comment>_G1203</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>אנא הכנס פרטי תשלום.</value>
+  <comment>_G1204</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>אנא הכנס מספר CVV.</value>
+  <comment>_G1205</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>אנא הכנס את סכום דמי חידוש החברות השנתיים שאתה רוצה לשלם.</value>
+  <comment>_G1206</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>אנא הכנס כתובת דואר אלקטרוני נכונה.</value>
+  <comment>_G1207</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>אנא הכנס שם פרטי נכון.</value>
+  <comment>_G1208</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>אנא הכנס שם משפחה נכון.</value>
+  <comment>_G1209</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>אנא הכנס שם אמצעי נכון.</value>
+  <comment>_G1210</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>אנא מלא את כל שדות החובה של פרטי המשלוח</value>
+  <comment>_G1211</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>אנא מלא אזור החיוג בפורמט המתאים.</value>
+  <comment>_G1212</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>אנא מלא שלוחה בפורמט המתאים.</value>
+  <comment>_G1213</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>אנא מלא את שם "נמצא אצל"</value>
+  <comment>_G1214</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>אנא מלא את אזור החיוג.</value>
+  <comment>_G1215</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>אנא מלא את העיר.</value>
+  <comment>_G1216</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>אנא מלא שלוחה.</value>
+  <comment>_G1217</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>אנא מלא שם פרטי.</value>
+  <comment>_G1218</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>אנא מלא שם משפחה.</value>
+  <comment>_G1219</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>אנא מלא את שדות החובה.</value>
+  <comment>_G1220</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>אנא מלא את מספר הטלפון.</value>
+  <comment>_G1221</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>אנא מלא מדינה.</value>
+  <comment>_G1222</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>אנא מלא את שדה שם הרחוב.</value>
+  <comment>_G1223</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>אנא מלא מיקוד.</value>
+  <comment>_G1224</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>אנא מלא מספר טלפון בפורמט הנכון.</value>
+  <comment>_G1225</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>אנא שים לב שאתה יכול לשמור רק פרטי כרטיס ל-{0} לכל היותר. כדי להוסיף כרטיס חדש, אנא הסר אחד מהכרטיסים השמורים.</value>
+  <comment>_G1226</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>שימו לב: &lt;br/&gt; הצפיה באתר זה טובה יותר בדפדפן Internet Explorer או Firefox.</value>
+  <comment>_*H279</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>אנא רשום את כתובת המשלוח לפני שתוכל להשלים את הזמנת האיסוף הזו.</value>
+  <comment>_G1228</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>אנא בחר מקום.</value>
+  <comment>_G1229</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>אנא בחר זמן משלוח.</value>
+  <comment>_G1230</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>אנא בחר סוג הזמנה.</value>
+  <comment>_G1231</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>אנא בחר את מקום האיסוף.</value>
+  <comment>_G1232</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>אנא בחר את מקום האיסוף.</value>
+  <comment>_G1233</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>אנא בחר את שם האוסף.</value>
+  <comment>_G1234</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>אנא בחר את מספר טלפון האוסף.</value>
+  <comment>_G1235</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>אנא בחר את מספר טלפון האוסף.</value>
+  <comment>_G1236</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>אנא בחר את זמן האיסוף.</value>
+  <comment>_G1237</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>אנא בחר כתובת משלוח.</value>
+  <comment>_G1238</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>לא ניתן למחוק כתובת עיקרית.</value>
+  <comment>_G1239</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>לא ניתן למחוק העדפות מקום איסוף עיקרי.</value>
+  <comment>_G1240</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>המשך לקופה</value>
+  <comment>_G1241</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>המשך לדף הבית.</value>
+  <comment>_G1242</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>משלוח למיקוד שהוכנס אינו נתמך</value>
+  <comment>_G1243</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>מק"ט {0} לא קיים.</value>
+  <comment>_G1244</comment></data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>נדרש מספר טלפון למסרון</value>
+  <comment>_G1245</comment></data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>מצטערים לא תוכל לבצע את ההזמנה.</value>
+  <comment>_G1246</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>מצטערים לא תוכל להוסיף את הפריט(ים) לעגלת הקניות כיוון שבהוספת פריטים לעגלת הקניות, תעבור את מגבלת ההכנסות שלך.</value>
+  <comment>_G1247</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>שגיאות מערכת.</value>
+  <comment>_G1248</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(חודש ההזמנה השתנה!)</value>
+  <comment>_G1249</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>המק"ט {0} שהתווסף יהיה בהזמנה בהמתנה.</value>
+  <comment>_G1250</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>המדינה אינה נכונה.</value>
+  <comment>_G1251</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>כתובת הרחוב צריכה להכיל לפחות אות אחת.</value>
+  <comment>_G1252</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>כתובת הרחוב צריכה להכיל לפחות מספר אחד, רווח אחד ואות אחת.</value>
+  <comment>_G1253</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>ההעברה אינו מותרת, אנא בדוק את פרטי הכרטיס. אם הבעיה נמשכת, התקשר למחלקת שירות מפיצים בקו החם (866) 622-1222.</value>
+  <comment>_G1254</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>ההעברה אינו מותרת, אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_G1255</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>המיקוד אינו נכון.</value>
+  <comment>_G1256</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>אין פריטים לרכישה בהזמנה.</value>
+  <comment>_G1257</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>אין כרגע די מלאי לפריט {0}. כמות זמינה {1}.</value>
+  <comment>_G1258</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>לא נבחרו פריטים להוספה להזמנה.</value>
+  <comment>_G1259</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>לא נבחרו פריטים לחישוב הניקוד.</value>
+  <comment>_G1260</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>כתובת זו כבר קיימת במבחן מסד הנתונים</value>
+  <comment>_G1261</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>הזמנה זו עולה על מגבלת הקניה שלך. יש לך יתרה של {0} נ"ז. אנא תקן את הזמנתך כדי להמשיך.</value>
+  <comment>_G1262</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>העסקה עבור כרטיס זה נדחתה.</value>
+  <comment>_G1263</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>מגזין Today התווסף לעגלת הקניות.</value>
+  <comment>_G1264</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>איננו יכולים להשלים את הזמנתך. אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299* וציין קוד שגיאה 01.</value>
+  <comment>_G1265</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>איננו יכולים להשלים את הזמנתך. אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299* וציין קוד שגיאה 05.</value>
+  <comment>_G1266</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>איננו יכולים להשלים את הזמנתך. אנא בדוק את כתובתך ונסה שוב. אם הבעיה נמשכת, אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_G1267</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>אנו מצטערים. אין להמיר את המטבע. אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_G1268</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>כבר קיים כרטיס אירוע בעגלת הקניות שלך, האם ברצונה לאפס את עגלת הקניות?</value>
+  <comment>_G1269</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>אתה מנסה למחוק את הכרטיס העיקרי שלך. אנא שמור כרטיס אחר ככרטיס עיקרי לפני שאתה מוחק כרטיס זה.</value>
+  <comment>_G1270</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>אינך יכול להשתמש יותר בכרטיס זה בגלל דחיות מרובות.</value>
+  <comment>_G1271</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>אינך יכול להוסיף את אותו כרטיס יותר מפעם אחת.</value>
+  <comment>_G1272</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>אינך יכול להוסיף פריט זה לעגלת הקניות שלך.</value>
+  <comment>_G1273</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>אינך יכול לעבור לדף {0} ללא פריטים בעגלת הקניות שלך.</value>
+  <comment>_G1274</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>יש לך בעגלת הקניות פריטים בהמתנה שיוסרו אם תבחר באפשרות איסוף למשלוח.האם אתה רוצה להמשיך? ("כן" או "לא")</value>
+  <comment>_G1275</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>שינית את חודש ההזמנה להזמנה זו {0}. האם אתה רוצה להמשיך בבחירה זו?</value>
+  <comment>_G1276</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>יש לך בעגלת הקניות פריטים של כרטיסים לאירוע, האם אתה רוצה לנקות את עגלת הקניות?</value>
+  <comment>_G1277</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>יש לך מוצר(ים) בעגלת הקניות. האם אתה רוצה לנקות את העגלה לפני שאתה קונה כרטיסים לאירוע?</value>
+  <comment>_G1278</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>בחרת דצמבר {0} להזמנה זו?</value>
+  <comment>_G1279</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>בחרת איסוף מ-WALDOS, תחול הגבלה על פריטים שתוכל להזמין.</value>
+  <comment>_G1280</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>בחרת לדפדף בין המוצרים מבלי להזמין, לא תוכל להוסיף מוצר לעגלת הקניות.</value>
+  <comment>_G1281</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>הצלחת להוסיף את קרן המשפחה של הרבלייף לעגלת הקניות.</value>
+  <comment>_G1282</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>אתה רשאי לשלם מראש רק עבור שנה אחת של דמי חידוש חברות שנתיים.</value>
+  <comment>_G1283</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>עליך למחוק אחד מכרטיסי האשראי שלך כדי לשנות את הפריטים בעגלת הקניות שלך.</value>
+  <comment>_G1284</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>עליך לבחור במשלוח או איסוף כדי להמשיך.</value>
+  <comment>_G1285</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>לאחרונה ביצעת הזמנה זהה ב-{0}. אם זוהי הזמנה כפולה אנא לחץ על "בטל הזמנה". כדי להמשיך בהזמנה זו, אנא המשך.</value>
+  <comment>_G1286</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>עליך לשלם את דמי חידוש חברות הטיפול השנתיים ב-{0}</value>
+  <comment>_G1287</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>עליך לשלם את דמי החברות השנתיים, אנו נוסיף אותם לעגלת הקניות שלך אוטומטית.</value>
+  <comment>_G1288</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>עליך לשלם את דמי החברות השנתיים. הם נוספו לעגלת הקניות שלך.</value>
+  <comment>_G1289</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>פג תוקפו של כרטיס האשראי שלך. אנא לחץ על "ערוך" ועדכן את תאריך פקיעת תוקף הכרטיס.</value>
+  <comment>_G1290</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>פג תוקפו של כרטיס האשראי שלך. אנא התקשר למחלקת קשרי מפיצים בטלפון 1-700-707-123 או 9299*</value>
+  <comment>_G1291</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>לא ניתן מענה לבקשתך, נא ליצור קשר עם מחלקת קשרי מפיצים (+972 (0) 3 943 1153 )</value>
+  <comment>_G1292</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>לא ניתן מענה לבקשתך, נא ליצור קשר עם מחלקת קשרי מפיצים (+972 (0) 3 943 1153 )</value>
+  <comment>_G1293</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>הזמנתך הקודמת כבר הוגשה לפני השינויים שנעשו בעגלת הקניות שלך. מספר ההזמנה שלך הוא {0}. אתה יכול לברר את סטטוס ההזמנה הזו על ידי התקשרות למחלקת הזמנות בטלפון: 1-700-707-123 או 9299* בין השעות 9 עד 17, בין הימים ראשון עד חמישי ובשישי בין השעות 9 בבוקר עד 13 בצהריים לסיוע או באמצעות לחיצה כאן. (שים לב שייתכן ותעבור שעה 1 עד שההזמנה תוצג. &lt;br&gt; אם אתה רוצה לבצע הזמנה חדשה, אנא הוסף מחדש פריטים לעגלה שלך.</value>
+  <comment>_G1294</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>ביקשת דמי חידוש חברות שנתיים שנותרו בעגלת הקניות שלך.</value>
+  <comment>_G1295</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>פרטי המשלוח שלך אינם תקפים יותר, עגלת הקניות תנוקה.</value>
+  <comment>_G1296</comment></data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>אנא מלא מדינה</value>
+  <comment>_G1297</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>המק"ט {0} לא בתוקף.</value>
+  <comment>_G1298</comment></data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>בחר בבקשה שיטת משלוח</value>
+  <comment>_G1299</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>בחר בבקשה את סוג ההזמנה מעגלת המיני</value>
+  <comment>_G1301</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>אינך יכול לעבור לקופה כיוון שעברת את מגבלת הקניה שלך</value>
+  <comment>_G1302</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>דרוש אימות כתובת</value>
+  <comment>_G2070</comment></data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>אתה לאחרונה בצעת הזמנה זהה על {0}, מספר הזמנה {1}. אם ברצונך להמשיך בהזמנה אנא שלח אישור, אחרת אנא לחץ על ביטול.</value>
+  <comment>_G2635</comment></data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>בבקשה הזן את מזהה חבר שלך</value>
+  <comment>_*H281</comment></data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>אנא בחר אפשרות שחזור קוד סודי</value>
+  <comment>_*H282</comment></data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>ניקוד אינו זמין בשלב זה</value>
+  <comment>_*A914</comment></data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+      <comment>_G2712</comment></data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>כדי לסיים את הגדרות החשבון שלך כחבר חדש, בחר בבקשה אחד מהמקומות במדינת העיבוד שלך ונסה שנית.</value>
+      <comment>_*R123</comment></data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>לא ניתן לשחזר את ה PIN קוד</value>
+      <comment>_*R124</comment></data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>לא ניתן לטפל בבקשתך כרגע בגלל בעיות טכניות. אנא נסה שנית מאוחר יותר.</value>
+      <comment>_*A1045</comment></data>
+</root>

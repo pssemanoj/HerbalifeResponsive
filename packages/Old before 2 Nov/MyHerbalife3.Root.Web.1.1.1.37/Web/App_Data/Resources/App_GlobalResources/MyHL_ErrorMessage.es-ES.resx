@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>La referencia de la Cuota Anual de Procesamiento no puede ser incluida en su cesta</value>
+  <comment>_*G1167</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>La referencia de la Cuota Anual de Procesamiento no puede ser eliminada de su cesta</value>
+  <comment>_*G1168</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>¿Está seguro que desea cancelar este pedido? Pulsando "SI" todos los artículos serán eliminados de su cesta.</value>
+  <comment>_*G1169</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Como no hay productos con su pedido de la Cuota Anual de Procesamiento, todos los artículos que no son producto han sido eliminados.</value>
+  <comment>_*G1170</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>Los productos disponibles / pendientes de stock no pueden ser incluidos en los pedidos de Cuotas Anuales de Procesamiento.</value>
+  <comment>_*G1171</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>La Autorización de la Tarjeta no tuvo éxito. Por favor revise sus tarjetas.</value>
+  <comment>_*G1172</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Error de formato de datos, por favor, introduzca los datos correctos.</value>
+  <comment>_*G1173</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Un artículo/producto duplicado ha sido capturado. Por favor introdúzcalo de nuevo</value>
+  <comment>_*G1174</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>La compra de tickets para eventos está limitada a la cantidad de {0} por pedido.</value>
+  <comment>_*G1175</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>No se puede hacer compra de Tickets para Eventos en esta página.</value>
+  <comment>_*G1176</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>De la Referencia {0} sólo quedan {1} unidades disponibles. Por favor modifique la cantidad para poder incluir este artículo en su cesta.</value>
+  <comment>_*G1177</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>De la referencia {0}, 1 o más artículos pueden estar pendientes de stock.</value>
+  <comment>_*G1178</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>De la Referencia {0}: La cantidad no puede exceder mas de {1}</value>
+  <comment>_*G1179</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Lo sentimos usted no tiene una tarjeta de crédido registrada en los archivos. Por favor llame al Departamento de Servicio de Atención al Miembro de Herbalife en el 34 91 515 2130</value>
+  <comment>_*G1180</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Código Postal inválido.</value>
+  <comment>_*G1181</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value></value>
+  <comment>_*G1182</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Artículo {0} está actualmente fuera de inventario, su cantidad se pondrá a 0.</value>
+  <comment>_*G1183</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>El límite de la Revista Today es</value>
+  <comment>_*G1184</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>La máxima cantidad de revistas que pueden ser agregadas a la cesta es {0}.</value>
+  <comment>_*G1185</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Este apodo ya existe, por favor utilize uno diferente.</value>
+  <comment>_*G1186</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>La aplicación de Pedidos por Internet, no está disponible en este momento.</value>
+  <comment>_*G1187</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Los pedidos online no son permitidos.</value>
+  <comment>_*G1188</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Sólo se puede agregar productos en un pedido que incluya únicamente la Cuota Anual de Procesamiento</value>
+  <comment>_*G1189</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>El total del pago que esta realizando no corresponde al total a pagar por este pedido</value>
+  <comment>_*G1190</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Por favor, agregue una cantidad mayor a cero</value>
+  <comment>_*G1191</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Por favor verifique la información de su tarjeta.</value>
+  <comment>_*G1192</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Por favor, compruebe su Número ID de Miembro de Herbalife y su código PIN e inténtelo de nuevo. Si el problema persiste, póngase en contacto con el departamento de Atención a los Miembros de Herbalife llamando al 91-5152130.</value>
+  <comment>_R125</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Por favor, complete el pago de su cuota anual antes de incluir otros productos a la cesta.</value>
+  <comment>_*G1194</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Por favor complete el pago de su cuota anual antes de comprar un ticket para un evento.</value>
+  <comment>_*G1195</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Por favor proporcione un número.</value>
+  <comment>_*G1196</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Por favor introduzca una cantidad para la refencia:{0}</value>
+  <comment>_*G1197</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Por favor introduzca un único lugar de recogida</value>
+  <comment>_*G1198</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Por favor introduzca una localidad válida</value>
+  <comment>_*G1199</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Por favor introduzca un Nombre válido</value>
+  <comment>_*G1200</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Lo sentimos, no pudimos agregar la tarjeta de crédito. Por favor intente de nuevo con un apodo que no contenga el número de la tarjeta de crédito</value>
+  <comment>_*G3277</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value></value>
+  <comment>_*G1202</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Por favor introduzca una dirección de email.</value>
+  <comment>_*G1203</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Por favor introduzca la información para realizar el pago.</value>
+  <comment>_*G1204</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Por favor introduzca el Código de Seguridad.</value>
+  <comment>_*G1205</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Por favor introduzca la cantidad de Cuotas Anuales de Procesamiento que desea abonar.</value>
+  <comment>_*G1206</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Por favor introduzca una dirección válida de email.</value>
+  <comment>_*G1207</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Por favor introduzca el Nombre correcto.</value>
+  <comment>_*G1208</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Por favor introduzca los Apellidos correctos.</value>
+  <comment>_*G1209</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value></value>
+  <comment>_*G1210</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Por favor proporcione toda la información de envío obligatoria.</value>
+  <comment>_*G1211</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Por favor rellene el código del área con el formato correcto.</value>
+  <comment>_*G1212</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Por favor rellene la extensión con el formato correcto.</value>
+  <comment>_*G1213</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Por favor propocione el nombre de la persona a quien se envía.</value>
+  <comment>_*G1214</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Por favor rellene el código del área.</value>
+  <comment>_*G1215</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Por favor proporcione la Localidad.</value>
+  <comment>_*G1216</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Por favor rellene la extensión.</value>
+  <comment>_*G1217</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Por favor proporcione proporcione el Nombre.</value>
+  <comment>_*G1218</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Por favor proporcione los Apellidos.</value>
+  <comment>_*G1219</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Por favor rellene este campo el cual es obligatorio</value>
+  <comment>_*G1220</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Por favor propocione el Número de Teléfono.</value>
+  <comment>_*G1221</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>Por favor propocione la provincia.</value>
+  <comment>_*G1222</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Por favor proporcione los datos de la calle.</value>
+  <comment>_*G1223</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Por favor proporcione el Código Postal.</value>
+  <comment>_*G1224</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Por favor proporcione el número de teléfono con el formato correcto.</value>
+  <comment>_*G1225</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Tenga en cuenta que sólo puede almacenar datos para un máximo de {0} tarjetas. Para añadir una nueva tarjeta, por favor, elimine una de sus tarjetas ya existentes.</value>
+  <comment>_*G1226</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Por favor tenga en cuenta: &lt;br/&gt; Esta página se ve mejor con Internet Explorer o Firefox.</value>
+  <comment>_H279</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Por favor guarde una dirección de envío antes de que pueda completar este pedido para recoger.</value>
+  <comment>_*G1228</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Por favor seleccione un Centro de Recogida.</value>
+  <comment>_*G1229</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Por favor seleccione horario de envío.</value>
+  <comment>_*G1230</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Por favor, seleccione el Tipo de Pedido.</value>
+  <comment>_*G1231</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Por favor seleccione el centro de recogida</value>
+  <comment>_*G1232</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor selecciones un Centro de Recogida</value>
+  <comment>_*G1233</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Favor de seleccionar nombre de regogida.</value>
+  <comment>_*G1234</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Favor de seleccionar numero telefónico de regogida.</value>
+  <comment>_*G1235</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Favor de seleccionar el horario de regogida.</value>
+  <comment>_*G1236</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Por favor elija un domicilio de entrega</value>
+  <comment>_*G1237</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Por favor seleccione Si/No.</value>
+  <comment>_*G1238</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>La Dirección Principal no puede ser borrada.</value>
+  <comment>_*G1239</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value></value>
+  <comment>_*G1240</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Procedar a la Comprobación</value>
+  <comment>_*G1241</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Ir a la página principal.</value>
+  <comment>_*G1242</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>No hacemos envíos para el Codigo Postal introducido.</value>
+  <comment>_*G1243</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>La Referencia {0}: no está disponible.</value>
+  <comment>_*G1244</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value></value>
+  <comment>_*G1247</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>Error en el sistema.</value>
+  <comment>_*G1248</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>El mes de volumen del pedido se ha cambiado.</value>
+  <comment>_*G1249</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>La Referencia {0} añadida quedará pendiente de entrega.</value>
+  <comment>_*G1250</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>La Provincia no es válida.</value>
+  <comment>_*G1251</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>La dirección de la calle debe contener al menos una letra.</value>
+  <comment>_*G1252</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>La dirección de la calle debe contener al menos un número, un espacio y una letra.</value>
+  <comment>_*G1253</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>La transacción no ha sido aceptada, por favor haga click en "Enviar" otra vez. Si el problema persiste, comuníquese con la línea del Departamento de Atención al Miembro de Herbalife en el 91 515 21 30</value>
+  <comment>_*G1254</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Ha habido un problema con su pedido. Por favor comuníquese con la línea del Departamento de Atención al Miembro de Herbalife en el 34 91 515 21 30</value>
+  <comment>_*G1255</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>El Código Postal no es válido.</value>
+  <comment>_*G1256</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>No hay artículos incluidos en el pedido.</value>
+  <comment>_*G1257</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>No hay suficiente disponibilidad de este artículo. {0}. La cantidad disponible es de {1}</value>
+  <comment>_*G1258</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>No se han encontraron artículos seleccionados para incluir al pedido.</value>
+  <comment>_*G1259</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>No se han encontraron artículos seleccionados para calcular el volumen.</value>
+  <comment>_*G1260</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Esta dirección ya existía previamente en la base de datos de prueba.</value>
+  <comment>_*G1261</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value></value>
+  <comment>_*G1262</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Esta transacción ha sido denegada para esta tarjeta</value>
+  <comment>_*G1263</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>La revista Today ha sido agregada a la cesta.</value>
+  <comment>_*G1264</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>No podemos completar su pedido. Por favor póngase en contacto con el Departamento de Atención al Miembro de Herbalife para recibir ayuda en el 34 91 515 2130 y mencione el código de error 01.</value>
+  <comment>_*G1265</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>No podemos completar su pedido. Por favor póngase en contacto con el Departamento de Atención al Miembro de Herbalife para recibir ayuda en el 34 91 515 2130 y mencione el código de error 05.</value>
+  <comment>_*G1266</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>No podemos procesar su pedido. Por favor compruebe su dirección e inténtelo de nuevo. Si el problema persiste, por favor póngase en contacto con el Departamento de Atención al Miembro de Herbalife.</value>
+  <comment>_*G1267</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Lo sentimos. La moneda no puede ser convertida. Por favor póngase en contacto con la línea del el Departamento de Atención al Miembro de Herbalife en el 34 91 515 2130</value>
+  <comment>_*G1268</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Usted ya tiene tickets de eventos en tu cesta, ¿quiere limpiar su cesta?</value>
+  <comment>_*G1269</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Usted está intentando eliminar su tarjeta principal. Por favor, guarde una tarjeta diferente como principal antes de eliminar esta.</value>
+  <comment>_*G1270</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Usted ya no puede usar esta tarjeta porque ha sido varias veces denegada</value>
+  <comment>_*G1271</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>El apodo ya existe, por favor, elija otro.</value>
+  <comment>_*G3290</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Usted no puede incluir este artículo en su cesta.</value>
+  <comment>_*G1273</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Usted no puede ir a la página {0} sin ningún artículo en su cesta.</value>
+  <comment>_*G1274</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Usted tiene productos no disponibles en su cesta que serán eliminados del pedido si selecciona la opción de enviar. ¿Desea continuar? ("Si" o "No")</value>
+  <comment>_*G1275</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Usted ha cambiado el mes de este pedido a (mes). ¿Desea continuar con esta selección? ("Si" o "No")</value>
+  <comment>_*G1276</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Usted tiene tickets de eventos en su cesta, ¿desea limpiar su cesta?</value>
+  <comment>_*G1277</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Usted tiene productos en su cesta de la compra. ¿Desea limpiar su cesta antes de proceder a la compra de tickets para eventos?</value>
+  <comment>_*G1278</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Usted ha seleccionado {0} como el mes de su pedido, ¿es correcto?</value>
+  <comment>_*G1279</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value></value>
+  <comment>_*G1280</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value></value>
+  <comment>_*G1281</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value></value>
+  <comment>_*G1282</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Usted sólo puede pagar una Cuota Anual de Procesamiento.</value>
+  <comment>_*G1283</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Debe eliminar una de sus tarjetas de crédito para modificar los artículos en su cesta.</value>
+  <comment>_*G1284</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Debe seleccionar una dirección de envío para continuar</value>
+  <comment>_*G1285</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Nos hemos dado cuenta que hizo un pedido idéntico el {0}. Por favor, confirme si desea continuar.</value>
+  <comment>_*G1286</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Su Cuota Anual de Procesamiento vencerá el {0}</value>
+  <comment>_*G1287</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Su Cuota Anual de Procesamiento está pendiente de pago, incluiremos automáticamente el cargo de la cuota en su pedido.</value>
+  <comment>_*G1288</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Su Cuota Anual de Procesamiento está pendientes de pago. Ha sido incluida en su pedido.</value>
+  <comment>_*G1289</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Su tarjeta de crédito está caducada. Por favor haga click en Editar y actualice la fecha de caducidad.</value>
+  <comment>_*G1290</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Su tarjeta de crédito está caducada, por favor haga click en Editar y actualice la fecha de caducidad.</value>
+  <comment>_*G1291</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>No es posible procesar su solicitud, por favor, póngase en contacto con el Departamento de Atención al Miembro de Herbalife en el 91 515 2130</value>
+  <comment>_*G1292</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>No es posible procesar su solicitud, por favor, póngase en contacto con el Departamento de Atención al Miembro de Herbalife en el 91 515 2130</value>
+  <comment>_*G1293</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Su pedido anterior ya había sido procesado antes de los cambios que se hicieron en su cesta. Su número de pedido es {0}. Usted puede verificar el estado de este pedido llamando al Departamento de Atención al Miembro de Herbalife 34 91 515 2130 de 9 de la mañana a 6 de la tarde de lunes a jueves y de 9:45 a 6 de la tarde el viernes para recibir ayuda o haciendo clic aquí. (Tenga en cuenta que puede tardar hasta 1 hora en aparecer el pedido.)&lt;br&gt; Si desea hacer un nuevo pedido, por favor vuelva a añadir artículos en su cesta.</value>
+  <comment>_*G1294</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>La cuota de procesamiento anual se ha quedado en su cesta.</value>
+  <comment>_*G1295</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Su información de envío ya no es válida, la cesta de la compra se vaciará.</value>
+  <comment>_*G1296</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Por favor, seleccione el Tipo de Pedido desde la mini cesta.</value>
+  <comment>_*G1301</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value></value>
+  <comment>_*G1302</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Se requiere confirmación</value>
+  <comment>_*G2070</comment></data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Nos hemos dado cuenta que hizo un pedido idéntico el {0}. Por favor, confirme si desea continuar.</value>
+  <comment>_*G2635</comment></data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Por favor seleccione la fecha de recogida</value>
+  <comment>_*G2712</comment></data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>Por favor, introduzca su Número de Identificación como Miembro de Herbalife</value>
+  <comment>_1A27</comment></data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>Por favor, seleccione una Opción de Recuperación de Número Pin</value>
+  <comment>_1A28</comment></data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>Volumen no disponible en este momento.</value>
+  <comment>_*A914</comment></data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>Para completar la configuración de su cuenta como un nuevo Asociado, por favor seleccione uno de los idiomas de su país de procesamiento y vuelva a intentarlo.</value>
+      <comment>_R123</comment></data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>El código PIN no se puede recuperar</value>
+      <comment>_R124</comment></data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>Su solicitud no puede ser procesada en este momento debido a problemas técnicos. Por favor, inténtelo más tarde.</value>
+      <comment>_*A1045</comment></data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>El precio por los artículos de su cesta ha cambiado debido a un error. Por favor, vuelva a enviar su pedido.</value>
+      <comment>_*G3278</comment></data>
+  <data name="KountDeclinedOrder" xml:space="preserve">
+    <value>Por favor, contacte con el Departamento de Prácticas de Negocio y Cumplimiento del Distribuidor llamando al 91 515 2121</value>
+      <comment>_*G3712</comment></data>
+</root>

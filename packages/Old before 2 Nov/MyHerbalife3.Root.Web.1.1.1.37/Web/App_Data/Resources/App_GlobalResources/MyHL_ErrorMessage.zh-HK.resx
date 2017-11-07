@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>您只能繳付一年的會籍服務年費</value>
+  <comment>_G1167</comment></data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>會籍服務年費無法從購物車中移除</value>
+  <comment>_G1168</comment></data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>您確定取消此訂單? 按「確認」將移除購物車中所有項目</value>
+  <comment>_G1169</comment></data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>由於您的會籍服務年費訂單內未含任何產品，故其他非產品之項目已被移除</value>
+  <comment>_G1170</comment></data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>候補訂購項目不能加入會籍服務年費訂單中</value>
+  <comment>_G1171</comment></data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>信用卡授權失效，請確保您的信用卡已登記「信用卡3D驗證」。否則，請聯絡您的發卡銀行。</value>
+  <comment>_G1172</comment></data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>資料格式錯誤，請重新輸入正確資料</value>
+  <comment>_G1173</comment></data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>產品編號{0}重複，請重新輸入</value>
+  <comment>_G1174</comment></data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>會議門票訂購上限為{0}</value>
+  <comment>_G1175</comment></data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>會議門票網上訂購服務尚未開放</value>
+  <comment>_G1176</comment></data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>產品編號{0}可供訂購數量為{1}，請在購物車中更正此項數量</value>
+  <comment>_G1177</comment></data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>如訂購1個或以上產品編號 {0}，將列入候補訂購</value>
+  <comment>_G1178</comment></data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>不能訂購產品編號{0}多於{1}</value>
+  <comment>_G1179</comment></data>
+  <data name="NoCard" xml:space="preserve">
+    <value>對不起，您尚未登記您的信用卡資料。您可到我的辦公室→個人資料→我已授權的信用卡選項內新增您的信用卡資料或致電香港客戶服務部熱線 (852) 2834 1821</value>
+  <comment>_G1180</comment></data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>郵政編號不正確</value>
+  <comment>_G1181</comment></data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>IT:{0}年的會籍服務會費已逾期並需在提交「轉售」訂單前繳付。請更改訂單類別為「個人」訂單以繳付您的會籍服務年費。</value>
+  <comment>_G1182</comment></data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>項目{0}目前缺貨，數量會設為0</value>
+  <comment>_G1183</comment></data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>薈萃限額為</value>
+  <comment>_G1184</comment></data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>可加入購物車的薈萃上限數量為{0}</value>
+  <comment>_G1185</comment></data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>此暱稱已被使用,請輸入另外的暱稱</value>
+  <comment>_G1186</comment></data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>無法網上訂購</value>
+  <comment>_G1187</comment></data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>不可使用網絡訂購</value>
+  <comment>_G1188</comment></data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>會籍服務年費訂單中只能加入產品</value>
+  <comment>_G1189</comment></data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>付款總數與訂單總數不符</value>
+  <comment>_G1190</comment></data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>請輸入大於0的數字</value>
+  <comment>_G1191</comment></data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>請檢閱信用卡資料</value>
+  <comment>_G1192</comment></data>
+  <data name="LoginError" xml:space="preserve">
+    <value>請確認您的會員編號及密碼無誤後再重試一次。若問題仍然持續，請致電客戶服務熱線【香港】(852) 2834-1821【澳門】(853) 2828-6612</value>
+  <comment>_*R125</comment></data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>請先加入年度手續費才能加入其他產品到購物車</value>
+  <comment>_G1194</comment></data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>請先完成年度手續費訂購才能訂購會議門票</value>
+  <comment>_G1195</comment></data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>請輸入一個數值</value>
+  <comment>_G1196</comment></data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>請輸入產品編號 {0}的正確數量</value>
+  <comment>_G1197</comment></data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>請輸入特定的提貨地點</value>
+  <comment>_G1198</comment></data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>請輸入正確的城市名</value>
+  <comment>_G1199</comment></data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>請輸入正確姓名</value>
+  <comment>_G1200</comment></data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>很抱歉我們不能添加您的卡。請再試一次沒有信用卡卡號的綽號。</value>
+  <comment>_G3277</comment></data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>請輸入捐款金額，(0)除外</value>
+  <comment>_G1202</comment></data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>請輸入電郵地址</value>
+  <comment>_G1203</comment></data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>請輸入付款資料</value>
+  <comment>_G1204</comment></data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>請輸入信用咭安全碼</value>
+  <comment>_G1205</comment></data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>請輸入需繳付的會籍服務年費數量</value>
+  <comment>_G1206</comment></data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>請輸入有效的電郵地址</value>
+  <comment>_G1207</comment></data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>請輸入您的姓名</value>
+  <comment>_G1208</comment></data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>請輸入您的姓氏</value>
+  <comment>_G1209</comment></data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>請輸入您的中名</value>
+  <comment>_G1210</comment></data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>請輸入必須填寫的送貨資料</value>
+  <comment>_G1211</comment></data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>請以正確格式輸入郵政編號</value>
+  <comment>_G1212</comment></data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>請以正確格式輸入分機號碼</value>
+  <comment>_G1213</comment></data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>請輸入收件人姓名</value>
+  <comment>_G1214</comment></data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>請輸入正確郵政編號</value>
+  <comment>_G1215</comment></data>
+  <data name="NoCity" xml:space="preserve">
+    <value>請輸入城市</value>
+  <comment>_G1216</comment></data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>請輸入分機號碼</value>
+  <comment>_G1217</comment></data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>請輸入名字</value>
+  <comment>_G1218</comment></data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>請輸入姓氏</value>
+  <comment>_G1219</comment></data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>請填寫必要欄位</value>
+  <comment>_G1220</comment></data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>請輸入聯絡電話</value>
+  <comment>_G1221</comment></data>
+  <data name="NoState" xml:space="preserve">
+    <value>請輸入國家</value>
+  <comment>_G1222</comment></data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>請輸入住址欄位</value>
+  <comment>_G1223</comment></data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>請填上郵政編號</value>
+  <comment>_G1224</comment></data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>請以正確格式輸入聯絡電話</value>
+  <comment>_G1225</comment></data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>您最多可儲存{0}張信用卡資料。如欲新增信用卡，請移除一張現存的信用卡</value>
+  <comment>_G1226</comment></data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>請注意:&lt;br/&gt;此網頁只能於IE或Firefox瀏覽</value>
+  <comment>_*H279</comment></data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>請在完成提貨訂單前儲存一個送貨地址</value>
+  <comment>_G1228</comment></data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>請選擇地點</value>
+  <comment>_G1229</comment></data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>請選擇送貨時間</value>
+  <comment>_G1230</comment></data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>請選擇訂單類別</value>
+  <comment>_G1231</comment></data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>請選擇提貨地點</value>
+  <comment>_G1232</comment></data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>請選擇提貨地點</value>
+  <comment>_G1233</comment></data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>請選擇提貨人姓名</value>
+  <comment>_G1234</comment></data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>請選擇提貨人電話</value>
+  <comment>_G1235</comment></data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>請選擇提貨時間</value>
+  <comment>_G1236</comment></data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>請選擇送貨地址</value>
+  <comment>_G1237</comment></data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>請選擇是/否</value>
+  <comment>_G1238</comment></data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>無法刪除主要送貨地址</value>
+  <comment>_G1239</comment></data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>無法刪除主要送貨地址</value>
+  <comment>_G1240</comment></data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>前往結帳</value>
+  <comment>_G1241</comment></data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>前往首頁</value>
+  <comment>_G1242</comment></data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>已輸入的郵政編號，未能提供送貨服務</value>
+  <comment>_G1243</comment></data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>產品編號 {0} 無法訂購</value>
+  <comment>_G1244</comment></data>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>請輸入手機號碼</value>
+  <comment>_G1245</comment></data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>抱歉!您無法訂購韓國分公司的產品。韓國分公司的產品僅限韓國直銷商訂購。</value>
+  <comment>_G1246</comment></data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>對不起，由於超出您的收入限額，該產品未能加入購物車</value>
+  <comment>_G1247</comment></data>
+  <data name="SysError" xml:space="preserve">
+    <value>系統錯誤</value>
+  <comment>_G1248</comment></data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>訂單月份已更改</value>
+  <comment>_G1249</comment></data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>產品編號{0}會加入為候補訂購</value>
+  <comment>_G1250</comment></data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>國家輸入不正確</value>
+  <comment>_G1251</comment></data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>地址必須最少含一個字</value>
+  <comment>_G1252</comment></data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>地址必須最少含一個數字，一個空格及一個字</value>
+  <comment>_G1253</comment></data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>本交易尚未被接納，請致電香港客戶服務熱線(852) 2834-1821</value>
+  <comment>_G1254</comment></data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>本交易尚未被接納，請致電香港客戶服務熱線(852) 2834-1821</value>
+  <comment>_G1255</comment></data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>郵政編號不正確</value>
+  <comment>_G1256</comment></data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>您訂單中沒有訂購產品</value>
+  <comment>_G1257</comment></data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>您訂購的商品 {0}目前存量不夠，可供訂購數量為{1}</value>
+  <comment>_G1258</comment></data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>您沒有產品加入到購物車</value>
+  <comment>_G1259</comment></data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>您尚未加入計算銷售量的產品</value>
+  <comment>_G1260</comment></data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>此地址已在資料庫內</value>
+  <comment>_G1261</comment></data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>您的訂單已超出您的訂購限額，您尚有 {0}個人銷售量，請修改您的訂單以繼續。</value>
+  <comment>_G1262</comment></data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>您所選擇之信用卡交易失敗</value>
+  <comment>_G1263</comment></data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>薈萃已加到購物車</value>
+  <comment>_G1264</comment></data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>無法完成您的訂單，請致電香港客戶服務熱線(852) 2834-1821 並告之錯誤編號</value>
+  <comment>_G1265</comment></data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>無法完成您的訂單，請致電香港客戶服務熱線(852) 2834-1821 並告之錯誤編號</value>
+  <comment>_G1266</comment></data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>目前無法處理您的訂單，請再次確認本訂單寄送地址並重試一次。若此問題仍然持續，請致電香港客戶服務熱線(852) 2834-1821</value>
+  <comment>_G1267</comment></data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>很抱歉，目前匯率無法轉換，請致電香港客戶服務熱線(852) 2834-1821</value>
+  <comment>_G1268</comment></data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>您的購物車中已加入會議門票，您是否要清除購物車?</value>
+  <comment>_G1269</comment></data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>您將刪除主要信用卡，請於刪除前設定另一張主要信用卡</value>
+  <comment>_G1270</comment></data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>由於您的信用卡已多次失效，故無法繼續使用此咭</value>
+  <comment>_G1271</comment></data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>此暱稱已存在，請加入新的暱稱</value>
+  <comment>_G3290</comment></data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>本產品無法加入您的購物車內</value>
+  <comment>_G1273</comment></data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>您不能在沒有產品加入購物車的情況下前往第{0}頁</value>
+  <comment>_G1274</comment></data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>若您在送貨選項選擇提貨，在購物車中的候補訂購項目便會被移除。您是否希望繼續？(「是」或「否」)</value>
+  <comment>_G1275</comment></data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>您已變更此訂單之訂購月份為{0}，您是否繼續下一步？</value>
+  <comment>_G1276</comment></data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>會議門票已加到您的購物車，您是否想清除購物車？</value>
+  <comment>_G1277</comment></data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>產品已加到您的購物車，您是否想在訂購會議門票前清除您的購物車？</value>
+  <comment>_G1278</comment></data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>您的訂單月份為{0},請再次確認是否正確</value>
+  <comment>_G1279</comment></data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>N/A</value>
+  <comment>_G1280</comment></data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>您已選擇非訂購模式瀏覽產品，您將不能加入產品到購物車</value>
+  <comment>_G1281</comment></data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>您已成功加入康寶萊家庭基金捐款到購物車</value>
+  <comment>_G1282</comment></data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>您只能繳付一年的會籍服務年費</value>
+  <comment>_G1283</comment></data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>您必須刪除其中一張信用咭以更改購物車中的項目</value>
+  <comment>_G1284</comment></data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>您必須選擇送貨或提貨才可繼續</value>
+  <comment>_G1285</comment></data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>您於最近於{0}下了一筆同樣的訂單，如果此訂單是重複了，請按 「取消訂購」；確定要完成此筆訂單,請按「提交」</value>
+  <comment>_G1286</comment></data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>您的會籍服務年費到期日為{0}</value>
+  <comment>_G1287</comment></data>
+  <data name="APFDue" xml:space="preserve">
+    <value>您的會籍服務年費已到期，我們將自動加入年費到您的購物車中。</value>
+  <comment>_G1288</comment></data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>由於您的會籍服務年費已到期，我們已加入年費到您的購物車中。</value>
+  <comment>_G1289</comment></data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>您的信用卡有效期已過，請按編輯及更新有效期限</value>
+  <comment>_G1290</comment></data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>您的信用卡有效期已過，請致電香港客戶服務熱線(852) 2834-1821</value>
+  <comment>_G1291</comment></data>
+  <data name="CantBuy" xml:space="preserve">
+    <value>我們暫時未能處理您的要求，請聯絡客戶服務部(852-2834-1821)。</value>
+  <comment>_G1292</comment></data>
+  <data name="CantOrder" xml:space="preserve">
+    <value>我們暫時未能處理您的要求，請聯絡客戶服務部(852-2834-1821)。</value>
+  <comment>_G1293</comment></data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>在您修改購物車前，上一張訂單已經提交。您的訂單號碼是{0}。您可致電香港客戶服務熱線(852) 2834-1821(星期一至星期五 10:30-19:30及星期六10:30-18:00)或按此查核訂單狀態。(請注意，剛完成之新訂單須一小時後才能顯示。&lt;br&gt;若您欲下新訂單，請重新加入產品到您的購物車。</value>
+  <comment>_G1294</comment></data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>您需繳付的會籍服務年費尚在購物車中</value>
+  <comment>_G1295</comment></data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>您的送貨地址不存在,購物車的項目將被清除</value>
+  <comment>_G1296</comment></data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>請填寫國家</value>
+  <comment>_G1297</comment></data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>產品編號 {0} 無效</value>
+  <comment>_G1298</comment></data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>請選擇送貨方式</value>
+  <comment>_G1299</comment></data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>候補訂購產品不適用於送貨至新喀裡多尼亞及法國波利尼西亞</value>
+  <comment>_G1300</comment></data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>請於購物車內選擇訂單類別</value>
+  <comment>_G1301</comment></data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>由於已超出您的訂購限額，您未能前往結帳</value>
+  <comment>_G1302</comment></data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>請確認地址</value>
+  <comment>_G2070</comment></data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>請選擇會員地址</value>
+  <comment>_G2311</comment></data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>請輸入送貨選項</value>
+  <comment>_G2351</comment></data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>請輸入速遞名稱</value>
+  <comment>_G2352</comment></data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>您的訂單付款交易未被接納，如有任何問題，請致電香港客戶服務熱線 (852) 2834 1821</value>
+  <comment>_G2512</comment></data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>請輸入帳單地址</value>
+  <comment>_G2513</comment></data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>親愛的會員：為保障閣下的利益，此訂單已被送往康寶萊審核分析。經審核後，訂單會盡快處理。根據康寶萊的安全政策，部份訂單會被隨機抽樣送往審核分析。</value>
+  <comment>_G2514</comment></data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>您最近已於{0}下了一張相同的訂單。如您希望繼續執行此訂單，請於選單中剔選。否則，請按「取消訂單」。</value>
+  <comment>_G2635</comment></data>
+  <data name="InvalidHKID" xml:space="preserve">
+    <value>請輸入香港身份證號碼的英文字母及首3位數字- 字母與數字之間無須間隔</value>
+  <comment>_G2773</comment></data>
+  <data name="NoDistributorID" xml:space="preserve">
+    <value>填入您的會員編號</value>
+  <comment>_1A27</comment></data>
+  <data name="NoPinRecoveryOption" xml:space="preserve">
+    <value>請點選恢復個人編碼選項</value>
+  <comment>_1A28</comment></data>
+  <data name="volumeNotAvailable" xml:space="preserve">
+    <value>暫未能提供點數資料</value>
+  <comment>_*A914</comment></data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Please select the pickup date</value>
+      <comment>_G2712</comment></data>
+  <data name="WelcolmeAdvisoryLoginError" xml:space="preserve">
+    <value>如需完成您的新會員帳戶申請，請從您的處理申請國家中選擇其中一種語言並重新嘗試。</value>
+      <comment>_*R123</comment></data>
+  <data name="PinNotRetrieved" xml:space="preserve">
+    <value>未能取回個人編碼</value>
+      <comment>_*H284</comment></data>
+  <data name="PriceChanged" xml:space="preserve">
+    <value>由於出現錯誤，您所加入於購物車內的產品價格已變更，請重新提交您的訂單</value>
+      <comment>_G3278</comment></data>
+  <data name="UnableToRetrievePin" xml:space="preserve">
+    <value>由於系統出現錯誤，我們暫時未能處理您的請求，請您稍後再試</value>
+      <comment>_*A1045</comment></data>
+</root>

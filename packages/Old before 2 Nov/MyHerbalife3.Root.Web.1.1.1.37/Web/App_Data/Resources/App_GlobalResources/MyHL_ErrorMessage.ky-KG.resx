@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoSMSNumber" xml:space="preserve">
+    <value>СМС мобилдик номер талап кылынат.</value>
+  </data>
+  <data name="CountryOfProcessingOnly" xml:space="preserve">
+    <value>Кечиресиз, сиз заказды жайгаштыра албайсыз, Жалаң гана Кореялык дистрибьютор Корея вебсайтынан заказдарды сатып алат.</value>
+  </data>
+  <data name="SysError" xml:space="preserve">
+    <value>Система катасы.</value>
+  </data>
+  <data name="EarningsExceeds" xml:space="preserve">
+    <value>Кечиресиз, элемент(терди) кутучага кошо албайсыз, анткени кутучага кошуу аларды кошуу менен киреше чегин ашып кетесиз.</value>
+  </data>
+  <data name="ProceedToCheckout" xml:space="preserve">
+    <value>Текшерүү үчүн барыңыз</value>
+  </data>
+  <data name="PrimaryPickupPreferenceDeleteNotAllowed" xml:space="preserve">
+    <value>Баштапкы алуу артык көрүүлөр алынып ташталбайт.</value>
+  </data>
+  <data name="GotoHomePage" xml:space="preserve">
+    <value>Үй барагына барыңыз</value>
+  </data>
+  <data name="SKUNotAvailable" xml:space="preserve">
+    <value>СК (SKU) {0} мүмкүн эмес.</value>
+  </data>
+  <data name="ZipNotSupported" xml:space="preserve">
+    <value>Киргизилген почтага жиберүү жакталбайт</value>
+  </data>
+  <data name="OrderMonthHasFlipped" xml:space="preserve">
+    <value>(Заказ кылуу айы өзгөртүлгөн)</value>
+  </data>
+  <data name="InvalidZipCode" xml:space="preserve">
+    <value>Почта индекси туура эмес.</value>
+  </data>
+  <data name="TransactionFail" xml:space="preserve">
+    <value>Келишимге уруксат берилбейт, сураныч, дистрибьютор тейлөө ысык линиясы менен байланышыңыз (866) 622-1222.</value>
+  </data>
+  <data name="NoItemToPurchase" xml:space="preserve">
+    <value>Заказдан сатып алуу үчүн эч бир элемент жок.</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Заказга кошуу үчүн эч бир элемент белгиленген эмес.</value>
+  </data>
+  <data name="LessInventory" xml:space="preserve">
+    <value>Азыркы учурда элемент үчүн инвентарь жетишсиз. {0}. Мүмкүн болгон сан {1}.</value>
+  </data>
+  <data name="InvalidState" xml:space="preserve">
+    <value>Мамлекет туура эмес.</value>
+  </data>
+  <data name="BackOrderItem" xml:space="preserve">
+    <value>СК (SKU) {0} кайта келүүчү заказга кошулат.</value>
+  </data>
+  <data name="InvalidStreetAddress2" xml:space="preserve">
+    <value>Көчө дареги жок дегенде бир тамга камтыш керек.</value>
+  </data>
+  <data name="Resubmit" xml:space="preserve">
+    <value>Келишимге уруксат берилбейт, сураныч, карта маалыматын текшериңиз. Эгерде көйгөй чыкса, Дистрибьютор тейлөө ысык линиясы менен байланышыңыз (866) 622-1222.</value>
+  </data>
+  <data name="InvalidStreetAddress" xml:space="preserve">
+    <value>Көчө дареги жок дегенде бир сан, бир кенмете жана бир тамга камтыш керек.</value>
+  </data>
+  <data name="InvalidPhone" xml:space="preserve">
+    <value>Сураныч, туур форматта телефон номерин толтуруңуз.</value>
+  </data>
+  <data name="NoZipCode" xml:space="preserve">
+    <value>Сураныч, почта индексин толтуруңуз.</value>
+  </data>
+  <data name="MaxCardsToDisplay" xml:space="preserve">
+    <value>Сураныч, көңүл буруңуз, сиз карта деталдарын карталардын {0} максимумуна гана сактай аласыз. Жаңы картаны кошуу үчүн, сураныч, сизде сакталган карталардын бирөөсүн алып салыңыз.</value>
+  </data>
+  <data name="NoDefaultShippingAddress" xml:space="preserve">
+    <value>Сураныч, бул заказды алууну аяктоого чейин жиберүү дарегин жаздырыңыз.</value>
+  </data>
+  <data name="BrowserCompatibilityWarning" xml:space="preserve">
+    <value>Сураныч,көңүл буруңуз:&lt;br/&gt;Бул сайт Internet Explorer же Firefox менен эң жакшы көрүнөт.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Сураныч, милдетүү талааны толтуруңуз.</value>
+  </data>
+  <data name="NoLastName" xml:space="preserve">
+    <value>Сураныч, фамилияны толтуруңуз.</value>
+  </data>
+  <data name="NoPhone" xml:space="preserve">
+    <value>Сураныч, телефон номерин толтуруңуз.</value>
+  </data>
+  <data name="NoStreet1" xml:space="preserve">
+    <value>Сураныч, көчө дарек талаасын толтуруңуз.</value>
+  </data>
+  <data name="NoState" xml:space="preserve">
+    <value>Сураныч, мамлекетти толтуруңуз.</value>
+  </data>
+  <data name="NoPickUpLocation" xml:space="preserve">
+    <value>Сураныч, жайгашууну белгилеңиз.</value>
+  </data>
+  <data name="NoPickUpTimeSelected" xml:space="preserve">
+    <value>Сураныч, алуу убакытын белгилеңиз</value>
+  </data>
+  <data name="NoPickUpPhoneEntered" xml:space="preserve">
+    <value>Сураныч, алуу телефонун киргизиңиз</value>
+  </data>
+  <data name="ShippingNickNameNotPopulated" xml:space="preserve">
+    <value>Сураныч, жиберүү дарегин белгилеңиз</value>
+  </data>
+  <data name="PrimaryAddressDeleteNotAllowed" xml:space="preserve">
+    <value>Баштапкы дарек алынып ташталбайт.</value>
+  </data>
+  <data name="CasaCheckRequired" xml:space="preserve">
+    <value>Сураныч, Ооба/Жок белгилеңиз.</value>
+  </data>
+  <data name="NoOrder" xml:space="preserve">
+    <value>Сураныч, Заказ түрүн белгилеңиз.</value>
+  </data>
+  <data name="NoShippingTimeSelected" xml:space="preserve">
+    <value>Сураныч, жиберүү убакытын белгилеңиз</value>
+  </data>
+  <data name="PickUpLocationNotSelected" xml:space="preserve">
+    <value>Сураныч, алуу жайгашуусун белгилеңиз</value>
+  </data>
+  <data name="NoPickUpNameEntered" xml:space="preserve">
+    <value>Сураныч, алуу атын белгилеңиз</value>
+  </data>
+  <data name="PickUpNickNameNotPopulated" xml:space="preserve">
+    <value>Сураныч, алуу жайгашуусун белгилеңиз</value>
+  </data>
+  <data name="NoItemsSelectedToCalculateVolume" xml:space="preserve">
+    <value>Көлөмдү саноо үчүн эч бир элемент белгиленген эмес.</value>
+  </data>
+  <data name="APFDue" xml:space="preserve">
+    <value>Сиздин Жылдык иштетүү төлөмүнө жараша, биз корзинкаңызга автоматтык түрдө кошобуз.</value>
+  </data>
+  <data name="APFDueDateNotification" xml:space="preserve">
+    <value>Сиздин иштетүүгө жылдык төлөмүңүз, жараша {0}</value>
+  </data>
+  <data name="APFDueAdded" xml:space="preserve">
+    <value>Сиздин жылдык иштетүү төлөмүнө жараша. Алар кутучаңызга кошулду.</value>
+  </data>
+  <data name="CardExpired" xml:space="preserve">
+    <value>Сиздин кредиттик картаңыздын мөөнөтү бүттү. Сураныч, жергиликтүү дистрибьютор тейлөө ысык линиясы менен байланышыңыз.</value>
+  </data>
+  <data name="CardExpiredForSavedCard" xml:space="preserve">
+    <value>Сиздин кредиттик картаңыздын мөөнөтү бүттү. Сураныч, Түзөтүүнү баскылаңыз жана жарамдуулук мөөнөтүн жаңыртыңыз.</value>
+  </data>
+  <data name="CanOnlyPrepayOneAPF" xml:space="preserve">
+    <value>Сиз жалгыз гана ЖИТ 1 жылга төлөй аласыз</value>
+  </data>
+  <data name="AddHFFSucceeded" xml:space="preserve">
+    <value>HFFти кутучаңызга ийгиликтүү коштуңуз.</value>
+  </data>
+  <data name="MustDeleteACardToChangeItemsInCart" xml:space="preserve">
+    <value>Кутучаңызда элементтерди өзгөртүү үчүн кредиттик картаңыздын бирөөсүн алып ташаташыңыз керек.</value>
+  </data>
+  <data name="PossibleDuplicateOrder" xml:space="preserve">
+    <value>Сиз жакында эле окшош заказ жайгаштырдыңыз {0}. Эгер бул заказдын дубликаты болсо, "Заказды жокко чыгарууну" баскылаңыз. Бул заказ менен улантууну кааласаңыз, сураныч, тапшырыңыз</value>
+  </data>
+  <data name="CantVisitWithNoDeliveryInfo" xml:space="preserve">
+    <value>Баруу үчүн жиберүү же алуу функциясын белгилешиңиз керек.</value>
+  </data>
+  <data name="NoShippingMethodSelected" xml:space="preserve">
+    <value>Сураныч, жиберүү жолун белгилеңиз</value>
+  </data>
+  <data name="InvalidSKU" xml:space="preserve">
+    <value>СК (SKU) {0} жарабайт.</value>
+  </data>
+  <data name="NoBackOrdersAllowed" xml:space="preserve">
+    <value>Жаңы Каледонияга жана Француз Полинезияга жеткирүү үчүн эч бир аткарылбаган заказ болбошу керек.</value>
+  </data>
+  <data name="NoCheckoutPurchaseLimitsExceeded" xml:space="preserve">
+    <value>Сиз сатып алуу чегинен ашып кеткениңиз үчүн текшере албайсыз</value>
+  </data>
+  <data name="NeedToSelectOrderType" xml:space="preserve">
+    <value>Сураныч, мини кутучадан заказ түрүн белгилеңиз</value>
+  </data>
+  <data name="DuplicateOrder" xml:space="preserve">
+    <value>Сиздин баштапкы заказ, кутучаңызда жасалган өзгөрүүлөргө чейин эле тапшырылган. Сиздин заказдын номери {0}. Сиз бул заказдын абалын Заказ Колдоосуна чалуу менен текшере аласыз 1-310-218-6089, эртең мененки 9 кечки 6 га чейин ТОУ, Дүйшөмбү - Жума. Ишемби эртең мененки 6 түнкү 2ге чейин. ТОУ мисалы бул жерди баскылоо менен. (Сураныч, көңүл буруңуз, заказ көрсөтүлгөнчө 1 саат алышы мүмкүн.&lt;br&gt;Эгерде сиз жаңы заказ жайгаштыргыңыз келсе, сураныч, кутучаңызга элементтерди кайра кошуңуз.</value>
+  </data>
+  <data name="RequiredAPFLeftInCart" xml:space="preserve">
+    <value>Сиздин талап кылынган жылдык иштетүү төлөмүңүз кутучаңызда калып калган.</value>
+  </data>
+  <data name="NoCounty" xml:space="preserve">
+    <value>Сураныч, өлкөнү толтуруңуз.</value>
+  </data>
+  <data name="LocationNotValid" xml:space="preserve">
+    <value>Сиздин жиберүү маалыматыңыз жарабайт, жиберүү кутучаңыз тазаланат.</value>
+  </data>
+  <data name="UnableToPrice" xml:space="preserve">
+    <value>Заказыңызды иштетүүгө мүмкүн эмес. Сураныч, дарегиңизди текшериңиз жана кайра аракет кылыңыз. Эгерде көйгөй чыкса, сураныч, Дистрибьютор Тейлөөсү менен байланышыңыз.</value>
+  </data>
+  <data name="BlockedDS" xml:space="preserve">
+    <value>Заказыңызды аяктоого мүмкүн эмес. Сураныч, Дистрибьютор Мамилелери менен жардам алуу үчүн байланышыңыз 1-310-218-6089 жана ката кодун 05 эстетиңиз.</value>
+  </data>
+  <data name="CurrencyConversionFailed" xml:space="preserve">
+    <value>Кечиресиз, Валюта өзгөрүлбөйт. Сураныч, Дистрибьютор тейлөө ысык линиясы менен байланышыңыз 080-906-7070.</value>
+  </data>
+  <data name="PrimaryCardDeleteNotAllowed" xml:space="preserve">
+    <value>Сиз баштапкы картаңызды алып таштаганы жатасыз. Сураныч, бул картаны алып таштоого чейин, башка сакталган картаны баштапкы кылыңыз.</value>
+  </data>
+  <data name="MustCheckout" xml:space="preserve">
+    <value>Кутучаңызда окуя билеттеринин элементтери бар, кутучаңызды тазалоону каалайсызбы?</value>
+  </data>
+  <data name="VolumePointExceeds" xml:space="preserve">
+    <value>Бул заказ сиздин сатып алуу чегиңизден ашат. Сизде {0} калган КУ бар. Сураныч, улантуу үчүн заказыңызды түзөтүңүз.</value>
+  </data>
+  <data name="AddressExists" xml:space="preserve">
+    <value>Берилмелер база текшерүүсүндө бул дарек мурадатан эле бар</value>
+  </data>
+  <data name="CardWasDeclined" xml:space="preserve">
+    <value>Бул келишим бул карта үчүн четтетилген</value>
+  </data>
+  <data name="BlockedZip" xml:space="preserve">
+    <value>Заказыңызды аяктоого мүмкүн эмес. Сураныч, Дистрибьютор Мамилелери менен жардам алуу үчүн байланышыңыз 1-310-218-6089 жана ката кодун 01 эстетиңиз.</value>
+  </data>
+  <data name="AddTodayMagazine" xml:space="preserve">
+    <value>Бүгүн журнал кутучаңызга кошулган.</value>
+  </data>
+  <data name="CardExceededAllowedDeclines" xml:space="preserve">
+    <value>Көп четөөлөрдүн айынан сиз бул картаны колдоно албайсыз.</value>
+  </data>
+  <data name="ClearCart" xml:space="preserve">
+    <value>Корзинкаңызда продукт(тар)бар. Окуя билеттерин сатып алуу үчүн барууга чейин кутучаңызды тазалоону каалайсызбы?</value>
+  </data>
+  <data name="EventTicketInCart" xml:space="preserve">
+    <value>Кутучаңызда окуя билеттеринин элементтери бар, кутучаңызды тазалоону каалайсызбы?</value>
+  </data>
+  <data name="SelectedDualOrderMonthMessage" xml:space="preserve">
+    <value>Сиз эки эселенген заказ айын белгиледиңиз, {0} бул туурабы?</value>
+  </data>
+  <data name="JustBrowse" xml:space="preserve">
+    <value>Заказды жайгаштыруусуз продуктту карап чыгууну белгиледиңиз, кутучаңызга продуктту кошо албайсыз.</value>
+  </data>
+  <data name="WaldosMessage" xml:space="preserve">
+    <value>WALDOSтон алууну белгиледиңиз, ал жерде заказ кылуу үчүн чектелген продукттар болот.</value>
+  </data>
+  <data name="SkuNotValid" xml:space="preserve">
+    <value>Бул элементти кутучаңызга кошо албайсыз.</value>
+  </data>
+  <data name="DuplicateCardError" xml:space="preserve">
+    <value>Бирден көп жолу ошол эле картаны кошо албайсыз</value>
+  </data>
+  <data name="CantVisitWithEmptyCart" xml:space="preserve">
+    <value>Сиз {0} картаңызда эч бир элемент жок бетке бара албайсыз.</value>
+  </data>
+  <data name="OrderMonthChangedByUser" xml:space="preserve">
+    <value>Сиз бул заказ үчүн заказ кылуу айын өзгөрттүңүз {0}. Бул тандооңузду улантууну каалайсызбы?</value>
+  </data>
+  <data name="ChangeToPUwithBackOrderItemsinCart" xml:space="preserve">
+    <value>Жиберүү функциясы катары алууну белгилесеңиз, кутучаңызда аткарылбаган заказ элементтери алынып салынат.</value>
+  </data>
+  <data name="NoRGNumberSelected" xml:space="preserve">
+    <value>Сураныч, RG номерин орнотуңуз</value>
+  </data>
+  <data name="DONotAvailable" xml:space="preserve">
+    <value>Он-лайн заказ мүмкүн эмес</value>
+  </data>
+  <data name="ShippingInstructionNoFilled" xml:space="preserve">
+    <value>Сураныч, жиберүү көрсөтмөсүн киргизиңиз</value>
+  </data>
+  <data name="NoDistributorAddressEntered" xml:space="preserve">
+    <value>Сураныч, дистрибьютор дарегин белгилеңиз</value>
+  </data>
+  <data name="AddTodayMagazineMax" xml:space="preserve">
+    <value>Бүгүнкү журнал үчүн чек</value>
+  </data>
+  <data name="AddressConfirmationRequired" xml:space="preserve">
+    <value>Дарек ырастоосу талап кылынат</value>
+  </data>
+  <data name="DuplicateAddressNickname" xml:space="preserve">
+    <value>Жасалма ат мурдатан эле колдонулат, сураныч, башка аты киргизиңиз.</value>
+  </data>
+  <data name="AddTodayMagazineMaXQuantity" xml:space="preserve">
+    <value>Кутучаңызга кошула ала турган журналдардын максималдуу саны {0}.</value>
+  </data>
+  <data name="PossibleDuplicateOrderFound" xml:space="preserve">
+    <value>Сиз жакында эле окшош заказ {0}, заказ номерине жайгаштырдыңыз {1}. Эгер сиз бул заказ менен улантууну кааласаңыз, сураныч, аны азыр тапшырыңыз. Антпесе, сураныч, Заказды жокко чыгарууну баскылаңыз.</value>
+  </data>
+  <data name="DONotAllowed" xml:space="preserve">
+    <value>Он-лайн заказ кылуу мүмкүн эмес</value>
+  </data>
+  <data name="NoPickUpDateSelected" xml:space="preserve">
+    <value>Сураныч, алуу датасын белгилеңиз</value>
+  </data>
+  <data name="NoNonProductToStandaloneAPF" xml:space="preserve">
+    <value>Жалаң гана автоматтык продукттар APF заказына кире алат.</value>
+  </data>
+  <data name="FControlDeclined" xml:space="preserve">
+    <value>Заказыңыз үчүн төлөм келишимине уруксат берилген эмес, эгерде шектенүү бар болсо, сураныч, Дистрибьютор тейлөө бөлүмү менен байланышыңыз (11-3879-7844).</value>
+  </data>
+  <data name="NoCourierUpNameEntered" xml:space="preserve">
+    <value>Сураныч, курьердин атын киргизиңиз</value>
+  </data>
+  <data name="lblFControlMessageResource1.Text" xml:space="preserve">
+    <value>Урматтуу Дистрибьютор, коопсуздугуңуз үчүн, бул заказ Гербалайф аудиттик анализине белгиленген. Мүмкүн болушунча кыска мөөнөтө бошотулат. Коопсуздук саясатына жараша, Гербалайф кокустан кээ бир заказдарды белгилейт.</value>
+  </data>
+  <data name="NoBillingAddress" xml:space="preserve">
+    <value>Сураныч, талап кылынган счёт дарегин камсыз кылыңыз.</value>
+  </data>
+  <data name="OutOfInventory" xml:space="preserve">
+    <value>Элемент {0} азыркы учурда инвентарьда эмес, сиздин көлөм 0 гө орнотулган.</value>
+  </data>
+  <data name="OneOrMoreCardsWereDeclined" xml:space="preserve">
+    <value>Карта укук берүүсү ийгиликтүү болгон эмес. Сураныч, карталарыңызды карап чыгыңыз.</value>
+  </data>
+  <data name="NoBackOrdersOnAPFOrder" xml:space="preserve">
+    <value>ЖИТ заказына артка заказ элементтери кошула албайт</value>
+  </data>
+  <data name="DuplicateSKU" xml:space="preserve">
+    <value>Дубликат СК киргизилген. Сураныч, кайра киргизиңиз.</value>
+  </data>
+  <data name="GeneralInputError" xml:space="preserve">
+    <value>Берилмелер форматынын катасы, сураныч, туура берилмелерди киргизиңиз.</value>
+  </data>
+  <data name="CannotRemoveAPFSku" xml:space="preserve">
+    <value>ЖИТ склары сиздин кутучаңыздан алынып салынбайт</value>
+  </data>
+  <data name="CannotAddAPFSku" xml:space="preserve">
+    <value>Сиз жалгыз гана ЖИТ 1 жылга төлөй аласыз</value>
+  </data>
+  <data name="NonProductItemsRemovedForStandaloneAPF" xml:space="preserve">
+    <value>Сиздин ЖИТ менен бир да заказ жок болгондуктан, бардык продукт эместер алынып салынган.</value>
+  </data>
+  <data name="CancelOrderConfirmation" xml:space="preserve">
+    <value>Чын эле бул заказды жокко чыгарууну каалайсызбы? "Жарайт" баскылоо сиздин кутучадан бардык элементтерди алып салат.</value>
+  </data>
+  <data name="NoCard" xml:space="preserve">
+    <value>Кечиресиз, файлыназда катталган кредиттик карта жок. Сураныч, Дистрибьютор Тейлөөсүнө чалыңыз 080-906-7070.</value>
+  </data>
+  <data name="MaxQuantity" xml:space="preserve">
+    <value>СК (SKU) үчүн {0}, саны ашпашы керек {1}.</value>
+  </data>
+  <data name="APFdueResaleNotAllowed" xml:space="preserve">
+    <value>ИТ:{0} АПФ (APF) жылдары "Кайра сатуу" заказ түрүн жайгаштырууга чейин төлөнүш керек. Сураныч, сиздин АПФге төлөө үчүн өзүңүздүн заказ түрүн "Жекеге" өзгөртүңүз.</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Туура эмес почта индекси</value>
+  </data>
+  <data name="EventPurchasingNotAvailable" xml:space="preserve">
+    <value>Окуя Билетин сатып алуулар бул сайтта мүмкүн эмес.</value>
+  </data>
+  <data name="EventTicketsLimitedQuantity" xml:space="preserve">
+    <value>Заказдын {0} санынан сатылып алынган Билеттер чектелүү</value>
+  </data>
+  <data name="BackOrderPartialQuantity" xml:space="preserve">
+    <value>Элемент үчүн {0}, 1 же көп элементтер заказга кетирилбеши мүмкүн.</value>
+  </data>
+  <data name="BackOrderNotAllowedPartialQuantity" xml:space="preserve">
+    <value>Элемент үчүн {0} саны гана {1} мүмкүн. Бул элементти сиздин кутучага кошуу үчүн, сураныч, киргизилген санды түзөтүңүз.</value>
+  </data>
+  <data name="TotalNotMatch" xml:space="preserve">
+    <value>Төлөм жалпысы заказдын жалпысына туура келбейт.</value>
+  </data>
+  <data name="APFinvalidQtyDsLevel" xml:space="preserve">
+    <value>Сураныч, сиз сатып алууну каалаган жылдык иштөө төлөмөнүн санын киргизиңиз.</value>
+  </data>
+  <data name="CVVMissing" xml:space="preserve">
+    <value>Сураныч,CVV киргизиңиз</value>
+  </data>
+  <data name="InvalidFirstName" xml:space="preserve">
+    <value>Сураныч, туура атты киргизиңиз.</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>Сураныч, туура электрондук почта дарегин киргизиңиз.</value>
+  </data>
+  <data name="CasaDonationRequired" xml:space="preserve">
+    <value>Сураныч, садага санын киргизиңиз,(0)дөн башка</value>
+  </data>
+  <data name="NoFirstName" xml:space="preserve">
+    <value>Сураныч, атын толтуруңуз.</value>
+  </data>
+  <data name="NoPaymentInfo" xml:space="preserve">
+    <value>Сураныч, төлөм маалыматын киргизиңиз.</value>
+  </data>
+  <data name="NoEmailAddress" xml:space="preserve">
+    <value>Сураныч, электрондук почта дарегин киргизиңиз.</value>
+  </data>
+  <data name="InvalidLastName" xml:space="preserve">
+    <value>Сураныч, туура фамилияны киргизиңиз.</value>
+  </data>
+  <data name="NoAreaCode" xml:space="preserve">
+    <value>Сураныч, аралык кодун толтуруңуз.</value>
+  </data>
+  <data name="NoCareOfName" xml:space="preserve">
+    <value>Сураныч, атына кам көрүүнү толтуруңуз.</value>
+  </data>
+  <data name="NoExtension" xml:space="preserve">
+    <value>Сураныч, узартууну толтурңуз.</value>
+  </data>
+  <data name="NoCity" xml:space="preserve">
+    <value>Сураныч, шаарды толтуруңуз.</value>
+  </data>
+  <data name="ShippingInfoIncomplete" xml:space="preserve">
+    <value>Сураныч, бардык милдеттүү жиберүү маалыматын толтуруңуз.</value>
+  </data>
+  <data name="InvalidMiddleName" xml:space="preserve">
+    <value>Сураныч, туура атасынын атын киргизиңиз.</value>
+  </data>
+  <data name="InvalidExtension" xml:space="preserve">
+    <value>Сураныч, туура форматта узартууну толтуруңуз.</value>
+  </data>
+  <data name="InvalidAreaCode" xml:space="preserve">
+    <value>Сураныч, туура форматта аралык кодун толтуруңуз.</value>
+  </data>
+  <data name="InvalidNickname" xml:space="preserve">
+    <value>Сураныч, туура жасалма атты киргизиңиз</value>
+  </data>
+  <data name="PaymenyFail" xml:space="preserve">
+    <value>Сураныч, карта маалыматын текшериңиз.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Сруаныч, Дистрибьютор ID жана Пин кодуңүзду текшериңиз жана кайра аракет кылыңыз. Эгер көйгөйлөр чыкса сураныч, Дистрибьютор Тейлөөсү менен байанышыңыз 1-310-218-6089</value>
+  </data>
+  <data name="CompleteAPFPurchase" xml:space="preserve">
+    <value>Сураныч, башка продукттарды кутучаңызды киргизгенге чейин жылдык төлөм сатып алууларын аяктаңыз</value>
+  </data>
+  <data name="DuplicatePickupLocation" xml:space="preserve">
+    <value>Сураныч, уникалдуу алуу жайгашуусун киргизиңиз.</value>
+  </data>
+  <data name="QuantityIncorrect" xml:space="preserve">
+    <value>Сураныч,СК (SKU) үчүн санды киргизиңиз {0}.</value>
+  </data>
+  <data name="EventTicketCompleteAPF" xml:space="preserve">
+    <value>Сураныч, окуя билеттерин сатып алууга чейин жылдык төлөм сатып алууларын аяктаңыз</value>
+  </data>
+  <data name="AddTodayMagazineEnterNumber" xml:space="preserve">
+    <value>Сураныч, номерди киргизиңиз.</value>
+  </data>
+  <data name="NoSubDistrict" xml:space="preserve">
+    <value>Сураныч, суб районду толтуруңуз</value>
+  </data>
+  <data name="AddHFFZero" xml:space="preserve">
+    <value>Сруаныч, 0 чоң сан киргизиңиз</value>
+  </data>
+  <data name="InvalidCity" xml:space="preserve">
+    <value>Сураныч, туура шаарды киргизиңиз.</value>
+  </data>
+  <data name="InvalidRecipentName" xml:space="preserve">
+    <value>Сураныч, туура атты киргизиңиз.</value>
+  </data>
+</root>

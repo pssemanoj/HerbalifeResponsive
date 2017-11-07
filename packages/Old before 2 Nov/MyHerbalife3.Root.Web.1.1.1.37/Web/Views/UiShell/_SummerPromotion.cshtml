@@ -1,0 +1,15 @@
+﻿@model MyHerbalife3.Core.ContentProxyProvider.ValueObjects.ContentItemModel
+
+<nav class="footer-links">
+    <!-- Begin footerLinks  -->
+    @if (Model != null)
+    {
+        <!-- value from @Model.OriginId -->
+        @Html.Raw(Model.Body)
+    }
+    else
+    {
+        <!-- No content -->
+    }
+    <!-- End footerLinks -->
+</nav>

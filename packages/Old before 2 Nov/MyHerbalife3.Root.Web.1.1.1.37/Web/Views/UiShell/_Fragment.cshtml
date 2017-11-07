@@ -1,0 +1,12 @@
+﻿@model MyHerbalife3.Core.ContentProxyProvider.ValueObjects.ContentItemModel
+<!-- fragment  -->
+@if (Model != null)
+{
+    <!-- fragment @Model.OriginId -->
+    @Html.Raw(Model.Body)
+}
+else
+{
+    <!-- no content @ViewBag.Path -->
+}
+<!-- /fragment -->

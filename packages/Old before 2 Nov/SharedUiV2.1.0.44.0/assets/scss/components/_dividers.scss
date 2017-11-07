@@ -1,0 +1,36 @@
+
+    /* Dividers
+    ================================================== */
+
+    @mixin divider ($margin: 10px, $color: $grey, $bdrsize: 1px) {
+        display: block;
+        position: relative;
+        margin-top: $margin;
+        margin-bottom: $margin;
+        height: auto;
+        hr {
+            position: absolute;
+            top: 50%;
+            border-width: $bdrsize 0 0;
+            border-color: $color;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    @mixin divider-block ($margin: 10px, $bgcolor: transparent, $pad: $gutter, $color: $grey) {
+        text-align: center;
+        @include divider($margin, $color);
+        > h1, 
+        > h2, 
+        > h3, 
+        > h4, 
+        > h5, 
+        > h6, 
+        > div { 
+            padding: 0 $pad;
+            background-color: $bgcolor;
+            display: inline-block;
+            margin: 0;
+        }
+    }

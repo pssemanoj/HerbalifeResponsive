@@ -1,0 +1,119 @@
+
+    /* MyHL Footer
+    ================================================== */
+
+    footer {
+        display: table-row;
+        height: 1px;
+        width: 100%;
+        background-color: $charcoalgrey;
+        color: $grey;
+        font-size: 14px;
+        .contact-link { 
+	        margin: 0 auto;
+	        text-align: center;
+	        padding: 10px 0;
+	        background-color: lighten($charcoalgrey, 16);
+	        color: $white;
+	    	i { 
+	    		font-size: 18px;
+	    		margin-right: 5px;
+	    	}
+	    	a {
+	    		font-weight: bold;
+	    		color: $white;
+	    		i { font-size: 12px; }
+	    	}
+	    }
+        .footer-content {
+        	padding-top: $gutter;
+        	@include m4-t8-d12-e16;
+        	@include clearfix;
+        	&:last-child { 
+        		padding: 15px 0 60px;
+        	}
+	        .disclaimer {
+	        	width: 100%;
+	        	text-align: center;
+	        	font-size: 12px;
+	        	line-height: 14px;
+	        	@include breakpoint($tablet) { text-align: left; }
+	        }
+	        ul.links {
+	        	margin-left: 0;
+	        	width: 100%;
+	        	@include clearfix;
+	        	@include breakpoint($desktop) { @include span(8); }
+        		> li {
+        			margin-bottom: 5px;
+	        		text-align: center;
+	        		width: 100%;
+        			@include breakpoint($tablet) { 
+        				@include gallery(4 of 8); 
+        			}
+        			@include breakpoint($desktop) { text-align: left; }
+        			a { 
+        				font-size: 14px;
+        				color: $grey; 
+        				&:hover { color: $white; }
+        			}
+        		}
+	        }
+        	aside {
+	        	width: 100%;
+	        	text-align: center;
+	        	margin-bottom: 15px;
+        		@include breakpoint($desktop) { 
+	        		margin-bottom: 0; 
+			        text-align: right;
+        			@include span(4 last); 
+        		}
+		        .region-selector {
+		            position: relative;
+		        	margin-bottom: 15px;
+		        	padding: 0 0 2px 12px;
+		            background-color: lighten($charcoalgrey, 6);
+		            display: inline-block;
+		            @include clearfix;
+		            @include border-radius(20px);
+		            &:hover { background-color: lighten($charcoalgrey, 6); }
+	            	&:before {
+            		    content: "\e555";
+					    font-family: $myherbalife;
+					    position: absolute;
+					    font-size: 12px;
+					    right: 10px;
+					    top: 6px;
+					    pointer-events: none;
+	            	}
+	        		
+	        		#dvFlag { float: right; }
+		            
+		            select { 
+		                background-color: transparent; 
+		                color: $white;
+		                float: right;
+		                border: 0;
+		                margin-top: 3px;
+		                font-size: 14px;
+		                background: none;
+		                max-width: 270px;
+		                width: auto;
+		                padding-right: 30px;
+		                &:hover { @include box-shadow(none); }
+		            }
+		        }
+	        	.logos {
+		        	@include breakpoint($tablet) { @include span(4 last); }
+	        		@include breakpoint($desktop) { float: none; }
+		        	a {
+		        		display: inline-block;
+		        		vertical-align: middle;
+		        		margin-right: $gutter;
+		        		&:last-child { margin-right: 0; }
+		        	}
+		        }
+
+        	}
+	    }
+    }

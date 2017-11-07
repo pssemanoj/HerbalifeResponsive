@@ -1,0 +1,231 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.UI.Controls
+@using MyHerbalife3.Shared.UI.Helpers
+@using HL.Common.Configuration
+@using MyHerbalife.Navigation.ApiAdapter.Extensions
+@using MyHerbalife3.Shared.AssetsAdapter.Extensions
+@using MyHerbalife3.Shared.Infrastructure.Helpers
+@using MyHerbalife3.Shared.ViewModel.ValueObjects
+
+@{
+    var microserviceNavEnabled = Settings.GetRequiredAppSetting("MyHLNavigationEnabled", false);
+    var globalContext = (IGlobalContext)HttpContext.Current.ApplicationInstance;
+
+    var rightToLeftAtrribute = globalContext.CultureConfiguration.IsRightToLeft ? "rtl" : string.Empty;
+
+    var vertical = Settings.GetRequiredAppSetting("Spa.Vertical", "Root");
+
+    vertical = (vertical != "Root" ? "/" + vertical : "");
+    var currentExperience = globalContext.CurrentExperience;
+
+    bool summerPromoBannerEnabled = Settings.GetRequiredAppSetting("SummerPromo.BannerEnabled", false);
+
+    var oldKendo = Settings.GetRequiredAppSetting("OldKendoEnable", false);
+
+    var oldCacheBusting = Settings.GetRequiredAppSetting("oldCacheBusting", false);
+
+}
+
+<!DOCTYPE html>
+<html class="myhl3 @(currentExperience.ExperienceType == ExperienceType.Black ? "nav-v5" : "")">
+<head>
+    <!-- MASTER GREEN ROOT PAGES -->
+    @Html.Partial("_MetaHeader")
+    @RenderSection("MetaTags", required: false)
+    <title>myHerbalife.com | @Page.Title</title>
+    
+
+    <!-- Styles
+        ================================================== -->
+    @if (oldCacheBusting)
+    {
+            <!--[if gt IE 9]> -->
+        @BundleHelper.WriteTagElementsFromFile("~" + vertical + "/CSS/mainCSS.txt", "/", vertical + "/CSS/bundle/site.css")
+            <!-- <![endif]-->
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" type="text/css" href="@Fingerprint.Tag(vertical + "/CSS/bundle/site_1.css")" />
+            <link rel="stylesheet" type="text/css" href="@Fingerprint.Tag(vertical + "/CSS/bundle/site_2.css")" />
+            <link rel="stylesheet" type="text/css" href="@Fingerprint.Tag(vertical + "/CSS/bundle/site_3.css")" />
+        <![endif]-->
+    }
+    else
+    {
+        if (HttpContext.Current.IsDebuggingEnabled)
+        {
+            @BundleHelper.GetFiles("~" + vertical + "/CSS/mainCSS.txt", "/");
+        }
+        else
+        {
+            @Html.Partial("_verticalCSS");
+        }
+    }
+
+    @this.GetAsset("HeaderAssets", globalContext.CultureConfiguration.Locale)
+
+    @RenderSection("HeadLinks", required: false)
+
+    @Html.Raw(SafeRender.ValidateContent("/Content/" + Culture + "/css/" + Culture + ".css", "<link rel='stylesheet' href='{0}' type='text/css' />"))           
+
+    <!--[if lt IE 9]>
+        <script src="/SharedUI/Scripts/html5.js"></script>
+        <script src="/SharedUI/Scripts/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body dir="@rightToLeftAtrribute">
+
+   
+
+    @Html.Partial("_DeprecationMessage")
+
+    <section class="transformer">
+        <div class="inner-wrap">
+            @{
+
+                if (currentExperience.ExperienceType == ExperienceType.Green)
+                {
+                    if (microserviceNavEnabled)
+                    {
+                        <!--MOBILE TOP NAV FOR  -->
+                        @Html.Raw(this.GetContent(MyHerbalife.Navigation.ApiAdapter.ValueObjects.UIComponent.MobileNavigation, currentExperience.NavigationVersion))
+                        <!--/MOBILE TOP NAV -->
+                    }
+                    else
+                    {
+                        <!--MOBILE TOP NAV -->
+                        @Html.Action("MobileNavigation", "UiShell")
+                        <!--/MOBILE TOP NAV -->
+                    }
+                }
+            }
+                      
+
+            <div id="hrblSiteWrapper">
+
+                @if (summerPromoBannerEnabled)
+                {
+                    Html.RenderAction("SummerPromotion", "UiShell");
+                }
+
+                @if (microserviceNavEnabled)
+                {
+                        <!-- Header from Microservice -->
+                    @Html.Raw(this.GetContent(MyHerbalife.Navigation.ApiAdapter.ValueObjects.UIComponent.Header,
+                                            currentExperience.NavigationVersion,
+                                            globalContext.CultureConfiguration.Locale,
+                                            (BrowseScheme)currentExperience.BrowseScheme))
+                        <!-- /Header from Microservice -->
+                }
+                else
+                {
+                    Html.RenderAction("Header", "UiShell");
+                }                
+                
+                @this.GetAsset("BeforeBody", globalContext.CultureConfiguration.Locale)      
+                             
+                <!-- PAGE CONTENT -->
+                @RenderBody()
+
+                @this.GetAsset("AfterBody", globalContext.CultureConfiguration.Locale)
+
+                <!-- International Agreement Notification -->
+                @Html.Action("Fragment", "UiShell", new { path = "InternationalAgreement.xml" })
+
+                <!-- /PAGE CONTENT -->
+                <!-- Session Timeout Modal -->
+                <div class="hrblModal medium" id="idleLogout" style="display:none"></div>
+                <!-- /Session Timeout Modal -->
+
+                @if (microserviceNavEnabled)
+                {
+                        <!-- Footer from Microservice -->
+                    @Html.Raw(this.GetContent(MyHerbalife.Navigation.ApiAdapter.ValueObjects.UIComponent.Footer,
+                                            currentExperience.NavigationVersion,
+                                            globalContext.CultureConfiguration.Locale,
+                                            (BrowseScheme)currentExperience.BrowseScheme))
+                        <!-- /Footer from Microservice -->
+                }
+                else
+                {
+                    <!-- FOOTER -->
+                    <footer>
+                        @{
+                            Html.RenderAction("Footer", "UiShell");
+                        }
+                    </footer>
+                            }
+
+
+                @Html.Partial("_ServerSignature")
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SCRIPTS
+        ================================================== -->
+    @RenderSection("SingleSignOn", required: false)
+
+    @*Jquery from CDN*@
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script>
+            if (!window.jQuery) {
+                // fallback to local jQuery
+                document.write(decodeURIComponent('%3Cscript src="/Scripts/jquery/jquery-1.10.2.min.js" %3E%3C/script%3E'));
+            }
+            if (!window.jQuery || !window.jQuery.migrateWarnings) {
+                document.write(unescape('%3Cscript src="/Scripts/jquery/jquery-migrate-1.2.1.min.js" %3E%3C/script%3E'));
+            }
+    </script>
+
+    @*Kendo*@
+    @if (oldKendo)
+    {
+        <script src="/Scripts/kendo/kendo.custom.min-1.0.1.js"></script>
+    }
+    else
+    {
+        <script src="/Scripts/kendo/kendo.core.min-1.0.0.js"></script>
+    }
+
+    @if (oldCacheBusting)
+    {
+        @BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/", vertical + "/Scripts/bundle/common.js")
+        @BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/vertical.txt", "/", vertical + "/Scripts/bundle/vertical.js")
+    }
+    else
+    {
+        if (HttpContext.Current.IsDebuggingEnabled)
+        {
+            @BundleHelper.GetFiles("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/");
+            @BundleHelper.GetFiles("~" + vertical + "/Scripts/vertical.txt", "/");
+        }
+        else
+        {
+            @Html.Partial("_commonjs");
+            @Html.Partial("_verticaljs");
+        }
+    }
+      
+    @this.GetAsset("FooterAssets", globalContext.CultureConfiguration.Locale)
+
+    @RenderSection("HeadScripts", required: false)
+
+    @Html.Partial("_Analytics")
+
+    @Html.Partial("_ProductRecomendations")
+
+    @RenderSection("ProductRecomendations", required: false)
+
+    <!-- Adobe DTM -->
+    <script type="text/javascript">_satellite.pageBottom();</script>
+
+    <!-- /SCRIPTS
+    ================================================== -->
+
+
+</body>
+</html>

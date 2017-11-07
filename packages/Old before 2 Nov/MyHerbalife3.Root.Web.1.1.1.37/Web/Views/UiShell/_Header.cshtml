@@ -1,0 +1,232 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Core.ContentProxyProvider.Helpers
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.UI.Extensions
+@using MyHerbalife3.Shared.ViewModel
+
+@{
+    var _GlobalContext = (HttpContext.Current.ApplicationInstance as IGlobalContext);
+
+    bool IsSearchBoxEnabled = _GlobalContext.CultureConfiguration.SearchEnabled;
+    bool IsOrderingEnabled = _GlobalContext.CultureConfiguration.IsOrderingEnabled;
+    bool IsDsAlertsEnabled = _GlobalContext.CultureConfiguration.IsDSAlertsEnabled && !Roles.IsUserInRole(RoleDefinitions.ROLE_DELETED_ID);
+    bool IsOnlineProfileEnabled = _GlobalContext.CultureConfiguration.IsOnlineProfileEnabled;
+    var SettingsLink = IsDsAlertsEnabled
+                        ? "/Account/Communication/NotificationsSubscriptions.aspx"
+                        : "/Account/Communication/Paperless.aspx";
+}
+<!-- HEADER -->
+<header>
+    <!-- Local selector -->
+    @Html.Action("LocaleSelector", "UiShell")
+
+
+    <!-- place holders for header partial views -->
+    <section id="DSInfo">
+
+        <ul id="DSStats">
+
+            <li>
+                <span id="mobile-nav-btn" wire-model="mobileNavViewModel" data-bind="click: open">
+                    <i class="icon-list-fl-1"></i>
+                </span>
+
+                <a href="@FormsAuthentication.DefaultUrl" class="logo">
+                    <img src="/SharedUI/Images/logo-myherbalife-sm-green.png">
+                </a>
+
+            </li>
+
+            <!-- /LOCALE SELECTOR -->
+            <li class="locale-picker">
+                <a href="#" id="localeSel" class="capitalize">
+                    <span>
+                        @LocaleHelper.GetCountryHeader()
+                    </span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+            </li>
+
+            <li class="user-info-details">
+
+                @if (Roles.IsUserInRole(RoleDefinitions.ROLE_DELETED_ID))
+                {
+                    <a class="alert-notifications" id="alertsLocaleSelector" wire-model="InboxViewModel" href="/Account/Communication/Notifications.aspx" rel="tooltip">
+                        <i class="icon-email">
+                            <span data-bind="text: AlertCount"></span>
+                        </i>
+                    </a>
+                }   
+
+                <div class="profileData" wire-model="ProfileViewModel">
+                    <div>
+                        <span data-bind="visible: loading"><i class="green icon-loading"></i></span>
+                        <span class="bold profile-text" data-bind="text: Name, visible: loaded"></span>
+                    </div>
+                </div>
+                <div class="profileData" wire-model="ProfileViewModel">
+                    <div>
+                        <span data-bind="visible: loading"><i class="green icon-loading"></i></span>
+                        <span class="profile-text icon-trophy" data-bind="text: TeamLevelName, visible: loaded"></span>
+
+                    </div>
+                </div> 
+                <div class="volumeData" wire-model="VolumeViewModel">
+                    <span data-bind="visible: loading" class="green icon-loading"></span>
+
+                    <div class="single" data-bind="visible: loadSingle" style="display: none">
+                        <a href="/Account/Volume.aspx" class="volume-text icon-bars" data-bind="text: CurrentMonthVolume.PlainHeaderText"></a>
+                    </div>
+                    
+
+                    <div class="dual" data-bind="visible: loadDual" style="display: none">
+                        <span class="icon-bars">
+                            @this.LocalizeGlobal("HrblUI", "VolumeHeaderDualMonth")
+                        </span>
+                        <a href="/Account/Volume.aspx" data-bind="text: CurrentMonthVolume.DualMonthHeaderVolume">
+                        </a>
+                        <a href="/Account/Volume.aspx" data-bind="text: LastMonthVolume.DualMonthHeaderVolume">
+                        </a>                        
+                    </div>
+
+                    <span data-bind="style: { display: error }" class="red hide"><i class="icon-x-circle"></i> @this.LocalizeGlobal("HrblUI", "volumeNotAvailable")</span>
+                </div>
+                
+                @if (IsOrderingEnabled) {                     
+                    <a wire-model="CartViewModel" href="#" class="cart-link" data-bind="events: { click: checkout }">
+                        <i class="icon-cart-ln-6"></i>
+                    </a>
+                }
+            </li>
+
+        </ul>
+    </section>
+
+    <!--TOP NAV -->
+    <nav id="main-nav" wire-model="topNavViewModel" data-bind="attr: {class: hideClass}">
+        <div class="container">
+            @Html.Action("MainNavigation", "UiShell")
+
+            <div id="rightTopNav">
+
+                @if (IsSearchBoxEnabled)
+                {
+
+                        <input type="search" class="styledFields search" name="sp_q" placeholder=@this.LocalizeGlobal("HrblUI", "SearchText") />
+
+                }
+                <ul class="hrblMenu">
+                    @if (IsOrderingEnabled)
+                    {
+                        <li id="cartInfoDropDown" data-bind="events: { mouseover: openLevel, mouseout: openLevel }">
+                            <span data-bind="click: openLevel">
+                                <span>
+                                    <i class="icon-cart-ln-6"></i>
+                                </span>
+                            </span>
+                            <ul style="display: none">
+                                <li>
+                                    <div id="dvCartInfo" wire-model="CartViewModel">
+                                        <div class="hrblPreLoader-miniCart" data-bind="visible: loading"></div>
+                                        <div data-bind="visible: loaded">
+                                            <h5>
+                                                <span class="darkgreen bold" data-bind="text: quantity"></span>
+                                                @this.LocalizeGlobal("HrblUI", "ShoppingCart_Items")
+                                            </h5>
+                                            <hr>
+                                            <h6>
+                                                @this.LocalizeGlobal("HrblUI", "ShoppingCart_Subtotal"):
+                                                <span data-bind="text: subTotal"></span>
+                                            </h6>
+                                            <h6>
+                                                @this.LocalizeGlobal("HrblUI", "ShoppingCart_VolumePoints"):
+                                                <span data-bind="text: volumePoints"></span>
+                                            </h6>
+                                            <a class="forward" data-bind=" events: { click: checkout }">@this.LocalizeGlobal("HrblUI", "ShoppingCart_Checkout")</a>
+                                            <hr>
+                                            <ul class="vert-links">
+                                                <li><a data-bind=" events: { click: viewSavedCarts }" href="#hrbl"><i class="icon-eye"></i>@this.LocalizeGlobal("HrblUI", "ShoppingCart_ViewCarts")</a></li>
+                                            </ul>
+                                        </div>
+                                        <div data-bind="visible: error">
+                                            <div class="hrblPreLoader-miniCart"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    <li id="myProfileDropDown" data-bind="events: { mouseover: openLevel, mouseout: openLevel }">
+                        <span data-bind="click: openLevel">
+                            <span>
+                                <i class="icon-user"></i>
+                            </span>
+                        </span>
+                        <ul wire-model="ProfileViewModel" style="display: none">
+                            <li>
+                                <nav>
+                                    <h4 data-bind="text: Name"></h4>
+                                    <ul>
+                                        <!-- Subscriptions -->
+                                        <li><i class="icon-trophy orange"></i><span data-bind="text: TeamLevelName"></span></li>
+                                        <li data-bind="visible: IsBizworksSubscriber"><i class="icon-herbalife green"></i><span data-bind="    text: DisplayBizworksStatus"></span></li>
+                                        <hr />
+                                        <!-- Settings -->
+                                        <li><a href="/Account/Profile/Default.aspx"><i class="icon-card"></i><span>@this.LocalizeGlobal("HrblUI", "MiniProfile_MyAccount")</span></a></li>
+                                        <li><a href="@SettingsLink"><i class="icon-cog"></i><span>@this.LocalizeGlobal("HrblUI", "MiniProfile_Settings")</span></a></li>
+                                        @if (IsOnlineProfileEnabled)
+                                        {
+                                            <li><a href="/Account/Profile/LoginPreferences.aspx"><i class="icon-lock-ln-1"></i><span>@this.LocalizeGlobal("HrblUI", "MiniProfile_LoginPreferences")</span></a></li>
+                                        }             
+                                        <hr />
+                                        <a href="~/Authentication/Logout" class="btn full-width">
+                                            <i class="icon-power-ln-3"></i>
+                                            @this.LocalizeGlobal("HrblUI", "MiniProfile_LogOut")
+                                        </a>
+                                    </ul>
+                                </nav>
+                            </li>
+                        </ul>
+                    </li>
+                    @if (IsSearchBoxEnabled)
+                    {
+                        <li id="search-holder" data-bind="events: { mouseover: openLevel, mouseout: openLevel }">
+                            <span data-bind="click: openLevel">
+                                <span>
+                                    @this.LocalizeGlobal("HrblUI", "SearchText")
+                                </span>
+                            </span>
+                            <ul style="display: none">
+                                <li>
+                                    <input type="search" class="styledFields search" name="sp_q" placeholder=@this.LocalizeGlobal("HrblUI", "SearchText") />
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /TOP NAV -->
+    <!-- System/Emergency Notifications -->
+    @if (IsDsAlertsEnabled)
+    {
+        <div data-template="notificationTemplate" wire-model="AlertsViewModel" data-bind="source: BannerAlerts"></div>
+        <script id="notificationTemplate" type="text/x-kendo-template">
+            <div class="systemNotification greenNotification" data-bind="click: CollapseNotification, style: { background-color: NotificationColor }">
+                <div class="notificationWrapper">
+                    <i data-bind="visible: CanCollapse, attr: {class: CollapseClass}" aria-hidden="true"></i>
+                    <span data-bind="html: Body"></span>
+                    <div data-bind="invisible: IsCollapsed">
+                        <span class="left" data-bind="visible: HasLink">
+                            <a class="left" target="_blank" data-bind="attr: { href: LinkUrl }, text: LinkLabel, visible: HasLink"></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </script>
+    }
+    <!-- / System/Emergency Notifications -->
+    <!-- end header place holders -->
+</header>
+<!-- /HEADER -->

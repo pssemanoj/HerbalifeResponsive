@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HL.MyHerbalife.Web.Site" %>
+<%@ Import Namespace="MyHerbalife3.Shared.UI.Helpers" %>
+<%@ Import Namespace="MyHerbalife3.Shared.Infrastructure.Helpers" %>
+<%@ Import Namespace="MyHerbalife3.Shared.Infrastructure.Interfaces" %>
+<%@ Register Src="~/Controls/Template/MetaHeader.ascx" TagName="MetaHeader" TagPrefix="templates" %>
+<%@ Register Src="~/Controls/Navigation/FullHeader.ascx" TagName="FullHeader" TagPrefix="green" %>
+<%@ Register Src="~/Controls/Navigation/FullFooter.ascx" TagName="FullFooter" TagPrefix="green" %>
+<%@ Register Src="~/Controls/Navigation/LeftNavMenu.ascx" TagName="LeftNavMenu" TagPrefix="lnmnu" %>
+<%@ Register Src="~/Controls/Navigation/MobileNavigation.ascx" TagPrefix="green" TagName="MobileNavigation" %>
+<%@ Register Src="~/Controls/DeprecationMessage.ascx" TagPrefix="deprecation" TagName="deprecationmsg" %>
+<%@ Register Src="~/Controls/GoBackButton.ascx" TagPrefix="goback" TagName="gobackbtn" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Shared.UI.Controls" Assembly="MyHerbalife3.Shared.UI" %>
+<%@ Register TagPrefix="cc1" Namespace="MyHerbalife3.Core.ContentProxyProvider.Helpers" Assembly="MyHerbalife3.Core.ContentProxyProvider" %>
+<%@ Register Src="~/Controls/Template/verticalCSS.ascx" TagPrefix="assets" TagName="styles" %>
+<%@ Register Src="~/Controls/Template/commonjs.ascx" TagPrefix="assets" TagName="commonjs" %>
+<%@ Register Src="~/Controls/Template/verticaljs.ascx" TagPrefix="assets" TagName="verticaljs" %>
+<%@ Register Src="~/Controls/GetHeaderAssets.ascx" TagPrefix="assets" TagName="getheader" %>
+<%@ Import Namespace="MyHerbalife3.Shared.AssetsAdapter.Extensions" %>  
+
+<!DOCTYPE html>
+<html class="myhl3">
+<head runat="server">
+    <!-- MASTER GREEN ASPX PAGES -->
+    <templates:MetaHeader runat="server"></templates:MetaHeader>    
+    <title runat="server" id="Title"></title>
+    
+    <!-- Styles
+    ================================================== -->
+    <asp:PlaceHolder runat="server">
+        <% if (oldCacheBusting) { %>
+            <!--[if gt IE 9]> -->
+            <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/CSS/mainCSS.txt", "/",vertical + "/CSS/bundle/site.css") %>
+            <!-- <![endif]-->
+
+            <!--[if lte IE 9]>
+                <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_1.css") %>" />
+                <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_2.css") %>" />
+                <link rel="stylesheet" type="text/css" href="<%= Fingerprint.Tag(vertical + "/CSS/bundle/site_3.css") %>" />
+            <![endif]-->
+        <% } else { %>
+            <% if (HttpContext.Current.IsDebuggingEnabled) { %>
+                <%= GetFiles("~" + vertical + "/CSS/mainCSS.txt", "/", "css") %>
+            <% } else { %>
+                <assets:styles runat="server" id="styles"></assets:styles>
+            <% } %>      
+        <% }%>
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="headLinks" runat="server"></asp:ContentPlaceHolder>
+
+    <cc1:SafeRender id="localeCss" runat="server" filepath="/Content/{0}/css/{0}.css" safestring='<link rel="stylesheet" href="{0}" type="text/css" />' />
+
+    <assets:getheader runat="server" id="getheader"></assets:getheader>
+
+    <!--[if lt IE 9]>
+        <script src="/SharedUI/Scripts/html5.js"></script>
+        <script src="/SharedUI/Scripts/respond.min.js"></script>
+    <![endif]-->
+       
+</head>
+<body id="body" runat="server">
+
+    <!-- IE deprecation msg -->
+    <deprecation:deprecationmsg runat="server" id="deprecationmsg"></deprecation:deprecationmsg>
+
+    <form id="form1" runat="server">
+        <telerik:radscriptmanager runat="server" id="_RadScriptManager" scriptmode="Release"
+            enablescriptlocalization="true" enablescriptglobalization="true" />
+        <section class="transformer">
+            <div class="inner-wrap">
+                <green:mobilenavigation runat="server" id="MobileNavigation" />
+                <div id="hrblSiteWrapper">
+                    <% if (summerPromoBannerEnabled) { %>
+                        <cc1:FragmentReader id="SummerPromo" path="SummerPromotionFragment.xml" runat="server" />
+                    <% } %>
+
+                    <green:fullheader runat="server" id="fullHeader"></green:fullheader>
+
+                    <% if (!IsSubHeaderDisabled) { %>
+                        <cc1:SubHeaderFragment runat="server" />
+                    <% } %>
+                    <asp:ContentPlaceHolder ID="PageHeaderArea" runat="server"></asp:ContentPlaceHolder>
+
+                      <% Response.Write(this.GetAsset("BeforeBody",locale)); %>
+                    <!-- PAGE CONTENT -->
+                    <div id="principalContent" class="container columnCont">
+
+                        <!--LEFT NAV-->
+                        <% if (currentExperience.ExperienceType!=MyHerbalife3.Shared.ViewModel.ValueObjects.ExperienceType.Black) { %>
+                        <div id="LeftNavMenuCell">
+                            <asp:Panel ID="_LeftNavMenuPanel" runat="server" CssClass="noindex">
+                                <lnmnu:leftnavmenu id="_LeftNavMenu" runat="server" />
+                            </asp:Panel>
+                        </div>
+                        <% } %>
+                        <!--PRINCIPAL CONTENT-->
+                        <div id="ContentCell">
+                            
+                            <asp:ContentPlaceHolder ID="ContentArea" runat="server">
+                                [Default content when nothing is targeting the content area]
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                    <!-- /PAGE CONTENT -->
+
+                      <% Response.Write(this.GetAsset("AfterBody",locale)); %>
+                    <!-- Session Timeout Modal -->
+                    <div class="hrblModal medium" id="idleLogout" style="display: none"></div>
+                    <!-- /Session Timeout Modal -->
+
+                      <green:FullFooter runat="server" id="FullFooter1"></green:FullFooter>
+                    </div>
+            </div>
+        </section>
+
+        <!-- SCRIPTS -->
+        <asp:PlaceHolder runat="server">
+
+            <%--Jquery from CDN--%>
+            <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+            <script>
+                if (!window.jQuery) {
+                    // fallback to local jQuery
+                    document.write(decodeURIComponent('%3Cscript src="/Scripts/jquery/jquery-1.10.2.min.js" %3E%3C/script%3E'));
+                }
+                if (!window.jQuery || !window.jQuery.migrateWarnings) {
+                    document.write(unescape('%3Cscript src="/Scripts/jquery/jquery-migrate-1.2.1.min.js" %3E%3C/script%3E'));
+                }
+            </script>
+
+            <%--Kendo--%>
+            <% if (oldKendo) { %>
+                <script src="/Scripts/kendo/kendo.custom.min-1.0.1.js"></script>
+            <% } else { %>
+                <script src="/Scripts/kendo/kendo.core.min-1.0.0.js"></script>           
+            <% }%>
+
+        </asp:PlaceHolder>
+        
+        <asp:PlaceHolder runat="server">
+            <% if (oldCacheBusting) { %>
+                <% =BundleHelper.WriteTagElementsFromFile("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/",vertical + "/Scripts/bundle/common.js") %>
+                <% =BundleHelper.WriteTagElementsFromFile("~" + vertical + "/Scripts/vertical.txt", "/",vertical + "/Scripts/bundle/vertical.js") %>
+            <% } else { %>
+                <% if (HttpContext.Current.IsDebuggingEnabled) { %>
+                    <%= GetFiles("~/SharedUI/CommonJS.txt", "/SharedUI/Scripts/","js") %>
+                    <%= GetFiles("~" + vertical + "/Scripts/vertical.txt", "/","js") %>
+                <% } else { %>
+                    <assets:commonjs runat="server" id="commonjs"></assets:commonjs>
+                    <assets:verticaljs runat="server" id="verticaljs"></assets:verticaljs>
+                <% } %> 
+            <% }%>
+        </asp:PlaceHolder>
+
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+        <asp:PlaceHolder runat="server">
+            <%--SalesForce exact target info collect--%>
+            <script type="text/javascript" src="/Scripts/collect/collect-1.0.0.js"></script>
+            <script type="text/javascript">
+                    _etmc.push(["setOrgId", "10324535"]);
+                    _etmc.push(["setUserInfo", { "ID": _AnalyticsFacts_.Id }]);
+            </script>            
+
+            <asp:ContentPlaceHolder ID="ProductRecomendations" runat="server"></asp:ContentPlaceHolder>
+
+            <% Response.Write(this.GetAsset("FooterAssets",locale)); %>
+            <!-- Adobe DTM -->
+            <script type="text/javascript">_satellite.pageBottom();</script>
+
+        </asp:PlaceHolder>
+
+    </form>
+</body>
+</html>

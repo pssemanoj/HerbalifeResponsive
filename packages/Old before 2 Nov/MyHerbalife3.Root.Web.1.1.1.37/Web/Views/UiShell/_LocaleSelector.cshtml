@@ -1,0 +1,66 @@
+﻿@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@model MyHerbalife3.Shared.ViewModel.Models.NavigationItemModel
+
+@{ 
+    var globalContext = HttpContext.Current.ApplicationInstance as IGlobalContext;
+    var locale = UICulture;
+
+    if (globalContext != null && globalContext.CultureConfigurationProvider != null)
+    {
+        var localesFromConfig = globalContext.CultureConfigurationProvider.GetAllByLocale(UICulture);
+        if (localesFromConfig.Any())
+        {
+            var parts = Request.Url.Host.Split('.');
+            if (parts.Length > 1)
+            {
+                var prefixConfiguration = localesFromConfig.Where(l => l.Value.Prefix.Equals(parts[0], StringComparison.InvariantCultureIgnoreCase));
+                if (prefixConfiguration.Any())
+                {
+                    locale = prefixConfiguration.FirstOrDefault().Key;
+                }
+            }
+        }
+    }
+}
+
+<section id="locales">
+    <div class="wrap">
+        <a href="#hl" id="closeLocalSel">
+            <i class="icon-x"></i>
+        </a>
+    </div>
+
+    @if (Model == null)
+    {
+        <!-- no data, can't render selector -->
+    }
+    else if (Model.Children == null || !Model.Children.Any())
+    {
+        <!-- no child nodes in data, can't render selector -->
+    }
+    else
+    {
+        <div class="locales-wrap">
+            @{int i = 0;} @*var to place IDS in the locale selectors*@
+            @foreach (var item in Model.Children)
+            {
+                <div class="locales-drop" id="locales-drop-@i">
+                    <h4 class="black">@item.Text</h4>
+                    <select class="localeSelector">
+                        <option value="" selected="selected"></option>
+                        @if (item.Children != null && item.Children.Any())
+                        {
+                            foreach (var child in item.Children)
+                            {
+                                string selected = child.Url.Equals(locale, StringComparison.OrdinalIgnoreCase) ? "selected='selected'" : "";
+                                <option value="@child.Url" @selected>@child.Text</option>
+                            }
+                        }
+                    </select>
+                </div>
+                        i++;
+            }
+        </div>
+    }
+
+</section>

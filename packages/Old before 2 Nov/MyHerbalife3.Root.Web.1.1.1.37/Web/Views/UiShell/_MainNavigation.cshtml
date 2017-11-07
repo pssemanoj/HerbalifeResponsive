@@ -1,0 +1,46 @@
+﻿@model MyHerbalife3.Shared.ViewModel.Models.NavigationItemModel
+
+@*    @if (Model != null)
+    {
+        ViewContext.NavigationTree(Model, maxDepth: 3);
+    }*@
+
+@if (Model == null)
+{
+    <!-- no data, can't render menu -->
+}
+else if (Model.Children == null || !Model.Children.Any())
+{
+    <!-- no child nodes in data, can't render menu -->
+}
+else
+{
+
+    <ul class="hrblMenu" id="topNav" role="menubar" tabindex="-1">
+        @{int i = 0;} @*var to place IDS in the locale selectors*@
+        @foreach (var item in Model.Children.Where(c => c.IsHidden == false))
+        {
+            <li role="menuitem" tabindex="-1" aria-haspopup="true" data-bind="events: { mouseover: openLevel, mouseout: openLevel }">
+                <span data-bind="click: openLevel" id="firstlevel-@i">
+                    <span>
+                        @item.Text
+                    </span>
+                </span>
+                @if (item.Children != null && item.Children.Any())
+                {
+                    <ul role="menu" tabindex="-1" style="display: none;">
+                        @{int j = 0;} @*var to place IDS in the locale selectors*@
+                        @foreach (var child in item.Children.Where(c => c.IsHidden == false))
+                        {
+                            <li role="menuitem" tabindex="-1" id="firstlevel-@i-secondlevel-@j">
+                                <a href="@child.Url" target="@child.Target" title="@child.Description"><i class="@child.CssClass"></i>@child.Text</a>
+                            </li>
+                            j++;
+                        }
+                    </ul>
+                }
+            </li>
+            i++;
+        }
+    </ul>
+}

@@ -1,0 +1,22 @@
+
+        /* Order Status Labels
+        ================================================== */
+
+        @mixin status-labels ($msize: 10px, $tsize: 11px, $pad: 2px 10px, $max: 110px) {
+                @include border-radius(3px);
+                color: $white;
+                font-size: $msize;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 14px;
+                margin-left: 0;
+                padding: $pad;
+                display: inline-block;
+                max-width: $max;
+                &.green, &.complete { background-color: $green; }
+                &.orange, &.action-needed, &.processing { background-color: $orange; }
+                &.red, &.cancelled { background-color: $red; }
+                &.grey, &.pending, &.new, &.inactive { background-color: $dimgrey; }
+
+                @include breakpoint($tablet) { font-size: $tsize; } 
+        }

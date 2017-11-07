@@ -1,0 +1,45 @@
+﻿@using MyHerbalife3.Shared.Infrastructure
+@using MyHerbalife3.Shared.ViewModel.Models
+@{
+    var navigationData = ViewData[Constants.MainNavigationKey] as NavigationItemModel;
+}
+
+@if (navigationData == null)
+{
+    <!-- no data, can't render menu -->
+}
+else if (navigationData.Children == null || !navigationData.Children.Any())
+{
+    <!-- no child nodes in data, can't render menu -->
+}
+else
+{
+ <ul id="top_Nav" role="menubar" tabindex="-1">
+     <!--BROWN TOP NAV CONTROL CONTENT PAGES -->
+        @foreach (var item in navigationData.Children)
+        {
+            <li role="menuitem" tabindex="-1" aria-haspopup="true"><a href="@item.Url" target ="@item.Target" title="@item.Description">@Html.Raw(item.Text)</a>
+                @if (item.Children != null && item.Children.Any())
+                {
+                <ul role="menu" tabindex="-1">
+                    @foreach (var child in item.Children)
+                    {
+                        var hasChildren = child.Children != null && child.Children.Any();
+                        <li role="menuitem" tabindex="-1"><a href="@child.Url" target ="@child.Target"  title="@item.Description">@Html.Raw(child.Text) @if(hasChildren){ <span class="k-icon k-i-arrow-e"></span> } </a>
+                            @if (hasChildren)
+                            {
+                            <ul role="menu" tabindex="-1">
+                                @foreach (var child2 in child.Children)
+                                {
+                                    <li role="menuitem" tabindex="-1"><a href="@child2.Url" target ="@child2.Target"  title="@child.Description">@Html.Raw(child2.Text)</a></li>
+                                }
+                            </ul>
+                            }
+                        </li>                    
+                    }
+                </ul>
+                }
+            </li>
+        }
+    </ul>
+}

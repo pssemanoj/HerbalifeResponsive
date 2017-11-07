@@ -1,0 +1,1225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HL.Common.ValueObjects</name>
+    </assembly>
+    <members>
+        <member name="T:HL.Common.ValueObjects.Address">
+            <summary>
+            Encapsulates an address
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.Line1">
+            <summary>
+            Gets or sets the first line of the address.
+            </summary>
+            <value>The first line of the address.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.Line2">
+            <summary>
+            Gets or sets the second line of the address.
+            </summary>
+            <value>The second line of the address.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.Line3">
+            <summary>
+            Gets or sets the third line of the address.
+            </summary>
+            <value>The third line of the address.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.Line4">
+            <summary>
+            Gets or sets the fourth line of the address.
+            </summary>
+            <value>The fourth line of the address.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.City">
+            <summary>
+            Gets or sets the city.
+            </summary>
+            <value>The city.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.CountyDistrict">
+            <summary>
+            Gets or sets the county.
+            </summary>
+            <value>The county.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.StateProvinceTerritory">
+            <summary>
+            Gets or sets the state or province.
+            </summary>
+            <value>The state or province.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.Country">
+            <summary>
+            Gets or sets the country.
+            </summary>
+            <value>The 2 letter ISO country code.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address.PostalCode">
+            <summary>
+            Gets or sets the postal / zip code.
+            </summary>
+            <value>The postal / zip code.</value>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Address_V01">
+            <summary>
+            Encapsulates an address
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address_V01.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address_V01"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address_V01.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address_V01"/> class.
+            </summary>
+            <param name="line1"></param>
+            <param name="line2"></param>
+            <param name="line3"></param>
+            <param name="line4"></param>
+            <param name="city"></param>
+            <param name="countyDistrict"></param>
+            <param name="stateProvinceTerritory"></param>
+            <param name="country"></param>
+            <param name="postalCode"></param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V01.TypeOfAddress">
+            <summary>
+            address type
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Address_V02">
+            <summary>
+            Encapsulates an address
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address_V02.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address_V01"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address_V02.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,HL.Common.ValueObjects.AddressType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address_V01"/> class.
+            </summary>
+            <param name="line1"></param>
+            <param name="line2"></param>
+            <param name="line3"></param>
+            <param name="line4"></param>
+            <param name="city"></param>
+            <param name="countyDistrict"></param>
+            <param name="stateProvinceTerritory"></param>
+            <param name="country"></param>
+            <param name="postalCode"></param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.TypeOfAddress">
+            <summary>
+            The type of this address. (Home, office, etc.)
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.To">
+            <summary>
+            The To line (addressee)
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.IsPrimary">
+            <summary>
+            Gets or sets a value indicating whether this instance is primary.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is primary; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.IsValidated">
+            <summary>
+            Gets or sets a value indicating whether this instance is validated.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is validated; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.IsActive">
+            <summary>
+            Gets or sets a value indicating whether this instance is an active address.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is active; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.CareOf">
+            <summary>
+            The care of name .
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.Building">
+            <summary>
+            The Building name/number .
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V02.Suburb">
+            <summary>
+            The Suburb name.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.AddressCollection">
+            <summary>
+            A list of addresses
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.AddressCollection.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.AddressCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.AddressCollection.#ctor(System.Collections.Generic.IEnumerable{HL.Common.ValueObjects.Address})">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address"/> class.
+            </summary>
+            <param name="addresses">The payments.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Address_V03">
+            <summary>
+            Encapsulates an address
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Address_V03.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Address_V03"/> class.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V03.Country">
+            <summary>
+            Gets or sets the country.
+            </summary>
+            <value>The 2 letter ISO country code.</value>
+            <remarks> This property overrides the base one to let Country accecpt null values.
+            It caused a problem in cases which Country was optional. Wcf Deserializer failed to create
+            an address with null value for its country.</remarks>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Address_V03.IsVerified">
+            <summary>
+            If address is verified.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.AddressType">
+            <summary>
+            Type of address (home, office, etc.)
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.Unknown">
+            <summary>
+            Unknown or undefined type of address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.Mailing">
+            <summary>
+            Mailing address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.ShipTo">
+            <summary>
+            Ship to address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.BillTo">
+            <summary>
+            Bill to address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.PermanentLegal">
+            <summary>
+            Permanent legal address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.Business">
+            <summary>
+            Business address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.DeliverTo">
+            <summary>
+            Delivery address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.MailingLocal">
+            <summary>
+            Mailing address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.PermanentLegalLocal">
+            <summary>
+            Permanent legal local address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.BusinessLocal">
+            <summary>
+            Business local address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.Home">
+            <summary>
+            Home address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.HomeLocal">
+            <summary>
+            Local home address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.CustomerFacing">
+            <summary>
+            Customer facing address.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.All">
+            <summary>
+            All 
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.AddressType.NutritionClub">
+            <summary>
+            Nutrition Club  type of address.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.AmountBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.AmountBase"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.AmountBase.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.AmountBase.Currency">
+            <summary>
+            Gets or sets the currency.
+            </summary>
+            <value>The currency.</value>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Amount_V01">
+            <summary>
+            Implements a basic Amount version, containing a Value (amount) and currency
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Amount_V01.#ctor(System.Decimal,HL.Common.ValueObjects.CurrencyType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Amount_V01"/> class.
+            </summary>
+            <param name="value">The value.</param>
+            <param name="currency">The currency.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.CountryType">
+            <summary>
+            Encapsulates a country value
+            </summary>
+            <remarks>
+            <para>
+            This class does an imperfect job at mapping back from ISO country code to HMS / Herbalife code. 
+            The reason is that there are potentially multiple HMS codes that map to a single ISO code, so reversing is ambigous.
+            See xxhl.xhl_dm_country_mapping.
+            </para>
+            <para>
+            The countries subject to ambiguity are: China CN - (CH, CN), UnitedKingdom GB - (UK, JE, GK, IM), Greece GR - (HE, GR), Russia RU - (RS, RU)
+            </para></remarks>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.CountryType"/> class.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="name">The name.</param>
+            <param name="hmsCountryCode">The HMS country code.</param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.CountryType"/> class.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="name">The name.</param>
+            <param name="hmsCountryCode">The HMS country code.</param>
+            <param name="timeZoneName">Windows name of the master time zone for this country.</param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.CountryType"/> class.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="name">The name.</param>
+            <param name="hmsCountryCode">The HMS country code.</param>
+            <param name="timeZoneName">Windows name of the master time zone for this country.</param>
+             <param name="displayTimeZone">Adjust DST.</param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.Parse(System.String)">
+            <summary>
+            Parses the 2 letter ISO country code and returns the corresponding HL.Common.ValueObjects.CountryType
+            </summary>
+            <param name="iso2CountryCode">The iso2 country code.</param>
+            <returns>
+            HL.Common.ValueObjects.CountryType corresponding to the key
+            </returns>
+            <throws><typeparamref name="System.ArgumentOutOfRangeException.ArgumentOutOfRangeException"/></throws>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.TryParse(System.String,HL.Common.ValueObjects.CountryType@)">
+            <summary>
+            Attempts to parse the 2 letter ISO country code and returns the corresponding HL.Common.ValueObjects.CountryType
+            </summary>
+            <param name="iso2CountryCode">The iso2 country code.</param>
+            <param name="countryType">A reference to the <see cref="T:HL.Common.ValueObjects.CountryType"/> result.</param>
+            <returns>
+            	<c>true</c> if the a value corresponding to the key exists, <c>false</c> otherwise.
+            </returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.ParseHerbalifeCode(System.String)">
+            <summary>
+            Parses the 2 letter Herbalife proprietary country code and returns the corresponding HL.Common.ValueObjects.CountryType
+            </summary>
+            <param name="herbalifeCountryCode">The herbalife country code.</param>
+            <returns>
+            HL.Common.ValueObjects.CountryType corresponding to the key
+            </returns>
+            <throws><typeparamref name="System.ArgumentOutOfRangeException.ArgumentOutOfRangeException"/></throws>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.TryParseHerbalifeCode(System.String,HL.Common.ValueObjects.CountryType@)">
+            <summary>
+            Attempts to parse the 2 letter Herbalife proprietary country code and returns the corresponding HL.Common.ValueObjects.CountryType
+            </summary>
+            <param name="herbalifeCountryCode">The herbalife country code.</param>
+            <param name="countryType">A reference to the <see cref="T:HL.Common.ValueObjects.CountryType"/> result.</param>
+            <returns>
+            	<c>true</c> if the a value corresponding to the key exists, <c>false</c> otherwise.
+            </returns>
+            <remarks>Reference xxhl.xhl_dm_country_mapping in HMS.</remarks>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CountryType.Key">
+            <summary>
+            Gets or sets the key ISO 2 letter country code.
+            </summary>
+            <value>The key.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CountryType.Name">
+            <summary>
+            Gets or sets the name of the country.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CountryType.HmsCountryCodes">
+            <summary>
+            The list of Herbalife Country Codes used in Oracle / HMS.
+            </summary>
+            <remarks>Herbalife uses propriatary "county codes" in Oracl/HMS .
+            A list is necessary because for a given ISO code there may be multiple HL codes.
+            Consuming clients should NOT assume that the first code is the one to use.</remarks>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CountryType.TimeZoneName">
+            <summary>
+            Windows name of the master time zone for this country.
+            There will be only one time zone per country which will be considered
+            the master time zone.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CountryType.DisplayTimeZoneName">
+            <summary>
+            To adjust local time for countries which do not have DST.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
+            <returns>
+            true if the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>; otherwise, false.
+            </returns>
+            <exception cref="T:System.NullReferenceException">The <paramref name="obj"/> parameter is null.</exception>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.GetHashCode">
+            <summary>
+            Serves as a hash function for a particular type.
+            </summary>
+            <returns>
+            A hash code for the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.All">
+            <summary>
+            Returns all possible ISO 2 countries representable by this object
+            </summary>
+            <returns>A <see cref="T:HL.Common.ValueObjects.CountryType"/></returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.AllHlCountryCodes">
+            <summary>
+            Returns all possible Herbalife 2 letter country codes
+            </summary>
+            <returns>An enumerable object yielding every Herbalife (NOT ISO2 compliant) country code </returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CountryType.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:HL.Common.ValueObjects.CurrencyType">
+            <summary>
+            Represents a currency type, using ISO 4217 as a basis
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.Parse(System.String)">
+            <summary>
+            Parses the iso3CurrencyCode and returns the corresponding HL.Catalog.ValueObjects.CurrencyType
+            </summary>
+            <param name="iso3CurrencyCode">The iso3 currency code.</param>
+            <returns>
+            HL.Catalog.ValueObjects.CurrencyType corresponding to the key
+            </returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.TryParse(System.String,HL.Common.ValueObjects.CurrencyType@)">
+            <summary>
+            Attempts to parse the iso3CurrencyCode and sets the corresponding HL.Catalog.ValueObjects.CurrencyType.
+            </summary>
+            <param name="iso3CurrencyCode">The iso3 currency code.</param>
+            <param name="currencyType">Type of the currency.</param>
+            <returns>True if the parsing succeeded, false otherwise.</returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
+            <returns>
+            true if the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>; otherwise, false.
+            </returns>
+            <exception cref="T:System.NullReferenceException">The <paramref name="obj"/> parameter is null.</exception>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.GetHashCode">
+            <summary>
+            Serves as a hash function for a particular type.
+            </summary>
+            <returns>
+            A hash code for the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.All">
+            <summary>
+            Enumerates all possible values for this type.
+            </summary>
+            <returns>An enumerator which will enumerate all values of this type</returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.CurrencyType.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CurrencyType.Key">
+            <summary>
+            Gets or sets the 3 letter ISO 4217 code.
+            </summary>
+            <value>The 3 letter ISO 4217 code.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CurrencyType.Name">
+            <summary>
+            Gets or sets the currency's name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.CurrencyType.Code">
+            <summary>
+            Gets or sets the ISO 4217 numeric code.
+            </summary>
+            <value>The code.</value>
+        </member>
+        <member name="T:HL.Common.ValueObjects.DeliveryOptionType">
+            <summary>
+            DeliveryOptionType
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.DeliveryOptionType.Unknown">
+            <summary>
+            type unknown
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.DeliveryOptionType.Shipping">
+            <summary>
+            is shipping
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.DeliveryOptionType.Pickup">
+            <summary>
+            is pickup
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.DeliveryOptionType.ShipToCourier">
+            <summary>
+            is ShipTo Courier
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.DeliveryOptionType.PickupFromCourier">
+            <summary>
+            pickup from Courier
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.EmailAddress">
+            <summary>
+            Email Address
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddress.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddress"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddress.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddress"/> class.
+            </summary>
+            <param name="address">The email address.</param>
+            <param name="isPrimary">if set to <c>true</c> [is primary].</param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.EmailAddress.Address">
+            <summary>
+            Email Account
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.EmailAddress.IsPrimary">
+            <summary>
+            Is Primary
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.EmailAddressBase">
+            <summary>
+            Class implementation of  EmailAddressBase
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddressBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddressBase"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddressBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddressBase"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.EmailAddress_V01">
+            <summary>
+            Class implementaion of EmailAddress_V01
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddress_V01.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddress_V01"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.EmailAddress_V01.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.EmailAddress_V01"/> class.
+            </summary>
+            <param name="address">The email address.</param>
+            <param name="isPrimary">if set to <c>true</c> [is primary].</param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.EmailAddress_V01.Address">
+            <summary>
+            Email id
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.EmailAddress_V01.IsPrimary">
+            <summary>
+            Is Primary
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FileStream_V01.Data">
+            <summary>
+            Gets or sets the data contained in the file.
+            </summary>
+            <value>The data stream as a byte array.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FileStream_V01.ID">
+            <summary>
+            Gets or sets the unique identifier of the file or stream.
+            </summary>
+            <value>The ID of the file / stream.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FileStream_V01.MimeType">
+            <summary>
+            Gets or sets the type of the MIME.
+            </summary>
+            <value>The type of the MIME.</value>
+        </member>
+        <member name="T:HL.Common.ValueObjects.FreightCostBasisType">
+            <summary>
+            Basis on which the freight cost is calculated.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.FreightCostBasisType.Full">
+            <summary>
+            Consider Full Cost
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.FreightCostBasisType.Discounted">
+            <summary>
+            Consider Discounted Cost.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.FreightCostBasisType.None">
+            <summary>
+            Do not consider any cost, meaning no freight.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.FreightMethodType">
+            <summary>
+            A base type for Freight method type.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.FreightMethodType.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.FreightMethodType"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.FreightMethodType.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.FreightMethodType"/> class.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.ID">
+            <summary>
+            Get or Set the Freight method id.
+            </summary>
+            <value>Freight method id.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.Name">
+            <summary>
+            Get or Set the name.
+            </summary>
+            <value>Name.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.Rate">
+            <summary>
+            Get or Set the rate.
+            </summary>
+            <value>Rate.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.MinimumCharge">
+            <summary>
+            Get or Set the rate threshold.
+            </summary>
+            <value>Rate threshold.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.MinWeight">
+            <summary>
+            Get or Set the min weight.
+            </summary>
+            <value>Min weight.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.MaxWeight">
+            <summary>
+            Get or Set the max weight.
+            </summary>
+            <value>Max weight.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.ExemptAmount">
+            <summary>
+            Get or Set the freight exempt amount.
+            </summary>
+            <value>Max weight.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.FreightMethodType.FreightCostBasis">
+            <summary>
+            Get or Set the freight cost basis type.
+            </summary>
+            <value>Freight Cost Basis</value>
+        </member>
+        <member name="T:HL.Common.ValueObjects.FreightMethodCollection">
+            <summary>
+            A list of freight method types.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.IParsable`1">
+            <summary>
+            Describes an object that can be constructed by parsing a string "key" value
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HL.Common.ValueObjects.IParsable`1.Parse(System.String)">
+            <summary>
+            Parses the specified key.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The object constructed from the key</returns>
+            <exception cref="T:System.ArgumentException">Thrown if the key does not match any of the defined values allowing construction of the type (T) </exception>
+        </member>
+        <member name="M:HL.Common.ValueObjects.IParsable`1.TryParse(System.String,`0@)">
+            <summary>
+            Tries to parse the key and set the <paramref name="value"/>'s value.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <returns>True if parsing succeeded; False otherwise</returns>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Name_V01">
+            <summary>
+            Encapsulates a name
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Name_V01.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Name_V01"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Name_V01.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Name_V01"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Name_V01.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Name_V01"/> class.
+            </summary>
+            <param name="first">The first.</param>
+            <param name="last">The last.</param>
+            <param name="middle">The Middle.</param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Name_V01.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Name_V01"/> class.
+            </summary>
+            <param name="first">The first.</param>
+            <param name="last">The last.</param>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Name_V01.First">
+            <summary>
+            First name
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Name_V01.Last">
+            <summary>
+            Last name
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Name_V01.Middle">
+            <summary>
+            Middle name
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.OrderCategoryType">
+            <summary>
+            Enumerates the various order categories.
+            Describes the sales channel.
+            It will be RSO for regular sales orders and APF for APF orders and ETO for Event tickets.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.OrderCategoryType.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.OrderCategoryType.RSO">
+            <summary>
+            Regular Sales Orders
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.OrderCategoryType.APF">
+            <summary>
+            APF Orders
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.OrderCategoryType.ETO">
+            <summary>
+            Event Ticket Orders
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.OrderCategoryType.HSO">
+            <summary>
+            HAP Orders
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.PhoneNumber_V01">
+            <summary>
+            class implementation of PhoneNumber_V01
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.PhoneNumber_V02">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.PhoneNumberBase">
+            <summary>
+            Class implementation of  PhoneNumberBase
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.PhoneNumberBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.PhoneNumberBase"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.PhoneNumberBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.PhoneNumberBase"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.PhoneNumber_V03">
+            <summary>
+            implementation of class PhoneNumber_V03
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.PhoneNumber_V03.#ctor">
+            <summary>
+            initializes a new instance of the <see cref="T:HL.Common.ValueObjects.PhoneNumber_V03"/> class.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.CountryPrefix">
+            <summary>
+            coutry code
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.AreaCode">
+            <summary>
+            area code
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.Number">
+            <summary>
+            phone number
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.PhoneType">
+            <summary>
+            phone type
+            <example>Day | Evening | Fax | Mobile</example>
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.IsPrimary">
+            <summary>
+            flag to indicate whether its primary or not
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.PhoneNumber_V03.Extention">
+            <summary>
+            extention if any
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.PhoneType">
+            <summary>
+            Type of phone number
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.PhoneType.Day">
+            <summary>
+            Day time
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.PhoneType.Evening">
+            <summary>
+            Evening Phone
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.PhoneType.Fax">
+            <summary>
+            Fax number
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.PhoneType.Mobile">
+            <summary>
+            Mobile phone number
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.PhoneType.NotSpecified">
+            <summary>
+            Not specified
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.ProductType.Product">
+            <summary>
+            Product = P
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.ProductType.Literature">
+            <summary>
+            Literature = L
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.ProductType.PromoAccessory">
+            <summary>
+            Promo or Accessory = A
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.ProductType.EventTicket">
+            <summary>
+            Event Ticket = E
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Scheme">
+            <summary>
+                Defines the nature of the relationship of a person to Herbalife
+            'herbalife.com._2007._12._121.HL.Common.ValueObjects'
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.Scheme.Distributor">
+            <summary>
+                A distributor relationship with Herbalife, allowing resale and growing downline.
+            </summary>
+        </member>
+        <member name="F:HL.Common.ValueObjects.Scheme.Member">
+            <summary>
+                A membership only relationship with herbalife, allowing purchase and discounts for self consumption only.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.SchemeExtension">
+            <summary>
+            Extension method for dealing with scheme
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.SchemeExtension.ToScheme(System.String)">
+            <summary>
+                Parses a scheme string and returns the scheme correpsonding to it
+            </summary>
+            <param name="scheme"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TaxIdentification">
+            <summary>
+            TaxIdentification
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification.ID">
+            <summary>
+            unique ID
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification.IDType">
+            <summary>
+            The Tax Identification Code
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification.CountryCode">
+            <summary>
+            Country Code
+            </summary>
+            <remarks>ISO 2 letter country code</remarks>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TaxIdentificationBase">
+            <summary>
+            base class implementation of TaxIdentification
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.TaxIdentificationBase"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.TaxIdentificationBase"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TaxIdentification_V01">
+            <summary>
+            class implementaion of TaxIdentification_V01
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentification_V01.#ctor">
+            <summary>
+            initializes a new instance of the <see cref="T:HL.Common.ValueObjects.TaxIdentification_V01"/> class.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification_V01.ID">
+            <summary>
+            unique ID
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification_V01.IDType">
+            <summary>
+            The Tax Identification Code
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentification_V01.CountryCode">
+            <summary>
+            Country Code
+            </summary>
+            <remarks>ISO 2 letter country code</remarks>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TaxIdentificationType">
+            <summary>
+            Tax Identification Id Type
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.Key">
+            <summary>
+            Key - 
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.IsDefault">
+            <summary>
+            Is default
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.EffectiveDate">
+            <summary>
+            Effect date of this TIN
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.ExpirationDate">
+            <summary>
+            Date of Expiration
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TaxIdentificationType.ExemptFlag">
+            <summary>
+            Exempt Flag
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationType.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Tax Identification type
+            </summary>
+            <param name="tincode"></param>
+            <param name="name"></param>
+            <param name="isDefault"></param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationType.#ctor(System.String)">
+            <summary>
+            TaxIdentificationType
+            </summary>
+            <param name="tincode"></param>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationType.Parse(System.String)">
+            <summary>
+            Parse function 
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TaxIdentificationType.TryParse(System.String,HL.Common.ValueObjects.TaxIdentificationType@)">
+            <summary>
+            TryParse
+            </summary>
+            <param name="key"></param>
+            <param name="TaxIdType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TrackedValueBase">
+            <summary>
+            class implementaion of TrackedValue
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TrackedValueBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:TrackedValueBase&lt;T&gt;"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.TrackedValueBase.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="!:TrackedValueBase&lt;T&gt;"/> class.
+            </summary>
+            <param name="version">The version.</param>
+        </member>
+        <member name="T:HL.Common.ValueObjects.TrackedValue_V01`1">
+            <summary>
+            class implementation of TrackedValue_V01
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TrackedValue_V01`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.TrackedValue_V01`1"/> class.
+            </summary>
+        </member>
+        <member name="M:HL.Common.ValueObjects.TrackedValue_V01`1.#ctor(System.Int32,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.TrackedValue_V01`1"/> class.
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TrackedValue_V01`1.ExternalID">
+            <summary>
+            the unique ID to identify the object
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TrackedValue_V01`1.Order">
+            <summary>
+            order of the object if it is in any sequence
+            <remarks>order starts from Zero (0)</remarks>
+            <example>0,1,2,3,..., int.MaxValue</example>
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.TrackedValue_V01`1.Value">
+            <summary>
+            the actual value object
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.Warehouse">
+            <summary>
+            A base type for a warehouse
+            </summary>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Warehouse.ID">
+            <summary>
+            Get or Set the Warehouse ID.
+            </summary>
+            <value>Warehouse ID.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Warehouse.Name">
+            <summary>
+            Get or Set the Warehouse Name.
+            </summary>
+            <value>Name.</value>
+        </member>
+        <member name="P:HL.Common.ValueObjects.Warehouse.Address">
+            <summary>
+            Get or Set the Warehouse Address.
+            </summary>
+            <value>Address.</value>
+        </member>
+        <member name="F:HL.Common.ValueObjects.Warehouse.FreightMethods">
+            <summary>
+            Get or Set the freight methods.
+            </summary>
+            <value>Freight Methods.</value>
+        </member>
+        <member name="M:HL.Common.ValueObjects.Warehouse.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Warehouse"/> class.
+            </summary>        
+        </member>
+        <member name="M:HL.Common.ValueObjects.Warehouse.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Common.ValueObjects.Warehouse"/> class.
+            </summary>
+        </member>
+        <member name="T:HL.Common.ValueObjects.WarehouseCollection">
+            <summary>
+            A list of warehouses.
+            </summary>
+        </member>
+    </members>
+</doc>

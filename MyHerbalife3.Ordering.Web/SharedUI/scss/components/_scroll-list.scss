@@ -1,0 +1,111 @@
+	
+	/* Scroll List
+	================================================== */
+
+	label.scroll-label {
+		display: block;
+		width: 100%;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		padding: 5px;
+		background-color: $dimgrey;
+		color: $white;
+		box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+	} 
+
+	//Added heights for scrolling. Last version did not have a height.
+	@mixin scroll-list ($mheight:240px, $theight: 300px, $dheight: 300px, $eheight:300px) {
+		height: $mheight;
+		margin: 0;
+		width: 100%;
+		overflow-y: scroll;
+		border: 1px solid $grey;
+		position: relative;
+		@include box-shadow(inset 0px 5px 20px -8px rgba(0,0,0,0.3));
+		@include breakpoint($tablet) { height: $theight; }
+		@include breakpoint($desktop) { height: $dheight; }
+		@include breakpoint($ext-desktop) { height: $eheight; }
+
+		.no-results {
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			margin-top: -10px;
+			padding: 0 $gutter;
+		}
+
+		&.no-scroll {
+			overflow-y: hidden;
+			&:before { 
+				//content: "Please select one"; 
+			}
+		}
+		
+		li {
+			display: block;
+			border-top: 1px solid transparent;
+			border-bottom: 1px solid $offwhite;
+			@include clearfix;
+
+			&:hover {
+				background-color: $offwhite;
+				border-top-color: $lightgrey;
+				border-bottom-color: $lightgrey;
+			}
+
+			&.selected {
+				background-color: $offwhite;
+				border-top: 1px solid $lightgrey;
+				border-bottom: 1px solid $softgrey;
+				a {
+					&:after { 
+						content: "\e3ed";
+						color: $blue; 
+					}
+				}
+			}
+			a {
+				position: relative;
+				display: block;
+				color: $charcoalgrey;
+				padding: 15px 50px 15px 10px; 
+				> div {
+					display: inline-block;
+					vertical-align: middle;
+					max-width: 170px;
+					font-size: 12px;
+					margin-bottom: 10px;
+					@include breakpoint($tablet) { 
+						font-size: 14px;
+						margin-right: 40px; 
+						margin-bottom: 0;
+					}
+					@include breakpoint($desktop) { max-width: none; }
+					span.note { margin: 0; font-size: 12px; }
+					img {
+						width: 40px;
+						@include breakpoint($tablet) { width: 60px; }
+					}
+					&:first-child { 
+						margin-right: 10px;
+						text-align: center;
+					}
+				}
+				&:after {
+					font-family: $myherbalife;
+					font-size: 30px;
+					position: absolute;
+					right: 12px;
+					top: 50%;
+					margin-top: -7px;
+					content: "\e0e9";
+					color: $dimgrey;
+					//display: none;
+					@include breakpoint($tablet) { display: block; }
+				}
+			}
+		}
+	}

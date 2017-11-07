@@ -1,0 +1,34 @@
+
+	/* Custom Radio
+	================================================== */
+
+	@mixin radio($size: 16px, $padding: 26px, $indent: -13px) {
+		display:none;
+
+		& + label {
+		    display: block;
+		    padding-left: $padding;
+    		text-indent: $indent;
+		}
+
+		& + label:before {
+		  font-family: $myherbalife;
+		  display: inline-block;
+		  vertical-align: top;
+		  font-size: $size;
+		  cursor: pointer;
+		}
+
+		& + label:before { 
+			content: "\e0e9"; 
+			color: $dimgrey;
+			letter-spacing: 10px; 
+		}
+
+		&:checked {
+			& + label:before { 
+				content: "\e3ed"; 
+				color: $blue;
+			}
+		} 
+	}

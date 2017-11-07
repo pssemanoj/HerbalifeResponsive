@@ -1,0 +1,24 @@
+﻿@using MyHerbalife3.Shared.UI.Extensions
+
+<section wire-model="SessionMsgViewModel" wire-mode='own, "ieDeprecationMsg", true' data-bind="visible: isVisible" class="section-outdated_message" style="display: none">
+    <div class="browserVersion newBrowser" aria-hidden="false" role="banner">
+        <a class="close-icon" data-bind="click: closeMessage"><i class="icon-delete-fl-5"></i></a>
+        <h1>@this.LocalizeGlobal("HrblUI", "UnsupportedIEVersion")</h1>
+        <p>@this.LocalizeGlobal("HrblUI", "GetLatestUpgrading")</p>
+        <ul>
+            <li>
+                <a href="https://www.google.com/chrome/" target="_blank">
+                    <img src="/SharedUI/Images/fallback/google_chrome_logo-min.png" title="Download Google Chrome" />
+                    <span>@this.LocalizeGlobal("HrblUI", "InstallChrome")</span>
+                </a>
+            </li>
+            <li>
+
+                <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie" target="_blank">
+                    <img src="/SharedUI/Images/fallback/internet_explorer_logo-min.png" title="Download Internet Explorer" />
+                    <span>@this.LocalizeGlobal("HrblUI", "UpgradeIE")</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

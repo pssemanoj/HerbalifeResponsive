@@ -1,0 +1,83 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Shared.UI.Content
+@using MyHerbalife3.Shared.UI.Helper
+
+<!DOCTYPE html>
+<html class="myhl3">
+<head>
+    <!-- MASTER GREEN ROOT PAGES -->
+    <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" />
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Custom Development - DTS" />
+    <meta name="description" content="" />
+    <title>myHerbalife.com | @Page.Title</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="~/SharedUI/Images/favicon.ico" />
+
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/SharedUI/Images/mobile/h_apple-touch-icon.png" />
+    <!-- For first-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/SharedUI/Images/mobile/m_apple-touch-icon.png" />
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="~/SharedUI/Images/mobile/l_apple-touch-icon-precomposed.png" />
+    <!-- For nokia devices: -->
+    <link rel="shortcut icon" href="~/SharedUI/Images/mobile/l_apple-touch-icon.png" />
+
+
+    <!-- Styles
+        ================================================== -->
+    <link href="~/SharedUI/CSS/hrbl-font-icons/hrbl-font-icons-1.1.2.css" rel="stylesheet" type="text/css" />
+    @BundleHelper.RenderCoreStyles()
+
+    @RenderSection("HeadLinks", required: false)
+
+    @Html.Raw(SafeRender.ValidateContent("/Content/" + Culture + "/css/" + Culture + ".css", "<link rel='stylesheet' href='{0}' type='text/css' />"))
+
+
+    <!-- SCRIPTS
+    ================================================== -->
+    @BundleHelper.RenderScripts(BundleHelper.CommonScriptsBundleName)
+
+    @RenderSection("HeadScripts", required: false)
+
+    @BundleHelper.RenderScripts(BundleHelper.VerticalBundleName)
+
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+
+    <!-- support for content list -->
+    <script id="genericListTemplate" type="text/x-kendo-template" style="display:none;">
+        <li data-bind="html: body"></li>
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="~/SharedUI/Scripts/html5.js"></script>
+    <![endif]-->
+    @Html.Partial("_Analytics")
+
+
+</head>
+<body>
+  
+
+        @{
+            Html.RenderAction("Header", "UiShell");
+        }
+
+        
+        @RenderBody()
+        
+        <!-- Session Timeout Modal -->
+        <div class="hrblModal medium" id="idleLogout" style="display:none"></div>
+        <!-- /Session Timeout Modal -->
+ 
+    @Html.Partial("_ServerSignature")
+</body>
+</html>
+

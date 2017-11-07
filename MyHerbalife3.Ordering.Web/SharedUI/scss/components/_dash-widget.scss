@@ -1,0 +1,13 @@
+
+	/* Dashboard Widget
+	================================================== */
+
+	@mixin dash-widget { 
+	    width: 100%;
+	    @include white-block; 
+	    h3 { 
+	        text-align: center;
+	        color: $grey;
+	        @include breakpoint($desktop) { margin-top: 50px; }
+	    }
+	}

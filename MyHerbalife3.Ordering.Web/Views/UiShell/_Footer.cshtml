@@ -1,0 +1,16 @@
+﻿@model MyHerbalife3.Core.ContentProxyProvider.ValueObjects.ContentItemModel
+
+<!-- Begin Footer  -->
+
+@Html.Action("FooterNavigation","UiShell")
+
+@if (Model != null)
+{
+    <!-- value from @Model.OriginId -->
+    @Html.Raw(Model.Body)
+}
+else
+{
+    <!-- No content -->
+}
+<!-- End footer -->

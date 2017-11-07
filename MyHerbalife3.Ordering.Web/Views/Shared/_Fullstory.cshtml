@@ -1,0 +1,45 @@
+﻿
+@using HL.Common.Configuration
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+
+@{
+    var globalContext = (IGlobalContext)HttpContext.Current.ApplicationInstance;
+    var vertical = Settings.GetRequiredAppSetting("Spa.Vertical", "Root");
+
+    vertical = (vertical != "Root" ? "/" + vertical : "");
+}
+
+@if (Settings.GetRequiredAppSetting<bool>
+    ("FullStorySessionCaptureEnabled", false))
+    {
+    MyHerbalife3.Shared.ViewModel.Models.DistributorProfileModel u_Profile = globalContext.CurrentDistributor;
+
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'www.fullstory.com';
+        window['_fs_org'] = '2APBS';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return; }
+            g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function (c, d, i) {
+                if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+                    d = n.domain; while (1) {
+                        n.cookie = 'fs_uid=;domain=' + d +
+                        ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i
+                        < 0) break; d = d.slice(i + 1)
+                    }
+                }
+            };
+            @if (u_Profile != null)
+            {
+                @Html.Raw(string.Format("FS.identify('{2}', {{ displayName: '{0} {1}', email: '{2}@herbalife.com', ID_str: '{2}',  Vertical_str: '{3}', ServerName_str: '{4}'}});", u_Profile.FirstName, u_Profile.LastName, u_Profile.Id, vertical.Trim('/').Trim('\\'), Environment.MachineName));
+            }
+
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+    }

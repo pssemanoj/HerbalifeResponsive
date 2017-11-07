@@ -1,0 +1,61 @@
+﻿@using System.Web.Mvc.Html
+@using MyHerbalife3.Shared.Infrastructure
+@using MyHerbalife3.Shared.UI.Helpers
+@using MyHerbalife3.Shared.ViewModel.Models
+@model dynamic
+@{
+    var navigationData = ViewData[Constants.FooterLinksKey] as NavigationItemModel;
+    bool isFirst = true;
+
+    var allCountries = (new LocaleCountryLoader()).Load().ToList();
+
+    string currentCountryDisplay = allCountries.Where(c => c.Key == UICulture).Select(k => k.Value).FirstOrDefault();
+}
+
+<div id="FooterRibbon">
+    <span>@currentCountryDisplay</span>
+</div>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div id="FooterArea">
+
+        @if (navigationData == null)
+        {
+            <!-- no data, can't render footer links -->
+        }
+        else if (navigationData.Children == null || !navigationData.Children.Any())
+        {
+            <!-- no child nodes in data, can't render menu -->
+        }
+        else
+        {
+            <ul class="hrblLegacyFooterLinks" id="footerLinks">
+                @foreach (var item in navigationData.Children)
+                {
+                    if (!isFirst)
+                    {
+                    @:|
+                    }
+                    else
+                    {
+                        isFirst = false;
+                    }
+                    <a href="@item.Url" target ="@item.Target" title="@item.Description">@item.Text</a>
+                }
+            </ul>
+        }
+    </div>
+    
+}
+
+<div id="FooterText">
+
+    @Html.Action("LegacyFragment", "UiShell", new { contentPath = "footer.html", section = "home" })
+
+    @Html.Action("LegacyFragment", "UiShell", new { contentPath = "footer/footer-logos.html", section = "home" })
+</div>
+
+
+

@@ -1,0 +1,73 @@
+﻿@using MyHerbalife3.Core.ContentProxyProvider
+@using MyHerbalife3.Shared.Infrastructure
+@using MyHerbalife3.Shared.Infrastructure.Interfaces
+@using MyHerbalife3.Shared.Infrastructure.ValueObjects
+@using MyHerbalife3.Shared.UI.Helper
+@using MyHerbalife3.Shared.ViewModel.Models
+@using MyHerbalife3.Shared.ViewModel.ValueObjects;
+
+@{
+    var globalContext = (HttpContext.Current.ApplicationInstance as IGlobalContext);
+    var isMyHerbalife3Enabled = globalContext.CultureConfiguration.DefaultExperienceType != ExperienceType.Brown;
+
+    NavigationItemModel leftNavData = null;
+
+    var topNavData = ViewData[Constants.MainNavigationKey] as NavigationItemModel;
+    const string sectionName = "home";
+
+    if (topNavData != null)
+    {
+        var pageNavigationInfo = new PageNavigationInfo
+        {
+            MainNavigationData = topNavData
+        };
+
+        var navigationLoader = new ContentProxyProvider();
+        var legacyNavigationBuilder = new LegacyNavigationBuilder();
+
+        if (isMyHerbalife3Enabled)
+        {
+            pageNavigationInfo = (new PageNavigationInfo())
+                .SetMainNavigation(navigationLoader)
+                .EstablishImmediateOwnerNode(Roles.GetRolesForUser(), Request.Url);
+        }
+        else
+        {
+            pageNavigationInfo = (new PageNavigationInfo())
+                .SetMainNavigationFromLegacy(legacyNavigationBuilder)
+                .EstablishLegacyImmediateOwnerNode(2, Request.Url);
+        }
+
+        leftNavData = pageNavigationInfo.LeftNavOwner;
+    }
+}
+
+@if (leftNavData == null)
+{
+    <!-- no data, can't render left nav @sectionName -->
+}
+else if (leftNavData.Children == null || !leftNavData.Children.Any())
+{
+    <!-- no child nodes in data, can't render menu @sectionName -->
+}
+else
+{
+    <ul id="left_menu" class="leftMenuNew" role="menu" tabindex="-1">
+        <!--BROWN LEFT NAV CONTROL CONTENT PAGES -->
+        @foreach (var item in leftNavData.Children)
+        {
+            <li role="menuitem" tabindex="-1">
+                <a href="@item.Url" target="@item.Target" title="@item.Description">@Html.Raw(item.Text)</a>
+                @if (item.Children != null && item.Children.Any())
+                {
+                    <ul role="menu" tabindex="-1">
+                        @foreach (var child in item.Children)
+                        {
+                            <li role="menuitem" tabindex="-1"><a href="@child.Url" target="@child.Target" title="@item.Description"><i class="@child.CssClass"></i>@Html.Raw(child.Text)</a></li>
+                        }
+                    </ul>
+                }
+            </li>
+        }
+    </ul>
+}

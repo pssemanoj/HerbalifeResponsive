@@ -1,0 +1,84 @@
+﻿// =============
+// Modals
+// -----
+// This File contains styling for Modals
+//
+//==============
+
+.hrblModal, .hrblModalSkinOnly {
+    background-color: white;
+    border: none;
+    width: 100%;
+
+    div h2 { /* title properties read from parent */
+        color: inherit;
+        float: inherit;
+        line-height: inherit;
+        margin: inherit;
+        padding: inherit;
+        text-indent: inherit;
+    }
+
+    &.small {
+        max-width: $breakpoint-mobile;
+    }
+
+    &.medium {
+        max-width: $breakpoint-tablet;
+    }
+
+    &.large {
+        max-width: $breakpoint-desktop;
+    }
+
+    &.xlarge {
+        max-width: $breakpoint-ext-desktop;
+    }
+
+    img{ max-width: 100%; }
+
+    .bottomActBtns{ margin-bottom: 0;  }
+}
+
+.hrblModal {   
+
+    > div:first-child {
+        height: auto;
+        background: none;
+    }
+
+    input[type="text"],
+    select {
+        margin-bottom: 15px;
+    }
+
+    > div {
+        margin: 10px 0;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .columnCont img {
+        max-width: 100%;
+    }
+}
+
+.hrblModalSkinOnly {
+    padding: $gutter;
+    @include box-sizing(border-box);
+
+    h4{
+        margin-bottom: $gutter;
+    }
+
+    > div:first-child {
+        margin: 0;
+        min-height: 30px;
+    }
+
+    > div:first-child h2 {
+        font-size: 14px;
+    }
+}

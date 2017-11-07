@@ -1,0 +1,215 @@
+﻿// =============
+// Font Icons
+// -----
+// This File contains styling for the compondent: Font-icons, arent't they pretty?!
+//
+//==============
+
+//Do not change this name of font as some other styles reference it
+@font-face {
+  font-family: "myherbalife";
+  src: url('#{$font-url}myherbalife.eot');
+  src: url('#{$font-url}myherbalife.eot?#iefix') format('embedded-opentype'), url('#{$font-url}myherbalife.woff') format('woff'), url('#{$font-url}myherbalife.ttf') format('truetype'), url('#{$font-url}myherbalife.svg#herbalife') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+    content: attr(data-icon);
+    @extend [class^="icon-"]:before;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "myherbalife";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contacts-ln-3:before, .icon-address-book:before{
+  content: "\e03c";
+}
+.icon-cart-ln-4:before, .icon-add-to-cart:before{
+  content: "\e066";
+}
+.icon-alert-ln-1:before, .icon-alert:before {
+  content: "\e111";
+}
+.icon-arrow-circle-fl-4:before {
+  content: "\e511";
+}
+.icon-arrow-circle-fl-9:before {
+  content: "\e516";
+}
+.icon-arrow-left-ln-2:before , .icon-chevron-left:before{
+  content: "\e54b";
+}
+.icon-arrow-right-ln-2:before , .icon-chevron-right:before{
+  content: "\e54c";
+}
+.icon-award-ln-1:before, .icon-award-1:before {
+  content: "T";
+}
+.icon-signal-full-ln-1:before, .icon-bars:before, .icon-volume:before 
+{
+  content: "\e00f";
+}
+.icon-beauty-products-fl-1:before , .icon-beauty-products:before{
+  content: "\e558";
+}
+.icon-bubble-conversation-ln-5:before {
+  content: "]";
+}
+.icon-calendar-ln-1:before, .icon-calendar:before {
+  content: "\e107";
+}
+.icon-card-ln-1:before {
+  content: "\e239";
+}
+.icon-cart-ln-6:before {
+  content: "\e5ba";
+}
+.icon-book-ln-7:before, .icon-catalog:before {
+  content: "\e178";
+}
+.icon-chat-ln-2:before, .icon-check-circle:before{
+  content: "\e0f5";
+}
+.icon-pie-chart-ln-1:before, .icon-chart:before{
+  content: "\e131";
+}
+.icon-arrow-down-1:before , .icon-chevron-down:before{
+  content: "\e551";
+}
+.icon-arrow-up-1:before , .icon-chevron-up:before{
+  content: "\e552";
+}
+.icon-clipboard-ln-3:before, .icon-clipboard:before  {
+  content: "\e0ab";
+}
+.icon-setting-gear-ln-1:before, .icon-cog:before {
+  content: "\e0fe";
+}
+.icon-file-text-ln-1:before,.icon-copy:before  {
+  content: "\e548";
+}
+.icon-file-ln-1:before, .icon-document:before{
+  content: "\e0b4";
+}
+.icon-bank-notes-ln-1:before, .icon-dollars:before {
+  content: "\e11d";
+}
+.icon-arrow-circle-ln-29:before, .icon-down-circle:before {
+  content: "\e296";
+}
+.icon-hierarchy-ln-5:before, .icon-downline-reports:before {
+  content: "\e18d";
+}
+.icon-mail-ln-2:before, .icon-email:before{
+  content: "\e021";
+}
+.icon-preview-fl-1:before , .icon-eye:before {
+  content: "\e2b4";
+}
+.icon-file-text-ln-1:before,.icon-copy:before  {
+  content: "\e548";
+}
+.icon-globe-ln-1:before {
+  content: "\e13f";
+}
+.icon-house-ln-2:before, .icon-home:before  {
+  content: "\e14e";
+}
+.icon-logo-hl-stacked-fl-1:before , .icon-herbalife:before{
+  content: "\e534";
+}
+.icon-list-fl-1:before {
+  content: "\e466";
+}
+.icon-lock-ln-1:before {
+  content: "o";
+}
+.icon-microphone-ln-2:before, .icon-microphone:before {
+  content: "\e084";
+}
+.icon-minus-ln-3:before, .icon-minus-circle:before {
+  content: "\e0e9";
+}
+.icon-loading-ln-1:before, .icon-loading:before {
+  content: "\e0e3";
+}
+.icon-file-time-ln-1:before, .icon-order-history:before {
+  content: "\e0d4";
+}
+.icon-contacts-ln-1:before, .icon-people-2:before {
+  content: "\e03b";
+}
+.icon-add-ln-3:before, .icon-plus-circle:before  {
+  content: "\e0dd";
+}
+.icon-receipt-ln-3:before, .icon-price-list:before {
+  content: "\e06b";
+}
+.icon-printer-ln-1:before, .icon-printer:before {
+  content: "\e16d";
+}
+.icon-power-ln-3:before, .icon-switch:before {
+  content: "\e0eb";
+}
+.icon-shopping-ln-1:before, .icon-cart:before {
+  content: "\e06d";
+}
+.icon-hierarchy-ln-7:before, .icon-sitemap:before {
+  content: "\e18f";
+}
+.icon-sku-ln-1:before, .icon-sku:before {
+  content: "\e549";
+}
+.icon-clipboard-ln-1:before, .icon-tasks:before {
+  content: "\e0aa";
+}
+.icon-target-ln-1:before, .icon-target:before {
+  content: "\e19f";
+}
+.icon-ticket-ln-1:before, .icon-ticket-2:before {
+  content: "\e235";
+}
+.icon-academic-cap-ln-1:before, .icon-training:before{
+  content: "\e1a6";
+}
+.icon-academic-cap-ln-2:before {
+  content: "\e5af";
+}
+.icon-traffic-light-ln-1:before {
+  content: "\e1a1";
+}
+.icon-trophy-ln-1:before, .icon-trophy:before {
+  content: ".";
+}
+.icon-shirt-ln-1:before, .icon-tshirt:before{
+  content: "\e1aa";
+}
+.icon-user-ln-2:before, .icon-user:before{
+  content: "\e046";
+}
+.icon-delete-ln-4:before, .icon-x:before {
+  content: "\e0df";
+}
+.icon-delete-ln-5:before, .icon-x-circle:before {
+  content: "\e0e0";
+}
+.icon-id-ln-3:before, .icon-card:before {
+    content: "\e03f";
+}
+.icon-globe-ln-2:before, .icon-globe:before {
+    content: "\e14f";
+}
+.icon-file-sync-ln-1:before {
+    content: "\e0d1";
+}

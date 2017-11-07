@@ -1,0 +1,76 @@
+﻿// =============
+// Extends
+// -----
+// 
+//
+//==============
+//grid
+.wrap-normal {   
+    @include breakpoint($breakpoint-mobile) {
+        @include container(4);
+    }
+    @include breakpoint($breakpoint-tablet) {
+        @include container(6);
+    }
+    @include breakpoint($breakpoint-desktop) {
+        @include container(12);
+    }    
+}
+// Styling
+.text-shadow {
+    @include text-shadow(rgba(0, 0, 0, 0.6) 0px 1px 0px);
+}
+
+// Clearfix with multiple heights
+.clear {
+    clear: both;
+}
+
+.clear10 {
+    @extend .clear;
+    height: 10px;
+}
+
+.clear20 {
+    @extend .clear;
+    height: 20px;
+}
+
+.clear30 {
+    @extend .clear;
+    height: 30px;
+}
+
+.clear40 {
+    @extend .clear;
+    height: 40px;
+}
+
+.clear50 {
+    @extend .clear;
+    height: 50px;
+}
+
+//btn
+.btn {
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+    padding: 10px 26px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    background-color: $herbalifegreen;
+    display: inline-block;
+    color: $white;
+    transition: border-color 0.3s ease-in;
+
+    a:link,
+    a:visited{
+        color: #FFF;
+    }
+
+    &:hover {
+        border: 2px solid $herbalifegreen;
+        transition: border-color 0.3s ease-in;
+    }
+}

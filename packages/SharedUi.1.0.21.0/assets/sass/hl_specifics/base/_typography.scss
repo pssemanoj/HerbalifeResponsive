@@ -1,0 +1,85 @@
+﻿// =============
+// Typography
+// -----
+//  
+//
+//==============
+//Do not change this name of font as some other styles reference it
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(#{$sharedUI}/css/fonts/ProximaNova-Regular-webfont.eot);
+  src: url(#{$sharedUI}/css/fonts/ProximaNova-Regular-webfont.eot?#iefix) format('embedded-opentype'), url(#{$sharedUI}/css/fonts/proximanova-regular-webfont.woff) format('woff'), url(#{$sharedUI}/css/fonts/proximanova-regular-webfont.ttf) format('truetype'), url(#{$sharedUI}/css/fonts/proximanova-regular-webfont.svg#herbalife) format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* #Basic Styles
+================================================== */
+
+body {
+    line-height: 1.4;
+    font-family: 'Proxima Nova', Oxygen, sans-serif;
+    color: #4d4d4d;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    
+    -webkit-text-size-adjust: 100%;
+}
+
+// Headings 
+h1, h2, h3, h4, h5, h6 { 
+	color:$charcoalgrey; 
+	font-weight: bold; 
+	font-style: normal; 
+	text-rendering: optimizeLegibility; 
+	line-height: 1.1; 
+	margin-bottom:20px; 
+	margin-top: 0; 
+} 
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight:inherit; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size:70%; font-weight:normal; }
+
+h1 { 
+	font-size:36px;
+	@include breakpoint($tablet) { font-size:40px; } 
+}
+
+h2 { 
+	font-size:30px;
+	@include breakpoint($tablet) { font-size:36px; }
+}
+
+h3 { 
+	font-size:24px;
+	@include breakpoint($tablet) { font-size:28px; } 
+}
+
+h4 { 
+	font-size:16px;
+	@include breakpoint($tablet) { font-size:20px; }
+}
+
+h5 { font-size:14px; margin:0 0 7px; }
+	
+h6 { font-size:14px; text-transform:uppercase; font-weight:normal; margin:0 0 7px; }
+
+
+hr {
+    border: solid $grey;
+    border-width: 1px 0 0;
+    margin: 0;
+    height: 0;
+}
+
+table,
+p,
+ul,
+li {
+    font-size: $base-font-size;
+    line-height: 1.4;
+    p {
+        font-size: $base-font-size;
+        line-height: 1.4;
+    }
+}

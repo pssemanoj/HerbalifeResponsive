@@ -1,0 +1,353 @@
+﻿// =============
+// Products Podule
+// -----
+// This File contains styling for the Product Module
+//
+//==============
+
+#homeProductsModule {
+    height: 350px;
+    vertical-align: top;
+    background: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border: none; 
+    
+}
+
+#homeProductsModule.k-widget {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#homeProductsModule > ul {
+    background: #FFF;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+#homeProductsModule > ul li {
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    background-color: $link-blue;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 0 0 0 0;
+    width: 33.3%;
+    margin: 0;
+    height: 38px;
+    letter-spacing: normal;
+    text-align: center;
+    float: left;
+} 
+
+#homeProductsModule > ul li a {
+    color: $white;
+    display: table-cell;
+    height: 29px;
+    line-height: 1.2;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+    width: 33.33%;
+
+    @include breakpoint($breakpoint-tablet) {
+        height: 39px;
+        padding: 0 10px;
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        height: 29px;
+        padding: 4px;
+    }
+
+}
+
+#homeProductsModule > ul li.k-state-active {
+    background-color: $link-light-grey;
+    padding: 0;
+}
+
+#homeProductsModule > ul li.k-state-active a {
+    color: $link-blue; 
+}
+
+#homeProductsModule > div {
+    border: 1px solid #DDD;
+    background: #FFF;
+    padding: 0;
+    margin: 0;
+    min-height: 311px;
+    max-height: 311px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#homeProductsModule .dashList + div {
+    overflow: hidden;
+}
+
+#homeProductsModule .hoverBox {
+    background-color: #FFFFFF;
+    border-radius: 1px 1px 1px 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    left: -23px;
+    padding: 10px;
+    position: absolute;
+    top: -5px;
+    z-index: 5000;
+    text-align: center;
+    min-width: 180px;
+    width: 180px;
+    border: 1px solid #EEE;
+}
+
+#homeProductsModule .hoverBox img {
+    height: 70px;
+}
+
+#homeProductsModule .hoverBox > i {
+    background-color: #515151;
+    border-radius: 50% 50% 50% 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 10px;
+    height: 20px;
+    line-height: 2;
+    position: absolute;
+    right: -8px;
+    text-align: center;
+    top: -8px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+#homeProductsModule .hoverBox a,
+#homeProductsModule .hoverBox a:visited {
+    margin: 0;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+#homeProductsModule .hoverBox div {
+    border-bottom: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    margin: 5px auto;
+    padding: 10px 0;
+    float: none;
+}
+
+#homeProductsModule .hoverBox div span {
+    width: 45%;
+    margin: 0 5%;
+}
+
+#homeProductsModule .hoverBox div span + span {
+    font-weight: bold;
+}
+
+/* Numeric Text for hoverBox  */
+#homeProductsModule .hoverBox .k-numerictextbox {
+    width: 65px;
+    margin: 2px 5px 0 0;
+}
+
+#homeProductsModule .hoverBox .k-numeric-wrap {
+    background-color: #FFFFFF;
+    border: 1px solid #EEE;
+    box-shadow: none;
+}
+
+/*todo: move to kendo-skin.css*/
+#homeProductsModule .hoverBox .k-numeric-wrap:hover {
+    background-color: #0080FF;
+    border: 1px solid #0080FF;
+}
+
+#homeProductsModule .hoverBox .k-input,
+#homeProductsModule .hoverBox .k-input:hover {
+    height: 25px;
+    box-shadow: none;
+}
+
+#homeProductsModule .hoverBox .k-numerictextbox .k-select {
+    border: none;
+}
+
+#homeProductsModule .hoverBox .k-numerictextbox .k-link.k-state-selected {
+    background: none;
+}
+
+#homeProductsModule .trigger {
+    text-align: center;
+    max-width: 70px;
+}
+
+#homeProductsModule .trigger img {
+    display: block;
+    height: 70px;
+    margin: 3px auto;
+}
+
+#featureProduct {
+    height: 156px;
+    margin: 10px 0;
+    position: relative;
+}
+
+#featureProduct > a {
+    float:left;
+    margin-left: $gutter;
+    margin-right: $gutter;
+    overflow: hidden;
+    
+}
+
+#featureProduct h5 {
+    margin-bottom: 5px;
+    max-height: 67px;
+    overflow: hidden;
+}
+
+#featureProduct p {
+    max-height: 52px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+#featureProduct aside { 
+    margin-right: 0px; 
+
+}
+
+#homeProductsModule .icon-add-to-cart {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#homeProductsModule .myTopSellers .col4,
+#homeProductsModule .myTopSellers .k-listview {
+    position: relative;
+    background: none;
+}
+
+#homeProductsModule .myTopSellers h5 {
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.myTopSellers {
+    height: 130px;
+}
+
+.myTopSellers div div{
+    padding: 0 5px;
+    text-align: center;
+    width: 99px;
+    float: left;
+    position: relative;
+}
+
+.myTopSellers div div:first-child + div +div{
+    float: left;
+    margin-right: 0;
+}
+
+.myTopSellers div div + div + div + div{
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+        display: block;
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        display: none;
+    }
+}
+
+/*============================================================================
+/* Dash List */
+.dashList ul {
+    margin: 0;
+    padding: 0;
+    height: 309px;
+    overflow: hidden;
+}
+
+.dashList li {
+    border-bottom: 2px solid #ffffff;
+    float: left;
+    height: 45px;
+    list-style: none outside none;
+    overflow: hidden;
+    padding: 10px 0 5px;
+    width: 100%;
+    @include box-sizing(content-box);
+}
+
+.dashList a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #000;
+}
+
+.dashList h5 {
+    margin-top: 12px;
+}
+
+.dashList i {
+    -webkit-transition: all 0.1s linear 0s;
+    -moz-transition: all 0.1s linear 0s;
+    -o-transition: all 0.1s linear 0s;
+    transition: all 0.1s linear 0s;
+    color: #0080ff;
+    font-size: 32px;
+    margin: 4px 20px 0 12px;
+    float: left;
+}
+
+.dashList li:hover i {
+    text-indent: 10px;
+    color: inherit;
+}
+
+.dashList li span {
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+#homeProductsModule .k-grid{
+    td {
+        -ms-word-break: break-all;
+        word-break: break-all;
+    }
+    tr td:first-child {
+        word-break:normal;
+        white-space: nowrap;
+    }
+} 
+
+/*Alternate*/
+#homeProductsModule.alt > ul li {
+    width: 100%;
+}
+
+#homeProductsModule.alt .featured > div {
+    overflow: hidden;
+    width: 100%;
+}
+
+#homeProductsModule.alt .featured img {
+    display: block;
+    height: 110px;
+    margin: 10px auto;
+}
+
+#homeProductsModule.alt .featured h5 {
+    margin: 20px 0 5px 0;
+}

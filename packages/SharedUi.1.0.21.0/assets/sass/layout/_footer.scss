@@ -1,0 +1,137 @@
+﻿// =============
+// Footer Compoentent
+// -----
+// This File pertains to all styles for the footer component
+//
+//==============
+
+.footerGlobal{
+    clear: both;
+    background-color: #EEE;
+    position: relative;
+    padding-top: 7px;
+    line-height: 24px;
+    color: #000000;
+
+    .footer-links {
+        @extend .wrap-normal;
+
+        ul {
+            padding: 0;
+            float: left;  
+            vertical-align: top;         
+            width: span(4);
+
+            @include breakpoint($breakpoint-tablet) {
+                width: span(4 of 8);
+                margin-right: gutter();
+
+                &:first-child + ul,
+                & + ul + ul + ul{
+                    margin-right: 0px;
+                }
+            }
+
+            @include breakpoint($breakpoint-desktop) {
+                width: span(3 of 12);    
+                &:first-child + ul{ margin-right: gutter(); }           
+            }
+        }
+    }
+
+    .footer-lower {
+        @extend .wrap-normal;
+        text-align: center;
+
+        @include breakpoint($breakpoint-tablet) {
+            text-align: initial;
+        }
+
+        .footer-dsa {
+            @include span (4);
+
+            @include breakpoint($breakpoint-tablet) {
+                @include span(2 of 8);
+            }
+
+            @include breakpoint($breakpoint-desktop) {
+                @include span(3 of 12);
+            }
+        }
+
+        .footer-text {
+            @include span (4);
+
+            @include breakpoint($breakpoint-tablet) {
+                @include span(4 of 8);
+            }
+
+            @include breakpoint($breakpoint-desktop) {
+                @include span(6 of 12);
+            }
+        }
+
+        .footer-logo {
+            @include span (4);
+
+            @include breakpoint($breakpoint-tablet) {
+                @include gallery(last 2);
+            }
+
+            @include breakpoint($breakpoint-desktop) {
+                @include gallery(last 3);
+            }
+
+            img{
+                float: none;
+
+                @include breakpoint($breakpoint-tablet) {
+                    float: right;
+                    width:90%;
+                }
+            }
+        }
+    }
+
+    li > h5 {
+        padding-bottom: 10px;
+    }
+
+    nav {
+        a,
+        a:visited {
+            color: #515151;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6DB6FF;
+        }
+    }
+
+    > div {
+        background-color: #5F5F5F;
+        padding: 20px 0;
+
+        &,
+        img,
+        p {
+            vertical-align: middle;
+            color: #AAA;
+        }
+
+        img {            
+            margin: 0 10px 10px 0;
+        }
+
+        p {
+            margin: 5px 0 0;
+            text-align: center;
+        }
+    }
+
+}
+
+#hrblSiteWrapper > footer {
+    @extend .footerGlobal;
+}

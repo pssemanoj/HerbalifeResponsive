@@ -1,0 +1,579 @@
+﻿// =============
+// Dashboard
+// -----
+// This File contains styling for the compondent: Dashboard
+//
+//==============
+
+/* DashBoard Layout */
+#myDashBoard {
+    background: url("#{$sharedUI}/images/bg-blur-5.jpg") no-repeat scroll center -100px #EEEEEE;
+    margin-top: $gutter;
+    padding: 18px 0 20px;
+    height: 400px;
+}
+
+#dashBoard li > .dashboard-block {
+    @include span(4 of 12);
+    background: $white;
+    height: 360px;
+    padding: 0;
+    position: relative;
+
+    &.block-tile-one {
+        .box {
+            width: 100%;
+            float: left;
+        }
+    }
+
+    &.block-tile-two {
+        .box {
+            width: 100%;
+            float: left;
+        }
+    }
+
+    &.block-tile-three {
+        .box {
+            width: 100%;
+            float: left;
+
+            &:first-child + a {
+                width: 50%;
+            }
+
+            &:first-child + a + a {
+                width: 50%;
+            }
+        }
+    }
+
+    &.block-tile-four {
+        .box {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    &.block-tile-five {
+        .box {
+            width: 50%;
+            float: left;
+
+            &:first-child + a + a {
+                width: 33.33%;
+            }
+
+            &:first-child + a + a + a {
+                width: 33.33%;
+            }
+
+            &:first-child + a + a + a + a {
+                width: 33.33%;
+            }
+        }
+    }
+
+    &.block-tile-six {
+        .box {
+            width: 33.33%;
+            float: left;
+
+        }
+    }
+
+    & + .dashboard-block + .dashboard-block{
+        float: right;
+        margin-right: 0px;
+    }
+}
+
+#myDashBoard .readMore {
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+#myDashBoard .feed {
+    padding: 0;
+    height: 300px;
+    overflow: hidden;
+    border: none;
+    margin: 0;
+}
+
+#myDashBoard .feed li {
+    border-top: 1px solid #CCCCCC;
+    list-style-type: none;
+    padding: 20px 10px;
+    min-height: 20px;
+}
+
+#announcements .feed li {
+    list-style: square inside none;
+}
+
+#myDashBoard .feed li a {
+    color: inherit;
+}
+
+#myDashBoard .feed li:hover, #myDashBoard .feed li:hover h6 {
+    background-color: $herbalifegreen;
+    color: $white;
+    cursor: pointer;
+}
+
+#myDashBoard .feed li i {
+    margin-right: 5px;
+}
+
+#myDashBoard .feed p {
+    margin: 0;
+}
+
+#myDashBoard date {
+    display: block;
+    font-size: 10px;
+    margin-bottom: -10px;
+    position: relative;
+    text-align: right;
+    width: 100%;
+}
+
+/*DASHBOARDS BOXES*/
+a.box {
+    height: 300px;
+    text-align: center;
+    border: 1px solid #FFF;
+    color: #FFF;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+a.box:hover {
+    zoom: 1;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+a.box.short {
+    height: 150px;
+}
+
+a.box i {
+    display: block;
+    font-size: 35px;
+    margin: 100px 0 10px 0;
+}
+
+a.box.short i, a.box.short img {
+    margin-top: 40px;
+}
+
+a.box img {
+    display: block;
+    height: 34px;
+    margin: 100px auto 10px auto;
+}
+
+a.box img.imageOnly {
+    height: auto;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#resources a.box {
+    background: #FAA634;
+}
+
+#operations .col6 {
+    padding: 0;
+}
+
+#eventsAndP a.box {
+    background: #3DA7CE;
+}
+
+#eventsAndP a.col12 {
+    background: $white;
+}
+
+#volChart {
+    height: 300px;
+    width: 300px;
+    background-color: $link-light-grey;
+
+    .k-tooltip { 
+        margin-left: -50px;
+        max-width: 50px;
+    }
+}
+
+/* Dashboard Jump Link (corner triangle) */
+/*.jumpLink {
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width:0 30px 30px 0;
+    border-color:transparent #7AC143 transparent transparent;
+}
+.jumpLink:hover {
+    opacity: 0.60;
+    filter: alpha(opacity=60);
+}*/
+
+#myDashBoard .dashBoardContainer {
+    height: 360px;
+    padding: 0;
+}
+
+#myDashBoard .sliders-wrapper {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+#dashBoard {
+    padding: 0px;
+    margin: 0;
+    position: absolute;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 360px;
+}
+
+#dashBoard > li {
+    overflow: hidden;
+    margin: 0;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#dashBoard > li.cloned.panel {
+    min-width: 0;
+}
+
+#dashBoard > li > div > h6 {
+    margin-bottom: 10px;
+    padding: 5px 10px 0;
+    height: 20px;
+    line-height: 25px;
+}
+
+/* Dashboard Navigation */
+#myDashBoard #myDashBoardSets {
+    position: relative;
+    margin-bottom: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#myDashBoard .myDashBoardSets_Nav {
+    display: inline-block;
+}
+
+/* Dashboard Arrows in Navigation */
+#myDashBoard .myDashBoardSets_Nav_Prev {
+    float: left;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Prev span,
+#myDashBoard .myDashBoardSets_Nav_Next span {
+    display: block;
+    border-radius: 2px;
+    background-color: $link-blue;
+    color: $white;
+    padding: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.3);
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Prev span:hover,
+#myDashBoard .myDashBoardSets_Nav_Next span:hover {
+    background-color: $white;
+    color: $link-hover-grey;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Next {
+    float: right;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Next span {
+    padding: 5px 4px 5px 6px;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Prev span {
+    padding: 5px;
+}
+
+.myDashBoardSets_Nav_Next .arrow span, .myDashBoardSets_Nav_Prev .arrow span {
+    display: block;
+    color: $white;
+    font-size: 12px;
+    @extend [data-icon]:before;
+}
+
+.myDashBoardSets_Nav_Prev .arrow span:before {
+     @extend .icon-arrow-left-ln-2:before;
+}
+
+.myDashBoardSets_Nav_Next .arrow span:before {
+    @extend .icon-arrow-right-ln-2:before;
+}
+
+#myDashBoard #myDashBoardSets .myDashBoard_Title {
+    float: left;
+    @include span(4);
+}
+
+ul.carousel li img {
+    padding: 0px;
+}
+
+/* item navigator */
+#myDashBoard .myDashBoardSets_Nav_Next .forward,
+#myDashBoard .myDashBoardSets_Nav_Prev .back,
+.carouselSlider_Next .forward,
+.carouselSlider_Prev .back {
+    border: none;
+    display: inline-block;
+    padding: 0;
+    text-align: inherit;
+    margin: 0;
+}
+
+#myDashBoard .myDashBoardSets_Nav_Next .forward:active, .carouselSlider_Next .forward:active {
+    top: 0;
+}
+
+#myDashBoard .button-control {
+    float: left;
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#myDashBoard .action-start {
+    background: url(#{$sharedUI}/Images/slider-test/play.png) no-repeat center center #FFF;
+}
+
+#myDashBoard .action-stop {
+    background: url(#{$sharedUI}/Images/slider-test/pause.png) no-repeat center center #FFF;
+}
+
+.myDashBoardSets_Nav .anythingNavWindow ul, .myDashBoardSets_Nav ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    overflow: hidden;
+    min-width: 20px;
+}
+
+.myDashBoardSets_Nav .anythingNavWindow ul li, .myDashBoardSets_Nav ul li {
+    display: inline-block;
+}
+
+.myDashBoardSets_Nav ul li.next {
+    text-align: right;
+}
+
+.myDashBoardSets_Nav ul.thumbNav a {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0 5px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 22px;
+    color: $white;
+    background: $link-blue;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.3);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.myDashBoardSets_Nav ul.thumbNav a span {
+    padding-top: 5px;
+}
+
+.myDashBoardSets_Nav ul.thumbNav a:hover,
+.myDashBoardSets_Nav ul.thumbNav a.cur {
+    color: $link-blue;
+    background: $white;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.myDashBoardSets_Nav ul.thumbNav {
+    overflow: hidden;
+    float: left;
+    width: auto;
+    margin: 0 10px;
+}
+
+.myDashBoardSets_Nav_Contain {
+    text-align: center;
+}
+
+.calendarItems, .upComingEvents {
+    overflow: auto;
+}
+
+.calendarItems div {
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.calendarItems strong, .calendarItems a {
+    display: block;
+    margin: 3px 0;
+}
+
+/*============================================================================
+$ VIDEO COMPONENT
+*/
+#videoComp > div {
+    background-color: #DBF5C8;
+    height: 300px;
+}
+
+#videoComp .videoBox {
+    margin-top: 20px;
+    width: 135px;
+    padding: 0;
+    float:left;
+
+    margin-left: 10px;
+}
+
+.k-ie.k-ie8 #videoComp .videoBox {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#videoComp .videoBox a {
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#videoModal {
+    min-height: 360px;
+}
+
+#videoModal iframe {
+    width: 100%;
+    height: auto;
+    min-height: 360px;
+    border: none;
+    outline: none;
+}
+
+.videoBox img {
+    width: 100%;
+    height: auto;
+}
+
+#videoComp .videoBox span {
+    position: absolute;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    top: 18px;
+    left: 47px;
+    opacity: .75;
+    font-size: 33px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+#videoComp .videoBox span:hover {
+    opacity: 1;
+}
+
+.vidTooltip {
+    text-align: left;
+    line-height: normal;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.vidTooltip h5, .vidTooltip p {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.vidTooltip h5 {
+    font-weight: bold;
+}
+
+/*============================================================================
+$ RTL support
+*/
+
+[dir="rtl"] {
+    #volChart {
+        direction: ltr;
+    }
+
+    #myDashBoard .dashBoardContainer {
+        direction: ltr;
+    }
+
+    #myDashBoard .myDashBoardSets_Nav_Prev {
+        float: right;
+    }
+
+    #myDashBoard .myDashBoardSets_Nav_Next {
+        float: left;
+    }
+
+    .myDashBoardSets_Nav_Next .arrow span::before{
+        content: "\e54b";
+    }
+
+    .myDashBoardSets_Nav_Prev .arrow span::before{
+        content: "\e54c";
+
+    }
+}
+

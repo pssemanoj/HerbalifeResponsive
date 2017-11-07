@@ -1,0 +1,256 @@
+﻿// =============
+// Left Navigation
+// -----
+// This File contains styling for the left navigation on the content pages
+//
+//==============
+
+#left_menu {
+    margin: 0 0 $gutter 0;
+    padding: 0;
+    list-style: none;
+
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    > li {
+        background-color: #EEE;
+        border-bottom: 1px solid #FFF;
+        color: rgb(255, 255, 255);
+        position: relative;
+        padding: 0;
+        border-radius: 2px 2px 0 0;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    a {
+        color: #666666;
+        display: inline-block;
+        line-height: 20px;
+        padding: 8px 25px 8px 12px;
+        white-space: normal;
+        width: 100%;
+    }
+
+    > li:hover,
+    .active {
+        color: #666;
+        background-color: #7AC143;
+
+        a {
+            color: #FFF;
+        }
+    }
+
+    li span {
+        border: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+        display: block;
+    }
+}
+
+.leftMenuNew {
+    @extend #left_menu;
+}
+
+#leftMenuContainer {
+    width: 195px;
+
+    + .col9 { /* k-content es*/
+        padding: 0 10px;
+        border: none;
+        max-width: 765px;
+        width: 765px;
+
+        h5 {
+            color: #7AC143;
+            font-weight: bold;
+            margin: 3px 0 0;
+            float: left;
+            width: 210px;
+        }
+
+        p {
+            color: #4D4D4D;
+            display: inline-block;
+        }
+
+        li h5 + p {
+            float: left;
+            width: 210px;
+        }
+
+        li i + a {
+            color: #7AC143;
+            font-weight: bold;
+            margin: 3px 0 0;
+            font-size: 16px;
+        }
+    }
+}
+
+#main-left-container{
+    @include container(4);
+
+    @include breakpoint($tablet) {
+        @include container(6);
+    }
+
+    @include breakpoint($desktop) {
+        @include span(4 of 8);
+    } 
+    
+    > span{
+        margin-bottom: 1px;
+        background-color: $white;
+        @include box-shadow(rgba($grey,.5) 0 1px 0px);
+        display: block;
+        padding: 10px 15px 10px 20px;
+
+        a {
+            float: right;
+            color: $white;
+            font-size: 18px;
+            text-shadow: 0px 1px 3px darken($grey, 20%);
+
+            @include breakpoint($desktop) {
+                display: none;
+            }
+
+        }         
+    }
+
+    .banner-box{
+        display: none;
+        @include breakpoint($desktop) {
+            display: block;
+            margin-bottom: $gutter;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    + section {
+        padding-top: 0px;
+        @include container(4);
+
+        @include breakpoint($tablet) {
+            @include span(8);
+        }
+        @include breakpoint($desktop) {
+            @include span(8 last);
+            clear: none;
+        }
+
+        > h1 {
+            text-align: center;
+            @include breakpoint($desktop) {
+                text-align: left;
+            }
+        }
+        > p {
+            text-align: center;
+            @include breakpoint($desktop) {
+                text-align: left;
+            }
+        }
+        > div > div {
+            width: 100%;
+            display: block;
+            clear: both;
+            text-align: center;
+            border-bottom: 1px solid lighten($grey, 10%);
+            @include breakpoint($desktop) {
+                text-align: left;
+            }
+        }
+
+        .columnList {
+            overflow: hidden;
+
+            li {
+                margin-bottom: 20px;
+                padding: 20px;
+                background-color: $white;
+                display: block;                
+                @include box-shadow(rgba($lightgrey, .3) 0 0 40px inset, rgba(black, .03) 0px 4px 3px);
+                @include container(4);
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+                @include breakpoint($tablet) {
+                    @include container(6)
+                }
+
+                &:first-child{
+                    @include breakpoint($desktop) {
+                        @include span(4 of 8);
+                    }
+                }
+
+                + li{
+                    @include breakpoint($desktop) {
+                        @include span(4 of 8 last);
+                    }
+                }
+
+                h4{
+                    color: $blue;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: $darkgrey;  
+                }
+                        
+            }
+        }
+
+    }    
+       
+}
+
+#main-side-nav{
+    display: none;
+    padding: 0;
+    list-style: none;
+    margin-top: 0;
+
+    @include breakpoint($desktop) {
+        display: block;
+    }
+
+    li {
+        margin-bottom: 3px;
+        background-color: $white;
+        border-right: 2px solid $green;
+        @include box-shadow(rgba($grey,.5) 0 1px 0px);        
+
+        a{
+            padding: 10px 15px 10px 20px;
+            display: block;
+        }        
+
+        &.active,
+        &:hover {
+            background-color: $green;
+            color: $white;
+            border-right: 2px solid $white;
+            a:link, a:visited {
+                color: $white;
+            }
+        }
+    }
+
+}

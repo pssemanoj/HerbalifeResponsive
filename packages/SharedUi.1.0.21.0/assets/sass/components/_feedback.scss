@@ -1,0 +1,46 @@
+﻿#flyout {
+    font-size: 14px;
+    height: 120px;
+    width: 40px;
+    right: 0px;
+    position: fixed;
+    color: #ffffff;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+    z-index: 200;
+    top: 300px;
+    padding-right: 0px;
+    background-color: #0081ff;
+    box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.14);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+
+    span.feedback {
+        cursor: pointer;
+        font-size: 16px;
+        width: 100px;
+        position: absolute;
+        float: left;
+        font-weight: bold;
+        color: #ffffff;
+        left: -23px;
+        filter: progid:dximagetransform.microsoft.basicimage(rotation=3);
+        margin-top: 8px;
+        top: 46px;
+        text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.14);
+        -webkit-transform: rotate(270deg);
+        transform: rotate(-90deg);
+    }
+
+}
+
+.k-ie9 #flyout{ display: none; }
+
+.k-ie8 #flyout span.feedback{ 
+        top: 10px;
+        left: 10px;
+        transform: none;
+        -ms-transform: rotate(270deg);
+    }

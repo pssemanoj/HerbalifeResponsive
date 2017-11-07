@@ -1,0 +1,49 @@
+
+	/* Notifications
+    ================================================== */
+
+    @mixin notification($bdr, $bg, $text) {
+    	background-color: $bg;
+    	border: 1px solid $bdr;
+    	color: $text;
+    	padding: 5px 7px;
+    	border-radius: 2px;
+    	-webkit-border-radius: 2px;
+    	-moz-border-radius: 2px;
+    	font-size: 14px;
+        margin-bottom: 20px;
+    	i {
+    		font-size: 18px;
+    		margin-right: 2px;
+    	}
+    	a.close {
+    		float: right;
+    		color: darken($bdr, 4);
+    		margin-top: 2px;
+    		&:hover { color: darken($bdr, 20); }
+    		i { 
+    			font-size: 12px; 
+    			margin: 0;
+    		}
+    	}
+    }
+
+    // Success notificaiton
+	.notification-success {
+	    @include notification($brightgreen, $lightgreen, $charcoalgrey);
+	}
+
+	// Warning notificaiton
+	.notification-warning {
+	    @include notification(#fab659, $lightorange, $charcoalgrey);
+	}
+
+	// Error notificaiton
+	.notification-error {
+	    @include notification(#ffacac, #ffd8d8, $charcoalgrey);
+	}
+
+	// Information notificaiton
+	.notification-info {
+	    @include notification($grey, $lightgrey, $charcoalgrey);
+	}

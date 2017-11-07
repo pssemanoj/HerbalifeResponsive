@@ -1,0 +1,83 @@
+﻿// =============
+// Buttons
+// -----
+// This file contains styling for the compondent: Buttons
+//
+//==============
+
+/********* Action Buttons ***************/
+.bottomActBtns {
+    margin: 20px 0;
+    text-align: right;
+}
+
+/* #Buttons
+================================================== */
+
+/* Base styles
+// -------------------------------------------------- */
+
+.icnLeft, .icnRight {
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 0;
+}
+
+.icnRight {
+    right: 0;
+}
+
+.icnLeft {
+    left: 0;
+}
+
+/* Core */
+.neutral, a.neutral,
+.forward, a.forward,
+.backward, a.backward,
+a[class*='btn'], input[class*='btn'] {
+    @include btn;
+    @extend %full-width;
+}
+
+.btn {
+    opacity: 1;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+    filter: none;
+}
+
+/* Alternate buttons
+// -------------------------------------------------- */
+
+/* Provide *some* extra contrast for those who can get it */
+.forward:active, a.btnForward:active, input.btnForward:active,
+.neutral:active, a.btnSecondary:active, input.btnSecondary:active {
+    color: rgba(255,255,255,.75);
+}
+
+/* FORWARD
+// ------------------------- */
+.forward, a.forward, input.forward,
+a.btnForward, input.btnForward {
+    @include btnForward;
+}
+
+/* SECONDARY
+// ------------------------- */
+
+.neutral, a.neutral, input.neutral,
+ a.btnSecondary, input.btnSecondary {
+    @include btnSecondary;
+}
+
+.linkBtn.disabled {
+    cursor: default;
+    opacity: 0.5;
+    color: #CCC;
+}
+
+/*============================================================================
+$ END BUTTONS
+*/

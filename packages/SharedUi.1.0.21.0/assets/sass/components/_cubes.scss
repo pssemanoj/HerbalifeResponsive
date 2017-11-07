@@ -1,0 +1,225 @@
+﻿// =============
+// Cubes
+// -----
+// This file contains styling for the compondent: Cubes
+//
+//==============
+
+.splash #blocks a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.splash #blocks a article span{
+    font-weight: bold;
+}
+
+.splash #blocks img {
+    display: block;
+    max-width: none;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.splash #blocks .cube img,
+.splash #blocks .cube a{
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.splash #blocks article{
+    background-color: #2693FF;
+    height: 100%;
+    padding: 20px;
+    color: #FFF;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.splash #blocks .face article {
+    background-color: #11B200;
+}
+
+.splash #blocks div.big .face,
+.splash #blocks div.big > div,
+.splash #blocks .big .cube {
+    height: 380px;
+}
+
+.splash #blocks .face > div {
+    height: 100%;
+    padding-right: 10px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.splash #blocks article p {
+    color: #FFF;
+}
+
+.splash #blocks article h1 {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.splash #blocks article h3 {
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.splash #blocks article h4 {
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.splash #blocks article a,
+.splash #blocks article span {
+    bottom: 20px;
+    color: #FFFFFF;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    text-align: right;
+}
+
+.splash #blocks .cubeWrap {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.splash #blocks .cube,
+.splash #blocks > div > div > div {
+    height: 180px;
+    z-index: 1; /* fix for Safari */
+}
+
+.splash #blocks .cube {
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, -90px);
+    -moz-transform: translate3d(0, 0, -90px);
+    -ms-transform: translate3d(0, 0, -90px);
+    -o-transform: translate3d(0, 0, -90px);
+    transform: translate3d(0, 0, -90px);
+    margin: 0;
+}
+
+.splash #blocks .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    height: 180px;
+    overflow: hidden;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.splash #blocks .big .cube {
+    -webkit-transform: translate3d(0, 0, -190px);
+    -moz-transform: translate3d(0, 0, -190px);
+    -ms-transform: translate3d(0, 0, -190px);
+    -o-transform: translate3d(0, 0, -190px);
+    transform: translate3d(0, 0, -190px);
+}
+
+.splash #blocks .cube .front {
+    z-index: 2;
+    -webkit-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 90px);
+    -moz-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 90px);
+    -ms-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 90px);
+    -o-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 90px);
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 90px);
+}
+
+.splash #blocks .cube .back {
+    -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 90px);
+    -moz-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 90px);
+    -ms-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 90px);
+    -o-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 90px);
+    transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 90px);
+}
+
+.splash #blocks .big .cube .front {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 190px);
+    -moz-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 190px);
+    -ms-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 190px);
+    -o-transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 190px);
+    transform: rotate3d(0, 1, 0, 0deg) translate3d(0, 0, 190px);
+}
+
+.splash #blocks .big .cube .back {
+    -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 190px);
+    -moz-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 190px);
+    -ms-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 190px);
+    -o-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 190px);
+    transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 190px);
+}
+
+.splash #blocks .cube:hover,
+.splash #blocks .cube:active{
+    -webkit-transform: translate3d(0, 0, -90px) rotate3d(1, 0, 0, 90deg);
+    -moz-transform: translate3d(0, 0, -90px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: translate3d(0, 0, -90px) rotate3d(1, 0, 0, 90deg);
+    -o-transform: translate3d(0, 0, -90px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, 0, -90px) rotate3d(1, 0, 0, 90deg);
+}
+
+.splash #blocks .big .cube:hover,
+.splash #blocks .big .cube:active {
+    -webkit-transform: translate3d(0, 0, -190px) rotate3d(1, 0, 0, 90deg);
+    -moz-transform: translate3d(0, 0, -190px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: translate3d(0, 0, -190px) rotate3d(1, 0, 0, 90deg);
+    -o-transform: translate3d(0, 0, -190px) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, 0, -190px) rotate3d(1, 0, 0, 90deg);
+}
+
+/*============================================================================
+$ IE fixes with Kendo
+*/
+[class^="k-"] .splash #blocks .back {
+    display: block;
+}
+
+.k-ie .splash #blocks .cube:hover .front {
+    display: none;
+}
+
+.k-ie .splash #blocks .cube,
+.k-ie .splash #blocks .cube .face,
+.k-ie .splash #blocks .cube:hover,
+.k-ie .splash #blocks .cube:active {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}

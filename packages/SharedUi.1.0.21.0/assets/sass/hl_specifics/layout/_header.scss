@@ -1,0 +1,52 @@
+﻿ul.top-language-toggle {
+    float: none;
+    margin: 10px 0 10px 0;
+    @include breakpoint($breakpoint-tablet) {
+        float: right;
+        margin: 22px 20px 10px 0px;
+    }
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-right: 20px;
+        a:link {
+            color: darken($herbalifegreen, 20%);
+        }
+        a:visited {
+            color: darken($herbalifegreen, 20%);
+        }
+    }
+}
+
+.local-select {
+    position: relative;
+    padding: 4px 10px 4px 10px !important;
+    background-color: lighten($herbalifegreen, 20%);
+    border-radius: 100px;
+    color: darken($herbalifegreen, 20%);
+    margin-top: 10px !important;
+    @include breakpoint($breakpoint-tablet) {
+    margin-top: 3px !important;
+    }
+    i {
+        float: left;
+        position: relative;
+        color: darken($herbalifegreen, 20%);
+        margin: 0 3px 0 0;
+        background-color: #fff;
+        border-radius: 100px;
+        padding: 3px;
+        line-height: 0px !important;
+        height: 18px;
+    }
+    span {
+        float: left;
+        margin-top: 1px;
+    }
+    a:link {
+        color: darken($herbalifegreen, 20%)!important;
+    }
+    a:visited {
+        color: darken($herbalifegreen, 20%)!important;
+    }
+}

@@ -1,0 +1,200 @@
+﻿// =============
+// Mixin's
+// -----
+// This file is for all Mixin's used in myhl
+//
+//==============
+
+@mixin full-width {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Containers
+================================================== */
+
+@mixin wrap-normal {
+    @include container(4);
+    @include breakpoint($tablet) { @include container(8); }
+    @include breakpoint($desktop) { @include container(12); }
+    @include breakpoint($ext-desktop) { @include container(16); }
+}
+
+@mixin m4-t8-d12-e16 {
+    @include container(4);
+    @include breakpoint($tablet) { @include container(8); }
+    @include breakpoint($desktop) { @include container(12); }
+    @include breakpoint($ext-desktop) { @include container(16); }
+}
+
+@mixin m4-t8-d12-e12 {
+    @include container(4);
+    @include breakpoint($tablet) { @include container(8); }
+    @include breakpoint($desktop) { @include container(12); }
+}
+@mixin m4-t8-d8-e8 {
+    @include container(4);
+    @include breakpoint($tablet) { @include container(8); }
+    @include breakpoint($desktop) { @include container(8); }
+    @include breakpoint($ext-desktop) { @include container(8); }
+}
+
+//==========
+// Btns 
+//==========
+@mixin btn {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    padding: 10px 10px;
+    color: $charcoalgrey;
+    line-height: 14px;
+    font-weight: 400;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background-color: #ccc; /* Old browsers */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #f0f0f0 0,#e6e6e6 100%); /* W3C */
+    @include full-width;
+
+    @include breakpoint($tablet) {
+        width: auto;
+        margin: 3px;
+    }
+
+    &:hover {
+        background-color: #e3e3e3;
+        background-position: 0 -15px;
+        border: 1px solid #ddd;
+        border-bottom-color: #ccc;
+        -webkit-transition: background-position 0.1s linear;
+        -moz-transition: background-position 0.1s linear;
+        -o-transition: background-position 0.1s linear;
+        transition: background-position 0.1s linear;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+    }
+
+    &:active, &.active {
+        color: rgba(0,0,0,.5);
+        background-image: none;
+        background-color: #ccc;
+        top: 1px;
+        box-shadow: inset 0 2px 2px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.05);
+    }
+
+    &[disabled], &.disabled {
+        cursor: default;
+        background-image: none;
+        background-color: #ccc;
+        color: rgba(0,0,0,.5);
+        box-shadow: none;
+        opacity: .5;
+        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';
+        filter: alpha(opacity=50);
+    }
+}
+
+@mixin btnForward {
+    color: #FFF;
+    border: 1px solid $link-blue;
+    text-shadow: 0 0 1px $link-blue;
+    filter: none;
+    background: $link-blue;
+
+    &:hover {
+        color: #FFF;
+        border: 1px solid $link-blue;
+        text-shadow: 0 0 1px $link-blue;
+    }
+
+    &:hover, &:active, &[disabled], &.disabled, &.active {
+        background-color: #0074e6;
+        background-repeat: no-repeat;
+    }
+}
+
+@mixin btnSecondary {
+    filter: none;
+    border: 1px solid #1f8dfa;
+    background: #5eafff;
+    color: #FFF;
+    text-shadow: 0 0 1px $link-blue;
+
+    &:hover {
+        color: #FFF;
+        border: 1px solid $link-blue;
+        text-shadow: 0 0 1px $link-blue;
+    }
+
+    &.active {
+        background-color: rgba(255,255,255,.02);
+    }
+
+    &:hover, &:active, &[disabled], &.disabled, &.active {
+        background-color: #45a2ff;
+        background-repeat: no-repeat;
+    }
+}
+
+
+//==========
+// Tables 
+//==========
+
+@mixin row-table-headers {
+        border: 0;
+
+        thead { display: none; }
+        tr {
+          display: block;
+          border-bottom: 2px solid $grey;
+          border-left: 1px solid $grey;
+          border-right: 1px solid $grey;
+          margin-bottom: 10px;
+        }
+        td {
+          display: block;
+          text-align: right;
+          border-bottom: 1px solid $softgrey;
+        }
+        td:last-child, td:first-child { border-bottom: 0; }
+        td:first-child { 
+            background-color: $darkblue; 
+            text-align: left; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+            color: $white; 
+            &:before {
+                content: "";
+            }
+            a { 
+                color: $white; 
+                display: inline;
+                padding: 5px 0;
+                &:after {
+                    font-family: $myherbalife;
+                    content: "\e515";
+                    float: right;
+                }
+            }
+            input[type="checkbox"] { margin-bottom: 0; }
+        }
+        td:before {
+          content: attr(data-label);
+          float: left;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 12px;
+        }
+    }

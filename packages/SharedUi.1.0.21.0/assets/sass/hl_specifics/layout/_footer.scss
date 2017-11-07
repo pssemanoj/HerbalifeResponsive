@@ -1,0 +1,110 @@
+﻿// =============
+// Footer
+// -----
+// 
+//
+//==============
+footer {
+    
+    &.footer-main{
+    
+    background-color: $lightgrey;
+    border-top: 1px solid white;
+    padding: 0 20px 60px 20px;
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+    .wrap-footer {
+        @extend .wrap-normal;
+        @include breakpoint($breakpoint-desktop) {
+            max-width: $breakpoint-desktop;
+        }
+        .footer-content-left {
+            @include span(4 of 4);
+            @include breakpoint($breakpoint-tablet) {
+                @include span(4 of 8);
+            }
+            @include breakpoint($breakpoint-desktop) {
+                @include span(6 of 12);
+            }
+            padding: 20px 0 0 0;
+            img {
+                width: 220px;
+            }
+            ul {
+                &.logo-links {
+                    li {
+                        display: inline-block;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .dsa {
+                img {
+                    width: 52px;
+                    height: 54px;
+                }
+            }
+            .abus {
+                img {
+                    width: 170px;
+                    height: 50px;
+                }
+            }
+            .dsef {
+                img {}
+            }
+        }
+    }
+    .footer-links {
+        @include span(4 of 4);
+        @include breakpoint($breakpoint-tablet) {
+            @include span(last 3 of 8);
+            padding: 0px;
+        }
+        @include breakpoint($breakpoint-desktop) {
+            @include span(last 3 of 12);
+            padding: 0px;
+        }
+        margin-bottom: gutter();
+        h5 {
+            text-transform: uppercase;
+        }
+        ul {
+            margin-right: 20px;
+            &:first-child {
+                margin-right: 0px;
+            }
+        }
+        select {
+            margin-top: 20px;
+        }
+        a {
+            color: #4d4d4d;
+        }
+    }
+    .country-select {
+        margin-top: 20px;
+        ul {
+            li {
+                float: left;
+                i {
+                    font-size: 30px;
+                    color: black;
+                }
+                a {
+                    padding: 5px 10px 10px 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+}
+
+
+.footer-info{
+    color: $grey;
+    font-size: 11px;
+    background-color: $lightgrey;
+    display: block;
+    padding: 0px 20px;
+}

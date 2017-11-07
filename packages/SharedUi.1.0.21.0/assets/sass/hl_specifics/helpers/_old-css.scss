@@ -1,0 +1,931 @@
+﻿// =============
+// Legacy CSS
+// -----
+// This File contains styling for the original herbalife.com site. 
+//
+//==============
+.container-title{
+margin-left: 20px;
+}
+
+
+/*New Green for HL3.0*/
+.green{
+	color:#428c36
+}
+
+.orange
+{
+	color: #dc810c;
+}
+
+.Red { 
+	color: #F00;
+}
+
+.yellow{ 
+	color:#FF0
+}
+
+.blue
+{
+	color: #1667C3;
+}
+.purple
+{
+	color: #333399;
+}
+
+.white
+
+{
+background-color:#FFFFFF;
+.FontBlack
+{
+	color: #000000;
+}
+.lightGreen{
+	color: #faa635;
+}
+.darkGreen{
+	color: #6cab3a;
+}
+
+/* General Classes */
+.upper{
+	text-transform:uppercase;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.hide {
+    display: none;
+}
+.positionRelative{
+	position: relative;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.clear {
+    clear: both;
+}
+
+.Bold { font-weight: bold; }
+
+.ovrFlwH{
+	overflow: hidden;
+}
+}
+
+/* even & odd rows (for tables) */
+.oddRow
+{
+	height: 32px;
+	padding: 4px 0 0 13px;
+	background: #f3f3f3;
+}
+
+.oddRow div
+{
+	font-size: 10px;
+	color: #333;
+}
+
+.evenRow
+{
+	height: 32px;
+	padding: 4px 0 0 13px;
+	background: #fbfbfb;
+}
+
+.evenRow div
+{
+	font-size: 10px;
+	color: #333;
+}
+
+
+
+/*List with Arrow image Bullets*/
+.arrow_list
+{
+	list-style-image: url(/Content/Global/img/buttons/arrow-bullet.gif);
+	display: list-item;
+	padding: 0;
+}
+label
+{
+	font-size: 11px;
+}
+
+input, textarea
+{
+	background: #F0F8FA;
+	border-top: 1px solid #137485;
+	border-bottom: 1px solid #95B1B5;
+	border-right: 1px solid #0A3B42;
+	border-left: 1px solid #9CAFB5;
+	font-size: 11px;
+	padding: 1px 5px;
+}
+
+input.image
+{
+	border: none;
+	background: none;
+}
+
+form image, img, image
+{
+	border: none;
+	background: none;
+}
+
+form#aspnetForm {
+	margin:0px
+}
+
+hr
+{
+	border: none;
+	border-top: 1px solid #CBCDCA;
+}
+
+.reqField
+{
+	font-size: 11px;
+	display: inline;
+}
+
+img, .imgForm
+{
+	border: none;
+	background: none;
+}
+
+.buttongo {
+	margin: 0px 0 -3px 4px; 
+	background:none; 
+	border:none	
+}
+
+/*USE CONTENT_TEXT WHEN CONTENT NEED PADDING*/
+.content_text
+{
+   background-color: #FFFFFF;
+   padding: 2px;
+}
+
+.large_link
+{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+/*USE CONTENT WHEN BODY DOES NOT REQUIRE PADDING*/
+
+
+
+
+/* STYLES ADDED BY ANDRES 01/09/08 FOR THE CONTENT PAGES HTML */
+/* ANY EXISTING STYLE ON THIS SHEET THAT I HAVE MODIFIED, HAS BEEN MOVED UNDER THIS SECTION AS WELL */
+/* default page level title - GLOBAL STYLES EXCEPT FOR COLOR WHICH IS SECTION-LEVEL STYLE */
+.pageHeading  { margin: 0 0 10px 0; padding: 0px 0 4px 0px; font-size: 18px; }
+
+
+/* Content Page Styles */
+.contpg_img {
+	border: 1px solid #CCCCCC;
+	margin-right: 5px;
+	margin-bottom: 2px;
+}
+
+.uc10-img {
+   /*commented per Sheila border: 1px solid #999999;*/
+   margin:0 0px 0 0; width:70px;
+}
+
+
+#ContentBlock
+{
+margin:5px 0 15px 0;
+overflow:hidden;
+/*background-color:#99CC33;*/
+}
+
+
+
+/* Already existing styles that I have tweaked - moved under this section */
+img.assetRightArrow
+{
+	margin-left: 4px;
+	text-decoration: none;
+	vertical-align: bottom;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: none;
+	margin-top: 5px;
+}
+
+
+/* common text styles */
+.txt_regular {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #555;
+	}
+	
+	
+/*Added by josue FOR HL3.0*/
+
+
+
+.homewrapper {
+	margin:0;
+	overflow-x:hidden;
+	padding:0;
+	width:950px;	
+}
+
+.bodytable{
+	width:955px; 
+	background-color:#FFFFFF;
+}
+
+.breadcrumb{
+	background-image:url(/Content/Global/img/layout/header_sdw.gif);
+	background-repeat:repeat-x;
+	padding:5px 11px 0px 0px;
+	height:12px;
+	font-size:10px;
+}
+
+
+.top_form_styles{
+	background: #F4F4F4; 
+	border:solid 1px #999; 
+	margin:0 0 0 7px; 
+}
+
+.nopadding{
+	padding:0px; 
+	margin:0px;
+}
+
+.landingwrapper {
+	width:743px;
+	overflow-x:hidden;
+}
+
+.localeselect{
+	padding-right:4px; 
+	_padding-right:3px;
+}
+
+.localebox{ 
+	width: 175px;  /* IE8 */
+}
+
+@-moz-document url-prefix(){ 
+.localebox {
+	width: 169px; /* FF */
+	-width: 200px;
+}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.localebox {
+	width: 193px; /* Safari MAC */
+}
+}
+
+
+.searchin{ 
+	width:129px; 
+	_width:129px;
+}
+
+.searchfield{
+	width:125px;
+	width:125px\9;
+	
+}
+
+
+.viewerselect{
+	width:215px; 
+}
+
+
+
+/*might be common to all templates */
+
+.bluetable {
+	width: 730px;
+	padding-left: 5px;
+}
+
+.footertable {
+	background-color:#FFFFFF;
+	/*width:955px;*/
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.footerlinks{ 
+	height:28px;
+	color:#009900
+}
+
+.footericons{
+	width:135px;
+}
+
+.footertextpad{
+	font-size:9px; 
+	padding-top:10px;
+}
+
+.titledivline{
+	padding-left: 15px;
+	_margin-left: 15px;
+}
+.icons2{
+	padding:13px 30px 13px 0;
+}
+
+.pagepadding{
+	padding:15px 20px 0px 25px;
+}
+
+.pagination6{
+	float:right;
+	/*text-align:right;*/
+	/*width:500px;*/
+	color:#428c36;
+	padding:20px 20px 20px 0px;
+}
+
+.greentitle
+{
+	font-size: 22px;
+	font-weight: 400;
+	padding:0px 0px 10px 0px;
+	color:#428c36;
+}
+.content_title
+{
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+.nlpad{
+	padding: 8px 0 0 22px
+}
+
+.hidden {
+  display: none;
+ }
+
+.hzdivline{
+	width:100%; 
+	height:1px; 
+	background-image:url(/Content/Global/img/layout/divline_left_hz.gif); 
+	background-repeat:no-repeat; 
+	background-position:left center;
+	padding:0px; 
+	margin:0px; 
+	text-align:right;
+}
+
+.repeatablelinks{
+	padding-left:15px;
+}
+
+.repeatlink{
+	font-size:13px; 
+	padding:5px;
+	text-decoration:none;
+}
+
+.repeatlinkdiv{
+	height:30px;
+}
+
+
+/* end might be common to all templates*/
+
+
+/**************** START TEMPLATE 1 STYLES ****************/
+.moduletitle{
+	font-size:21px;
+	padding:0px; 
+	margin:0px;
+}
+
+.module_subtitle{
+	/*font-weight:bold;*/
+	font-size:13px; 
+	/*font-style:italic;*/ 
+	padding:0px;
+	padding-bottom:5px;
+}
+
+.module_quote{
+	font-weight:normal;
+	font-size:11px; 
+	font-style:italic;
+	padding:0px;
+	color:#428c36;
+}
+
+.module_img{
+	padding-right:5px; 
+	width:103px; 
+	/*height:103px;*/
+	overflow:hidden;
+}
+
+.module_rotating_img{
+	padding-right:5px; 
+	width:90px; 
+	overflow:hidden;
+}
+
+.module_rotating_table{
+	padding: 5px 0 5px 0;
+}
+
+
+.module_c{
+	padding: 15px 8px 8px 8px;
+	width:100%;
+}
+/**************** END TEMPLATE 1 STYLES ****************/
+
+
+/***** LEAD GEN STYLES *****/
+.leadgenform{ 
+	padding-top:10px;
+	_padding-top:0px;
+}
+
+.formcheckbox{
+	background:none;
+	border:0px;
+}
+/***** END LEAD GEN STYLES *****/
+
+.hz-div{
+	height:1px;
+	background-color:#999999;
+	width:100%
+
+}
+
+.pagebody{
+	padding-left:0px; 
+	padding-right:0px; 
+	padding-bottom:14px;
+}
+
+.contenttable
+{
+	background-color: #FFFFFF;
+	
+	/* for local .90 dev
+	padding-left:7px;*/
+	padding-left:3px;
+	padding-right: 7px;
+	width:743px;
+	height: 500px;
+}
+
+table.pagetable .contenttable {
+	/*padding-left: 7px;*/
+}
+
+
+.footer
+{
+	height: 35px;
+	background-image:url(/Content/Global/img/layout/footer_herbalife.gif);
+	background-repeat:repeat-x;
+	padding:8px 0 0 10px;
+	color:#537f26;
+}
+
+.footerimg img
+{
+	width:0px; height:0px;
+}
+
+.header_logo 
+{
+	padding-left:60px; 
+	padding-top:10px
+}
+
+.contentMainTable{	
+	width:737px; 
+	background-color:#FFFFFF;
+}
+
+.texttableS{	
+	/*fix 12674 width:390px;*/ 
+}
+
+/**********ADDED FOR ECM -- this style should be injected from Teamsite/site publisher ************/
+.spacerTable{
+	display:inline;
+	float:left;
+}
+
+/* ADDED TO POSITION COUNTRY SELECTOR BOX AND TOP NAV BACK TO THE TOP OF THE PAGE FOR SEO */
+
+/*.searchform {
+    padding-top: 20px !important;
+}*/
+
+
+/*Added by josue FOR HL3.0*/
+.header {
+  background-image: url("/Content/Global/img/layout/header-background.gif");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 120px;
+  padding-right: 55px;
+}
+
+.searchformATG {
+    padding-top: 10px !important;
+}
+
+#topNavSource {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+}
+
+.localeselect {
+  color: #FFFFFF;
+  /*padding-right: 91px;*/
+  text-align: right;
+}
+
+#localeSelectorSource {
+	top: 8px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	padding-left: 294px;
+    left: 50%;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 500px !important;
+}
+
+#localeSelectorSource a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.header-tbl {
+  /*padding-right: 55px;*/
+  width: 100%;
+}
+
+.HeaderLogo {
+    padding-top: 10px;
+    padding-left:30px;
+    vertical-align: top;
+}
+
+.selector-td {
+  padding-bottom: 7px;
+  padding-right: 17px !important;
+  padding-top: 25px;
+  text-align: right;
+}
+
+.searchform {
+    color: #ffffff;
+    padding-top: 12px !important;
+	height:20px;
+}
+
+.searchform div {
+    padding-right:0px !important;
+}
+
+.footer {
+    background-image: none;
+}
+
+.footerlinks {
+  background: url("/Content/Global/img/layout/footer-background.gif") no-repeat scroll center top transparent;
+  color: #FFFFFF !important;
+  padding-top: 5px !important;
+}
+
+.footerlinks a {
+  color: #FFFFFF !important;
+  padding: 0 5px;
+}
+
+.localeselect-ATG {
+  color: #FFFFFF;
+  padding-right: 7px;
+  text-align: right;
+}
+
+.header-tbl-ATG {
+  /*padding-right: 55px;*/
+  width: 100%;
+}
+
+.HeaderLogo-ATG {
+    padding-top: 10px;
+    padding-left:30px;
+    vertical-align: top;
+}
+
+.selector-td-ATG {
+  padding-bottom: 3px;
+  padding-right: 17px !important;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.searchform-ATG {
+    color: #ffffff;
+    padding-top: 12px !important;
+	height:20px;
+}
+
+.searchform-ATG div {
+    padding-right:0px !important;
+}
+
+
+.buttongo-ATG {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  margin: 0 0 -3px 0;
+}
+
+#element9 {
+	display:none;
+}
+
+/** STYLES FOR .NET LIME GREEN and ORANGE HEADER August 2, 2011 */
+.header-tbl-NET{
+	height:60px;
+	width:100%;
+}
+
+.HeaderLogo-NET{
+	padding-left: 30px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+.selector-td-NET {
+	padding-bottom: 3px;
+	padding-right: 17px !important;
+	padding-top: 10px;
+	text-align: right;
+}
+
+.select-NET{
+	background: none repeat scroll 0 0 #F4F4F4;
+	border: 1px solid #999999;
+	margin: 0 0 0 7px;
+	width: 160px;
+	font-size:10px;
+	color: #666666;
+}
+
+.localeselect-NET {
+	color: #FFFFFF;
+	padding-right: 2px;
+	text-align: right;
+}
+
+.searchfield-NET{
+	color: #666666;
+	width: 135px;
+	color: #666666;
+	font-size: 10px;
+	background-color:#FFFFFF;
+	background: none repeat scroll 0 0 #F4F4F4;
+	border: 1px solid #999999;
+	margin: 0 0 0 7px;
+}
+
+/* END STYLES FOR .NET LIME GREEN and ORANGE HEADER August 2, 2011 */
+/* FIX FOR GLOWTABS - overides styles found in /Content/Global/css/glowtabs.css */
+.glowingtabs a {
+	padding:0 4px;
+}
+.glowingtabs a span {
+    overflow: visible !important;
+}
+
+/** STYLES FOR SKIN OF BASIC CONTENT COMPONENT */
+.basic_content_container {
+    border: 1px solid #B5B9B9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 10px;
+    min-height: 150px;
+    width: 330px;
+}
+
+.basic_content_header {
+    border-bottom: 1px solid #B5B9B9;
+    border-top: 6px solid #7BC142;
+}
+
+.basic_content_header span {
+    color: #646464;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.basic_content_header span a:link {
+	text-decoration: none;
+	color: #646464;
+}
+
+.basic_content_container .basic_content_text, .basic_content_container .basic_content_img {
+    border: medium none;
+    float: left;
+    margin: 10px;
+}
+
+.basic_content_text {
+	line-height: 18px;
+	width: 175px;
+}
+
+.basic_content_img {
+    height: 98px;
+    overflow: hidden;
+    width: 98px;
+}
+
+.basic_content_button  {
+    margin-top:    10px;
+	margin-bottom: 10px;
+}
+
+
+.basic_content_button   a.repeatablelinks2  {
+    background: url("/content/Global/img/slidedeck/btn-green-mid.png") repeat-x scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+/** END OF STYLES FOR SKIN OF BASIC CONTENT COMPONENT */
+
+/** STYLES FOR ADD THIS PLUGIN */
+.add_this_container  {
+	display: block;
+    float: left;
+    margin-left: 14px;
+    margin-top: 9px;
+    width: 118px;
+}
+
+.print_container {
+	float:right;
+	margin-right: 25px;
+}
+.icon2_modify  {
+	padding: 0 30px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+
+/** END STYLES FOR ADD THIS PLUGIN */
+
+/*******************New buttons CSS only************************/
+.icnLeft, .icnRight {
+	position: absolute;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+	top: 0;
+}
+.icnRight {
+	right: 0;
+}
+.icnLeft {
+	left: 0;
+}
+.arrowLeft {
+}
+.arrowRight {
+}
+.icnCart {
+}
+.icnPlus {
+}
+.neutral, .neutral:link, .neutral:active, .neutral:hover, 
+.forward, .forward:link, .forward:active, .forward:hover, 
+.backward, .backward:link, .backward:active, .backward:hover,
+.linkBtn, .linkBtn:link, .linkBtn:active, .linkBtn:hover{
+	cursor: pointer;
+	font-family: arial;
+	font-size: 12px;
+	position: relative;
+}
+.neutral, .neutral:link, .neutral:active, .neutral:hover, 
+.forward, .forward:link, .forward:active, .forward:hover, 
+.backward, .backward:link, .backward:active, .backward:hover {
+	color: #FFFFFF !important;	
+	border-radius: 3px;
+	box-shadow: 1px 2px 2px 0 #A38BA3;
+	font-weight: bold;
+	text-align: center;	
+	display: inline-block;
+	text-decoration: none;
+	line-height: 17px;
+	margin: 3px;
+	padding: 5px 20px;		
+}
+.neutral, .neutral:link, .neutral.disabled {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fab43a), color-stop(1, #f9992c) );
+	background: -moz-linear-gradient( center top, #fab43a 5%, #f9992c 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fab43a', endColorstr='#f9992c');
+	background-color: #fab43a;
+	border: 1px solid #d38211;
+}
+.neutral:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9992c), color-stop(1, #fab43a) );
+	background: -moz-linear-gradient( center top, #f9992c 5%, #fab43a 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9992c', endColorstr='#fab43a');
+
+	background-color: #f9992c;
+}
+.forward, .forward:link, .forward.disabled {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8cc94e), color-stop(1, #6abb38) );
+	background: -moz-linear-gradient( center top, #8cc94e 5%, #6abb38 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cc94e', endColorstr='#6abb38');
+	background-color: #8cc94e;
+	border: 1px solid #6eb339;
+}
+.forward:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6abb38), color-stop(1, #8cc94e) );
+	background: -moz-linear-gradient( center top, #6abb38 5%, #8cc94e 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6abb38', endColorstr='#8cc94e');
+	background-color: #6abb38;
+}
+.backward, .backward:link, .backward.disabled {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #919191), color-stop(1, #6f6f6f) );
+	background: -moz-linear-gradient( center top, #919191 5%, #6f6f6f 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#919191', endColorstr='#6f6f6f');
+	background-color: #919191;
+	border: 1px solid #666666;
+}
+.backward:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6f6f6f), color-stop(1, #919191) );
+	background: -moz-linear-gradient( center top, #6f6f6f 5%, #919191 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6f6f6f', endColorstr='#919191');
+	background-color: #6f6f6f;
+}
+.backward.disabled, .neutral.disabled, .forward.disabled, .linkBtn.disabled {
+	cursor: default;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.backward:visited, .neutral:visited, .forward:visited {
+	color: #fff !important;
+}
+/*******************New buttons CSS only END************************/

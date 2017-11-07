@@ -1,0 +1,403 @@
+﻿// =============
+// Themes
+// -----
+// This file contains basic themes styles
+//
+//==============
+
+.columnList {
+    letter-spacing: -4px;
+    font-size: 0;
+    padding: 0;
+
+    > * {
+        letter-spacing: normal;
+        font-size: 14px;
+    }
+
+    > li {
+        display: inline-block;
+        margin: 0 5% 0 -1px;
+        list-style: none;
+        width: 45%;
+        vertical-align: top;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    i {
+        color: #515151;
+        float: left;
+        font-size: 40px;
+        height: 100px;
+        margin: 2px 15px 0 0;
+        -moz-transition: all 0.2s ease 0s;
+        -webkit-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+    }
+
+    strong, stong a {
+        display: block;
+    }
+
+    h5 {
+        color: #0088FF;
+        font-weight: bold;
+    }
+}
+
+//==========
+// GENERAL CSS
+//==========
+#contentSite {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.infoImg {
+    background: url(/Content/Global/img/icons/info_img.png) left center no-repeat;
+    padding-left: 25px;
+    min-height: 20px;
+}
+
+#header p {
+    float: right;
+    margin-top: 5px;
+}
+
+.bordered {
+    border: 1px solid #ccc;
+}
+
+.scrollable {
+    height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#relStories.container {
+    min-height: 0;
+}
+
+.serverSig {
+    background-color: #5F5F5F;
+    color: #D0D0D0;
+    font-size: 9px;
+}
+
+//==========
+// HRBL SIDES
+//==========
+.sides > div {
+    overflow: hidden;
+    margin: .55em 0;
+}
+
+.sides label, .sides p, .sides span {
+    float: left;
+    margin: 0 0 0 1%;
+    width: 48%;
+}
+
+.sides label {
+    font-weight: bold;
+}
+
+.sides span, .sides label {
+    color: #515151;
+    margin: 0 1% 0 0;
+    text-align: right;
+}
+
+//==========
+//Promo Banner
+//==========
+.squareBanner {
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-top: 20px;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+//==========
+//FIXES FOR BROWN CONTENT IN GREEN COUNTRY
+//==========
+#principalContent > div {
+    display: inline-block;
+}
+
+#principalContent, .cmsPageBound {
+    min-height: 400px;
+}
+
+#LeftNavMenuCell {
+    padding: 0 10px 10px;
+    text-align: left;
+    vertical-align: top;
+    width: 175px;
+}
+
+#ContentCell {
+    max-width: 965px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 100%;
+}
+
+#LeftNavMenuCell + #ContentCell {
+    width: 765px;
+}
+
+//==========
+// PRINT
+//==========
+@media print {
+    footer, header,
+    .neutral, a.neutral,
+    .forward, a.forward,
+    .backward, a.backward,
+    input[class*="btn"],
+    a[class*="btn"] {
+        display: none;
+    }
+}
+
+// Added per defect 83618
+.ajax__calendar_container {
+    background: none repeat scroll 0 0 #F6F6F6;
+    cursor: default;
+    font-family: tahoma,verdana,helvetica;
+    font-size: 11px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    width: 170px;
+    z-index: 100;
+}
+
+//==========
+// COLORS
+//==========
+
+// Brand Colors
+.green {
+    color: #7AC143;
+}
+// Herbalife Brand Green 
+.orange {
+    color: #FAA634;
+}
+// Herbalife Brand Orange 
+
+// Alternate Colors 
+.brightgreen {
+    color: #87D54A;
+}
+
+.lightgreen {
+    color: #DBF5C8;
+}
+
+.lightorange {
+    color: #FFF2DE;
+}
+
+.red {
+    color: red;
+}
+
+// Sectional Colors 
+.blue {
+    color: #319EA0;
+}
+
+.purple {
+    color: #886587;
+}
+
+.darkgreen {
+    color: #445B49;
+}
+
+.salmon {
+    color: #F16148;
+}
+
+.darkblue {
+    color: #27709b;
+}
+
+// Greyscale Colors 
+.black {
+    color: #000000;
+}
+
+.darkgrey {
+    color: #2e2e2e;
+}
+
+.charcoalgrey {
+    color: #515151;
+}
+
+.grey {
+    color: #CCCCCC;
+}
+
+.lightgrey {
+    color: #EEEEEE;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+//==========
+//BACKGROUND Colors 
+//==========
+
+// Brand Colors 
+.greenB {
+    background-color: #7AC143;
+}
+// Herbalife Brand Green 
+.orangeB {
+    background-color: #FAA634;
+}
+// Herbalife Brand Orange 
+
+// Alternate Colors 
+
+.brightgreenB {
+    background-color: #87D54A;
+}
+
+.lightgreenB {
+    background-color: #DBF5C8;
+}
+
+.lightorangeB {
+    background-color: #FFF2DE;
+}
+
+.redB {
+    background-color: red;
+}
+
+// Sectional Colors 
+.blueB,
+.turquoiseB {
+    background-color: #319EA0;
+}
+
+.purpleB {
+    background-color: #886587;
+}
+
+.darkgreenB {
+    background-color: #445B49;
+}
+
+.salmonB {
+    background-color: #F16148;
+}
+
+.darkblueB {
+    background-color: #27709b;
+}
+
+// Greyscale Colors 
+.blackB {
+    background-color: #000000;
+}
+
+.darkgreyB {
+    background-color: #2e2e2e;
+}
+
+.charcoalgreyB {
+    background-color: #515151;
+}
+
+.greyB {
+    background-color: #CCCCCC;
+}
+
+.lightgreyB {
+    background-color: #EEEEEE;
+}
+
+.whiteB {
+    background-color: #FFFFFF;
+}
+
+//==========
+// GENERAL CLASSES
+//==========
+
+.upper {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide, .myhl3Hide {
+    display: none;
+}
+
+.Bold, .bold {
+    font-weight: bold;
+}
+
+.overFlowH {
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+.center > * {
+    text-align: start;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.textRight {
+    text-align: right;
+}
+
+
+/*============================================================================
+$ RTL support
+*/
+
+[dir="rtl"]{ 
+    text-align: right !important; 
+
+    #hrblSiteWrapper{ direction: rtl; }
+}

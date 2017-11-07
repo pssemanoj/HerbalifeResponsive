@@ -1,0 +1,41 @@
+﻿// =============
+// Ads
+// -----
+// This is the styling for Random Ads. ****We should change the name of these****
+//
+//==============
+
+.randomAds > .columnCont {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.randomAds p {
+    line-height: 18px;
+    margin-bottom: 20px;
+    max-height: 55px;
+    overflow: hidden;
+}
+
+.randomAds h4 {
+    margin-bottom: 10px;
+}
+
+.randomAds .half .half {
+    padding: 0;
+}
+
+/*============================================================================
+$RESPONSIVE CSS
+*/
+
+@media only screen and (max-width: 640px) {
+    .randomAds > .columnCont {
+        max-height: none;
+    }
+
+    .randomAds > .columnCont a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

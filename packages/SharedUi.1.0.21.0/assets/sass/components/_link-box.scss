@@ -1,0 +1,47 @@
+﻿#classicLinkBox {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  background-color: #0081ff;
+  width: 135px;
+  padding: 10px 5px 10px 10px;
+  box-sizing: border-box;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  z-index: 3;
+  border-left: 2px solid #0067cc;
+  border-top: 1px solid #0067cc;
+  display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+        display: block;
+    }
+
+    span.whiteBtn {
+        background-color: #fff;
+        padding: 5px 15px 5px 15px;
+        display: block;
+        color: #0081ff;
+        margin-top: 7px;
+        box-shadow: 0px 2px 2px #0074e6;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: bold; 
+    }
+
+    i{
+        position: absolute;
+        top: 0;
+        right: 5px;
+        cursor: pointer;
+
+        &:hover{
+            color: $lightgrey;
+        }
+    }
+}
+
+
+

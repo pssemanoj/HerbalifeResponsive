@@ -1,0 +1,39 @@
+﻿// =============
+// Breadcrumbs
+// -----
+// This file contains styling for the breadcrumbs
+//
+//==============
+
+#breadcrumbContainer{
+    display: none;
+    margin-bottom: $gutter;
+
+    @include breakpoint($tablet) {
+        display: block;
+    }
+}
+
+#breadcrumb {
+    margin: 0;
+    padding: 0;
+
+    li {
+        color: #999999;
+        display: inline;
+        list-style: none outside none;
+        padding-right: 4px;
+        text-transform: uppercase;
+        vertical-align: top;
+    } 
+
+    .active a,
+    .active a:active {
+        color: #999;
+    }
+
+    span + * {
+        margin-left: 4px;
+    }
+}
+

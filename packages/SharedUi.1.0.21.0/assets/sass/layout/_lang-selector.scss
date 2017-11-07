@@ -1,0 +1,93 @@
+﻿// =============
+// Language Selector
+// -----
+// This File contains styling for the compondent: Local Selector
+//
+//==============
+
+#locales {
+    background: url("#{$sharedUI}/Images/map.png") no-repeat scroll 150px center transparent;
+    border-bottom: 1px solid #7BC144;
+    text-shadow: 0 1px 0 #FFFFFF;
+    display: none;
+
+    .wrap {
+        @extend .wrap-normal;
+
+        #closeLocalSel {
+            width: 100%;
+            color: #515151;
+            text-decoration: none;
+            position: relative;
+
+            i {
+                float: right;
+                margin-top: $gutter;
+                position: relative;
+            }
+        }
+    }
+
+    .locales-wrap {
+        @extend .wrap-normal;
+        padding: 0 0 $gutter 0;
+        letter-spacing: -4px;
+
+        .locales-drop {
+            width: span(4);
+            margin: 0 $gutter $gutter 0;
+            display: inline-block;
+            letter-spacing: normal;
+
+            @include breakpoint($breakpoint-tablet) {
+                width: span(4 of 8);
+
+                &:first-child + div,
+                & + div + div + div{
+                    margin-right: 0px;
+                }
+            }
+
+            @include breakpoint($breakpoint-desktop) {                
+                &, &:first-child + div{
+                    width: span(3 of 12);
+                    margin-right: $gutter;
+                }
+            }
+        }
+    }
+}
+
+#locales > .container:first-child {
+    position: relative;
+}
+
+#locales .container > div {
+    padding: 0 20px;
+    vertical-align: bottom;
+}
+
+#locales h4 + span {
+    width: 100%;
+}
+
+/*============================================================================
+$ RTL support
+*/
+
+[dir="rtl"] #locales .locales-wrap .locales-drop{
+
+    @include breakpoint($breakpoint-tablet) {
+        &, &:first-child + div{ margin-right: $gutter; }
+        &:first-child,
+        &:first-child + div + div{
+            margin-right: 0px;
+        }
+    }
+
+    @include breakpoint($breakpoint-desktop) {                
+        &:first-child + div + div{
+            margin-right: $gutter;
+        }
+    }
+} 

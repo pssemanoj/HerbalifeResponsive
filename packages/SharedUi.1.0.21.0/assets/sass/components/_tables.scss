@@ -1,0 +1,170 @@
+﻿// =============
+// Table it!
+// -----
+// This is where you find the base styling for Tables
+//
+//==============
+
+.hrblTable.RadGrid,
+.hrblTable {
+    border: none;
+
+    th {
+        text-align: left;
+        padding: 0 8px;
+        background-image: none;
+        border: none;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+            color: #525252;
+        }
+    }
+
+    .rgPager {
+        background: none;
+
+        table {
+            width: auto !important;
+            float: right;
+        }
+    }
+
+    .rgNumPart a,
+    .rgPageFirst,
+    .rgPagePrev,
+    .rgPageNext,
+    .rgPageLast {
+        border: 1px solid #CCCCCC;
+        border-radius: 3px 3px 3px 3px;
+        color: #666666;
+        padding: 0;
+        margin: 0 2px;
+        cursor: pointer;
+    }
+
+    .rgNumPart {
+        a:hover,
+        a.rgCurrentPage {
+            color: #fff;
+            background-color: #70bc3d;
+        }
+
+        span {
+            display: block;
+            padding: 0 2px;
+            text-align: center;
+            background: none;
+            width: 18px;
+        }
+    }
+}
+
+.hrblTable.RadGrid {
+    .rgNumPart a:hover,
+    .rgNumPart a:hover span,
+    .rgNumPart a.rgCurrentPage,
+    .rgNumPart a.rgCurrentPage span,
+    .rgPageFirst,
+    .rgPagePrev,
+    .rgPageNext,
+    .rgPageLast {
+        background-image: none;
+    }
+
+    .rgPageFirst,
+    .rgPagePrev,
+    .rgPageNext,
+    .rgPageLast {
+        height: 24px;
+        width: 24px;
+    }
+
+    .rgPageFirst {
+        background: url(/Content/Global/img/icons/doubleArrowLeft.jpg) center center no-repeat;
+    }
+
+    .rgPagePrev {
+        background: url(/Content/Global/img/icons/arrowLeft.jpg) center center no-repeat;
+    }
+
+    .rgPageLast {
+        background: url(/Content/Global/img/icons/doubleRightArrow.jpg) center center no-repeat;
+    }
+
+    .rgPageNext {
+        background: url(/Content/Global/img/icons/arrowRight.jpg) center center no-repeat;
+    }
+
+    .rgNumPart,
+    .rgArrPart1,
+    .rgArrPart2 {
+        padding: 5px 0;
+    }
+
+    .rgAdvPart,
+    .rgInfoPart {
+        padding: 5px 10px;
+    }
+
+    .rgArrPart1 {
+        padding-left: 5px;
+    }
+
+    .rgArrPart2 {
+        padding-right: 5px;
+    }
+
+    .rgPageFirst:hover,
+    .rgPagePrev:hover,
+    .rgPageLast:hover,
+    .rgPageNext:hover {
+        background-position: center center;
+    }
+}
+
+//Combined styles on tables
+.hrblTable td span,
+.hrblTable td label,
+.hrblTable td input {
+    vertical-align: middle;
+}
+
+.hrblTable.RadGrid .rgMasterTable,
+.hrblTable > table {
+    padding: 1px;
+    color: #525252;
+}
+
+.hrblTable.RadGrid tr.rgRow,
+.hrblTable.RadGrid tr.rgAltRow,
+.hrblTable > table > tbody tr {
+    height: 40px;
+}
+
+.hrblTable.RadGrid .rgAltRow,
+.hrblTable tr:nth-child(even) {
+    background-color: #f6f6f6;
+    background-image: none;
+}
+
+.hrblTable.RadGrid .rgRow:hover,
+.hrblTable.RadGrid .rgAltRow:hover,
+.hrblTable > table > tbody tr:hover {
+    background-color: #DBF5C8;
+}
+
+.hrblTable .rgHeader tr:hover,
+.hrblTable .rgHeader:hover,
+.hrblTable tr th {
+    background-color: transparent;
+}
+
+.hrblTable.RadGrid .rgRow td,
+.hrblTable.RadGrid .rgAltRow td,
+.hrblTable tr td {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,32 @@
+<#@ template language="C#" hostspecific="True" debug="True" #>
+<#
+/******************************************************************
+
+	Set the Namespace, SQL query and connection below to generate a Denum.
+	For each row in the data returned, a member will be generated.
+	The generator assumes:
+		1) The first column contains unique values and is considered the Key value
+		2) Column names represent the properties desired on the Denum
+		3) Each column returned will become a property. Don't want it - don't query it.
+		4) Each row returned will become a member field. Don't want it - don't query it.
+		5) The name of this file is the name of the class (minus the .tt extension). It is case sensitive.
+*/
+
+
+/******************************************************************/
+/*** Set the value below to customize the output                ***/
+/******************************************************************/
+
+
+
+	string _Namespace = "HL.DistributorCRM.ValueObjects.Contact";
+	string sqlQuery = "select [PreferredMeansOfContactCode] as 'Key', DisplayName, DisplaySequence from [LuMeansOfContact] where PreferredMeansOfContactCode!= 'UNS' ORDER BY DisplaySequence ASC";
+	string connectionString = "Data Source=IADEV4IA;Initial Catalog=DistributorCRM;Integrated Security=True";
+
+
+
+
+/******************************************************************/
+/*** Do not modify anything below here                          ***/
+/******************************************************************/
+#><#@ include file="../Denum.tt.Include"#>

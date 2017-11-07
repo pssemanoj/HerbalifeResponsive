@@ -1,0 +1,2072 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HL.Blocks.Caching</name>
+    </assembly>
+    <members>
+        <member name="T:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2">
+            <summary>
+                The asp http runtime cache.
+            </summary>
+            <typeparam name="TValue">
+                The Type to cache
+            </typeparam>
+            <typeparam name="TKey">
+                The Key with which to cache
+            </typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2" /> class.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.#ctor(System.Int32)">
+            <summary>
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2" /> class.
+            </summary>
+            <param name="timeOut">The time out.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.#ctor(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection)">
+            <summary>
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2" /> class.
+                The asp http runtime cache.
+            </summary>
+            <param name="config">
+                The config element
+            </param>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.TimeoutSeconds">
+            <summary>
+                Gets or sets the time out seconds
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.Remove(`1)">
+            <summary>
+                Method called to clear cache
+            </summary>
+            <param name="key">
+                The key.
+            </param>
+            <returns>
+                The expires.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.Save(`1,`0)">
+            <summary>
+                The save.
+            </summary>
+            <param name="key">
+                The key.
+            </param>
+            <param name="value">
+                The value.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.TryGet(`1,System.Func{`1,`0},`0@)">
+            <summary>
+                Method called to get object of type T from cache
+            </summary>
+            <param name="key">The key.</param>
+            <param name="fetchMethod">The fetch method.</param>
+            <param name="result">The value.</param>
+            <returns>
+                The try get.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AspHttpRuntimeCache`2.MakeKey``1(System.Type,``0)">
+            <summary>
+                Method called to create a unique key
+            </summary>
+            <typeparam name="TKey">Type of key</typeparam>
+            <param name="t">The t.</param>
+            <param name="key">The key.</param>
+            <returns>
+                The make key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2">
+            <summary>
+            The azure app fabric cache.
+            </summary>
+            <typeparam name="TValue">
+            The type to cache
+            </typeparam>
+            <typeparam name="TKey">
+            the key to cache the object with
+            </typeparam>
+        </member>
+        <member name="F:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheKeyPrefix">
+            <summary>
+              The cache key prefix.
+            </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.cacheFactory">
+            <summary>
+              The cache factory.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.#ctor(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2"/> class. 
+              Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2"/> class. 
+              The azure app fabric cache.
+            </summary>
+            <param name="config">
+            The config element
+            </param>
+            <exception cref="T:System.Exception">
+            Possible exception
+            </exception>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.AppFabricCacheRefreshIntervalSeconds">
+            <summary>
+              Gets or sets The app fabric cache time out seconds.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.AppFabricMaxItemTtlSeconds">
+            <summary>
+              Gets the maximum TTL (Time To Live) for a cache item.
+            </summary>
+            <remarks>
+              The TTL is the expiration time in the appfabric cache.
+              The <see cref="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.AppFabricCacheRefreshIntervalSeconds"/> is only used to determine when a new fetch should be performed.
+            </remarks>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheServicPort">
+            <summary>
+              Gets or sets The cache servic port.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheServiceUri">
+            <summary>
+              Gets or sets The cache service uri.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.DataCache">
+            <summary>
+              Gets DataCache.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.LocalCacheSize">
+            <summary>
+              Gets or sets The local cache size.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.LocalCacheTimeoutSeconds">
+            <summary>
+              Gets or sets The local cache time out seconds.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.FetcherLockTimeoutSeconds">
+            <summary>
+            Gets the fetcher lock timeout in seconds - the amount of time a lock is held on a cache while a fetch operation is in progress.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.SecurityKey">
+            <summary>
+              Gets or sets The security key.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.Remove(`1)">
+            <summary>
+            Method called to clear cache
+            </summary>
+            <param name="key">
+            The key.
+            </param>
+            <returns>
+            The expires.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.Save(`1,`0)">
+            <summary>
+            The save.
+            </summary>
+            <param name="key">
+            the Key with which to save the object
+            </param>
+            <param name="value">
+            The object to be saved
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.TryGet(`1,System.Func{`1,`0},`0@)">
+            <summary>
+            Method to get the object from cache
+            </summary>
+            <param name="key">
+            The Key with which to fetch the object
+            </param>
+            <param name="fetchMethod">
+            The fetch method.
+            </param>
+            <param name="result">
+            The value of the object of type T
+            </param>
+            <returns>
+            The try get.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.UpdateValue(`1,System.Func{`1,`0},`0@)">
+            <summary>
+            Updates the value using the fetch method synchronnously.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="fetchMethod">The fetch method.</param>
+            <param name="result">The result.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.UpdateValueAsync(System.Func{`1,`0},`1)">
+            <summary>
+            The get value async.
+            </summary>
+            <param name="fetchMethod">
+            The fetch method.
+            </param>
+            <param name="key">
+            The fetcher key.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.GetFullCacheKey(`1)">
+            <summary>
+            Method to get full cache key.
+            </summary>
+            <param name="key">
+            The key.
+            </param>
+            <returns>
+            The get full cache key.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.InitializeDataCacheFactory">
+            <summary>
+            The get default cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.InsertInternal(System.String,`0)">
+            <summary>
+            The insert internal.
+            </summary>
+            <param name="fullKey">
+            The full key.
+            </param>
+            <param name="value">
+            The value.
+            </param>
+        </member>
+        <member name="T:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheItemWrapper`1">
+            <summary>
+            The cache item wrapper.
+            </summary>
+            <typeparam name="TCachedValue">
+            </typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheItemWrapper`1.#ctor">
+            <summary>
+              Initializes a new instance of the <see cref = "T:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheItemWrapper`1" /> class.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheItemWrapper`1.CachedValue">
+            <summary>
+              Gets or sets CachedValue.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureAppFabricCache`2.CacheItemWrapper`1.Inserted">
+            <summary>
+              Gets or sets Inserted.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2">
+            <summary>
+                The azure blob cache.
+            </summary>
+            <typeparam name="TValue">
+                The Type to cache
+            </typeparam>
+            <typeparam name="TKey">
+                The cache Key
+            </typeparam>
+        </member>
+        <member name="F:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.DataConnectionString">
+            <summary>
+                The _data connection string.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.#ctor(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection)">
+            <summary>
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2" /> class.
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2" /> class.
+                Initializes a new instance of the <see cref="T:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2" /> class.
+                The azure blob cache.
+            </summary>
+            <param name="config">
+                Config defined for the blob storage
+            </param>
+            <exception cref="T:System.Exception">
+                Possible exception
+            </exception>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.BlobName">
+            <summary>
+                Gets or sets The blob name.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.CacheTimeoutInMinutes">
+            <summary>
+                Gets or sets The cache Timeout
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.ContainerAddress">
+            <summary>
+                Gets or sets The container address.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.Remove(`1)">
+            <summary>
+                The Method called to clear cache.
+            </summary>
+            <param name="key">
+                Key with which the blob needs to be fetched
+            </param>
+            <returns>
+                The expires.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.Save(`1,`0)">
+            <summary>
+                The save.
+            </summary>
+            <param name="key">
+                The key to access the blob
+            </param>
+            <param name="value">
+                The value that needs to be saved on the blob
+            </param>
+            <exception cref="T:System.Exception">
+                Possible exception
+            </exception>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.TryGet(`1,System.Func{`1,`0},`0@)">
+            <summary>
+                Method called to get the value from cache
+            </summary>
+            <param name="key">The Key to fetch the object with</param>
+            <param name="fetchMethod">The fetch method.</param>
+            <param name="result">The value of the object</param>
+            <returns>
+                The try get.
+            </returns>
+            <exception cref="T:System.Exception">
+                Possible exception
+            </exception>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.CheckBlobExists(Microsoft.WindowsAzure.StorageClient.CloudBlob)">
+            <summary>
+                Method to check if blob exists.
+            </summary>
+            <param name="cachedFile">
+                The cached file.
+            </param>
+            <returns>
+                The check blob exists.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.GetContainerReference(System.String)">
+            <summary>
+                The get container reference.
+            </summary>
+            <param name="fullKey">
+                The full key.
+            </param>
+            <returns>
+                The instance of the cloud container
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.GetFullCacheKey(`1,System.String)">
+            <summary>
+                Method to get full cache key.
+            </summary>
+            <param name="key">
+                The key.
+            </param>
+            <param name="blobUri">
+                The blob uri.
+            </param>
+            <returns>
+                The get full cache key.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.GetStreamFromType(`0)">
+            <summary>
+                The get stream from type.
+            </summary>
+            <param name="value">
+                The value.
+            </param>
+            <returns>
+                Byte Stream
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.CacheProviders.AzureBlobCache`2.GetTypefromStream(System.Byte[])">
+            <summary>
+                The get typefrom stream.
+            </summary>
+            <param name="arrBytes">
+                The arr bytes.
+            </param>
+            <returns>
+                The type from stream
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheConfiguration">
+            <summary>
+            The cache configuration.
+            </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.Configuration.CacheConfiguration.CacheConfigurationSectionName">
+            <summary>
+              The cache configuration section name.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheConfiguration.Cache">
+            <summary>
+              Gets Cache.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheInfoElement">
+            <summary>
+            The cache info element.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElement.CacheProvider">
+            <summary>
+              Gets CacheProvider.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElement.IsDefault">
+            <summary>
+              Gets or sets a value indicating whether IsDefault.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElement.Name">
+            <summary>
+              Gets or sets Name.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheProviderInfoElement">
+            <summary>
+            The cache provider info element.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElement.CacheProviderSettings">
+            <summary>
+              Gets CacheProviderSettings.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElement.Key">
+            <summary>
+              Gets or sets Key.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElement.ObjType">
+            <summary>
+              Gets or sets ObjType.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement">
+            <summary>
+            The cache provider settings info element.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement.Key">
+            <summary>
+              Gets or sets Key.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement.KeyValue">
+            <summary>
+              Gets or sets KeyValue.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection">
+            <summary>
+            The cache provider settings info element collection.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.CollectionType">
+            <summary>
+              Gets CollectionType.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Item(System.Int32)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "index">
+              The index.
+            </param>
+            <returns>
+              The cache provider settings element
+            </returns>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Item(System.String)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "name">
+              The name.
+            </param>
+            <returns>
+              The cache provider settings info element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Add(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement)">
+            <summary>
+            The add.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Clear">
+            <summary>
+            The clear.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.GetEnumerator">
+            <summary>
+            The get enumerator.
+            </summary>
+            <returns>
+            List of config elements
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.IndexOf(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement)">
+            <summary>
+            The index of config element
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+            <returns>
+            The index of.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Remove(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElement)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.Remove(System.String)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.RemoveAt(System.Int32)">
+            <summary>
+            The remove at.
+            </summary>
+            <param name="index">
+            The index.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.BaseAdd(System.Configuration.ConfigurationElement)">
+            <summary>
+            The base add.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.CreateNewElement">
+            <summary>
+            The create new element.
+            </summary>
+            <returns>
+            New config element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets element key.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The get element key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection">
+            <summary>
+            The cache provider info element collection.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.CollectionType">
+            <summary>
+              Gets CollectionType.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Item(System.Int32)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "index">
+              The index.
+            </param>
+            ache provider element
+            <returns>
+              The c
+            </returns>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Item(System.String)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "name">
+              The name.
+            </param>
+            <returns>
+              New cache provider element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Add(HL.Blocks.Caching.Configuration.CacheProviderInfoElement)">
+            <summary>
+            The add.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Clear">
+            <summary>
+            The clear.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.GetEnumerator">
+            <summary>
+            The get enumerator.
+            </summary>
+            <returns>
+            List of cache provider elements
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.IndexOf(HL.Blocks.Caching.Configuration.CacheProviderInfoElement)">
+            <summary>
+            index of the cache element
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+            <returns>
+            The index of.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Remove(HL.Blocks.Caching.Configuration.CacheProviderInfoElement)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.Remove(System.String)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.RemoveAt(System.Int32)">
+            <summary>
+            The remove at.
+            </summary>
+            <param name="index">
+            The index.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.BaseAdd(System.Configuration.ConfigurationElement)">
+            <summary>
+            The base add.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.CreateNewElement">
+            <summary>
+            The create new element.
+            </summary>
+            <returns>
+            New instance of cache provider
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheProviderInfoElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The get element key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheInfoElementCollection">
+            <summary>
+            The cache info element collection.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.CollectionType">
+            <summary>
+              Gets CollectionType.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Item(System.Int32)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "index">
+              The index.
+            </param>
+            <returns>
+              The cache Info element
+            </returns>
+        </member>
+        <member name="P:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Item(System.String)">
+            <summary>
+              The this.
+            </summary>
+            <param name = "name">
+              The name.
+            </param>
+            <returns>
+              Cache Info element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Add(HL.Blocks.Caching.Configuration.CacheInfoElement)">
+            <summary>
+            The add.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Clear">
+            <summary>
+            The clear.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.GetEnumerator">
+            <summary>
+            The get enumerator.
+            </summary>
+            <returns>
+            List of cache Info elements
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.IndexOf(HL.Blocks.Caching.Configuration.CacheInfoElement)">
+            <summary>
+            index of cache info element
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+            <returns>
+            The index of.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Remove(HL.Blocks.Caching.Configuration.CacheInfoElement)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="cacheInfo">
+            The cache info.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.Remove(System.String)">
+            <summary>
+            The remove.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.RemoveAt(System.Int32)">
+            <summary>
+            The remove at.
+            </summary>
+            <param name="index">
+            The index.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.BaseAdd(System.Configuration.ConfigurationElement)">
+            <summary>
+            The base add.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.CreateNewElement">
+            <summary>
+            The create new element.
+            </summary>
+            <returns>
+            A new config element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheInfoElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            The get element key.
+            </summary>
+            <param name="element">
+            The element.
+            </param>
+            <returns>
+            The get element key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.CacheConfigurationManager">
+            <summary>
+            The cache configuration provider.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheConfigurationManager.GetCacheInfo(System.String)">
+            <summary>
+            The get cache info.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+            <returns>
+            A cache info element
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.CacheConfigurationManager.GetConfigSection">
+            <summary>
+            The get config section.
+            </summary>
+            <returns>
+            The cache config
+            </returns>
+            <exception cref="T:System.Configuration.ConfigurationErrorsException">
+            Possible exception
+            </exception>
+        </member>
+        <member name="T:HL.Blocks.Caching.Configuration.ConfigurationHelper">
+            <summary>
+            TODO: Update summary.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetBool(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String)">
+            <summary>
+            Gets the bool setting.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">Name of the element.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetBool(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String,System.Boolean)">
+            <summary>
+            Gets the bool.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">Name of the element.</param>
+            <param name="defaultValue">default value returned if configuration missing or could not be interpreted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetInt(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String)">
+            <summary>
+            The get int.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">The element name.</param>
+            <returns>
+            The get int.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetInt(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String,System.Int32)">
+            <summary>
+            Gets the int.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">Name of the element.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetString(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String)">
+            <summary>
+            The get string.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">The element name.</param>
+            <returns>
+            The get string.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.Configuration.ConfigurationHelper.GetString(HL.Blocks.Caching.Configuration.CacheProviderSettingsInfoElementCollection,System.String,System.String)">
+            <summary>
+            The get string.
+            </summary>
+            <param name="config">The config.</param>
+            <param name="elementName">The element name.</param>
+            <param name="defaultValue">The default value.</param>
+            <returns>
+            The get string.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1">
+            <summary>
+                A file-backed asynchronously refreshing cache.
+                This cache will attempt to retrieve a value from an in-memory cache and will fall back
+                to a file-based cache. Retrieval of a value, when needed, is done by using a supplied delegate.
+                The cache will favor stale data over forcing the client to wait, only waiting when an optional
+                absolute file expiration is exceeded or no file-based cache is yet available.
+            </summary>
+            <typeparam name="T">Type of value to be handled by this cache.</typeparam>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1._getterLocksLock">
+            <summary> Controls access to the collection of getter locks. </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1._getterLocks">
+            <summary> Controls access to the getter methods. </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1._fileCacheLock">
+            <summary> Controls access to the file cache. </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1._refreshTimeout">
+            <summary> Timeout while attempting to retrieve a lock for a synchronous invoke of the getter method. </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1._getterDelegates">
+            <summary>
+                Dictionary for maintaining a reference to the most recent delegate used to retrieve a value for any given
+                key. These references are maintained for auto-refreshes.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.CacheGetterSaver">
+            <summary>
+                Delegate for getting the data and saving it to the cache. May be invoked sync or async.
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetterDelegate">
+            <summary>
+                Private class to be used by the GetterDelegates dictionary which contains
+                all information needed to persist information for calling a getter delegate
+                for in-memory cache refresh.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetterDelegate.OriginalKey">
+            <summary>
+                Original key passed by the client.
+                This is the key that must be passed back to the Getter Delegate when it is called.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetterDelegate.Getter">
+            <summary>
+                Delegate to be called when data must be retrieved.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetterDelegate.AbsoluteTimeout">
+            <summary>
+                Absolute timeout for in-memory cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.Save(`0,System.String,System.TimeSpan,System.TimeSpan)">
+            <summary>
+                Saves a value to the memory and file cache.
+            </summary>
+            <param name="value">Value to save.</param>
+            <param name="key">Unique Key of the value to be saved.</param>
+            <param name="memoryAbsoluteExpiration">Absolute expiration in the memory cache.</param>
+            <param name="fileAbsoluteExpiration">Absolute expiration in the file cache</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.Contains(System.String)">
+            <summary>
+                Returns true if the memory cache contains a value for the provided key.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.Get(System.String,System.Func{System.String,`0},System.TimeSpan)">
+            <summary>
+                Retrieves a method from the file-backed cache. If the value is not available in memory, retrieval is attempted
+                from the file-based cache. If the value is in the file cache, it is returned and the cache is asynchronously
+                refreshed. If the value is not available in the file cache, it is retrieved synchronously with the supplied
+                getter method.
+            </summary>
+            <param name="key">Unique Key of the value to be retrieved.</param>
+            <param name="getMethod">Delegate which will be used to retrieve the value if it is not cached.</param>
+            <param name="absoluteExpiration">Absolute expiration in the memory cache.</param>
+            <returns>A value retrieved from the cache or the getter method.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.Get(System.String,System.Func{System.String,`0},System.TimeSpan,System.TimeSpan)">
+            <summary>
+                Retrieves a method from the file-backed cache. If the value is not available in memory, retrieval is attempted
+                from the file-based cache. If the value is in the file cache, it is returned and the cache is asynchronously
+                refreshed. If the value is not available in the file cache, it is retrieved synchronously with the supplied
+                getter method.
+            </summary>
+            <param name="key">Unique Key of the value to be retrieved.</param>
+            <param name="getMethod">Delegate which will be used to retrieve the value if it is not cached.</param>
+            <param name="absoluteExpiration">Absolute expiration in the memory cache.</param>
+            <param name="absoluteFileExpiration">Absolute expiration in the file cache.</param>
+            <returns>A value retrieved from the cache or the getter method.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.Get(System.String,System.Func{System.String,`0},System.TimeSpan,System.TimeSpan,System.Boolean)">
+            <summary>
+                Retrieves a method from the file-backed cache. If the value is not available in memory, retrieval is attempted
+                from the file-based cache. If the value is in the file cache, it is returned and the cache is asynchronously
+                refreshed. If the value is not available in the file cache, it is retrieved synchronously with the supplied
+                getter method.
+            </summary>
+            <param name="key">Unique Key of the value to be retrieved.</param>
+            <param name="getMethod">Delegate which will be used to retrieve the value if it is not cached.</param>
+            <param name="absoluteExpiration">Absolute expiration in the memory cache.</param>
+            <param name="absoluteFileExpiration">Absolute expiration in the file cache.</param>
+            <param name="autoRefresh">True to automatically refresh when the memory cache has expired.</param>
+            <returns>A value retrieved from the cache or the getter method.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetFullCacheKey(System.String)">
+            <summary>
+                Returns a key, meant to be unique for the type specified.
+            </summary>
+            <param name="key">Key unique to the entity within a type and application scope.</param>
+            <returns>A key corresponding to the location of the memory cache.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetValueAndSaveToCache(System.String,System.Func{System.String,`0},System.TimeSpan,`0@,System.Boolean)">
+            <summary>
+                Retrieves a value and saves to the file and memory cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.EndAsyncGetAndSave(System.IAsyncResult)">
+            <summary>
+                Called at the end of an asynchronous call to StartAsyncGetAndSave.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetGetterLock(System.String)">
+            <summary>
+                Retrieves a lock to control access to a getter method.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.ExistsInMemoryCache(System.String)">
+            <summary>
+                Checks whether an item is currently in the cache.
+            </summary>
+            <param name="fullKey">Key of item to check for.</param>
+            <returns>True if a matching item is currently in the cache.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.RemovedCallBack(System.Runtime.Caching.CacheEntryRemovedArguments)">
+            <summary>
+                Called when an item is removed from the in-memory cache.
+                This should trigger an auto-refresh.
+            </summary>
+            <param name="fullKey">Key of cached item.</param>
+            <param name="value">Value of cached item.</param>
+            <param name="removedReason">Reason item was removed from the cache.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetFromFileCache(System.String,System.TimeSpan@)">
+            <summary>
+                Retrieves a value from the file cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.SaveToFileCache(`0,System.String)">
+            <summary>
+                Saves the value to a file cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.IsFileCacheExpired(System.String,System.TimeSpan)">
+            <summary>
+                Returns true if the file cache exists and is not expired per the given timespan.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetFileCacheAge(System.String)">
+            <summary>
+                Returns the age of the file cache.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.FileBackedAsyncCache`1.GetFileCachePath(System.String)">
+            <summary>
+                Returns the path at which the cache file corresponding
+                to the given key resides.
+            </summary>
+            <param name="key">Key for desired cache file.</param>
+            <returns>Path to cache file.</returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.FileBackedCache.Cache`1">
+            <summary>
+            Represents a cache ofr an arbitrary object which is backed by a file.
+            </summary>
+            <remarks>
+            This class exposes an object via the <see cref="P:HL.Blocks.Caching.FileBackedCache.Cache`1.Value"/> property.
+            </remarks>
+        </member>
+        <member name="F:HL.Blocks.Caching.FileBackedCache.Cache`1.BASE_DIRECTORY">
+            <summary>
+            The base path where files for this type will be saved
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.Cache`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Blocks.Caching.FileBackedCache.Cache`1"/> class.
+            </summary>
+            <param name="fileName">Name of the file backing this instance.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.Cache`1.Save(`0)">
+            <summary>
+            Saves the specified data in this instance of the cache and writes through to backing file.
+            </summary>
+            <param name="data">The data to cache.</param>
+            <returns><see langword="true"/> if successful; <see langword="false"/> otheriwse.</returns>
+            <remarks>The data must be serializable by the WCF serializer</remarks>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.Cache`1.getFilePath">
+            <summary>
+            Gets the file path for the backing file of this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HL.Blocks.Caching.FileBackedCache.Cache`1.HasData">
+            <summary>
+            Gets a value indicating whether this instance contains data
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:HL.Blocks.Caching.FileBackedCache.Cache`1.LastUpdate" -->
+        <member name="P:HL.Blocks.Caching.FileBackedCache.Cache`1.LastError">
+            <summary>
+            The last exception encountered during data load attempt
+            </summary>
+            <value>The last error.</value>
+            <remarks>
+            Contains the error message and any error details.
+            <para>Note that <see cref="P:HL.Blocks.Caching.FileBackedCache.Cache`1.HasData"/> is simply a null check.
+            Client applications should use this property in conjunction with <see cref="P:HL.Blocks.Caching.FileBackedCache.Cache`1.LastUpdate"/>
+            to decide whether the data contained in cache is usable.</para></remarks>
+        </member>
+        <member name="P:HL.Blocks.Caching.FileBackedCache.Cache`1.Value">
+            <summary>
+            Gets the data object encapsulated in this instance.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.FileBackedCache.Cache`1.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.HLCache`2">
+            <summary>
+            The hl cache.
+            </summary>
+            <typeparam name="TValue">
+            </typeparam>
+            <typeparam name="TKey">
+            </typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCache`2.#ctor(System.Collections.Generic.IEnumerable{HL.Blocks.Caching.ICacheItemProvider{`0,`1}},System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HL.Blocks.Caching.HLCache`2"/> class. 
+            The hl cache.
+            </summary>
+            <param name="providers">
+            </param>
+            <param name="name">
+            </param>
+        </member>
+        <member name="P:HL.Blocks.Caching.HLCache`2.Name">
+            <summary>
+            The name.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.HLCache`2.Providers">
+            <summary>
+            The provider.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCache`2.Expires(`1)">
+            <summary>
+            The expires.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+            The expires.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCache`2.TryGet(`1,System.Func{`1,`0},`0@)">
+            <summary>
+            Tries the get.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="fetchMethod">A method used to hydrate the cache in case an item was not found.</param>
+            <param name="value">The value.</param>
+            <returns>true if item found; false otherwise</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCache`2.TryGetInternal(`1,`0@,System.Func{`1,`0})">
+            <summary>
+            The try get.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="fetchMethod"></param>
+            <returns>
+            The try get.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.HLCacheFactory">
+            <summary>
+            The hl cache factory.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCacheFactory.Get``2(System.String)">
+            <summary>
+            The get.
+            </summary>
+            <typeparam name="TKey">Type of the object to cache</typeparam>
+            <typeparam name="TValue">the Key</typeparam>
+            <param name="name">Name of the cache config</param>
+            <returns>
+            An instance of HL Cache
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.HLCacheFactory.Get``2(System.String,HL.Blocks.Caching.Configuration.CacheInfoElement)">
+            <summary>
+            The get.
+            </summary>
+            <typeparam name="TKey">Type of the Object</typeparam>
+            <typeparam name="TValue">Type of Key</typeparam>
+            <param name="cacheName">Name of the cache.</param>
+            <param name="config">config element</param>
+            <returns>
+            HL Cache Object
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.ICacheItemProvider`2">
+            <summary>
+            Describes a cache item provider
+            </summary>
+            <typeparam name="TValue">
+            </typeparam>
+            <typeparam name="TKey">
+            </typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.ICacheItemProvider`2.Remove(`1)">
+            <summary>
+            Removes an item from the cache
+            </summary>
+            <param name="key">The key of the item to remove.</param>
+            <returns>
+            True if item found and removed; False otherwise. (If item does not exist, false is returned)
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.ICacheItemProvider`2.Save(`1,`0)">
+            <summary>
+            Saves the value with the given key
+            </summary>
+            <param name="key">
+            The key.
+            </param>
+            <param name="value">
+            The value.
+            </param>
+        </member>
+        <member name="M:HL.Blocks.Caching.ICacheItemProvider`2.TryGet(`1,System.Func{`1,`0},`0@)">
+            <summary>
+            Attempts to get a value with the given key
+            </summary>
+            <param name="key">The key.</param>
+            <param name="fetchMethod">A delegate which can fetch a fresh item.</param>
+            <param name="result">The value.</param>
+            <returns>
+            True if item found; false otherwise.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy">
+            <summary>
+                Defines the behavior of the cache
+            </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.NeverThrow">
+            <summary>
+                Defines the default cache behavior, where exceptions are largely guarded and don't throw.
+            </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.ThrowFetchOnly">
+            <summary>
+                Defines the default cache behavior, where cache exceptions not rethrown, but fetch exceptions are
+            </summary>
+        </member>
+        <member name="F:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.AlwaysThrow">
+            <summary>
+                Defines the default cache behavior, where any exceptions are rethrown
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.RethrowAddException">
+            <summary>
+                Gets or sets whether to rethrow exceptions encountered while attempting to add an item
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.RethrowExpireException">
+            <summary>
+                Gets or sets whether to rethrow exceptions encountered while attempting to expire an item
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.RethrowFetchException">
+            <summary>
+                Gets or sets whether to rethrow exceptions encountered while attempting to fetch an item
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.RethrowGetException">
+            <summary>
+                Gets or sets whether to rethrow exceptions encountered while attempting to get an item
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.Ensure(HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Returns a valid policy
+            </summary>
+            <param name="policy"></param>
+            <returns>The given policy if it is valid, <see cref="F:HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy.NeverThrow"/> otherwise.</returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.RedisCache.ITierCache">
+            <summary>
+                Describes a tier-cache which allows for common backing cache for a server farm.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Get``1(System.String)">
+            <summary>
+                Gets a value from the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns>
+                The object from cache, or null if not found or exception encountered and default policy specified not to
+                rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Get``1(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Gets a value from the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return null</param>
+            <returns>The object from cache, or null if not found or exception encountered and policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.GetAsync``1(System.String)">
+            <summary>
+                Gets a value from the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns>
+                The object from cache, or null if not found or exception encountered and default policy specified not to
+                rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.GetAsync``1(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Gets a value from the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return null</param>
+            <returns>The object from cache, or null if not found or exception encountered and policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Retrieve``1(System.Func{System.String,``0},System.String,System.TimeSpan)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exceptions</param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but default policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Retrieve``1(System.Func{System.String,``0},System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exceptions</param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.RetrieveAsync``1(System.Func{System.String,System.Threading.Tasks.Task{``0}},System.String,System.TimeSpan)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exceptions</param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.RetrieveAsync``1(System.Func{System.String,System.Threading.Tasks.Task{``0}},System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exceptions</param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Add``1(``0,System.String,System.TimeSpan)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <returns>True if item is added, false if item was not added, and false if default policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Add``1(``0,System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return false</param>
+            <returns>True if item is added, false if item was not added, and false if policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.AddAsync``1(``0,System.String,System.TimeSpan)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <returns>True if item is added, false if item was not added, and false if default policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.AddAsync``1(``0,System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return false</param>
+            <returns>True if item is added, false if item was not added, and false if policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Expire(System.String)">
+            <summary>
+                Expires an item from cache (removes it)
+            </summary>
+            <param name="key"></param>
+            <returns>True if succeeded, false if failed or exception encountered and default policy said not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.Expire(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Expires an item from cache (removes it)
+            </summary>
+            <param name="key"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return false</param>
+            <returns>True if succeeded, false if failed or exception encountered and policy said not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.ExpireAsync(System.String)">
+            <summary>
+                Expires an item from cache (removes it)
+            </summary>
+            <param name="key"></param>
+            <returns>True if succeeded, false if failed or exception encountered and default policy said not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.ITierCache.ExpireAsync(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Expires an item from cache (removes it)
+            </summary>
+            <param name="key"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exception, or just return false</param>
+            <returns>True if succeeded, false if failed or exception encountered and policy said not to rethrow</returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.RedisCache.RedisCache">
+            <summary>
+                Redis Cache
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.#ctor">
+            <summary>
+                Initializes a new instance with a given cache client, or the built in
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Get``1(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retrieves a cached value.
+            </summary>
+            <typeparam name="TResponse">Type of value to retrieve.</typeparam>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="behaviorPolicy"></param>
+            <returns> A generically typed value from the cache or the provided expression.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.GetAsync``1(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retrieves a cached value async.
+            </summary>
+            <typeparam name="TResponse">Type of value to retrieve.</typeparam>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="behaviorPolicy"></param>
+            <returns> A generically typed value from the cache or the provided expression.</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Retrieve``1(System.Func{System.String,``0},System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retrieves a cached value. If the value is not present in the cache, the provided
+                expression is evaluated and its resultant value is placed in the cache for the duration
+                specified. The value is cached with a priority of normal.
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <param name="fetcher">Expression evaluated to retrieve the value if it is not present in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Retrieve``1(System.Func{System.String,``0},System.String,System.TimeSpan)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <param name="behaviorPolicy">Policy specifying whether to re-throw underlying exceptions</param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but default policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.RetrieveAsync``1(System.Func{System.String,System.Threading.Tasks.Task{``0}},System.String,System.TimeSpan)">
+            <summary>
+                Retreives an item from cache, or uses the <paramref name="fetcher" /> to get the itme and then add to the cache and
+                return it.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fetcher">A function that can get the item from the source</param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <returns>
+                The item if found in cache, or if fetcher was successful in loading it. Null if item is not in cache, or
+                fetcher didn't load it, or if exceptions occured but default policy specified not to rethrow
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.RetrieveAsync``1(System.Func{System.String,System.Threading.Tasks.Task{``0}},System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Retrieves a cached value async. If the value is not present in the cache, the provided
+                expression is evaluated and its resultant value is placed in the cache for the duration
+                specified. The value is cached with a priority of normal.
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <param name="fetcher">Expression evaluated to retrieve the value if it is not present in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Add``1(``0,System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Caches a value for the specified duration.
+            </summary>
+            <typeparam name="TValue">Type of value to be cached.</typeparam>
+            <param name="response">Value to be cached.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <param name="timeSpan">Duration to cache the value.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Add``1(``0,System.String,System.TimeSpan)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <returns>True if item is added, false if item was not added, and false if default policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.AddAsync``1(``0,System.String,System.TimeSpan)">
+            <summary>
+                Adds a value to the cache
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="duration"></param>
+            <returns>True if item is added, false if item was not added, and false if default policy specified not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.AddAsync``1(``0,System.String,System.TimeSpan,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Caches a value async for the specified duration.
+            </summary>
+            <typeparam name="TResponse">Type of value to be cached.</typeparam>
+            <param name="response">Value to be cached.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <param name="timeSpan">Duration to cache the value.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Expire(System.String)">
+            <summary>
+                Expires an item from cache (removes it)
+            </summary>
+            <param name="key"></param>
+            <returns>True if succeeded, false if failed or exception encountered and default policy said not to rethrow</returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.Expire(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Forces a value to be expired from the cache.
+            </summary>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.ExpireAsync(System.String)">
+            <summary>
+                Forces a value to be expired from the cache async.
+            </summary>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.RedisCache.RedisCache.ExpireAsync(System.String,HL.Blocks.Caching.RedisCache.CacheBehaviorPolicy)">
+            <summary>
+                Forces a value to be expired from the cache async.
+            </summary>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+            <param name="behaviorPolicy"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.SimpleCache.ISimpleCache">
+            <summary>
+                SimpleCache
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleCache.Add``2(``0,``1,System.TimeSpan)">
+            <summary>
+                Caches a value for the specified duration.
+            </summary>
+            <typeparam name="T">Type of value to cache.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="value">Value to be cached.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <exception>
+                <see cref="T:System.ApplicationException" /> thrown if environment does not have an instance of Cache.
+                <see cref="T:System.ArgumentNullException" /> thrown if key or value are null
+            </exception>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleCache.Contains``1(System.Type,``0)">
+            <summary>
+                Returns true if a value for the provided type and key exists in the cache.
+            </summary>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="t">Type of value to check for in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <returns>
+                The contains.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleCache.Expire``1(System.Type,``0)">
+            <summary>
+                Forces a value to be expired from the cache.
+            </summary>
+            <typeparam name="K">Type of key used to identify the value in the cache.</typeparam>
+            <param name="t">Type of value to expire in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleCache.Retrieve``2(System.Func{``1,``0},``1,System.TimeSpan)">
+            <summary>
+                Retrieves a cached value. If the value is not present in the cache, the provided
+                expression is evaluated and its resultant value is placed in the cache for the duration
+                specified. The value is cached with a priority of normal.
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="fetcher">Expression evaluated to retrieve the value if it is not present in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <returns>
+                A generically typed value from the cache or the provided expression.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleCache.Get``2(``1)">
+            <summary>
+                Retrieves a cached value. 
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <returns>
+                A generically typed value from the cache or the provided expression.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.SimpleCache.InMemoryCache">
+            <summary>
+                Implementation InMemoryCache
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.SimpleCache.ISimpleFileCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleFileCache.Add``2(``0,``1,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            Adds the file contents to cache and monitors the file
+            </summary>
+            <param name="value"></param>
+            <param name="key"></param>
+            <param name="filePath"></param>
+            <param name="duration"></param>
+            <typeparam name="T"></typeparam>
+            <typeparam name="K"></typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleFileCache.Contains``1(System.Type,``0)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="key"></param>
+            <typeparam name="K"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleFileCache.Expire``1(System.Type,``0)">
+            <summary>
+            
+            </summary>
+            <param name="t"></param>
+            <param name="key"></param>
+            <typeparam name="K"></typeparam>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.ISimpleFileCache.Retrieve``2(System.Func{``1,``0},``1,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+            
+            </summary>
+            <param name="fetcher"></param>
+            <param name="key"></param>
+            <param name="filePath"></param>
+            <param name="duration"></param>
+            <typeparam name="T"></typeparam>
+            <typeparam name="K"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.SimpleCache.SimpleCache">
+            <summary>
+                Simple caching mechanism.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.Add``2(``0,``1,System.TimeSpan)">
+            <summary>
+                Caches a value for the specified duration.
+            </summary>
+            <typeparam name="T">Type of value to cache.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="value">Value to be cached.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <exception>
+                <see cref="T:System.ApplicationException" /> thrown if environment does not have an instance of Cache.
+                <see cref="T:System.ArgumentNullException" /> thrown if key or value are null
+            </exception>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.Contains``1(System.Type,``0)">
+            <summary>
+                Returns true if a value for the provided type and key exists in the cache.
+            </summary>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="t">Type of value to check for in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <returns>
+                The contains.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.Expire``1(System.Type,``0)">
+            <summary>
+                Forces a value to be expired from the cache.
+            </summary>
+            <typeparam name="K">Type of key used to identify the value in the cache.</typeparam>
+            <param name="t">Type of value to expire in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.Retrieve``2(System.Func{``1,``0},``1,System.TimeSpan)">
+            <summary>
+                Retrieves a cached value. If the value is not present in the cache, the provided
+                expression is evaluated and its resultant value is placed in the cache for the duration
+                specified. The value is cached with a priority of normal.
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="fetcher">Expression evaluated to retrieve the value if it is not present in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="duration">Duration to cache the value.</param>
+            <returns>
+                A generically typed value from the cache or the provided expression.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.Get``2(``1)">
+            <summary>
+                Retrieves a cached value. 
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <returns>
+                A generically typed value from the cache or the provided expression.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleCache.MakeKey``1(System.Type,``0)">
+            <summary>
+                Creates a string key as a unique identifier in the cache for the
+                provided type and key which is unique per type cached.
+            </summary>
+            <typeparam name="K"></typeparam>
+            <param name="t">The t.</param>
+            <param name="key">The key.</param>
+            <returns>
+                The make key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.SimpleCache.SimpleFileCache">
+            <summary>
+                Simple caching mechanism.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleFileCache.Add``2(``0,``1,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+                Caches a value for the specified duration.
+            </summary>
+            <typeparam name="T">Type of value to cache.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="value">Value to be cached.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <param name="filePath"></param>
+            <param name="duration">Duration to cache the value.</param>
+            <exception>
+                <see cref="T:System.ApplicationException" /> thrown if environment does not have an instance of Cache.
+                <see cref="T:System.ArgumentNullException" /> thrown if key or value are null
+            </exception>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleFileCache.Contains``1(System.Type,``0)">
+            <summary>
+                Returns true if a value for the provided type and key exists in the cache.
+            </summary>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="t">Type of value to check for in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be cached.</param>
+            <returns>
+                The contains.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleFileCache.Expire``1(System.Type,``0)">
+            <summary>
+                Forces a value to be expired from the cache.
+            </summary>
+            <typeparam name="K">Type of key used to identify the value in the cache.</typeparam>
+            <param name="t">Type of value to expire in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be expired.</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleFileCache.Retrieve``2(System.Func{``1,``0},``1,System.String,System.Nullable{System.TimeSpan})">
+            <summary>
+                Retrieves a cached value. If the value is not present in the cache, the provided
+                expression is evaluated and its resultant value is placed in the cache for the duration
+                specified. The value is cached with a priority of normal.
+            </summary>
+            <typeparam name="T">Type of value to retrieve.</typeparam>
+            <typeparam name="K">Type of key used as a unique identifier per type of value cached.</typeparam>
+            <param name="fetcher">Expression evaluated to retrieve the value if it is not present in the cache.</param>
+            <param name="key">Identifier which must be unique per type of value to be retrieved.</param>
+            <param name="filePath"></param>
+            <param name="duration">Duration to cache the value.</param>
+            <returns>
+                A generically typed value from the cache or the provided expression.
+            </returns>
+        </member>
+        <member name="M:HL.Blocks.Caching.SimpleCache.SimpleFileCache.MakeKey``1(System.Type,``0)">
+            <summary>
+                Creates a string key as a unique identifier in the cache for the
+                provided type and key which is unique per type cached.
+            </summary>
+            <typeparam name="K"></typeparam>
+            <param name="t">The t.</param>
+            <param name="key">The key.</param>
+            <returns>
+                The make key.
+            </returns>
+        </member>
+        <member name="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1">
+            <summary>
+            Represents a cache ofr an arbitrary object which self refreshes at specified intervals.
+            </summary>
+            <remarks>
+            This class exposes an object via the <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.Value"/> property. The object
+            will be reloaded on a specified interval.
+            Consuming classes may access the value directly via the property.
+            Consuming classes may register to the <see cref="E:HL.Blocks.Caching.TimerLoadingCache.Cache`1.DataLoaded"/> event and receive
+            <see cref="!:DataloadedEventArgs"/> exposing the old data, the new data and the time the data was last refreshed.
+            The cache exposes the <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastError"/> property which stores the last exception caught as a result of invoking 
+            the <see cref="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LoadDataDelegate"/> delegate. Clients are encouraged to check <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.HasData"/> and <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastRefresh"/> properties
+            for the presence and freshness of the data containd in this instance.
+            <para>
+            <typeparam name="Tdata">The object type this cache encapsulates</typeparam>
+            </para>
+            <para>This cache is most suitable for situations where a data record, list of items or other o
+            bject is loaded from a backing store but changes seldom.
+            This cache should not be used for data which needs to be refreshd every second. It is particularly suitable for loading 
+            configuration or data driving the application such as list of countries, business rules etc.</para>
+            <para>This class is NOT thread safe. It's intended use is as a single instance per app domain. Specifically,
+            multiple instances of the same closed generic type might use different data loaded delegate which may succeed or fail
+            independently and lead to unexpected <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.HasData"/> and <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastError"/> values.</para>
+            </remarks>
+        </member>
+        <member name="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LoadDataDelegate">
+            <summary>
+            Users of this class must supply a function that can be called to retrieve data.
+            </summary>
+            <returns>The data loading delegate must return the data to be cached.
+            It will be called each interval once per instance of this cache object.</returns>
+        </member>
+        <member name="E:HL.Blocks.Caching.TimerLoadingCache.Cache`1.DataLoaded">
+            <summary>
+            Occurs whenever data was successfully refreshed
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.Cache`1.#ctor(HL.Blocks.Caching.TimerLoadingCache.Cache{`0}.LoadDataDelegate)">
+            <summary>
+            Creates a new instance of the cache with the specified data loading delegate
+            </summary>
+            <param name="loadDataDelegate">the delegate which will be called each time interval in order
+            to load the cache.</param>
+            <remarks>The <see cref="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LoadDataDelegate"/>will be called each elapsed interval. If 
+            a refresh operation lasts longer than the interval, then the delegate will not be invoked again. The delegate
+            will be invoked again the next interval during which a previous data load operation is not already in progress
+            <para>This constructor overload produces a timer interval of 1 hour between data refreshes.</para></remarks>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.Cache`1.#ctor(HL.Blocks.Caching.TimerLoadingCache.Cache{`0}.LoadDataDelegate,System.TimeSpan)">
+            <summary>
+            Creates a new instance of the cache with the specified data loading delegate
+            </summary>
+            <param name="loadDataDelegate">the delegate which will be called each time interval in order
+            to load the cache.</param>
+            <param name="duration">A timespan representing the duration between refresh operations</param>
+            <remarks>The <see cref="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LoadDataDelegate"/>will be called each elapsed interval. If 
+            a refresh operation lasts longer than the interval, then the delegate will not be invoked again. The delegate
+            will be invoked again the next interval during which a previous data load operation is not already in progress</remarks>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.Cache`1.#ctor(HL.Blocks.Caching.TimerLoadingCache.Cache{`0}.LoadDataDelegate,System.Double)">
+            <summary>
+            Creates a new instance of the cache with the specified data loading delegate
+            </summary>
+            <param name="loadDataDelegate">the delegate which will be called each time interval in order
+            to load the cache.</param>
+            <param name="durationSeconds">The number of seconds between refresh intervals</param>
+            <remarks>The <see cref="T:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LoadDataDelegate"/>will be called each elapsed interval. If 
+            a refresh operation lasts longer than the interval, then the delegate will not be invoked again. The delegate
+            will be invoked again the next interval during which a previous data load operation is not already in progress</remarks>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.HasData">
+            <summary>
+            Gets a value indicating whether this instance contains data
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastRefresh" -->
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastError">
+            <summary>
+            The last exception encountered during data load attempt
+            </summary>
+            <remarks>
+            The <see cref="T:HL.Blocks.Caching.TimerLoadingCache.TimerLoadingCacheException"/> contains the error message and any error details.
+            <para>Note that <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.HasData"/> is simply a null check.
+            Client applications should use this property in conjunction with <see cref="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.LastRefresh"/> 
+            to decide whether the data contained in cache is usable.</para></remarks>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.Cache`1.Value">
+            <summary>
+            Gets the data object encapsulated in this instance.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.Cache`1.Dispose">
+            <summary>
+            IDisposable.Dispose implementation
+            </summary>
+        </member>
+        <member name="T:HL.Blocks.Caching.TimerLoadingCache.DataLoadedEventArgs">
+            <summary>
+            Event Argument exposing the newly loaded data and the time the data was last fetched.
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.DataLoadedEventArgs.#ctor(System.Object,System.Object,System.DateTime)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="data">The new data object</param>
+            <param name="oldData">the old data object</param>
+            <param name="lastRefresh">The time the new data was loaded</param>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.DataLoadedEventArgs.Data">
+            <summary>
+            The data currently used by the cache object which raised this event.
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.DataLoadedEventArgs.LastRefresh">
+            <summary>
+            The time the cache object last loaded it's current version
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.DataLoadedEventArgs.OldData">
+            <summary>
+            The old version of the data (the one prior to this version)
+            </summary>
+        </member>
+        <member name="P:HL.Blocks.Caching.TimerLoadingCache.SharedTimerElapsedEventArgs.SignalTime">
+            <summary>
+            Gets the time the System.Timers.Timer.Elapsed event was raised.
+            </summary>        
+        </member>
+        <member name="T:HL.Blocks.Caching.TimerLoadingCache.TimerLoadingCacheException">
+            <summary>
+            Defines an exception specific to <see cref="!:HL.Blocks.Caching.TimerLoadingCache.Cache"/>
+            </summary>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.TimerLoadingCacheException.#ctor(System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="ex">The specific excetion encountered - will be used as inner exception for this instance</param>
+        </member>
+        <member name="M:HL.Blocks.Caching.TimerLoadingCache.TimerLoadingCacheException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="description">A description of the exception encountered.</param>
+        </member>
+    </members>
+</doc>

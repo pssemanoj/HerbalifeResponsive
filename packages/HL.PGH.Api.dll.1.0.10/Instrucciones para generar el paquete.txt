@@ -1,0 +1,31 @@
+
+Primero estar seguro que tenemos el nuget.exe
+
+en
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools
+
+
+
+Abrir developercommand prompt
+
+
+1)	Te vas a una carpeta (donde quieras) que sea vacia y ahí le copias el nuspec
+2)	Cambias la versión al nuspec
+3)	Creas una carpeta lib y una carpeta net461 adentro de lib
+4)	Copias la dll de public adentro de net461
+5)	Te vas a cmd en la carpeta donde está el nuspec
+6)	Y le das el pack
+7)	Y luego el push
+
+
+D:\Payments\HerbalifePaymentManagementSystem\QA\src\Public\HL.HPMS.Contracts.Public\bin\Debug>nuget spec HL.HPMS.Contracts.Public.dll -F
+
+
+D:\Payments\HerbalifePaymentManagementSystem\QA\src\Public\HL.HPMS.Contracts.Public\bin\Debug>nuget pack HL.HPMS.Contracts.Public.dll.nuspec
+
+
+D:\Payments\HerbalifePaymentManagementSystem\QA\src\Public\HL.HPMS.Contracts.Public\bin\Debug>nuget push HL.HPMS.Contracts.Public.dll.1.0.24.nupkg -s http://nuget.hrbl.net:8088/ herb@1234
+
+
+nuget push HL.HPMS.Contracts.Public.dll.1.0.24.nupkg -s http://nuget.hrbl.net:8088/api/odata herb@1234
+
